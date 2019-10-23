@@ -1,0 +1,14 @@
+.container {
+  max-width: min-content;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.col {
+  margin: 0 5px;
+}
+
+.cell {
+  padding: 0 10px;
+  font-size: 32px;
+}

@@ -1,0 +1,10 @@
+.container {
+  margin: 0 auto;
+  max-width: min-content;
+  padding: 40px;
+}
+
+.title {
+  white-space: pre;
+  font-size: 48px;
+}
