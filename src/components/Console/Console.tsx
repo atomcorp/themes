@@ -4,6 +4,7 @@ import {backgroundKeyType, textKeyType, themeType} from 'types';
 import css from './Console.module.css';
 
 const backgroundKeys: backgroundKeyType[] = [
+  'background',
   'black',
   'red',
   'green',
@@ -12,6 +13,7 @@ const backgroundKeys: backgroundKeyType[] = [
   'purple',
   'cyan',
   'white',
+  'background',
 ];
 
 const textKeys: textKeyType[] = [

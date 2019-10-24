@@ -28,7 +28,8 @@ export type backgroundKeyType =
   | 'blue'
   | 'purple'
   | 'cyan'
-  | 'white';
+  | 'white'
+  | 'background';
 
 export type textKeyType =
   | 'black'
