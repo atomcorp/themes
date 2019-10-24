@@ -1,11 +1,26 @@
-.container {
-  margin: 0 auto;
-  max-width: min-content;
-  padding: 40px;
+@media (min-width: 720px) {
+  .container {
+    display: flex;
+    height: 100%;
+    overflow: auto;
+  }
 }
 
 .title {
-  white-space: pre;
   font-size: 48px;
   text-align: center;
+}
+
+@media (min-width: 720px) {
+  .sidebar {
+    flex: 0 0 30%;
+    height: 100%;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 720px) {
+  .content {
+    flex: 1 0 70%;
+  }
 }

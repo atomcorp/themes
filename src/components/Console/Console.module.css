@@ -1,12 +1,15 @@
 .container {
-  max-width: min-content;
-  padding: 10px;
-  margin: 0 auto 20px;
+  padding: 10px 0;
   overflow: auto;
 }
 
 .col {
   margin: 0 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
 }
 
 .cell {

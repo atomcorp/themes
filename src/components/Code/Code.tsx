@@ -14,7 +14,9 @@ const Code: React.FC<CodeProps> = (props) => {
         onFocus={(e) => {
           e.target.select();
         }}
-        defaultValue={props.theme}
+        value={props.theme}
+        /* onChange just supresses a React console warning */
+        onChange={() => {}}
       />
     </section>
   );

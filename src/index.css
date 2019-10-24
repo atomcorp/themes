@@ -5,3 +5,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* for creating the fixed window pane stlye */
+@media (min-width: 720px) {
+  html,
+  body,
+  #root,
+  .App {
+    height: 100%;
+  }
+}

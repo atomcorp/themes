@@ -49,7 +49,7 @@ const Console: React.FC<PropsType> = (props) => {
       style={{background: props.theme.background}}
     >
       {textKeys.map((textKey, i) => (
-        <div style={{display: 'flex'}} key={i}>
+        <div className={css.row} key={i}>
           {backgroundKeys.map((backgroundKey, i) => (
             <div
               key={i}
