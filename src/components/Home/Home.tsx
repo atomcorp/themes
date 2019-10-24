@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import Console from 'components/Console/Console';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
+import Code from 'components/Code/Code';
 import {themeType} from 'types';
 import css from './Home.module.css';
 
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
     };
     request();
   }, []);
+  const theme = themes.find((theme) => theme.name === activeTheme);
   return (
     <section className={css.container}>
       <h1 className={css.title}>Windows Terminal Colours</h1>
@@ -27,7 +29,8 @@ const Home: React.FC = () => {
         themeNames={themes.map((theme) => theme.name)}
         setActiveTheme={setActiveTheme}
       />
-      <Console theme={themes.find((theme) => theme.name === activeTheme)} />
+      <Console theme={theme} />
+      {theme && <Code theme={JSON.stringify(theme, null, 2)} />}
     </section>
   );
 };
