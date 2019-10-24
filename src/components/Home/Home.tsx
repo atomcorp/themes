@@ -15,6 +15,7 @@ const Home: React.FC = () => {
         const response = await fetch('/colour-schemes.json');
         const json = await response.json();
         setThemes(json);
+        setActiveTheme(json[Math.floor(Math.random() * json.length)].name);
       } catch (err) {
         console.error(err);
       }
@@ -27,6 +28,7 @@ const Home: React.FC = () => {
       <h1 className={css.title}>Windows Terminal Colours</h1>
       <ThemeSelect
         themeNames={themes.map((theme) => theme.name)}
+        activeTheme={activeTheme}
         setActiveTheme={setActiveTheme}
       />
       <Console theme={theme} />

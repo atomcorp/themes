@@ -2,6 +2,7 @@
   max-width: min-content;
   padding: 10px;
   margin: 0 auto 20px;
+  overflow: auto;
 }
 
 .col {

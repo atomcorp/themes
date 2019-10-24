@@ -14,7 +14,7 @@ const Code: React.FC<CodeProps> = (props) => {
         onFocus={(e) => {
           e.target.select();
         }}
-        value={props.theme}
+        defaultValue={props.theme}
       />
     </section>
   );
