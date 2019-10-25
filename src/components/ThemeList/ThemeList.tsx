@@ -28,7 +28,7 @@ const ThemeList: React.FC<PropsType> = (props) => (
           }}
         />
         <label className={css.label} htmlFor={themeName}>
-          {themeName}
+          <span className={css.tabbed}>{themeName}</span>
         </label>
       </div>
     ))}

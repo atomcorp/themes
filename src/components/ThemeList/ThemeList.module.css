@@ -13,13 +13,8 @@
   height: 100%;
 }
 
-.theme input:focus + .label:after {
-  content: '⇥';
-  position: absolute;
-  right: 10px;
-  font-size: 28px;
-  top: 0;
-  line-height: 1;
+.theme input:focus + .label span {
+  outline: 1px dotted;
 }
 
 .theme.active {
