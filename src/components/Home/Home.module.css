@@ -16,7 +16,7 @@
 
 @media (min-width: 720px) {
   .sidebar {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     height: 100%;
     overflow: auto;
     max-width: 30%;

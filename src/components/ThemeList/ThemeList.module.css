@@ -1,0 +1,25 @@
+.container {
+  background: rgb(254, 244, 156);
+  color: rgb(204, 0, 0);
+}
+
+.theme {
+  position: relative;
+}
+
+.theme input {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+}
+
+.theme.active {
+  color: rgb(254, 244, 156);
+  background: rgb(204, 0, 0);
+}
+
+.label {
+  display: block;
+  padding: 5px 10px;
+  flex: 1;
+}

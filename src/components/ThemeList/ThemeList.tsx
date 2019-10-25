@@ -1,5 +1,7 @@
 import React from 'react';
 
+import css from './ThemeList.module.css';
+
 type PropsType = {
   themeNames: string[];
   activeTheme: string;
@@ -7,9 +9,14 @@ type PropsType = {
 };
 
 const ThemeList: React.FC<PropsType> = (props) => (
-  <section>
+  <section className={css.container}>
     {props.themeNames.map((themeName) => (
-      <div key={themeName}>
+      <div
+        key={themeName}
+        className={`${css.theme} ${
+          themeName === props.activeTheme ? css.active : ''
+        }`}
+      >
         <input
           type="radio"
           id={themeName}
@@ -20,7 +27,9 @@ const ThemeList: React.FC<PropsType> = (props) => (
             props.setActiveTheme(themeName);
           }}
         />
-        <label htmlFor={themeName}>{themeName}</label>
+        <label className={css.label} htmlFor={themeName}>
+          {themeName}
+        </label>
       </div>
     ))}
   </section>
