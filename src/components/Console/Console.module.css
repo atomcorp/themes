@@ -1,6 +1,13 @@
 .container {
-  padding: 10px 0;
-  overflow: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 36px;
 }
 
 .col {
@@ -9,7 +16,6 @@
 
 .row {
   display: flex;
-  justify-content: center;
 }
 
 .cell {

@@ -3,8 +3,19 @@ import React, {useState, useEffect} from 'react';
 import Console from 'components/Console/Console';
 import ThemeList from 'components/ThemeList/ThemeList';
 import Code from 'components/Code/Code';
-import {themeType} from 'types';
+import {themeType, backgroundKeyType} from 'types';
 import css from './Home.module.css';
+
+const compare = (a: themeType, b: themeType): number => {
+  if (a.name.toUpperCase() < b.name.toUpperCase()) {
+    return -1;
+  }
+  if (a.name.toUpperCase() > b.name.toUpperCase()) {
+    return 1;
+  }
+  // a must be equal to b
+  return 0;
+};
 
 const Home: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
@@ -14,7 +25,7 @@ const Home: React.FC = () => {
       try {
         const response = await fetch('/colour-schemes.json');
         const json = await response.json();
-        setThemes(json);
+        setThemes(json.sort(compare));
         setActiveTheme(json[Math.floor(Math.random() * json.length)].name);
       } catch (err) {
         console.error(err);
@@ -35,7 +46,7 @@ const Home: React.FC = () => {
       </aside>
       <section className={css.content}>
         <Console theme={theme} />
-        {theme && <Code theme={JSON.stringify(theme, null, 2)} />}
+        {/* theme && <Code theme={JSON.stringify(theme, null, 2)} /> */}
       </section>
     </section>
   );

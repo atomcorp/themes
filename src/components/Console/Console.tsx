@@ -1,9 +1,10 @@
 import React from 'react';
+import contrast from 'get-contrast';
 
 import {backgroundKeyType, textKeyType, themeType} from 'types';
 import css from './Console.module.css';
 
-const backgroundKeys: backgroundKeyType[] = [
+export const backgroundKeys: backgroundKeyType[] = [
   'background',
   'black',
   'red',
@@ -35,6 +36,39 @@ const textKeys: textKeyType[] = [
   'brightWhite',
 ];
 
+type titleColoursType =
+  | 'black'
+  | 'red'
+  | 'green'
+  | 'yellow'
+  | 'blue'
+  | 'purple'
+  | 'cyan'
+  | 'white';
+
+const titleColours: titleColoursType[] = [
+  'black',
+  'red',
+  'green',
+  'yellow',
+  'blue',
+  'purple',
+  'cyan',
+  'white',
+];
+
+const getRandomColour = (theme: themeType): string => {
+  const randomisedColours = titleColours.sort(() => Math.random() - 0.5);
+  const accessibleColour = randomisedColours.find(
+    (titleColour: titleColoursType) =>
+      contrast.isAccessible(theme[titleColour], theme.background)
+  );
+  if (accessibleColour != null) {
+    return theme[accessibleColour];
+  }
+  return theme[titleColours[0]];
+};
+
 type PropsType = {
   theme?: themeType;
 };
@@ -48,6 +82,9 @@ const Console: React.FC<PropsType> = (props) => {
       className={css.container}
       style={{background: props.theme.background}}
     >
+      <h2 className={css.name} style={{color: getRandomColour(props.theme)}}>
+        {props.theme.name}
+      </h2>
       {textKeys.map((textKey, i) => (
         <div className={css.row} key={i}>
           {backgroundKeys.map((backgroundKey, i) => (

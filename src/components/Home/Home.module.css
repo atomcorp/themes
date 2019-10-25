@@ -7,20 +7,24 @@
 }
 
 .title {
-  font-size: 48px;
+  font-size: 24px;
+  margin: 0;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 @media (min-width: 720px) {
   .sidebar {
-    flex: 0 0 30%;
+    flex: 0 0 auto;
     height: 100%;
     overflow: auto;
+    max-width: 30%;
   }
 }
 
 @media (min-width: 720px) {
   .content {
-    flex: 1 0 70%;
+    flex: 1 0 auto;
   }
 }
