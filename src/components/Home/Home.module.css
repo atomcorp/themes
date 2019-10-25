@@ -12,6 +12,7 @@
   text-align: center;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 @media (min-width: 720px) {

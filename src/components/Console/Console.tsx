@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import clipboard from 'clipboard-polyfill';
 
 import {themeType} from 'types';
 import css from './Console.module.css';
@@ -9,15 +10,17 @@ type PropsType = {
 };
 
 const Console: React.FC<PropsType> = (props) => {
+  const [textCopied, setTextCopied] = useState(false);
   if (!props.theme) {
     return <div>Loading...</div>;
   }
+  const randomColour = getRandomColour(props.theme);
   return (
     <section
       className={css.container}
       style={{background: props.theme.background}}
     >
-      <h2 className={css.name} style={{color: getRandomColour(props.theme)}}>
+      <h2 className={css.name} style={{color: randomColour}}>
         {props.theme.name}
       </h2>
       {textKeys.map((textKey, i) => (
@@ -40,6 +43,21 @@ const Console: React.FC<PropsType> = (props) => {
           ))}
         </div>
       ))}
+      <button
+        className={css.button}
+        style={{color: props.theme.background, background: randomColour}}
+        onClick={() => {
+          if (!textCopied) {
+            setTextCopied(true);
+            clipboard.writeText(JSON.stringify(props.theme, null, 2));
+            setTimeout(() => {
+              setTextCopied(false);
+            }, 2000);
+          }
+        }}
+      >
+        {!textCopied ? 'Copy Theme' : 'Copied!'}
+      </button>
     </section>
   );
 };

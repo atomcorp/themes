@@ -22,3 +22,27 @@
   padding: 0 10px;
   font-size: 32px;
 }
+
+.button {
+  border: 0;
+  padding: 10px 30px;
+  margin: 20px 0 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+
+/* .button:focus:before {
+  content: '⇥';
+  font-size: 28px;
+  position: absolute;
+  right: 5px;
+  top: -2px;
+}
+
+.button:focus:after {
+  content: '';
+  position: relative;
+  width: 10px;
+  display: inline-block;
+} */

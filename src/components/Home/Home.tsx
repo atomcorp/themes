@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 
 import Console from 'components/Console/Console';
 import ThemeList from 'components/ThemeList/ThemeList';
-import Code from 'components/Code/Code';
-import {themeType, backgroundKeyType} from 'types';
+// import Code from 'components/Code/Code';
+import {themeType} from 'types';
 import css from './Home.module.css';
 
 const compare = (a: themeType, b: themeType): number => {
