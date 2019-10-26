@@ -23,26 +23,22 @@ const Console: React.FC<PropsType> = (props) => {
       <h2 className={css.name} style={{color: randomColour}}>
         {props.theme.name}
       </h2>
-      {textKeys.map((textKey, i) => (
-        <div className={css.row} key={i}>
-          {backgroundKeys.map((backgroundKey, i) => (
+      <div className={css.matrix}>
+        {textKeys.map((textKey, i) =>
+          backgroundKeys.map((backgroundKey, y) => (
             <div
-              key={i}
-              className={css.col}
+              key={i + ' ' + y}
+              className={css.cell}
               style={{
                 background: props.theme ? props.theme[backgroundKey] : '',
+                color: props.theme ? props.theme[textKey] : '',
               }}
             >
-              <div
-                className={css.cell}
-                style={{color: props.theme ? props.theme[textKey] : ''}}
-              >
-                gYw
-              </div>
+              gYw
             </div>
-          ))}
-        </div>
-      ))}
+          ))
+        )}
+      </div>
       <button
         className={css.button}
         style={{color: props.theme.background, background: randomColour}}
