@@ -5,6 +5,7 @@ import ThemeList from 'components/ThemeList/ThemeList';
 // import Code from 'components/Code/Code';
 import {themeType} from 'types';
 import css from './Home.module.css';
+import Header from 'components/Header/Header';
 
 const compare = (a: themeType, b: themeType): number => {
   if (a.name.toUpperCase() < b.name.toUpperCase()) {
@@ -37,24 +38,7 @@ const Home: React.FC = () => {
   return (
     <section className={css.container}>
       <aside className={css.sidebar}>
-        <h1 className={css.title}>Windows Terminal Colours</h1>
-        <div>
-          <div>
-            Themes from{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/mbadolato/iTerm2-Color-Schemes"
-            >
-              iTerm Color Schemes
-            </a>
-          </div>
-          <div>
-            <a target="_blank" href="/colour-schemes.json">
-              Download all
-            </a>
-          </div>
-        </div>
+        <Header />
         <ThemeList
           themeNames={themes.map((theme) => theme.name)}
           activeTheme={activeTheme}
