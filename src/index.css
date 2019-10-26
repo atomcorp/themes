@@ -22,11 +22,9 @@ html {
 }
 
 /* for creating the fixed window pane stlye */
-@media (min-width: 720px) {
-  html,
-  body,
-  #root,
-  .App {
-    height: 100%;
-  }
+html,
+body,
+#root,
+.App {
+  height: 100%;
 }

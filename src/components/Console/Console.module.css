@@ -7,7 +7,7 @@
   padding: 0 0 40px;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 769px) {
   .container {
     padding: 0;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 769px) {
   .matrix {
     width: auto;
     grid-column-gap: 10px;
@@ -42,7 +42,7 @@
   text-align: center;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 769px) {
   .cell {
     font-size: 2vw;
     padding: 0 10px;

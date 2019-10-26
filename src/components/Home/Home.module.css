@@ -1,12 +1,17 @@
-@media (min-width: 720px) {
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+@media (min-width: 769px) {
   .container {
-    display: flex;
-    height: 100%;
+    flex-direction: row;
     overflow: auto;
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 769px) {
   .sidebar {
     flex: 1 1 auto;
     height: 100%;
@@ -15,8 +20,6 @@
   }
 }
 
-@media (min-width: 720px) {
-  .content {
-    flex: 1 0 auto;
-  }
+.content {
+  flex: 1 0 auto;
 }

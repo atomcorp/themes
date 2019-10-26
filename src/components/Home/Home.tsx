@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import Console from 'components/Console/Console';
 import ThemeList from 'components/ThemeList/ThemeList';
+import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 // import Code from 'components/Code/Code';
 import {themeType} from 'types';
 import css from './Home.module.css';
@@ -39,11 +40,19 @@ const Home: React.FC = () => {
     <section className={css.container}>
       <aside className={css.sidebar}>
         <Header />
-        <ThemeList
-          themeNames={themes.map((theme) => theme.name)}
-          activeTheme={activeTheme}
-          setActiveTheme={setActiveTheme}
-        />
+        {window.innerWidth > 768 ? (
+          <ThemeList
+            themeNames={themes.map((theme) => theme.name)}
+            activeTheme={activeTheme}
+            setActiveTheme={setActiveTheme}
+          />
+        ) : (
+          <ThemeSelect
+            themeNames={themes.map((theme) => theme.name)}
+            activeTheme={activeTheme}
+            setActiveTheme={setActiveTheme}
+          />
+        )}
       </aside>
       <section className={css.content}>
         <Console theme={theme} />
