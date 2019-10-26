@@ -55,7 +55,10 @@ export const titleColours: titleColoursType[] = [
   'white',
 ];
 
-export const getRandomColour = (theme: themeType): string => {
+export const getRandomColour = (theme: themeType | undefined): string => {
+  if (theme == null) {
+    return '';
+  }
   const randomisedColours = titleColours.sort(() => Math.random() - 0.5);
   const accessibleColour = randomisedColours.find(
     (titleColour: titleColoursType) =>

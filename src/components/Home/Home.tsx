@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         const response = await fetch('/colour-schemes.json');
         const json = await response.json();
         setThemes(json.sort(compare));
-        setActiveTheme(json[Math.floor(Math.random() * json.length)].name);
+        setActiveTheme(json[0].name);
       } catch (err) {
         console.error(err);
       }

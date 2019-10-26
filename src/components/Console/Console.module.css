@@ -21,8 +21,13 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 5px;
   width: 100%;
+}
+
+@media (min-width: 360px) {
+  .matrix {
+    grid-column-gap: 5px;
+  }
 }
 
 @media (min-width: 720px) {

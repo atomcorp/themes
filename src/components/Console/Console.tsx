@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import clipboard from 'clipboard-polyfill';
 
 import {themeType} from 'types';
@@ -11,16 +11,25 @@ type PropsType = {
 
 const Console: React.FC<PropsType> = (props) => {
   const [textCopied, setTextCopied] = useState(false);
+  const [randomColour, setRandomColour] = useState('');
+  useEffect(() => {
+    setRandomColour(getRandomColour(props.theme));
+  }, [props.theme ? props.theme.name : '']);
   if (!props.theme) {
     return <div>Loading...</div>;
   }
-  const randomColour = getRandomColour(props.theme);
   return (
     <section
       className={css.container}
       style={{background: props.theme.background}}
     >
-      <h2 className={css.name} style={{color: randomColour}}>
+      <h2
+        onClick={() => {
+          setRandomColour(getRandomColour(props.theme));
+        }}
+        className={css.name}
+        style={{color: randomColour}}
+      >
         {props.theme.name}
       </h2>
       <div className={css.matrix}>
