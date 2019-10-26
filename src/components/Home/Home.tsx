@@ -38,6 +38,23 @@ const Home: React.FC = () => {
     <section className={css.container}>
       <aside className={css.sidebar}>
         <h1 className={css.title}>Windows Terminal Colours</h1>
+        <div>
+          <div>
+            Themes from{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/mbadolato/iTerm2-Color-Schemes"
+            >
+              iTerm Color Schemes
+            </a>
+          </div>
+          <div>
+            <a target="_blank" href="/colour-schemes.json">
+              Download all
+            </a>
+          </div>
+        </div>
         <ThemeList
           themeNames={themes.map((theme) => theme.name)}
           activeTheme={activeTheme}
