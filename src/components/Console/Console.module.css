@@ -20,7 +20,19 @@
 
 .cell {
   padding: 0 10px;
-  font-size: 32px;
+  font-size: 16px;
+}
+
+@media (min-width: 720px) {
+  .cell {
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cell {
+    font-size: 32px;
+  }
 }
 
 .button {
@@ -31,18 +43,3 @@
   font-weight: 700;
   position: relative;
 }
-
-/* .button:focus:before {
-  content: '⇥';
-  font-size: 28px;
-  position: absolute;
-  right: 5px;
-  top: -2px;
-}
-
-.button:focus:after {
-  content: '';
-  position: relative;
-  width: 10px;
-  display: inline-block;
-} */
