@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import clipboard from 'clipboard-polyfill';
+import * as clipboard from 'clipboard-polyfill';
 
 import {themeType} from 'types';
 import css from './Console.module.css';
@@ -14,7 +14,7 @@ const Console: React.FC<PropsType> = (props) => {
   const [randomColour, setRandomColour] = useState('');
   useEffect(() => {
     setRandomColour(getRandomColour(props.theme));
-  }, [props.theme ? props.theme.name : '']);
+  }, [props.theme]);
   if (!props.theme) {
     return <div>Loading...</div>;
   }
