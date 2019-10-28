@@ -11,7 +11,7 @@ const Header: React.FC = () => (
       rel="noopener noreferrer"
       href="https://github.com/mbadolato/iTerm2-Color-Schemes"
     >
-      iTerm Color Schemes
+      iTerm2 Color Schemes
     </a>
     {' | '}
     <a target="_blank" href="/colour-schemes.json">

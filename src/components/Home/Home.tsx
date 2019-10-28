@@ -7,6 +7,7 @@ import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 import {themeType} from 'types';
 import css from './Home.module.css';
 import Header from 'components/Header/Header';
+import ResizeObserver from 'resize-observer-polyfill';
 
 const compare = (a: themeType, b: themeType): number => {
   if (a.name.toUpperCase() < b.name.toUpperCase()) {
@@ -22,6 +23,7 @@ const compare = (a: themeType, b: themeType): number => {
 const Home: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   const [activeTheme, setActiveTheme] = useState('');
+  const [isSmallScreenSize, setIsSmallScreenSize] = useState(false);
   useEffect(() => {
     const request = async (): Promise<void> => {
       try {
@@ -34,13 +36,25 @@ const Home: React.FC = () => {
       }
     };
     request();
+    const resizer = new ResizeObserver((entries) => {
+      const {width} = entries[0].contentRect;
+      if (width > 768) {
+        setIsSmallScreenSize(false);
+      } else if (width < 768) {
+        setIsSmallScreenSize(true);
+      }
+    });
+    resizer.observe(document.body);
+    return () => {
+      resizer.unobserve(document.body);
+    };
   }, []);
   const theme = themes.find((theme) => theme.name === activeTheme);
   return (
     <section className={css.container}>
       <aside className={css.sidebar}>
         <Header />
-        {window.innerWidth > 768 ? (
+        {!isSmallScreenSize ? (
           <ThemeList
             themeNames={themes.map((theme) => theme.name)}
             activeTheme={activeTheme}
@@ -56,7 +70,6 @@ const Home: React.FC = () => {
       </aside>
       <section className={css.content}>
         <Console theme={theme} />
-        {/* theme && <Code theme={JSON.stringify(theme, null, 2)} /> */}
       </section>
     </section>
   );
