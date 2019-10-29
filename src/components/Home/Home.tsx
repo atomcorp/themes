@@ -20,8 +20,6 @@ const compare = (a: themeType, b: themeType): number => {
   return 0;
 };
 
-console.log(process.env.REACT_APP_PUBLIC_PATH);
-
 const Home: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   const [activeTheme, setActiveTheme] = useState('');
