@@ -20,6 +20,8 @@ const compare = (a: themeType, b: themeType): number => {
   return 0;
 };
 
+console.log(process.env.REACT_APP_PUBLIC_PATH);
+
 const Home: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   const [activeTheme, setActiveTheme] = useState('');
@@ -27,7 +29,9 @@ const Home: React.FC = () => {
   useEffect(() => {
     const request = async (): Promise<void> => {
       try {
-        const response = await fetch('/colour-schemes.json');
+        const response = await fetch(
+          `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`
+        );
         const json = await response.json();
         setThemes(json.sort(compare));
         setActiveTheme(json[0].name);
