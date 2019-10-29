@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas, monospace,
+    monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button {
+  font-family: 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas, monospace,
+    monospace;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* for creating the fixed window pane stlye */
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}

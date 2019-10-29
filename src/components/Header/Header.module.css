@@ -1,0 +1,11 @@
+.container {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+}
