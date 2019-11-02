@@ -7,7 +7,11 @@ const Header: React.FC = () => (
     <h1 className={css.title}>Windows Terminal Themes</h1>
     <p className={css.paragraph}>
       Themes for{' '}
-      <a href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701"
+      >
         Windows Terminal (Preview)
       </a>
       . To add new themes, open up settings (profile.json), copy a theme into
@@ -33,7 +37,13 @@ const Header: React.FC = () => (
         Download all the themes
       </a>
       {' | '}
-      <a href="https://github.com/atomcorp/themes">Github page </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/atomcorp/themes"
+      >
+        Github page
+      </a>
     </p>
   </>
 );
