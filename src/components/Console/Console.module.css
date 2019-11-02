@@ -15,6 +15,7 @@
 
 .name {
   font-size: 36px;
+  cursor: pointer;
 }
 
 .matrix {
@@ -62,6 +63,7 @@
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
+  cursor: pointer;
 }
 
 .loading {

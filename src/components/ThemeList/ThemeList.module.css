@@ -27,4 +27,5 @@
   padding: 5px 10px;
   flex: 1;
   word-wrap: break-word;
+  cursor: pointer;
 }
