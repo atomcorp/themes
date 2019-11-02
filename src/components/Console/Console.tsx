@@ -57,7 +57,7 @@ const Console: React.FC<PropsType> = (props) => {
             clipboard.writeText(JSON.stringify(props.theme, null, 2));
             setTimeout(() => {
               setTextCopied(false);
-            }, 1000);
+            }, 500);
           }
         }}
       >
