@@ -1,4 +1,11 @@
-.select {
-  margin: 20px auto;
+.container {
+  margin: 20px 0;
+  text-align: center;
   display: block;
+}
+
+.select {
+  font-size: 16px;
+  font-family: 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas, monospace,
+    monospace;
 }

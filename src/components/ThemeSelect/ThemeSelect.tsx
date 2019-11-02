@@ -9,22 +9,26 @@ type PropsType = {
 };
 
 const ThemeSelect: React.FC<PropsType> = (props) => (
-  <select
-    className={css.select}
-    value={props.activeTheme}
-    onChange={(e) => {
-      e.preventDefault();
-      if (e.target) {
-        props.setActiveTheme(e.target.value);
-      }
-    }}
-  >
-    {props.themeNames.map((themeName) => (
-      <option value={themeName} key={themeName}>
-        {themeName}
-      </option>
-    ))}
-  </select>
+  <label className={css.container} htmlFor="theme-select">
+    Change theme:{' '}
+    <select
+      id="theme-select"
+      className={css.select}
+      value={props.activeTheme}
+      onChange={(e) => {
+        e.preventDefault();
+        if (e.target) {
+          props.setActiveTheme(e.target.value);
+        }
+      }}
+    >
+      {props.themeNames.map((themeName) => (
+        <option value={themeName} key={themeName}>
+          {themeName}
+        </option>
+      ))}
+    </select>
+  </label>
 );
 
 export default ThemeSelect;
