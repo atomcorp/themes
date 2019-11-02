@@ -16,7 +16,7 @@ const Console: React.FC<PropsType> = (props) => {
     setRandomColour(getRandomColour(props.theme));
   }, [props.theme]);
   if (!props.theme) {
-    return <div>Loading...</div>;
+    return <div className={css.loading}>Loading...</div>;
   }
   return (
     <section
