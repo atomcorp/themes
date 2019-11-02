@@ -25,7 +25,11 @@ const Header: React.FC = () => (
       , so thanks to them.
     </p>
     <p className={css.paragraph}>
-      <a target="_blank" href="/colour-schemes.json">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href={`${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`}
+      >
         Download all the themes
       </a>
       {' | '}
