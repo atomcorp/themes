@@ -9,7 +9,7 @@ type PropsType = {
 };
 
 const ThemeList: React.FC<PropsType> = (props) => (
-  <section className={css.container}>
+  <fieldset className={css.container} name="theme">
     {props.themeNames.map((themeName) => (
       <div
         key={themeName}
@@ -20,7 +20,7 @@ const ThemeList: React.FC<PropsType> = (props) => (
         <input
           type="radio"
           id={themeName}
-          name="themes"
+          name="theme"
           value={themeName}
           checked={themeName === props.activeTheme}
           onChange={() => {
@@ -32,7 +32,7 @@ const ThemeList: React.FC<PropsType> = (props) => (
         </label>
       </div>
     ))}
-  </section>
+  </fieldset>
 );
 
 export default ThemeList;

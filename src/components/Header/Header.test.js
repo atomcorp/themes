@@ -11,5 +11,4 @@ it('renders component', () => {
   expect(getByText('iTerm2 Color Schemes')).toMatchSnapshot();
   expect(getByText('Download all the themes')).toMatchSnapshot();
   expect(getByText('Github page')).toMatchSnapshot();
-  // expect(asFragment()).toMatchSnapshot()
 });
