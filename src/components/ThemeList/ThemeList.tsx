@@ -9,7 +9,7 @@ type PropsType = {
 };
 
 const ThemeList: React.FC<PropsType> = (props) => (
-  <fieldset className={css.container} name="theme">
+  <fieldset className={css.container} name="theme" data-testid="theme-list">
     {props.themeNames.map((themeName) => (
       <div
         key={themeName}

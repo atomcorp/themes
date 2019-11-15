@@ -24,6 +24,7 @@ const Console: React.FC<PropsType> = (props) => {
       style={{background: props.theme.background}}
     >
       <h2
+        data-testid="selected-title"
         onClick={() => {
           setRandomColour(getRandomColour(props.theme));
         }}
