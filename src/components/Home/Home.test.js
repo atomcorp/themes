@@ -8,6 +8,7 @@ import {
 import '@testing-library/jest-dom/extend-expect';
 import fetchMock from 'fetch-mock';
 
+// import ResizeObserver from './__mocks__/ResizeObserver.mock';
 import Home from './Home';
 
 const schemes = [
@@ -86,7 +87,7 @@ beforeEach(() => {
   mockClipboard.mockClear();
 });
 
-it('Renders the App', async () => {
+it('Renders the desktop App', async () => {
   fetchMock.mock(
     `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`,
     JSON.stringify(schemes)
@@ -108,3 +109,30 @@ it('Renders the App', async () => {
 });
 
 // TODO: small screen
+it('Renders the mobile App', async () => {
+  fetchMock.mock(
+    `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`,
+    JSON.stringify(schemes)
+  );
+  window.innerWidth = 460;
+  // global.dispatchEvent(new Event('resize'));
+  const {getByText, getByTestId, getByLabelText} = render(<Home />);
+  await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
+  expect(getByLabelText(/change theme/i).value).toBe('3024 Day');
+  // wait for the child component to be rerendered, i think?
+  wait(() => expect(getByTestId('selected-title').innerText).toBe('3024 Day'));
+  fireEvent.change(getByLabelText(/change theme/i), {
+    target: {value: 'Duotone Dark'},
+  });
+  expect(getByLabelText(/change theme/i).value).toBe('Duotone Dark');
+  // wait for the child component to be rerendered, i think?
+  wait(() =>
+    expect(getByTestId('selected-title').innerText).toBe('Duotone Dark')
+  );
+  // resize the App
+  window.innerWidth = 1024;
+  global.dispatchEvent(new Event('resize'));
+  wait(() =>
+    expect(getByTestId('theme-list').childNodes.length).toBe(schemes.length)
+  );
+});

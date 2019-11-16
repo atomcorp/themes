@@ -23,7 +23,9 @@ const compare = (a: themeType, b: themeType): number => {
 const Home: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   const [activeTheme, setActiveTheme] = useState('');
-  const [isSmallScreenSize, setIsSmallScreenSize] = useState(false);
+  const [isSmallScreenSize, setIsSmallScreenSize] = useState(
+    window.innerWidth < 768
+  );
   useEffect(() => {
     const request = async (): Promise<void> => {
       try {
