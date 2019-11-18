@@ -106,13 +106,17 @@ it('Renders the desktop App', async () => {
   wait(() => expect(mockClipboard).toBeCalled());
   expect(JSON.parse(mockClipboard.mock.calls[0][0]).name).toBe('Ubuntu');
   expect(JSON.parse(mockClipboard.mock.calls[0][0])).toMatchObject(schemes[2]);
+  expect(getByText(/copied/i)).toBeTruthy;
+  setTimeout(() => {
+    expect(getByText(/copy theme/i)).toBeTruthy;
+  }, 500);
 });
 
-// TODO: small screen
 it('Renders the mobile App', async () => {
+  // reverse order
   fetchMock.mock(
     `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`,
-    JSON.stringify(schemes)
+    JSON.stringify([schemes[2], schemes[1], schemes[0]])
   );
   window.innerWidth = 460;
   // global.dispatchEvent(new Event('resize'));
