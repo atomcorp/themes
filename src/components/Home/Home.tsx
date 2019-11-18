@@ -3,7 +3,6 @@ import React, {useState, useEffect} from 'react';
 import Console from 'components/Console/Console';
 import ThemeList from 'components/ThemeList/ThemeList';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
-// import Code from 'components/Code/Code';
 import {themeType} from 'types';
 import css from './Home.module.css';
 import Header from 'components/Header/Header';

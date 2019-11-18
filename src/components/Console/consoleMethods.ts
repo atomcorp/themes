@@ -62,7 +62,7 @@ export const getRandomColour = (theme: themeType | undefined): string => {
   const randomisedColours = titleColours.sort(() => Math.random() - 0.5);
   const accessibleColour = randomisedColours.find(
     (titleColour: titleColoursType) =>
-      contrast.isAccessible(theme[titleColour], theme.background)
+      contrast.ratio(theme[titleColour], theme.background) > 4.5
   );
   if (accessibleColour != null) {
     return theme[accessibleColour];

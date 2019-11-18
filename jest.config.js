@@ -4,7 +4,14 @@ module.exports = {
     '^.+\\.tsx?$': 'ts-jest',
   },
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}', '!<rootDir>/node_modules/'],
+  collectCoverageFrom: [
+    'src/components/**/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/node_modules/',
+  ],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/index.tsx',
+    '<rootDir>/src/serviceWorker.ts',
+  ],
   coverageThreshold: {
     global: {
       lines: 90,
