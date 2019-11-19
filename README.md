@@ -16,7 +16,7 @@ Install and test using `yarn start` and `yarn test`, respectively.
 
 To use, open up Windows Terminal settings (a file called `profile.json` will open), copy a theme from this site into the `schemes` section and then reference the name your chosen profile in the `profiles` section.
 
-Notes
+### Notes
 
 - fun stuff being used: React (CRA), TypeScript, Jest, Node (for getting themes), testing-library, Githun Pages and CSS Grid
 - thanks [clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill), [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill) and [get-contrast](https://github.com/johno/get-contrast)
