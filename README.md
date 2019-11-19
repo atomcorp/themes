@@ -1,8 +1,8 @@
 # Windows Terminal Themes
 
-## Preview and copy themes for the new Windows Terminal (Preview).
+Preview and copy themes for the new Windows Terminal (Preview).
 
-## [Visit site at https://atomcorp.github.io/themes/](https://atomcorp.github.io/themes/)
+[Visit site at https://atomcorp.github.io/themes/](https://atomcorp.github.io/themes/)
 
 ---
 
