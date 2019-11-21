@@ -10,6 +10,7 @@
     "@types/react-dom": "16.9.2",
     "clipboard-polyfill": "^2.8.6",
     "get-contrast": "^2.0.0",
+    "immer": "^5.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",

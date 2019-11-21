@@ -1,11 +1,12 @@
 import React from 'react';
 
+import {actionTypes} from 'types';
 import css from './ThemeSelect.module.css';
 
 type PropsType = {
   themeNames: string[];
   activeTheme: string;
-  setActiveTheme: (string: string) => void;
+  dispatch: React.Dispatch<actionTypes>;
 };
 
 const ThemeSelect: React.FC<PropsType> = (props) => (
@@ -18,7 +19,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => (
       onChange={(e) => {
         e.preventDefault();
         if (e.target) {
-          props.setActiveTheme(e.target.value);
+          props.dispatch({type: 'SET', theme: e.target.value});
         }
       }}
     >

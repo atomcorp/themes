@@ -1,11 +1,12 @@
 import React from 'react';
 
+import {actionTypes} from 'types';
 import css from './ThemeList.module.css';
 
 type PropsType = {
   themeNames: string[];
   activeTheme: string;
-  setActiveTheme: (string: string) => void;
+  dispatch: React.Dispatch<actionTypes>;
 };
 
 const ThemeList: React.FC<PropsType> = (props) => (
@@ -24,7 +25,7 @@ const ThemeList: React.FC<PropsType> = (props) => (
           value={themeName}
           checked={themeName === props.activeTheme}
           onChange={() => {
-            props.setActiveTheme(themeName);
+            props.dispatch({type: 'SET', theme: themeName});
           }}
         />
         <label className={css.label} htmlFor={themeName}>

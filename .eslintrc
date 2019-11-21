@@ -23,7 +23,7 @@
     "arrow-parens": 1,
     "comma-dangle": [2, "always-multiline"],
     "new-cap": 0,
-    "indent": ["error", 2],
+    // "indent": ["error", 2],
     "react/prop-types": 0,
     "@typescript-eslint/explicit-function-return-type": [
       "error",

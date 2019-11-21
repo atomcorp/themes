@@ -1,4 +1,4 @@
-export type themeType = {
+export type initThemeType = {
   name: string;
   black: string;
   red: string;
@@ -19,6 +19,8 @@ export type themeType = {
   background: string;
   foreground: string;
 };
+
+export type themeType = themeType & {isDark: boolean};
 
 export type backgroundKeyType =
   | 'black'
@@ -48,3 +50,25 @@ export type textKeyType =
   | 'brightCyan'
   | 'white'
   | 'brightWhite';
+
+type shadeType = 'LIGHT' | 'DARK';
+type themeShadeType = shadeType | 'ANY';
+type themeShadeObjectType = {LIGHT: 'LIGHT'; DARK: 'DARK'; ANY: 'ANY'};
+
+type loadActionType = {
+  type: 'LOAD';
+  themes: themeType[];
+  activeTheme: string;
+};
+
+type setThemeType = {
+  type: 'SET';
+  theme: string;
+};
+
+type setScreenSizeType = {
+  type: 'SIZE';
+  isSmallScreenSize: boolean;
+};
+
+export type actionTypes = loadActionType | setTheme | setScreenSizeType;
