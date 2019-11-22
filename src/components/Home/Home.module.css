@@ -23,3 +23,20 @@
 .content {
   flex: 1 0 auto;
 }
+
+.light {
+  color: #282c34;
+}
+
+.light a {
+  color: rgb(1, 160, 228);
+}
+
+.dark {
+  background-color: #282c34;
+  color: white;
+}
+
+.dark a {
+  color: #7fd8ff;
+}

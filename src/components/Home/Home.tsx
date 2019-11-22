@@ -11,6 +11,7 @@ import {
   initialState,
   screenSizeObserver,
   request,
+  THEME_COLOUR,
 } from './homeMethods';
 
 const Home: React.FC = () => {
@@ -26,7 +27,11 @@ const Home: React.FC = () => {
   const theme = state.themes.find((theme) => theme.name === state.activeTheme);
   return (
     <section className={css.container}>
-      <aside className={css.sidebar}>
+      <aside
+        className={`${css.sidebar} ${
+          state.themeShade === THEME_COLOUR.DARK ? css.dark : css.light
+        }`}
+      >
         <Header />
         <ShadeChoice dispatch={dispatch} themeShade={state.themeShade} />
         {!state.isSmallScreenSize ? (

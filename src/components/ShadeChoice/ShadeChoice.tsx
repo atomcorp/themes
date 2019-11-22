@@ -12,19 +12,6 @@ type PropsState = {
 const ShadeChoice: React.FC<PropsState> = (props) => (
   <section className={css.container}>
     Type:
-    {/*    <label htmlFor="all">
-      <input
-        name="shade"
-        type="radio"
-        id="all"
-        value={THEME_COLOUR.ANY}
-        checked={THEME_COLOUR.ANY === props.themeShade}
-        onChange={() => {
-          props.dispatch({type: 'SHADE', themeShade: THEME_COLOUR.ANY});
-        }}
-      />
-      All
-    </label> */}
     <label htmlFor="dark">
       <input
         name="shade"
