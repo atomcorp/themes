@@ -31,13 +31,13 @@ const Home: React.FC = () => {
         <ShadeChoice dispatch={dispatch} themeShade={state.themeShade} />
         {!state.isSmallScreenSize ? (
           <ThemeList
-            themeNames={state.themes.map((theme) => theme.name)}
+            themeNames={state.filteredThemes.map((theme) => theme.name)}
             activeTheme={state.activeTheme}
             dispatch={dispatch}
           />
         ) : (
           <ThemeSelect
-            themeNames={state.themes.map((theme) => theme.name)}
+            themeNames={state.filteredThemes.map((theme) => theme.name)}
             activeTheme={state.activeTheme}
             dispatch={dispatch}
           />

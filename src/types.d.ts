@@ -58,7 +58,6 @@ type themeShadeObjectType = {LIGHT: 'LIGHT'; DARK: 'DARK'; ANY: 'ANY'};
 type loadActionType = {
   type: 'LOAD';
   themes: themeType[];
-  activeTheme: string;
 };
 
 type setThemeType = {

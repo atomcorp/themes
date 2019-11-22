@@ -51,7 +51,6 @@ export const request = async (
     dispatch({
       type: 'LOAD',
       themes: assignColourType(json.sort(compare)),
-      activeTheme: json[0].name,
     });
   } catch (err) {
     console.error(err);
@@ -66,6 +65,7 @@ export const THEME_COLOUR: themeShadeObjectType = {
 
 type stateType = {
   themes: themeType[];
+  filteredThemes: themeType[];
   activeTheme: string;
   isSmallScreenSize: boolean;
   themeShade: themeShadeType;
@@ -73,9 +73,10 @@ type stateType = {
 
 export const initialState: stateType = {
   themes: [],
+  filteredThemes: [],
   activeTheme: '',
   isSmallScreenSize: window.innerWidth < 768,
-  themeShade: THEME_COLOUR.ANY,
+  themeShade: THEME_COLOUR.DARK,
 };
 
 export const homeReducer = (
@@ -85,8 +86,11 @@ export const homeReducer = (
   return produce(state, (draftState: stateType) => {
     switch (action.type) {
       case 'LOAD':
-        draftState.activeTheme = action.activeTheme;
         draftState.themes = action.themes;
+        draftState.filteredThemes = action.themes.filter(
+          (theme: themeType) => theme.isDark
+        );
+        draftState.activeTheme = draftState.filteredThemes[0].name;
         break;
       case 'SET':
         draftState.activeTheme = action.theme;
@@ -96,6 +100,20 @@ export const homeReducer = (
         break;
       case 'SHADE':
         draftState.themeShade = action.themeShade;
+        if (draftState.themeShade === THEME_COLOUR.ANY) {
+          draftState.filteredThemes = state.themes;
+        }
+        if (draftState.themeShade === THEME_COLOUR.DARK) {
+          draftState.filteredThemes = state.themes.filter(
+            (theme) => theme.isDark
+          );
+        }
+        if (draftState.themeShade === THEME_COLOUR.LIGHT) {
+          draftState.filteredThemes = state.themes.filter(
+            (theme) => !theme.isDark
+          );
+        }
+        draftState.activeTheme = draftState.filteredThemes[0].name;
         break;
       default:
         break;
