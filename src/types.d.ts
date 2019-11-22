@@ -71,4 +71,13 @@ type setScreenSizeType = {
   isSmallScreenSize: boolean;
 };
 
-export type actionTypes = loadActionType | setTheme | setScreenSizeType;
+type setScreenSizeType = {
+  type: 'SHADE';
+  themeShade: themeShadeType;
+};
+
+export type actionTypes =
+  | loadActionType
+  | setTheme
+  | setScreenSizeType
+  | setScreenSizeType;

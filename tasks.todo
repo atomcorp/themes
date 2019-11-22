@@ -1,5 +1,5 @@
 Future:
   ☐ filter between dark and light themes (use get-contrast)
   ☐ match list colours with selected theme
-  ☐ in <Home />, move useEffect logic outside component 
+  ✔ in <Home />, move useEffect logic outside component @done(19-11-22 22:40)
   ✔ in <Home />, use useReducer for state @done(19-11-21 23:34)
