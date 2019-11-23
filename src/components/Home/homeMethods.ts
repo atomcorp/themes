@@ -67,7 +67,6 @@ export const screenSizeObserver = (
   dispatch: React.Dispatch<actionTypes>
 ): ResizeObserver => {
   return new ResizeObserver((entries) => {
-    console.log(entries);
     const {width} = entries[0].contentRect;
     if (width > 768) {
       dispatch({type: 'SIZE', isSmallScreenSize: false});
@@ -135,6 +134,7 @@ export const homeReducer = (
         draftState.activeTheme = draftState.filteredThemes[0].name;
         break;
       case 'SET':
+        console.log(action.theme);
         draftState.activeTheme = action.theme;
         // eslint-disable-next-line no-case-declarations
         theme = state.themes.find((theme) => theme.name === action.theme);
@@ -147,6 +147,7 @@ export const homeReducer = (
         draftState.isSmallScreenSize = action.isSmallScreenSize;
         break;
       case 'SHADE':
+        console.log(action);
         draftState.themeShade = action.themeShade;
         if (draftState.themeShade === THEME_COLOUR.DARK) {
           draftState.filteredThemes = state.themes.filter(
@@ -160,7 +161,9 @@ export const homeReducer = (
         }
         draftState.activeTheme = draftState.filteredThemes[0].name;
         // eslint-disable-next-line no-case-declarations
-        theme = state.themes.find((theme) => theme.name === action.theme);
+        theme = state.themes.find(
+          (theme) => theme.name === draftState.filteredThemes[0].name
+        );
         if (theme) {
           draftState.primaryColour = getRandomColour(theme);
           draftState.backgroundColour = theme.background;
