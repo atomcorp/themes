@@ -11,7 +11,7 @@ type PropsState = {
 
 const ShadeChoice: React.FC<PropsState> = (props) => (
   <section className={css.container}>
-    Type:
+    Choose type:
     <label htmlFor="dark">
       <input
         name="shade"

@@ -15,7 +15,10 @@ import {
 } from './homeMethods';
 
 const Home: React.FC = () => {
-  const [state, dispatch] = useReducer(homeReducer, initialState);
+  const [state, dispatch] = useReducer(homeReducer, {
+    ...initialState,
+    ...{isSmallScreenSize: window.innerWidth < 768},
+  });
   useEffect(() => {
     request(dispatch);
     const resizer = screenSizeObserver(dispatch);

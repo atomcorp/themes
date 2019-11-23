@@ -67,6 +67,7 @@ export const screenSizeObserver = (
   dispatch: React.Dispatch<actionTypes>
 ): ResizeObserver => {
   return new ResizeObserver((entries) => {
+    console.log(entries);
     const {width} = entries[0].contentRect;
     if (width > 768) {
       dispatch({type: 'SIZE', isSmallScreenSize: false});
@@ -99,7 +100,7 @@ export const THEME_COLOUR: themeShadeObjectType = {
   ANY: 'ANY',
 };
 
-type stateType = {
+export type stateType = {
   themes: themeType[];
   filteredThemes: themeType[];
   activeTheme: string;

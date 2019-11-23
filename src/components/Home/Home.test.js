@@ -7,12 +7,46 @@ import {
 } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import fetchMock from 'fetch-mock';
-import {getRandomColour} from './homeMethods';
+import matchMediaPolyfill from 'mq-polyfill';
 
-// import ResizeObserver from './__mocks__/ResizeObserver.mock';
+import {getRandomColour} from './homeMethods';
 import Home from './Home';
 
+beforeAll(() => {
+  matchMediaPolyfill(window);
+  window.resizeTo = function resizeTo(width, height) {
+    Object.assign(this, {
+      innerWidth: width,
+      innerHeight: height,
+      outerWidth: width,
+      outerHeight: height,
+    }).dispatchEvent(new this.Event('resize'));
+  };
+});
+
 const schemes = [
+  {
+    name: 'Duotone Dark',
+    black: '#1f1d27',
+    red: '#d9393e',
+    green: '#2dcd73',
+    yellow: '#d9b76e',
+    blue: '#ffc284',
+    purple: '#de8d40',
+    cyan: '#2488ff',
+    white: '#b7a1ff',
+    brightBlack: '#353147',
+    brightRed: '#d9393e',
+    brightGreen: '#2dcd73',
+    brightYellow: '#d9b76e',
+    brightBlue: '#ffc284',
+    brightPurple: '#de8d40',
+    brightCyan: '#2488ff',
+    brightWhite: '#eae5ff',
+    background: '#1f1d27',
+    foreground: '#b7a1ff',
+    isDark: true,
+  },
   {
     name: '3024 Day',
     black: '#090300',
@@ -36,25 +70,25 @@ const schemes = [
     isDark: false,
   },
   {
-    name: 'Duotone Dark',
-    black: '#1f1d27',
-    red: '#d9393e',
-    green: '#2dcd73',
-    yellow: '#d9b76e',
-    blue: '#ffc284',
-    purple: '#de8d40',
-    cyan: '#2488ff',
-    white: '#b7a1ff',
-    brightBlack: '#353147',
-    brightRed: '#d9393e',
-    brightGreen: '#2dcd73',
-    brightYellow: '#d9b76e',
-    brightBlue: '#ffc284',
-    brightPurple: '#de8d40',
-    brightCyan: '#2488ff',
-    brightWhite: '#eae5ff',
-    background: '#1f1d27',
-    foreground: '#b7a1ff',
+    name: 'Galaxy',
+    black: '#000000',
+    red: '#f9555f',
+    green: '#21b089',
+    yellow: '#fef02a',
+    blue: '#589df6',
+    purple: '#944d95',
+    cyan: '#1f9ee7',
+    white: '#bbbbbb',
+    brightBlack: '#555555',
+    brightRed: '#fa8c8f',
+    brightGreen: '#35bb9a',
+    brightYellow: '#ffff55',
+    brightBlue: '#589df6',
+    brightPurple: '#e75699',
+    brightCyan: '#3979bc',
+    brightWhite: '#ffffff',
+    background: '#1d2837',
+    foreground: '#ffffff',
     isDark: true,
   },
   {
@@ -79,6 +113,28 @@ const schemes = [
     foreground: '#eeeeec',
     isDark: true,
   },
+  {
+    name: 'Man Page',
+    black: '#000000',
+    red: '#cc0000',
+    green: '#00a600',
+    yellow: '#999900',
+    blue: '#0000b2',
+    purple: '#b200b2',
+    cyan: '#00a6b2',
+    white: '#cccccc',
+    brightBlack: '#666666',
+    brightRed: '#e50000',
+    brightGreen: '#00d900',
+    brightYellow: '#e5e500',
+    brightBlue: '#0000ff',
+    brightPurple: '#e500e5',
+    brightCyan: '#00e5e5',
+    brightWhite: '#e5e5e5',
+    background: '#fef49c',
+    foreground: '#000000',
+    isDark: false,
+  },
 ];
 
 const mockClipboard = jest.fn((theme) => theme);
@@ -101,17 +157,19 @@ it('Renders the desktop App', async () => {
   expect(getByTestId('theme-list').childNodes.length).toBe(
     schemes.filter((scheme) => scheme.isDark).length
   );
-  expect(getByTestId('selected-title').innerText).toBe(schemes[0].title);
+  expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
   fireEvent.click(getByLabelText('Ubuntu'), {
     target: {value: 'Ubuntu'},
   });
   expect(getByLabelText('Ubuntu').checked).toBe(true);
-  // wait for the child component to be rerendered, i think?
-  wait(() => expect(getByTestId('selected-title').innerText).toBe('Ubuntu'));
+  // // wait for the child component to be rerendered, i think?
+  expect(getByTestId('selected-title').textContent).toBe('Ubuntu');
   fireEvent.click(getByText(/copy theme/i));
   wait(() => expect(mockClipboard).toBeCalled());
   expect(JSON.parse(mockClipboard.mock.calls[0][0]).name).toBe('Ubuntu');
-  expect(JSON.parse(mockClipboard.mock.calls[0][0])).toMatchObject(schemes[2]);
+  expect(JSON.parse(mockClipboard.mock.calls[0][0])).toMatchObject(
+    schemes.find((scheme) => scheme.name === 'Ubuntu')
+  );
   expect(getByText(/copied/i)).toBeTruthy;
   setTimeout(() => {
     expect(getByText(/copy theme/i)).toBeTruthy;
@@ -119,38 +177,23 @@ it('Renders the desktop App', async () => {
 });
 
 it('Renders the mobile App', async () => {
-  // reverse order
+  window.resizeTo(375, 667);
   fetchMock.mock(
     `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`,
-    JSON.stringify([schemes[2], schemes[1], schemes[0]])
+    JSON.stringify(schemes)
   );
-  window.innerWidth = 460;
-  // global.dispatchEvent(new Event('resize'));
   const {getByText, getByTestId, getByLabelText} = render(<Home />);
   await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
-  wait(() => {
-    expect(getByLabelText(/change theme/i).value).toBe('Duotone Dark');
-  });
-  // wait for the child component to be rerendered, i think?
-  wait(() =>
-    expect(getByTestId('selected-title').innerText).toBe('Duotone Dark')
-  );
+  const selectEl = getByLabelText(/change theme/i);
+  expect(selectEl.value).toBe('Duotone Dark');
+  expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
+  // change the theme
   fireEvent.change(getByLabelText(/change theme/i), {
-    target: {value: 'Duotone Dark'},
+    target: {value: 'Galaxy'},
   });
-  expect(getByLabelText(/change theme/i).value).toBe('Duotone Dark');
-  // wait for the child component to be rerendered, i think?
-  wait(() =>
-    expect(getByTestId('selected-title').innerText).toBe('Duotone Dark')
-  );
-  // resize the App
-  window.innerWidth = 1024;
-  global.dispatchEvent(new Event('resize'));
-  wait(() =>
-    expect(getByTestId('theme-list').childNodes.length).toBe(
-      schemes.filter((scheme) => scheme.isDark).length
-    )
-  );
+  expect(getByLabelText(/change theme/i).value).toBe('Galaxy');
+  // // wait for the child component to be rerendered, i think?
+  expect(getByTestId('selected-title').textContent).toBe('Galaxy');
 });
 
 // examples test the colours against the background
