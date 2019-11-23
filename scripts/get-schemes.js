@@ -22,15 +22,15 @@ const schemaJson = [];
 
 request(FILES_PATH, options, (err, response, body) => {
   Promise.all(
-    body.map((file) => {
-      return requestPromise(
+    body.map((file) =>
+      requestPromise(
         `${RAW_PATH}${file.name}`,
         options,
         (err, response, body) => {
           schemaJson.push(body);
         }
-      );
-    })
+      )
+    )
   ).then(() => {
     fs.writeFileSync(
       path.join('public', 'colour-schemes.json'),
