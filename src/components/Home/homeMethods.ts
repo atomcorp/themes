@@ -134,7 +134,6 @@ export const homeReducer = (
         draftState.activeTheme = draftState.filteredThemes[0].name;
         break;
       case 'SET':
-        console.log(action.theme);
         draftState.activeTheme = action.theme;
         // eslint-disable-next-line no-case-declarations
         theme = state.themes.find((theme) => theme.name === action.theme);

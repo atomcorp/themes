@@ -25,6 +25,7 @@
     "new-cap": 0,
     // "indent": ["error", 2],
     "react/prop-types": 0,
+    "no-console": 1,
     "@typescript-eslint/explicit-function-return-type": [
       "error",
       {
