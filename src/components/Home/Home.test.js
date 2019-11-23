@@ -145,6 +145,7 @@ jest.mock('clipboard-polyfill', () => {
 beforeEach(() => {
   fetchMock.reset();
   mockClipboard.mockClear();
+  window.resizeTo(1024, 720);
 });
 
 it('Renders the desktop App', async () => {
@@ -194,6 +195,34 @@ it('Renders the mobile App', async () => {
   expect(getByLabelText(/change theme/i).value).toBe('Galaxy');
   // // wait for the child component to be rerendered, i think?
   expect(getByTestId('selected-title').textContent).toBe('Galaxy');
+});
+
+it('Swaps between light and dark themes', async () => {
+  fetchMock.mock(
+    `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`,
+    JSON.stringify(schemes)
+  );
+  const {getByText, getByTestId, getByLabelText} = render(<Home />);
+  await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
+  expect(getByTestId('theme-list').childNodes.length).toBe(
+    schemes.filter((scheme) => scheme.isDark).length
+  );
+  expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
+  fireEvent.click(getByLabelText(/Light/i), {
+    target: {value: 'LIGHT'},
+  });
+  expect(getByTestId('theme-list').childNodes.length).toBe(
+    schemes.filter((scheme) => !scheme.isDark).length
+  );
+  // when switching, app just gets first light theme
+  expect(getByTestId('selected-title').textContent).toBe('3024 Day');
+  fireEvent.click(getByLabelText(/Dark/i), {
+    target: {value: 'DARK'},
+  });
+  expect(getByTestId('theme-list').childNodes.length).toBe(
+    schemes.filter((scheme) => scheme.isDark).length
+  );
+  expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
 });
 
 // examples test the colours against the background

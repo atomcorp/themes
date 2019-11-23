@@ -147,9 +147,6 @@ export const homeReducer = (
         break;
       case 'SHADE':
         draftState.themeShade = action.themeShade;
-        if (draftState.themeShade === THEME_COLOUR.ANY) {
-          draftState.filteredThemes = state.themes;
-        }
         if (draftState.themeShade === THEME_COLOUR.DARK) {
           draftState.filteredThemes = state.themes.filter(
             (theme) => theme.isDark

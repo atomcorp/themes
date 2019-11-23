@@ -4,7 +4,7 @@ Future:
   ✔ in <Home />, use useReducer for state @done(19-11-21 23:34)
   ✔ match list options colours scheme with selected theme @done(19-11-23 00:01)
   ✔ match light dark with <Header /> @done(19-11-22 23:18)
-  ☐ add tests for light/dark switch
-    ☐ add more themes to these test data to improve tests
-  ☐ fix tests
+  ✔ add tests for light/dark switch @done(19-11-23 17:45)
+    ✔ add more themes to these test data to improve tests @done(19-11-23 17:48)
+  ✔ fix tests @done(19-11-23 17:48)
   ☐ test using animation/transitions when changing themes
