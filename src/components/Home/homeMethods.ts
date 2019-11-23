@@ -125,6 +125,7 @@ export const homeReducer = (
   action: actionTypes
 ): stateType => {
   return produce(state, (draftState: stateType) => {
+    let theme;
     switch (action.type) {
       case 'LOAD':
         draftState.themes = action.themes;
@@ -135,12 +136,12 @@ export const homeReducer = (
         break;
       case 'SET':
         draftState.activeTheme = action.theme;
-        draftState.primaryColour = getRandomColour(
-          state.themes.find((theme) => theme.name === action.theme)
-        );
-        draftState.backgroundColour = state.themes.find(
-          (theme) => theme.name === action.theme
-        ).background;
+        // eslint-disable-next-line no-case-declarations
+        theme = state.themes.find((theme) => theme.name === action.theme);
+        if (theme) {
+          draftState.primaryColour = getRandomColour(theme);
+          draftState.backgroundColour = theme.background;
+        }
         break;
       case 'SIZE':
         draftState.isSmallScreenSize = action.isSmallScreenSize;
@@ -158,14 +159,12 @@ export const homeReducer = (
           );
         }
         draftState.activeTheme = draftState.filteredThemes[0].name;
-        draftState.primaryColour = getRandomColour(
-          state.themes.find(
-            (theme) => theme.name === draftState.filteredThemes[0].name
-          )
-        );
-        draftState.backgroundColour = state.themes.find(
-          (theme) => theme.name === draftState.filteredThemes[0].name
-        ).background;
+        // eslint-disable-next-line no-case-declarations
+        theme = state.themes.find((theme) => theme.name === action.theme);
+        if (theme) {
+          draftState.primaryColour = getRandomColour(theme);
+          draftState.backgroundColour = theme.background;
+        }
         break;
       default:
         break;

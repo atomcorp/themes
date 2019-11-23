@@ -83,12 +83,7 @@ const initThemeObj = {
   foreground: '',
 };
 
-export const parseValidKeys = (
-  theme: themeType | undefined
-): validThemeType => {
-  if (theme == null) {
-    return initThemeObj;
-  }
+export const parseValidKeys = (theme: themeType): validThemeType => {
   return validKeys.reduce(
     (acc, key) => ({
       ...acc,

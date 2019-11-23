@@ -55,7 +55,7 @@ const Console: React.FC<PropsType> = (props) => {
         className={css.button}
         style={{color: props.theme.background, background: props.primaryColour}}
         onClick={() => {
-          if (!textCopied) {
+          if (!textCopied && props.theme) {
             setTextCopied(true);
             clipboard.writeText(
               JSON.stringify(parseValidKeys(props.theme), null, 2)
