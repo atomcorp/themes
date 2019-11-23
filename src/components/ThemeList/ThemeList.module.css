@@ -1,6 +1,4 @@
 .container {
-  background: rgb(254, 244, 156);
-  color: rgb(204, 0, 0);
   padding: 0;
   border: 0;
   margin: 0;
@@ -8,6 +6,7 @@
 
 .theme {
   position: relative;
+  transition: background 0.05s ease-in-out, color 0.05s ease-in-out;
 }
 
 .theme input {

@@ -11,6 +11,10 @@
   }
 }
 
+.sidebar {
+  transition: background 0.05s ease-in-out;
+}
+
 @media (min-width: 769px) {
   .sidebar {
     flex: 1 1 auto;

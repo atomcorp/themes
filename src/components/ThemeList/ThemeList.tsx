@@ -17,14 +17,9 @@ const ThemeList: React.FC<PropsType> = (props) => (
       <div
         key={themeName}
         style={{
-          color:
-            themeName !== props.activeTheme
-              ? props.primaryColour
-              : props.backgroundColour,
+          color: themeName === props.activeTheme ? props.backgroundColour : '',
           background:
-            themeName !== props.activeTheme
-              ? props.backgroundColour
-              : props.primaryColour,
+            themeName === props.activeTheme ? props.primaryColour : '',
         }}
         className={`${css.theme}`}
       >

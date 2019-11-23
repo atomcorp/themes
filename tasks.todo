@@ -7,4 +7,4 @@ Future:
   ✔ add tests for light/dark switch @done(19-11-23 17:45)
     ✔ add more themes to these test data to improve tests @done(19-11-23 17:48)
   ✔ fix tests @done(19-11-23 17:48)
-  ☐ test using animation/transitions when changing themes
+  ✔ test using animation/transitions when changing themes @done(19-11-23 18:02)
