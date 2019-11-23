@@ -15,7 +15,10 @@ const Console: React.FC<PropsType> = (props) => {
   const [textCopied, setTextCopied] = useState(false);
   if (!props.theme) {
     return (
-      <div style={{background: props.backgroundColour}} className={css.loading}>
+      <div
+        style={{background: props.backgroundColour, color: props.primaryColour}}
+        className={css.loading}
+      >
         Loading...
       </div>
     );
