@@ -58,7 +58,11 @@ const Home: React.FC = () => {
         )}
       </aside>
       <section className={css.content}>
-        <Console theme={theme} primaryColour={state.primaryColour} />
+        <Console
+          theme={theme}
+          primaryColour={state.primaryColour}
+          backgroundColour={state.backgroundColour}
+        />
       </section>
     </section>
   );

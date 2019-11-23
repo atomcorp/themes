@@ -8,17 +8,22 @@ import {backgroundKeys, textKeys} from './consoleMethods';
 type PropsType = {
   theme?: themeType;
   primaryColour: string;
+  backgroundColour: string;
 };
 
 const Console: React.FC<PropsType> = (props) => {
   const [textCopied, setTextCopied] = useState(false);
   if (!props.theme) {
-    return <div className={css.loading}>Loading...</div>;
+    return (
+      <div style={{background: props.backgroundColour}} className={css.loading}>
+        Loading...
+      </div>
+    );
   }
   return (
     <section
       className={css.container}
-      style={{background: props.theme.background}}
+      style={{background: props.backgroundColour}}
     >
       <h2
         data-testid="selected-title"
