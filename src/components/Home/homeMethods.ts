@@ -147,7 +147,6 @@ export const homeReducer = (
         draftState.isSmallScreenSize = action.isSmallScreenSize;
         break;
       case 'SHADE':
-        console.log(action);
         draftState.themeShade = action.themeShade;
         if (draftState.themeShade === THEME_COLOUR.DARK) {
           draftState.filteredThemes = state.themes.filter(
