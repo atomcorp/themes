@@ -7,6 +7,8 @@ type PropsType = {
   themeNames: string[];
   activeTheme: string;
   dispatch: React.Dispatch<actionTypes>;
+  primaryColour: string;
+  backgroundColour: string;
 };
 
 const ThemeList: React.FC<PropsType> = (props) => (
@@ -14,9 +16,17 @@ const ThemeList: React.FC<PropsType> = (props) => (
     {props.themeNames.map((themeName) => (
       <div
         key={themeName}
-        className={`${css.theme} ${
-          themeName === props.activeTheme ? css.active : ''
-        }`}
+        style={{
+          color:
+            themeName !== props.activeTheme
+              ? props.primaryColour
+              : props.backgroundColour,
+          background:
+            themeName !== props.activeTheme
+              ? props.backgroundColour
+              : props.primaryColour,
+        }}
+        className={`${css.theme}`}
       >
         <input
           type="radio"

@@ -9,6 +9,42 @@ import {
   actionTypes,
 } from 'types';
 
+type titleColoursType =
+  | 'black'
+  | 'red'
+  | 'green'
+  | 'yellow'
+  | 'blue'
+  | 'purple'
+  | 'cyan'
+  | 'white';
+
+const titleColours: titleColoursType[] = [
+  'black',
+  'red',
+  'green',
+  'yellow',
+  'blue',
+  'purple',
+  'cyan',
+  'white',
+];
+
+export const getRandomColour = (theme: themeType | undefined): string => {
+  if (theme == null) {
+    return '';
+  }
+  const randomisedColours = titleColours.sort(() => Math.random() - 0.5);
+  const accessibleColour = randomisedColours.find(
+    (titleColour: titleColoursType) =>
+      contrast.ratio(theme[titleColour], theme.background) > 4.5
+  );
+  if (accessibleColour != null) {
+    return theme[accessibleColour];
+  }
+  return theme[titleColours[0]];
+};
+
 const compare = (a: themeType, b: themeType): number => {
   if (a.name.toUpperCase() < b.name.toUpperCase()) {
     return -1;
@@ -69,6 +105,8 @@ type stateType = {
   activeTheme: string;
   isSmallScreenSize: boolean;
   themeShade: themeShadeType;
+  primaryColour: string;
+  backgroundColour: string;
 };
 
 export const initialState: stateType = {
@@ -77,6 +115,8 @@ export const initialState: stateType = {
   activeTheme: '',
   isSmallScreenSize: window.innerWidth < 768,
   themeShade: THEME_COLOUR.DARK,
+  primaryColour: '#fded02',
+  backgroundColour: '#090300',
 };
 
 export const homeReducer = (
@@ -94,6 +134,12 @@ export const homeReducer = (
         break;
       case 'SET':
         draftState.activeTheme = action.theme;
+        draftState.primaryColour = getRandomColour(
+          state.themes.find((theme) => theme.name === action.theme)
+        );
+        draftState.backgroundColour = state.themes.find(
+          (theme) => theme.name === action.theme
+        ).background;
         break;
       case 'SIZE':
         draftState.isSmallScreenSize = action.isSmallScreenSize;
@@ -114,6 +160,14 @@ export const homeReducer = (
           );
         }
         draftState.activeTheme = draftState.filteredThemes[0].name;
+        draftState.primaryColour = getRandomColour(
+          state.themes.find(
+            (theme) => theme.name === draftState.filteredThemes[0].name
+          )
+        );
+        draftState.backgroundColour = state.themes.find(
+          (theme) => theme.name === draftState.filteredThemes[0].name
+        ).background;
         break;
       default:
         break;

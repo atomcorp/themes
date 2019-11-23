@@ -7,6 +7,7 @@ import {
 } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import fetchMock from 'fetch-mock';
+import {getRandomColour} from './homeMethods';
 
 // import ResizeObserver from './__mocks__/ResizeObserver.mock';
 import Home from './Home';
@@ -32,6 +33,7 @@ const schemes = [
     brightWhite: '#f7f7f7',
     background: '#f7f7f7',
     foreground: '#4a4543',
+    isDark: false,
   },
   {
     name: 'Duotone Dark',
@@ -53,6 +55,7 @@ const schemes = [
     brightWhite: '#eae5ff',
     background: '#1f1d27',
     foreground: '#b7a1ff',
+    isDark: true,
   },
   {
     name: 'Ubuntu',
@@ -74,6 +77,7 @@ const schemes = [
     brightWhite: '#eeeeec',
     background: '#300a24',
     foreground: '#eeeeec',
+    isDark: true,
   },
 ];
 
@@ -94,7 +98,9 @@ it('Renders the desktop App', async () => {
   );
   const {getByText, getByTestId, getByLabelText} = render(<Home />);
   await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
-  expect(getByTestId('theme-list').childNodes.length).toBe(schemes.length);
+  expect(getByTestId('theme-list').childNodes.length).toBe(
+    schemes.filter((scheme) => scheme.isDark).length
+  );
   expect(getByTestId('selected-title').innerText).toBe(schemes[0].title);
   fireEvent.click(getByLabelText('Ubuntu'), {
     target: {value: 'Ubuntu'},
@@ -122,9 +128,13 @@ it('Renders the mobile App', async () => {
   // global.dispatchEvent(new Event('resize'));
   const {getByText, getByTestId, getByLabelText} = render(<Home />);
   await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
-  expect(getByLabelText(/change theme/i).value).toBe('3024 Day');
+  wait(() => {
+    expect(getByLabelText(/change theme/i).value).toBe('Duotone Dark');
+  });
   // wait for the child component to be rerendered, i think?
-  wait(() => expect(getByTestId('selected-title').innerText).toBe('3024 Day'));
+  wait(() =>
+    expect(getByTestId('selected-title').innerText).toBe('Duotone Dark')
+  );
   fireEvent.change(getByLabelText(/change theme/i), {
     target: {value: 'Duotone Dark'},
   });
@@ -137,6 +147,40 @@ it('Renders the mobile App', async () => {
   window.innerWidth = 1024;
   global.dispatchEvent(new Event('resize'));
   wait(() =>
-    expect(getByTestId('theme-list').childNodes.length).toBe(schemes.length)
+    expect(getByTestId('theme-list').childNodes.length).toBe(
+      schemes.filter((scheme) => scheme.isDark).length
+    )
   );
+});
+
+// examples test the colours against the background
+const goodContrast = {
+  black: '#FFFFFF',
+  red: '#FFFFFF',
+  green: '#FFFFFF',
+  yellow: '#FFFFFF',
+  blue: '#2D818F',
+  purple: '#FFFFFF',
+  cyan: '#FFFFFF',
+  white: '#FFFFFF',
+  background: '#FFFFFF',
+};
+
+const badContrast = {
+  black: '#58B9CA',
+  red: '#58B9CA',
+  green: '#58B9CA',
+  yellow: '#58B9CA',
+  blue: '#58B9CA',
+  purple: '#58B9CA',
+  cyan: '#58B9CA',
+  white: '#58B9CA',
+  background: '#FFFFFF',
+};
+
+it('should produce random colours', () => {
+  expect(getRandomColour()).toBe('');
+  // should be roughly 4.5 accessible
+  expect(getRandomColour(goodContrast)).toBe('#2D818F');
+  expect(getRandomColour(badContrast)).toBe('#58B9CA');
 });

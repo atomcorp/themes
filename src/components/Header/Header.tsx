@@ -2,9 +2,15 @@ import React from 'react';
 
 import css from './Header.module.css';
 
-const Header: React.FC = () => (
+type PropTypes = {
+  primaryColour: string;
+};
+
+const Header: React.FC<PropTypes> = (props) => (
   <>
-    <h1 className={css.title}>Windows Terminal Themes</h1>
+    <h1 style={{color: props.primaryColour}} className={css.title}>
+      Windows Terminal Themes
+    </h1>
     <p className={css.paragraph}>
       Themes for{' '}
       <a

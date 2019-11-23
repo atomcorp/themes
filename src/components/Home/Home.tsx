@@ -25,31 +25,37 @@ const Home: React.FC = () => {
     };
   }, []);
   const theme = state.themes.find((theme) => theme.name === state.activeTheme);
+  const themeNames = state.filteredThemes.map((theme) => theme.name);
   return (
     <section className={css.container}>
       <aside
+        style={{
+          background: state.backgroundColour,
+        }}
         className={`${css.sidebar} ${
           state.themeShade === THEME_COLOUR.DARK ? css.dark : css.light
         }`}
       >
-        <Header />
+        <Header primaryColour={state.primaryColour} />
         <ShadeChoice dispatch={dispatch} themeShade={state.themeShade} />
         {!state.isSmallScreenSize ? (
           <ThemeList
-            themeNames={state.filteredThemes.map((theme) => theme.name)}
+            themeNames={themeNames}
             activeTheme={state.activeTheme}
             dispatch={dispatch}
+            primaryColour={state.primaryColour}
+            backgroundColour={state.backgroundColour}
           />
         ) : (
           <ThemeSelect
-            themeNames={state.filteredThemes.map((theme) => theme.name)}
+            themeNames={themeNames}
             activeTheme={state.activeTheme}
             dispatch={dispatch}
           />
         )}
       </aside>
       <section className={css.content}>
-        <Console theme={theme} />
+        <Console theme={theme} primaryColour={state.primaryColour} />
       </section>
     </section>
   );

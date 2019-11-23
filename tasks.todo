@@ -2,5 +2,9 @@ Future:
   ✔ filter between dark and light themes (use get-contrast) @done(19-11-22 23:05)
   ✔ in <Home />, move useEffect logic outside component @done(19-11-22 22:40)
   ✔ in <Home />, use useReducer for state @done(19-11-21 23:34)
-  ☐ match list options colours scheme with selected theme
+  ✔ match list options colours scheme with selected theme @done(19-11-23 00:01)
   ✔ match light dark with <Header /> @done(19-11-22 23:18)
+  ☐ add tests for light/dark switch
+    ☐ add more themes to these test data to improve tests
+  ☐ fix tests
+  ☐ test using animation/transitions when changing themes

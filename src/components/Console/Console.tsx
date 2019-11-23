@@ -1,20 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import * as clipboard from 'clipboard-polyfill';
 
 import {themeType} from 'types';
 import css from './Console.module.css';
-import {backgroundKeys, textKeys, getRandomColour} from './consoleMethods';
+import {backgroundKeys, textKeys} from './consoleMethods';
 
 type PropsType = {
   theme?: themeType;
+  primaryColour: string;
 };
 
 const Console: React.FC<PropsType> = (props) => {
   const [textCopied, setTextCopied] = useState(false);
-  const [randomColour, setRandomColour] = useState('');
-  useEffect(() => {
-    setRandomColour(getRandomColour(props.theme));
-  }, [props.theme]);
   if (!props.theme) {
     return <div className={css.loading}>Loading...</div>;
   }
@@ -25,11 +22,8 @@ const Console: React.FC<PropsType> = (props) => {
     >
       <h2
         data-testid="selected-title"
-        onClick={() => {
-          setRandomColour(getRandomColour(props.theme));
-        }}
         className={css.name}
-        style={{color: randomColour}}
+        style={{color: props.primaryColour}}
       >
         {props.theme.name}
       </h2>
@@ -51,7 +45,7 @@ const Console: React.FC<PropsType> = (props) => {
       </div>
       <button
         className={css.button}
-        style={{color: props.theme.background, background: randomColour}}
+        style={{color: props.theme.background, background: props.primaryColour}}
         onClick={() => {
           if (!textCopied) {
             setTextCopied(true);
