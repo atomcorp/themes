@@ -1,4 +1,4 @@
-export type initThemeType = {
+export type validThemeType = {
   name: string;
   black: string;
   red: string;
@@ -20,7 +20,29 @@ export type initThemeType = {
   foreground: string;
 };
 
-export type themeType = themeType & {isDark: boolean};
+export type validKeysType = Array<
+  | 'name'
+  | 'black'
+  | 'red'
+  | 'green'
+  | 'yellow'
+  | 'blue'
+  | 'purple'
+  | 'cyan'
+  | 'white'
+  | 'brightBlack'
+  | 'brightRed'
+  | 'brightGreen'
+  | 'brightYellow'
+  | 'brightBlue'
+  | 'brightPurple'
+  | 'brightCyan'
+  | 'brightWhite'
+  | 'background'
+  | 'foreground'
+>;
+
+export type themeType = validThemeType & {isDark: boolean};
 
 export type backgroundKeyType =
   | 'black'

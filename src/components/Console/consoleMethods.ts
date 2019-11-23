@@ -1,4 +1,10 @@
-import {backgroundKeyType, textKeyType} from 'types';
+import {
+  backgroundKeyType,
+  textKeyType,
+  validThemeType,
+  themeType,
+  validKeysType,
+} from 'types';
 
 export const backgroundKeys: backgroundKeyType[] = [
   'background',
@@ -31,3 +37,65 @@ export const textKeys: textKeyType[] = [
   'white',
   'brightWhite',
 ];
+
+const validKeys: validKeysType = [
+  'name',
+  'black',
+  'red',
+  'green',
+  'yellow',
+  'blue',
+  'purple',
+  'cyan',
+  'white',
+  'brightBlack',
+  'brightRed',
+  'brightGreen',
+  'brightYellow',
+  'brightBlue',
+  'brightPurple',
+  'brightCyan',
+  'brightWhite',
+  'background',
+  'foreground',
+];
+
+// this just keeps Typescript happy
+const initThemeObj = {
+  name: '',
+  black: '',
+  red: '',
+  green: '',
+  yellow: '',
+  blue: '',
+  purple: '',
+  cyan: '',
+  white: '',
+  brightBlack: '',
+  brightRed: '',
+  brightGreen: '',
+  brightYellow: '',
+  brightBlue: '',
+  brightPurple: '',
+  brightCyan: '',
+  brightWhite: '',
+  background: '',
+  foreground: '',
+};
+
+export const parseValidKeys = (
+  theme: themeType | undefined
+): validThemeType => {
+  if (theme == null) {
+    return initThemeObj;
+  }
+  return validKeys.reduce(
+    (acc, key) => ({
+      ...acc,
+      ...{
+        [key]: theme[key],
+      },
+    }),
+    initThemeObj
+  );
+};

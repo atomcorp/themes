@@ -3,7 +3,7 @@ import * as clipboard from 'clipboard-polyfill';
 
 import {themeType} from 'types';
 import css from './Console.module.css';
-import {backgroundKeys, textKeys} from './consoleMethods';
+import {backgroundKeys, textKeys, parseValidKeys} from './consoleMethods';
 
 type PropsType = {
   theme?: themeType;
@@ -57,7 +57,9 @@ const Console: React.FC<PropsType> = (props) => {
         onClick={() => {
           if (!textCopied) {
             setTextCopied(true);
-            clipboard.writeText(JSON.stringify(props.theme, null, 2));
+            clipboard.writeText(
+              JSON.stringify(parseValidKeys(props.theme), null, 2)
+            );
             setTimeout(() => {
               setTextCopied(false);
             }, 500);

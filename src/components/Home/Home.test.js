@@ -24,6 +24,7 @@ beforeAll(() => {
   };
 });
 
+// theres 3 darks themes and 2 light themes
 const schemes = [
   {
     name: 'Duotone Dark',
@@ -45,7 +46,6 @@ const schemes = [
     brightWhite: '#eae5ff',
     background: '#1f1d27',
     foreground: '#b7a1ff',
-    isDark: true,
   },
   {
     name: '3024 Day',
@@ -67,7 +67,6 @@ const schemes = [
     brightWhite: '#f7f7f7',
     background: '#f7f7f7',
     foreground: '#4a4543',
-    isDark: false,
   },
   {
     name: 'Galaxy',
@@ -89,7 +88,6 @@ const schemes = [
     brightWhite: '#ffffff',
     background: '#1d2837',
     foreground: '#ffffff',
-    isDark: true,
   },
   {
     name: 'Ubuntu',
@@ -111,7 +109,6 @@ const schemes = [
     brightWhite: '#eeeeec',
     background: '#300a24',
     foreground: '#eeeeec',
-    isDark: true,
   },
   {
     name: 'Man Page',
@@ -133,7 +130,6 @@ const schemes = [
     brightWhite: '#e5e5e5',
     background: '#fef49c',
     foreground: '#000000',
-    isDark: false,
   },
 ];
 
@@ -155,9 +151,7 @@ it('Renders the desktop App', async () => {
   );
   const {getByText, getByTestId, getByLabelText} = render(<Home />);
   await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
-  expect(getByTestId('theme-list').childNodes.length).toBe(
-    schemes.filter((scheme) => scheme.isDark).length
-  );
+  expect(getByTestId('theme-list').childNodes.length).toBe(3);
   expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
   fireEvent.click(getByLabelText('Ubuntu'), {
     target: {value: 'Ubuntu'},
@@ -204,24 +198,18 @@ it('Swaps between light and dark themes', async () => {
   );
   const {getByText, getByTestId, getByLabelText} = render(<Home />);
   await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
-  expect(getByTestId('theme-list').childNodes.length).toBe(
-    schemes.filter((scheme) => scheme.isDark).length
-  );
+  expect(getByTestId('theme-list').childNodes.length).toBe(3);
   expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
   fireEvent.click(getByLabelText(/Light/i), {
     target: {value: 'LIGHT'},
   });
-  expect(getByTestId('theme-list').childNodes.length).toBe(
-    schemes.filter((scheme) => !scheme.isDark).length
-  );
+  expect(getByTestId('theme-list').childNodes.length).toBe(2);
   // when switching, app just gets first light theme
   expect(getByTestId('selected-title').textContent).toBe('3024 Day');
   fireEvent.click(getByLabelText(/Dark/i), {
     target: {value: 'DARK'},
   });
-  expect(getByTestId('theme-list').childNodes.length).toBe(
-    schemes.filter((scheme) => scheme.isDark).length
-  );
+  expect(getByTestId('theme-list').childNodes.length).toBe(3);
   expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
 });
 
