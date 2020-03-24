@@ -8,3 +8,9 @@ Future:
     ✔ add more themes to these test data to improve tests @done(19-11-23 17:48)
   ✔ fix tests @done(19-11-23 17:48)
   ✔ test using animation/transitions when changing themes @done(19-11-23 18:02)
+  ☐ update dependencies
+  ☐ use a better auth for Git API
+  ☐ have some script to run `scripts/get-schemes` automatically, each week or so
+  ☐ add a custom theme json file to merge with the one generated from item2 themes
+  ☐ add Cypress testing
+  ☐ Just import JSON theme, don't bother fetching
