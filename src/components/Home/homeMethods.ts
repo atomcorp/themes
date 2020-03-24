@@ -81,7 +81,7 @@ export const request = async (
 ): Promise<void> => {
   try {
     const response = await fetch(
-      `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`
+      `${process.env.REACT_APP_PUBLIC_PATH ?? ''}/colour-schemes.json`
     );
     const json = await response.json();
     dispatch({

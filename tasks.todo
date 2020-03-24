@@ -14,3 +14,4 @@ Future:
   ☐ add a custom theme json file to merge with the one generated from item2 themes
   ☐ add Cypress testing
   ☐ Just import JSON theme, don't bother fetching
+  ☐ Add routes, or change URL for each theme for sharing
