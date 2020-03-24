@@ -1,6 +1,6 @@
 import contrast from 'get-contrast';
 import ResizeObserver from 'resize-observer-polyfill';
-import produce from 'immer';
+import immer from 'immer';
 
 import {
   themeType,
@@ -66,7 +66,7 @@ const assignColourType = (themes: themeType[]): themeType[] => {
 export const screenSizeObserver = (
   dispatch: React.Dispatch<actionTypes>
 ): ResizeObserver => {
-  return new ResizeObserver((entries) => {
+  return new ResizeObserver((entries: ResizeObserverEntry[]) => {
     const {width} = entries[0].contentRect;
     if (width > 768) {
       dispatch({type: 'SIZE', isSmallScreenSize: false});
@@ -80,8 +80,13 @@ export const request = async (
   dispatch: React.Dispatch<actionTypes>
 ): Promise<void> => {
   try {
+    // typescript eslint doesn't support nullish operators (??) currently
     const response = await fetch(
-      `${process.env.REACT_APP_PUBLIC_PATH ?? ''}/colour-schemes.json`
+      `${
+        process.env.REACT_APP_PUBLIC_PATH != null
+          ? process.env.REACT_APP_PUBLIC_PATH
+          : ''
+      }/colour-schemes.json`
     );
     const json = await response.json();
     dispatch({
@@ -123,7 +128,7 @@ export const homeReducer = (
   state: stateType,
   action: actionTypes
 ): stateType => {
-  return produce(state, (draftState: stateType) => {
+  return immer(state, (draftState: stateType) => {
     let theme;
     switch (action.type) {
       case 'LOAD':
