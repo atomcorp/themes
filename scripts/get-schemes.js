@@ -3,6 +3,7 @@ const request = require('request');
 const fs = require('fs');
 const path = require('path');
 const requestPromise = require('request-promise-native');
+const customSchemaJson = require('../src/custom-colour-schemes.json');
 
 const options = {
   json: true,
@@ -18,7 +19,7 @@ const FILES_PATH =
 const RAW_PATH =
   'https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/windowsterminal/';
 
-const schemaJson = [];
+const iTerm2SchemaJson = [];
 
 request(FILES_PATH, options, (err, response, body) => {
   Promise.all(
@@ -27,14 +28,15 @@ request(FILES_PATH, options, (err, response, body) => {
         `${RAW_PATH}${file.name}`,
         options,
         (err, response, body) => {
-          schemaJson.push(body);
+          iTerm2SchemaJson.push(body);
         }
       )
     )
   ).then(() => {
+    const combinedSchemaJson = [...iTerm2SchemaJson, ...customSchemaJson];
     fs.writeFileSync(
       path.join('public', 'colour-schemes.json'),
-      JSON.stringify(schemaJson, null, 2)
+      JSON.stringify(combinedSchemaJson, null, 2)
     );
   });
 });
