@@ -45,7 +45,7 @@ export const getRandomColour = (theme: themeType | undefined): string => {
   return theme[titleColours[0]];
 };
 
-const compare = (a: themeType, b: themeType): number => {
+export const compare = (a: themeType, b: themeType): number => {
   if (a.name.toUpperCase() < b.name.toUpperCase()) {
     return -1;
   }
@@ -56,7 +56,7 @@ const compare = (a: themeType, b: themeType): number => {
   return 0;
 };
 
-const assignColourType = (themes: themeType[]): themeType[] => {
+export const assignColourType = (themes: themeType[]): themeType[] => {
   return themes.map((theme) => {
     theme.isDark = contrast.ratio(theme.background, '#000') < 8;
     return theme;
@@ -74,28 +74,6 @@ export const screenSizeObserver = (
       dispatch({type: 'SIZE', isSmallScreenSize: true});
     }
   });
-};
-
-export const request = async (
-  dispatch: React.Dispatch<actionTypes>
-): Promise<void> => {
-  try {
-    // typescript eslint doesn't support nullish operators (??) currently
-    const response = await fetch(
-      `${
-        process.env.REACT_APP_PUBLIC_PATH != null
-          ? process.env.REACT_APP_PUBLIC_PATH
-          : ''
-      }/colour-schemes.json`
-    );
-    const json = await response.json();
-    dispatch({
-      type: 'LOAD',
-      themes: assignColourType(json.sort(compare)),
-    });
-  } catch (err) {
-    console.error(err);
-  }
 };
 
 export const THEME_COLOUR: themeShadeObjectType = {

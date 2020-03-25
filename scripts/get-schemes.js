@@ -33,7 +33,7 @@ request(FILES_PATH, options, (err, response, body) => {
     )
   ).then(() => {
     fs.writeFileSync(
-      path.join('public', 'colour-schemes.json'),
+      path.join('src', 'colour-schemes.json'),
       JSON.stringify(schemaJson, null, 2)
     );
   });
