@@ -1,6 +1,6 @@
 import contrast from 'get-contrast';
 import ResizeObserver from 'resize-observer-polyfill';
-import produce from 'immer';
+import immer from 'immer';
 
 import {
   themeType,
@@ -45,7 +45,7 @@ export const getRandomColour = (theme: themeType | undefined): string => {
   return theme[titleColours[0]];
 };
 
-const compare = (a: themeType, b: themeType): number => {
+export const compare = (a: themeType, b: themeType): number => {
   if (a.name.toUpperCase() < b.name.toUpperCase()) {
     return -1;
   }
@@ -56,7 +56,7 @@ const compare = (a: themeType, b: themeType): number => {
   return 0;
 };
 
-const assignColourType = (themes: themeType[]): themeType[] => {
+export const assignColourType = (themes: themeType[]): themeType[] => {
   return themes.map((theme) => {
     theme.isDark = contrast.ratio(theme.background, '#000') < 8;
     return theme;
@@ -66,7 +66,7 @@ const assignColourType = (themes: themeType[]): themeType[] => {
 export const screenSizeObserver = (
   dispatch: React.Dispatch<actionTypes>
 ): ResizeObserver => {
-  return new ResizeObserver((entries) => {
+  return new ResizeObserver((entries: ResizeObserverEntry[]) => {
     const {width} = entries[0].contentRect;
     if (width > 768) {
       dispatch({type: 'SIZE', isSmallScreenSize: false});
@@ -74,23 +74,6 @@ export const screenSizeObserver = (
       dispatch({type: 'SIZE', isSmallScreenSize: true});
     }
   });
-};
-
-export const request = async (
-  dispatch: React.Dispatch<actionTypes>
-): Promise<void> => {
-  try {
-    const response = await fetch(
-      `${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`
-    );
-    const json = await response.json();
-    dispatch({
-      type: 'LOAD',
-      themes: assignColourType(json.sort(compare)),
-    });
-  } catch (err) {
-    console.error(err);
-  }
 };
 
 export const THEME_COLOUR: themeShadeObjectType = {
@@ -123,7 +106,7 @@ export const homeReducer = (
   state: stateType,
   action: actionTypes
 ): stateType => {
-  return produce(state, (draftState: stateType) => {
+  return immer(state, (draftState: stateType) => {
     let theme;
     switch (action.type) {
       case 'LOAD':

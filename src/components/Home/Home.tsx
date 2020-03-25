@@ -5,14 +5,17 @@ import ThemeList from 'components/ThemeList/ThemeList';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 import Header from 'components/Header/Header';
 import ShadeChoice from 'components/ShadeChoice/ShadeChoice';
+import themeJson from 'colour-schemes.json';
 import css from './Home.module.css';
 import {
   homeReducer,
   initialState,
   screenSizeObserver,
-  request,
+  compare,
   THEME_COLOUR,
+  assignColourType,
 } from './homeMethods';
+import {themeType} from 'types';
 
 const Home: React.FC = () => {
   const [state, dispatch] = useReducer(homeReducer, {
@@ -20,7 +23,11 @@ const Home: React.FC = () => {
     ...{isSmallScreenSize: window.innerWidth < 768},
   });
   useEffect(() => {
-    request(dispatch);
+    const themes = themeJson as themeType[];
+    dispatch({
+      type: 'LOAD',
+      themes: assignColourType(themes.sort(compare)),
+    });
     const resizer = screenSizeObserver(dispatch);
     resizer.observe(document.body);
     return () => {
