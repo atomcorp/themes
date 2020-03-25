@@ -58,8 +58,10 @@ export const compare = (a: themeType, b: themeType): number => {
 
 export const assignColourType = (themes: themeType[]): themeType[] => {
   return themes.map((theme) => {
-    theme.isDark = contrast.ratio(theme.background, '#000') < 8;
-    return theme;
+    return {
+      ...theme,
+      isDark: contrast.ratio(theme.background, '#000') < 8,
+    };
   });
 };
 
