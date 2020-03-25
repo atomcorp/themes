@@ -11,7 +11,6 @@ import {
   homeReducer,
   initialState,
   screenSizeObserver,
-  compare,
   THEME_COLOUR,
   assignColourType,
 } from './homeMethods';
@@ -26,7 +25,7 @@ const Home: React.FC = () => {
     const themes = themeJson as themeType[];
     dispatch({
       type: 'LOAD',
-      themes: assignColourType(themes.sort(compare)),
+      themes: assignColourType(themes),
     });
     const resizer = screenSizeObserver(dispatch);
     resizer.observe(document.body);

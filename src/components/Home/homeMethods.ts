@@ -45,17 +45,6 @@ export const getRandomColour = (theme: themeType | undefined): string => {
   return theme[titleColours[0]];
 };
 
-export const compare = (a: themeType, b: themeType): number => {
-  if (a.name.toUpperCase() < b.name.toUpperCase()) {
-    return -1;
-  }
-  if (a.name.toUpperCase() > b.name.toUpperCase()) {
-    return 1;
-  }
-  // a must be equal to b
-  return 0;
-};
-
 export const assignColourType = (themes: themeType[]): themeType[] => {
   return themes.map((theme) => {
     return {
