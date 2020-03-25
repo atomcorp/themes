@@ -33,7 +33,11 @@ request(FILES_PATH, options, (err, response, body) => {
       )
     )
   ).then(() => {
-    const combinedSchemaJson = [...iTerm2SchemaJson, ...customSchemaJson];
+    const combinedSchemaJson = [...iTerm2SchemaJson, ...customSchemaJson].sort(
+      (a, b) => {
+        return a.name > b.name ? 1 : -1;
+      }
+    );
     fs.writeFileSync(
       path.join('public', 'colour-schemes.json'),
       JSON.stringify(combinedSchemaJson, null, 2)
