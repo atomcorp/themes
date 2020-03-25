@@ -41,14 +41,14 @@ const Header: React.FC<PropTypes> = (props) => (
       , so thanks to them.
     </p>
     <p className={css.paragraph}>
-      <div
+      <span
         className={css.download}
         onClick={() => {
           saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
         }}
       >
         Download all the themes
-      </div>
+      </span>
       {' | '}
       <a
         target="_blank"
