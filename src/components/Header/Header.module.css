@@ -10,3 +10,9 @@
 .paragraph {
   padding: 0 10px;
 }
+
+.download {
+  color: #7fd8ff;
+  text-decoration: underline;
+  cursor: pointer;
+}

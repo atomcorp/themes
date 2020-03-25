@@ -1,10 +1,16 @@
 import React from 'react';
+import {saveAs} from 'file-saver';
 
+import themeJson from 'colour-schemes.json';
 import css from './Header.module.css';
 
 type PropTypes = {
   primaryColour: string;
 };
+
+const themeBlob = new Blob([JSON.stringify(themeJson, null, 2)], {
+  type: 'application/json',
+});
 
 const Header: React.FC<PropTypes> = (props) => (
   <>
@@ -35,13 +41,14 @@ const Header: React.FC<PropTypes> = (props) => (
       , so thanks to them.
     </p>
     <p className={css.paragraph}>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href={`${process.env.REACT_APP_PUBLIC_PATH}/colour-schemes.json`}
+      <div
+        className={css.download}
+        onClick={() => {
+          saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
+        }}
       >
         Download all the themes
-      </a>
+      </div>
       {' | '}
       <a
         target="_blank"

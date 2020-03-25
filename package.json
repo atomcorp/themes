@@ -9,6 +9,7 @@
     "@types/react": "16.9.25",
     "@types/react-dom": "16.9.5",
     "clipboard-polyfill": "^2.8.6",
+    "file-saver": "^2.0.2",
     "get-contrast": "^2.0.0",
     "immer": "^6.0.2",
     "react": "^16.13.1",
@@ -44,6 +45,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^10.0.1",
+    "@types/file-saver": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
     "eslint": "^6.8.0",
