@@ -21,7 +21,6 @@
   "rules": {
     "quotes": [1, "single", {"avoidEscape": true}],
     "arrow-parens": 1,
-    "comma-dangle": [2, "always-multiline"],
     "new-cap": 0,
     // "indent": ["error", 2],
     "react/prop-types": 0,
