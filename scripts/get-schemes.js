@@ -35,12 +35,12 @@ request(FILES_PATH, options, (err, response, body) => {
   ).then(() => {
     const combinedSchemaJson = [...iTerm2SchemaJson, ...customSchemaJson].sort(
       (a, b) => {
-        return a.name > b.name ? 1 : -1;
+        return a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1;
       }
     );
     fs.writeFileSync(
       path.join('src', 'colour-schemes.json'),
-      JSON.stringify(schemaJson, null, 2)
+      JSON.stringify(combinedSchemaJson, null, 2)
     );
   });
 });
