@@ -15,4 +15,8 @@
   color: #7fd8ff;
   text-decoration: underline;
   cursor: pointer;
+  background: transparent;
+  border: 0;
+  font-size: inherit;
+  padding: 0;
 }
