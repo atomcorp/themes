@@ -53,6 +53,7 @@
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^2.2.0",
+    "got": "^10.7.0",
     "mq-polyfill": "^1.1.8",
     "prettier": "^2.0.2",
     "react-test-renderer": "^16.13.1",
