@@ -2,7 +2,7 @@ Now:
   ✔ update dependencies @done(20-03-25 00:04)
   ✔ Just import JSON theme, don't bother fetching @done(20-03-25 00:06)
   ✔ Update tests, check if still need REACT_APP_PUBLIC_PATH @done(20-03-25 21:54)
-  ☐ Fix save/open all themes json
+  ✔ Fix save/open all themes json @done(20-03-27 17:13)
   
   Future:
   ✔ filter between dark and light themes (use get-contrast) @done(19-11-22 23:05)
@@ -14,8 +14,8 @@ Now:
   ✔ add more themes to these test data to improve tests @done(19-11-23 17:48)
   ✔ fix tests @done(19-11-23 17:48)
   ✔ test using animation/transitions when changing themes @done(19-11-23 18:02)
-  ☐ use a better auth for Git API
+  ✔ use a better auth for Git API @done(20-03-27 17:13)
   ☐ have some script to run `scripts/get-schemes` automatically, each week or so
   ☐ add Cypress testing, and remove any Jest UI testing
   ☐ Add routes, or change URL for each theme for sharing
-  ☐ add a custom theme json file to merge with the one generated from item2 themes
+  ✔ add a custom theme json file to merge with the one generated from item2 themes @done(20-03-27 17:24)
