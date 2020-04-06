@@ -24,7 +24,7 @@
     "test": "react-scripts test --coverage --watchAll",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run themes",
     "themes": "node scripts/get-schemes"
   },
   "eslintConfig": {
