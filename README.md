@@ -2,7 +2,7 @@
 
 Preview and copy themes for the new [Windows Terminal (Preview)](https://github.com/microsoft/terminal).
 
-![Preview of the Windows Terminal Themes](https://github.com/atomcorp/themes/master/public/preview.png)
+![Preview of the Windows Terminal Themes](https://github.com/atomcorp/themes/raw/master/public/preview.png)
 
 [https://atomcorp.github.io/themes/](https://atomcorp.github.io/themes/)
 

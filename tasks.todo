@@ -4,7 +4,7 @@ Now:
   ✔ Update tests, check if still need REACT_APP_PUBLIC_PATH @done(20-03-25 21:54)
   ✔ Fix save/open all themes json @done(20-03-27 17:13)
   
-  Future:
+Future:
   ✔ filter between dark and light themes (use get-contrast) @done(19-11-22 23:05)
   ✔ in <Home />, move useEffect logic outside component @done(19-11-22 22:40)
   ✔ in <Home />, use useReducer for state @done(19-11-21 23:34)
@@ -19,3 +19,6 @@ Now:
   ☐ add Cypress testing, and remove any Jest UI testing
   ☐ Add routes, or change URL for each theme for sharing
   ✔ add a custom theme json file to merge with the one generated from item2 themes @done(20-03-27 17:24)
+
+Testing:
+  ☐ check tabbing and accesibility works
