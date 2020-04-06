@@ -19,6 +19,7 @@ Future:
   ☐ add Cypress testing, and remove any Jest UI testing
   ☐ Add routes, or change URL for each theme for sharing
   ✔ add a custom theme json file to merge with the one generated from item2 themes @done(20-03-27 17:24)
+  ✔ Fix readme.md @done(20-04-06 21:29)
 
 Testing:
   ☐ check tabbing and accesibility works

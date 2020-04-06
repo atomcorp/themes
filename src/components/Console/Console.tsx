@@ -52,7 +52,8 @@ const Console: React.FC<PropsType> = (props) => {
         )}
       </div>
       <button
-        className={css.button}
+        data-text={textCopied ? 'Copied!' : 'Copy Theme'}
+        className={`${css.button}${textCopied ? ` ${css.copied}` : ''}`}
         style={{color: props.theme.background, background: props.primaryColour}}
         onClick={() => {
           if (!textCopied && props.theme) {
@@ -66,7 +67,7 @@ const Console: React.FC<PropsType> = (props) => {
           }
         }}
       >
-        {!textCopied ? 'Copy Theme' : 'Copied!'}
+        Copy Theme
       </button>
     </section>
   );
