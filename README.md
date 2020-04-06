@@ -52,5 +52,6 @@ This file is ignored by `.gitignore`, so it won't be shared
 
 ## Notes
 
+- aims are to be simple and accessible
 - this project is based around: React (create-react-app), TypeScript, Node, Github Pages, immer and CSS Grid
 - the following projects were really useful [clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill), [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill), [file-saver](https://github.com/eligrey/FileSaver.js) and [get-contrast](https://github.com/johno/get-contrast). Thanks!

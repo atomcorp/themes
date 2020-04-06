@@ -26,8 +26,16 @@ const Header: React.FC<PropTypes> = (props) => (
       >
         Windows Terminal (Preview)
       </a>
-      . To add new themes, open up settings (profile.json), copy a theme into
-      schemes and then reference the name in profiles.
+    </p>
+    <p className={css.paragraph}>
+      For how to use the themes see the{' '}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/atomcorp/themes#how-to-use-the-themes"
+      >
+        help section on GitHub
+      </a>
     </p>
     <p className={css.paragraph}>
       The themes come from{' '}
