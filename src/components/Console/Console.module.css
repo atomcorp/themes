@@ -59,7 +59,7 @@
 .button {
   border: 0;
   padding: 10px 30px;
-  margin: 20px 0 0;
+  margin: 20px 5px 0;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -76,6 +76,7 @@
   padding: 10px 30px;
   background: inherit;
   opacity: 0;
+  border: inherit;
 }
 
 @keyframes mymove {
@@ -101,4 +102,18 @@
   height: 100%;
   justify-content: center;
   align-items: center;
+}
+
+.share {
+  padding: 7px 27px;
+  border: 3px solid;
+}
+
+.share:before {
+  /* this is just to offset the space of the border */
+  padding: 7px 27px;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
 }

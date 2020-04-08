@@ -12,7 +12,8 @@ type PropsType = {
 };
 
 const Console: React.FC<PropsType> = (props) => {
-  const [textCopied, setTextCopied] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [shared, setShared] = useState(false);
   if (!props.theme) {
     return (
       <div
@@ -51,24 +52,50 @@ const Console: React.FC<PropsType> = (props) => {
           ))
         )}
       </div>
-      <button
-        data-text={textCopied ? 'Copied!' : 'Copy Theme'}
-        className={`${css.button}${textCopied ? ` ${css.copied}` : ''}`}
-        style={{color: props.theme.background, background: props.primaryColour}}
-        onClick={() => {
-          if (!textCopied && props.theme) {
-            setTextCopied(true);
-            clipboard.writeText(
-              JSON.stringify(parseValidKeys(props.theme), null, 2)
-            );
-            setTimeout(() => {
-              setTextCopied(false);
-            }, 500);
-          }
-        }}
-      >
-        Copy Theme
-      </button>
+      <div className={css.buttons}>
+        <button
+          data-text={copied ? 'Copied!' : 'Copy Theme'}
+          className={`${css.button}${copied ? ` ${css.copied}` : ''}`}
+          style={{
+            color: props.theme.background,
+            background: props.primaryColour,
+          }}
+          onClick={() => {
+            if (!copied && props.theme) {
+              setCopied(true);
+              clipboard.writeText(
+                JSON.stringify(parseValidKeys(props.theme), null, 2)
+              );
+              setTimeout(() => {
+                setCopied(false);
+              }, 500);
+            }
+          }}
+        >
+          Copy Theme
+        </button>
+        <button
+          data-text={shared ? 'Copied!' : 'Share Theme'}
+          className={`${css.button} ${css.share} ${
+            shared ? ` ${css.copied}` : ''
+          }`}
+          style={{
+            color: props.primaryColour,
+            borderColor: props.primaryColour,
+            background: props.theme.background,
+          }}
+          onClick={() => {
+            if (!shared) {
+              setShared(true);
+              setTimeout(() => {
+                setShared(false);
+              }, 500);
+            }
+          }}
+        >
+          Share theme
+        </button>
+      </div>
     </section>
   );
 };
