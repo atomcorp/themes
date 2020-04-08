@@ -88,6 +88,11 @@ const Console: React.FC<PropsType> = (props) => {
             if (!shared) {
               setShared(true);
               setTimeout(() => {
+                if (props.theme != null) {
+                  clipboard.writeText(
+                    `${window.location.origin}${window.location.pathname}?theme=${props.theme.name}`
+                  );
+                }
                 setShared(false);
               }, 500);
             }

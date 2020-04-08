@@ -54,6 +54,17 @@ export const assignColourType = (themes: themeType[]): themeType[] => {
   });
 };
 
+export const returnInitialTheme = (): string | null => {
+  if (window.location.search.length > 0) {
+    const params = new URLSearchParams(window.location.search);
+    const themeName = params.get('theme');
+    if (themeName != null) {
+      return themeName;
+    }
+  }
+  return null;
+};
+
 export const screenSizeObserver = (
   dispatch: React.Dispatch<actionTypes>
 ): ResizeObserver => {
@@ -102,6 +113,21 @@ export const homeReducer = (
     switch (action.type) {
       case 'LOAD':
         draftState.themes = action.themes;
+        if (action.initialTheme != null) {
+          const foundTheme = action.themes.find(
+            (theme: themeType) => theme.name === action.initialTheme
+          );
+          if (foundTheme != null) {
+            draftState.filteredThemes = action.themes.filter(
+              (theme: themeType) => theme.isDark === foundTheme.isDark
+            );
+            draftState.activeTheme = foundTheme.name;
+            draftState.themeShade = foundTheme.isDark ? 'DARK' : 'LIGHT';
+            draftState.primaryColour = getRandomColour(foundTheme);
+            draftState.backgroundColour = foundTheme.background;
+            break;
+          }
+        }
         draftState.filteredThemes = action.themes.filter(
           (theme: themeType) => theme.isDark
         );

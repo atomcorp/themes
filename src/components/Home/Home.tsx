@@ -13,6 +13,7 @@ import {
   screenSizeObserver,
   THEME_COLOUR,
   assignColourType,
+  returnInitialTheme,
 } from './homeMethods';
 import {themeType} from 'types';
 
@@ -23,9 +24,11 @@ const Home: React.FC = () => {
   });
   useEffect(() => {
     const themes = themeJson as themeType[];
+    const initialTheme = returnInitialTheme();
     dispatch({
       type: 'LOAD',
       themes: assignColourType(themes),
+      initialTheme: initialTheme,
     });
     const resizer = screenSizeObserver(dispatch);
     resizer.observe(document.body);

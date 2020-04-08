@@ -80,6 +80,7 @@ type themeShadeObjectType = {LIGHT: 'LIGHT'; DARK: 'DARK'; ANY: 'ANY'};
 type loadActionType = {
   type: 'LOAD';
   themes: themeType[];
+  initialTheme?: string;
 };
 
 type setThemeType = {
