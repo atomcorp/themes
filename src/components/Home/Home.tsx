@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer} from 'react';
+import React, {useEffect, useReducer, useRef, useCallback} from 'react';
 
 import Console from 'components/Console/Console';
 import ThemeList from 'components/ThemeList/ThemeList';
@@ -18,13 +18,36 @@ import {
 import {themeType} from 'types';
 
 const Home: React.FC = () => {
+  const sidebarRef = useRef<HTMLElement>(null);
   const [state, dispatch] = useReducer(homeReducer, {
     ...initialState,
     ...{isSmallScreenSize: window.innerWidth < 768},
   });
+  const initialTheme = returnInitialTheme();
+  const scrollToLabel = useCallback((): void => {
+    // scroll to the initialTheme, if used
+
+    if (
+      initialTheme != null &&
+      window.innerWidth >= 768 &&
+      sidebarRef.current != null
+    ) {
+      const labelEl = sidebarRef.current.querySelector(
+        `[for="${initialTheme}"]`
+      );
+      if (labelEl != null) {
+        const labelElDimensions = labelEl.getBoundingClientRect();
+        const sidebarViewHeight = sidebarRef.current.offsetHeight;
+        const sidebarScrollHeight = sidebarRef.current.scrollHeight;
+        sidebarRef.current.scrollTop =
+          labelElDimensions.top > sidebarScrollHeight - sidebarViewHeight
+            ? labelElDimensions.top
+            : labelElDimensions.top - sidebarViewHeight / 2;
+      }
+    }
+  }, []);
   useEffect(() => {
     const themes = themeJson as themeType[];
-    const initialTheme = returnInitialTheme();
     dispatch({
       type: 'LOAD',
       themes: assignColourType(themes),
@@ -41,6 +64,7 @@ const Home: React.FC = () => {
   return (
     <section className={css.container}>
       <aside
+        ref={sidebarRef}
         style={{
           background: state.backgroundColour,
         }}
@@ -51,13 +75,20 @@ const Home: React.FC = () => {
         <Header primaryColour={state.primaryColour} />
         <ShadeChoice dispatch={dispatch} themeShade={state.themeShade} />
         {!state.isSmallScreenSize ? (
-          <ThemeList
-            themeNames={themeNames}
-            activeTheme={state.activeTheme}
-            dispatch={dispatch}
-            primaryColour={state.primaryColour}
-            backgroundColour={state.backgroundColour}
-          />
+          /**
+           * this length check is just to make sure when the ThemeList loads it will have themes
+           * it needs to do this to make the scrollToLabel function work when the component loads
+           */
+          themeNames.length > 0 && (
+            <ThemeList
+              themeNames={themeNames}
+              activeTheme={state.activeTheme}
+              dispatch={dispatch}
+              primaryColour={state.primaryColour}
+              backgroundColour={state.backgroundColour}
+              scrollToLabel={scrollToLabel}
+            />
+          )
         ) : (
           <ThemeSelect
             themeNames={themeNames}
