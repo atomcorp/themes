@@ -1,15 +1,18 @@
 Now:
-  ☐ Add routes, or change URL for each theme for sharing
+  ☐ add Cypress testing, and remove any Jest UI testing
+  ☐ make header a link to '/'
+  ☐ check out small screen responsiveness
 
 Future:
-  ☐ have some script to run `scripts/get-schemes` automatically, each week or so
-  ☐ add Cypress testing, and remove any Jest UI testing
-  ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
+☐ have some script to run `scripts/get-schemes` automatically, each week or so
+☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
+  I also don't like 
 
 Testing:
-  ☐ check tabbing and accessibility works
+☐ check tabbing and accessibility works
 
 Done:
+  ✔ Add routes, or change URL for each theme for sharing @done(20-04-09 00:10)
   ✔ update dependencies @done(20-03-25 00:04)
   ✔ Just import JSON theme, don't bother fetching @done(20-03-25 00:06)
   ✔ Update tests, check if still need REACT_APP_PUBLIC_PATH @done(20-03-25 21:54)

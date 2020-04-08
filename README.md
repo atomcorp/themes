@@ -40,9 +40,10 @@ This file is ignored by `.gitignore`, so it won't be shared
 
 ## Todo
 
-- a way to share themes
+- ~~a way to share themes~~
 - testing with [cypress](https://www.cypress.io/)
 - automating the compilation step
+- improve responsiveness
 
 ## Notes
 
