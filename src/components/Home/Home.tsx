@@ -5,7 +5,6 @@ import ThemeList from 'components/ThemeList/ThemeList';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 import Header from 'components/Header/Header';
 import ShadeChoice from 'components/ShadeChoice/ShadeChoice';
-import themeJson from 'colour-schemes.json';
 import css from './Home.module.css';
 import {
   homeReducer,
@@ -16,13 +15,17 @@ import {
 } from './homeMethods';
 import {themeType} from 'types';
 
-const Home: React.FC = () => {
+type themeprops = {
+  themes: themeType[];
+};
+
+const Home: React.FC<themeprops> = (props) => {
   const sidebarRef = useRef<HTMLElement>(null);
   const [state, dispatch] = useReducer(homeReducer, {
     ...initialState,
     ...{isSmallScreenSize: window.innerWidth < 768},
   });
-  const initialTheme = returnInitialTheme();
+  const initialTheme = returnInitialTheme(window.location.search);
   const scrollToLabel = useCallback((): void => {
     // scroll to the initialTheme, if used
 
@@ -46,10 +49,9 @@ const Home: React.FC = () => {
     }
   }, []);
   useEffect(() => {
-    const themes = themeJson as themeType[];
     dispatch({
       type: 'LOAD',
-      themes: themes,
+      themes: props.themes,
       initialTheme: initialTheme,
     });
     const resizer = screenSizeObserver(dispatch);

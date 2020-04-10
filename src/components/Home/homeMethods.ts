@@ -45,9 +45,9 @@ export const getRandomColour = (theme: themeType | undefined): string => {
   return theme[titleColours[0]];
 };
 
-export const returnInitialTheme = (): string | null => {
-  if (window.location.search.length > 0) {
-    const params = new URLSearchParams(window.location.search);
+export const returnInitialTheme = (search: string): string | null => {
+  if (search.length > 0) {
+    const params = new URLSearchParams(search);
     const themeName = params.get('theme');
     if (themeName != null) {
       return themeName;

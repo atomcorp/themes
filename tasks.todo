@@ -1,5 +1,10 @@
 Now:
-  ☐ add Cypress testing, and remove any Jest UI testing
+  ✔ add Cypress testing, and remove any Jest UI testing @done(20-04-10 22:37)
+    have Jest tests for the following
+    ☐ test functions
+    ☐ test clipboard
+    ☐ test tabbing
+    ☐ test downloading
   ☐ make header a link to '/'
   ☐ check out small screen responsiveness
 
