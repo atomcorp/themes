@@ -99,7 +99,7 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByText('Share theme').should('be.visible');
     });
   });
-  it.only('should default to theme in param for sharing', function () {
+  it('should default to theme in param for sharing', function () {
     cy.get('@darkThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${currentTheme.name}`);
@@ -112,7 +112,7 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByText('Share theme').should('be.visible');
     });
   });
-  it.only('should default to light theme in param for sharing', function () {
+  it('should default to light theme in param for sharing', function () {
     cy.get('@lightThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${currentTheme.name}`);

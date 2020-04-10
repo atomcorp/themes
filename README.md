@@ -26,7 +26,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 
 Install using `yarn start`. 
 
-Testing is WIP. Develop with [cypress](https://www.cypress.io/) using `yarn cy:open` and tests with `yarn cy:run`.
+Testing is WIP. Develop with [cypress](https://www.cypress.io/) using `yarn cy:open` and run tests with `yarn cy:run`. Jest is also set up, `yarn test`, just used a couple of unit tests at the moment.
 
 ### Compiling the themes 
 
