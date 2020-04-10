@@ -90,7 +90,9 @@ const Console: React.FC<PropsType> = (props) => {
               setTimeout(() => {
                 if (props.theme != null) {
                   clipboard.writeText(
-                    `${window.location.origin}${window.location.pathname}?theme=${props.theme.name}`
+                    `${window.location.origin}${
+                      window.location.pathname
+                    }?theme=${encodeURIComponent(props.theme.name)}`
                   );
                 }
                 setShared(false);
