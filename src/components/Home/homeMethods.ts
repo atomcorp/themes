@@ -45,15 +45,6 @@ export const getRandomColour = (theme: themeType | undefined): string => {
   return theme[titleColours[0]];
 };
 
-export const assignColourType = (themes: themeType[]): themeType[] => {
-  return themes.map((theme) => {
-    return {
-      ...theme,
-      isDark: contrast.ratio(theme.background, '#000') < 8,
-    };
-  });
-};
-
 export const returnInitialTheme = (): string | null => {
   if (window.location.search.length > 0) {
     const params = new URLSearchParams(window.location.search);

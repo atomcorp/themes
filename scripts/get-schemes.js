@@ -4,6 +4,7 @@ const got = require('got');
 const fs = require('fs');
 const customSchemaJson = require('../src/custom-colour-schemes.json');
 const private = require('../private.json');
+const contrast = require('get-contrast');
 
 const btoa = (str) => Buffer.from(str, 'binary').toString('base64');
 const options = {
@@ -15,6 +16,15 @@ const options = {
 };
 const baseUrl =
   'https://api.github.com/repos/mbadolato/iTerm2-Color-Schemes/contents/windowsterminal/';
+
+const assignColourType = (themes) => {
+  return themes.map((theme) => {
+    return {
+      ...theme,
+      isDark: contrast.ratio(theme.background, '#000') < 8,
+    };
+  });
+};
 
 const main = async () => {
   try {
@@ -30,10 +40,10 @@ const main = async () => {
       JSON.parse(fileResponse.body)
     );
     // merge with any themes that have been added in this project
-    const combinedSchemaJson = [
+    const combinedSchemaJson = assignColourType([
       ...iTerm2SchemaJson,
       ...customSchemaJson,
-    ].sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1));
+    ]).sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1));
     // write the new file
     fs.writeFileSync(
       './src/colour-schemes.json',
