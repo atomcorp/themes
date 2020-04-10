@@ -99,23 +99,27 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByText('Share theme').should('be.visible');
     });
   });
-  it('should default to theme in param for sharing', function () {
+  it.only('should default to theme in param for sharing', function () {
     cy.get('@darkThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${currentTheme.name}`);
-      cy.findByLabelText(currentTheme.name).should('be.checked');
+      cy.findByLabelText(currentTheme.name)
+        .should('be.checked')
+        .should('be.visible');
       cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
       cy.findByText('Copy Theme').should('be.visible');
       cy.findByText('Share theme').should('be.visible');
     });
   });
-  it('should default to light theme in param for sharing', function () {
+  it.only('should default to light theme in param for sharing', function () {
     cy.get('@lightThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${currentTheme.name}`);
       cy.findByLabelText('Light').should('be.checked');
-      cy.findByLabelText(currentTheme.name).should('be.checked');
+      cy.findByLabelText(currentTheme.name)
+        .should('be.checked')
+        .should('be.visible');
       cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
       cy.findByText('Copy Theme').should('be.visible');
@@ -225,7 +229,7 @@ describe('Themes - small screen', function () {
       });
     });
   });
-  it.only('should change screen type when resizing', function () {
+  it('should change screen type when resizing', function () {
     cy.viewport(768, 736);
     cy.findByLabelText('Change theme:').should('be.visible');
     cy.findByTestId('theme-list').should('not.be.visible');
