@@ -17,6 +17,7 @@ const options = {
 const baseUrl =
   'https://api.github.com/repos/mbadolato/iTerm2-Color-Schemes/contents/windowsterminal/';
 
+// add boolean whether the theme is a light or dark
 const assignColourType = (themes) => {
   return themes.map((theme) => {
     return {

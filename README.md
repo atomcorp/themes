@@ -24,7 +24,9 @@ If not, new themes can be add added with a pull request. Just add them to the li
 
 ## Running
 
-Install using `yarn start`. Testing is tbc 🙄
+Install using `yarn start`. 
+
+Testing is WIP. Develop with [cypress](https://www.cypress.io/) using `yarn cy:open` and tests with `yarn cy:run`.
 
 ### Compiling the themes 
 

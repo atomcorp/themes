@@ -25,7 +25,9 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
-    "themes": "node scripts/get-schemes"
+    "themes": "node scripts/get-schemes",
+    "cy:open": "yarn run cypress open",
+    "cy:run": "yarn run cypress run"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,14 +45,18 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/cypress": "^6.0.0",
     "@testing-library/jest-dom": "^5.1.1",
     "@testing-library/react": "^10.0.1",
     "@types/file-saver": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^2.25.0",
     "@typescript-eslint/parser": "^2.25.0",
+    "cypress": "^4.3.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-config-react": "^1.1.7",
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-prettier": "^3.1.2",
     "gh-pages": "^2.2.0",
     "got": "^10.7.0",
