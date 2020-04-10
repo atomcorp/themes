@@ -27,7 +27,7 @@
     "predeploy": "npm run build",
     "themes": "node scripts/get-schemes",
     "cy:open": "yarn run cypress open",
-    "cy:run": "yarn run cypress run"
+    "cy:run": "yarn run cypress run --record --key f42b74a4-190e-43c1-aa86-0e06af7cfc1f"
   },
   "eslintConfig": {
     "extends": "react-app"
