@@ -4,6 +4,10 @@
   z-index: 1;
   text-align: center;
   font-size: 24px;
+  text-decoration: none;
+}
+
+.title h1 {
   margin: 0;
 }
 

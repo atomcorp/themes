@@ -1,17 +1,17 @@
 Now:
   ✔ add Cypress testing, and remove any Jest UI testing @done(20-04-10 22:37)
     have Jest tests for the following
-    ☐ test functions
+    ☐ unit tests for little functions
     ☐ test clipboard
     ☐ test tabbing
     ☐ test downloading
-  ☐ make header a link to '/'
+  ✔ make header a link to '/' @done(20-04-10 23:03)
   ☐ check out small screen responsiveness
 
 Future:
 ☐ have some script to run `scripts/get-schemes` automatically, each week or so
 ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
-  I also don't like 
+  I don't like all the info text is presented
 
 Testing:
 ☐ check tabbing and accessibility works (https://a11yproject.com/)

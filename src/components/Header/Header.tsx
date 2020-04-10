@@ -14,9 +14,9 @@ const themeBlob = new Blob([JSON.stringify(themeJson, null, 2)], {
 
 const Header: React.FC<PropTypes> = (props) => (
   <>
-    <h1 style={{color: props.primaryColour}} className={css.title}>
-      Windows Terminal Themes
-    </h1>
+    <a href="/themes" className={css.title}>
+      <h1 style={{color: props.primaryColour}}>Windows Terminal Themes</h1>
+    </a>
     <p className={css.paragraph}>
       Themes for{' '}
       <a
