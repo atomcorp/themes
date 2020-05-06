@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import * as clipboard from 'clipboard-polyfill';
 
-import ColourTest from '../ColourTest/ColourTest';
+import ColourTest from 'components/ColourTest/ColourTest';
+import ConsoleTest from 'components/ConsoleTest/ConsoleTest';
 import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
 import {backgroundKeys, textKeys, parseValidKeys} from './consoleMethods';
@@ -41,7 +42,7 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       {props.previewType === 'colour' ? (
         <ColourTest theme={props.theme} />
       ) : (
-        <div>WIP</div>
+        <ConsoleTest theme={props.theme} />
       )}
       <div className={css.buttons}>
         <button

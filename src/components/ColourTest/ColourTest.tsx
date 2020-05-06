@@ -2,7 +2,7 @@ import React from 'react';
 
 import {themeType} from 'types';
 import css from './ColourTest.module.css';
-import {backgroundKeys, textKeys} from '../ThemePreview/consoleMethods';
+import {backgroundKeys, textKeys} from 'components/ThemePreview/consoleMethods';
 
 type PropsType = {
   theme: themeType;
@@ -10,7 +10,7 @@ type PropsType = {
 
 const ColourTest: React.FC<PropsType> = (props) => {
   return (
-    <div className={css.matrix}>
+    <section className={css.matrix}>
       {textKeys.map((textKey, i) =>
         backgroundKeys.map((backgroundKey, y) => (
           <div
@@ -25,7 +25,7 @@ const ColourTest: React.FC<PropsType> = (props) => {
           </div>
         ))
       )}
-    </div>
+    </section>
   );
 };
 
