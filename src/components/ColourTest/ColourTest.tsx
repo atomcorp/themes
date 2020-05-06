@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import * as clipboard from 'clipboard-polyfill';
 
 import {themeType} from 'types';
-import css from './Console.module.css';
+import css from './ColourTest.module.css';
 import {backgroundKeys, textKeys, parseValidKeys} from './consoleMethods';
 
 type PropsType = {
@@ -11,7 +11,7 @@ type PropsType = {
   backgroundColour: string;
 };
 
-const Console: React.FC<PropsType> = (props) => {
+const ColourTest: React.FC<PropsType> = (props) => {
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
   if (!props.theme) {
@@ -107,4 +107,4 @@ const Console: React.FC<PropsType> = (props) => {
   );
 };
 
-export default Console;
+export default ColourTest;

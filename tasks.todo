@@ -16,6 +16,11 @@ Future:
 Testing:
 ☐ check tabbing and accessibility works (https://a11yproject.com/)
 
+Notes
+  Useful sites
+    http://chriskempson.com/projects/base16/ - info on colour types
+    https://github.com/mjswensen/themer - nicely build around themes
+
 Done:
   ✔ Add routes, or change URL for each theme for sharing @done(20-04-09 00:10)
   ✔ update dependencies @done(20-03-25 00:04)

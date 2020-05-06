@@ -12,13 +12,13 @@ describe('Windows Terminal Themes - big screen', function () {
     cy.visit('/themes');
     cy.findByText('Loading...').should('not.be.visible');
   });
-  it('should download all themes using download button', function () {
+  xit('should download all themes using download button', function () {
     /**
      * Not sure how to test this
      * see: https://github.com/cypress-io/cypress/issues/949
      */
   });
-  it('should change themes by focusing and keyup/down', function () {
+  xit('should change themes by focusing and keyup/down', function () {
     /**
      * Not sure this is possible at the moment
      */
@@ -38,6 +38,9 @@ describe('Windows Terminal Themes - big screen', function () {
     cy.get('@themes').then((themes) => {
       const lightThemes = themes.filter((theme) => !theme.isDark);
       const darkThemes = themes.filter((theme) => theme.isDark);
+      cy.findByTestId('theme-list').then(($el) => {
+        expect(darkThemes.length).to.equal($el[0].children.length);
+      });
       lightThemes.forEach((theme) => {
         cy.findByLabelText(theme.name).should('not.exist');
       });
@@ -52,6 +55,9 @@ describe('Windows Terminal Themes - big screen', function () {
     cy.get('@themes').then((themes) => {
       const lightThemes = themes.filter((theme) => !theme.isDark);
       const darkThemes = themes.filter((theme) => theme.isDark);
+      cy.findByTestId('theme-list').then(($el) => {
+        expect(lightThemes.length).to.equal($el[0].children.length);
+      });
       lightThemes.forEach((theme) => {
         cy.findByLabelText(theme.name).should('exist');
       });
@@ -125,6 +131,12 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByText('Copy Theme').should('be.visible');
       cy.findByText('Share theme').should('be.visible');
     });
+  });
+  it('UI should be visible on smaller screens like laptops', function () {
+    cy.viewport(1366, 768);
+    cy.findByTestId('selected-title').should('be.visible');
+    cy.findByText('Copy Theme').should('be.visible');
+    cy.findByText('Share theme').should('be.visible');
   });
 });
 

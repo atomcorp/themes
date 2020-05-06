@@ -1,6 +1,6 @@
 import React, {useEffect, useReducer, useRef, useCallback} from 'react';
 
-import Console from 'components/Console/Console';
+import ColourTest from 'components/ColourTest/ColourTest';
 import ThemeList from 'components/ThemeList/ThemeList';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 import Header from 'components/Header/Header';
@@ -99,7 +99,7 @@ const Home: React.FC<themeprops> = (props) => {
         )}
       </aside>
       <section className={css.content}>
-        <Console
+        <ColourTest
           theme={theme}
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
