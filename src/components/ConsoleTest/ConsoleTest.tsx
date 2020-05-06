@@ -1,7 +1,7 @@
 import React from 'react';
 
 import css from './ConsoleTest.module.css';
-import {themeType, validKeysType, textKeyType} from 'types';
+import {themeType, textKeyType} from 'types';
 import {validKeys} from 'components/ThemePreview/consoleMethods';
 import codeblocks from './codeblocks';
 
@@ -10,7 +10,6 @@ type PropsType = {
 };
 
 const setParseSyntax = (theme: themeType) => (markup: string) => {
-  console.log(markup.split(/(<[^/>]+?>[^<]+<[^>]+?>)/g));
   return markup.split(/(<[^/>]+?>[^<]+<[^>]+?>)/g).map((string, i) => {
     const matches = [...string.matchAll(/<(.+?)>(.+)<\/(.+)>/g)][0];
     if (matches != null) {
@@ -23,7 +22,6 @@ const setParseSyntax = (theme: themeType) => (markup: string) => {
       const foreground = colours[0] as textKeyType;
       const background =
         colours.length > 0 ? (colours[1] as textKeyType) : null;
-      console.log(matches);
       if (
         process.env.NODE_ENV === 'development' &&
         (!validKeys.includes(foreground) ||

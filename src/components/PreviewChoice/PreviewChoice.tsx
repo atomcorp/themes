@@ -1,6 +1,5 @@
 import React from 'react';
 
-import {THEME_COLOUR} from 'components/Home/homeMethods';
 import {previewType, actionTypes} from 'types';
 import css from './PreviewChoice.module.css';
 

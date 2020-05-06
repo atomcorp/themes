@@ -163,6 +163,7 @@ export const homeReducer = (
         break;
       case 'PREVIEW':
         draftState.previewType = action.previewType;
+        break;
       default:
         break;
     }

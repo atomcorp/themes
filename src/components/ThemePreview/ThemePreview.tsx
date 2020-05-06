@@ -5,7 +5,7 @@ import ColourTest from 'components/ColourTest/ColourTest';
 import ConsoleTest from 'components/ConsoleTest/ConsoleTest';
 import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
-import {backgroundKeys, textKeys, parseValidKeys} from './consoleMethods';
+import {parseValidKeys} from './consoleMethods';
 
 type PropsType = {
   theme?: themeType;
