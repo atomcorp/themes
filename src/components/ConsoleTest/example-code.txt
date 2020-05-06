@@ -1,0 +1,69 @@
+<foreground>Running:</foreground>  <brightblack>themes.spec.js                         (1 of 1)</brightblack>
+
+
+<foreground>Windows Terminal Themes - big screen</foreground>
+  <cyan>- <brightblack>should download all themes using download button</cyan>
+  <green>√</green> <brightblack>should show dark theme by default <red>(705ms)√</red>
+
+==============
+
+
+RUNS  src/components/Home/Home.test.js
+RUNS  src/App.test.tsx
+
+Test Suites: 0 of 2 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        4s
+
+===========
+
+<brightgreen:bkg><green>PASS</green></brightgreen:bkg>  src/App.test.tsx (14.293s)
+PASS  src/components/Home/Home.test.js (17.851s)
+
+Test Suites: <green>2 passed</green>, 2 total
+Tests:       4 skipped, 3 passed, 7 total
+Snapshots:   0 total
+Time:        22.55s
+Ran all test suites.
+
+============
+
+ FAIL  src/components/Home/Home.test.js (17.523s)
+  ● should return theme name from search params
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "synthwave-everythingsdsd"
+    Received: "synthwave-everything"
+
+      218 |
+      219 | it('should return theme name from search params', () => {
+    > 220 |   expect(returnInitialTheme('?theme=synthwave-everything')).toBe(
+          |                                                             ^
+      221 |     'synthwave-everythingsdsd'
+      222 |   );
+      223 |   expect(returnInitialTheme('?wrong=synthwave-everything')).toBe(null);
+
+      at Object.toBe (src/components/Home/Home.test.js:220:61)
+
+Test Suites: 1 failed, 1 passed, 2 total
+Tests:       1 failed, 4 skipped, 2 passed, 7 total
+Snapshots:   0 total
+Time:        22.5s
+Ran all test suites.
+
+Watch Usage: Press w to show more.
+
+
+=======
+
+Compiled successfully!
+
+You can now view terminal in the browser.
+
+  Local:            http://localhost:3000/themes
+  On Your Network:  http://192.168.86.37:3000/themes
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.

@@ -1,6 +1,7 @@
 import React, {useEffect, useReducer, useRef, useCallback} from 'react';
 
-import ColourTest from 'components/ColourTest/ColourTest';
+import ThemePreview from 'components/ThemePreview/ThemePreview';
+import PreviewChoice from 'components/PreviewChoice/PreviewChoice';
 import ThemeList from 'components/ThemeList/ThemeList';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 import Header from 'components/Header/Header';
@@ -53,7 +54,6 @@ const Home: React.FC<themeprops> = (props) => {
       themes: props.themes,
       initialTheme: initialTheme,
     });
-    console.log('change');
     const resizer = screenSizeObserver(dispatch);
     resizer.observe(document.body);
     return () => {
@@ -74,6 +74,7 @@ const Home: React.FC<themeprops> = (props) => {
         }`}
       >
         <Header primaryColour={state.primaryColour} />
+        <PreviewChoice dispatch={dispatch} previewType={state.previewType} />
         <ShadeChoice dispatch={dispatch} themeShade={state.themeShade} />
         {!state.isSmallScreenSize ? (
           /**
@@ -99,7 +100,8 @@ const Home: React.FC<themeprops> = (props) => {
         )}
       </aside>
       <section className={css.content}>
-        <ColourTest
+        <ThemePreview
+          previewType={state.previewType}
           theme={theme}
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}

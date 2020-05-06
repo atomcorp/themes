@@ -98,8 +98,16 @@ type setScreenSizeType = {
   themeShade: themeShadeType;
 };
 
+type setPreviewType = {
+  type: 'PREVIEW';
+  themeShade: previewType;
+};
+
 export type actionTypes =
   | loadActionType
   | setTheme
   | setScreenSizeType
-  | setScreenSizeType;
+  | setScreenSizeType
+  | setPreviewType;
+
+export type previewType = 'console' | 'colour';
