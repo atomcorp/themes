@@ -225,5 +225,5 @@ it('should return theme name from search params', () => {
 });
 
 xit('should tab use keyboard to navigate', () => {
-  const {getByTestId, getByLabelText} = render(<Home themes={schemes} />);
+  // const {getByTestId, getByLabelText} = render(<Home themes={schemes} />);
 });

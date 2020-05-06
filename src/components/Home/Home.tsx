@@ -28,7 +28,6 @@ const Home: React.FC<themeprops> = (props) => {
   const initialTheme = returnInitialTheme(window.location.search);
   const scrollToLabel = useCallback((): void => {
     // scroll to the initialTheme, if used
-
     if (
       initialTheme != null &&
       window.innerWidth >= 768 &&
@@ -47,19 +46,20 @@ const Home: React.FC<themeprops> = (props) => {
             : labelElDimensions.top - sidebarViewHeight / 2;
       }
     }
-  }, []);
+  }, [initialTheme]);
   useEffect(() => {
     dispatch({
       type: 'LOAD',
       themes: props.themes,
       initialTheme: initialTheme,
     });
+    console.log('change');
     const resizer = screenSizeObserver(dispatch);
     resizer.observe(document.body);
     return () => {
       resizer.unobserve(document.body);
     };
-  }, []);
+  }, [props.themes, initialTheme]);
   const theme = state.themes.find((theme) => theme.name === state.activeTheme);
   const themeNames = state.filteredThemes.map((theme) => theme.name);
   return (
