@@ -1,65 +1,63 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import css from './ConsoleTest.module.css';
-import {themeType, textKeyType} from 'types';
-import {validKeys} from 'components/ThemePreview/consoleMethods';
-import codeblocks from './codeblocks';
+import {themeType, textKeyType, themeShadeType} from 'types';
+import codeblocks, {codeblocksType} from './codeblocks';
+import {parseSyntax} from './methods';
 
 type PropsType = {
   theme: themeType;
 };
 
-const setParseSyntax = (theme: themeType) => (markup: string) => {
-  return markup.split(/(<[^/>]+?>[^<]+<[^>]+?>)/g).map((string, i) => {
-    const matches = [...string.matchAll(/<(.+?)>(.+)<\/(.+)>/g)][0];
-    if (matches != null) {
-      if (process.env.NODE_ENV === 'development' && matches[1] !== matches[3]) {
-        throw new Error(
-          `Opening tag <${matches[1]}> does not match closing tag </${matches[3]}>`
-        );
-      }
-      const colours = matches[1].split(':');
-      const foreground = colours[0] as textKeyType;
-      const background =
-        colours.length > 0 ? (colours[1] as textKeyType) : null;
-      if (
-        process.env.NODE_ENV === 'development' &&
-        (!validKeys.includes(foreground) ||
-          (background && !validKeys.includes(background)))
-      ) {
-        throw new Error(
-          `Using invalid tags: <${matches[1]}>${matches[2]}</${matches[3]}>`
-        );
-      }
-      const contents = matches[2];
-      return (
-        <span
-          key={i}
-          style={{
-            color: theme[foreground],
-            background: background ? theme[background] : undefined,
-          }}
-        >
-          {contents}
-        </span>
-      );
-    }
-    return string;
-  }, []);
+const defaultCodeblock: codeblocksType = {
+  defaultColour: 'foreground',
+  markup: '',
+  id: 'default',
+  name: 'default',
 };
 
 const ConsoleTest: React.FC<PropsType> = (props) => {
-  const parseSyntax = setParseSyntax(props.theme);
-
+  const [tab, setTab] = useState(codeblocks[0].id);
+  const activeCodeblock =
+    codeblocks.find((codeblock) => codeblock.id === tab) ?? defaultCodeblock;
   return (
     <section className={css.container}>
       <div className={css.terminal}>
-        <div className={css.titlebar}>Title bar, tabs, close</div>
+        <div
+          className={`${css.titlebar} ${!props.theme.isDark ? css.light : ''}`}
+        >
+          <div className={css.tabs}>
+            {codeblocks.map((codeblock) => (
+              <div
+                className={`${css.tab} ${
+                  tab === codeblock.id ? css.active : ''
+                }`}
+              >
+                <input
+                  className={css.radio}
+                  id={codeblock.id}
+                  name="tab"
+                  type="radio"
+                  value={codeblock.id}
+                  checked={codeblock.id === activeCodeblock.id}
+                  onClick={() => {
+                    setTab(codeblock.id);
+                  }}
+                />
+                <label htmlFor={codeblock.id}>
+                  <span>{codeblock.name}</span>
+                </label>
+              </div>
+            ))}
+          </div>
+        </div>
         <code
           className={css.code}
-          style={{color: props.theme[codeblocks[0].defaultColour]}}
+          style={{
+            color: props.theme[(props.theme, activeCodeblock.defaultColour)],
+          }}
         >
-          {parseSyntax(codeblocks[0].markup)}
+          {parseSyntax(props.theme, activeCodeblock.markup)}
         </code>
       </div>
     </section>

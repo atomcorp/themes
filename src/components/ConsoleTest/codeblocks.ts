@@ -1,23 +1,30 @@
 import {textKeyType} from 'types';
 
-type codeblocksType = {
+export type codeblocksType = {
   name: string;
   markup: string;
   defaultColour: textKeyType | 'foreground' | 'background';
-}[];
+  id: string;
+};
 
-const codeblocks: codeblocksType = [
+const codeblocks: codeblocksType[] = [
   {
+    id: 'cra/compiled',
     name: 'Create React App compiled',
     markup: `<green>Compiled successfully!</green>
-You can now view terminal in the browser. Local:
-http://localhost:3000/themes On Your Network:
-http://192.168.86.37:3000/themes Note that the development build is not
+
+You can now view terminal in the browser. 
+
+  Local: http://localhost:3000/themes On Your Network:
+  http://192.168.86.37:3000/themes 
+  
+Note that the development build is not
 optimized. 
 To create a production build, use <cyan>yarn build</cyan>.`,
-    defaultColour: 'white',
+    defaultColour: 'brightWhite',
   },
   {
+    id: 'cypress/run',
     name: 'Cypress',
     markup: `
     <foreground>Running:</foreground>  <brightBlack>themes.spec.js                           (1 of 1)</brightBlack>
@@ -38,6 +45,7 @@ To create a production build, use <cyan>yarn build</cyan>.`,
     defaultColour: 'brightBlack',
   },
   {
+    id: 'jest/failed',
     name: 'Jest: failed test',
     markup: `
     <foreground:brightRed> FAIL </foreground:brightRed> src/components/Home/Home.test.js (<white:red>17.523s</white:red>)
@@ -69,6 +77,7 @@ To create a production build, use <cyan>yarn build</cyan>.`,
     defaultColour: 'white',
   },
   {
+    id: 'jest/runnning',
     name: 'Jest - running',
     markup: `
     <white:brightYellow>  RUNS  </white:brightYellow> src/components/Home/Home.test.js

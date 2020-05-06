@@ -6,12 +6,47 @@
 .terminal {
   border: 1px solid #fff;
   box-shadow: 1px 2px 10px rgba(83, 83, 83, 0.24);
-  max-width: max-content;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .titlebar {
-  background: #b3b4bc;
+  background: #333;
+  color: #ededed;
+}
+
+.titlebar.light {
+  background: #ccc;
+  color: #282828;
+}
+
+.tabs {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+}
+
+.tab input:focus + label span {
+  outline: 1px dotted;
+}
+
+.tab label {
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #000100;
+}
+
+.titlebar.light .tab.active {
+  background: #fffffd;
 }
 
 .code {
