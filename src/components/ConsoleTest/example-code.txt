@@ -67,3 +67,17 @@ You can now view terminal in the browser.
 
 Note that the development build is not optimized.
 To create a production build, use yarn build.
+
+=========
+
+
+Compiled with warnings.
+
+./src/components/Home/homeMethods.ts
+  Line 166:7:  Expected a 'break' statement before 'default'  no-fallthrough
+
+./src/components/PreviewChoice/PreviewChoice.tsx
+  Line 3:9:  'THEME_COLOUR' is defined but never used  @typescript-eslint/no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.

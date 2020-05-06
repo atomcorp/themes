@@ -1,4 +1,24 @@
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+.terminal {
+  border: 1px solid #fff;
+  box-shadow: 1px 2px 10px rgba(83, 83, 83, 0.24);
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.titlebar {
+  background: #b3b4bc;
+}
+
 .code {
+  display: block;
   font-size: 18px;
   white-space: pre;
+  overflow: auto;
+  padding: 10px 10px 40px;
+  min-height: 40vh;
 }
