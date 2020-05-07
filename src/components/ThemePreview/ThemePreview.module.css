@@ -2,10 +2,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: safe center;
+  align-items: safe center;
   padding: 0 0 40px;
   transition: background 0.05s ease-in-out;
+  overflow: auto;
 }
 
 @media (min-width: 769px) {
