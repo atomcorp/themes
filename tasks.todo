@@ -16,6 +16,7 @@ Future:
 ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
   I don't like all the info text is presented
 ☐ Choose font
+☐ Add preview type and console tab to share theme parameters
 
 Testing:
 ☐ check tabbing and accessibility works (https://a11yproject.com/)

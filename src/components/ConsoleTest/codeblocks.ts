@@ -10,7 +10,7 @@ export type codeblocksType = {
 const codeblocks: codeblocksType[] = [
   {
     id: 'cra/compiled',
-    name: 'Create React App compiled',
+    name: 'CRA - compiled',
     markup: `<green>Compiled successfully!</green>
 
 You can now view <brightWhite>terminal</brightWhite> in the browser. 
@@ -25,7 +25,7 @@ To create a production build, use <cyan>yarn build</cyan>.`,
   },
   {
     id: 'cypress/run',
-    name: 'Cypress',
+    name: 'Cypress - run',
     markup: `<foreground>Running:</foreground>  <brightBlack>themes.spec.js                            (1 of 1)</brightBlack>
 
 <foreground>Windows Terminal Themes - big screen</foreground>
@@ -44,7 +44,7 @@ To create a production build, use <cyan>yarn build</cyan>.`,
   },
   {
     id: 'jest/failed',
-    name: 'Jest: failed test',
+    name: 'Jest - failed',
     markup: `<foreground:brightRed> FAIL </foreground:brightRed> src/components/Home/Home.test.js (<white:red>17.523s</white:red>)
   <red>● should return theme name from search params</red>
   

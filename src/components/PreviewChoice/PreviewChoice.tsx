@@ -10,7 +10,7 @@ type PropsState = {
 
 const PreviewChoice: React.FC<PropsState> = (props) => (
   <section className={css.container}>
-    Choose type:
+    Choose preview:
     <label htmlFor="console">
       <input
         name="preview"
