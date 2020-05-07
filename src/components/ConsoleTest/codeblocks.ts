@@ -63,10 +63,10 @@ To create a production build, use <cyan>yarn build</cyan>.`,
         
         at Object.toBe (<cyan>src/components/Home/Home.test.js</cyan>:220:61)
   
-Test Suites: <brightRed>1 failed</brightRed>, <brightGreen>1 passed</brightGreen>, 2 total
-Tests:       <brightRed>1 failed</brightRed>, <brightYellow>4 skipped</brightYellow>, <brightGreen>2 passed</brightGreen>, 7 total
-Snapshots:   0 total
-Time:        <brightYellow>22.5s</brightYellow>
+<brightWhite>Test Suites:</brightWhite> <brightRed>1 failed</brightRed>, <brightGreen>1 passed</brightGreen>, 2 total
+<brightWhite>Tests:</brightWhite>       <brightRed>1 failed</brightRed>, <brightYellow>4 skipped</brightYellow>, <brightGreen>2 passed</brightGreen>, 7 total
+<brightWhite>Snapshots:</brightWhite>   0 total
+<brightWhite>Time:</brightWhite>        <brightYellow>22.5s</brightYellow>
 Ran all test suites.
 
 Watch Usage: Press w to show more.
@@ -76,13 +76,13 @@ Watch Usage: Press w to show more.
   {
     id: 'jest/runnning',
     name: 'Jest - running',
-    markup: `<white:brightYellow>  RUNS  </white:brightYellow> src/components/Home/Home.test.js
-<white:brightYellow>  RUNS  </white:brightYellow>  src/App.test.tsx
+    markup: `<brightBlack:brightYellow>  RUNS  </brightBlack:brightYellow> src/components/Home/<brightWhite>Home.test.js</brightWhite>
+<brightBlack:brightYellow>  RUNS  </brightBlack:brightYellow> src/<brightWhite>App.test.tsx</brightWhite>
     
-Test Suites: 0 of 2 total
-Tests:       0 total
-Snapshots:   0 total
-Time:        4s
+<brightWhite>Test Suites:</brightWhite> 0 of 2 total
+<brightWhite>Tests:</brightWhite>       0 total
+<brightWhite>Snapshots:</brightWhite>   0 total
+<brightWhite>Time:</brightWhite>        4s
 
 <background:green>         </background:green><background:foreground>                             </background:foreground>
 
