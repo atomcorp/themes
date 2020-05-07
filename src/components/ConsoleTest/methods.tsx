@@ -4,10 +4,12 @@ import {validKeys} from 'components/ThemePreview/consoleMethods';
 import {themeType, textKeyType} from 'types';
 
 export const parseSyntax = (theme: themeType, markup: string) => {
+  const throwErrors =
+    process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test';
   return markup.split(/(<[^/>]+?>[^<]+<[^>]+?>)/g).map((string, i) => {
     const matches = [...string.matchAll(/<(.+?)>(.+)<\/(.+)>/g)][0];
     if (matches != null) {
-      if (process.env.NODE_ENV === 'development' && matches[1] !== matches[3]) {
+      if (throwErrors && matches[1] !== matches[3]) {
         throw new Error(
           `Opening tag <${matches[1]}> does not match closing tag </${matches[3]}>`
         );
@@ -17,7 +19,7 @@ export const parseSyntax = (theme: themeType, markup: string) => {
       const background =
         colours.length > 0 ? (colours[1] as textKeyType) : null;
       if (
-        process.env.NODE_ENV === 'development' &&
+        throwErrors &&
         (!validKeys.includes(foreground) ||
           (background && !validKeys.includes(background)))
       ) {
@@ -25,7 +27,6 @@ export const parseSyntax = (theme: themeType, markup: string) => {
           `Using invalid tags: <${matches[1]}>${matches[2]}</${matches[3]}>`
         );
       }
-
       const contents = matches[2];
       return (
         <span
@@ -39,6 +40,12 @@ export const parseSyntax = (theme: themeType, markup: string) => {
         </span>
       );
     }
+    if (throwErrors && string.match(/<(.+?)>(.+)<(.+)>/g)) {
+      throw new Error(
+        `Found invalid tags: ${string}. \n Are they formatted correctly?`
+      );
+    }
+
     return string;
   }, []);
 };

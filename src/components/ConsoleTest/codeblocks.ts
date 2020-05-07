@@ -64,7 +64,7 @@ To create a production build, use <cyan>yarn build</cyan>.`,
         at Object.toBe (<cyan>src/components/Home/Home.test.js</cyan>:220:61)
   
 Test Suites: <brightRed>1 failed</brightRed>, <brightGreen>1 passed</brightGreen>, 2 total
-Tests:       <brightRed>1 failed</brightRed>, <brightYellow>4 skipped</brightYellow>, <brightGreen>2 passedbrightGreen>, 7 total
+Tests:       <brightRed>1 failed</brightRed>, <brightYellow>4 skipped</brightYellow>, <brightGreen>2 passed</brightGreen>, 7 total
 Snapshots:   0 total
 Time:        <brightYellow>22.5s</brightYellow>
 Ran all test suites.

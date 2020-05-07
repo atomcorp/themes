@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a plain string 1`] = `
+<div>
+  String
+</div>
+`;
+
+exports[`should work over multiple lines - no including <tags> 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": "#fdd877",
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  
+        
+        A line break
+        
+        
+  <span
+    style={
+      Object {
+        "background": "#29283b",
+        "color": "#ef6487",
+      }
+    }
+  >
+    Test red
+  </span>
+  
+</div>
+`;
+
+exports[`should wrap a string in a colour 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": undefined,
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  
+</div>
+`;
+
+exports[`should wrap text with colour and a background 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": "#fdd877",
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  some more text 
+  <span
+    style={
+      Object {
+        "background": "#29283b",
+        "color": "#ef6487",
+      }
+    }
+  >
+    Test red
+  </span>
+  
+</div>
+`;
+
+exports[`should wrap two strings in different colours 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": undefined,
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  some more text 
+  <span
+    style={
+      Object {
+        "background": undefined,
+        "color": "#ef6487",
+      }
+    }
+  >
+    Test green
+  </span>
+  
+</div>
+`;
+
+exports[`snapshot - should render a plain string 1`] = `
+<div>
+  String
+</div>
+`;
+
+exports[`snapshot - should work over multiple lines - no including <tags> 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": "#fdd877",
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  
+        
+        A line break
+        
+        
+  <span
+    style={
+      Object {
+        "background": "#29283b",
+        "color": "#ef6487",
+      }
+    }
+  >
+    Test red
+  </span>
+  
+</div>
+`;
+
+exports[`snapshot - should wrap a string in a colour 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": undefined,
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  
+</div>
+`;
+
+exports[`snapshot - should wrap text with colour and a background 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": "#fdd877",
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  some more text 
+  <span
+    style={
+      Object {
+        "background": "#29283b",
+        "color": "#ef6487",
+      }
+    }
+  >
+    Test red
+  </span>
+  
+</div>
+`;
+
+exports[`snapshot - should wrap two strings in different colours 1`] = `
+<div>
+  
+  <span
+    style={
+      Object {
+        "background": undefined,
+        "color": "#5eca89",
+      }
+    }
+  >
+    Test green
+  </span>
+  some more text 
+  <span
+    style={
+      Object {
+        "background": undefined,
+        "color": "#ef6487",
+      }
+    }
+  >
+    Test green
+  </span>
+  
+</div>
+`;
