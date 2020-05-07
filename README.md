@@ -46,8 +46,8 @@ This file is ignored by `.gitignore`, so it won't be shared
 - ~~a way to share themes~~
 - ~~testing with [cypress](https://www.cypress.io/)~~
 - automating the compilation step
-- improve responsiveness
-- adding a codeblock view
+- ~~improve responsiveness~~
+- ~~add a codeblock view~~
 - nicer UI
 
 ## Notes

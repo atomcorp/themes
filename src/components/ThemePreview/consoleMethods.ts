@@ -38,7 +38,7 @@ export const textKeys: textKeyType[] = [
   'brightWhite',
 ];
 
-const validKeys: validKeysType = [
+export const validKeys: validKeysType = [
   'name',
   'black',
   'red',

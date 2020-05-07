@@ -28,6 +28,12 @@
   flex: 1 0 auto;
 }
 
+@media (min-width: 769px) {
+  .content {
+    max-width: 70%;
+  }
+}
+
 .light {
   color: #282c34;
 }

@@ -5,14 +5,18 @@ Now:
     ☐ test clipboard
     ☐ test tabbing
     ☐ test downloading
+    ☐ test custom-colour-schemes.json
   ✔ make header a link to '/' @done(20-04-10 23:03)
   ☐ check out small screen responsiveness
   ☐ use env file for GitHub token, not private json
-
+  ☐ add codeblocks with syntax highlighting
+  
 Future:
 ☐ have some script to run `scripts/get-schemes` automatically, each week or so
 ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
   I don't like all the info text is presented
+☐ Choose font
+☐ Add preview type and console tab to share theme parameters
 
 Testing:
 ☐ check tabbing and accessibility works (https://a11yproject.com/)

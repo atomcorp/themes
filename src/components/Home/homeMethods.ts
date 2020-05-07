@@ -7,6 +7,7 @@ import {
   themeShadeType,
   themeShadeObjectType,
   actionTypes,
+  previewType,
 } from 'types';
 
 type titleColoursType =
@@ -83,6 +84,7 @@ export type stateType = {
   themeShade: themeShadeType;
   primaryColour: string;
   backgroundColour: string;
+  previewType: previewType;
 };
 
 export const initialState: stateType = {
@@ -93,6 +95,7 @@ export const initialState: stateType = {
   themeShade: THEME_COLOUR.DARK,
   primaryColour: '#fded02',
   backgroundColour: '#090300',
+  previewType: 'console',
 };
 
 export const homeReducer = (
@@ -157,6 +160,9 @@ export const homeReducer = (
           draftState.primaryColour = getRandomColour(theme);
           draftState.backgroundColour = theme.background;
         }
+        break;
+      case 'PREVIEW':
+        draftState.previewType = action.previewType;
         break;
       default:
         break;
