@@ -10,7 +10,7 @@ type PropsType = {
 
 const ColourTest: React.FC<PropsType> = (props) => {
   return (
-    <section className={css.matrix}>
+    <section className={css.matrix} data-testid="colourtest">
       {textKeys.map((textKey, i) =>
         backgroundKeys.map((backgroundKey, y) => (
           <div

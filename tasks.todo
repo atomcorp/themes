@@ -1,13 +1,13 @@
 Now:
   ✔ add Cypress testing, and remove any Jest UI testing @done(20-04-10 22:37)
     have Jest tests for the following
-    ☐ unit tests for little functions
+    ✔ unit tests for little functions @done(20-05-07 23:28)
     ☐ test clipboard
     ☐ test tabbing
     ☐ test downloading
-    ☐ test custom-colour-schemes.json
+    ✔ test custom-colour-schemes.json @done(20-05-07 23:36)
   ✔ make header a link to '/' @done(20-04-10 23:03)
-  ☐ check out small screen responsiveness
+  ✔ check out small screen responsiveness @done(20-05-07 23:28)
   ☐ use env file for GitHub token, not private json
   ☐ add codeblocks with syntax highlighting
   
@@ -15,8 +15,14 @@ Future:
 ☐ have some script to run `scripts/get-schemes` automatically, each week or so
 ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
   I don't like all the info text is presented
+  sidebar should just have themes
+  copy and share themes should be buttons on the same line as title
+  light/dark & console/colours should be better presented
+  there should be an info modal, or something
 ☐ Choose font
 ☐ Add preview type and console tab to share theme parameters
+☐ favicon match primary/background colours
+☐ integration tests
 
 Testing:
 ☐ check tabbing and accessibility works (https://a11yproject.com/)

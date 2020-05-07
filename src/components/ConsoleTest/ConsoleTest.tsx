@@ -21,7 +21,7 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
   const activeCodeblock =
     codeblocks.find((codeblock) => codeblock.id === tab) ?? defaultCodeblock;
   return (
-    <section className={css.container}>
+    <section className={css.container} data-testid="consoletest">
       <div className={css.terminal}>
         <div
           className={`${css.titlebar} ${!props.theme.isDark ? css.light : ''}`}
@@ -29,6 +29,7 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
           <div className={css.tabs}>
             {codeblocks.map((codeblock) => (
               <div
+                key={codeblock.id}
                 className={`${css.tab} ${
                   tab === codeblock.id ? css.active : ''
                 }`}
@@ -40,7 +41,7 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
                   type="radio"
                   value={codeblock.id}
                   checked={codeblock.id === activeCodeblock.id}
-                  onClick={() => {
+                  onChange={() => {
                     setTab(codeblock.id);
                   }}
                 />
@@ -52,6 +53,7 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
           </div>
         </div>
         <code
+          data-testid="markup"
           className={css.code}
           style={{
             color: props.theme[(props.theme, activeCodeblock.defaultColour)],

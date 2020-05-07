@@ -4,6 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 
 import {getRandomColour, returnInitialTheme} from './homeMethods';
 import Home from './Home';
+import customColourSchemes from '../../custom-colour-schemes.json';
 
 // theres 3 darks themes and 2 light themes
 const schemes = [
@@ -226,4 +227,31 @@ it('should return theme name from search params', () => {
 
 xit('should tab use keyboard to navigate', () => {
   // const {getByTestId, getByLabelText} = render(<Home themes={schemes} />);
+});
+
+it('should ensure custom-colour-schemes.json has correct keys', () => {
+  const validkeys = [
+    'name',
+    'black',
+    'red',
+    'green',
+    'yellow',
+    'blue',
+    'purple',
+    'cyan',
+    'white',
+    'brightBlack',
+    'brightRed',
+    'brightGreen',
+    'brightYellow',
+    'brightBlue',
+    'brightPurple',
+    'brightCyan',
+    'brightWhite',
+    'background',
+    'foreground',
+  ];
+  customColourSchemes.map((customColourScheme) => {
+    expect(Object.keys(customColourScheme)).toEqual(validkeys);
+  });
 });

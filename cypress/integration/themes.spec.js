@@ -3,6 +3,7 @@
 import '@testing-library/cypress/add-commands';
 
 import themes from '../../src/colour-schemes.json';
+import codeblocks from '../../src/components/ConsoleTest/codeblocks';
 
 describe('Windows Terminal Themes - big screen', function () {
   beforeEach(function () {
@@ -254,5 +255,42 @@ describe('Themes - small screen', function () {
     cy.viewport(1080, 736);
     cy.findByLabelText('Change theme:').should('not.be.visible');
     cy.findByTestId('theme-list').should('be.visible');
+  });
+});
+
+describe('Preview views', function () {
+  beforeEach(function () {
+    cy.wrap(themes).as('themes');
+    cy.wrap(themes.filter((theme) => theme.isDark)).as('darkThemes');
+    cy.wrap(themes.filter((theme) => !theme.isDark)).as('lightThemes');
+    cy.wrap(codeblocks).as('codeblocks');
+    cy.visit('/themes');
+    cy.findByText('Loading...').should('not.be.visible');
+  });
+  it('should render the console view first', function () {
+    cy.findByTestId('consoletest').should('be.visible');
+    cy.findByTestId('colourtest').should('not.be.visible');
+  });
+  it('should switch the preview view', function () {
+    cy.findByLabelText('Colours').click();
+    cy.findByTestId('colourtest').should('be.visible');
+    cy.findByTestId('consoletest').should('not.be.visible');
+    cy.findByLabelText('Console').click();
+    cy.findByTestId('consoletest').should('be.visible');
+    cy.findByTestId('colourtest').should('not.be.visible');
+  });
+  it('show the markup for the right tab', function () {
+    cy.get('@codeblocks').then(function (codeblocks) {
+      codeblocks.forEach((codeblock) => {
+        cy.findByLabelText(codeblock.name).should('be.visible');
+      });
+      codeblocks.forEach((codeblock) => {
+        cy.findByLabelText(codeblock.name).click();
+        cy.findByTestId('markup').should(
+          'have.text',
+          codeblock.markup.replace(/<[^/>]+?>([^<]+)<[^>]+?>/g, '$1')
+        );
+      });
+    });
   });
 });
