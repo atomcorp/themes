@@ -24,6 +24,7 @@
   display: flex;
   font-family: sans-serif;
   font-size: 0.8em;
+  padding: 7px 10px 0;
 }
 
 .radio {
@@ -41,12 +42,21 @@
   cursor: pointer;
 }
 
+.tab:hover {
+  background: #494a49;
+  border-radius: 8px 8px 0 0;
+}
+
 .tab.active {
   background: #000100;
+  border-radius: 8px 8px 0 0;
 }
 
 .titlebar.light .tab.active {
   background: #fffffd;
+}
+.titlebar.light .tab:hover {
+  background: #e5e5e7;
 }
 
 .code {

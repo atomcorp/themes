@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import css from './ConsoleTest.module.css';
-import {themeType, textKeyType, themeShadeType} from 'types';
+import {themeType} from 'types';
 import codeblocks, {codeblocksType} from './codeblocks';
 import {parseSyntax} from './methods';
 
