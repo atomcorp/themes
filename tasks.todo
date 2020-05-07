@@ -7,6 +7,7 @@ Now:
     ☐ test downloading
   ✔ make header a link to '/' @done(20-04-10 23:03)
   ☐ check out small screen responsiveness
+  ☐ use env file for GitHub token, not private json
 
 Future:
 ☐ have some script to run `scripts/get-schemes` automatically, each week or so
