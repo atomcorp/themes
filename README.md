@@ -12,10 +12,10 @@ This site let's you copy a theme you like (or download a json file with all of t
 
 The [official docs for Windows Terminal](https://github.com/microsoft/terminal/blob/master/doc/user-docs/UsingJsonSettings.md) seem to very thoroughly explain how to change the settings, but essentially:
 
-- open Window Preview settings (called profile.json)
+- open Window Preview settings
 - add your chosen theme(s) to `schemes`
 - in `profiles`, find the shell you're using (eg cmd, powershell, ubuntu) and replace `colorScheme` with the name of the theme
-- party 🥳
+- 🥳
 
 ## Contribute a theme
 
