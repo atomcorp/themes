@@ -3,8 +3,12 @@ import React, {useEffect, useState} from 'react';
 import Home from 'components/Home/Home';
 import {themeType} from 'types';
 
-// in development https://github.com/atomcorp/terminal-api needs to be installed and running
-// package.json has a proxy which points stuff like this in dev to http://localhost:3001
+/**
+ * in development https://github.com/atomcorp/terminal-api needs to be installed and running
+ * for this to work
+ * package.json has a proxy which redirects stuff it can't find to http://localhost:3001
+ * then, apiBase can either be '' or http://localhost:3000 (ie the react apps domain)
+ */
 const apiBase =
   process.env.NODE_ENV === 'development' ? '' : 'https://www.atomcorp.dev';
 

@@ -22,10 +22,10 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
     codeblocks.find((codeblock) => codeblock.id === tab) ?? defaultCodeblock;
   return (
     <section className={css.container} data-testid="consoletest">
-      <div className={css.terminal}>
-        <div
-          className={`${css.titlebar} ${!props.theme.isDark ? css.light : ''}`}
-        >
+      <div
+        className={`${css.terminal}  ${!props.theme.isDark ? css.light : ''}`}
+      >
+        <div className={css.titlebar}>
           <div className={css.tabs}>
             {codeblocks.map((codeblock) => (
               <div

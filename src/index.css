@@ -1,9 +1,15 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: 'Cascadia Code', 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas,
     monospace, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.8em;
 }
 
 input,
@@ -11,10 +17,6 @@ button,
 code {
   font-family: 'Cascadia Code', 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas,
     monospace, monospace;
-}
-
-html {
-  box-sizing: border-box;
 }
 *,
 *:before,

@@ -11,9 +11,6 @@ type PropTypes = {
 
 const Header: React.FC<PropTypes> = (props) => (
   <>
-    <a href="/themes" className={css.title}>
-      <h1 style={{color: props.primaryColour}}>Windows Terminal Themes</h1>
-    </a>
     <p className={css.paragraph}>
       Themes for{' '}
       <a

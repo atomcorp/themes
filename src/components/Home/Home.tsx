@@ -68,14 +68,15 @@ const Home: React.FC<themeprops> = (props) => {
         ref={sidebarRef}
         style={{
           background: state.backgroundColour,
+          color: state.primaryColour,
         }}
         className={`${css.sidebar} ${
           state.themeShade === THEME_COLOUR.DARK ? css.dark : css.light
         }`}
       >
-        <Header primaryColour={state.primaryColour} themes={state.themes} />
-        <PreviewChoice dispatch={dispatch} previewType={state.previewType} />
-        <ShadeChoice dispatch={dispatch} themeShade={state.themeShade} />
+        <a href="/themes" className={css.title}>
+          <h1>Windows Terminal Themes</h1>
+        </a>
         {!state.isSmallScreenSize ? (
           /**
            * this length check is just to make sure when the ThemeList loads it will have themes
@@ -99,7 +100,7 @@ const Home: React.FC<themeprops> = (props) => {
           />
         )}
       </aside>
-      <section className={css.content}>
+      <section className={css.content} style={{color: state.primaryColour}}>
         <ThemePreview
           previewType={state.previewType}
           theme={theme}
