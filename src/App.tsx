@@ -7,13 +7,13 @@ import {themeType} from 'types';
 const apiBase =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3001'
-    : 'https://atomcorp.dev';
+    : 'https://www.atomcorp.dev';
 
 const App: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   useEffect(() => {
     const getThemes = async () => {
-      const res = await fetch(`${apiBase}/api/v1/themes`);
+      const res = await fetch(`${apiBase}/api/v1/themes`, {});
       const themes = await res.json();
       setThemes(themes);
     };
