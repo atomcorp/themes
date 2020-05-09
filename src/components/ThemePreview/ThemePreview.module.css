@@ -15,8 +15,23 @@
   }
 }
 
+.heading {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 10px;
+}
+
 .name {
   font-size: 36px;
+  margin: 0 auto 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon {
+  flex: 0 0 auto;
+  cursor: pointer;
 }
 
 .button {

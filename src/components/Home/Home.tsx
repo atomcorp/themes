@@ -68,13 +68,17 @@ const Home: React.FC<themeprops> = (props) => {
         ref={sidebarRef}
         style={{
           background: state.backgroundColour,
-          color: state.primaryColour,
+          borderColor: state.primaryColour,
         }}
         className={`${css.sidebar} ${
           state.themeShade === THEME_COLOUR.DARK ? css.dark : css.light
         }`}
       >
-        <a href="/themes" className={css.title}>
+        <a
+          href="/themes"
+          style={{color: state.primaryColour}}
+          className={css.title}
+        >
           <h1>Windows Terminal Themes</h1>
         </a>
         {!state.isSmallScreenSize ? (
@@ -99,6 +103,7 @@ const Home: React.FC<themeprops> = (props) => {
             dispatch={dispatch}
           />
         )}
+        <div>Add Shade, Preview and info here?</div>
       </aside>
       <section className={css.content} style={{color: state.primaryColour}}>
         <ThemePreview
