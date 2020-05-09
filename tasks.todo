@@ -8,8 +8,8 @@ Now:
     ✔ test custom-colour-schemes.json @done(20-05-07 23:36)
   ✔ make header a link to '/' @done(20-04-10 23:03)
   ✔ check out small screen responsiveness @done(20-05-07 23:28)
-  ☐ use env file for GitHub token, not private json
-  ☐ add codeblocks with syntax highlighting
+  ✘ use env file for GitHub token, not private json @cancelled(20-05-09 00:32)
+  ✔ add codeblocks with syntax highlighting @done(20-05-09 00:30)
   
 Future:
 ☐ have some script to run `scripts/get-schemes` automatically, each week or so
@@ -22,7 +22,13 @@ Future:
 ☐ Choose font
 ☐ Add preview type and console tab to share theme parameters
 ☐ favicon match primary/background colours
-☐ integration tests
+✔ integration tests for console @done(20-05-09 09:57)
+
+Ideas:
+  ☐ add *new* tag
+  ☐ add *fixed* schemes, for themes that are have some hard to see colours
+    the problem is CRA for instance uses colour names like BrightWhite
+    could add a toggle to choose between original and fixed
 
 Testing:
 ☐ check tabbing and accessibility works (https://a11yproject.com/)

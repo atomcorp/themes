@@ -73,7 +73,7 @@ const Home: React.FC<themeprops> = (props) => {
           state.themeShade === THEME_COLOUR.DARK ? css.dark : css.light
         }`}
       >
-        <Header primaryColour={state.primaryColour} />
+        <Header primaryColour={state.primaryColour} themes={state.themes} />
         <PreviewChoice dispatch={dispatch} previewType={state.previewType} />
         <ShadeChoice dispatch={dispatch} themeShade={state.themeShade} />
         {!state.isSmallScreenSize ? (
