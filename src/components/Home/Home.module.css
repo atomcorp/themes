@@ -59,3 +59,9 @@
   background-color: #282c34;
   color: white;
 }
+
+.footer {
+  border-top: 3px solid;
+  margin: auto 0 0;
+  padding: 3px;
+}

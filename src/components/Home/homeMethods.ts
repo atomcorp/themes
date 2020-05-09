@@ -140,7 +140,7 @@ export const homeReducer = (
         draftState.isSmallScreenSize = action.isSmallScreenSize;
         break;
       case 'SHADE':
-        draftState.themeShade = action.themeShade;
+        draftState.themeShade = action.payload;
         if (draftState.themeShade === THEME_COLOUR.DARK) {
           draftState.filteredThemes = state.themes.filter(
             (theme) => theme.isDark
@@ -162,7 +162,7 @@ export const homeReducer = (
         }
         break;
       case 'PREVIEW':
-        draftState.previewType = action.previewType;
+        draftState.previewType = action.payload;
         break;
       default:
         break;

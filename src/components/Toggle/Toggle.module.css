@@ -1,0 +1,30 @@
+.container {
+  display: inline-block;
+  position: relative;
+  line-height: 0;
+  margin: 0 3px 0 0;
+}
+
+.label {
+  display: inline-block;
+  padding: 0 3px;
+  cursor: pointer;
+}
+
+.label.active {
+  padding: 0 9px;
+}
+
+.label svg {
+  /* this just stacks it above the input  */
+  position: relative;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+}
+
+.radio:focus + svg {
+  outline: 1px dotted;
+}

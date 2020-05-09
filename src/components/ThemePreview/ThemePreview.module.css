@@ -17,7 +17,7 @@
 
 .heading {
   display: flex;
-  max-width: 800px;
+  max-width: 820px;
   width: 100%;
   padding: 0 10px;
 }
@@ -35,6 +35,10 @@
   border: 0;
   flex: 0 0 auto;
   cursor: pointer;
+  line-height: 0;
+}
+
+.button svg {
 }
 
 .button:focus svg {

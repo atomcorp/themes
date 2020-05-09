@@ -11,6 +11,8 @@ Now:
   ✘ use env file for GitHub token, not private json @cancelled(20-05-09 00:32)
   ✔ add codeblocks with syntax highlighting @done(20-05-09 00:30)
   ☐ better loading, maybe a skeleton
+  ☐ when clicking share/copy show a modal with url or snippet being copied
+  ☐ add labels to download and share buttons
   
 Future:
 ☐ have some script to run `scripts/get-schemes` automatically, each week or so

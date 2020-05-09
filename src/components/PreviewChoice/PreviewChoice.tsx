@@ -19,7 +19,7 @@ const PreviewChoice: React.FC<PropsState> = (props) => (
         value={'console'}
         checked={'console' === props.previewType}
         onChange={() => {
-          props.dispatch({type: 'PREVIEW', previewType: 'console'});
+          props.dispatch({type: 'PREVIEW', payload: 'console'});
         }}
       />
       Console
@@ -32,7 +32,7 @@ const PreviewChoice: React.FC<PropsState> = (props) => (
         value={'colour'}
         checked={'colour' === props.previewType}
         onChange={() => {
-          props.dispatch({type: 'PREVIEW', previewType: 'colour'});
+          props.dispatch({type: 'PREVIEW', payload: 'colour'});
         }}
       />
       Colours

@@ -6,7 +6,7 @@ import ConsoleTest from 'components/ConsoleTest/ConsoleTest';
 import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
 import {parseValidKeys} from './consoleMethods';
-import {Share, Download} from 'icons';
+import {Share, Download} from 'Icons';
 
 type PropsType = {
   theme?: themeType;
@@ -67,7 +67,7 @@ const ThemePreview: React.FC<PropsType> = (props) => {
         </h2>
         <button
           className={css.button}
-          style={{color: props.primaryColour, transform: 'translateY(4px)'}}
+          style={{color: props.primaryColour}}
           onClick={() => {
             handleCopy();
           }}
