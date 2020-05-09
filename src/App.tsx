@@ -4,10 +4,9 @@ import Home from 'components/Home/Home';
 import {themeType} from 'types';
 
 // in development https://github.com/atomcorp/terminal-api needs to be installed and running
+// package.json has a proxy which points stuff like this in dev to http://localhost:3001
 const apiBase =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:3001'
-    : 'https://www.atomcorp.dev';
+  process.env.NODE_ENV === 'development' ? '' : 'https://www.atomcorp.dev';
 
 const App: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);

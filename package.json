@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://atomcorp.github.io/themes/",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@types/jest": "^25.2.1",
     "@types/node": "13.13.5",
