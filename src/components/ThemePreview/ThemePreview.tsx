@@ -65,22 +65,32 @@ const ThemePreview: React.FC<PropsType> = (props) => {
         >
           {props.theme.name}
         </h2>
-        <Share
-          className={css.icon}
-          colour={props.primaryColour}
+        <button
+          className={css.button}
+          style={{color: props.primaryColour, transform: 'translateY(4px)'}}
           onClick={() => {
             handleCopy();
           }}
-          size="48px"
-        />
-        <Download
-          className={css.icon}
-          colour={props.primaryColour}
-          size="48px"
+        >
+          <Download
+            className={css.icon}
+            colour={props.primaryColour}
+            size="48px"
+          />
+        </button>
+        <button
+          className={css.button}
+          style={{color: props.primaryColour}}
           onClick={() => {
             handleShare();
           }}
-        />
+        >
+          <Share
+            className={css.icon}
+            colour={props.primaryColour}
+            size="48px"
+          />
+        </button>
       </div>
       {props.previewType === 'colour' ? (
         <ColourTest theme={props.theme} />
