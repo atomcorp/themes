@@ -1,4 +1,4 @@
-![Preview of the Windows Terminal Themes](https://github.com/atomcorp/themes/raw/master/public/preview.png)
+![Preview of the Windows Terminal Themes](https://github.com/atomcorp/themes/raw/master/public/preview-console.png)
 
 # Windows Terminal Themes
 
@@ -33,7 +33,7 @@ To run in development, you also need to run [github.com/atomcorp/terminal-api](h
 
 ### Compiling the themes
 
-The json list is generated from another repo, [github.com/atomcorp/terminal-api](https://github.com/atomcorp/terminal-api). It merges all the schemes found in the [iTerm2-Color-Schemes/windowsterminal](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) using the GitHub API, then combines it with `src/custom-colour-schemes.json` in this repo. There is a cron job that runs this once a day.
+The json list is generated from another repo, [github.com/atomcorp/terminal-api](https://github.com/atomcorp/terminal-api). It merges all the schemes found in the [iTerm2-Color-Schemes/windowsterminal](https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/windowsterminal) using the GitHub API, then combines it with `src/custom-colour-schemes.json` in this repo. It runs on a server with a cron job that runs this once a day.
 
 ## Todo
 
