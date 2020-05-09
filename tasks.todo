@@ -24,6 +24,7 @@ Future:
 ☐ Add preview type and console tab to share theme parameters
 ☐ favicon match primary/background colours
 ✔ integration tests for console @done(20-05-09 09:57)
+☐ Maybe host the entire thing on AWS, create mono repo
 
 Ideas:
   ☐ add *new* tag
