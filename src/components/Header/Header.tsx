@@ -1,16 +1,13 @@
 import React from 'react';
 import {saveAs} from 'file-saver';
 
-import themeJson from 'colour-schemes.json';
 import css from './Header.module.css';
+import {themeType} from 'types';
 
 type PropTypes = {
   primaryColour: string;
+  themes: themeType[];
 };
-
-const themeBlob = new Blob([JSON.stringify(themeJson, null, 2)], {
-  type: 'application/json',
-});
 
 const Header: React.FC<PropTypes> = (props) => (
   <>
@@ -52,6 +49,21 @@ const Header: React.FC<PropTypes> = (props) => (
       <button
         className={css.download}
         onClick={() => {
+          const themeBlob = new Blob(
+            [
+              JSON.stringify(
+                props.themes.map((theme) => {
+                  const {isDark, ...rest} = theme;
+                  return rest;
+                }),
+                null,
+                2
+              ),
+            ],
+            {
+              type: 'application/json',
+            }
+          );
           saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
         }}
       >

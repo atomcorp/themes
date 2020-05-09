@@ -2,15 +2,21 @@
 
 import '@testing-library/cypress/add-commands';
 
-import themes from '../../src/colour-schemes.json';
 import codeblocks from '../../src/components/ConsoleTest/codeblocks';
 
 describe('Windows Terminal Themes - big screen', function () {
   beforeEach(function () {
-    cy.wrap(themes).as('themes');
-    cy.wrap(themes.filter((theme) => theme.isDark)).as('darkThemes');
-    cy.wrap(themes.filter((theme) => !theme.isDark)).as('lightThemes');
+    cy.server();
+    cy.route(/api\/v1\/themes/).as('themes');
     cy.visit('/themes');
+    cy.wait('@themes').then((xhr) => {
+      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+        'darkThemes'
+      );
+      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+        'lightThemes'
+      );
+    });
     cy.findByText('Loading...').should('not.be.visible');
   });
   xit('should download all themes using download button', function () {
@@ -36,7 +42,8 @@ describe('Windows Terminal Themes - big screen', function () {
     });
   });
   it('should show all dark themes and no light themes by default', function () {
-    cy.get('@themes').then((themes) => {
+    cy.get('@themes').then((xhr) => {
+      const themes = xhr.response.body;
       const lightThemes = themes.filter((theme) => !theme.isDark);
       const darkThemes = themes.filter((theme) => theme.isDark);
       cy.findByTestId('theme-list').then(($el) => {
@@ -53,7 +60,8 @@ describe('Windows Terminal Themes - big screen', function () {
   it('when selecting light theme, it should show all light themes and no dark', function () {
     cy.findByLabelText('Light').click();
     cy.findByLabelText('Light').should('be.checked');
-    cy.get('@themes').then((themes) => {
+    cy.get('@themes').then((xhr) => {
+      const themes = xhr.response.body;
       const lightThemes = themes.filter((theme) => !theme.isDark);
       const darkThemes = themes.filter((theme) => theme.isDark);
       cy.findByTestId('theme-list').then(($el) => {
@@ -143,11 +151,19 @@ describe('Windows Terminal Themes - big screen', function () {
 
 describe('Themes - small screen', function () {
   beforeEach(function () {
-    cy.wrap(themes).as('themes');
-    cy.wrap(themes.filter((theme) => theme.isDark)).as('darkThemes');
-    cy.wrap(themes.filter((theme) => !theme.isDark)).as('lightThemes');
+    cy.server();
     cy.viewport(414, 736);
+    cy.route(/api\/v1\/themes/).as('themes');
     cy.visit('/themes');
+    cy.wait('@themes').then((xhr) => {
+      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+        'darkThemes'
+      );
+      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+        'lightThemes'
+      );
+    });
+    cy.findByText('Loading...').should('not.be.visible');
     cy.findByText('Loading...').should('not.be.visible');
   });
   it('default to first dark theme', function () {
@@ -260,11 +276,19 @@ describe('Themes - small screen', function () {
 
 describe('Preview views', function () {
   beforeEach(function () {
-    cy.wrap(themes).as('themes');
-    cy.wrap(themes.filter((theme) => theme.isDark)).as('darkThemes');
-    cy.wrap(themes.filter((theme) => !theme.isDark)).as('lightThemes');
-    cy.wrap(codeblocks).as('codeblocks');
+    cy.server();
+    cy.route(/api\/v1\/themes/).as('themes');
     cy.visit('/themes');
+    cy.wait('@themes').then((xhr) => {
+      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+        'darkThemes'
+      );
+      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+        'lightThemes'
+      );
+    });
+    cy.findByText('Loading...').should('not.be.visible');
+    cy.wrap(codeblocks).as('codeblocks');
     cy.findByText('Loading...').should('not.be.visible');
   });
   it('should render the console view first', function () {
