@@ -1,4 +1,4 @@
-Now:
+Next:
   ✔ add Cypress testing, and remove any Jest UI testing @done(20-04-10 22:37)
     have Jest tests for the following
     ✔ unit tests for little functions @done(20-05-07 23:28)
@@ -13,10 +13,13 @@ Now:
   ☐ better loading, maybe a skeleton
   ☐ when clicking share/copy show a modal with url or snippet being copied
   ☐ add labels to download and share buttons
+  ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
+    ☐ better loading, maybe a skeleton
+    ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next
+    ☐ Add left/right swiping for mobile
   
-Future:
-☐ have some script to run `scripts/get-schemes` automatically, each week or so
-☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
+After:
+✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
   I don't like all the info text is presented
   sidebar should just have themes
   copy and share themes should be buttons on the same line as title
@@ -27,6 +30,8 @@ Future:
 ☐ favicon match primary/background colours
 ✔ integration tests for console @done(20-05-09 09:57)
 ☐ Maybe host the entire thing on AWS, create mono repo
+☐ Terminal feature with scanlines etc - experimental.retroTerminalEffect
+☐ Maybe could be a whole customise Windows Terminal thing - font types, font size, shells
 
 Ideas:
   ☐ add *new* tag
@@ -41,6 +46,8 @@ Notes
   Useful sites
     http://chriskempson.com/projects/base16/ - info on colour types
     https://github.com/mjswensen/themer - nicely build around themes
+    https://int10h.org/oldschool-pc-fonts/fontlist/ - lots of nice 8bit fonts
+    oclif.io - cmd line tool
 
 Done:
   ✔ Add routes, or change URL for each theme for sharing @done(20-04-09 00:10)
