@@ -1,4 +1,5 @@
 import React, {useEffect, useReducer, useRef, useCallback} from 'react';
+import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
 import PreviewChoice from 'components/PreviewChoice/PreviewChoice';
@@ -15,7 +16,7 @@ import {
   returnInitialTheme,
 } from './homeMethods';
 import {themeType} from 'types';
-import {Light, Dark, Console, Colours} from 'Icons';
+import {Light, Dark, Console, Colours, Github, Download} from 'Icons';
 
 type themeprops = {
   themes: themeType[];
@@ -63,6 +64,24 @@ const Home: React.FC<themeprops> = (props) => {
   }, [props.themes, initialTheme]);
   const theme = state.themes.find((theme) => theme.name === state.activeTheme);
   const themeNames = state.filteredThemes.map((theme) => theme.name);
+  const downloadAllThemes = () => {
+    const themeBlob = new Blob(
+      [
+        JSON.stringify(
+          props.themes.map((theme) => {
+            const {isDark, ...rest} = theme;
+            return rest;
+          }),
+          null,
+          2
+        ),
+      ],
+      {
+        type: 'application/json',
+      }
+    );
+    saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
+  };
   return (
     <section className={css.container}>
       <aside
@@ -171,6 +190,20 @@ const Home: React.FC<themeprops> = (props) => {
               },
             ]}
           />
+          <a
+            className={css.git}
+            href="https://github.com/atomcorp/themes"
+            style={{color: state.primaryColour}}
+          >
+            <Github size="36px" colour={state.primaryColour} />
+          </a>
+          <button
+            style={{color: state.primaryColour}}
+            className={css.download}
+            onClick={downloadAllThemes}
+          >
+            <Download size="36px" colour={state.primaryColour} />
+          </button>
         </div>
       </aside>
       <section className={css.content} style={{color: state.primaryColour}}>

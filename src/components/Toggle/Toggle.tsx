@@ -36,7 +36,7 @@ const Toggle: React.FC<PropsState> = (props) => (
           }}
         >
           <input
-            name="shade"
+            name={props.type}
             type="radio"
             id={option.value}
             value={option.value}

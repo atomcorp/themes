@@ -64,4 +64,32 @@
   border-top: 3px solid;
   margin: auto 0 0;
   padding: 3px;
+  display: flex;
+}
+
+.git {
+  display: inline-block;
+  border: 3px solid;
+  margin: 0 3px 0 auto;
+}
+
+.git svg {
+  padding: 3px;
+  display: block;
+}
+
+.download {
+  background: transparent;
+  border: 3px solid;
+  padding: 0;
+  cursor: pointer;
+}
+
+.download:focus {
+  outline: 1px dotted;
+}
+
+.download svg {
+  display: block;
+  transform: translateY(1px);
 }
