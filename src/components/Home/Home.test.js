@@ -230,28 +230,33 @@ xit('should tab use keyboard to navigate', () => {
 });
 
 it('should ensure custom-colour-schemes.json has correct keys', () => {
-  const validkeys = [
-    'name',
-    'black',
-    'red',
-    'green',
-    'yellow',
-    'blue',
-    'purple',
-    'cyan',
-    'white',
-    'brightBlack',
-    'brightRed',
-    'brightGreen',
-    'brightYellow',
-    'brightBlue',
-    'brightPurple',
-    'brightCyan',
-    'brightWhite',
-    'background',
-    'foreground',
-  ];
+  const validkeys = {
+    name: '',
+    black: '',
+    red: '',
+    green: '',
+    yellow: '',
+    blue: '',
+    purple: '',
+    cyan: '',
+    white: '',
+    brightBlack: '',
+    brightRed: '',
+    brightGreen: '',
+    brightYellow: '',
+    brightBlue: '',
+    brightPurple: '',
+    brightCyan: '',
+    brightWhite: '',
+    background: '',
+    foreground: '',
+  };
   customColourSchemes.map((customColourScheme) => {
-    expect(Object.keys(customColourScheme)).toEqual(validkeys);
+    Object.keys(customColourScheme).forEach((key) => {
+      expect(validkeys).toHaveProperty(key);
+    });
+    Object.keys(validkeys).forEach((key) => {
+      expect(customColourScheme).toHaveProperty(key);
+    });
   });
 });
