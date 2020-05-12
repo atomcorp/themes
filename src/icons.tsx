@@ -2,6 +2,7 @@ import React from 'react';
 
 type IconProps = {
   colour?: string;
+  backgroundColour?: string;
   size?: string;
   onClick?: () => void;
   className?: string;
@@ -18,12 +19,36 @@ export const Share = (props: IconProps) => (
     className={props.className}
     style={{
       stroke: props.colour,
+      backgroundColor: props.backgroundColour,
+      transform: 'scaleX(-1)',
     }}
   >
     <title id="share">Share theme</title>
     <path
       d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"
       fill={props.colour}
+    />
+  </svg>
+);
+
+export const Copy = (props: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height={props.size || '24px'}
+    width={props.size || '24px'}
+    viewBox="0 0 24 24"
+    aria-labelledby="title"
+    onClick={props.onClick}
+    className={props.className}
+    style={{
+      stroke: props.colour,
+      backgroundColor: props.backgroundColour,
+    }}
+  >
+    <title id="copy">Share theme</title>
+    <path
+      fill={props.colour}
+      d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm-1 4l6 6v10c0 1.1-.9 2-2 2H7.99C6.89 23 6 22.1 6 21l.01-14c0-1.1.89-2 1.99-2h7zm-1 7h5.5L14 6.5V12z"
     />
   </svg>
 );

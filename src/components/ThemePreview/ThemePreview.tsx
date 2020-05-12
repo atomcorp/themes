@@ -6,7 +6,7 @@ import ConsoleTest from 'components/ConsoleTest/ConsoleTest';
 import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
 import {parseValidKeys} from './consoleMethods';
-import {Share, Download} from 'Icons';
+import {Share, Copy} from 'Icons';
 
 type PropsType = {
   theme?: themeType;
@@ -66,29 +66,32 @@ const ThemePreview: React.FC<PropsType> = (props) => {
           {props.theme.name}
         </h2>
         <button
+          style={{
+            backgroundColor: props.primaryColour,
+          }}
           className={css.button}
-          style={{color: props.primaryColour}}
           onClick={() => {
             handleCopy();
           }}
         >
-          <Download
-            className={css.icon}
-            colour={props.primaryColour}
-            size="48px"
-          />
+          <Copy className={css.icon} colour={props.backgroundColour} />
+          <span className={css.label}>Copy</span>
         </button>
         <button
           className={css.button}
-          style={{color: props.primaryColour}}
+          style={{
+            color: props.backgroundColour,
+            backgroundColor: props.primaryColour,
+          }}
           onClick={() => {
             handleShare();
           }}
         >
+          Share
           <Share
             className={css.icon}
-            colour={props.primaryColour}
-            size="48px"
+            colour={props.backgroundColour}
+            size="36px"
           />
         </button>
       </div>

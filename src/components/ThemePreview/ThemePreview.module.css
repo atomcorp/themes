@@ -17,6 +17,7 @@
 
 .heading {
   display: flex;
+  align-items: center;
   max-width: 820px;
   width: 100%;
   padding: 0 10px;
@@ -32,10 +33,16 @@
 .button {
   background: transparent;
   padding: 0;
-  border: 0;
   flex: 0 0 auto;
   cursor: pointer;
   line-height: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  display: inline-block;
 }
 
 .button svg {
