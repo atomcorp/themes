@@ -15,6 +15,27 @@ type PropsType = {
   previewType: previewType;
 };
 
+type ThemePreviewButtonType = {
+  onClick: () => void;
+  colour: string;
+};
+
+const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
+  return (
+    <button
+      style={{
+        color: props.colour,
+      }}
+      className={css.button}
+      onClick={() => {
+        props.onClick();
+      }}
+    >
+      {props.children}
+    </button>
+  );
+};
+
 const ThemePreview: React.FC<PropsType> = (props) => {
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
@@ -65,35 +86,14 @@ const ThemePreview: React.FC<PropsType> = (props) => {
         >
           {props.theme.name}
         </h2>
-        <button
-          style={{
-            backgroundColor: props.primaryColour,
-          }}
-          className={css.button}
-          onClick={() => {
-            handleCopy();
-          }}
-        >
-          <Copy className={css.icon} colour={props.backgroundColour} />
-          <span className={css.label}>Copy</span>
-        </button>
-        <button
-          className={css.button}
-          style={{
-            color: props.backgroundColour,
-            backgroundColor: props.primaryColour,
-          }}
-          onClick={() => {
-            handleShare();
-          }}
-        >
+        <ThemePreviewButton onClick={handleCopy} colour={props.primaryColour}>
+          Copy
+          <Copy className={css.icon} colour={props.primaryColour} />
+        </ThemePreviewButton>
+        <ThemePreviewButton onClick={handleShare} colour={props.primaryColour}>
           Share
-          <Share
-            className={css.icon}
-            colour={props.backgroundColour}
-            size="36px"
-          />
-        </button>
+          <Share className={css.icon} colour={props.primaryColour} />
+        </ThemePreviewButton>
       </div>
       {props.previewType === 'colour' ? (
         <ColourTest theme={props.theme} />

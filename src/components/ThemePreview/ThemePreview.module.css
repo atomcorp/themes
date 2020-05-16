@@ -32,22 +32,17 @@
 
 .button {
   background: transparent;
-  padding: 0;
+  padding: 3px;
   flex: 0 0 auto;
   cursor: pointer;
   line-height: 0;
-  border: 0;
+  border: 3px solid;
   display: flex;
   align-items: center;
-}
-
-.label {
-  display: inline-block;
+  margin: 0 0 0 3px;
+  font-size: 1em;
 }
 
 .button svg {
-}
-
-.button:focus svg {
-  outline: 1px dotted;
+  margin: 0 0 0 3px;
 }
