@@ -10,8 +10,9 @@ Next:
   ✔ check out small screen responsiveness @done(20-05-07 23:28)
   ✘ use env file for GitHub token, not private json @cancelled(20-05-09 00:32)
   ✔ add codeblocks with syntax highlighting @done(20-05-09 00:30)
-  ☐ when clicking share/copy show a modal with url or snippet being copied
-  ☐ add labels to download and share buttons
+  ✔ when clicking share/copy show a modal with url or snippet being copied @done(20-05-16 13:08)
+    I just added a toast w/ message in the end
+  ✔ add labels to download and share buttons @done(20-05-16 13:09)
   ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
     ☐ better loading, maybe a skeleton
     ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next

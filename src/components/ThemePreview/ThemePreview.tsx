@@ -6,7 +6,6 @@ import ColourTest from 'components/ColourTest/ColourTest';
 import ConsoleTest from 'components/ConsoleTest/ConsoleTest';
 import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
-import 'react-toastify/dist/ReactToastify.min.css';
 import {parseValidKeys} from './consoleMethods';
 import {Share, Copy} from 'Icons';
 import Toast from 'components/Toast/Toast';

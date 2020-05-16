@@ -47,6 +47,7 @@ The json list is generated from another repo, [github.com/atomcorp/terminal-api]
 ## Notes
 
 - Most themes are copied from [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) so huge thanks and credit to them and all the theme designers
-- aims are to be simple and accessible
-- this project is based around: React (create-react-app), TypeScript, Node, Github Pages, immer and CSS Grid
+- aim is to be simple and accessible
+- this project is based around: React (create-react-app), TypeScript, Github Pages, immer and CSS Grid
 - the following projects were really useful [clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill), [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill), [file-saver](https://github.com/eligrey/FileSaver.js) and [get-contrast](https://github.com/johno/get-contrast). Thanks!
+- Icons are all [Material Design](https://material.io/resources/icons/?style=baseline), except GitHub's mark which is from (GitHub Primer)(https://primer.style/octicons/)

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import Home from 'components/Home/Home';
 import {themeType} from 'types';
+import Skeleton from 'components/Skeleton/Skeleton';
 
 /**
  * in development https://github.com/atomcorp/terminal-api needs to be installed and running

@@ -2,11 +2,9 @@ import React, {useEffect, useReducer, useRef, useCallback} from 'react';
 import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
-import PreviewChoice from 'components/PreviewChoice/PreviewChoice';
 import ThemeList from 'components/ThemeList/ThemeList';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
-import Header from 'components/Header/Header';
-import Toggle from 'components/Toggle/Toggle';
+import HomeActions from './HomeActions';
 import css from './Home.module.css';
 import {
   homeReducer,
@@ -16,7 +14,6 @@ import {
   returnInitialTheme,
 } from './homeMethods';
 import {themeType} from 'types';
-import {Light, Dark, Console, Colours, Github, Download} from 'Icons';
 
 type themeprops = {
   themes: themeType[];
@@ -123,88 +120,14 @@ const Home: React.FC<themeprops> = (props) => {
             dispatch={dispatch}
           />
         )}
-        <div className={css.footer} style={{color: state.primaryColour}}>
-          <Toggle
-            primaryColour={state.primaryColour}
-            backgroundColour={state.backgroundColour}
-            currentValue={state.previewType}
-            dispatch={dispatch}
-            type="PREVIEW"
-            values={[
-              {
-                value: 'console',
-                label: 'Console',
-                icon: (isSelected) => (
-                  <Console
-                    size="36px"
-                    colour={
-                      isSelected ? state.backgroundColour : state.primaryColour
-                    }
-                  />
-                ),
-              },
-              {
-                value: 'colour',
-                label: 'Colour',
-                icon: (isSelected) => (
-                  <Colours
-                    size="36px"
-                    colour={
-                      isSelected ? state.backgroundColour : state.primaryColour
-                    }
-                  />
-                ),
-              },
-            ]}
-          />
-          <Toggle
-            primaryColour={state.primaryColour}
-            backgroundColour={state.backgroundColour}
-            currentValue={state.themeShade}
-            dispatch={dispatch}
-            type="SHADE"
-            values={[
-              {
-                value: 'DARK',
-                label: 'Dark',
-                icon: (isSelected) => (
-                  <Dark
-                    size="36px"
-                    colour={
-                      isSelected ? state.backgroundColour : state.primaryColour
-                    }
-                  />
-                ),
-              },
-              {
-                value: 'LIGHT',
-                label: 'Light',
-                icon: (isSelected) => (
-                  <Light
-                    size="36px"
-                    colour={
-                      isSelected ? state.backgroundColour : state.primaryColour
-                    }
-                  />
-                ),
-              },
-            ]}
-          />
-          <a
-            className={css.git}
-            href="https://github.com/atomcorp/themes"
-            style={{color: state.primaryColour}}
-          >
-            <Github size="36px" colour={state.primaryColour} />
-          </a>
-          <button
-            style={{color: state.primaryColour}}
-            className={css.download}
-            onClick={downloadAllThemes}
-          >
-            <Download size="36px" colour={state.primaryColour} />
-          </button>
-        </div>
+        <HomeActions
+          primaryColour={state.primaryColour}
+          backgroundColour={state.backgroundColour}
+          previewType={state.previewType}
+          dispatch={dispatch}
+          themeShade={state.themeShade}
+          downloadAllThemes={downloadAllThemes}
+        />
       </aside>
       <section className={css.content} style={{color: state.primaryColour}}>
         <ThemePreview
