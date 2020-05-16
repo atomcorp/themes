@@ -1,12 +1,15 @@
-import React, {useState} from 'react';
+import React, {useState, useReducer} from 'react';
 import * as clipboard from 'clipboard-polyfill';
+import immer from 'immer';
 
 import ColourTest from 'components/ColourTest/ColourTest';
 import ConsoleTest from 'components/ConsoleTest/ConsoleTest';
 import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
+import 'react-toastify/dist/ReactToastify.min.css';
 import {parseValidKeys} from './consoleMethods';
 import {Share, Copy} from 'Icons';
+import Toast from 'components/Toast/Toast';
 
 type PropsType = {
   theme?: themeType;
@@ -18,6 +21,29 @@ type PropsType = {
 type ThemePreviewButtonType = {
   onClick: () => void;
   colour: string;
+};
+
+type reducerType = {
+  title: string;
+  isActive: boolean;
+  message: string;
+};
+
+type actionType =
+  | {
+      type: 'show';
+      title: string;
+      message: string;
+    }
+  | {
+      type: 'hide';
+    };
+
+const toastmessages = {
+  share: (themename: string) =>
+    `Added a direct link to the ${themename} theme to your clipboard`,
+  copy: (themename: string) =>
+    `Copied the scheme for the ${themename} to your clipboard`,
 };
 
 const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
@@ -36,9 +62,29 @@ const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
   );
 };
 
+const initialState = {
+  isActive: false,
+  title: 'Title',
+  message: 'A message to be written here for me',
+};
+
+const reducer = (state: reducerType, action: actionType) => {
+  return immer(state, (draftState: reducerType) => {
+    switch (action.type) {
+      case 'show':
+        draftState.title = action.title;
+        draftState.message = action.message;
+        draftState.isActive = true;
+        break;
+      case 'hide':
+        draftState.isActive = false;
+    }
+  });
+};
+
 const ThemePreview: React.FC<PropsType> = (props) => {
-  const [copied, setCopied] = useState(false);
-  const [shared, setShared] = useState(false);
+  // const [toast, setToast] = useState({isActive: false, title: '', message: ''});
+  const [state, dispatch] = useReducer(reducer, initialState);
   if (!props.theme) {
     return (
       <div
@@ -50,27 +96,33 @@ const ThemePreview: React.FC<PropsType> = (props) => {
     );
   }
   const handleCopy = () => {
-    if (!copied && props.theme) {
-      setCopied(true);
+    if (!state.isActive && props.theme) {
+      dispatch({
+        type: 'show',
+        title: 'Copied!',
+        message: toastmessages.copy(props.theme.name),
+      });
       clipboard.writeText(JSON.stringify(parseValidKeys(props.theme), null, 2));
       setTimeout(() => {
-        setCopied(false);
-      }, 500);
+        dispatch({type: 'hide'});
+      }, 2000);
     }
   };
   const handleShare = () => {
-    if (!shared) {
-      setShared(true);
+    if (!state.isActive && props.theme) {
+      dispatch({
+        type: 'show',
+        title: 'Shared!',
+        message: toastmessages.share(props.theme.name),
+      });
+      clipboard.writeText(
+        `${window.location.origin}${
+          window.location.pathname
+        }?theme=${encodeURIComponent(props.theme.name)}`
+      );
       setTimeout(() => {
-        if (props.theme != null) {
-          clipboard.writeText(
-            `${window.location.origin}${
-              window.location.pathname
-            }?theme=${encodeURIComponent(props.theme.name)}`
-          );
-        }
-        setShared(false);
-      }, 500);
+        dispatch({type: 'hide'});
+      }, 2000);
     }
   };
   return (
@@ -100,6 +152,13 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       ) : (
         <ConsoleTest theme={props.theme} />
       )}
+      <Toast
+        color={props.primaryColour}
+        background={props.backgroundColour}
+        title={state.title}
+        isActive={state.isActive}
+        message={state.message}
+      />
     </section>
   );
 };

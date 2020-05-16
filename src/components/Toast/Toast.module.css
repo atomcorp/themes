@@ -1,0 +1,19 @@
+.container {
+  position: fixed;
+  transform: translateY(100%);
+  transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  right: 3px;
+  bottom: 0;
+  border: 3px solid;
+  padding: 10px;
+  max-width: 30%;
+}
+
+.container.active {
+  transform: translateY(-3px);
+}
+
+.title {
+  font-size: 1.2em;
+  margin: 0 0 5px;
+}

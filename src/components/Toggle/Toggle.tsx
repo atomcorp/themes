@@ -29,6 +29,7 @@ const Toggle: React.FC<PropsState> = (props) => (
       const isSelected = option.value === props.currentValue;
       return (
         <label
+          key={option.value}
           className={`${css.label} ${isSelected ? css.active : ''}`}
           htmlFor={option.value}
           style={{
