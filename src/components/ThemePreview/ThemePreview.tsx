@@ -41,9 +41,8 @@ type actionType =
 
 const toastmessages = {
   share: (themename: string) =>
-    `Added a direct link to the ${themename} theme to your clipboard`,
-  copy: (themename: string) =>
-    `Copied the scheme for the ${themename} to your clipboard`,
+    `Added ${themename}'s direct link to your clipboard`,
+  copy: (themename: string) => `Copied ${themename}'s scheme to your clipboard`,
 };
 
 const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
