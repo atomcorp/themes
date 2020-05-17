@@ -9,6 +9,10 @@
   overflow: auto;
 }
 
+.loading {
+  height: 100%;
+}
+
 @media (min-width: 769px) {
   .container {
     padding: 0;

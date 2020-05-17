@@ -24,7 +24,7 @@ const App: React.FC = () => {
     getThemes();
   }, []);
   if (themes.length < 1) {
-    return <div>Loading</div>;
+    return <Skeleton />;
   }
   return <Home themes={themes} />;
 };

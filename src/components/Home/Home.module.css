@@ -20,6 +20,7 @@
     height: 100%;
     overflow: auto;
     max-width: 30%;
+    min-width: 350px;
     display: flex;
     flex-direction: column;
     border: 3px solid;

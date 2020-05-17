@@ -81,16 +81,13 @@ const reducer = (state: reducerType, action: actionType) => {
 };
 
 const ThemePreview: React.FC<PropsType> = (props) => {
-  // const [toast, setToast] = useState({isActive: false, title: '', message: ''});
   const [state, dispatch] = useReducer(reducer, initialState);
   if (!props.theme) {
     return (
       <div
         style={{background: props.backgroundColour, color: props.primaryColour}}
         className={css.loading}
-      >
-        Loading...
-      </div>
+      ></div>
     );
   }
   const handleCopy = () => {
@@ -103,7 +100,7 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       clipboard.writeText(JSON.stringify(parseValidKeys(props.theme), null, 2));
       setTimeout(() => {
         dispatch({type: 'hide'});
-      }, 2000);
+      }, 1000);
     }
   };
   const handleShare = () => {
@@ -120,7 +117,7 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       );
       setTimeout(() => {
         dispatch({type: 'hide'});
-      }, 2000);
+      }, 1000);
     }
   };
   return (
