@@ -103,7 +103,6 @@ export const homeReducer = (
   action: actionTypes
 ): stateType => {
   return immer(state, (draftState: stateType) => {
-    let theme;
     switch (action.type) {
       case 'LOAD':
         draftState.themes = action.themes;
@@ -128,10 +127,47 @@ export const homeReducer = (
         draftState.activeTheme = draftState.filteredThemes[0].name;
         break;
       case 'SET':
-        draftState.activeTheme = action.theme;
-        // eslint-disable-next-line no-case-declarations
-        theme = state.themes.find((theme) => theme.name === action.theme);
-        if (theme) {
+        {
+          draftState.activeTheme = action.theme;
+          // eslint-disable-next-line no-case-declarations
+          const theme = state.themes.find(
+            (theme) => theme.name === action.theme
+          );
+          if (theme) {
+            draftState.primaryColour = getRandomColour(theme);
+            draftState.backgroundColour = theme.background;
+          }
+        }
+        break;
+      case 'PREV': {
+        const currentIndex = state.filteredThemes.findIndex(
+          (theme) => theme.name === state.activeTheme
+        );
+        let theme;
+        if (currentIndex === 0) {
+          // get last item
+          theme = state.filteredThemes[state.filteredThemes.length - 1];
+        } else {
+          theme = state.filteredThemes[currentIndex - 1];
+        }
+        draftState.activeTheme = theme.name;
+        draftState.primaryColour = getRandomColour(theme);
+        draftState.backgroundColour = theme.background;
+        break;
+      }
+      case 'NEXT':
+        {
+          let theme;
+          const currentIndex = state.filteredThemes.findIndex(
+            (theme) => theme.name === state.activeTheme
+          );
+          if (currentIndex === state.filteredThemes.length - 1) {
+            // get last item
+            theme = state.filteredThemes[0];
+          } else {
+            theme = state.filteredThemes[currentIndex + 1];
+          }
+          draftState.activeTheme = theme.name;
           draftState.primaryColour = getRandomColour(theme);
           draftState.backgroundColour = theme.background;
         }
@@ -153,7 +189,7 @@ export const homeReducer = (
         }
         draftState.activeTheme = draftState.filteredThemes[0].name;
         // eslint-disable-next-line no-case-declarations
-        theme = state.themes.find(
+        const theme = state.themes.find(
           (theme) => theme.name === draftState.filteredThemes[0].name
         );
         if (theme) {

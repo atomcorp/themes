@@ -1,4 +1,11 @@
 .container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
   margin: 20px 0;
   text-align: center;
   display: block;
@@ -9,4 +16,9 @@
   font-family: 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas, monospace,
     monospace;
   max-width: 100%;
+  width: 100%;
+}
+
+.arrow {
+  flex: 0 0 auto;
 }

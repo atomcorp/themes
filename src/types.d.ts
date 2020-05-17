@@ -103,11 +103,21 @@ type setPreviewType = {
   themeShade: previewType;
 };
 
+type setNextType = {
+  type: 'NEXT';
+};
+
+type setPrevType = {
+  type: 'PREV';
+};
+
 export type actionTypes =
   | loadActionType
   | setTheme
   | setScreenSizeType
   | setScreenSizeType
-  | setPreviewType;
+  | setPreviewType
+  | setNextType
+  | setPrevType;
 
 export type previewType = 'console' | 'colour';

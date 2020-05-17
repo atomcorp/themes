@@ -126,6 +126,7 @@ const Home: React.FC<themeprops> = (props) => {
             themeNames={themeNames}
             activeTheme={state.activeTheme}
             dispatch={dispatch}
+            primaryColour={state.primaryColour}
           />
         )}
       </aside>

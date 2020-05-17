@@ -16,7 +16,10 @@ Next:
   ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
     ✔ better loading @done(20-05-17 01:15)
     ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next
-    ☐ Add left/right swiping for mobile
+    ✔ Add prev/next action for mobile @done(20-05-17 18:42)
+    ☐ Add link for i icon, an info modal
+  ☐ Event listener for prev/next keys (A + D)
+  ☐ Add version log (1: initial, 2: API, 3: UI redesign)
   
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
