@@ -62,9 +62,9 @@ export const screenSizeObserver = (
 ): ResizeObserver => {
   return new ResizeObserver((entries: ResizeObserverEntry[]) => {
     const {width} = entries[0].contentRect;
-    if (width > 768) {
+    if (width >= 1024) {
       dispatch({type: 'SIZE', isSmallScreenSize: false});
-    } else if (width < 768) {
+    } else if (width < 1024) {
       dispatch({type: 'SIZE', isSmallScreenSize: true});
     }
   });

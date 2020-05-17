@@ -8,7 +8,7 @@ import {
   actionTypes,
   previewType,
 } from 'types';
-import {Light, Dark, Console, Colours, Github, Download} from 'Icons';
+import {Light, Dark, Console, Colours, Github, Download, Help} from 'Icons';
 import Toggle from 'components/Toggle/Toggle';
 
 type PropsType = {
@@ -21,7 +21,7 @@ type PropsType = {
 };
 
 const HomeActions = (props: PropsType) => (
-  <div className={css.footer} style={{color: props.primaryColour}}>
+  <div className={css.actions} style={{color: props.primaryColour}}>
     <Toggle
       primaryColour={props.primaryColour}
       backgroundColour={props.backgroundColour}
@@ -80,20 +80,29 @@ const HomeActions = (props: PropsType) => (
         },
       ]}
     />
-    <a
-      className={css.git}
-      href="https://github.com/atomcorp/themes"
-      style={{color: props.primaryColour}}
-    >
-      <Github size="36px" colour={props.primaryColour} />
-    </a>
-    <button
-      style={{color: props.primaryColour}}
-      className={css.download}
-      onClick={props.downloadAllThemes}
-    >
-      <Download size="36px" colour={props.primaryColour} />
-    </button>
+    <div className={css.buttons}>
+      <button
+        style={{color: props.primaryColour}}
+        className={css.help}
+        onClick={props.downloadAllThemes}
+      >
+        <Help size="36px" colour={props.primaryColour} />
+      </button>
+      <a
+        className={css.git}
+        href="https://github.com/atomcorp/themes"
+        style={{color: props.primaryColour}}
+      >
+        <Github size="36px" colour={props.primaryColour} />
+      </a>
+      <button
+        style={{color: props.primaryColour}}
+        className={css.download}
+        onClick={props.downloadAllThemes}
+      >
+        <Download size="36px" colour={props.primaryColour} />
+      </button>
+    </div>
   </div>
 );
 

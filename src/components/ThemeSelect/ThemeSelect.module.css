@@ -8,4 +8,5 @@
   font-size: 16px;
   font-family: 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas, monospace,
     monospace;
+  max-width: 100%;
 }

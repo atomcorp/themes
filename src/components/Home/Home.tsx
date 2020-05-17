@@ -23,14 +23,14 @@ const Home: React.FC<themeprops> = (props) => {
   const sidebarRef = useRef<HTMLElement>(null);
   const [state, dispatch] = useReducer(homeReducer, {
     ...initialState,
-    ...{isSmallScreenSize: window.innerWidth < 768},
+    ...{isSmallScreenSize: window.innerWidth < 1024},
   });
   const initialTheme = returnInitialTheme(window.location.search);
   const scrollToLabel = useCallback((): void => {
     // scroll to the initialTheme, if used
     if (
       initialTheme != null &&
-      window.innerWidth >= 768 &&
+      window.innerWidth >= 1024 &&
       sidebarRef.current != null
     ) {
       const labelEl = sidebarRef.current.querySelector(
@@ -98,7 +98,7 @@ const Home: React.FC<themeprops> = (props) => {
         >
           <h1>Windows Terminal Themes</h1>
         </a>
-        {!state.isSmallScreenSize ? (
+        {!state.isSmallScreenSize &&
           /**
            * this length check is just to make sure when the ThemeList loads it will have themes
            * it needs to do this to make the scrollToLabel function work when the component loads
@@ -112,14 +112,7 @@ const Home: React.FC<themeprops> = (props) => {
               backgroundColour={state.backgroundColour}
               scrollToLabel={scrollToLabel}
             />
-          )
-        ) : (
-          <ThemeSelect
-            themeNames={themeNames}
-            activeTheme={state.activeTheme}
-            dispatch={dispatch}
-          />
-        )}
+          )}
         <HomeActions
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
@@ -128,13 +121,24 @@ const Home: React.FC<themeprops> = (props) => {
           themeShade={state.themeShade}
           downloadAllThemes={downloadAllThemes}
         />
+        {state.isSmallScreenSize && (
+          <ThemeSelect
+            themeNames={themeNames}
+            activeTheme={state.activeTheme}
+            dispatch={dispatch}
+          />
+        )}
       </aside>
-      <section className={css.content} style={{color: state.primaryColour}}>
+      <section
+        className={css.content}
+        style={{color: state.primaryColour, background: state.backgroundColour}}
+      >
         <ThemePreview
           previewType={state.previewType}
           theme={theme}
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
+          isSmallScreenSize={state.isSmallScreenSize}
         />
       </section>
     </section>

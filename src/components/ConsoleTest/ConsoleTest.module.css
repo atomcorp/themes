@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  padding: 10px;
 }
 
 .terminal {
@@ -26,12 +25,19 @@
 
 .tabs {
   display: flex;
+  overflow: auto;
   font-size: 0.8em;
+}
+
+.tab {
+  white-space: pre;
+  position: relative;
 }
 
 .radio {
   position: absolute;
   opacity: 0;
+  margin: 0;
 }
 
 .tab input:focus + label span {
@@ -39,9 +45,9 @@
 }
 
 .tab label {
+  cursor: pointer;
   padding: 10px;
   display: block;
-  cursor: pointer;
 }
 
 .tab:hover {

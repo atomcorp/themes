@@ -2,29 +2,34 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: safe center;
-  align-items: safe center;
   padding: 0 0 40px;
   transition: background 0.05s ease-in-out;
   overflow: auto;
+  padding: 10px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .container {
+    padding: 10px;
+    justify-content: safe center;
+  }
 }
 
 .loading {
   height: 100%;
 }
 
-@media (min-width: 769px) {
-  .container {
-    padding: 0;
-  }
-}
-
 .heading {
   display: flex;
   align-items: center;
-  max-width: 820px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 0 10px;
+  margin: 0 auto;
+}
+
+.heading.narrow {
+  max-width: 800px;
 }
 
 .name {
@@ -49,4 +54,12 @@
 
 .button svg {
   margin: 0 0 0 3px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto 0;
 }

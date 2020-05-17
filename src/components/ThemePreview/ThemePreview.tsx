@@ -7,19 +7,15 @@ import ConsoleTest from 'components/ConsoleTest/ConsoleTest';
 import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
 import {parseValidKeys} from './consoleMethods';
-import {Share, Copy} from 'Icons';
 import Toast from 'components/Toast/Toast';
+import ThemePreviewButtons from './ThemePreviewButtons';
 
 type PropsType = {
   theme?: themeType;
   primaryColour: string;
   backgroundColour: string;
   previewType: previewType;
-};
-
-type ThemePreviewButtonType = {
-  onClick: () => void;
-  colour: string;
+  isSmallScreenSize: boolean;
 };
 
 type reducerType = {
@@ -42,22 +38,6 @@ const toastmessages = {
   share: (themename: string) =>
     `Added ${themename}'s direct link to your clipboard`,
   copy: (themename: string) => `Copied ${themename}'s scheme to your clipboard`,
-};
-
-const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
-  return (
-    <button
-      style={{
-        color: props.colour,
-      }}
-      className={css.button}
-      onClick={() => {
-        props.onClick();
-      }}
-    >
-      {props.children}
-    </button>
-  );
 };
 
 const initialState = {
@@ -121,11 +101,12 @@ const ThemePreview: React.FC<PropsType> = (props) => {
     }
   };
   return (
-    <section
-      className={css.container}
-      style={{background: props.backgroundColour}}
-    >
-      <div className={css.heading}>
+    <section className={css.container}>
+      <div
+        className={`${css.heading} ${
+          props.previewType === 'colour' ? css.wide : css.narrow
+        }`}
+      >
         <h2
           data-testid="selected-title"
           className={css.name}
@@ -133,20 +114,28 @@ const ThemePreview: React.FC<PropsType> = (props) => {
         >
           {props.theme.name}
         </h2>
-        <ThemePreviewButton onClick={handleCopy} colour={props.primaryColour}>
-          Copy
-          <Copy className={css.icon} colour={props.primaryColour} />
-        </ThemePreviewButton>
-        <ThemePreviewButton onClick={handleShare} colour={props.primaryColour}>
-          Share
-          <Share className={css.icon} colour={props.primaryColour} />
-        </ThemePreviewButton>
+        {!props.isSmallScreenSize && (
+          <ThemePreviewButtons
+            handleCopy={handleCopy}
+            handleShare={handleShare}
+            primaryColour={props.primaryColour}
+          />
+        )}
       </div>
       {props.previewType === 'colour' ? (
         <ColourTest theme={props.theme} />
       ) : (
         <ConsoleTest theme={props.theme} />
       )}
+      <div className={css.footer}>
+        {props.isSmallScreenSize && (
+          <ThemePreviewButtons
+            handleCopy={handleCopy}
+            handleShare={handleShare}
+            primaryColour={props.primaryColour}
+          />
+        )}
+      </div>
       <Toast
         color={props.primaryColour}
         background={props.backgroundColour}

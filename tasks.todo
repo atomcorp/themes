@@ -14,7 +14,7 @@ Next:
     I just added a toast w/ message in the end
   ✔ add labels to download and share buttons @done(20-05-16 13:09)
   ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
-    ☐ better loading, maybe a skeleton
+    ✔ better loading @done(20-05-17 01:15)
     ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next
     ☐ Add left/right swiping for mobile
   
@@ -32,6 +32,7 @@ After:
 ☐ Maybe host the entire thing on AWS, create mono repo
 ☐ Terminal feature with scanlines etc - experimental.retroTerminalEffect
 ☐ Maybe could be a whole customise Windows Terminal thing - font types, font size, shells
+☐ Add a proper skeleton loading view, stop lame rendering in <App />
 
 Ideas:
   ☐ add *new* tag

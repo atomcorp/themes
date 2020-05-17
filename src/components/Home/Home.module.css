@@ -3,8 +3,7 @@
   height: 100%;
   flex-direction: column;
 }
-
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .container {
     flex-direction: row;
   }
@@ -13,14 +12,12 @@
 .sidebar {
   transition: background 0.05s ease-in-out;
 }
-
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .sidebar {
-    flex: 1 1 auto;
+    flex: 0 1 35%;
     height: 100%;
     overflow: auto;
-    max-width: 30%;
-    min-width: 350px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     border: 3px solid;
@@ -30,10 +27,8 @@
 .content {
   flex: 1 0 auto;
 }
-
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .content {
-    max-width: 70%;
     border: 3px solid;
     border-left: 0;
   }
@@ -48,7 +43,7 @@
   line-height: 1;
 }
 
-.title h1 {
+h1 {
   margin: 0;
 }
 
@@ -61,17 +56,45 @@
   color: white;
 }
 
-.footer {
+.actions {
   border-top: 3px solid;
+  border-bottom: 3px solid;
   margin: auto 0 0;
   padding: 3px;
   display: flex;
 }
+@media (min-width: 1024px) {
+  .actions {
+    border-bottom: 0;
+  }
+}
+
+.buttons {
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.help {
+  background: transparent;
+  border: 0 solid;
+  padding: 0;
+  cursor: pointer;
+  margin: 0 3px 0 0;
+}
+
+.help:focus {
+  outline: 1px dotted;
+}
+
+.help svg {
+  display: block;
+}
 
 .git {
   display: inline-block;
-  border: 3px solid;
-  margin: 0 3px 0 auto;
+  border: 0 solid;
+  margin: 0 3px 0 0;
 }
 
 .git svg {
@@ -81,7 +104,7 @@
 
 .download {
   background: transparent;
-  border: 3px solid;
+  border: 0 solid;
   padding: 0;
   cursor: pointer;
 }
