@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer, useRef, useCallback} from 'react';
+import React, {useEffect, useReducer} from 'react';
 import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
@@ -19,34 +19,25 @@ type themeprops = {
   themes: themeType[];
 };
 
+const shortcuts = (dispatch: React.Dispatch<any>) => (e: KeyboardEvent) => {
+  if (e.code === 'KeyA') {
+    dispatch({
+      type: 'PREV',
+    });
+  }
+  if (e.code === 'KeyD') {
+    dispatch({
+      type: 'NEXT',
+    });
+  }
+};
+
 const Home: React.FC<themeprops> = (props) => {
-  const sidebarRef = useRef<HTMLElement>(null);
   const [state, dispatch] = useReducer(homeReducer, {
     ...initialState,
     ...{isSmallScreenSize: window.innerWidth < 1024},
   });
   const initialTheme = returnInitialTheme(window.location.search);
-  const scrollToLabel = useCallback((): void => {
-    // scroll to the initialTheme, if used
-    if (
-      initialTheme != null &&
-      window.innerWidth >= 1024 &&
-      sidebarRef.current != null
-    ) {
-      const labelEl = sidebarRef.current.querySelector(
-        `[for="${initialTheme}"]`
-      );
-      if (labelEl != null) {
-        const labelElDimensions = labelEl.getBoundingClientRect();
-        const sidebarViewHeight = sidebarRef.current.offsetHeight;
-        const sidebarScrollHeight = sidebarRef.current.scrollHeight;
-        sidebarRef.current.scrollTop =
-          labelElDimensions.top > sidebarScrollHeight - sidebarViewHeight
-            ? labelElDimensions.top
-            : labelElDimensions.top - sidebarViewHeight / 2;
-      }
-    }
-  }, [initialTheme]);
   useEffect(() => {
     dispatch({
       type: 'LOAD',
@@ -59,6 +50,13 @@ const Home: React.FC<themeprops> = (props) => {
       resizer.unobserve(document.body);
     };
   }, [props.themes, initialTheme]);
+  useEffect(() => {
+    const shortcutFns = shortcuts(dispatch);
+    document.addEventListener('keypress', shortcutFns);
+    return () => {
+      document.removeEventListener('keypress', shortcutFns);
+    };
+  }, []);
   const theme = state.themes.find((theme) => theme.name === state.activeTheme);
   const themeNames = state.filteredThemes.map((theme) => theme.name);
   const downloadAllThemes = () => {
@@ -82,7 +80,6 @@ const Home: React.FC<themeprops> = (props) => {
   return (
     <section className={css.container}>
       <aside
-        ref={sidebarRef}
         style={{
           background: state.backgroundColour,
           borderColor: state.primaryColour,
@@ -110,7 +107,6 @@ const Home: React.FC<themeprops> = (props) => {
               dispatch={dispatch}
               primaryColour={state.primaryColour}
               backgroundColour={state.backgroundColour}
-              scrollToLabel={scrollToLabel}
             />
           )}
         <HomeActions

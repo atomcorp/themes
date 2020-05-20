@@ -1,4 +1,4 @@
-import React, {useState, useReducer} from 'react';
+import React, {useReducer} from 'react';
 import * as clipboard from 'clipboard-polyfill';
 import immer from 'immer';
 

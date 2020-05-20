@@ -18,8 +18,11 @@ Next:
     ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next
     ✔ Add prev/next action for mobile @done(20-05-17 18:42)
     ☐ Add link for i icon, an info modal
-  ☐ Event listener for prev/next keys (A + D)
+  ✔ Event listener for prev/next keys (A + D) @done(20-05-20 09:40)
+    ☐ Currently always centers, but maybe better to only scroll if not in view already
   ☐ Add version log (1: initial, 2: API, 3: UI redesign)
+  ☐ Add note in README for contributing codeblocks
+  ☐ Test for new features
   
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
@@ -32,10 +35,13 @@ After:
 ☐ Add preview type and console tab to share theme parameters
 ☐ favicon match primary/background colours
 ✔ integration tests for console @done(20-05-09 09:57)
-☐ Maybe host the entire thing on AWS, create mono repo
+☐ Maybe host the entire thing on AWS, create monorepo
 ☐ Terminal feature with scanlines etc - experimental.retroTerminalEffect
 ☐ Maybe could be a whole customise Windows Terminal thing - font types, font size, shells
 ☐ Add a proper skeleton loading view, stop lame rendering in <App />
+☐ New UI (again)
+  ☐ More grown up, inspire by component libraries
+  ☐ On desktop, not bother with list view, experiment
 
 Ideas:
   ☐ add *new* tag

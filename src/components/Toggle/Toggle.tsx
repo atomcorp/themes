@@ -1,7 +1,6 @@
 import React, {ReactElement} from 'react';
 
-import {THEME_COLOUR} from 'components/Home/homeMethods';
-import {themeShadeType, actionTypes} from 'types';
+import {actionTypes} from 'types';
 import css from './Toggle.module.css';
 
 type PropsState = {

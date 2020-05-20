@@ -7,7 +7,6 @@
 
 .theme {
   position: relative;
-  transition: background 0.05s ease-in-out, color 0.05s ease-in-out;
 }
 
 .theme input {

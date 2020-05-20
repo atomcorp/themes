@@ -1,13 +1,7 @@
 import React from 'react';
 
 import css from './Home.module.css';
-import {
-  themeType,
-  themeShadeType,
-  themeShadeObjectType,
-  actionTypes,
-  previewType,
-} from 'types';
+import {themeShadeType, actionTypes, previewType} from 'types';
 import {Light, Dark, Console, Colours, Github, Download, Help} from 'Icons';
 import Toggle from 'components/Toggle/Toggle';
 

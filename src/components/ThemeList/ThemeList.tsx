@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 
 import {actionTypes} from 'types';
 import css from './ThemeList.module.css';
@@ -9,16 +9,43 @@ type PropsType = {
   dispatch: React.Dispatch<actionTypes>;
   primaryColour: string;
   backgroundColour: string;
-  scrollToLabel: () => void;
+};
+
+const scrollToSelected = (
+  listElRef: React.RefObject<HTMLFieldSetElement>,
+  themename: string | null
+) => {
+  if (
+    listElRef.current != null &&
+    themename != null &&
+    window.innerWidth >= 1024
+  ) {
+    const labelEl = listElRef.current.querySelector(`[for="${themename}"]`);
+    if (labelEl != null) {
+      listElRef.current.scrollBy({
+        left: 0,
+        top:
+          labelEl.getBoundingClientRect().top -
+          listElRef.current.offsetHeight / 2,
+        behavior: 'smooth',
+      });
+    }
+  }
 };
 
 const ThemeList: React.FC<PropsType> = (props) => {
-  const {scrollToLabel} = props;
+  const {activeTheme} = props;
+  const listElRef = useRef<HTMLFieldSetElement>(null);
   useEffect(() => {
-    scrollToLabel();
-  }, [scrollToLabel]);
+    scrollToSelected(listElRef, activeTheme);
+  }, [activeTheme]);
   return (
-    <fieldset className={css.container} name="theme" data-testid="theme-list">
+    <fieldset
+      className={css.container}
+      name="theme"
+      data-testid="theme-list"
+      ref={listElRef}
+    >
       {props.themeNames.map((themeName) => (
         <div
           key={themeName}
