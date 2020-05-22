@@ -23,6 +23,7 @@ Next:
   ☐ Add version log (1: initial, 2: API, 3: UI redesign)
   ☐ Add note in README for contributing codeblocks
   ☐ Test for new features
+  ☐ If fetch fails add backup themes (useful for monorepo migration)
   
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)

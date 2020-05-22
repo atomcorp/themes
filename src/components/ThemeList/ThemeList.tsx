@@ -11,41 +11,23 @@ type PropsType = {
   backgroundColour: string;
 };
 
-const scrollToSelected = (
-  listElRef: React.RefObject<HTMLFieldSetElement>,
-  themename: string | null
-) => {
-  if (
-    listElRef.current != null &&
-    themename != null &&
-    window.innerWidth >= 1024
-  ) {
-    const labelEl = listElRef.current.querySelector(`[for="${themename}"]`);
-    if (labelEl != null) {
-      listElRef.current.scrollBy({
-        left: 0,
-        top:
-          labelEl.getBoundingClientRect().top -
-          listElRef.current.offsetHeight / 2,
-        behavior: 'smooth',
-      });
+const scrollToSelected = (themename: string | null) => {
+  if (themename != null && window.innerWidth >= 1024) {
+    const inputEl = document.getElementById(themename.replace(' ', '-'));
+    // hold up: https://developer.mozilla.org/en-US/docs/Web/API/HTMLOrForeignElement/focus
+    if (inputEl != null) {
+      inputEl.focus();
     }
   }
 };
 
 const ThemeList: React.FC<PropsType> = (props) => {
   const {activeTheme} = props;
-  const listElRef = useRef<HTMLFieldSetElement>(null);
   useEffect(() => {
-    scrollToSelected(listElRef, activeTheme);
+    scrollToSelected(activeTheme);
   }, [activeTheme]);
   return (
-    <fieldset
-      className={css.container}
-      name="theme"
-      data-testid="theme-list"
-      ref={listElRef}
-    >
+    <fieldset className={css.container} name="theme" data-testid="theme-list">
       {props.themeNames.map((themeName) => (
         <div
           key={themeName}
@@ -59,7 +41,7 @@ const ThemeList: React.FC<PropsType> = (props) => {
         >
           <input
             type="radio"
-            id={themeName}
+            id={themeName.replace(' ', '-')}
             name="theme"
             value={themeName}
             checked={themeName === props.activeTheme}
@@ -67,7 +49,7 @@ const ThemeList: React.FC<PropsType> = (props) => {
               props.dispatch({type: 'SET', theme: themeName});
             }}
           />
-          <label className={css.label} htmlFor={themeName}>
+          <label className={css.label} htmlFor={themeName.replace(' ', '-')}>
             <span className={css.tabbed}>{themeName}</span>
           </label>
         </div>
