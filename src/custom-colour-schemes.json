@@ -82,5 +82,26 @@
     "brightRed" : "#FF6E6E",
     "brightWhite" : "#F8F8F2",
     "brightYellow" : "#ffcb6b"
+  },
+  {
+    "name": "OneStar",
+    "black": "#000000",
+    "red": "#d13b3b",
+    "green": "#0dbc79",
+    "yellow": "#dfdf44",
+    "blue": "#2472c8",
+    "purple": "#c42cc4",
+    "cyan": "#33a0bb",
+    "white": "#f1f1f1",
+    "brightBlack": "#666666",
+    "brightRed": "#fa4b4b",
+    "brightGreen": "#23d18b",
+    "brightYellow": "#fcfc5c",
+    "brightBlue": "#3b8eea",
+    "brightPurple": "#d861d8",
+    "brightCyan": "#29b8db",
+    "brightWhite": "#fafafa",
+    "background": "#0e0e0e",
+    "foreground": "#e4e4e4"
   }
 ]
