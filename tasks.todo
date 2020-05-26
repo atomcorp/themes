@@ -15,7 +15,7 @@ Next:
     ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next
     ☐ Add left/right swiping for mobile
   ☐ Add roadmap to readme
-  ☐ Add contributors to readme
+  ✔ Add contributors to readme @done(20-05-26 19:29)
     
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
@@ -31,6 +31,7 @@ After:
 ☐ Maybe host the entire thing on AWS, create mono repo
 ☐ Terminal feature with scanlines etc - experimental.retroTerminalEffect
 ☐ Maybe could be a whole customise Windows Terminal thing - font types, font size, shells
+☐ Add credits to the themes / add info property with credits, notes, isDark etc
 
 Ideas:
   ☐ add *new* tag
