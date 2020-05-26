@@ -14,7 +14,9 @@ Next:
     ☐ better loading, maybe a skeleton
     ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next
     ☐ Add left/right swiping for mobile
-  
+  ☐ Add roadmap to readme
+  ☐ Add contributors to readme
+    
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
   I don't like all the info text is presented
