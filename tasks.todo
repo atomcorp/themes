@@ -24,6 +24,8 @@ Next:
   ☐ Add note in README for contributing codeblocks
   ☐ Test for new features
   ☐ If fetch fails add backup themes (useful for monorepo migration)
+  ☐ Add roadmap to readme
+  ✔ Add contributors to readme @done(20-05-26 19:29)
   
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
@@ -43,6 +45,7 @@ After:
 ☐ New UI (again)
   ☐ More grown up, inspire by component libraries
   ☐ On desktop, not bother with list view, experiment
+☐ Add credits to the themes / add info property with credits, notes, isDark etc
 
 Ideas:
   ☐ add *new* tag

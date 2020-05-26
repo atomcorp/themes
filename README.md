@@ -23,6 +23,11 @@ Ideally for the ecosystem new themes should be proposed to [iTerm2-Color-Schemes
 
 If not, new themes can be add added with a pull request. Just add them to the list in `src/custom-colour-schemes.json`. You shouldn't need to run anything.
 
+## Credits
+
+  - The OneDark theme was created by [azrikahar](https://github.com/azrikahar)
+  - The DraculaPlus, Material Darker and OneStar theme was created by [jos3s](https://github.com/jos3s)
+  
 ## Running
 
 Install using `yarn start`.
