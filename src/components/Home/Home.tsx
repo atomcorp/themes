@@ -83,7 +83,11 @@ const Home: React.FC<themeprops> = (props) => {
       className={css.container}
       style={{background: state.backgroundColour}}
     >
-      <Toolbar themeShade={state.themeShade} dispatch={dispatch} />
+      <Toolbar
+        themeShade={state.themeShade}
+        previewType={state.previewType}
+        dispatch={dispatch}
+      />
       <section className={css.content}>
         <ThemePreview
           previewType={state.previewType}
