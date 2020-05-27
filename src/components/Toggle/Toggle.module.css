@@ -1,18 +1,16 @@
 .container {
   position: relative;
+  display: flex;
 }
 
 .label {
   display: inline-block;
   padding: 0 3px;
   cursor: pointer;
-  border: 1px solid rgba(27, 31, 35, 0.2);
-  color: #d6d8da;
-  background-color: #eff3f6;
-  /* background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%); */
-  background-image: linear-gradient(-180deg, #535659 0%, #424549 90%);
+  color: var(--btn__colour);
+  background-image: var(--btn__bg-img);
   border-radius: 0.25em;
-  border: 1px solid rgba(200, 200, 200, 0.15);
+  border: var(--btn__bg-border);
   display: inline-flex;
   align-items: center;
 }
@@ -27,17 +25,15 @@
 }
 
 .label:hover {
-  background-color: #e6ebf1;
-  /* background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%); */
-  background-image: linear-gradient(-180deg, #636669, #636669 90%);
+  background-image: var(--btn__bg-img--hover);
   background-position: -0.5em;
 }
 
 .label.active {
-  background-color: #404040;
+  background-color: var(--btn__bg-color);
   background-image: none;
-  border-color: rgba(200, 200, 200, 0.3);
-  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+  border-color: var(--btn__border-colour__active);
+  box-shadow: var(--btn__insert);
 }
 
 .label svg {
@@ -52,6 +48,7 @@
 
 .outline {
   padding: 3px 10px;
+  display: flex;
 }
 
 .radio:focus + .outline {

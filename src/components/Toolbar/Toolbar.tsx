@@ -16,6 +16,7 @@ type PropType = {
   dispatch: React.Dispatch<actionTypes>;
   themeNames: string[];
   activeTheme: string;
+  themeselectRef: React.MutableRefObject<null | HTMLSelectElement>;
 };
 
 const shadeValues = [
@@ -59,6 +60,7 @@ const Toolbar = (props: PropType) => (
         themeNames={props.themeNames}
         dispatch={props.dispatch}
         activeTheme={props.activeTheme}
+        themeselectRef={props.themeselectRef}
       />
     </section>
     <section className={css.toggles}>
@@ -75,7 +77,7 @@ const Toolbar = (props: PropType) => (
         values={previewValues}
       />
     </section>
-    <section>Buttons</section>
+    <section></section>
   </section>
 );
 

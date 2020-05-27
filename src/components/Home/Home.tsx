@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer} from 'react';
+import React, {useEffect, useReducer, useRef} from 'react';
 import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
@@ -20,13 +20,33 @@ type themeprops = {
   themes: themeType[];
 };
 
-const shortcuts = (dispatch: React.Dispatch<any>) => (e: KeyboardEvent) => {
+const stopSelectDetection = (
+  e: KeyboardEvent,
+  themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
+) => {
+  if (
+    themeselectRef.current != null &&
+    document.activeElement === themeselectRef.current
+  ) {
+    // if the DOM element is being focused, hitting D will
+    // select the first <option> starting with D
+    e.preventDefault();
+    themeselectRef.current.blur();
+  }
+};
+
+const shortcuts = (
+  dispatch: React.Dispatch<any>,
+  themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
+) => (e: KeyboardEvent) => {
   if (e.code === 'KeyA') {
+    stopSelectDetection(e, themeselectRef);
     dispatch({
       type: 'PREV',
     });
   }
   if (e.code === 'KeyD') {
+    stopSelectDetection(e, themeselectRef);
     dispatch({
       type: 'NEXT',
     });
@@ -34,6 +54,7 @@ const shortcuts = (dispatch: React.Dispatch<any>) => (e: KeyboardEvent) => {
 };
 
 const Home: React.FC<themeprops> = (props) => {
+  const themeselectRef = useRef(null);
   const [state, dispatch] = useReducer(homeReducer, {
     ...initialState,
     ...{isSmallScreenSize: window.innerWidth < 1024},
@@ -52,7 +73,7 @@ const Home: React.FC<themeprops> = (props) => {
     };
   }, [props.themes, initialTheme]);
   useEffect(() => {
-    const shortcutFns = shortcuts(dispatch);
+    const shortcutFns = shortcuts(dispatch, themeselectRef);
     document.addEventListener('keypress', shortcutFns);
     return () => {
       document.removeEventListener('keypress', shortcutFns);
@@ -89,6 +110,7 @@ const Home: React.FC<themeprops> = (props) => {
         dispatch={dispatch}
         activeTheme={state.activeTheme}
         themeNames={themeNames}
+        themeselectRef={themeselectRef}
       />
       <section className={css.content}>
         <ThemePreview

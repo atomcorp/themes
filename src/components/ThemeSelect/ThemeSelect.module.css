@@ -16,9 +16,19 @@
   font-family: 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas, monospace,
     monospace;
   max-width: 100%;
-  width: 100%;
+  width: 300px;
 }
 
 .arrow {
   flex: 0 0 auto;
+}
+
+.direction {
+  display: flex;
+  align-items: center;
+  background-image: var(--btn__bg-img);
+  border-radius: 0.25em;
+  border: var(--btn__bg-border);
+  color: var(--btn__colour);
+  padding: 3px 10px;
 }
