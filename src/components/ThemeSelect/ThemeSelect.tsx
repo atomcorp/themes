@@ -8,7 +8,7 @@ type PropsType = {
   themeNames: string[];
   activeTheme: string;
   dispatch: React.Dispatch<actionTypes>;
-  primaryColour: string;
+  primaryColour?: string;
 };
 
 const ThemeSelect: React.FC<PropsType> = (props) => (

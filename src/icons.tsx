@@ -247,7 +247,7 @@ export const Logo = (props: IconProps) => (
           <animate
             attributeName="stop-color"
             values="#01a252; #fded02; #01a0e4; #b5e4f4; #01a252"
-            dur="4s"
+            dur="8s"
             repeatCount="indefinite"
           ></animate>
         </stop>
@@ -255,7 +255,7 @@ export const Logo = (props: IconProps) => (
           <animate
             attributeName="stop-color"
             values="#fded02; #01a0e4; #b5e4f4; #01a252; #fded02"
-            dur="4s"
+            dur="8s"
             repeatCount="indefinite"
           ></animate>
         </stop>
@@ -263,7 +263,7 @@ export const Logo = (props: IconProps) => (
           <animate
             attributeName="stop-color"
             values="#01a0e4; #b5e4f4; #01a252; #fded02; #01a0e4"
-            dur="4s"
+            dur="8s"
             repeatCount="indefinite"
           ></animate>
         </stop>
@@ -271,7 +271,7 @@ export const Logo = (props: IconProps) => (
           <animate
             attributeName="stop-color"
             values="#b5e4f4; #01a252; #fded02; #01a0e4; #b5e4f4"
-            dur="4s"
+            dur="8s"
             repeatCount="indefinite"
           ></animate>
         </stop>

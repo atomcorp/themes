@@ -1,15 +1,21 @@
+// modules
 import React from 'react';
 
+// components
 import Toggle from 'components/Toggle/Toggle';
+import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 
+// utils
 import {Logo, Dark, Light, Console, Colours} from 'Icons';
 import css from './Toolbar.module.css';
-import {actionTypes, themeShadeType, previewType} from 'types';
+import {actionTypes, themeShadeType, previewType, themeType} from 'types';
 
 type PropType = {
   themeShade: themeShadeType;
   previewType: previewType;
   dispatch: React.Dispatch<actionTypes>;
+  themeNames: string[];
+  activeTheme: string;
 };
 
 const shadeValues = [
@@ -45,10 +51,16 @@ const Toolbar = (props: PropType) => (
     }`}
   >
     <a href="/themes" className={css.title}>
-      <h1>Windows Terminal Themes</h1>
       <Logo size="48px" />
+      <h1>Windows Terminal Themes</h1>
     </a>
-    <section>List view</section>
+    <section>
+      <ThemeSelect
+        themeNames={props.themeNames}
+        dispatch={props.dispatch}
+        activeTheme={props.activeTheme}
+      />
+    </section>
     <section className={css.toggles}>
       <Toggle
         currentValue={props.themeShade}

@@ -87,6 +87,8 @@ const Home: React.FC<themeprops> = (props) => {
         themeShade={state.themeShade}
         previewType={state.previewType}
         dispatch={dispatch}
+        activeTheme={state.activeTheme}
+        themeNames={themeNames}
       />
       <section className={css.content}>
         <ThemePreview
