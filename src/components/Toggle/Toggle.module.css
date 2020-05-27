@@ -1,18 +1,43 @@
 .container {
-  display: inline-block;
   position: relative;
-  line-height: 0;
-  margin: 0 3px 0 0;
 }
 
 .label {
   display: inline-block;
   padding: 0 3px;
   cursor: pointer;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  color: #d6d8da;
+  background-color: #eff3f6;
+  /* background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%); */
+  background-image: linear-gradient(-180deg, #535659 0%, #424549 90%);
+  border-radius: 0.25em;
+  border: 1px solid rgba(200, 200, 200, 0.15);
+  display: inline-flex;
+  align-items: center;
+}
+
+.label:first-child {
+  border-radius: 0.25em 0 0 0.25em;
+  border-right: 0;
+}
+
+.label:last-child {
+  border-radius: 0 0.25em 0.25em 0;
+}
+
+.label:hover {
+  background-color: #e6ebf1;
+  /* background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%); */
+  background-image: linear-gradient(-180deg, #636669, #636669 90%);
+  background-position: -0.5em;
 }
 
 .label.active {
-  padding: 0 9px;
+  background-color: #404040;
+  background-image: none;
+  border-color: rgba(200, 200, 200, 0.3);
+  box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
 }
 
 .label svg {
@@ -25,6 +50,10 @@
   opacity: 0;
 }
 
-.radio:focus + svg {
-  outline: 1px dotted;
+.outline {
+  padding: 3px 10px;
+}
+
+.radio:focus + .outline {
+  box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
 }

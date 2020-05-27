@@ -3,15 +3,11 @@
   height: 100%;
   flex-direction: column;
 }
-@media (min-width: 1024px) {
-  .container {
-    flex-direction: row;
-  }
-}
 
 .sidebar {
   transition: background 0.05s ease-in-out;
 }
+
 @media (min-width: 1024px) {
   .sidebar {
     flex: 0 1 35%;
@@ -26,12 +22,6 @@
 
 .content {
   flex: 1 0 auto;
-}
-@media (min-width: 1024px) {
-  .content {
-    border: 3px solid;
-    border-left: 0;
-  }
 }
 
 .title {

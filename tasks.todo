@@ -26,6 +26,7 @@ Next:
   ☐ If fetch fails add backup themes (useful for monorepo migration)
   ☐ Add roadmap to readme
   ✔ Add contributors to readme @done(20-05-26 19:29)
+  ☐ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
   
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
@@ -63,7 +64,7 @@ Notes
     https://int10h.org/oldschool-pc-fonts/fontlist/ - lots of nice 8bit fonts
     oclif.io - cmd line tool
   "Bold" text on Windows https://github.com/microsoft/terminal/issues/109
-
+  GitHub dark theme - https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp
 Done:
   ✔ Add routes, or change URL for each theme for sharing @done(20-04-09 00:10)
   ✔ update dependencies @done(20-03-25 00:04)

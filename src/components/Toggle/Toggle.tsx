@@ -9,8 +9,8 @@ type PropsState = {
     label: string;
     icon: (isChecked: boolean) => ReactElement;
   }[];
-  primaryColour: string;
-  backgroundColour: string;
+  primaryColour?: string;
+  backgroundColour?: string;
   currentValue: string;
   type: string;
   dispatch: React.Dispatch<actionTypes>;
@@ -49,7 +49,10 @@ const Toggle: React.FC<PropsState> = (props) => (
             }}
             className={css.radio}
           />
-          {option.icon(isSelected)}
+          <div className={css.outline}>
+            {option.icon(isSelected)}
+            {option.label}
+          </div>
         </label>
       );
     })}

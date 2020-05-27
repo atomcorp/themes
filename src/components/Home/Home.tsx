@@ -5,6 +5,7 @@ import ThemePreview from 'components/ThemePreview/ThemePreview';
 import ThemeList from 'components/ThemeList/ThemeList';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 import HomeActions from './HomeActions';
+import Toolbar from 'components/Toolbar/Toolbar';
 import css from './Home.module.css';
 import {
   homeReducer,
@@ -78,58 +79,12 @@ const Home: React.FC<themeprops> = (props) => {
     saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
   };
   return (
-    <section className={css.container}>
-      <aside
-        style={{
-          background: state.backgroundColour,
-          borderColor: state.primaryColour,
-        }}
-        className={`${css.sidebar} ${
-          state.themeShade === THEME_COLOUR.DARK ? css.dark : css.light
-        }`}
-      >
-        <a
-          href="/themes"
-          style={{color: state.primaryColour}}
-          className={css.title}
-        >
-          <h1>Windows Terminal Themes</h1>
-        </a>
-        {!state.isSmallScreenSize &&
-          /**
-           * this length check is just to make sure when the ThemeList loads it will have themes
-           * it needs to do this to make the scrollToLabel function work when the component loads
-           */
-          themeNames.length > 0 && (
-            <ThemeList
-              themeNames={themeNames}
-              activeTheme={state.activeTheme}
-              dispatch={dispatch}
-              primaryColour={state.primaryColour}
-              backgroundColour={state.backgroundColour}
-            />
-          )}
-        <HomeActions
-          primaryColour={state.primaryColour}
-          backgroundColour={state.backgroundColour}
-          previewType={state.previewType}
-          dispatch={dispatch}
-          themeShade={state.themeShade}
-          downloadAllThemes={downloadAllThemes}
-        />
-        {state.isSmallScreenSize && (
-          <ThemeSelect
-            themeNames={themeNames}
-            activeTheme={state.activeTheme}
-            dispatch={dispatch}
-            primaryColour={state.primaryColour}
-          />
-        )}
-      </aside>
-      <section
-        className={css.content}
-        style={{color: state.primaryColour, background: state.backgroundColour}}
-      >
+    <section
+      className={css.container}
+      style={{background: state.backgroundColour}}
+    >
+      <Toolbar themeShade={state.themeShade} dispatch={dispatch} />
+      <section className={css.content}>
         <ThemePreview
           previewType={state.previewType}
           theme={theme}

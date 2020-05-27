@@ -224,3 +224,66 @@ export const Arrow = (props: IconProps) => (
     />
   </svg>
 );
+
+// animation help
+// https://codepen.io/NickNoordijk/pen/VLvxLE?editors=1010
+// https://www.digitalocean.com/community/tutorials/svg-linear-gradients
+export const Logo = (props: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height={props.size || '24px'}
+    width={props.size || '24px'}
+    viewBox="0 0 512 512"
+    aria-labelledby="title"
+    onClick={props.onClick}
+    className={props.className}
+    style={{
+      outlineColor: props.colour,
+    }}
+  >
+    <defs>
+      <linearGradient id="logo-gradient" x2="0.35" y2="1">
+        <stop offset="0%" stopColor="#01a252">
+          <animate
+            attributeName="stop-color"
+            values="#01a252; #fded02; #01a0e4; #b5e4f4; #01a252"
+            dur="4s"
+            repeatCount="indefinite"
+          ></animate>
+        </stop>
+        <stop offset="33%" stopColor="#fded02">
+          <animate
+            attributeName="stop-color"
+            values="#fded02; #01a0e4; #b5e4f4; #01a252; #fded02"
+            dur="4s"
+            repeatCount="indefinite"
+          ></animate>
+        </stop>
+        <stop offset="66%" stopColor="#01a0e4">
+          <animate
+            attributeName="stop-color"
+            values="#01a0e4; #b5e4f4; #01a252; #fded02; #01a0e4"
+            dur="4s"
+            repeatCount="indefinite"
+          ></animate>
+        </stop>
+        <stop offset="100%" stopColor="#b5e4f4">
+          <animate
+            attributeName="stop-color"
+            values="#b5e4f4; #01a252; #fded02; #01a0e4; #b5e4f4"
+            dur="4s"
+            repeatCount="indefinite"
+          ></animate>
+        </stop>
+      </linearGradient>
+    </defs>
+    <path
+      fill="url(#logo-gradient)"
+      d="M495.304 61.217H16.696C7.475 61.217 0 68.693 0 77.913v356.174c0 9.22 7.475 16.696 16.696 16.696h478.609c9.22 0 16.696-7.475 16.696-16.696V77.913c-.001-9.22-7.476-16.696-16.697-16.696zm-16.695 356.174H33.391V194.424h445.217v222.967zm0-256.358H33.391V94.609h445.217v66.424z"
+    />
+    <path
+      fill="url(#logo-gradient)"
+      d="M443.568 103.247c-12.275 0-22.261 9.986-22.261 22.261 0 12.275 9.985 22.261 22.261 22.261 12.275 0 22.261-9.986 22.261-22.261 0-12.275-9.986-22.261-22.261-22.261zM382.926 103.247c-12.275 0-22.261 9.986-22.261 22.261 0 12.275 9.986 22.261 22.261 22.261s22.261-9.986 22.261-22.261c0-12.275-9.986-22.261-22.261-22.261zM322.285 103.247c-12.275 0-22.261 9.986-22.261 22.261 0 12.275 9.985 22.261 22.261 22.261 12.275 0 22.261-9.986 22.261-22.261 0-12.275-9.986-22.261-22.261-22.261zM235.45 293.193l-54.653-46.504c-7.022-5.976-17.559-5.128-23.535 1.896-5.976 7.022-5.127 17.559 1.896 23.535l39.709 33.789-39.709 33.789c-7.023 5.976-7.871 16.512-1.896 23.535 5.975 7.022 16.512 7.871 23.535 1.896l54.653-46.504c7.83-6.663 7.83-18.771 0-25.432zM342.022 335.716h-65.954c-9.22 0-16.696 7.475-16.696 16.696s7.475 16.696 16.696 16.696h65.954c9.22 0 16.696-7.475 16.696-16.696s-7.476-16.696-16.696-16.696z"
+    />
+  </svg>
+);
