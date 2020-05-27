@@ -6,7 +6,7 @@ import Toggle from 'components/Toggle/Toggle';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 
 // utils
-import {Logo, Dark, Light, Console, Colours} from 'Icons';
+import {Logo, Dark, Light, Console, Colours, Chevron} from 'Icons';
 import css from './Toolbar.module.css';
 import {actionTypes, themeShadeType, previewType, themeType} from 'types';
 
@@ -77,7 +77,9 @@ const Toolbar = (props: PropType) => (
         values={previewValues}
       />
     </section>
-    <section></section>
+    <section>
+      More <Chevron colour="#ededed" />
+    </section>
   </section>
 );
 

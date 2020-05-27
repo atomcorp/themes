@@ -1,6 +1,7 @@
 .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .container.dark {
@@ -15,6 +16,7 @@
 
 .title {
   display: flex;
+  align-items: center;
   font-size: 2.5rem;
   color: inherit;
   text-decoration: none;

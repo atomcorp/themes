@@ -12,11 +12,22 @@
 }
 
 .select {
-  font-size: 16px;
-  font-family: 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas, monospace,
-    monospace;
+  font-size: 1.8rem;
+  font-family: var(--font-stack);
   max-width: 100%;
   width: 300px;
+  padding: 2px 10px;
+  border: var(--btn__bg-border);
+  border-left: 0;
+  border-right: 0;
+  background-image: var(--btn__bg-img);
+  color: var(--btn__colour);
+  height: 29px;
+}
+
+.select option {
+  width: 300px;
+  background-color: var(--btn__bg-color);
 }
 
 .arrow {
@@ -31,4 +42,12 @@
   border: var(--btn__bg-border);
   color: var(--btn__colour);
   padding: 3px 10px;
+}
+
+.direction:first-child {
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+.direction:last-child {
+  border-radius: 0 0.25em 0.25em 0;
 }

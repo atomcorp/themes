@@ -287,3 +287,23 @@ export const Logo = (props: IconProps) => (
     />
   </svg>
 );
+
+export const Chevron = (props: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height={props.size || '24px'}
+    width={props.size || '24px'}
+    viewBox="0 0 24 24"
+    onClick={props.onClick}
+    className={props.className}
+    style={{
+      outlineColor: props.colour,
+      transform: props.direction === 'up' ? 'scaleY(1)' : '',
+    }}
+  >
+    <path
+      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+      fill={props.colour}
+    />
+  </svg>
+);
