@@ -58,6 +58,8 @@ export const validKeys: validKeysType = [
   'brightWhite',
   'background',
   'foreground',
+  'selectionBackground',
+  'cursorColor',
 ];
 
 // this just keeps Typescript happy
@@ -81,6 +83,8 @@ const initThemeObj = {
   brightWhite: '',
   background: '',
   foreground: '',
+  selectionBackground: '',
+  cursorColor: '',
 };
 
 export const parseValidKeys = (theme: themeType): validThemeType => {

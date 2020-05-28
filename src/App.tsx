@@ -12,9 +12,16 @@ const App: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   useEffect(() => {
     const getThemes = async () => {
-      const res = await fetch(`${apiBase}/api/v1/themes`, {});
-      const themes = await res.json();
-      setThemes(themes);
+      try {
+        const res = await fetch(`${apiBase}/api/v1/themes`);
+        const themes = await res.json();
+        setThemes(themes);
+      } catch (error) {
+        // use dynamic importing / code splitting
+        import('backupthemes.json').then((backupthemes) => {
+          setThemes(backupthemes.default);
+        });
+      }
     };
     getThemes();
   }, []);
