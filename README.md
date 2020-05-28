@@ -27,6 +27,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 
 - The OneDark theme was created by [azrikahar](https://github.com/azrikahar)
 - The DraculaPlus, Material Darker and OneStar theme was created by [jos3s](https://github.com/jos3s)
+- Monokai Cmder by [vdurante](https://github.com/vdurante/windows-terminal-monokai-cmder)
 
 ## Running
 

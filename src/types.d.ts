@@ -18,6 +18,8 @@ export type validThemeType = {
   brightWhite: string;
   background: string;
   foreground: string;
+  cursorColor?: string;
+  selectionBackground?: string;
 };
 
 // optional 'cursorColor' | 'selectionBackground'
@@ -42,6 +44,8 @@ export type validKeysType = Array<
   | 'brightWhite'
   | 'background'
   | 'foreground'
+  | 'cursorColor'
+  | 'selectionBackground'
 >;
 
 export type themeType = validThemeType & {isDark: boolean};
