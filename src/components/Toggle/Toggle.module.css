@@ -49,6 +49,7 @@
 .outline {
   padding: 3px 10px;
   display: flex;
+  align-items: center;
 }
 
 .radio:focus + .outline {

@@ -2,9 +2,11 @@ import contrast from 'get-contrast';
 import ResizeObserver from 'resize-observer-polyfill';
 import immer from 'immer';
 
+import setcolours from 'utils/setcolours';
+
 import {
   themeType,
-  themeShadeType,
+  shadeType,
   themeShadeObjectType,
   actionTypes,
   previewType,
@@ -81,7 +83,7 @@ export type stateType = {
   filteredThemes: themeType[];
   activeTheme: string;
   isSmallScreenSize: boolean;
-  themeShade: themeShadeType;
+  themeShade: shadeType;
   primaryColour: string;
   backgroundColour: string;
   previewType: previewType;
@@ -187,6 +189,7 @@ export const homeReducer = (
             (theme) => !theme.isDark
           );
         }
+        setcolours(draftState.themeShade);
         draftState.activeTheme = draftState.filteredThemes[0].name;
         // eslint-disable-next-line no-case-declarations
         const theme = state.themes.find(

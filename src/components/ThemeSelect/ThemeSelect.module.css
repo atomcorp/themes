@@ -25,6 +25,10 @@
   height: 29px;
 }
 
+select:focus {
+  box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
+}
+
 .select option {
   width: 300px;
   background-color: var(--btn__bg-color);
@@ -43,11 +47,13 @@
   color: var(--btn__colour);
   padding: 3px 10px;
 }
-
 .direction:first-child {
   border-radius: 0.25em 0 0 0.25em;
 }
-
 .direction:last-child {
   border-radius: 0 0.25em 0.25em 0;
+}
+.direction:focus {
+  box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
+  outline: 0;
 }

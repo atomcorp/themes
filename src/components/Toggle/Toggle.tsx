@@ -9,21 +9,13 @@ type PropsState = {
     label: string;
     icon: (isChecked: boolean) => ReactElement;
   }[];
-  primaryColour?: string;
-  backgroundColour?: string;
   currentValue: string;
   type: string;
   dispatch: React.Dispatch<actionTypes>;
 };
 
 const Toggle: React.FC<PropsState> = (props) => (
-  <section
-    className={css.container}
-    style={{
-      backgroundColor: props.backgroundColour,
-      border: `3px solid ${props.primaryColour}`,
-    }}
-  >
+  <section className={css.container}>
     {props.values.map((option) => {
       const isSelected = option.value === props.currentValue;
       return (
@@ -31,9 +23,6 @@ const Toggle: React.FC<PropsState> = (props) => (
           key={option.value}
           className={`${css.label} ${isSelected ? css.active : ''}`}
           htmlFor={option.value}
-          style={{
-            backgroundColor: isSelected ? props.primaryColour : 'initial',
-          }}
         >
           <input
             name={props.type}

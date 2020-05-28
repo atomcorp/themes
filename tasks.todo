@@ -26,7 +26,7 @@ Next:
   ☐ If fetch fails add backup themes (useful for monorepo migration)
   ☐ Add roadmap to readme
   ✔ Add contributors to readme @done(20-05-26 19:29)
-  ☐ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+  ✔ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> @done(20-05-28 08:48)
   
 After:
 ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)

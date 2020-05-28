@@ -225,10 +225,24 @@ export const Arrow = (props: IconProps) => (
   </svg>
 );
 
+const example = ['#01a252', '#fded02', '#01a0e4', '#b5e4f4'];
+const iterateColours = (arr: string[], index: number) => {
+  if (index === 0) {
+    return [...arr, arr[0]].join(';');
+  }
+  return [...arr.slice(index), ...arr.slice(0, index - 1), arr[index]].join(
+    ';'
+  );
+};
+
+type LogoType = {
+  colours: string[];
+};
+
 // animation help
 // https://codepen.io/NickNoordijk/pen/VLvxLE?editors=1010
 // https://www.digitalocean.com/community/tutorials/svg-linear-gradients
-export const Logo = (props: IconProps) => (
+export const Logo = (props: IconProps & LogoType) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -243,38 +257,20 @@ export const Logo = (props: IconProps) => (
   >
     <defs>
       <linearGradient id="logo-gradient" x2="0.35" y2="1">
-        <stop offset="0%" stopColor="#01a252">
-          <animate
-            attributeName="stop-color"
-            values="#01a252; #fded02; #01a0e4; #b5e4f4; #01a252"
-            dur="8s"
-            repeatCount="indefinite"
-          ></animate>
-        </stop>
-        <stop offset="33%" stopColor="#fded02">
-          <animate
-            attributeName="stop-color"
-            values="#fded02; #01a0e4; #b5e4f4; #01a252; #fded02"
-            dur="8s"
-            repeatCount="indefinite"
-          ></animate>
-        </stop>
-        <stop offset="66%" stopColor="#01a0e4">
-          <animate
-            attributeName="stop-color"
-            values="#01a0e4; #b5e4f4; #01a252; #fded02; #01a0e4"
-            dur="8s"
-            repeatCount="indefinite"
-          ></animate>
-        </stop>
-        <stop offset="100%" stopColor="#b5e4f4">
-          <animate
-            attributeName="stop-color"
-            values="#b5e4f4; #01a252; #fded02; #01a0e4; #b5e4f4"
-            dur="8s"
-            repeatCount="indefinite"
-          ></animate>
-        </stop>
+        {props.colours.map((colour: string, i, originalArr) => (
+          <stop
+            key={i}
+            offset={`${Math.floor((i / (originalArr.length - 1)) * 100)}%`}
+            stopColor={colour}
+          >
+            <animate
+              attributeName="stop-color"
+              values={iterateColours(originalArr, i)}
+              dur="4s"
+              repeatCount="indefinite"
+            ></animate>
+          </stop>
+        ))}
       </linearGradient>
     </defs>
     <path

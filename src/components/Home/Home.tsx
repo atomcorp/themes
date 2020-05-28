@@ -2,9 +2,6 @@ import React, {useEffect, useReducer, useRef} from 'react';
 import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
-import ThemeList from 'components/ThemeList/ThemeList';
-import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
-import HomeActions from './HomeActions';
 import Toolbar from 'components/Toolbar/Toolbar';
 import css from './Home.module.css';
 import {
@@ -53,6 +50,22 @@ const shortcuts = (
   }
 };
 
+const sampleColours = (theme: themeType | undefined) => {
+  if (theme) {
+    return [
+      theme.red,
+      theme.green,
+      theme.yellow,
+      theme.blue,
+      theme.purple,
+      theme.cyan,
+    ]
+      .sort(() => Math.random() - 0.5)
+      .slice(3);
+  }
+  return [];
+};
+
 const Home: React.FC<themeprops> = (props) => {
   const themeselectRef = useRef(null);
   const [state, dispatch] = useReducer(homeReducer, {
@@ -75,6 +88,7 @@ const Home: React.FC<themeprops> = (props) => {
   useEffect(() => {
     const shortcutFns = shortcuts(dispatch, themeselectRef);
     document.addEventListener('keypress', shortcutFns);
+    dispatch({type: 'SHADE', payload: 'LIGHT'});
     return () => {
       document.removeEventListener('keypress', shortcutFns);
     };
@@ -111,6 +125,7 @@ const Home: React.FC<themeprops> = (props) => {
         activeTheme={state.activeTheme}
         themeNames={themeNames}
         themeselectRef={themeselectRef}
+        colours={sampleColours(theme)}
       />
       <section className={css.content}>
         <ThemePreview

@@ -17,18 +17,33 @@ type PropType = {
   themeNames: string[];
   activeTheme: string;
   themeselectRef: React.MutableRefObject<null | HTMLSelectElement>;
+  colours: string[];
 };
 
 const shadeValues = [
   {
     value: 'DARK',
     label: 'Dark',
-    icon: (isSelected: boolean) => <Dark size="18px" colour="#ededed" />,
+    icon: () => (
+      <Dark
+        size="18px"
+        colour={getComputedStyle(document.documentElement).getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
   },
   {
     value: 'LIGHT',
     label: 'Light',
-    icon: (isSelected: boolean) => <Light size="18px" colour="#ededed" />,
+    icon: () => (
+      <Light
+        size="18px"
+        colour={getComputedStyle(document.documentElement).getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
   },
 ];
 
@@ -36,23 +51,33 @@ const previewValues = [
   {
     value: 'console',
     label: 'Console',
-    icon: (isSelected: boolean) => <Console size="18px" colour="#ededed" />,
+    icon: () => (
+      <Console
+        size="18px"
+        colour={getComputedStyle(document.documentElement).getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
   },
   {
     value: 'colour',
     label: 'Colour',
-    icon: (isSelected: boolean) => <Colours size="18px" colour="#ededed" />,
+    icon: () => (
+      <Colours
+        size="18px"
+        colour={getComputedStyle(document.documentElement).getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
   },
 ];
 
 const Toolbar = (props: PropType) => (
-  <section
-    className={`${css.container} ${
-      props.themeShade === 'DARK' ? css.dark : css.light
-    }`}
-  >
+  <section className={css.container}>
     <a href="/themes" className={css.title}>
-      <Logo size="48px" />
+      <Logo size="48px" colours={props.colours} />
       <h1>Windows Terminal Themes</h1>
     </a>
     <section>
@@ -78,7 +103,12 @@ const Toolbar = (props: PropType) => (
       />
     </section>
     <section>
-      More <Chevron colour="#ededed" />
+      More{' '}
+      <Chevron
+        colour={getComputedStyle(document.documentElement).getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
     </section>
   </section>
 );

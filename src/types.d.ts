@@ -20,6 +20,8 @@ export type validThemeType = {
   foreground: string;
 };
 
+// optional 'cursorColor' | 'selectionBackground'
+
 export type validKeysType = Array<
   | 'name'
   | 'black'
