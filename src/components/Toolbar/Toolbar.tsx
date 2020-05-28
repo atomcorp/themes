@@ -80,7 +80,7 @@ const Toolbar = (props: PropType) => (
       <Logo size="48px" colours={props.colours} />
       <h1>Windows Terminal Themes</h1>
     </a>
-    <section>
+    <section className={css.select}>
       <ThemeSelect
         themeNames={props.themeNames}
         dispatch={props.dispatch}
@@ -102,7 +102,7 @@ const Toolbar = (props: PropType) => (
         values={previewValues}
       />
     </section>
-    <section>
+    <section className={css.more}>
       More{' '}
       <Chevron
         colour={getComputedStyle(document.documentElement).getPropertyValue(

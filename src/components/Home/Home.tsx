@@ -88,7 +88,7 @@ const Home: React.FC<themeprops> = (props) => {
   useEffect(() => {
     const shortcutFns = shortcuts(dispatch, themeselectRef);
     document.addEventListener('keypress', shortcutFns);
-    dispatch({type: 'SHADE', payload: 'LIGHT'});
+    dispatch({type: 'SHADE', payload: 'DARK'});
     return () => {
       document.removeEventListener('keypress', shortcutFns);
     };

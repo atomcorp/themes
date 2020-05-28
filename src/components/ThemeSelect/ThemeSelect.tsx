@@ -31,6 +31,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
         Prev
       </button>
       <label className={css.label} htmlFor="theme-select">
+        <span className="visually-hidden ">Select theme</span>
         <select
           ref={props.themeselectRef}
           id="theme-select"
