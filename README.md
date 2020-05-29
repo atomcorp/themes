@@ -21,7 +21,7 @@ The [official docs for Windows Terminal](https://github.com/microsoft/terminal/b
 
 Ideally for the ecosystem new themes should be proposed to [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) (where most of these themes come from), then everyone can benefit.
 
-If not, new themes can be add added with a pull request. Just add them to the list in `src/custom-colour-schemes.json`. You shouldn't need to run anything.
+If not, new themes can be add added with a pull request. Just add them to the list in `src/custom-colour-schemes.json`. You shouldn't need to run anything. If you'd like to receive credit, or know who should, please add it to this README when submitting.
 
 ## Credits
 
