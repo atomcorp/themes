@@ -12,6 +12,9 @@ type cssvarType = {
   '--btn__insert': string;
   '--toolbar__color': string;
   '--toolbar__background': string;
+  '--btn-primary__bg-img': string;
+  '--btn-primary__bg-img---hover': string;
+  '--btn-primary__colour': string;
 };
 
 const cssvarDark: cssvarType = {
@@ -22,6 +25,9 @@ const cssvarDark: cssvarType = {
   '--btn__bg-color': '#404040',
   '--btn__border-colour__active': 'rgba(200, 200, 200, 0.3)',
   '--btn__insert': 'inset 0 0.15em 0.3em rgba(20, 22, 23, 0.15)',
+  '--btn-primary__bg-img': 'linear-gradient(-180deg,#2fcb53,#269f42 90%)',
+  '--btn-primary__colour': '#d6d8da',
+  '--btn-primary__bg-img---hover': 'linear-gradient(180deg, #484 5%, #171 90%)',
   '--toolbar__color': '#ededed',
   '--toolbar__background': '#202020',
 };
@@ -34,6 +40,9 @@ const cssvarLight: cssvarType = {
   '--btn__bg-color': '#e9ecef',
   '--btn__border-colour__active': 'rgba(27, 31, 35, .3)',
   '--btn__insert': 'inset 0 .15em .3em rgba(27, 31, 35, .15)',
+  '--btn-primary__bg-img': 'linear-gradient(-180deg,#2fcb53,#269f42 90%)',
+  '--btn-primary__bg-img---hover': 'linear-gradient(180deg, #373 0%, #060 90%)',
+  '--btn-primary__colour': '#d6d8da',
   '--toolbar__color': '#282c34',
   '--toolbar__background': '#e1e4e8',
 };

@@ -12,8 +12,8 @@ type IconProps = {
 export const Share = (props: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height={props.size || '24px'}
-    width={props.size || '24px'}
+    height={props.size || '18px'}
+    width={props.size || '18px'}
     viewBox="0 0 24 24"
     aria-labelledby="title"
     onClick={props.onClick}
@@ -35,8 +35,8 @@ export const Share = (props: IconProps) => (
 export const Copy = (props: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height={props.size || '24px'}
-    width={props.size || '24px'}
+    height={props.size || '18px'}
+    width={props.size || '18px'}
     viewBox="0 0 24 24"
     aria-labelledby="title"
     onClick={props.onClick}
@@ -225,7 +225,6 @@ export const Arrow = (props: IconProps) => (
   </svg>
 );
 
-const example = ['#01a252', '#fded02', '#01a0e4', '#b5e4f4'];
 const iterateColours = (arr: string[], index: number) => {
   if (index === 0) {
     return [...arr, arr[0]].join(';');
@@ -239,9 +238,6 @@ type LogoType = {
   colours: string[];
 };
 
-// animation help
-// https://codepen.io/NickNoordijk/pen/VLvxLE?editors=1010
-// https://www.digitalocean.com/community/tutorials/svg-linear-gradients
 export const Logo = (props: IconProps & LogoType) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

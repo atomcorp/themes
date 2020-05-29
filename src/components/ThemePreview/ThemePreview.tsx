@@ -102,40 +102,16 @@ const ThemePreview: React.FC<PropsType> = (props) => {
   };
   return (
     <section className={css.container}>
-      <div
-        className={`${css.heading} ${
-          props.previewType === 'colour' ? css.wide : css.narrow
-        }`}
-      >
-        <h2
-          data-testid="selected-title"
-          className={css.name}
-          style={{color: props.primaryColour}}
-        >
-          {props.theme.name}
-        </h2>
-        {!props.isSmallScreenSize && (
-          <ThemePreviewButtons
-            handleCopy={handleCopy}
-            handleShare={handleShare}
-            primaryColour={props.primaryColour}
-          />
-        )}
-      </div>
       {props.previewType === 'colour' ? (
         <ColourTest theme={props.theme} />
       ) : (
         <ConsoleTest theme={props.theme} />
       )}
-      <div className={css.footer}>
-        {props.isSmallScreenSize && (
-          <ThemePreviewButtons
-            handleCopy={handleCopy}
-            handleShare={handleShare}
-            primaryColour={props.primaryColour}
-          />
-        )}
-      </div>
+      <ThemePreviewButtons
+        themename={props.theme.name}
+        handleCopy={handleCopy}
+        handleShare={handleShare}
+      />
       <Toast
         color={props.primaryColour}
         background={props.backgroundColour}

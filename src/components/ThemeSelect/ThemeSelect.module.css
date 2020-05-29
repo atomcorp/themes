@@ -45,6 +45,7 @@ select:focus {
   border: var(--btn__bg-border);
   color: var(--btn__colour);
   padding: 3px 10px;
+  cursor: pointer;
 }
 .direction:first-child {
   border-radius: 0.25em 0 0 0.25em;
@@ -55,4 +56,8 @@ select:focus {
 .direction:focus {
   box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
   outline: 0;
+}
+.direction:hover {
+  background-image: var(--btn__bg-img--hover);
+  background-position: -0.5em;
 }

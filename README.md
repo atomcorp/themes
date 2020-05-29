@@ -58,3 +58,4 @@ The json list is generated from another repo, [github.com/atomcorp/terminal-api]
 - the following projects were really useful [clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill), [resize-observer-polyfill](https://github.com/que-etc/resize-observer-polyfill), [file-saver](https://github.com/eligrey/FileSaver.js) and [get-contrast](https://github.com/johno/get-contrast). Thanks!
 - Icons are all [Material Design](https://material.io/resources/icons/?style=baseline), except GitHub's mark which is from (GitHub Primer)(https://primer.style/octicons/)
 - Terminal logo is made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+- Logo animation help from https://codepen.io/NickNoordijk/pen/VLvxLE?editors=1010 & https://www.digitalocean.com/community/tutorials/svg-linear-gradients

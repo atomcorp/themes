@@ -5,16 +5,13 @@ import {Share, Copy} from 'Icons';
 
 type ThemePreviewButtonType = {
   onClick: () => void;
-  colour: string;
+  type?: string;
 };
 
 const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
   return (
     <button
-      style={{
-        color: props.colour,
-      }}
-      className={css.button}
+      className={`${css.button} ${props.type === 'primary' ? css.primary : ''}`}
       onClick={() => {
         props.onClick();
       }}
@@ -27,23 +24,25 @@ const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
 type ThemePreviewButtonsType = {
   handleCopy: () => void;
   handleShare: () => void;
-  primaryColour: string;
+  themename: string;
 };
 
 const ThemePreviewButtons = (props: ThemePreviewButtonsType) => (
-  <>
-    <ThemePreviewButton onClick={props.handleCopy} colour={props.primaryColour}>
-      Copy
-      <Copy className={css.icon} colour={props.primaryColour} />
+  <div className={css.buttons}>
+    <ThemePreviewButton type="primary" onClick={props.handleCopy}>
+      <Copy className={css.icon} colour="#ededed" />
+      Get theme
     </ThemePreviewButton>
-    <ThemePreviewButton
-      onClick={props.handleShare}
-      colour={props.primaryColour}
-    >
-      Share
-      <Share className={css.icon} colour={props.primaryColour} />
+    <ThemePreviewButton onClick={props.handleShare}>
+      <Share
+        className={css.icon}
+        colour={getComputedStyle(document.documentElement).getPropertyValue(
+          '--btn__colour'
+        )}
+      />
+      Share theme
     </ThemePreviewButton>
-  </>
+  </div>
 );
 
 export default ThemePreviewButtons;

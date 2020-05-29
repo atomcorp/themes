@@ -2,13 +2,17 @@
   position: fixed;
   transform: translateY(100%);
   transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
-  right: 6px;
+  right: 20px;
   bottom: 0;
   padding: 10px;
+  color: var(--toolbar__color);
+  background: var(--toolbar__background);
+  border: 1px solid;
+  border-radius: 0.25em;
 }
 
 .container.active {
-  transform: translateY(-6px);
+  transform: translateY(-20px);
 }
 
 .title {

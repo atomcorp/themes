@@ -1,3 +1,9 @@
+/**
+ * I made the direction buttons here <div> not <buttons>
+ * as they just duplicate the functionality of the <select>
+ * It seems better to remove the extra focusable elements,
+ * so people jump straight to the <select>
+ */
 import React, {useRef} from 'react';
 
 import {actionTypes} from 'types';
@@ -15,7 +21,7 @@ type PropsType = {
 const ThemeSelect: React.FC<PropsType> = (props) => {
   return (
     <div className={css.container}>
-      <button
+      <div
         className={css.direction}
         onClick={() => {
           props.dispatch({type: 'PREV'});
@@ -29,7 +35,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
           size="18px"
         />
         Prev
-      </button>
+      </div>
       <label className={css.label} htmlFor="theme-select">
         <span className="visually-hidden ">Select theme</span>
         <select
@@ -51,7 +57,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
           ))}
         </select>
       </label>
-      <button
+      <div
         className={css.direction}
         onClick={() => {
           props.dispatch({type: 'NEXT'});
@@ -66,7 +72,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
             '--btn__colour'
           )}
         />
-      </button>
+      </div>
     </div>
   );
 };
