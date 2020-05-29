@@ -11,8 +11,7 @@ type ToastType = {
 
 const Toast = (props: ToastType) => (
   <section className={`${css.container} ${props.isActive ? css.active : ''}`}>
-    <div className={css.title}>{props.title}</div>
-    <div className={css.message}>{props.message}</div>
+    <div className={css.title}>{props.message}</div>
   </section>
 );
 

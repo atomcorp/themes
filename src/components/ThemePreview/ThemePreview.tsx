@@ -35,9 +35,8 @@ type actionType =
     };
 
 const toastmessages = {
-  share: (themename: string) =>
-    `Added ${themename}'s direct link to your clipboard`,
-  copy: (themename: string) => `Copied ${themename}'s scheme to your clipboard`,
+  share: (themename: string) => `${themename} link added your clipboard`,
+  copy: (themename: string) => `${themename} theme added to your clipboard`,
 };
 
 const initialState = {
