@@ -4,9 +4,10 @@ import React from 'react';
 // components
 import Toggle from 'components/Toggle/Toggle';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
+import More from 'components/More/More';
 
 // utils
-import {Logo, Dark, Light, Console, Colours, Chevron} from 'Icons';
+import {Logo, Dark, Light, Console, Colours} from 'Icons';
 import css from './Toolbar.module.css';
 import {actionTypes, themeShadeType, previewType, themeType} from 'types';
 
@@ -103,12 +104,7 @@ const Toolbar = (props: PropType) => (
       />
     </section>
     <section className={css.more}>
-      More{' '}
-      <Chevron
-        colour={getComputedStyle(document.documentElement).getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
+      <More />
     </section>
   </section>
 );

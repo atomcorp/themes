@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+}
+
+.trigger {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 0;
+  color: var(--toolbar__color);
+  padding: 0;
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  background: var(--toolbar__background);
+}

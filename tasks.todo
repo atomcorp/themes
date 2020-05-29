@@ -35,6 +35,7 @@ After:
   copy and share themes should be buttons on the same line as title
   light/dark & console/colours should be better presented
   there should be an info modal, or something
+☐ Add Percy snapshot testing
 ☐ Choose font
 ☐ Add preview type and console tab to share theme parameters
 ☐ favicon match primary/background colours
