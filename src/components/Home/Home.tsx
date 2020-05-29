@@ -3,6 +3,8 @@ import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
 import Toolbar from 'components/Toolbar/Toolbar';
+import MoreContent from 'components/More/MoreContent';
+
 import css from './Home.module.css';
 import {
   homeReducer,
@@ -126,6 +128,7 @@ const Home: React.FC<themeprops> = (props) => {
         themeNames={themeNames}
         themeselectRef={themeselectRef}
         colours={sampleColours(theme)}
+        isMoreOpen={state.isMoreOpen}
       />
       <section className={css.content}>
         <ThemePreview
@@ -134,6 +137,10 @@ const Home: React.FC<themeprops> = (props) => {
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
           isSmallScreenSize={state.isSmallScreenSize}
+        />
+        <MoreContent
+          downloadAllThemes={downloadAllThemes}
+          isMoreOpen={state.isMoreOpen}
         />
       </section>
     </section>

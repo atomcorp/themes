@@ -87,6 +87,7 @@ export type stateType = {
   primaryColour: string;
   backgroundColour: string;
   previewType: previewType;
+  isMoreOpen: boolean;
 };
 
 export const initialState: stateType = {
@@ -98,6 +99,7 @@ export const initialState: stateType = {
   primaryColour: '#fded02',
   backgroundColour: '#090300',
   previewType: 'console',
+  isMoreOpen: true,
 };
 
 export const homeReducer = (
@@ -202,6 +204,9 @@ export const homeReducer = (
         break;
       case 'PREVIEW':
         draftState.previewType = action.payload;
+        break;
+      case 'MORE':
+        draftState.isMoreOpen = !state.isMoreOpen;
         break;
       default:
         break;

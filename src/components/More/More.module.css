@@ -14,6 +14,70 @@
 
 .content {
   position: absolute;
+  top: 0;
   right: 0;
   background: var(--toolbar__background);
+  max-width: 500px;
+  border: var(--btn__bg-border);
+  border-radius: 0.25em;
+  padding: 10px;
+  max-height: 100%;
+  overflow: auto;
+  color: var(--btn__colour);
+  box-shadow: 0 1px 5px rgba(27, 31, 35, 0.15);
+}
+
+.content p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+.section p:last-child {
+  margin: 0;
+}
+
+.content button {
+  background-image: var(--btn__bg-img);
+  border-radius: 0.25em;
+  border: var(--btn__bg-border);
+  color: var(--btn__colour);
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.content button:focus {
+  box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
+  outline: 0;
+}
+.content button:hover {
+  background-image: var(--btn__bg-img--hover);
+  background-position: -0.5em;
+}
+
+.section {
+  margin: 0 0 20px;
+  border-bottom: var(--btn__bg-border);
+  padding-bottom: 20px;
+}
+
+.section:first-child {
+  margin: 10px 0 20px;
+}
+
+.section:last-child {
+  margin: 0 0 20px;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section a {
+  color: var(--link-colour);
+}
+
+.section a:visited {
+  color: var(--link-colour--visited);
+}
+
+.heading {
+  margin: 0 0 20px;
+  font-weight: 500;
 }

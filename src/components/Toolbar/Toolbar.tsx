@@ -19,6 +19,7 @@ type PropType = {
   activeTheme: string;
   themeselectRef: React.MutableRefObject<null | HTMLSelectElement>;
   colours: string[];
+  isMoreOpen: boolean;
 };
 
 const shadeValues = [
@@ -28,7 +29,7 @@ const shadeValues = [
     icon: () => (
       <Dark
         size="18px"
-        colour={getComputedStyle(document.documentElement).getPropertyValue(
+        colour={document.documentElement.style.getPropertyValue(
           '--toolbar__color'
         )}
       />
@@ -40,7 +41,7 @@ const shadeValues = [
     icon: () => (
       <Light
         size="18px"
-        colour={getComputedStyle(document.documentElement).getPropertyValue(
+        colour={document.documentElement.style.getPropertyValue(
           '--toolbar__color'
         )}
       />
@@ -55,7 +56,7 @@ const previewValues = [
     icon: () => (
       <Console
         size="18px"
-        colour={getComputedStyle(document.documentElement).getPropertyValue(
+        colour={document.documentElement.style.getPropertyValue(
           '--toolbar__color'
         )}
       />
@@ -67,7 +68,7 @@ const previewValues = [
     icon: () => (
       <Colours
         size="18px"
-        colour={getComputedStyle(document.documentElement).getPropertyValue(
+        colour={document.documentElement.style.getPropertyValue(
           '--toolbar__color'
         )}
       />
@@ -104,7 +105,7 @@ const Toolbar = (props: PropType) => (
       />
     </section>
     <section className={css.more}>
-      <More />
+      <More isMoreOpen={props.isMoreOpen} dispatch={props.dispatch} />
     </section>
   </section>
 );

@@ -117,6 +117,10 @@ type setPrevType = {
   type: 'PREV';
 };
 
+type setMoreToggleType = {
+  type: 'MORE';
+};
+
 export type actionTypes =
   | loadActionType
   | setTheme
@@ -124,6 +128,7 @@ export type actionTypes =
   | setScreenSizeType
   | setPreviewType
   | setNextType
-  | setPrevType;
+  | setPrevType
+  | setMoreToggleType;
 
 export type previewType = 'console' | 'colour';

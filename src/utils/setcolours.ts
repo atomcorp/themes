@@ -15,6 +15,8 @@ type cssvarType = {
   '--btn-primary__bg-img': string;
   '--btn-primary__bg-img---hover': string;
   '--btn-primary__colour': string;
+  '--link-colour': string;
+  '--link-colour--visited': string;
 };
 
 const cssvarDark: cssvarType = {
@@ -30,6 +32,8 @@ const cssvarDark: cssvarType = {
   '--btn-primary__bg-img---hover': 'linear-gradient(180deg, #484 5%, #171 90%)',
   '--toolbar__color': '#ededed',
   '--toolbar__background': '#202020',
+  '--link-colour': '#5bb3f4',
+  '--link-colour--visited': '#a292ef',
 };
 
 const cssvarLight: cssvarType = {
@@ -45,6 +49,8 @@ const cssvarLight: cssvarType = {
   '--btn-primary__colour': '#d6d8da',
   '--toolbar__color': '#282c34',
   '--toolbar__background': '#e1e4e8',
+  '--link-colour': '#224fd4',
+  '--link-colour--visited': '#9e04bf',
 };
 
 const setcolours = (type: shadeType) => {
