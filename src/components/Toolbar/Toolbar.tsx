@@ -9,7 +9,7 @@ import More from 'components/More/More';
 // utils
 import {Logo, Dark, Light, Console, Colours} from 'Icons';
 import css from './Toolbar.module.css';
-import {actionTypes, themeShadeType, previewType, themeType} from 'types';
+import {actionTypes, themeShadeType, previewType} from 'types';
 
 type PropType = {
   themeShade: themeShadeType;

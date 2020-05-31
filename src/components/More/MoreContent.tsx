@@ -28,7 +28,10 @@ const MoreContent = (props: {
     <MoreSection heading="Download all themes">
       <p>
         Get all the themes as one big json file, warning: not as useful as it
-        sounds 🤷‍♀️
+        sounds{' '}
+        <span role="img" aria-label="person shrugging">
+          🤷‍♀️
+        </span>
       </p>
       <button onClick={props.downloadAllThemes}>
         Download .json of themes
@@ -60,7 +63,7 @@ const MoreContent = (props: {
     <MoreSection heading="GitHub">
       <p>
         Check out the{' '}
-        <a href="https://atomcorp.github.io/themes/">Windows Terminal Themes</a>{' '}
+        <a href="https://github.com/atomcorp/themes">Windows Terminal Themes</a>{' '}
         repository on GitHub
       </p>
     </MoreSection>

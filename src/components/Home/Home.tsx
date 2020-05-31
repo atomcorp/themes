@@ -10,7 +10,6 @@ import {
   homeReducer,
   initialState,
   screenSizeObserver,
-  THEME_COLOUR,
   returnInitialTheme,
 } from './homeMethods';
 import {themeType} from 'types';
@@ -131,16 +130,16 @@ const Home: React.FC<themeprops> = (props) => {
         isMoreOpen={state.isMoreOpen}
       />
       <section className={css.content}>
+        <MoreContent
+          downloadAllThemes={downloadAllThemes}
+          isMoreOpen={state.isMoreOpen}
+        />
         <ThemePreview
           previewType={state.previewType}
           theme={theme}
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
           isSmallScreenSize={state.isSmallScreenSize}
-        />
-        <MoreContent
-          downloadAllThemes={downloadAllThemes}
-          isMoreOpen={state.isMoreOpen}
         />
       </section>
     </section>

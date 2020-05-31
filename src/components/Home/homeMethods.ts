@@ -99,7 +99,7 @@ export const initialState: stateType = {
   primaryColour: '#fded02',
   backgroundColour: '#090300',
   previewType: 'console',
-  isMoreOpen: true,
+  isMoreOpen: false,
 };
 
 export const homeReducer = (

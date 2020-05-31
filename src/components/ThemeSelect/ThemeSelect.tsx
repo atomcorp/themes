@@ -2,9 +2,9 @@
  * I made the direction buttons here <div> not <buttons>
  * as they just duplicate the functionality of the <select>
  * It seems better to remove the extra focusable elements,
- * so people jump straight to the <select>
+ * so people needing a11y jump straight to the <select>
  */
-import React, {useRef} from 'react';
+import React from 'react';
 
 import {actionTypes} from 'types';
 import css from './ThemeSelect.module.css';
