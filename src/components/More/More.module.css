@@ -12,8 +12,20 @@
   cursor: pointer;
 }
 
+@keyframes slide_in_content {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
 .content {
   position: absolute;
+  z-index: 2;
   top: 0;
   right: 0;
   background: var(--toolbar__background);
@@ -25,6 +37,8 @@
   overflow: auto;
   color: var(--btn__colour);
   box-shadow: 0 1px 5px rgba(27, 31, 35, 0.15);
+  transform: translateY(-10px);
+  animation: slide_in_content 0.2s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
 .content p {
@@ -80,4 +94,16 @@
 .heading {
   margin: 0 0 20px;
   font-weight: 500;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--overlay-background);
+  display: none;
+}
+.overlay.active {
+  display: block;
 }

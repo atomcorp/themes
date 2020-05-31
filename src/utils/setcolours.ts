@@ -17,6 +17,7 @@ type cssvarType = {
   '--btn-primary__colour': string;
   '--link-colour': string;
   '--link-colour--visited': string;
+  '--overlay-background': string;
 };
 
 const cssvarDark: cssvarType = {
@@ -34,6 +35,7 @@ const cssvarDark: cssvarType = {
   '--toolbar__background': '#202020',
   '--link-colour': '#5bb3f4',
   '--link-colour--visited': '#a292ef',
+  '--overlay-background': 'rgba(7, 7, 7, 0.54)',
 };
 
 const cssvarLight: cssvarType = {
@@ -51,18 +53,15 @@ const cssvarLight: cssvarType = {
   '--toolbar__background': '#e1e4e8',
   '--link-colour': '#224fd4',
   '--link-colour--visited': '#9e04bf',
+  '--overlay-background': 'rgba(230, 230, 230, 0.48)',
 };
 
 const setcolours = (type: shadeType) => {
-  if (type === 'LIGHT') {
-    Object.entries(cssvarLight).forEach(([key, val]) => {
+  Object.entries(type === 'LIGHT' ? cssvarLight : cssvarDark).forEach(
+    ([key, val]) => {
       root.style.setProperty(key, val);
-    });
-  } else {
-    Object.entries(cssvarDark).forEach(([key, val]) => {
-      root.style.setProperty(key, val);
-    });
-  }
+    }
+  );
 };
 
 export default setcolours;

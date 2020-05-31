@@ -133,6 +133,7 @@ const Home: React.FC<themeprops> = (props) => {
         <MoreContent
           downloadAllThemes={downloadAllThemes}
           isMoreOpen={state.isMoreOpen}
+          dispatch={dispatch}
         />
         <ThemePreview
           previewType={state.previewType}
