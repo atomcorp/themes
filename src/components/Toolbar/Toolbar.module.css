@@ -2,13 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   color: var(--toolbar__color);
   background: var(--toolbar__background);
   padding: 10px 10px 0 10px;
-}
-
-@media (min-width: 1024px) {
 }
 
 .title {
@@ -38,4 +34,10 @@
 
 .more {
   margin: 0 0 10px 0;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+  }
 }

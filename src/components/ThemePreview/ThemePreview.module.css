@@ -33,10 +33,11 @@
   border-radius: 0.25em;
   border: 1px solid rgba(200, 200, 200, 0.15);
   color: var(--btn__colour);
-  padding: 3px 10px;
+  padding: 6px 16px;
   font-size: 2rem;
   border-width: 2px;
   margin: 0 5px;
+  cursor: pointer;
 }
 
 .button:focus {

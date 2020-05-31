@@ -16,6 +16,8 @@ type PropsType = {
   backgroundColour: string;
   previewType: previewType;
   isSmallScreenSize: boolean;
+  ThemeSelectContainer: () => JSX.Element;
+  Toggles: () => JSX.Element;
 };
 
 type reducerType = {
@@ -61,6 +63,7 @@ const reducer = (state: reducerType, action: actionType) => {
 
 const ThemePreview: React.FC<PropsType> = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const {ThemeSelectContainer, Toggles} = props;
   if (!props.theme) {
     return (
       <div
@@ -101,6 +104,12 @@ const ThemePreview: React.FC<PropsType> = (props) => {
   };
   return (
     <section className={css.container}>
+      {props.isSmallScreenSize && (
+        <>
+          <Toggles />
+          <ThemeSelectContainer />
+        </>
+      )}
       {props.previewType === 'colour' ? (
         <ColourTest theme={props.theme} />
       ) : (

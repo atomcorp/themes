@@ -4,6 +4,8 @@ import {saveAs} from 'file-saver';
 import ThemePreview from 'components/ThemePreview/ThemePreview';
 import Toolbar from 'components/Toolbar/Toolbar';
 import MoreContent from 'components/More/MoreContent';
+import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
+import Toggle from 'components/Toggle/Toggle';
 
 import css from './Home.module.css';
 import {
@@ -13,6 +15,7 @@ import {
   returnInitialTheme,
 } from './homeMethods';
 import {themeType} from 'types';
+import {Console, Colours, Dark, Light} from 'Icons';
 
 type themeprops = {
   themes: themeType[];
@@ -67,6 +70,60 @@ const sampleColours = (theme: themeType | undefined) => {
   return [];
 };
 
+const shadeValues = [
+  {
+    value: 'DARK',
+    label: 'Dark',
+    icon: () => (
+      <Dark
+        size="18px"
+        colour={document.documentElement.style.getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
+  },
+  {
+    value: 'LIGHT',
+    label: 'Light',
+    icon: () => (
+      <Light
+        size="18px"
+        colour={document.documentElement.style.getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
+  },
+];
+
+const previewValues = [
+  {
+    value: 'console',
+    label: 'Console',
+    icon: () => (
+      <Console
+        size="18px"
+        colour={document.documentElement.style.getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
+  },
+  {
+    value: 'colour',
+    label: 'Colour',
+    icon: () => (
+      <Colours
+        size="18px"
+        colour={document.documentElement.style.getPropertyValue(
+          '--toolbar__color'
+        )}
+      />
+    ),
+  },
+];
+
 const Home: React.FC<themeprops> = (props) => {
   const themeselectRef = useRef(null);
   const [state, dispatch] = useReducer(homeReducer, {
@@ -114,6 +171,31 @@ const Home: React.FC<themeprops> = (props) => {
     );
     saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
   };
+
+  const ThemeSelectContainer = () => (
+    <ThemeSelect
+      themeNames={themeNames}
+      dispatch={dispatch}
+      activeTheme={state.activeTheme}
+      themeselectRef={themeselectRef}
+    />
+  );
+  const Toggles = () => (
+    <>
+      <Toggle
+        currentValue={state.themeShade}
+        dispatch={dispatch}
+        type="SHADE"
+        values={shadeValues}
+      />
+      <Toggle
+        currentValue={state.previewType}
+        dispatch={dispatch}
+        type="PREVIEW"
+        values={previewValues}
+      />
+    </>
+  );
   return (
     <section
       className={css.container}
@@ -128,6 +210,9 @@ const Home: React.FC<themeprops> = (props) => {
         themeselectRef={themeselectRef}
         colours={sampleColours(theme)}
         isMoreOpen={state.isMoreOpen}
+        isSmallScreenSize={state.isSmallScreenSize}
+        ThemeSelectContainer={ThemeSelectContainer}
+        Toggles={Toggles}
       />
       <section className={css.content}>
         <MoreContent
@@ -141,6 +226,8 @@ const Home: React.FC<themeprops> = (props) => {
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
           isSmallScreenSize={state.isSmallScreenSize}
+          ThemeSelectContainer={ThemeSelectContainer}
+          Toggles={Toggles}
         />
       </section>
     </section>

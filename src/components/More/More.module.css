@@ -93,6 +93,7 @@
 .heading {
   margin: 0 0 20px;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 .overlay {

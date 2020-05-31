@@ -8,6 +8,8 @@
 .label {
   text-align: center;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .select {
@@ -21,7 +23,6 @@
   border-right: 0;
   background-image: var(--btn__bg-img);
   color: var(--btn__colour);
-  height: 29px;
 }
 
 select:focus {

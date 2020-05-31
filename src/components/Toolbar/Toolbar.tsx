@@ -2,8 +2,6 @@
 import React from 'react';
 
 // components
-import Toggle from 'components/Toggle/Toggle';
-import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 import More from 'components/More/More';
 
 // utils
@@ -20,94 +18,34 @@ type PropType = {
   themeselectRef: React.MutableRefObject<null | HTMLSelectElement>;
   colours: string[];
   isMoreOpen: boolean;
+  isSmallScreenSize: boolean;
+  ThemeSelectContainer: () => JSX.Element;
+  Toggles: () => JSX.Element;
 };
 
-const shadeValues = [
-  {
-    value: 'DARK',
-    label: 'Dark',
-    icon: () => (
-      <Dark
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-  {
-    value: 'LIGHT',
-    label: 'Light',
-    icon: () => (
-      <Light
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-];
-
-const previewValues = [
-  {
-    value: 'console',
-    label: 'Console',
-    icon: () => (
-      <Console
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-  {
-    value: 'colour',
-    label: 'Colour',
-    icon: () => (
-      <Colours
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-];
-
-const Toolbar = (props: PropType) => (
-  <section className={css.container}>
-    <a href="/themes" className={css.title}>
-      <Logo size="48px" colours={props.colours} />
-      <h1>Windows Terminal Themes</h1>
-    </a>
-    <div className={css.select}>
-      <ThemeSelect
-        themeNames={props.themeNames}
-        dispatch={props.dispatch}
-        activeTheme={props.activeTheme}
-        themeselectRef={props.themeselectRef}
-      />
-    </div>
-    <div className={css.toggles}>
-      <Toggle
-        currentValue={props.themeShade}
-        dispatch={props.dispatch}
-        type="SHADE"
-        values={shadeValues}
-      />
-      <Toggle
-        currentValue={props.previewType}
-        dispatch={props.dispatch}
-        type="PREVIEW"
-        values={previewValues}
-      />
-    </div>
-    <div className={css.more}>
-      <More isMoreOpen={props.isMoreOpen} dispatch={props.dispatch} />
-    </div>
-  </section>
-);
+const Toolbar = (props: PropType) => {
+  const {ThemeSelectContainer, Toggles} = props;
+  return (
+    <section className={css.container}>
+      <a href="/themes" className={css.title}>
+        <Logo size="48px" colours={props.colours} />
+        <h1>Windows Terminal Themes</h1>
+      </a>
+      {!props.isSmallScreenSize && (
+        <div className={css.select}>
+          <ThemeSelectContainer />
+        </div>
+      )}
+      {!props.isSmallScreenSize && (
+        <div className={css.toggles}>
+          <Toggles />
+        </div>
+      )}
+      <div className={css.more}>
+        <More isMoreOpen={props.isMoreOpen} dispatch={props.dispatch} />
+      </div>
+    </section>
+  );
+};
 
 export default Toolbar;
