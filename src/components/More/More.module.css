@@ -24,9 +24,8 @@
 }
 
 .content {
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  top: 0;
   right: 0;
   background: var(--toolbar__background);
   max-width: 500px;

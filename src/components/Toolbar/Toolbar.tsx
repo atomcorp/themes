@@ -82,15 +82,15 @@ const Toolbar = (props: PropType) => (
       <Logo size="48px" colours={props.colours} />
       <h1>Windows Terminal Themes</h1>
     </a>
-    <section className={css.select}>
+    <div className={css.select}>
       <ThemeSelect
         themeNames={props.themeNames}
         dispatch={props.dispatch}
         activeTheme={props.activeTheme}
         themeselectRef={props.themeselectRef}
       />
-    </section>
-    <section className={css.toggles}>
+    </div>
+    <div className={css.toggles}>
       <Toggle
         currentValue={props.themeShade}
         dispatch={props.dispatch}
@@ -103,10 +103,10 @@ const Toolbar = (props: PropType) => (
         type="PREVIEW"
         values={previewValues}
       />
-    </section>
-    <section className={css.more}>
+    </div>
+    <div className={css.more}>
       <More isMoreOpen={props.isMoreOpen} dispatch={props.dispatch} />
-    </section>
+    </div>
   </section>
 );
 

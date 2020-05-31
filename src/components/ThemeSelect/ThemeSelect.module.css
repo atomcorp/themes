@@ -14,7 +14,7 @@
   font-size: 1.8rem;
   font-family: var(--font-stack);
   max-width: 100%;
-  width: 300px;
+  width: 100%;
   padding: 2px 10px;
   border: var(--btn__bg-border);
   border-left: 0;
