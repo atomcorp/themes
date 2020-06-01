@@ -6,14 +6,24 @@
   background: var(--toolbar__background);
   padding: 10px 10px 0 10px;
 }
+@media (min-width: 1024px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
 
 .title {
   display: flex;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: inherit;
   text-decoration: none;
   margin: 0 10px 8px 0;
+}
+@media (min-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }
 
 .title svg {
@@ -34,10 +44,4 @@
 
 .more {
   margin: 0 0 10px 0;
-}
-
-@media (min-width: 1024px) {
-  .container {
-    flex-wrap: wrap;
-  }
 }

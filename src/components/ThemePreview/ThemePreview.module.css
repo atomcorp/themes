@@ -7,7 +7,8 @@
   overflow: auto;
   padding: 10px;
   max-width: 1024px;
-  margin: 0 auto;
+  margin: auto;
+  flex: 1 1 auto;
 }
 @media (min-width: 1024px) {
   .container {
@@ -24,11 +25,18 @@
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+  .buttons {
+    flex-wrap: initial;
+  }
 }
 
 .button {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-image: var(--btn__bg-img);
   border-radius: 0.25em;
   border: 1px solid rgba(200, 200, 200, 0.15);
@@ -36,8 +44,16 @@
   padding: 6px 16px;
   font-size: 2rem;
   border-width: 2px;
-  margin: 0 5px;
+  margin: 0 0 10px;
   cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+}
+@media (min-width: 1024px) {
+  .button {
+    margin: 0 5px;
+    width: initial;
+  }
 }
 
 .button:focus {
@@ -59,4 +75,14 @@
   background-image: none;
   color: #ededed;
   font-weight: 500;
+}
+
+.toggles {
+  display: flex;
+  overflow: auto;
+}
+
+.select {
+  margin: 20px auto 0;
+  max-width: 800px;
 }

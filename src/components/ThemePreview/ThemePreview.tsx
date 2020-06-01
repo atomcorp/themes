@@ -105,15 +105,19 @@ const ThemePreview: React.FC<PropsType> = (props) => {
   return (
     <section className={css.container}>
       {props.isSmallScreenSize && (
-        <>
+        <div className={css.toggles}>
           <Toggles />
-          <ThemeSelectContainer />
-        </>
+        </div>
       )}
       {props.previewType === 'colour' ? (
         <ColourTest theme={props.theme} />
       ) : (
         <ConsoleTest theme={props.theme} />
+      )}
+      {props.isSmallScreenSize && (
+        <div className={css.select}>
+          <ThemeSelectContainer />
+        </div>
       )}
       <ThemePreviewButtons
         themename={props.theme.name}

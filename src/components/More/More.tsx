@@ -23,7 +23,7 @@ const Info = (props: MoreType) => {
         aria-haspopup="true"
         aria-expanded={props.isMoreOpen}
       >
-        More{' '}
+        Info{' '}
         <Chevron
           colour={document.documentElement.style.getPropertyValue(
             '--toolbar__color'

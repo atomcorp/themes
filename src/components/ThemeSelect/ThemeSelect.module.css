@@ -17,14 +17,18 @@
   font-family: var(--font-stack);
   max-width: 100%;
   width: 100%;
-  padding: 2px 10px;
+  padding: 5px 10px;
   border: var(--btn__bg-border);
   border-left: 0;
   border-right: 0;
   background-image: var(--btn__bg-img);
   color: var(--btn__colour);
 }
-
+@media (min-width: 1024px) {
+  .select {
+    padding: 2px 10px;
+  }
+}
 select:focus {
   box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
 }
@@ -45,7 +49,7 @@ select:focus {
   border-radius: 0.25em;
   border: var(--btn__bg-border);
   color: var(--btn__colour);
-  padding: 3px 10px;
+  padding: 6px 10px;
   cursor: pointer;
 }
 .direction:first-child {
@@ -61,4 +65,9 @@ select:focus {
 .direction:hover {
   background-image: var(--btn__bg-img--hover);
   background-position: -0.5em;
+}
+@media (min-width: 1024px) {
+  .direction {
+    padding: 3px 10px;
+  }
 }

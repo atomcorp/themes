@@ -1,13 +1,12 @@
 .container {
   display: flex;
-  height: 100%;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .sidebar {
   transition: background 0.05s ease-in-out;
 }
-
 @media (min-width: 1024px) {
   .sidebar {
     flex: 0 1 35%;
@@ -23,6 +22,7 @@
 .content {
   flex: 1 0 auto;
   position: relative;
+  display: flex;
 }
 
 .title {

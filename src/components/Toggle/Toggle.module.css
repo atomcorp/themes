@@ -1,16 +1,25 @@
 .container {
   position: relative;
   display: flex;
-  margin: 0 0 10px 0;
 }
 
 .container:first-child {
-  margin: 0 10px 10px 0;
+  margin: 0 10px 20px auto;
 }
-
+.container:last-child {
+  margin: 0 auto 20px 0;
+}
+@media (min-width: 1024px) {
+  .container:first-child {
+    margin: 0 10px 10px 0;
+  }
+  .container:last-child {
+    margin: 0 0 10px 0;
+  }
+}
 .label {
   display: inline-block;
-  padding: 0 3px;
+  padding: 3px;
   cursor: pointer;
   color: var(--btn__colour);
   background-image: var(--btn__bg-img);
@@ -19,7 +28,11 @@
   display: inline-flex;
   align-items: center;
 }
-
+@media (min-width: 1024px) {
+  .label {
+    padding: 0 3px;
+  }
+}
 .label:first-child {
   border-radius: 0.25em 0 0 0.25em;
   border-right: 0;
