@@ -22,14 +22,12 @@
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
   padding: 20px 0;
-  flex-wrap: wrap;
 }
 @media (min-width: 1024px) {
   .buttons {
-    flex-wrap: initial;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -44,7 +42,7 @@
   padding: 6px 16px;
   font-size: 2rem;
   border-width: 2px;
-  margin: 0 0 10px;
+  margin: 0 auto 10px;
   cursor: pointer;
   width: 100%;
   max-width: 500px;

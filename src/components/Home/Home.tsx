@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer, useRef} from 'react';
+import React, {useEffect, useReducer, useRef, useMemo} from 'react';
 import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
@@ -196,6 +196,14 @@ const Home: React.FC<themeprops> = (props) => {
       />
     </>
   );
+  const stringyTheme = theme != null ? JSON.stringify(theme) : null;
+  const colours = useMemo(() => {
+    // idk, this seems dumb but Dan says it's fine
+    // https://twitter.com/dan_abramov/status/1104414469629898754?lang=en
+    return sampleColours(
+      stringyTheme != null ? JSON.parse(stringyTheme) : null
+    );
+  }, [stringyTheme]);
   return (
     <section
       className={css.container}
@@ -208,7 +216,7 @@ const Home: React.FC<themeprops> = (props) => {
         activeTheme={state.activeTheme}
         themeNames={themeNames}
         themeselectRef={themeselectRef}
-        colours={sampleColours(theme)}
+        colours={colours}
         isMoreOpen={state.isMoreOpen}
         isSmallScreenSize={state.isSmallScreenSize}
         ThemeSelectContainer={ThemeSelectContainer}

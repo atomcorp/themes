@@ -6,11 +6,6 @@
   background: var(--toolbar__background);
   padding: 10px 10px 0 10px;
 }
-@media (min-width: 1024px) {
-  .container {
-    flex-wrap: wrap;
-  }
-}
 
 .title {
   display: flex;
