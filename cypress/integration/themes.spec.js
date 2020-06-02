@@ -188,13 +188,20 @@ describe('Themes - small screen', function () {
     });
     cy.findByText('Loading...').should('not.be.visible');
   });
-  it.only('default to first dark theme', function () {
-    cy.get('@darkThemes').then((themes) => {
-      // assuming we start off dark
-      const currentTheme = themes[0];
-      cy.findAllByTestId('theme-option').should('have.length', themes.length);
+  it('default to first dark theme', function () {
+    cy.get('@themes').then((xhr) => {
+      const themes = xhr.response.body;
+      const lightThemes = themes.filter((theme) => !theme.isDark);
+      const darkThemes = themes.filter((theme) => theme.isDark);
+      cy.findAllByTestId('theme-option').should(
+        'have.length',
+        darkThemes.length
+      );
       cy.findAllByTestId('theme-option').each(($el) => {
-        expect(themes.map((theme) => theme.name)).to.include($el.text());
+        expect(lightThemes.map((theme) => theme.name)).to.not.include(
+          $el.text()
+        );
+        expect(darkThemes.map((theme) => theme.name)).to.include($el.text());
       });
     });
   });
@@ -202,10 +209,12 @@ describe('Themes - small screen', function () {
     cy.get('@darkThemes').then((themes) => {
       // get the next theme in the list
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
-      cy.findByLabelText('Change theme:')
-        .select(currentTheme.name)
-        .should('have.value', currentTheme.name);
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+
+      cy.findByLabelText('Select theme').select(currentTheme.name);
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
       // can't test clipboard
       cy.findByTestId('copyButton').should('be.visible');
       cy.findByTestId('shareButton').should('be.visible');
@@ -213,14 +222,15 @@ describe('Themes - small screen', function () {
   });
   it('should be able to select a new light theme', function () {
     cy.get('@lightThemes').then((themes) => {
-      cy.findByLabelText('Light').click();
-      cy.findByLabelText('Light').should('be.checked');
+      cy.findByLabelText(/Light/).click({force: true});
+      cy.findByLabelText(/Light/).should('be.checked');
       // get the next theme in the list
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
-      cy.findByLabelText('Change theme:')
-        .select(currentTheme.name)
-        .should('have.value', currentTheme.name);
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      cy.findByLabelText('Select theme').select(currentTheme.name);
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
       // can't test clipboard
       cy.findByTestId('copyButton').should('be.visible');
       cy.findByTestId('shareButton').should('be.visible');
@@ -230,11 +240,10 @@ describe('Themes - small screen', function () {
     cy.get('@darkThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${encodeURIComponent(currentTheme.name)}`);
-      cy.findByLabelText('Change theme:').should(
+      cy.findByLabelText('Select theme').should(
         'have.value',
         currentTheme.name
       );
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
       cy.findByTestId('copyButton').should('be.visible');
       cy.findByTestId('shareButton').should('be.visible');
@@ -244,51 +253,14 @@ describe('Themes - small screen', function () {
     cy.get('@lightThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${encodeURIComponent(currentTheme.name)}`);
-      cy.findByLabelText('Change theme:').should(
+      cy.findByLabelText('Select theme').should(
         'have.value',
         currentTheme.name
       );
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
       cy.findByTestId('copyButton').should('be.visible');
       cy.findByTestId('shareButton').should('be.visible');
     });
-  });
-  it('should have all the dark themes in the dropdown', function () {
-    cy.get('@darkThemes').then((themes) => {
-      const darkThemeNames = themes.map((theme) => theme.name);
-      cy.findByLabelText('Change theme:').then(($el) => {
-        [...$el[0].options].forEach((el) => {
-          expect(darkThemeNames).to.include(el.value);
-        });
-      });
-    });
-  });
-  it('should have all the light themes in the dropdown', function () {
-    cy.get('@lightThemes').then((themes) => {
-      cy.findByLabelText('Light').click();
-      cy.findByLabelText('Light').should('be.checked');
-      const lightThemeNames = themes.map((theme) => theme.name);
-      cy.findByLabelText('Change theme:').then(($el) => {
-        [...$el[0].options].forEach((el) => {
-          expect(lightThemeNames).to.include(el.value);
-        });
-      });
-    });
-  });
-  it('should change screen type when resizing', function () {
-    cy.viewport(768, 736);
-    cy.findByLabelText('Change theme:').should('be.visible');
-    cy.findByTestId('theme-list').should('not.be.visible');
-    cy.viewport(769, 736);
-    cy.findByLabelText('Change theme:').should('not.be.visible');
-    cy.findByTestId('theme-list').should('be.visible');
-    cy.viewport(360, 736);
-    cy.findByLabelText('Change theme:').should('be.visible');
-    cy.findByTestId('theme-list').should('not.be.visible');
-    cy.viewport(1080, 736);
-    cy.findByLabelText('Change theme:').should('not.be.visible');
-    cy.findByTestId('theme-list').should('be.visible');
   });
 });
 
@@ -314,10 +286,10 @@ describe('Preview views', function () {
     cy.findByTestId('colourtest').should('not.be.visible');
   });
   it('should switch the preview view', function () {
-    cy.findByLabelText('Colours').click();
+    cy.findByLabelText(/Colours/).click({force: true});
     cy.findByTestId('colourtest').should('be.visible');
     cy.findByTestId('consoletest').should('not.be.visible');
-    cy.findByLabelText('Console').click();
+    cy.findByLabelText(/Console/).click({force: true});
     cy.findByTestId('consoletest').should('be.visible');
     cy.findByTestId('colourtest').should('not.be.visible');
   });
