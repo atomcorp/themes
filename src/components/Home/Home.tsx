@@ -112,7 +112,7 @@ const previewValues = [
   },
   {
     value: 'colour',
-    label: 'Colour',
+    label: 'Colours',
     icon: () => (
       <Colours
         size="18px"

@@ -5,7 +5,7 @@ import React from 'react';
 import More from 'components/More/More';
 
 // utils
-import {Logo, Dark, Light, Console, Colours} from 'Icons';
+import {Logo} from 'Icons';
 import css from './Toolbar.module.css';
 import {actionTypes, themeShadeType, previewType} from 'types';
 

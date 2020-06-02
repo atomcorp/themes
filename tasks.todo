@@ -13,17 +13,17 @@ Next:
   ✔ when clicking share/copy show a modal with url or snippet being copied @done(20-05-16 13:08)
     I just added a toast w/ message in the end
   ✔ add labels to download and share buttons @done(20-05-16 13:09)
-  ☐ Make the header a bit less crap. Maybe a proper header or a modal with more info?
+  ✔ Make the header a bit less crap. Maybe a proper header or a modal with more info? @done(20-06-02 00:49)
     ✔ better loading @done(20-05-17 01:15)
-    ☐ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next
+    ✔ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next @done(20-06-02 00:49)
     ✔ Add prev/next action for mobile @done(20-05-17 18:42)
-    ☐ Add link for i icon, an info modal
+    ✔ Add link for i icon, an info modal @done(20-06-02 00:49)
   ✔ Event listener for prev/next keys (A + D) @done(20-05-20 09:40)
-    ☐ Currently always centers, but maybe better to only scroll if not in view already
+    ✔ Currently always centers, but maybe better to only scroll if not in view already @done(20-06-02 00:49)
   ☐ Add version log (1: initial, 2: API, 3: UI redesign)
   ☐ Add note in README for contributing codeblocks
   ☐ Test for new features
-  ☐ If fetch fails add backup themes (useful for monorepo migration)
+  ✔ If fetch fails add backup themes (useful for monorepo migration) @done(20-06-02 00:50)
   ☐ Add roadmap to readme
   ✔ Add contributors to readme @done(20-05-26 19:29)
   ✔ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> @done(20-05-28 08:48)
@@ -44,10 +44,11 @@ After:
 ☐ Terminal feature with scanlines etc - experimental.retroTerminalEffect
 ☐ Maybe could be a whole customise Windows Terminal thing - font types, font size, shells
 ☐ Add a proper skeleton loading view, stop lame rendering in <App />
-☐ New UI (again)
-  ☐ More grown up, inspire by component libraries
-  ☐ On desktop, not bother with list view, experiment
-☐ Add credits to the themes / add info property with credits, notes, isDark etc
+✔ New UI (again) @done(20-06-02 00:50)
+  ✔ More grown up, inspire by component libraries @done(20-06-02 00:50)
+  ✔ On desktop, not bother with list view, experiment @done(20-06-02 00:50)
+☐ add meta property to theme objects with credits, notes, isDark etc
+☐ print out colours using vcanvas, will be easier to make responsive
 
 Ideas:
   ☐ add *new* tag
