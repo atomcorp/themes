@@ -6,11 +6,13 @@ import {Share, Copy} from 'Icons';
 type ThemePreviewButtonType = {
   onClick: () => void;
   type?: string;
+  testid: string;
 };
 
 const ThemePreviewButton: React.FC<ThemePreviewButtonType> = (props) => {
   return (
     <button
+      data-testid={props.testid}
       className={`${css.button} ${props.type === 'primary' ? css.primary : ''}`}
       onClick={() => {
         props.onClick();
@@ -29,11 +31,15 @@ type ThemePreviewButtonsType = {
 
 const ThemePreviewButtons = (props: ThemePreviewButtonsType) => (
   <div className={css.buttons}>
-    <ThemePreviewButton type="primary" onClick={props.handleCopy}>
+    <ThemePreviewButton
+      testid="copyButton"
+      type="primary"
+      onClick={props.handleCopy}
+    >
       <Copy className={css.icon} colour="#ededed" />
       Get theme
     </ThemePreviewButton>
-    <ThemePreviewButton onClick={props.handleShare}>
+    <ThemePreviewButton testid="shareButton" onClick={props.handleShare}>
       <Share
         className={css.icon}
         colour={getComputedStyle(document.documentElement).getPropertyValue(

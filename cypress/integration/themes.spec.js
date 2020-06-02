@@ -34,11 +34,13 @@ describe('Windows Terminal Themes - big screen', function () {
     cy.get('@darkThemes').then((themes) => {
       // assuming we start off dark
       const currentTheme = themes[0];
-      cy.findByLabelText(currentTheme.name).should('be.checked');
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
   it('should show all dark themes and no light themes by default', function () {
@@ -46,32 +48,35 @@ describe('Windows Terminal Themes - big screen', function () {
       const themes = xhr.response.body;
       const lightThemes = themes.filter((theme) => !theme.isDark);
       const darkThemes = themes.filter((theme) => theme.isDark);
-      cy.findByTestId('theme-list').then(($el) => {
-        expect(darkThemes.length).to.equal($el[0].children.length);
-      });
-      lightThemes.forEach((theme) => {
-        cy.findByLabelText(theme.name).should('not.exist');
-      });
-      darkThemes.forEach((theme) => {
-        cy.findByLabelText(theme.name).should('exist');
+      cy.findAllByTestId('theme-option').should(
+        'have.length',
+        darkThemes.length
+      );
+      cy.findAllByTestId('theme-option').each(($el) => {
+        expect(lightThemes.map((theme) => theme.name)).to.not.include(
+          $el.text()
+        );
+        expect(darkThemes.map((theme) => theme.name)).to.include($el.text());
       });
     });
   });
   it('when selecting light theme, it should show all light themes and no dark', function () {
-    cy.findByLabelText('Light').click();
-    cy.findByLabelText('Light').should('be.checked');
+    // we are never clicking the actual radio button just the label, so it's fine to be covered
+    cy.findByLabelText(/Light/).click({force: true});
+    cy.findByLabelText(/Light/).should('be.checked');
     cy.get('@themes').then((xhr) => {
       const themes = xhr.response.body;
       const lightThemes = themes.filter((theme) => !theme.isDark);
       const darkThemes = themes.filter((theme) => theme.isDark);
-      cy.findByTestId('theme-list').then(($el) => {
-        expect(lightThemes.length).to.equal($el[0].children.length);
-      });
-      lightThemes.forEach((theme) => {
-        cy.findByLabelText(theme.name).should('exist');
-      });
-      darkThemes.forEach((theme) => {
-        cy.findByLabelText(theme.name).should('not.exist');
+      cy.findAllByTestId('theme-option').should(
+        'have.length',
+        lightThemes.length
+      );
+      cy.findAllByTestId('theme-option').each(($el) => {
+        expect(lightThemes.map((theme) => theme.name)).to.include($el.text());
+        expect(darkThemes.map((theme) => theme.name)).to.not.include(
+          $el.text()
+        );
       });
     });
   });
@@ -79,73 +84,91 @@ describe('Windows Terminal Themes - big screen', function () {
     cy.get('@darkThemes').then((themes) => {
       // assuming we start off dark
       let currentTheme = themes[0];
-      cy.findByLabelText(currentTheme.name).should('be.checked');
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
       // get the next theme in the list
-      currentTheme = themes[Math.floor(Math.random() * themes.length)];
-      cy.findByLabelText(currentTheme.name).click().should('be.checked');
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      const nextTheme = themes[Math.floor(Math.random() * themes.length)];
+      cy.findByLabelText('Select theme').select(nextTheme.name);
+      cy.findByLabelText('Select theme').should('have.value', nextTheme.name);
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
     //
   });
   it('should be able to select a new theme, in light mode', function () {
     cy.get('@lightThemes').then((themes) => {
-      cy.findByLabelText('Light').click();
-      cy.findByLabelText('Light').should('be.checked');
+      // we are never clicking the actual radio button just the label, so it's fine to be covered
+      cy.findByLabelText(/Light/).click({force: true});
+      cy.findByLabelText(/Light/).should('be.checked');
       // always the first is selected
       let currentTheme = themes[0];
-      cy.findByLabelText(currentTheme.name).should('be.checked');
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
       // get the next theme in the list
-      currentTheme = themes[Math.floor(Math.random() * themes.length)];
-      cy.findByLabelText(currentTheme.name).click().should('be.checked');
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      const nextTheme = themes[Math.floor(Math.random() * themes.length)];
+      cy.findByLabelText('Select theme').select(nextTheme.name);
+      cy.findByLabelText('Select theme').should('have.value', nextTheme.name);
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
   it('should default to theme in param for sharing', function () {
     cy.get('@darkThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${currentTheme.name}`);
-      cy.findByLabelText(currentTheme.name)
-        .should('be.checked')
-        .should('be.visible');
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
   it('should default to light theme in param for sharing', function () {
     cy.get('@lightThemes').then((themes) => {
       const currentTheme = themes[Math.floor(Math.random() * themes.length)];
       cy.visit(`/themes?theme=${currentTheme.name}`);
-      cy.findByLabelText('Light').should('be.checked');
-      cy.findByLabelText(currentTheme.name)
-        .should('be.checked')
-        .should('be.visible');
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
+      cy.findByLabelText(/Light/).should('be.checked');
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
-  it('UI should be visible on smaller screens like laptops', function () {
+  it('UI always be visible', function () {
+    const elementsAreVisible = () => {
+      cy.findByLabelText('Select theme').should('be.visible');
+      cy.findByText(/Prev/).should('be.visible');
+      cy.findByText(/Next/).should('be.visible');
+      cy.findByLabelText(/Light/).should('be.visible');
+      cy.findByLabelText(/Dark/).should('be.visible');
+      cy.findByLabelText(/Console/).should('be.visible');
+      cy.findByLabelText(/Colours/).should('be.visible');
+      cy.findByText(/Info/).should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
+    };
+    elementsAreVisible();
     cy.viewport(1366, 768);
-    cy.findByTestId('selected-title').should('be.visible');
-    cy.findByText('Copy Theme').should('be.visible');
-    cy.findByText('Share theme').should('be.visible');
+    elementsAreVisible();
+    cy.viewport(414, 736);
+    elementsAreVisible();
   });
 });
 
@@ -164,20 +187,15 @@ describe('Themes - small screen', function () {
       );
     });
     cy.findByText('Loading...').should('not.be.visible');
-    cy.findByText('Loading...').should('not.be.visible');
   });
-  it('default to first dark theme', function () {
+  it.only('default to first dark theme', function () {
     cy.get('@darkThemes').then((themes) => {
       // assuming we start off dark
       const currentTheme = themes[0];
-      cy.findByLabelText('Change theme:').should(
-        'have.value',
-        currentTheme.name
-      );
-      cy.findByTestId('selected-title').should('have.text', currentTheme.name);
-      // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findAllByTestId('theme-option').should('have.length', themes.length);
+      cy.findAllByTestId('theme-option').each(($el) => {
+        expect(themes.map((theme) => theme.name)).to.include($el.text());
+      });
     });
   });
   it('should be able to select a new dark theme', function () {
@@ -189,8 +207,8 @@ describe('Themes - small screen', function () {
         .should('have.value', currentTheme.name);
       cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
   it('should be able to select a new light theme', function () {
@@ -204,8 +222,8 @@ describe('Themes - small screen', function () {
         .should('have.value', currentTheme.name);
       cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
   it('should default to theme in param for sharing', function () {
@@ -218,8 +236,8 @@ describe('Themes - small screen', function () {
       );
       cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
   it('should default to light theme in param for sharing', function () {
@@ -232,8 +250,8 @@ describe('Themes - small screen', function () {
       );
       cy.findByTestId('selected-title').should('have.text', currentTheme.name);
       // can't test clipboard
-      cy.findByText('Copy Theme').should('be.visible');
-      cy.findByText('Share theme').should('be.visible');
+      cy.findByTestId('copyButton').should('be.visible');
+      cy.findByTestId('shareButton').should('be.visible');
     });
   });
   it('should have all the dark themes in the dropdown', function () {

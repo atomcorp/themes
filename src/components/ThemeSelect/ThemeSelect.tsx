@@ -39,6 +39,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
       <label className={css.label} htmlFor="theme-select">
         <span className="visually-hidden ">Select theme</span>
         <select
+          data-testid="theme-list"
           ref={props.themeselectRef}
           id="theme-select"
           className={css.select}
@@ -51,7 +52,11 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
           }}
         >
           {props.themeNames.map((themeName) => (
-            <option value={themeName} key={themeName}>
+            <option
+              data-testid="theme-option"
+              value={themeName}
+              key={themeName}
+            >
               {themeName}
             </option>
           ))}

@@ -130,23 +130,21 @@ const Home: React.FC<themeprops> = (props) => {
     ...initialState,
     ...{isSmallScreenSize: window.innerWidth < 1024},
   });
-  const initialTheme = returnInitialTheme(window.location.search);
   useEffect(() => {
     dispatch({
       type: 'LOAD',
       themes: props.themes,
-      initialTheme: initialTheme,
+      initialTheme: returnInitialTheme(window.location.search),
     });
     const resizer = screenSizeObserver(dispatch);
     resizer.observe(document.body);
     return () => {
       resizer.unobserve(document.body);
     };
-  }, [props.themes, initialTheme]);
+  }, [props.themes]);
   useEffect(() => {
     const shortcutFns = shortcuts(dispatch, themeselectRef);
     document.addEventListener('keypress', shortcutFns);
-    dispatch({type: 'SHADE', payload: 'DARK'});
     return () => {
       document.removeEventListener('keypress', shortcutFns);
     };

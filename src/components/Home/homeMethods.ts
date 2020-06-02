@@ -107,6 +107,7 @@ export const homeReducer = (
   action: actionTypes
 ): stateType => {
   return immer(state, (draftState: stateType) => {
+    console.log(action.type);
     switch (action.type) {
       case 'LOAD':
         draftState.themes = action.themes;
@@ -115,20 +116,21 @@ export const homeReducer = (
             (theme: themeType) => theme.name === action.initialTheme
           );
           if (foundTheme != null) {
+            console.log(foundTheme);
             draftState.filteredThemes = action.themes.filter(
               (theme: themeType) => theme.isDark === foundTheme.isDark
             );
             draftState.activeTheme = foundTheme.name;
             draftState.themeShade = foundTheme.isDark ? 'DARK' : 'LIGHT';
-            draftState.primaryColour = getRandomColour(foundTheme);
-            draftState.backgroundColour = foundTheme.background;
-            break;
           }
+        } else {
+          // default to DARK, themeShade is already set
+          draftState.filteredThemes = action.themes.filter(
+            (theme: themeType) => theme.isDark
+          );
+          draftState.activeTheme = draftState.filteredThemes[0].name;
         }
-        draftState.filteredThemes = action.themes.filter(
-          (theme: themeType) => theme.isDark
-        );
-        draftState.activeTheme = draftState.filteredThemes[0].name;
+        setcolours(draftState.themeShade);
         break;
       case 'SET':
         {
