@@ -21,13 +21,17 @@ Next:
   ✔ Event listener for prev/next keys (A + D) @done(20-05-20 09:40)
     ✔ Currently always centers, but maybe better to only scroll if not in view already @done(20-06-02 00:49)
   ☐ Add version log (1: initial, 2: API, 3: UI redesign)
-  ☐ Test for new features 
-    ☐ Info dropdown
-    ☐ Snapshot test - especially examples with different themes
+  ✔ Test for new features @done(20-06-03 20:25)
+    ✔ Info dropdown @done(20-06-03 20:25)
+    ✔ Snapshot test - especially examples with different themes @done(20-06-03 20:25)
   ☐ Add note in README for contributing codeblocks
+  ☐ Maybe host the entire thing on AWS, create monorepo
   ✔ If fetch fails add backup themes (useful for monorepo migration) @done(20-06-02 00:50)
   ✔ Add contributors to readme @done(20-05-26 19:29)
   ✔ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> @done(20-05-28 08:48)
+  ☐ add meta property to theme objects with credits, notes, isDark etc
+  ☐ print out colours using canvas, will be easier to make responsive
+  ☐ code refactor/tidy
   
 After:
   ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
@@ -36,21 +40,18 @@ After:
    copy and share themes should be buttons on the same line as title
    light/dark & console/colours should be better presented
    there should be an info modal, or something
-  ☐ Add Percy snapshot testing
+  ✔ Add Percy snapshot testing @done(20-06-03 20:26)
   ☐ Choose font
   ☐ Add roadmap or todos to readme
   ☐ Add preview type and console tab to share theme parameters
   ☐ favicon match primary/background colours
   ✔ integration tests for console @done(20-05-09 09:57)
-  ☐ Maybe host the entire thing on AWS, create monorepo
   ☐ Terminal feature with scanlines etc - experimental.retroTerminalEffect
   ☐ Maybe could be a whole customise Windows Terminal thing - font types, font size, shells
   ☐ Add a proper skeleton loading view, stop lame rendering in <App />
   ✔ New UI (again) @done(20-06-02 00:50)
     ✔ More grown up, inspire by component libraries @done(20-06-02 00:50)
     ✔ On desktop, not bother with list view, experiment @done(20-06-02 00:50)
-  ☐ add meta property to theme objects with credits, notes, isDark etc
-  ☐ print out colours using vcanvas, will be easier to make responsive
 
 Ideas:
   ☐ add *new* tag
