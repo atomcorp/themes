@@ -158,7 +158,7 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByText(/Next/).should('be.visible');
       cy.findByLabelText(/Light/).should('be.visible');
       cy.findByLabelText(/Dark/).should('be.visible');
-      cy.findByLabelText(/Console/).should('be.visible');
+      cy.findByLabelText(/Terminal/).should('be.visible');
       cy.findByLabelText(/Colours/).should('be.visible');
       cy.findByText(/Info/).should('be.visible');
       cy.findByTestId('copyButton').should('be.visible');
@@ -289,7 +289,7 @@ describe('Preview views', function () {
     cy.findByLabelText(/Colours/).click({force: true});
     cy.findByTestId('colourtest').should('be.visible');
     cy.findByTestId('consoletest').should('not.be.visible');
-    cy.findByLabelText(/Console/).click({force: true});
+    cy.findByLabelText(/Terminal/).click({force: true});
     cy.findByTestId('consoletest').should('be.visible');
     cy.findByTestId('colourtest').should('not.be.visible');
   });
@@ -306,5 +306,77 @@ describe('Preview views', function () {
         );
       });
     });
+  });
+});
+
+describe('Menu dropdown', function () {
+  it('should open and close', function () {
+    cy.viewport(1366, 768);
+    cy.visit('/themes');
+    cy.findByTestId('morecontent').should('not.be.visible');
+    cy.findByText(/Info/).click();
+    cy.findByTestId('morecontent').should('be.visible');
+    cy.findByText(/Info/).click();
+    cy.findByTestId('morecontent').should('not.be.visible');
+    cy.findByText(/Info/).click();
+    cy.findByTestId('morecontent').should('be.visible');
+    cy.findByTestId('overlay').click();
+    cy.findByTestId('morecontent').should('not.be.visible');
+    cy.viewport(414, 736);
+    cy.findByTestId('morecontent').should('not.be.visible');
+    cy.findByText(/Info/).click();
+    cy.findByTestId('morecontent').should('be.visible');
+    cy.findByText(/Info/).click();
+    cy.findByTestId('morecontent').should('not.be.visible');
+  });
+});
+
+describe('screenshot the app', function () {
+  it('should snap', function () {
+    cy.viewport(1920, 1080);
+    cy.visit('/themes');
+    cy.percySnapshot('default view');
+    cy.findByLabelText('Select theme').select('Monokai Cmder');
+    cy.percySnapshot('select Monokai Cmder');
+    cy.findByText(/Next/).click();
+    cy.percySnapshot('click next');
+    cy.findByLabelText(/Light/).click({force: true});
+    cy.percySnapshot('toggle light themes');
+    cy.findByLabelText('Select theme').select('Man Page');
+    cy.percySnapshot('select Man Page');
+    cy.findByLabelText(/Colours/).click({force: true});
+    cy.percySnapshot('toggle theme preview');
+    cy.findByLabelText(/Dark/).click({force: true});
+    cy.percySnapshot('toggle dark themes');
+    cy.findByText(/Info/).click();
+    cy.percySnapshot('open info menu');
+    cy.findByText(/Info/).click();
+    cy.percySnapshot('close info menu');
+    cy.viewport(1280, 720);
+    cy.percySnapshot('view - smaller');
+    // media query change
+    cy.viewport(1024, 720);
+    cy.percySnapshot('view - breakpoint');
+    // ipad
+    cy.viewport(768, 1024);
+    cy.percySnapshot('view - ipad');
+    cy.viewport(375, 812);
+    cy.percySnapshot('view - phone');
+    cy.findByText(/Info/).click();
+    cy.percySnapshot('mobile: open info');
+    cy.findByText(/Info/).click();
+    cy.percySnapshot('mobile: close info');
+    cy.findByLabelText('Select theme').select('Monokai Cmder');
+    cy.percySnapshot('mobile: select Monokai Cmder');
+    cy.findByText(/Next/).click();
+    cy.percySnapshot('mobile: click next');
+    cy.findByLabelText(/Light/).click({force: true});
+    cy.percySnapshot('mobile: toggle light themes');
+    cy.findByLabelText('Select theme').select('Man Page');
+    cy.percySnapshot('mobile: select Man Page');
+    cy.findByLabelText(/Colours/).click({force: true});
+    cy.percySnapshot('mobile: toggle theme preview');
+    cy.findByLabelText(/Dark/).click({force: true});
+    cy.percySnapshot('mobile: toggle dark themes');
   });
 });

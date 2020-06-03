@@ -100,7 +100,7 @@ const shadeValues = [
 const previewValues = [
   {
     value: 'console',
-    label: 'Console',
+    label: 'Terminal',
     icon: () => (
       <Console
         size="18px"

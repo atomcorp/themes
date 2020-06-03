@@ -25,6 +25,7 @@ type MoreContentProps = {
 const MoreContent = (props: MoreContentProps) => (
   <>
     <div
+      data-testid="overlay"
       onClick={() => {
         if (props.isMoreOpen) {
           props.dispatch({type: 'MORE'});
@@ -33,6 +34,7 @@ const MoreContent = (props: MoreContentProps) => (
       className={`${css.overlay} ${props.isMoreOpen ? css.active : ''}`}
     ></div>
     <section
+      data-testid="morecontent"
       className={css.content}
       style={{display: props.isMoreOpen ? 'block' : 'none'}}
       id="more"

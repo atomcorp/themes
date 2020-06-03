@@ -19,3 +19,12 @@ import './hooks.js';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+  // "benign" error: https://stackoverflow.com/a/50387233/2368141
+  expect(err.message).to.include('ResizeObserver loop limit exceeded');
+  done();
+  // returning false here prevents Cypress from
+  // failing the test
+  return false;
+});

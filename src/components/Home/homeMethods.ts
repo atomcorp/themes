@@ -107,7 +107,6 @@ export const homeReducer = (
   action: actionTypes
 ): stateType => {
   return immer(state, (draftState: stateType) => {
-    console.log(action.type);
     switch (action.type) {
       case 'LOAD':
         draftState.themes = action.themes;
