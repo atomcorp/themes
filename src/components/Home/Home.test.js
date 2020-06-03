@@ -250,13 +250,17 @@ it('should ensure custom-colour-schemes.json has correct keys', () => {
     brightWhite: '',
     background: '',
     foreground: '',
+    cursorColor: '',
+    selectionBackground: '',
   };
   customColourSchemes.map((customColourScheme) => {
     Object.keys(customColourScheme).forEach((key) => {
       expect(validkeys).toHaveProperty(key);
     });
     Object.keys(validkeys).forEach((key) => {
-      expect(customColourScheme).toHaveProperty(key);
+      if (key !== 'cursorColor' && key !== 'selectionBackground') {
+        expect(customColourScheme).toHaveProperty(key);
+      }
     });
   });
 });

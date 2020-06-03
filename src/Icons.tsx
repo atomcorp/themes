@@ -15,7 +15,7 @@ export const Share = (props: IconProps) => (
     height={props.size || '18px'}
     width={props.size || '18px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="share"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -38,7 +38,7 @@ export const Copy = (props: IconProps) => (
     height={props.size || '18px'}
     width={props.size || '18px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="copy"
     onClick={props.onClick}
     className={props.className}
     style={{

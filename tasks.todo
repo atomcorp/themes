@@ -6,52 +6,21 @@ Next:
     ☐ test tabbing
     ☐ test downloading
     ✔ test custom-colour-schemes.json @done(20-05-07 23:36)
-  ✔ make header a link to '/' @done(20-04-10 23:03)
-  ✔ check out small screen responsiveness @done(20-05-07 23:28)
-  ✘ use env file for GitHub token, not private json @cancelled(20-05-09 00:32)
-  ✔ add codeblocks with syntax highlighting @done(20-05-09 00:30)
-  ✔ when clicking share/copy show a modal with url or snippet being copied @done(20-05-16 13:08)
-    I just added a toast w/ message in the end
-  ✔ add labels to download and share buttons @done(20-05-16 13:09)
-  ✔ Make the header a bit less crap. Maybe a proper header or a modal with more info? @done(20-06-02 00:49)
-    ✔ better loading @done(20-05-17 01:15)
-    ✔ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next @done(20-06-02 00:49)
-    ✔ Add prev/next action for mobile @done(20-05-17 18:42)
-    ✔ Add link for i icon, an info modal @done(20-06-02 00:49)
-  ✔ Event listener for prev/next keys (A + D) @done(20-05-20 09:40)
-    ✔ Currently always centers, but maybe better to only scroll if not in view already @done(20-06-02 00:49)
   ☐ Add version log (1: initial, 2: API, 3: UI redesign)
-  ✔ Test for new features @done(20-06-03 20:25)
-    ✔ Info dropdown @done(20-06-03 20:25)
-    ✔ Snapshot test - especially examples with different themes @done(20-06-03 20:25)
   ☐ Add note in README for contributing codeblocks
   ☐ Maybe host the entire thing on AWS, create monorepo
-  ✔ If fetch fails add backup themes (useful for monorepo migration) @done(20-06-02 00:50)
-  ✔ Add contributors to readme @done(20-05-26 19:29)
-  ✔ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> @done(20-05-28 08:48)
   ☐ add meta property to theme objects with credits, notes, isDark etc
   ☐ print out colours using canvas, will be easier to make responsive
   ☐ code refactor/tidy
   
 After:
-  ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
-   I don't like all the info text is presented
-   sidebar should just have themes
-   copy and share themes should be buttons on the same line as title
-   light/dark & console/colours should be better presented
-   there should be an info modal, or something
-  ✔ Add Percy snapshot testing @done(20-06-03 20:26)
   ☐ Choose font
   ☐ Add roadmap or todos to readme
   ☐ Add preview type and console tab to share theme parameters
   ☐ favicon match primary/background colours
-  ✔ integration tests for console @done(20-05-09 09:57)
   ☐ Terminal feature with scanlines etc - experimental.retroTerminalEffect
   ☐ Maybe could be a whole customise Windows Terminal thing - font types, font size, shells
   ☐ Add a proper skeleton loading view, stop lame rendering in <App />
-  ✔ New UI (again) @done(20-06-02 00:50)
-    ✔ More grown up, inspire by component libraries @done(20-06-02 00:50)
-    ✔ On desktop, not bother with list view, experiment @done(20-06-02 00:50)
 
 Ideas:
   ☐ add *new* tag
@@ -60,7 +29,7 @@ Ideas:
     could add a toggle to choose between original and fixed
 
 Testing:
-☐ check tabbing and accessibility works (https://a11yproject.com/)
+  ☐ check tabbing and accessibility works (https://a11yproject.com/)
 
 Notes
   Useful sites
@@ -90,4 +59,35 @@ Done:
   ✔ use a better auth for Git API @done(20-03-27 17:13)
   ✔ add a custom theme json file to merge with the one generated from item2 themes @done(20-03-27 17:24)
   ✔ Fix readme.md @done(20-04-06 21:29)
-  
+  ✔ If fetch fails add backup themes (useful for monorepo migration) @done(20-06-02 00:50)
+  ✔ Add contributors to readme @done(20-05-26 19:29)
+  ✔ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> @done(20-05-28 08:48)
+  ✔ make header a link to '/' @done(20-04-10 23:03)
+  ✔ check out small screen responsiveness @done(20-05-07 23:28)
+  ✘ use env file for GitHub token, not private json @cancelled(20-05-09 00:32)
+  ✔ add codeblocks with syntax highlighting @done(20-05-09 00:30)
+  ✔ when clicking share/copy show a modal with url or snippet being copied @done(20-05-16 13:08)
+    I just added a toast w/ message in the end
+  ✔ add labels to download and share buttons @done(20-05-16 13:09)
+  ✔ Make the header a bit less crap. Maybe a proper header or a modal with more info? @done(20-06-02 00:49)
+    ✔ better loading @done(20-05-17 01:15)
+    ✔ Keyboard shortcuts (A+D) and on screen promts/buttons for previous/next @done(20-06-02 00:49)
+    ✔ Add prev/next action for mobile @done(20-05-17 18:42)
+    ✔ Add link for i icon, an info modal @done(20-06-02 00:49)
+  ✔ Event listener for prev/next keys (A + D) @done(20-05-20 09:40)
+  ✔ Currently always centers, but maybe better to only scroll if not in view already @done(20-06-02 00:49)
+  ✔ Test for new features @done(20-06-03 20:25)
+  ✔ Info dropdown @done(20-06-03 20:25)
+  ✔ Snapshot test - especially examples with different themes @done(20-06-03 20:25)
+  ✔ New UI (again) @done(20-06-02 00:50)
+    ✔ More grown up, inspire by component libraries @done(20-06-02 00:50)
+    ✔ On desktop, not bother with list view, experiment @done(20-06-02 00:50)
+  ✔ have some script to run `scripts/get-schemes` automatically, each week or so @done(20-05-12 17:20)
+   I don't like all the info text is presented
+   sidebar should just have themes
+   copy and share themes should be buttons on the same line as title
+   light/dark & console/colours should be better presented
+   there should be an info modal, or something
+  ✔ Add Percy snapshot testing @done(20-06-03 20:26)
+  ✔ integration tests for console @done(20-05-09 09:57)
+
