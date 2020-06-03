@@ -25,3 +25,16 @@
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
 import '@percy/cypress';
+
+Cypress.Commands.add(
+  'percyResponsiveSnapshot',
+  (name, width, height, options = {}) => {
+    delete options.widths; // we never want to use those in this helper
+    cy
+      // https://docs.cypress.io/api/commands/viewport.html#Syntax
+      .viewport(width, height)
+      .percySnapshot(`${name} - ${width}`, {widths: [width], ...options});
+    // Set back the orignal width if you'd like
+    //.viewport()
+  }
+);
