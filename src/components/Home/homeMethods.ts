@@ -2,9 +2,11 @@ import contrast from 'get-contrast';
 import ResizeObserver from 'resize-observer-polyfill';
 import immer from 'immer';
 
+import setcolours from 'utils/setcolours';
+
 import {
   themeType,
-  themeShadeType,
+  shadeType,
   themeShadeObjectType,
   actionTypes,
   previewType,
@@ -62,9 +64,9 @@ export const screenSizeObserver = (
 ): ResizeObserver => {
   return new ResizeObserver((entries: ResizeObserverEntry[]) => {
     const {width} = entries[0].contentRect;
-    if (width > 768) {
+    if (width >= 1024) {
       dispatch({type: 'SIZE', isSmallScreenSize: false});
-    } else if (width < 768) {
+    } else if (width < 1024) {
       dispatch({type: 'SIZE', isSmallScreenSize: true});
     }
   });
@@ -81,10 +83,11 @@ export type stateType = {
   filteredThemes: themeType[];
   activeTheme: string;
   isSmallScreenSize: boolean;
-  themeShade: themeShadeType;
+  themeShade: shadeType;
   primaryColour: string;
   backgroundColour: string;
   previewType: previewType;
+  isMoreOpen: boolean;
 };
 
 export const initialState: stateType = {
@@ -96,6 +99,7 @@ export const initialState: stateType = {
   primaryColour: '#fded02',
   backgroundColour: '#090300',
   previewType: 'console',
+  isMoreOpen: false,
 };
 
 export const homeReducer = (
@@ -103,7 +107,6 @@ export const homeReducer = (
   action: actionTypes
 ): stateType => {
   return immer(state, (draftState: stateType) => {
-    let theme;
     switch (action.type) {
       case 'LOAD':
         draftState.themes = action.themes;
@@ -112,26 +115,64 @@ export const homeReducer = (
             (theme: themeType) => theme.name === action.initialTheme
           );
           if (foundTheme != null) {
+            console.log(foundTheme);
             draftState.filteredThemes = action.themes.filter(
               (theme: themeType) => theme.isDark === foundTheme.isDark
             );
             draftState.activeTheme = foundTheme.name;
             draftState.themeShade = foundTheme.isDark ? 'DARK' : 'LIGHT';
-            draftState.primaryColour = getRandomColour(foundTheme);
-            draftState.backgroundColour = foundTheme.background;
-            break;
           }
+        } else {
+          // default to DARK, themeShade is already set
+          draftState.filteredThemes = action.themes.filter(
+            (theme: themeType) => theme.isDark
+          );
+          draftState.activeTheme = draftState.filteredThemes[0].name;
         }
-        draftState.filteredThemes = action.themes.filter(
-          (theme: themeType) => theme.isDark
-        );
-        draftState.activeTheme = draftState.filteredThemes[0].name;
+        setcolours(draftState.themeShade);
         break;
       case 'SET':
-        draftState.activeTheme = action.theme;
-        // eslint-disable-next-line no-case-declarations
-        theme = state.themes.find((theme) => theme.name === action.theme);
-        if (theme) {
+        {
+          draftState.activeTheme = action.theme;
+          // eslint-disable-next-line no-case-declarations
+          const theme = state.themes.find(
+            (theme) => theme.name === action.theme
+          );
+          if (theme) {
+            draftState.primaryColour = getRandomColour(theme);
+            draftState.backgroundColour = theme.background;
+          }
+        }
+        break;
+      case 'PREV': {
+        const currentIndex = state.filteredThemes.findIndex(
+          (theme) => theme.name === state.activeTheme
+        );
+        let theme;
+        if (currentIndex === 0) {
+          // get last item
+          theme = state.filteredThemes[state.filteredThemes.length - 1];
+        } else {
+          theme = state.filteredThemes[currentIndex - 1];
+        }
+        draftState.activeTheme = theme.name;
+        draftState.primaryColour = getRandomColour(theme);
+        draftState.backgroundColour = theme.background;
+        break;
+      }
+      case 'NEXT':
+        {
+          let theme;
+          const currentIndex = state.filteredThemes.findIndex(
+            (theme) => theme.name === state.activeTheme
+          );
+          if (currentIndex === state.filteredThemes.length - 1) {
+            // get last item
+            theme = state.filteredThemes[0];
+          } else {
+            theme = state.filteredThemes[currentIndex + 1];
+          }
+          draftState.activeTheme = theme.name;
           draftState.primaryColour = getRandomColour(theme);
           draftState.backgroundColour = theme.background;
         }
@@ -140,7 +181,7 @@ export const homeReducer = (
         draftState.isSmallScreenSize = action.isSmallScreenSize;
         break;
       case 'SHADE':
-        draftState.themeShade = action.themeShade;
+        draftState.themeShade = action.payload;
         if (draftState.themeShade === THEME_COLOUR.DARK) {
           draftState.filteredThemes = state.themes.filter(
             (theme) => theme.isDark
@@ -151,9 +192,10 @@ export const homeReducer = (
             (theme) => !theme.isDark
           );
         }
+        setcolours(draftState.themeShade);
         draftState.activeTheme = draftState.filteredThemes[0].name;
         // eslint-disable-next-line no-case-declarations
-        theme = state.themes.find(
+        const theme = state.themes.find(
           (theme) => theme.name === draftState.filteredThemes[0].name
         );
         if (theme) {
@@ -162,7 +204,10 @@ export const homeReducer = (
         }
         break;
       case 'PREVIEW':
-        draftState.previewType = action.previewType;
+        draftState.previewType = action.payload;
+        break;
+      case 'MORE':
+        draftState.isMoreOpen = !state.isMoreOpen;
         break;
       default:
         break;

@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--toolbar__color);
+  background: var(--toolbar__background);
+  padding: 10px 10px 0 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 10px 8px 0;
+}
+@media (min-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.title svg {
+  flex: 1 0 auto;
+  margin: 0 10px 0 0;
+}
+
+.select {
+  margin: 0 10px 10px 0;
+}
+
+.toggles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10px 0 0;
+}
+
+.more {
+  margin: 0 0 10px 0;
+}

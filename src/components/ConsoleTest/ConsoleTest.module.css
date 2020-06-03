@@ -1,13 +1,16 @@
 .container {
   width: 100%;
-  padding: 10px;
 }
 
 .terminal {
-  border: 1px solid #fff;
   box-shadow: 1px 2px 10px rgba(83, 83, 83, 0.24);
   max-width: 800px;
   margin: 0 auto;
+  border: 3px solid #333;
+}
+
+.terminal.light {
+  border-color: #333;
 }
 
 .titlebar {
@@ -15,21 +18,26 @@
   color: #ededed;
 }
 
-.titlebar.light {
+.terminal.light .titlebar {
   background: #ccc;
   color: #282828;
 }
 
 .tabs {
   display: flex;
-  font-family: sans-serif;
+  overflow: auto;
   font-size: 0.8em;
-  padding: 7px 10px 0;
+}
+
+.tab {
+  white-space: pre;
+  position: relative;
 }
 
 .radio {
   position: absolute;
   opacity: 0;
+  margin: 0;
 }
 
 .tab input:focus + label span {
@@ -37,25 +45,23 @@
 }
 
 .tab label {
+  cursor: pointer;
   padding: 10px;
   display: block;
-  cursor: pointer;
 }
 
 .tab:hover {
   background: #494a49;
-  border-radius: 8px 8px 0 0;
 }
 
 .tab.active {
   background: #000100;
-  border-radius: 8px 8px 0 0;
 }
 
-.titlebar.light .tab.active {
+.terminal.light .titlebar .tab.active {
   background: #fffffd;
 }
-.titlebar.light .tab:hover {
+.terminal.light .titlebar .tab:hover {
   background: #e5e5e7;
 }
 

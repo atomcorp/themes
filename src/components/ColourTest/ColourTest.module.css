@@ -11,7 +11,7 @@
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .matrix {
     width: auto;
     grid-column-gap: 10px;
@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .cell {
     font-size: 2vw;
     padding: 0 10px;

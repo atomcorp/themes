@@ -2,81 +2,86 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: safe center;
-  align-items: safe center;
   padding: 0 0 40px;
   transition: background 0.05s ease-in-out;
   overflow: auto;
+  padding: 10px;
+  max-width: 1024px;
+  margin: auto;
+  flex: 1 1 auto;
 }
-
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   .container {
-    padding: 0;
+    padding: 10px;
+    justify-content: safe center;
   }
-}
-
-.name {
-  font-size: 36px;
-}
-
-.button {
-  border: 0;
-  padding: 10px 30px;
-  margin: 20px 5px 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  position: relative;
-  cursor: pointer;
-}
-
-.button:before {
-  content: attr(data-text);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  padding: 10px 30px;
-  background: inherit;
-  opacity: 0;
-  border: inherit;
-}
-
-@keyframes mymove {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
-
-.button.copied:before {
-  animation: mymove 0.5s ease-in-out;
 }
 
 .loading {
-  display: flex;
   height: 100%;
-  justify-content: center;
+}
+
+.buttons {
+  padding: 20px 0;
+}
+@media (min-width: 1024px) {
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.button {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  background-image: var(--btn__bg-img);
+  border-radius: 0.25em;
+  border: 1px solid rgba(200, 200, 200, 0.15);
+  color: var(--btn__colour);
+  padding: 6px 16px;
+  font-size: 2rem;
+  border-width: 2px;
+  margin: 0 auto 10px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+}
+@media (min-width: 1024px) {
+  .button {
+    margin: 0 5px;
+    width: initial;
+  }
 }
 
-.share {
-  padding: 7px 27px;
-  border: 3px solid;
+.button:focus {
+  box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
+  outline: 0;
 }
 
-.share:before {
-  /* this is just to offset the space of the border */
-  padding: 7px 27px;
-  top: -3px;
-  left: -3px;
-  width: calc(100% + 6px);
-  height: calc(100% + 6px);
+.button:hover {
+  background-image: var(--btn__bg-img--hover);
+  background-position: -0.5em;
+}
+
+.button svg {
+  margin: 0 5px 0 0;
+}
+
+.button.primary {
+  background-color: #0366d6;
+  background-image: none;
+  color: #ededed;
+  font-weight: 500;
+}
+
+.toggles {
+  display: flex;
+  overflow: auto;
+  margin: 10px 0 0;
+}
+
+.select {
+  margin: 20px auto 0;
+  max-width: 800px;
 }

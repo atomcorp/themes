@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
-  font-family: 'Cascadia Code', 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas,
-    monospace, monospace;
+  font-family: var(--font-stack);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.8rem;
 }
 
 input,
-button,
+button {
+  font-family: var(--font-stack);
+  font-size: 1.8rem;
+}
+
 code {
   font-family: 'Cascadia Code', 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas,
     monospace, monospace;
 }
 
-html {
-  box-sizing: border-box;
-}
 *,
 *:before,
 *:after {
@@ -28,4 +36,20 @@ body,
 #root,
 .App {
   height: 100%;
+}
+
+:root {
+  --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
 }
