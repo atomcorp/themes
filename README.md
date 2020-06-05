@@ -2,7 +2,7 @@
 
 # Windows Terminal Themes
 
-Preview and copy themes for the new [Windows Terminal (Preview)](https://github.com/microsoft/terminal).
+Preview and copy themes for the new [Windows Terminal](https://github.com/microsoft/terminal).
 
 Use the project at [https://atomcorp.github.io/themes/](https://atomcorp.github.io/themes/)
 
@@ -12,7 +12,7 @@ This site let's you preview and then copy a theme you like (or download a json f
 
 The [official docs for Windows Terminal](https://github.com/microsoft/terminal/blob/master/doc/user-docs/UsingJsonSettings.md) seem to very thoroughly explain how to change the settings, but essentially:
 
-- open Window Preview settings
+- open Windows Terminal settings
 - add your chosen theme(s) to `schemes`
 - in `profiles`, find the shell you're using (eg cmd, powershell, ubuntu) and replace `colorScheme` with the name of the theme
 - 🥳
