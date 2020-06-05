@@ -1,58 +1,40 @@
 {
-  "name": "terminal",
+  "name": "windowsterminalthemes",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://atomcorp.github.io/themes/",
-  "proxy": "http://localhost:3001",
-  "dependencies": {
-    "@types/jest": "^25.2.1",
-    "@types/node": "13.13.5",
-    "@types/react": "16.9.34",
-    "@types/react-dom": "16.9.7",
-    "clipboard-polyfill": "^2.8.6",
-    "file-saver": "^2.0.2",
-    "get-contrast": "^2.0.0",
-    "immer": "^6.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "resize-observer-polyfill": "^1.5.1",
-    "typescript": "3.8.3"
-  },
+  "description": "monorepo for windowsterminalthemes client and api",
+  "main": "index.js",
+  "workspaces": [
+    "app",
+    "server"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --watchAll --env=jest-environment-jsdom-sixteen",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build",
-    "themes": "node scripts/get-schemes",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "yarn run cypress open",
-    "cy:run": " percy exec -- cypress run"
+    "cy:run": " percy exec -- cypress run",
+    "app": "yarn workspace @windowsterminalthemes/app start",
+    "server": "yarn workspace @windowsterminalthemes/server start",
+    "start": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn app\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomcorp/terminal.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "windowsterminalthemes",
+    "windows terminal",
+    "themes"
+  ],
+  "author": "atomcorp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomcorp/terminal/issues"
   },
+  "homepage": "https://github.com/atomcorp/terminal#readme",
   "devDependencies": {
     "@percy/cypress": "^2.3.1",
     "@testing-library/cypress": "^6.0.0",
-    "@testing-library/jest-dom": "^5.5.0",
-    "@testing-library/react": "^10.0.4",
-    "@types/file-saver": "^2.0.1",
-    "@typescript-eslint/eslint-plugin": "^2.31.0",
-    "@typescript-eslint/parser": "^2.31.0",
+    "concurrently": "^5.2.0",
     "cypress": "^4.5.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
@@ -60,10 +42,6 @@
     "eslint-plugin-chai-friendly": "^0.6.0",
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-prettier": "^3.1.3",
-    "gh-pages": "^2.2.0",
-    "jest-environment-jsdom-sixteen": "^1.0.3",
-    "prettier": "^2.0.5",
-    "react-test-renderer": "^16.13.1",
-    "ts-jest": "^25.5.0"
+    "prettier": "^2.0.5"
   }
 }

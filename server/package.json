@@ -1,0 +1,21 @@
+{
+  "name": "@windowsterminalthemes/server",
+  "version": "1.0.0",
+  "description": "api for serving ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "get": "node get-themes.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "custom-env": "^2.0.1",
+    "express": "^4.17.1",
+    "get-contrast": "^2.0.0",
+    "got": "^11.1.2",
+    "node-cron": "^2.0.3"
+  }
+}

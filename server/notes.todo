@@ -1,0 +1,12 @@
+TODO: 
+☐ add cors
+https://docs.bitnami.com/oci/infrastructure/nodejs/administration/enable-cors-nodejs/
+
+HELP
+https://medium.com/@sharmasha2nk/aws-lightsail-bitnami-nodejs-letsencrypt-cf653573b8a1
+https://medium.com/@molp/deploy-node-js-server-to-aws-lightsail-vps-fd7e67f07b14
+HTTPS = https://docs.bitnami.com/aws/how-to/understand-bncert/
+root = $ cd stack $ sudo ./use_nodejs
+change user $ su bitnami 
+auth user $ sudo chown -R $(whoami) 
+server status $ pm2 list
