@@ -29,5 +29,5 @@ workflows:
     jobs:
       - cypress/run:
           yarn: true
-          executor: cypress/base-12-4-0
+          executor: cypress/base-12-6-0
           start: npm ci
