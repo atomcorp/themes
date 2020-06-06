@@ -1,3 +1,4 @@
+console.log('process.env: ', process.env);
 const express = require('express');
 const cron = require('node-cron');
 const fs = require('fs');
@@ -5,7 +6,6 @@ const getThemes = require('./get-themes');
 
 const app = express();
 const port = 3001;
-
 const isDev = getThemes(process.argv.includes('isDev'));
 
 getThemes(isDev);

@@ -6,7 +6,7 @@ const customSchemaJson = 'require("../src/custom-colour-schemes.json")';
 const contrast = require('get-contrast');
 require('custom-env')
   .config({silent: process.env.NODE_ENV === 'production'})
-  .env('private');
+  .env();
 
 console.log('process.env: ', process.env);
 const btoa = (str) => Buffer.from(str, 'binary').toString('base64');
