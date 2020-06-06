@@ -41,12 +41,13 @@
     ]
   },
   "devDependencies": {
-    "@types/file-saver": "^2.0.1",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.4",
+    "@types/file-saver": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "ts-jest": "^25.5.0",
-    "react-test-renderer": "^16.13.1"
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^25.5.0"
   }
 }
