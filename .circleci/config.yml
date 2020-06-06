@@ -29,7 +29,6 @@ workflows:
     jobs:
       - cypress/run:
           yarn: true
-          working_directory: app
           executor: cypress/base-12-6-0
           start: npm start
-          wait-on: 'http://localhost:3000'
+          working_directory: app
