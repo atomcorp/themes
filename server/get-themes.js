@@ -4,9 +4,11 @@ const got = require('got');
 const fs = require('fs');
 const customSchemaJson = 'require("../src/custom-colour-schemes.json")';
 const contrast = require('get-contrast');
-require('custom-env')
-  .config({silent: process.env.CI === true})
-  .env();
+
+// whatever this mess means
+if (process.env.CI !== true) {
+  require('custom-env').env();
+}
 
 console.log('process.env: ', process.env);
 const btoa = (str) => Buffer.from(str, 'binary').toString('base64');
