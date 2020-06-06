@@ -21,14 +21,36 @@
 #      - cypress/run:
 #        yarn: true
 #        start: yarn ci
+#version: 2.1
+#orbs:
+#  cypress: cypress-io/cypress@1
+#workflows:
+#  build:
+#    jobs:
+#      - cypress/run:
+#          yarn: true
+#          executor: cypress/base-12-6-0
+#          start: npm start
+#          working_directory: app
 version: 2.1
 orbs:
-  cypress: cypress-io/cypress@1
-workflows:
+  cypress: cypress-io/cypress@1.23.0
+jobs:
   build:
-    jobs:
-      - cypress/run:
-          yarn: true
-          executor: cypress/base-12-6-0
-          start: npm start
-          working_directory: app
+    docker:
+      - image: circleci/node:12.9.1-browsers
+
+    steps:
+      - checkout
+      - restore_cache:
+        keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run: yarn install
+      - save_cache:
+        paths:
+          - node_modules
+          - ~/.npm
+          - ~/.cache
+        key: v1-dependencies-{{ checksum "package.json" }}
+      - run: yarn ci
