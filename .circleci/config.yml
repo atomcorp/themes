@@ -13,9 +13,11 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       # Run unit tests
-      - run: yarn ci
+      - run: yarn test:unit
 workflows:
   test_and_deploy:
     jobs:
       - test
-      - cypress/run
+      - cypress/run:
+        yarn: true
+        start: yarn ci
