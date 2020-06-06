@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
+  node: circleci/node:latest-browsers
   cypress: cypress-io/cypress@1.23.0
 jobs:
   build-and-test:
@@ -11,9 +11,8 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn install
-#            - run: yarn ci
+            - run: yarn ci
 workflows:
   build-and-test:
     jobs:
       - build-and-test
-      - cypress/run
