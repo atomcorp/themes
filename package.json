@@ -13,7 +13,7 @@
     "cy:open": "yarn run cypress open",
     "cy:run": " percy exec -- cypress run",
     "app": "yarn workspace @windowsterminalthemes/app start",
-    "server": "yarn workspace @windowsterminalthemes/server start",
+    "server": "yarn workspace @windowsterminalthemes/server dev",
     "start": "concurrently --kill-others-on-fail \"yarn server\"  \"yarn app\""
   },
   "repository": {
