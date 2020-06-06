@@ -1,5 +1,6 @@
 {
   "name": "windowsterminalthemes",
+  "baseUrl": "http://localhost:3000",
   "version": "1.0.0",
   "private": true,
   "description": "monorepo for windowsterminalthemes client and api",
