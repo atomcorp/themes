@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "test": "yarn workspace @windowsterminalthemes/app test:run && yarn workspace @windowsterminalthemes/app cy:ci",
-    "ci": "start-server-and-test 'yarn start-server' start:server 3001 start:app 3000 test",
+    "ci": "start-server-and-test 'yarn start:server' 3001 'yarn start:app' 3000 'yarn test'",
     "start:app": "yarn workspace @windowsterminalthemes/app start",
     "start:server": "yarn workspace @windowsterminalthemes/server dev",
     "start": "concurrently --kill-others-on-fail \"yarn start:server\"  \"yarn start:app\""
