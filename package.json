@@ -10,7 +10,8 @@
     "server"
   ],
   "scripts": {
-    "test": "yarn workspace @windowsterminalthemes/app test:run && yarn workspace @windowsterminalthemes/app cy:ci",
+    "test": "yarn workspace @windowsterminalthemes/app test:run",
+    "e2e": "yarn workspace @windowsterminalthemes/app cy:ci",
     "ci": "start-server-and-test start:server http-get://localhost:3001 start:app http-get://localhost:3000 test",
     "start:app": "yarn workspace @windowsterminalthemes/app start",
     "start:server": "yarn workspace @windowsterminalthemes/server dev",

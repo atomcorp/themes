@@ -11,9 +11,9 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn install
-            - run: sed -i '/process.env.CI/,+7 d' node_modules/react-scripts/scripts/start.js
-            - run: yarn ci
+#            - run: yarn ci
 workflows:
   build-and-test:
     jobs:
       - build-and-test
+      - cypress/run
