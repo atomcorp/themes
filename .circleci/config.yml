@@ -1,19 +1,21 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
-  browser-tools: circleci/browser-tools@1.0.1
-  cypress: cypress-io/cypress@1.23.0
+  cypress: 'cypress-io/cypress@1'
 jobs:
-  build-and-test:
-    executor:
-      name: node/default
+  test:
+    docker:
+      - image: circleci/node:8-browsers
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: yarn install
-            - run: yarn ci
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      # Run unit tests
+      - run: yarn ci
 workflows:
-  build-and-test:
+  test_and_deploy:
     jobs:
-      - build-and-test
+      - test
+      - cypress/run
