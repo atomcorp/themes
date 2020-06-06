@@ -8,7 +8,7 @@ require('custom-env')
   .config({silent: process.env.NODE_ENV === 'production'})
   .env('private');
 
-console.log(process.env);
+console.log('process.env: ', process.env);
 const btoa = (str) => Buffer.from(str, 'binary').toString('base64');
 const options = {
   headers: {
