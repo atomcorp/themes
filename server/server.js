@@ -1,4 +1,3 @@
-console.log('process.env: ', process.env);
 const express = require('express');
 const cron = require('node-cron');
 const fs = require('fs');

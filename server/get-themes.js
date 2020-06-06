@@ -10,7 +10,6 @@ if (process.env.CI !== true) {
   require('custom-env').env();
 }
 
-console.log('process.env: ', process.env);
 const btoa = (str) => Buffer.from(str, 'binary').toString('base64');
 const options = {
   headers: {
