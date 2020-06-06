@@ -22,7 +22,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll --env=jest-environment-jsdom-sixteen"
+    "test:run": "react-scripts test --env=jest-environment-jsdom-sixteen",
+    "test:watch": "react-scripts test --watchAll --env=jest-environment-jsdom-sixteen"
   },
   "eslintConfig": {
     "extends": "react-app"
