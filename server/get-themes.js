@@ -5,7 +5,7 @@ const fs = require('fs');
 const customSchemaJson = 'require("../src/custom-colour-schemes.json")';
 const contrast = require('get-contrast');
 require('custom-env')
-  .config({silent: process.env.NODE_ENV === 'production'})
+  .config({silent: process.env.CI === true})
   .env();
 
 console.log('process.env: ', process.env);
