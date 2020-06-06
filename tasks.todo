@@ -40,6 +40,7 @@ Notes
   "Bold" text on Windows https://github.com/microsoft/terminal/issues/109
   GitHub dark theme - https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp
   https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/dark-mode/
+  https://medium.com/@eferhatg/create-react-app-continuous-integration-config-with-circleci-and-aws-2b0238cde169
   
 Done:
   ✔ Add routes, or change URL for each theme for sharing @done(20-04-09 00:10)

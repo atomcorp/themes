@@ -26,6 +26,11 @@ app.get('/api/v1/themes', (req, res) => {
   res.send(fileJson);
 });
 
+app.get('/', (req, res) => {
+  // this lets the start-server-and-test the server is running
+  res.sendStatus(200);
+});
+
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );

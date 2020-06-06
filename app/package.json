@@ -23,7 +23,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test:run": "react-scripts test --env=jest-environment-jsdom-sixteen",
-    "test:watch": "react-scripts test --watchAll --env=jest-environment-jsdom-sixteen"
+    "test:watch": "react-scripts test --watchAll --env=jest-environment-jsdom-sixteen",
+    "cy:open": "yarn run cypress open",
+    "cy:run": " percy exec -- cypress run",
+    "cy:ci": " percy exec -- cypress run --record --key=${CYPRESS_RECORD_KEY}"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +51,9 @@
     "@typescript-eslint/parser": "^2.31.0",
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "react-test-renderer": "^16.13.1",
-    "ts-jest": "^25.5.0"
+    "ts-jest": "^25.5.0",
+    "@percy/cypress": "^2.3.1",
+    "@testing-library/cypress": "^6.0.0",
+    "cypress": "^4.5.0"
   }
 }

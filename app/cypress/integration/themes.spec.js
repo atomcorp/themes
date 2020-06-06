@@ -332,7 +332,7 @@ describe('Menu dropdown', function () {
 });
 
 describe('screenshot the app', function () {
-  it.only('should snap', function () {
+  it('should snap', function () {
     // cy.viewport(1920, 1080);
     cy.visit('/themes');
     cy.percyResponsiveSnapshot('default view', 1920, 1080);
