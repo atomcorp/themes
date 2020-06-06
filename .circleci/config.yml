@@ -1,23 +1,32 @@
+#version: 2.1
+#orbs:
+#  cypress: 'cypress-io/cypress@1'
+#jobs:
+#  test:
+#    docker:
+#      - image: circleci/node:8-browsers
+#    steps:
+#      - checkout
+#      - run: yarn install
+#      - save_cache:
+#          paths:
+#            - node_modules
+#          key: v1-dependencies-{{ checksum "package.json" }}
+#      # Run unit tests
+#      - run: yarn test:unit
+#workflows:
+#  test_and_deploy:
+#    jobs:
+#      - test
+#      - cypress/run:
+#        yarn: true
+#        start: yarn ci
 version: 2.1
 orbs:
-  cypress: 'cypress-io/cypress@1'
-jobs:
-  test:
-    docker:
-      - image: circleci/node:8-browsers
-    steps:
-      - checkout
-      - run: yarn install
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-      # Run unit tests
-      - run: yarn test:unit
+  cypress: cypress-io/cypress@1
 workflows:
-  test_and_deploy:
+  build:
     jobs:
-      - test
       - cypress/run:
-        yarn: true
-        start: yarn ci
+          yarn: true
+          start: npm start
