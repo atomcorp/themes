@@ -1,6 +1,5 @@
 version: 2.1
 orbs:
-  node: circleci/node:12.4.0-browsers
   cypress: cypress-io/cypress@1.23.0
 jobs:
   build-and-test:
