@@ -32,9 +32,9 @@
 #          executor: cypress/base-12-6-0
 #          start: npm start
 #          working_directory: app
-version: 2.1
-orbs:
-  cypress: cypress-io/cypress@1.23.0
+#version: 2.1
+#orbs:
+#  cypress: cypress-io/cypress@1.23.0
 #jobs:
 #  build:
 #    docker:
