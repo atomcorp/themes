@@ -1,4 +1,4 @@
-![Preview of the Windows Terminal Themes](https://github.com/atomcorp/themes/raw/master/public/preview-v3.png)
+![Preview of the Windows Terminal Themes](https://github.com/atomcorp/themes/raw/master/app/public/preview-v3.png)
 
 # Windows Terminal Themes
 
