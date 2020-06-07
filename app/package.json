@@ -26,7 +26,9 @@
     "test:watch": "react-scripts test --watchAll --env=jest-environment-jsdom-sixteen",
     "cy:open": "yarn run cypress open",
     "cy:run": " percy exec -- cypress run",
-    "cy:ci": " percy exec -- cypress run --record --key=${CYPRESS_RECORD_KEY}"
+    "cy:ci": " percy exec -- cypress run --record --key=${CYPRESS_RECORD_KEY}",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,16 +46,17 @@
     ]
   },
   "devDependencies": {
+    "@percy/cypress": "^2.3.1",
+    "@testing-library/cypress": "^6.0.0",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.4",
     "@types/file-saver": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
+    "cypress": "^4.5.0",
+    "gh-pages": "^3.0.0",
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "react-test-renderer": "^16.13.1",
-    "ts-jest": "^25.5.0",
-    "@percy/cypress": "^2.3.1",
-    "@testing-library/cypress": "^6.0.0",
-    "cypress": "^4.5.0"
+    "ts-jest": "^25.5.0"
   }
 }

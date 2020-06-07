@@ -41,6 +41,7 @@ Notes
   GitHub dark theme - https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp
   https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/dark-mode/
   https://medium.com/@eferhatg/create-react-app-continuous-integration-config-with-circleci-and-aws-2b0238cde169
+  tom@atomPC:~$ scp -i .ssh/LightsailDefaultKey-eu-west-2.pem /mnt/c/Users/atom/test.txt bitnami@18.132.20.40:/home/bitnami/stack/apps/test/
   
 Done:
   ✔ Add routes, or change URL for each theme for sharing @done(20-04-09 00:10)
