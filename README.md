@@ -21,7 +21,7 @@ The [official docs for Windows Terminal](https://github.com/microsoft/terminal/b
 
 Ideally for the ecosystem new themes should be proposed to [iTerm2-Color-Schemes](https://github.com/mbadolato/iTerm2-Color-Schemes) (where most of these themes come from), then everyone can benefit.
 
-If not, new themes can be add added with a pull request. Just add them to the list in `src/custom-colour-schemes.json`. You shouldn't need to run anything. If you'd like to receive credit, or know who should, please add it to this README when submitting.
+If not, new themes can be add added with a pull request. Just add them to the list in `app/src/custom-colour-schemes.json`. You shouldn't need to run anything. If you'd like to receive credit, or know who should, please add it to this README when submitting.
 
 ## Credits
 
@@ -31,11 +31,13 @@ If not, new themes can be add added with a pull request. Just add them to the li
 
 ## Running
 
-Install using `yarn start`.
+Install using `yarn` and run using `yarn start`, this should start both the React app and Express server.
 
-Develop with [cypress](https://www.cypress.io/) using `yarn cy:open` and run tests with `yarn cy:run`. Jest is also set up, `yarn test`.
+You can run all the tests with `yarn test:dev`.
 
-To run in development, you also need to run [github.com/atomcorp/terminal-api](https://github.com/atomcorp/terminal-api).
+E2E tests are run with [cypress](https://www.cypress.io/). You can use `yarn cy:open` to open and develop using the Dashboard and run test suite with `yarn cy:run`. There's a few unit test using Jest that you can develop using `yarn unit:watch`.
+
+There's CI with CircleCI and there's visual regression tests with Percy to.
 
 ### Compiling the themes
 
@@ -49,7 +51,7 @@ The json list is generated from another repo, [github.com/atomcorp/terminal-api]
 - ~~improve responsiveness~~
 - ~~add a codeblock view~~
 - ~~nicer UI~~
-- create monorepo with [terminal-api](https://github.com/atomcorp/terminal-api)
+- ~~create monorepo with [terminal-api](https://github.com/atomcorp/terminal-api)~~
 - add theme credits into app
 - use canvas for rendering the colour test
 - code refactor/tidy (it's gotten so ugly 😭)

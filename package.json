@@ -15,7 +15,10 @@
     "start:app": "yarn workspace @windowsterminalthemes/app start",
     "start:server": "yarn workspace @windowsterminalthemes/server dev",
     "start": "concurrently --kill-others-on-fail \"yarn start:server\"  \"yarn start:app\"",
-    "cy": "yarn workspace @windowsterminalthemes/app cy:open"
+    "cy:open": "yarn workspace @windowsterminalthemes/app cy:open",
+    "cy:run": "yarn workspace @windowsterminalthemes/app cy:run",
+    "test:dev": "yarn workspace @windowsterminalthemes/app test:run --watchAll=false && yarn workspace @windowsterminalthemes/app cy:run",
+    "unit:watch": "yarn workspace @windowsterminalthemes/app test:watch"
   },
   "repository": {
     "type": "git",
