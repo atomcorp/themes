@@ -1,0 +1,926 @@
+[
+  {
+    "theme": "3024 Day",
+    "notes": "The 3024 Day and 3024 Night themes were created by [0x3024](https://github.com/0x3024)"
+  },
+  {
+    "theme": "3024 Night",
+    "notes": "The 3024 Day and 3024 Night themes were created by [0x3024](https://github.com/0x3024)"
+  },
+  {
+    "theme": "AdventureTime",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Afterglow",
+    "notes": "The Afterglow theme was created by [yabatadesign](https://github.com/YabataDesign/afterglow-itermcolors)"
+  },
+  {
+    "theme": "AlienBlood",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Andromeda",
+    "notes": "The Andromeda theme was created by [memije](https://github.com/memije) based on [EliverLara](https://github.com/EliverLara/)'s [Andromeda](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda) VS Code theme."
+  },
+  {
+    "theme": "Argonaut",
+    "notes": "The Argonaut theme was created by [effkay](https://github.com/effkay/iTerm-argonaut)"
+  },
+  {
+    "theme": "Arthur",
+    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
+  },
+  {
+    "theme": "AtelierSulphurpool",
+    "notes": "The AtelierSulphurpool theme was created by [atelierbram](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool/)"
+  },
+  {
+    "theme": "Atom",
+    "notes": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
+  },
+  {
+    "theme": "AtomOneLight",
+    "notes": "The AtomOneLight theme was created by [iamstarkov](https://github.com/iamstarkov)"
+  },
+  {
+    "theme": "ayu",
+    "notes": "The Ayu and Ayu Light themes were created by [alebcay](https://github.com/alebcay)"
+  },
+  {
+    "theme": "ayu_light",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Banana Blueberry",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Batman",
+    "notes": "The Batman, Spiderman, and The Hulk themes were created by [pyrophos](https://github.com/pyrophos)"
+  },
+  {
+    "theme": "Belafonte Day",
+    "notes": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+  },
+  {
+    "theme": "Belafonte Night",
+    "notes": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+  },
+  {
+    "theme": "BirdsOfParadise",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Blazer",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Blue Matrix",
+    "notes": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
+  },
+  {
+    "theme": "BlueBerryPie",
+    "notes": "notfound"
+  },
+  {
+    "theme": "BlulocoDark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "BlulocoLight",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Borland",
+    "notes": "The Borland theme was created by [delip](https://gist.github.com/delip/9e16c606d9331d69d681)"
+  },
+  {
+    "theme": "Breeze",
+    "notes": "The Breeze theme was based on [the Breeze color scheme](https://github.com/KDE/konsole/blob/master/data/color-schemes/Breeze.colorscheme) by [KDE](https://kde.org) and ported to iTerm by [nieltg](https://github.com/nieltg)"
+  },
+  {
+    "theme": "Bright Lights",
+    "notes": "The Bright Lights theme was created by [tw15egan](https://github.com/tw15egan)"
+  },
+  {
+    "theme": "Broadcast",
+    "notes": "The Broadcast theme was created by [vinkla](https://github.com/vinkla/broadcast-theme)"
+  },
+  {
+    "theme": "Brogrammer",
+    "notes": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
+  },
+  {
+    "theme": "Builtin Dark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Builtin Light",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Builtin Pastel Dark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Builtin Solarized Dark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Builtin Solarized Light",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Builtin Tango Dark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Builtin Tango Light",
+    "notes": "notfound"
+  },
+  {
+    "theme": "C64",
+    "notes": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+  },
+  {
+    "theme": "Calamity",
+    "notes": "The Calamity theme was created by [Pustur](https://github.com/Pustur)"
+  },
+  {
+    "theme": "Chalk",
+    "notes": "The Chalk theme was created by [achalv](https://github.com/achalv/chalk)"
+  },
+  {
+    "theme": "Chalkboard",
+    "notes": "notfound"
+  },
+  {
+    "theme": "ChallengerDeep",
+    "notes": "The ChallengerDeep theme was found [here](https://github.com/challenger-deep-theme/vim) and ported to iTerm by [eendroroy](https://github.com/eendroroy)"
+  },
+  {
+    "theme": "Chester",
+    "notes": "The Chester theme was created by [KH](https://github.com/spectralkh)"
+  },
+  {
+    "theme": "Ciapre",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "CLRS",
+    "notes": "The CLRS theme was created by [jasonlong](https://github.com/jasonlong/iterm-clrs)"
+  },
+  {
+    "theme": "Cobalt Neon",
+    "notes": "The Cobalt Neon theme was created by [vazquez](https://github.com/vazquez/cobalt-neon-iterm)"
+  },
+  {
+    "theme": "Cobalt2",
+    "notes": "The Cobalt2 theme was created by [wesbos](https://github.com/wesbos/Cobalt2-iterm)"
+  },
+  {
+    "theme": "coffee_theme",
+    "notes": "notfound"
+  },
+  {
+    "theme": "CrayonPonyFish",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Cyberdyne",
+    "notes": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
+  },
+  {
+    "theme": "cyberpunk",
+    "notes": "The Cyberpunk theme was created by [Murderlon](https://github.com/Murderlon/cyberpunk-iterm)"
+  },
+  {
+    "theme": "Dark Pastel",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Dark+",
+    "notes": "The themes Solarized Dark and Solarized Light come from the official [Solarized web site](http://ethanschoonover.com/solarized)"
+  },
+  {
+    "theme": "Darkside",
+    "notes": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
+  },
+  {
+    "theme": "deep",
+    "notes": "The theme Monokai Soda was found [here](https://github.com/deepsweet/Monokai-Soda-iTerm)."
+  },
+  {
+    "theme": "Desert",
+    "notes": "notfound"
+  },
+  {
+    "theme": "DimmedMonokai",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Django",
+    "notes": "The Django theme was created by [Jannis Leidel](https://code.djangoproject.com/wiki/TextMate). The original colors schemes were created by [threespot.com](https://threespot.com) for the Django Software Foundation"
+  },
+  {
+    "theme": "DjangoRebornAgain",
+    "notes": "The DjangoRebornAgain theme was created by [christopherscott](https://github.com/christopherscott/django-reborn) based on the original Django themes by [Jannis Leidel](https://code.djangoproject.com/wiki/TextMate)"
+  },
+  {
+    "theme": "DjangoSmooth",
+    "notes": "The DjangoSmoothy theme was created by [Jannis Leidel](https://code.djangoproject.com/wiki/TextMate). The original colors schemes were created by [threespot.com](https://threespot.com) for the Django Software Foundation"
+  },
+  {
+    "theme": "DoomOne",
+    "notes": "notfound"
+  },
+  {
+    "theme": "DotGov",
+    "notes": "The DotGov theme was inspired by the color palette used in the [U.S. Web Design Standards](https://standards.usa.gov/visual-style/)"
+  },
+  {
+    "theme": "Dracula",
+    "notes": "The Dracula theme was created by [zenorocha](https://github.com/zenorocha/dracula-theme)"
+  },
+  {
+    "theme": "DraculaPlus",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Duotone Dark",
+    "notes": "The DuoTone Dark theme was created by [chibicode](http://chibicode.com) based on [simurai](https://github.com/simurai)'s [duotone-dark](https://github.com/simurai/duotone-dark-syntax) Atom theme."
+  },
+  {
+    "theme": "Earthsong",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Elemental",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Elementary",
+    "notes": "The Elementary OS theme was created by [elementary.io](https://elementary.io/) and added by [987poiuytrewq](https://github.com/987poiuytrewq)"
+  },
+  {
+    "theme": "ENCOM",
+    "notes": "The ENCOM theme was created by [Josh Braun](http://wideaperture.net)"
+  },
+  {
+    "theme": "Espresso",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Espresso Libre",
+    "notes": "The Espresso Libre theme was created by [jurgemaister](https://github.com/jurgemaister/Espresso-Libre)"
+  },
+  {
+    "theme": "Fahrenheit",
+    "notes": "The Fahrenheit theme was created by [jonascarpay](https://github.com/jonascarpay) based on [fcpg](https://github.com/fcpg)'s [vim-fahrenheit](https://github.com/fcpg/vim-fahrenheit) Vim theme."
+  },
+  {
+    "theme": "Fideloper",
+    "notes": "The Fideloper theme was inspired by [Fideloper](http://fideloper.com/)"
+  },
+  {
+    "theme": "FirefoxDev",
+    "notes": "The FirefoxDev theme was created by [Or3stis](https://github.com/Or3stis)"
+  },
+  {
+    "theme": "Firewatch",
+    "notes": "The Firewatch theme was created by [Sebastian Szturo](https://github.com/SebastianSzturo) as an [atom syntax theme](https://atom.io/themes/firewatch-syntax) and ported to an iTerm scheme by [Ben Styles](https://github.com/leeds-ebooks). It was originally inspired by the [Firewatch game](http://www.firewatchgame.com/)."
+  },
+  {
+    "theme": "FishTank",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Flat",
+    "notes": "The Flat theme was created by [ahmetsulek](https://github.com/ahmetsulek/flat-terminal)"
+  },
+  {
+    "theme": "Flatland",
+    "notes": "The Flatland theme was created by [realchaseadams](http://www.snip2code.com/Snippet/148193/Flatland-color-scheme-for-iTerm2)"
+  },
+  {
+    "theme": "Floraverse",
+    "notes": "The Floraverse theme was created by [papayakitty](http://floraverse.com/)"
+  },
+  {
+    "theme": "ForestBlue",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Framer",
+    "notes": "The Framer theme was created by [markogresak](https://github.com/markogresak) based on [Framer Syntax Theme](https://www.producthunt.com/posts/framer-syntax-theme) provided by [Framer](https://framer.com)."
+  },
+  {
+    "theme": "FrontEndDelight",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "FunForrest",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Galaxy",
+    "notes": "The Galaxy theme was created by [jglovier](https://github.com/jglovier/galaxy-theme-iterm)"
+  },
+  {
+    "theme": "Github",
+    "notes": "The scheme Violet was created by [ashfinal](https://github.com/ashfinal/vim-colors-violet)."
+  },
+  {
+    "theme": "Glacier",
+    "notes": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
+  },
+  {
+    "theme": "Grape",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Grass",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Gruvbox Dark",
+    "notes": "The Gruvbox Dark theme was created by [morhetz](https://github.com/morhetz) and added by [mcchrish](https://github.com/mcchrish)"
+  },
+  {
+    "theme": "Hacktober",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Hardcore",
+    "notes": "The Hardcore theme was created by [hardcore](https://github.com/hardcore/iTerm-colors)"
+  },
+  {
+    "theme": "Harper",
+    "notes": "The Harper theme was created by [idleberg](https://github.com/idleberg/Harper-iTerm2)"
+  },
+  {
+    "theme": "Highway",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Hipster Green",
+    "notes": "The Hipster Green and Jackie Brown themes were created by [Unkulunkulu](https://github.com/Unkulunkulu)"
+  },
+  {
+    "theme": "Hivacruz",
+    "notes": "The Hivacruz theme was created by [Yann Defretin](https://github.com/kinoute/hivacruz-itermcolors)"
+  },
+  {
+    "theme": "Homebrew",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Hopscotch",
+    "notes": "The Hopscotch theme was created by [Jan T. Sott](https://github.com/idleberg/Hopscotch)"
+  },
+  {
+    "theme": "Hopscotch.256",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Hurtado",
+    "notes": "The theme Hurtado was found [here](https://github.com/juanghurtado/dotfiles)."
+  },
+  {
+    "theme": "Hybrid",
+    "notes": "The Hybrid theme was found [here](https://gist.github.com/luan/6362811)"
+  },
+  {
+    "theme": "IC_Green_PPL",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "IC_Orange_PPL",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "idea",
+    "notes": "The ENCOM theme was created by [Josh Braun](http://wideaperture.net)"
+  },
+  {
+    "theme": "idleToes",
+    "notes": "The scheme idleToes was inspired by the [idleFingers](http://www.idlefingers.co.uk/) TextMate theme and suggested for inclusion by Seth Wilson."
+  },
+  {
+    "theme": "IR_Black",
+    "notes": "The IR_Black theme was found [here](https://gist.github.com/meqif/1238378)"
+  },
+  {
+    "theme": "Jackie Brown",
+    "notes": "The Hipster Green and Jackie Brown themes were created by [Unkulunkulu](https://github.com/Unkulunkulu)"
+  },
+  {
+    "theme": "Japanesque",
+    "notes": "The Japanesque theme was created by [aereal](https://github.com/aereal/dotfiles/blob/master/colors/Japanesque/Japanesque.itermcolors)"
+  },
+  {
+    "theme": "Jellybeans",
+    "notes": "The Jellybeans theme was created by [qtpi](https://github.com/qtpi/Jellybeans.itermcolors)"
+  },
+  {
+    "theme": "JetBrains Darcula",
+    "notes": "The JetBrains Darcula theme was created by [vitstr](https://github.com/vitstr)"
+  },
+  {
+    "theme": "Kibble",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Kolorit",
+    "notes": "The Kolorit theme was created by [thomaspaulmann](https://github.com/thomaspaulmann)"
+  },
+  {
+    "theme": "Lab Fox",
+    "notes": "The Lab Fox theme was created by [theatlasroom](https://github.com/theatlasroom) inspired by the [Gitlab design system](https://design.gitlab.com)"
+  },
+  {
+    "theme": "Laser",
+    "notes": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
+  },
+  {
+    "theme": "Later This Evening",
+    "notes": "The Later This Evening theme was created by [vilhalmer](https://github.com/vilhalmer/System/tree/master/terminal-themes)"
+  },
+  {
+    "theme": "Lavandula",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "LiquidCarbon",
+    "notes": "The LiquidCarbon themes were created by [markcho](https://github.com/markcho/iTerm2_LiquidCarbon)"
+  },
+  {
+    "theme": "LiquidCarbonTransparent",
+    "notes": "notfound"
+  },
+  {
+    "theme": "LiquidCarbonTransparentInverse",
+    "notes": "notfound"
+  },
+  {
+    "theme": "lovelace",
+    "notes": "The LoveLace theme was created by [nalanbar](https://github.com/nalanbar) based on a dotfile from [elenapan](https://github.com/elenapan)"
+  },
+  {
+    "theme": "Man Page",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Material",
+    "notes": "The Material and MaterialDark themes were created by [stoeffel](https://github.com/stoeffel/material-iterm)"
+  },
+  {
+    "theme": "MaterialDark",
+    "notes": "The Material and MaterialDark themes were created by [stoeffel](https://github.com/stoeffel/material-iterm)"
+  },
+  {
+    "theme": "MaterialDarker",
+    "notes": "notfound"
+  },
+  {
+    "theme": "MaterialOcean",
+    "notes": "The MaterialOcean theme was found [here](https://github.com/kaicataldo/material.vim/blob/master/terminal-colors/iterm2/material-ocean.itermcolors) and was ported by [fr3fou](https://github.com/fr3fou)"
+  },
+  {
+    "theme": "Mathias",
+    "notes": "The theme Mathias was created by [mathiasbynens](https://github.com/mathiasbynens/dotfiles)"
+  },
+  {
+    "theme": "Medallion",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "midnight-in-mojave",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Mirage",
+    "notes": "The Mirage theme was created by [Tristan Remy](https://github.com/tristanremy/mirage) and ported to iTerm2 by [Gomah](https://github.com/Gomah/mirage-iterm)."
+  },
+  {
+    "theme": "Misterioso",
+    "notes": "The Misterioso theme was created by [flooose](https://github.com/flooose/misterioso-iterm2)"
+  },
+  {
+    "theme": "Molokai",
+    "notes": "The theme Molokai was based on the [vim colorscheme](https://github.com/tomasr/molokai) of the same name."
+  },
+  {
+    "theme": "MonaLisa",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Monokai Cmder",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Monokai Remastered",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Monokai Soda",
+    "notes": "The theme Monokai Soda was found [here](https://github.com/deepsweet/Monokai-Soda-iTerm)."
+  },
+  {
+    "theme": "Monokai Vivid",
+    "notes": "The theme Monokai Vivid was created by [vitalymak](https://github.com/vitalymak/iTerm2-Color-Schemes)."
+  },
+  {
+    "theme": "N0tch2k",
+    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
+  },
+  {
+    "theme": "Neopolitan",
+    "notes": "The theme Neopolitan was created by [daytonn](https://github.com/daytonn/iTerm2-Color-Schemes)"
+  },
+  {
+    "theme": "Neutron",
+    "notes": "The Neutron theme was created by [Ch4s3](https://github.com/Ch4s3/iTerm2-Neutron)"
+  },
+  {
+    "theme": "Night Owlish Light",
+    "notes": "The Night Owlish Light theme was created by [praveenpuglia](https://github.com/praveenpuglia) based on [sdras](https://github.com/sdras)'s [Night Owl](https://github.com/sdras/night-owl-vscode-theme) VS Code theme."
+  },
+  {
+    "theme": "NightLion v1",
+    "notes": "notfound"
+  },
+  {
+    "theme": "NightLion v2",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Nocturnal Winter",
+    "notes": "The Nocturnal Winter theme was created by [Shriram Balaji](https://github.com/Shriram-Balaji)"
+  },
+  {
+    "theme": "nord",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Novel",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Obsidian",
+    "notes": "The Obsidian theme was on my hard drive and I don't recall where it came from. If anyone knows, ping me and I'll link back to the author(s)."
+  },
+  {
+    "theme": "Ocean",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "OceanicMaterial",
+    "notes": "The OceanicMaterial theme was created by [rahulpatel](https://github.com/rahulpatel)"
+  },
+  {
+    "theme": "Ollie",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "OneDark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "OneHalfDark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "OneHalfLight",
+    "notes": "notfound"
+  },
+  {
+    "theme": "OneStar",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Operator Mono Dark",
+    "notes": "The Operator Mono Dark was ported from [vharadkou](https://github.com/vharadkou/OperatorMonoDarkTheme) by [dreamyguy](https://github.com/dreamyguy/iterm-theme-operator-mono-dark)"
+  },
+  {
+    "theme": "Pandora",
+    "notes": "The Pandora theme was created by [milosmatic](https://github.com/milosmatic/Pandora-iterm)"
+  },
+  {
+    "theme": "Paraiso Dark",
+    "notes": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+  },
+  {
+    "theme": "Parasio Dark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "PaulMillr",
+    "notes": "The PaulMillr theme was created by [paulmillr](https://github.com/paulmillr/dotfiles/tree/master/terminal) and ported to iTerm by me"
+  },
+  {
+    "theme": "PencilDark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "PencilLight",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Piatto Light",
+    "notes": "The Piatto Light theme was created by [kovv](https://github.com/kovv)"
+  },
+  {
+    "theme": "Pnevma",
+    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
+  },
+  {
+    "theme": "primary",
+    "notes": "The Primary theme was created by [jayanthkoushik](https://github.com/jayanthkoushik) based on [Google's vim colorscheme](https://github.com/google/vim-colorscheme-primary)."
+  },
+  {
+    "theme": "Pro",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Pro Light",
+    "notes": "The Pro Light theme was adapted from the Pro theme by [crowsonkb](https://github.com/crowsonkb) using her [iterm_schemer](https://github.com/crowsonkb/iterm_schemer) tool."
+  },
+  {
+    "theme": "Purple Rain",
+    "notes": "The Purple Rain theme was created by [msorre2](https://github.com/msorre2)"
+  },
+  {
+    "theme": "purplepeter",
+    "notes": "notfound"
+  },
+  {
+    "theme": "rebecca",
+    "notes": "The Rebecca theme was created [vic](https://github.com/vic) based on his [emacs rebecca-theme](https://github.com/vic/rebecca-theme)"
+  },
+  {
+    "theme": "Red Alert",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Red Planet",
+    "notes": "The Red Planet theme was created by [ibrokemypie](https://github.com/ibrokemypie) based on [eliquious](https://github.com/eliquious)'s [Red Planet](https://github.com/eliquious/Red-Planet-Theme) Sublime Text theme."
+  },
+  {
+    "theme": "Red Sands",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Relaxed",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Rippedcasts",
+    "notes": "The Rippedcasts theme was created by [mdw123](https://github.com/mdw123/rippedcasts)"
+  },
+  {
+    "theme": "Rouge 2",
+    "notes": "The Rouge 2 theme was created by [Josef Aidt](https://github.com/josefaidt/rouge-theme) and ported to iTerm2 by [Sam Rose](https://github.com/samrose3)."
+  },
+  {
+    "theme": "Royal",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Ryuuko",
+    "notes": "The Ryuuko theme was created by [dylanaraps](https://github.com/dylanaraps) and added by [iandrewt](https://github.com/iandrewt)"
+  },
+  {
+    "theme": "Sakura",
+    "notes": "The theme Sakura was created by [0xN0ri](https://github.com/0xN0ri) based on [zdj](https://github.com/zdj) iTerm 2 color scheme [Urple](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Urple.itermcolors)"
+  },
+  {
+    "theme": "Scarlet Protocol",
+    "notes": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
+  },
+  {
+    "theme": "Seafoam Pastel",
+    "notes": "notfound"
+  },
+  {
+    "theme": "SeaShells",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Seti",
+    "notes": "The Seti theme was created by [jesseweed](https://github.com/jesseweed/seti-syntax/) and ported to iTerm2 by [philduffy](https://github.com/willmanduffy/seti-iterm) and slightly modified to make the ANSI blacks have a little more contrast"
+  },
+  {
+    "theme": "shades-of-purple",
+    "notes": "The Shades Of Purple theme was found [here](https://github.com/ahmadawais/shades-of-purple-iterm2) and ported by [fr3fou](https://github.com/fr3fou)"
+  },
+  {
+    "theme": "Shaman",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Slate",
+    "notes": "The Slate theme was created by [deneshshan](https://github.com/deneshshan)"
+  },
+  {
+    "theme": "SleepyHollow",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Smyck",
+    "notes": "The Smyck theme was found [here](https://github.com/hukl/Smyck-Color-Scheme)"
+  },
+  {
+    "theme": "Snazzy",
+    "notes": "notfound"
+  },
+  {
+    "theme": "SoftServer",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Solarized Darcula",
+    "notes": "The scheme Solarized Darcula was inspired by the color theme created by [@rickhanlonii](https://github.com/rickhanlonii). There are two screenshots below; one with a background and one without. The background image is included in the backgrounds/ directory and the image must be manually set on the profile's Preferences->Window tab. It's hard to see from the screenshot, but it looks great!"
+  },
+  {
+    "theme": "Solarized Dark - Patched",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Solarized Dark Higher Contrast",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Spacedust",
+    "notes": "The Spacedust theme was created by [mhallendal](https://github.com/mhallendal/spacedust-theme) and ported to iTerm by [Couto](https://github.com/Couto)"
+  },
+  {
+    "theme": "SpaceGray",
+    "notes": "The SpaceGray theme was created by [ryentzer](https://github.com/ryentzer/SpaceGray-iTerm)"
+  },
+  {
+    "theme": "SpaceGray Eighties",
+    "notes": "The SpaceGray Eighties and SpaceGray Eighties Dull themes were created by [mhkeller](https://github.com/mhkeller/spacegray-eighties-iterm)"
+  },
+  {
+    "theme": "SpaceGray Eighties Dull",
+    "notes": "The SpaceGray Eighties and SpaceGray Eighties Dull themes were created by [mhkeller](https://github.com/mhkeller/spacegray-eighties-iterm)"
+  },
+  {
+    "theme": "Spiderman",
+    "notes": "The Batman, Spiderman, and The Hulk themes were created by [pyrophos](https://github.com/pyrophos)"
+  },
+  {
+    "theme": "Spring",
+    "notes": "The Spring theme was found [here](https://github.com/t3chnoboy/spring-iTerm)"
+  },
+  {
+    "theme": "Square",
+    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
+  },
+  {
+    "theme": "Subliminal",
+    "notes": "The theme Subliminal was created by [gdsrosa](https://github.com/gdsrosa/subliminal-itermcolors)"
+  },
+  {
+    "theme": "Sundried",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Symfonic",
+    "notes": "The scheme Symfonic was inspired by the color scheme used in the [documentation](http://symfony.com/doc/current/book/index.html) for the [Symfony](http://www.symfony.com) PHP Framework."
+  },
+  {
+    "theme": "synthwave",
+    "notes": "The synthwave theme was created by [brettstil](https://github.com/brettstil/)"
+  },
+  {
+    "theme": "synthwave-everything",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Tango Adapted",
+    "notes": "The Tango Adapted theme and its slightly less bright counterpart Tango Half Adapted were created by [crowsonkb](https://github.com/crowsonkb), based on iTerm2's Tango Light theme."
+  },
+  {
+    "theme": "Tango Half Adapted",
+    "notes": "The Tango Adapted theme and its slightly less bright counterpart Tango Half Adapted were created by [crowsonkb](https://github.com/crowsonkb), based on iTerm2's Tango Light theme."
+  },
+  {
+    "theme": "Teerb",
+    "notes": "The Teerb theme was created by [Teerb](https://gist.github.com/teerb/1360453)"
+  },
+  {
+    "theme": "Terminal Basic",
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "theme": "Thayer Bright",
+    "notes": "The Thayer Bright theme was found [here](https://github.com/t3chnoboy/thayer-bright-iTerm)"
+  },
+  {
+    "theme": "The Hulk",
+    "notes": "The Batman, Spiderman, and The Hulk themes were created by [pyrophos](https://github.com/pyrophos)"
+  },
+  {
+    "theme": "Tomorrow",
+    "notes": "The Tomorrow themes were created by [chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)"
+  },
+  {
+    "theme": "Tomorrow Night",
+    "notes": "The Tomorrow Night Burns theme were created by [ashwinv11](https://github.com/ashwinv11/)"
+  },
+  {
+    "theme": "Tomorrow Night Blue",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Tomorrow Night Bright",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Tomorrow Night Burns",
+    "notes": "The Tomorrow Night Burns theme were created by [ashwinv11](https://github.com/ashwinv11/)"
+  },
+  {
+    "theme": "Tomorrow Night Eighties",
+    "notes": "notfound"
+  },
+  {
+    "theme": "ToyChest",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Treehouse",
+    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+  },
+  {
+    "theme": "Twilight",
+    "notes": "The Twilight theme was created by [stefri](https://gist.github.com/stefri/1183140)"
+  },
+  {
+    "theme": "Ubuntu",
+    "notes": "The Ubuntu theme was inspired by default Ubuntu's console colors. Created by [Maximus](http://superuser.com/questions/497240/ubuntu-purple-terminal-colors-in-conemu) and ported to iTerm2 by [stepin](https://github.com/stepin)."
+  },
+  {
+    "theme": "UltraViolent",
+    "notes": "notfound"
+  },
+  {
+    "theme": "UnderTheSea",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Unikitty",
+    "notes": "The Unikitty theme was created by [jakebathman](https://github.com/jakebathman)"
+  },
+  {
+    "theme": "Urple",
+    "notes": "The Shades Of Purple theme was found [here](https://github.com/ahmadawais/shades-of-purple-iterm2) and ported by [fr3fou](https://github.com/fr3fou)"
+  },
+  {
+    "theme": "Vaughn",
+    "notes": "notfound"
+  },
+  {
+    "theme": "VibrantInk",
+    "notes": "The VibrantInk theme was created by [asanghi](https://github.com/asanghi/vibrantinklion)"
+  },
+  {
+    "theme": "Violet Dark",
+    "notes": "notfound"
+  },
+  {
+    "theme": "Violet Light",
+    "notes": "notfound"
+  },
+  {
+    "theme": "WarmNeon",
+    "notes": "The WarmNeon theme was ported from [PyCharm](http://www.jetbrains.com/pycharm/) by [firewut](https://github.com/firewut)"
+  },
+  {
+    "theme": "Wez",
+    "notes": "The Wez theme was created by [wez](https://gist.github.com/wez/850268/)"
+  },
+  {
+    "theme": "Whimsy",
+    "notes": "The Whimsy theme was created by [Rod](https://github.com/rod)"
+  },
+  {
+    "theme": "WildCherry",
+    "notes": "The WildCherry theme was created by [mashaal](https://github.com/mashaal/wild-cherry)"
+  },
+  {
+    "theme": "Wombat",
+    "notes": "The Wombat theme was created by [djoyner](https://github.com/djoyner/iTerm2-wombat)"
+  },
+  {
+    "theme": "Wryan",
+    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
+  },
+  {
+    "theme": "Zenburn",
+    "notes": "The scheme Zenburn was inspired by the [Zenburn](http://sunaku.github.io/zenburn-terminal-color-scheme.html) version created by Suraj N. Kurapati."
+  }
+]
