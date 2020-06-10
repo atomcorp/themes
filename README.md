@@ -55,6 +55,7 @@ The json list is generated from another repo, [github.com/atomcorp/terminal-api]
 - add theme credits into app
 - use canvas for rendering the colour test
 - code refactor/tidy (it's gotten so ugly 😭)
+- make a PWA
 
 ## Notes
 
