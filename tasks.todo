@@ -12,6 +12,7 @@ Next:
   ☐ add meta property to theme objects with credits, notes, isDark etc
   ☐ print out colours using canvas, will be easier to make responsive
   ☐ code refactor/tidy
+  ☐ use service worker, to make a PWA
   
 After:
   ☐ Choose font

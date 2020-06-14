@@ -16,7 +16,7 @@ const apiBase =
 const App: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   useEffect(() => {
-    const getThemes = async () => {
+    const getThemes = async (): Promise<void> => {
       try {
         const res = await fetch(`${apiBase}/api/v1/themes`);
         const themes = await res.json();

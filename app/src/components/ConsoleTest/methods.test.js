@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, fireEvent, waitFor} from '@testing-library/react';
+import {render} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 
@@ -28,7 +28,7 @@ const whimsyTheme = {
 };
 
 // https://stackoverflow.com/a/60347125/2368141
-const hex2rgb = (c) =>
+const hex2rgb = (c): string =>
   `rgb(${c
     .substr(1)
     .match(/../g)
@@ -38,15 +38,14 @@ const hex2rgb = (c) =>
       }
       return +`0x${x}`;
     })})`;
-const rgb2hex = (c) =>
-  '#' + c.match(/\d+/g).map((x) => (+x).toString(16).padStart(2, 0)).join``;
+// const rgb2hex = (c): string => '#' + c.match(/\d+/g).map((x) => (+x).toString(16).padStart(2, 0)).join``;
 
 it('should have correct color and background', () => {
   const {findByText} = render(
     <div>
       {parseSyntax(
         whimsyTheme,
-        `<green:brightYellow>Test green</green:brightYellow>`
+        '<green:brightYellow>Test green</green:brightYellow>'
       )}
     </div>
   );
@@ -71,19 +70,19 @@ it('should have style the different elements', async () => {
     </div>
   );
   // .toHaveStyle() keeps failing for me :(
-  const greenEl = await findByText('Test green').then((el) => {
+  await findByText('Test green').then((el) => {
     expect(el.style.background).toBe(hex2rgb(whimsyTheme.brightYellow));
     expect(el.style.color).toBe(hex2rgb(whimsyTheme.green));
   });
-  const someEl = await findByText('Some more').then((el) => {
+  await findByText('Some more').then((el) => {
     expect(el.style.background).toBe('');
     expect(el.style.color).toBe(hex2rgb(whimsyTheme.cyan));
   });
-  const whiteEl = await findByText('white').then((el) => {
+  await findByText('white').then((el) => {
     expect(el.style.background).toBe(hex2rgb(whimsyTheme.brightGreen));
     expect(el.style.color).toBe(hex2rgb(whimsyTheme.brightWhite));
   });
-  const purpleEl = await findByText('purple').then((el) => {
+  await findByText('purple').then((el) => {
     expect(el.style.background).toBe('');
     expect(el.style.color).toBe(hex2rgb(whimsyTheme.purple));
   });
@@ -175,7 +174,7 @@ it('snapshot - should render a plain string', () => {
   const component = renderer.create(
     <div>{parseSyntax(whimsyTheme, 'String')}</div>
   );
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -183,7 +182,7 @@ it('snapshot - should wrap a string in a colour', () => {
   const component = renderer.create(
     <div>{parseSyntax(whimsyTheme, '<green>Test green</green>')}</div>
   );
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -196,7 +195,7 @@ it('snapshot - should wrap two strings in different colours', () => {
       )}
     </div>
   );
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -209,7 +208,7 @@ it('snapshot - should wrap text with colour and a background', () => {
       )}
     </div>
   );
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });
 
@@ -226,6 +225,6 @@ it('snapshot - should work over multiple lines - no including <tags>', () => {
       )}
     </div>
   );
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

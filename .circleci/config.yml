@@ -22,4 +22,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       # https://github.com/facebook/create-react-app/issues/8688#issuecomment-620607944
       - run: sed -i '/process.env.CI/,+7 d' node_modules/react-scripts/scripts/start.js
+      - run: yarn lint
       - run: yarn ci
