@@ -37,10 +37,16 @@ for i in range(creditsTitle + 4, endOfCredits):
     line = originalInfoFileTextList[i].split()
 
     if(line):
-        theme = line[1]
+        if(line[1] != 'theme' and line[1] != 'scheme'):
+            theme = line[1]
+        else:
+            theme = line[2]
 
         try:
-            credit = line[line.index('by') + 1]
+            if(line[line.index('by') + 1] == 'the'):
+                continue
+            else:
+                credit = line[line.index('by') + 1]
         except:
             continue
 

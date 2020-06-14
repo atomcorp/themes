@@ -1,31 +1,26 @@
-scheme:[ashfinal](https://github.com/ashfinal/vim-colors-violet).
+Violet:[ashfinal](https://github.com/ashfinal/vim-colors-violet).
 
-scheme:the
 
-scheme:the
 
-scheme:the
 
 synthwave:[brettstil](https://github.com/brettstil/)
 
-scheme:the
-
-scheme:the
 
 
 
 
-theme:[vitalymak](https://github.com/vitalymak/iTerm2-Color-Schemes).
 
-theme:[daytonn](https://github.com/daytonn/iTerm2-Color-Schemes)
+Monokai:[vitalymak](https://github.com/vitalymak/iTerm2-Color-Schemes).
 
-theme:[gdsrosa](https://github.com/gdsrosa/subliminal-itermcolors)
+Neopolitan:[daytonn](https://github.com/daytonn/iTerm2-Color-Schemes)
+
+Subliminal:[gdsrosa](https://github.com/gdsrosa/subliminal-itermcolors)
 
 
 
 Spacedust:[mhallendal](https://github.com/mhallendal/spacedust-theme)
 
-theme:[mathiasbynens](https://github.com/mathiasbynens/dotfiles)
+Mathias:[mathiasbynens](https://github.com/mathiasbynens/dotfiles)
 
 LiquidCarbon:[markcho](https://github.com/markcho/iTerm2_LiquidCarbon)
 
@@ -147,7 +142,6 @@ AtomOneLight:[iamstarkov](https://github.com/iamstarkov)
 
 Piatto:[kovv](https://github.com/kovv)
 
-DotGov:the
 
 DuoTone:[chibicode](http://chibicode.com)
 
@@ -241,7 +235,7 @@ BlueBerry:[murmurlilia](https://www.instagram.com/the.julias/)
 
 Synthwave:[smithbm2316](https://github.com/smithbm2316)
 
-theme:[0xN0ri](https://github.com/0xN0ri)
+Sakura:[0xN0ri](https://github.com/0xN0ri)
 
 Mirage:[Tristan
 
