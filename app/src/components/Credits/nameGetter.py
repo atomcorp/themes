@@ -1,19 +1,22 @@
+import json
+
 #Opens the original file
 originalInfoFile = open(r'C:\Users\Andrey\source\repos\iTerm2-Color-Schemes\README.md')
 originalInfoFileText = originalInfoFile.read()
 originalInfoFileTextList = originalInfoFileText.split('\n')
 
 #Opens the file and resets to a blank line
-infoFile = open(r'C:\Users\Andrey\source\repos\themes\app\src\components\Credits\namesAndThemes.txt', 'wt')
+infoFile = open(r'C:\Users\Andrey\source\repos\themes\app\src\components\Credits\namesAndThemes.json', 'wt')
 infoFile.write('')
 infoFile.close()
 #Reopens the file to write the output
-infoFile = open(r'C:\Users\Andrey\source\repos\themes\app\src\components\Credits\namesAndThemes.txt', 'at')
+infoFile = open(r'C:\Users\Andrey\source\repos\themes\app\src\components\Credits\namesAndThemes.json', 'at')
 
 #Declares variables for parsing
 creditsTitle = 0
 endOfCredits = 0
-namesAndCreators = []
+namesAndCreators = {}
+namesAndCreators['Credits'] = []
 
 #Iterates to check where the credits start
 for i in range(len(originalInfoFileTextList)):
@@ -33,7 +36,6 @@ for i in range(len(originalInfoFileTextList)):
 
 #Itererates to find themes and credits and adds them to a list
 for i in range(creditsTitle + 4, endOfCredits):
-    addend = ''
     line = originalInfoFileTextList[i].split()
 
     #Checks positioning of the theme name
@@ -69,9 +71,11 @@ for i in range(creditsTitle + 4, endOfCredits):
         except:
             continue
 
-        addend = theme + ':' + credit
-    
-    namesAndCreators.append(addend)
+        namesAndCreators['Credits'].append({
+            'Theme':str(theme),
+            'Name':str(credit)
+        })
 
-for i in range(len(namesAndCreators)):
-    infoFile.write(namesAndCreators[i] + '\n')
+json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
+print(json)
+infoFile.write(json)
