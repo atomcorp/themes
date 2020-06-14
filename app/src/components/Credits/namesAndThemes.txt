@@ -10,7 +10,7 @@ synthwave:[brettstil](https://github.com/brettstil/)
 
 
 
-Monokai:[vitalymak](https://github.com/vitalymak/iTerm2-Color-Schemes).
+Monokai Vivid:[vitalymak](https://github.com/vitalymak/iTerm2-Color-Schemes).
 
 Neopolitan:[daytonn](https://github.com/daytonn/iTerm2-Color-Schemes)
 
@@ -28,7 +28,7 @@ NightLion:[Curvve
 
 Tomorrow:[chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)
 
-Tomorrow:[ashwinv11](https://github.com/ashwinv11/)
+Tomorrow Burns:[ashwinv11](https://github.com/ashwinv11/)
 
 Twilight:[stefri](https://gist.github.com/stefri/1183140)
 
@@ -39,7 +39,7 @@ Misterioso:[flooose](https://github.com/flooose/misterioso-iterm2)
 
 
 
-Shades:[fr3fou](https://github.com/fr3fou)
+Shades Purple:[fr3fou](https://github.com/fr3fou)
 
 
 
@@ -90,13 +90,13 @@ Belafonte:[idleberg](https://github.com/idleberg)
 
 Argonaut:[effkay](https://github.com/effkay/iTerm-argonaut)
 
-Espresso:[jurgemaister](https://github.com/jurgemaister/Espresso-Libre)
+Espresso Libre:[jurgemaister](https://github.com/jurgemaister/Espresso-Libre)
 
 Hardcore:[hardcore](https://github.com/hardcore/iTerm-colors)
 
 Rippedcasts:[mdw123](https://github.com/mdw123/rippedcasts)
 
-Solorized:[heisters](https://gist.github.com/heisters/1015503)
+Solorized Contrast:[heisters](https://gist.github.com/heisters/1015503)
 
 VibrantInk:[asanghi](https://github.com/asanghi/vibrantinklion)
 
@@ -112,7 +112,7 @@ Neutron:[Ch4s3](https://github.com/Ch4s3/iTerm2-Neutron)
 
 Fideloper:[Fideloper](http://fideloper.com/)
 
-Later:[vilhalmer](https://github.com/vilhalmer/System/tree/master/terminal-themes)
+Later Evening:[vilhalmer](https://github.com/vilhalmer/System/tree/master/terminal-themes)
 
 Galaxy:[jglovier](https://github.com/jglovier/galaxy-theme-iterm)
 
@@ -122,7 +122,7 @@ SpaceGray:[mhkeller](https://github.com/mhkeller/spacegray-eighties-iterm)
 
 Borland:[delip](https://gist.github.com/delip/9e16c606d9331d69d681)
 
-Cobalt:[vazquez](https://github.com/vazquez/cobalt-neon-iterm)
+Cobalt Neon:[vazquez](https://github.com/vazquez/cobalt-neon-iterm)
 
 AtelierSulphurpool:[atelierbram](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool/)
 
@@ -140,18 +140,18 @@ MaterialOcean:[fr3fou](https://github.com/fr3fou)
 
 AtomOneLight:[iamstarkov](https://github.com/iamstarkov)
 
-Piatto:[kovv](https://github.com/kovv)
+Piatto Light:[kovv](https://github.com/kovv)
 
 
-DuoTone:[chibicode](http://chibicode.com)
+DuoTone Dark:[chibicode](http://chibicode.com)
 
-JetBrains:[vitstr](https://github.com/vitstr)
+JetBrains Darcula:[vitstr](https://github.com/vitstr)
 
-Bright:[tw15egan](https://github.com/tw15egan)
+Bright Lights:[tw15egan](https://github.com/tw15egan)
 
 Ubuntu:default
 
-Under:[peterpme](https://github.com/peterpme)
+Under Sea:[peterpme](https://github.com/peterpme)
 
 One:[sonph](https://github.com/sonph),
 
@@ -163,27 +163,27 @@ Firewatch:[Sebastian
 
 Pandora:[milosmatic](https://github.com/milosmatic/Pandora-iterm)
 
-Elementary:[elementary.io](https://elementary.io/)
+Elementary OS:[elementary.io](https://elementary.io/)
 
-Gruvbox:[morhetz](https://github.com/morhetz)
+Gruvbox Dark:[morhetz](https://github.com/morhetz)
 
 Ayu:[alebcay](https://github.com/alebcay)
 
 Deep:[ADoyle](https://github.com/adoyle-h)
 
-Red:[ibrokemypie](https://github.com/ibrokemypie)
+Red Planet:[ibrokemypie](https://github.com/ibrokemypie)
 
-Tango:[crowsonkb](https://github.com/crowsonkb),
+Tango Adapted:[crowsonkb](https://github.com/crowsonkb),
 
-Pro:[crowsonkb](https://github.com/crowsonkb)
+Pro Light:[crowsonkb](https://github.com/crowsonkb)
 
 Fahrenheit:[jonascarpay](https://github.com/jonascarpay)
 
 Calamity:[Pustur](https://github.com/Pustur)
 
-Purple:[DeChamp](https://github.com/dechamp)
+Purple Peter:[DeChamp](https://github.com/dechamp)
 
-Purple:[msorre2](https://github.com/msorre2)
+Purple Rain:[msorre2](https://github.com/msorre2)
 
 ChallengerDeep:[eendroroy](https://github.com/eendroroy)
 
@@ -191,7 +191,7 @@ Hopscotch:[Jan
 
 Hivacruz:[Yann
 
-Nocturnal:[Shriram
+Nocturnal Winter:[Shriram
 
 
 Whimsy:[Rod](https://github.com/rod)
@@ -212,7 +212,7 @@ LoveLace:[nalanbar](https://github.com/nalanbar)
 
 Framer:[markogresak](https://github.com/markogresak)
 
-Lab:[theatlasroom](https://github.com/theatlasroom)
+Lab Fox:[theatlasroom](https://github.com/theatlasroom)
 
 Unikitty:[jakebathman](https://github.com/jakebathman)
 
@@ -220,9 +220,9 @@ Primary:[jayanthkoushik](https://github.com/jayanthkoushik)
 
 Andromeda:[memije](https://github.com/memije)
 
-Night:[praveenpuglia](https://github.com/praveenpuglia)
+Night Light:[praveenpuglia](https://github.com/praveenpuglia)
 
-Midnight:[OberstKrueger](https://github.com/oberstkrueger)
+Midnight Mojave:[OberstKrueger](https://github.com/oberstkrueger)
 
 Breeze:[KDE](https://kde.org)
 
@@ -231,13 +231,13 @@ coffee:[cbitterfield](https://github.com/cbitterfield)
 
 Blueberry:[ReagentX](https://github.com/ReagentX)
 
-BlueBerry:[murmurlilia](https://www.instagram.com/the.julias/)
+BlueBerry Pie:[murmurlilia](https://www.instagram.com/the.julias/)
 
-Synthwave:[smithbm2316](https://github.com/smithbm2316)
+Synthwave Everything:[smithbm2316](https://github.com/smithbm2316)
 
 Sakura:[0xN0ri](https://github.com/0xN0ri)
 
 Mirage:[Tristan
 
-Rouge:[Josef
+Rouge 2:[Josef
 

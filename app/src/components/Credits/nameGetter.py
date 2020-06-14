@@ -36,12 +36,26 @@ for i in range(creditsTitle + 4, endOfCredits):
     addend = ''
     line = originalInfoFileTextList[i].split()
 
+    #Checks positioning of the theme name
     if(line):
         if(line[1] != 'theme' and line[1] != 'scheme'):
-            theme = line[1]
+            try:
+                if(line[line.index('The') + 1] == line[line.index('theme') - 1]):
+                    theme = line[line.index('The') + 1]
+                else:
+                    theme = line[line.index('The') + 1] + ' ' + line[line.index('theme') - 1]
+            except:
+                theme = line[1]
         else:
-            theme = line[2]
+            try:
+                if(line[line.index('theme') + 1] == line[line.index('was') - 1]):
+                    theme = line[line.index('theme') + 1]
+                else:
+                    theme = line[line.index('theme') + 1] + ' ' + line[line.index('was') - 1]
+            except:
+                theme = line[2]
 
+        #Checks positioning of the creators' name
         try:
             if(line[line.index('by') + 1] == 'the'):
                 continue
