@@ -37,21 +37,32 @@ for i in range(creditsTitle + 4, endOfCredits):
     line = originalInfoFileTextList[i].split()
 
     #Checks positioning of the theme name
+<<<<<<< HEAD
     #Checks if the line is blank
     if(line):
         #Checks if the line says 'The theme _' or 'The _ theme'
         if(line[1] != 'theme' and line[1] != 'scheme'):
             #Tries to see if the theme name is longer than one
+=======
+    if(line):
+        if(line[1] != 'theme' and line[1] != 'scheme'):
+>>>>>>> 2ffec3b9a4aa0d93c978202330d5c093195be253
             try:
                 if(line[line.index('The') + 1] == line[line.index('theme') - 1]):
                     theme = line[line.index('The') + 1]
                 else:
                     theme = line[line.index('The') + 1] + ' ' + line[line.index('theme') - 1]
+<<<<<<< HEAD
             #If the try fails, it falls back to the default
             except:
                 theme = line[1]
         else:
             #Does the same thing as above, just with the different word configuration
+=======
+            except:
+                theme = line[1]
+        else:
+>>>>>>> 2ffec3b9a4aa0d93c978202330d5c093195be253
             try:
                 if(line[line.index('theme') + 1] == line[line.index('was') - 1]):
                     theme = line[line.index('theme') + 1]
