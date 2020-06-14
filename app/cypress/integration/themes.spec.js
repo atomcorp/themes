@@ -83,7 +83,7 @@ describe('Windows Terminal Themes - big screen', function () {
   it('should be able to select a new theme', function () {
     cy.get('@darkThemes').then((themes) => {
       // assuming we start off dark
-      let currentTheme = themes[0];
+      const currentTheme = themes[0];
       cy.findByLabelText('Select theme').should(
         'have.value',
         currentTheme.name
@@ -107,7 +107,7 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByLabelText(/Light/).click({force: true});
       cy.findByLabelText(/Light/).should('be.checked');
       // always the first is selected
-      let currentTheme = themes[0];
+      const currentTheme = themes[0];
       cy.findByLabelText('Select theme').should(
         'have.value',
         currentTheme.name

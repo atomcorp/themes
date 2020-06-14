@@ -21,7 +21,7 @@
   },
   "plugins": ["@typescript-eslint/eslint-plugin"],
   "rules": {
-    "prettier/prettier": "warning",
+    "prettier/prettier": 1,
     "quotes": [1, "single", {"avoidEscape": true}],
     "arrow-parens": 1,
     "new-cap": 0,
@@ -35,5 +35,10 @@
         "allowTypedFunctionExpressions": true
       }
     ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
