@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const themes = require('themes.json');
+const themes = require('C:\\Users\\Andrey\\source\\repos\\themes\\server\\themes.json');
 const themenames = themes.map((theme) => theme.name);
 const buffer = fs.readFileSync('Credits/README.md');
 const markdownCredits = buffer.toString();
