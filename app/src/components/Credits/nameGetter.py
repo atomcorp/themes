@@ -67,7 +67,13 @@ for i in range(creditsTitle + 4, endOfCredits):
             if(line[line.index('by') + 1] == 'the'):
                 continue
             else:
-                credit = line[line.index('by') + 1]
+                try:
+                    if (line[line.index('[')] != line[line.index('[') + 1]):
+                        credit = line[line.index('[')] + ' ' + line[line.index('[') + 1]
+                    else:
+                        credit = line[line.index('[')]
+                except:
+                    credit = line[line.index('by') + 1]
         except:
             continue
 
@@ -77,5 +83,4 @@ for i in range(creditsTitle + 4, endOfCredits):
         })
 
 json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
-print(json)
 infoFile.write(json)

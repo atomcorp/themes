@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-const themes = require('Credits/namesAndThemes.json');
+const themes = require('C:\\Users\\Andrey\source\\repos\\themes\\server\\themes.json');
 const themenames = themes.map((theme) => theme.name);
-const buffer = fs.readFileSync('Credits\README.md');
+const buffer = fs.readFileSync('Credits/README.md');
 const markdownCredits = buffer.toString();
 
 const credits = themenames.map((themename) => {
@@ -13,4 +13,4 @@ const credits = themenames.map((themename) => {
   };
 });
 
-fs.writeFileSync('Credits\namesAndThemes.json', JSON.stringify(credits, null, 2));
+fs.writeFileSync('Credits/namesAndThemes.json', JSON.stringify(credits, null, 2));
