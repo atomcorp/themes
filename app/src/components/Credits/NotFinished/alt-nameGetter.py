@@ -1,4 +1,5 @@
 import json
+import re
 
 #Opens the original file
 names = open(r'C:\Users\Andrey\source\repos\iTerm2-Color-Schemes\README.md')
@@ -12,27 +13,46 @@ infoFile.close()
 #Reopens the file to write the output
 infoFile = open(r'C:\Users\Andrey\source\repos\themes\app\src\components\Credits\namesAndThemes.json', 'at')
 
-#Declares variables for parsing
+#Declares variables and files for parsing
+creditsStart = 0
+creditsEnd = 0
 namesAndCreators = {}
 namesAndCreators['Credits'] = []
+_OGThemes = open(r'C:\Users\Andrey\source\repos\themes\server\themes.json')
+OGThemes = json.load(_OGThemes)
 themes = []
 
-for i in range(len(namesList)):
-    line = namesList[i].split()
-    addend = ''
-
-    try:
-        if (line[0] == '###'):
-            for e in range(1, len(line) - 1):
-                addend += line[e] + ' '
-    except:
-        continue
-
-    if (addend != ''):
-        themes.append(addend)
-    
+for i in range(len(OGThemes)):
+    OGTheme = OGThemes[i]
+    themes.append(OGTheme['name'])
 
 print(themes)
 
+for i in range(len(namesList)):
+    if(namesList[i] == '## Credits'):
+        creditsStart = i
+
+    if(namesList[i] == 'If there are other color schemes you\'d like to see included, drop me a line!'):
+        creditsEnd = i
+    
+print(str(creditsStart) + ' ' + str(creditsEnd))
+
+for i in range(creditsStart, creditsEnd):
+    line = namesList[i]
+    print(line)
+
+    for e in range(len(themes)):
+        whatToFind = "^" + themes[e] + "$"
+        themeName = re.search(whatToFind, line)
+
+        if (themeName):
+            namesAndCreators.append({
+                "name": themeName.string(),
+                "note": line
+            })
+        else:
+            continue
+
+print(namesAndCreators)
 json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
 infoFile.write(json)
