@@ -46,8 +46,8 @@ for i in range(creditsStart, creditsEnd):
         themeName = re.search(whatToFind, line)
 
         namesAndCreators.append({
-            "name": themeName.string() if themeName else 'Not Found',
-            "note": line
+            "name": themes[e],
+            "note": line if themeName else 'Not Found'
         })
 
 print(namesAndCreators)
