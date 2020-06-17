@@ -45,13 +45,10 @@ for i in range(creditsStart, creditsEnd):
         whatToFind = "^" + themes[e] + "$"
         themeName = re.search(whatToFind, line)
 
-        if (themeName):
-            namesAndCreators.append({
-                "name": themeName.string(),
-                "note": line
-            })
-        else:
-            continue
+        namesAndCreators.append({
+            "name": themeName.string() if themeName else 'Not Found',
+            "note": line
+        })
 
 print(namesAndCreators)
 json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
