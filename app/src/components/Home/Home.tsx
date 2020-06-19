@@ -14,7 +14,7 @@ import {
   screenSizeObserver,
   returnInitialTheme,
 } from './homeMethods';
-import {themeType} from 'types';
+import {themeType, actionTypes} from 'types';
 import {Console, Colours, Dark, Light} from 'Icons';
 
 type themeprops = {
@@ -24,7 +24,7 @@ type themeprops = {
 const stopSelectDetection = (
   e: KeyboardEvent,
   themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
-) => {
+): void => {
   if (
     themeselectRef.current != null &&
     document.activeElement === themeselectRef.current
@@ -37,7 +37,7 @@ const stopSelectDetection = (
 };
 
 const shortcuts = (
-  dispatch: React.Dispatch<any>,
+  dispatch: React.Dispatch<actionTypes>,
   themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
 ) => (e: KeyboardEvent) => {
   if (e.code === 'KeyA') {
@@ -54,7 +54,7 @@ const shortcuts = (
   }
 };
 
-const sampleColours = (theme: themeType | undefined) => {
+const sampleColours = (theme: themeType | undefined): string[] => {
   if (theme) {
     return [
       theme.red,
@@ -70,10 +70,12 @@ const sampleColours = (theme: themeType | undefined) => {
   return [];
 };
 
+// TODO: shadeValues & previewValues is really ugly
 const shadeValues = [
   {
     value: 'DARK',
     label: 'Dark',
+    // eslint-disable-next-line react/display-name
     icon: () => (
       <Dark
         size="18px"
@@ -86,6 +88,7 @@ const shadeValues = [
   {
     value: 'LIGHT',
     label: 'Light',
+    // eslint-disable-next-line react/display-name
     icon: () => (
       <Light
         size="18px"
@@ -101,6 +104,7 @@ const previewValues = [
   {
     value: 'console',
     label: 'Terminal',
+    // eslint-disable-next-line react/display-name
     icon: () => (
       <Console
         size="18px"
@@ -113,6 +117,7 @@ const previewValues = [
   {
     value: 'colour',
     label: 'Colours',
+    // eslint-disable-next-line react/display-name
     icon: () => (
       <Colours
         size="18px"
@@ -151,11 +156,12 @@ const Home: React.FC<themeprops> = (props) => {
   }, []);
   const theme = state.themes.find((theme) => theme.name === state.activeTheme);
   const themeNames = state.filteredThemes.map((theme) => theme.name);
-  const downloadAllThemes = () => {
+  const downloadAllThemes = (): void => {
     const themeBlob = new Blob(
       [
         JSON.stringify(
           props.themes.map((theme) => {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             const {isDark, ...rest} = theme;
             return rest;
           }),
@@ -170,7 +176,7 @@ const Home: React.FC<themeprops> = (props) => {
     saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
   };
 
-  const ThemeSelectContainer = () => (
+  const ThemeSelectContainer = (): JSX.Element => (
     <ThemeSelect
       themeNames={themeNames}
       dispatch={dispatch}
@@ -178,7 +184,7 @@ const Home: React.FC<themeprops> = (props) => {
       themeselectRef={themeselectRef}
     />
   );
-  const Toggles = () => (
+  const Toggles = (): JSX.Element => (
     <>
       <Toggle
         currentValue={state.themeShade}

@@ -23,12 +23,12 @@ type PropType = {
   Toggles: () => JSX.Element;
 };
 
-const Toolbar = (props: PropType) => {
+const Toolbar = (props: PropType): JSX.Element => {
   const {ThemeSelectContainer, Toggles} = props;
   return (
     <section className={css.container}>
       <a href="/themes" className={css.title}>
-        <Logo size="48px" colours={props.colours} />
+        <Logo size="48px" colours={props.colours} className={css.logo} />
         <h1>Windows Terminal Themes</h1>
       </a>
       {!props.isSmallScreenSize && (

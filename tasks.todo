@@ -13,6 +13,7 @@ Next:
   ☐ print out colours using canvas, will be easier to make responsive
   ☐ code refactor/tidy
   ☐ use service worker, to make a PWA
+  ✔ add percy css ignore to logo @done(20-06-19 19:21)
   
 After:
   ☐ Choose font
