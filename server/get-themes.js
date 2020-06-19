@@ -2,7 +2,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const got = require('got');
 const fs = require('fs');
-const customSchemaJson = 'require("../src/custom-colour-schemes.json")';
 const contrast = require('get-contrast');
 
 // whatever this mess means
@@ -22,8 +21,8 @@ const baseUrl =
   'https://api.github.com/repos/mbadolato/iTerm2-Color-Schemes/contents/windowsterminal/';
 // this will always get the freshest committed custom schemes
 const customSchemesUrl =
-  'https://api.github.com/repos/atomcorp/themes/contents/src/custom-colour-schemes.json';
-const devCustomSchemesUrl = 'http://localhost:3000/custom-colour-schemes.json';
+  'https://api.github.com/repos/atomcorp/themes/contents/app/src/custom-colour-schemes.json';
+// const devCustomSchemesUrl = 'http://localhost:3000/custom-colour-schemes.json';
 
 // add boolean whether the theme is a light or dark
 const assignColourType = (themes) => {
