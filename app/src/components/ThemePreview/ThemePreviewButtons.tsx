@@ -29,7 +29,7 @@ type ThemePreviewButtonsType = {
   themename: string;
 };
 
-const ThemePreviewButtons = (props: ThemePreviewButtonsType) => (
+const ThemePreviewButtons = (props: ThemePreviewButtonsType): JSX.Element => (
   <div className={css.buttons}>
     <ThemePreviewButton
       testid="copyButton"

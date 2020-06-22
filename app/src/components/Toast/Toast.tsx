@@ -9,7 +9,7 @@ type ToastType = {
   background: string;
 };
 
-const Toast = (props: ToastType) => (
+const Toast = (props: ToastType): JSX.Element => (
   <section className={`${css.container} ${props.isActive ? css.active : ''}`}>
     <div className={css.title}>{props.message}</div>
   </section>

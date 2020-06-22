@@ -3,6 +3,8 @@ import React from 'react';
 
 // components
 import More from 'components/More/More';
+import Toggles from 'components/Toggle/Toggles';
+import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 
 // utils
 import {Logo} from 'Icons';
@@ -19,12 +21,9 @@ type PropType = {
   colours: string[];
   isMoreOpen: boolean;
   isSmallScreenSize: boolean;
-  ThemeSelectContainer: () => JSX.Element;
-  Toggles: () => JSX.Element;
 };
 
 const Toolbar = (props: PropType): JSX.Element => {
-  const {ThemeSelectContainer, Toggles} = props;
   return (
     <section className={css.container}>
       <a href="/themes" className={css.title}>
@@ -33,12 +32,21 @@ const Toolbar = (props: PropType): JSX.Element => {
       </a>
       {!props.isSmallScreenSize && (
         <div className={css.select}>
-          <ThemeSelectContainer />
+          <ThemeSelect
+            themeNames={props.themeNames}
+            dispatch={props.dispatch}
+            activeTheme={props.activeTheme}
+            themeselectRef={props.themeselectRef}
+          />
         </div>
       )}
       {!props.isSmallScreenSize && (
         <div className={css.toggles}>
-          <Toggles />
+          <Toggles
+            themeShade={props.themeShade}
+            previewType={props.previewType}
+            dispatch={props.dispatch}
+          />
         </div>
       )}
       <div className={css.more}>

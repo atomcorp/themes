@@ -56,7 +56,7 @@ const cssvarLight: cssvarType = {
   '--overlay-background': 'rgba(230, 230, 230, 0.48)',
 };
 
-const setcolours = (type: shadeType) => {
+const setcolours = (type: shadeType): void => {
   Object.entries(type === 'LIGHT' ? cssvarLight : cssvarDark).forEach(
     ([key, val]) => {
       root.style.setProperty(key, val);

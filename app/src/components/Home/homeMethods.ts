@@ -115,7 +115,6 @@ export const homeReducer = (
             (theme: themeType) => theme.name === action.initialTheme
           );
           if (foundTheme != null) {
-            console.log(foundTheme);
             draftState.filteredThemes = action.themes.filter(
               (theme: themeType) => theme.isDark === foundTheme.isDark
             );

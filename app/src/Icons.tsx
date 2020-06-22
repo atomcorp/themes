@@ -9,7 +9,7 @@ type IconProps = {
   direction?: 'up' | 'down' | 'left' | 'right';
 };
 
-export const Share = (props: IconProps) => (
+export const Share = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '18px'}
@@ -32,7 +32,7 @@ export const Share = (props: IconProps) => (
   </svg>
 );
 
-export const Copy = (props: IconProps) => (
+export const Copy = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '18px'}
@@ -54,7 +54,7 @@ export const Copy = (props: IconProps) => (
   </svg>
 );
 
-export const Download = (props: IconProps) => (
+export const Download = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -72,7 +72,7 @@ export const Download = (props: IconProps) => (
   </svg>
 );
 
-export const Light = (props: IconProps) => (
+export const Light = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -94,7 +94,7 @@ export const Light = (props: IconProps) => (
   </svg>
 );
 
-export const Dark = (props: IconProps) => (
+export const Dark = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -116,7 +116,7 @@ export const Dark = (props: IconProps) => (
   </svg>
 );
 
-export const Colours = (props: IconProps) => (
+export const Colours = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -138,7 +138,7 @@ export const Colours = (props: IconProps) => (
   </svg>
 );
 
-export const Console = (props: IconProps) => (
+export const Console = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -160,7 +160,7 @@ export const Console = (props: IconProps) => (
   </svg>
 );
 
-export const Github = (props: IconProps) => (
+export const Github = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -181,7 +181,7 @@ export const Github = (props: IconProps) => (
   </svg>
 );
 
-export const Help = (props: IconProps) => (
+export const Help = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -202,7 +202,7 @@ export const Help = (props: IconProps) => (
   </svg>
 );
 
-export const Arrow = (props: IconProps) => (
+export const Arrow = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -225,7 +225,7 @@ export const Arrow = (props: IconProps) => (
   </svg>
 );
 
-const iterateColours = (arr: string[], index: number) => {
+const iterateColours = (arr: string[], index: number): string => {
   if (index === 0) {
     return [...arr, arr[0]].join(';');
   }
@@ -238,7 +238,7 @@ type LogoType = {
   colours: string[];
 };
 
-export const Logo = (props: IconProps & LogoType) => (
+export const Logo = (props: IconProps & LogoType): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}
@@ -253,20 +253,22 @@ export const Logo = (props: IconProps & LogoType) => (
   >
     <defs>
       <linearGradient id="logo-gradient" x2="0.35" y2="1">
-        {props.colours.map((colour: string, i, originalArr) => (
-          <stop
-            key={i}
-            offset={`${Math.floor((i / (originalArr.length - 1)) * 100)}%`}
-            stopColor={colour}
-          >
-            <animate
-              attributeName="stop-color"
-              values={iterateColours(originalArr, i)}
-              dur="4s"
-              repeatCount="indefinite"
-            ></animate>
-          </stop>
-        ))}
+        {props.colours.map(
+          (colour: string, i, originalArr): JSX.Element => (
+            <stop
+              key={i}
+              offset={`${Math.floor((i / (originalArr.length - 1)) * 100)}%`}
+              stopColor={colour}
+            >
+              <animate
+                attributeName="stop-color"
+                values={iterateColours(originalArr, i)}
+                dur="4s"
+                repeatCount="indefinite"
+              ></animate>
+            </stop>
+          )
+        )}
       </linearGradient>
     </defs>
     <path
@@ -280,7 +282,7 @@ export const Logo = (props: IconProps & LogoType) => (
   </svg>
 );
 
-export const Chevron = (props: IconProps) => (
+export const Chevron = (props: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     height={props.size || '24px'}

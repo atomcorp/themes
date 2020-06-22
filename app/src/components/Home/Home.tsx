@@ -4,8 +4,6 @@ import {saveAs} from 'file-saver';
 import ThemePreview from 'components/ThemePreview/ThemePreview';
 import Toolbar from 'components/Toolbar/Toolbar';
 import MoreContent from 'components/More/MoreContent';
-import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
-import Toggle from 'components/Toggle/Toggle';
 
 import css from './Home.module.css';
 import {
@@ -15,7 +13,6 @@ import {
   returnInitialTheme,
 } from './homeMethods';
 import {themeType, actionTypes} from 'types';
-import {Console, Colours, Dark, Light} from 'Icons';
 
 type themeprops = {
   themes: themeType[];
@@ -70,65 +67,6 @@ const sampleColours = (theme: themeType | undefined): string[] => {
   return [];
 };
 
-// TODO: shadeValues & previewValues is really ugly
-const shadeValues = [
-  {
-    value: 'DARK',
-    label: 'Dark',
-    // eslint-disable-next-line react/display-name
-    icon: () => (
-      <Dark
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-  {
-    value: 'LIGHT',
-    label: 'Light',
-    // eslint-disable-next-line react/display-name
-    icon: () => (
-      <Light
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-];
-
-const previewValues = [
-  {
-    value: 'console',
-    label: 'Terminal',
-    // eslint-disable-next-line react/display-name
-    icon: () => (
-      <Console
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-  {
-    value: 'colour',
-    label: 'Colours',
-    // eslint-disable-next-line react/display-name
-    icon: () => (
-      <Colours
-        size="18px"
-        colour={document.documentElement.style.getPropertyValue(
-          '--toolbar__color'
-        )}
-      />
-    ),
-  },
-];
-
 const Home: React.FC<themeprops> = (props) => {
   const themeselectRef = useRef(null);
   const [state, dispatch] = useReducer(homeReducer, {
@@ -175,31 +113,6 @@ const Home: React.FC<themeprops> = (props) => {
     );
     saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
   };
-
-  const ThemeSelectContainer = (): JSX.Element => (
-    <ThemeSelect
-      themeNames={themeNames}
-      dispatch={dispatch}
-      activeTheme={state.activeTheme}
-      themeselectRef={themeselectRef}
-    />
-  );
-  const Toggles = (): JSX.Element => (
-    <>
-      <Toggle
-        currentValue={state.themeShade}
-        dispatch={dispatch}
-        type="SHADE"
-        values={shadeValues}
-      />
-      <Toggle
-        currentValue={state.previewType}
-        dispatch={dispatch}
-        type="PREVIEW"
-        values={previewValues}
-      />
-    </>
-  );
   const stringyTheme = theme != null ? JSON.stringify(theme) : null;
   const colours = useMemo(() => {
     // idk, this seems dumb but Dan says it's fine
@@ -223,8 +136,6 @@ const Home: React.FC<themeprops> = (props) => {
         colours={colours}
         isMoreOpen={state.isMoreOpen}
         isSmallScreenSize={state.isSmallScreenSize}
-        ThemeSelectContainer={ThemeSelectContainer}
-        Toggles={Toggles}
       />
       <section className={css.content}>
         <MoreContent
@@ -233,13 +144,16 @@ const Home: React.FC<themeprops> = (props) => {
           dispatch={dispatch}
         />
         <ThemePreview
+          dispatch={dispatch}
+          themeShade={state.themeShade}
           previewType={state.previewType}
           theme={theme}
           primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
           isSmallScreenSize={state.isSmallScreenSize}
-          ThemeSelectContainer={ThemeSelectContainer}
-          Toggles={Toggles}
+          activeTheme={state.activeTheme}
+          themeNames={themeNames}
+          themeselectRef={themeselectRef}
         />
       </section>
     </section>

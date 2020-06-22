@@ -11,7 +11,7 @@ type MoreType = {
 };
 
 // https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html
-const Info = (props: MoreType) => {
+const Info = (props: MoreType): JSX.Element => {
   return (
     <section>
       <button

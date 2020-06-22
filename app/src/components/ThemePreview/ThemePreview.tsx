@@ -9,6 +9,10 @@ import css from './ThemePreview.module.css';
 import {parseValidKeys} from './consoleMethods';
 import Toast from 'components/Toast/Toast';
 import ThemePreviewButtons from './ThemePreviewButtons';
+import Toggles from 'components/Toggle/Toggles';
+import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
+
+import {actionTypes, themeShadeType} from 'types';
 
 type PropsType = {
   theme?: themeType;
@@ -16,8 +20,11 @@ type PropsType = {
   backgroundColour: string;
   previewType: previewType;
   isSmallScreenSize: boolean;
-  ThemeSelectContainer: () => JSX.Element;
-  Toggles: () => JSX.Element;
+  themeShade: themeShadeType;
+  dispatch: React.Dispatch<actionTypes>;
+  themeNames: string[];
+  activeTheme: string;
+  themeselectRef: React.MutableRefObject<null | HTMLSelectElement>;
 };
 
 type reducerType = {
@@ -47,7 +54,7 @@ const initialState = {
   message: 'A message to be written here for me',
 };
 
-const reducer = (state: reducerType, action: actionType) => {
+const reducer = (state: reducerType, action: actionType): reducerType => {
   return immer(state, (draftState: reducerType) => {
     switch (action.type) {
       case 'show':
@@ -63,7 +70,6 @@ const reducer = (state: reducerType, action: actionType) => {
 
 const ThemePreview: React.FC<PropsType> = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const {ThemeSelectContainer, Toggles} = props;
   if (!props.theme) {
     return (
       <div
@@ -72,7 +78,7 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       ></div>
     );
   }
-  const handleCopy = () => {
+  const handleCopy = (): void => {
     if (!state.isActive && props.theme) {
       dispatch({
         type: 'show',
@@ -85,7 +91,7 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       }, 1000);
     }
   };
-  const handleShare = () => {
+  const handleShare = (): void => {
     if (!state.isActive && props.theme) {
       dispatch({
         type: 'show',
@@ -106,7 +112,11 @@ const ThemePreview: React.FC<PropsType> = (props) => {
     <section className={css.container}>
       {props.isSmallScreenSize && (
         <div className={css.toggles}>
-          <Toggles />
+          <Toggles
+            themeShade={props.themeShade}
+            previewType={props.previewType}
+            dispatch={props.dispatch}
+          />
         </div>
       )}
       {props.previewType === 'colour' ? (
@@ -116,7 +126,12 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       )}
       {props.isSmallScreenSize && (
         <div className={css.select}>
-          <ThemeSelectContainer />
+          <ThemeSelect
+            themeNames={props.themeNames}
+            dispatch={props.dispatch}
+            activeTheme={props.activeTheme}
+            themeselectRef={props.themeselectRef}
+          />
         </div>
       )}
       <ThemePreviewButtons

@@ -3,7 +3,10 @@ import React from 'react';
 import {validKeys} from 'components/ThemePreview/consoleMethods';
 import {themeType, textKeyType} from 'types';
 
-export const parseSyntax = (theme: themeType, markup: string) => {
+export const parseSyntax = (
+  theme: themeType,
+  markup: string
+): (string | JSX.Element)[] => {
   const throwErrors =
     process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test';
   return markup.split(/(<[^/>]+?>[^<]+<[^>]+?>)/g).map((string, i) => {
