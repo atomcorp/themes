@@ -14,6 +14,10 @@ Next:
   ☐ code refactor/tidy
   ☐ use service worker, to make a PWA
   ✔ add percy css ignore to logo @done(20-06-19 19:21)
+  ☐ instead of the lame dropdown, all the info should be below the fold of the app
+    you scroll down and can see it all
+  ☐ make focus outline consistent colours
+    title, info, terminal tabs
   
 After:
   ☐ Choose font
