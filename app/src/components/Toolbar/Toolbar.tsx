@@ -2,7 +2,6 @@
 import React from 'react';
 
 // components
-import More from 'components/More/More';
 import Toggles from 'components/Toggle/Toggles';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
 
@@ -49,9 +48,6 @@ const Toolbar = (props: PropType): JSX.Element => {
           />
         </div>
       )}
-      <div className={css.more}>
-        <More isMoreOpen={props.isMoreOpen} dispatch={props.dispatch} />
-      </div>
     </section>
   );
 };

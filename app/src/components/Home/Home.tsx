@@ -138,11 +138,6 @@ const Home: React.FC<themeprops> = (props) => {
         isSmallScreenSize={state.isSmallScreenSize}
       />
       <section className={css.content}>
-        <MoreContent
-          downloadAllThemes={downloadAllThemes}
-          isMoreOpen={state.isMoreOpen}
-          dispatch={dispatch}
-        />
         <ThemePreview
           dispatch={dispatch}
           themeShade={state.themeShade}
@@ -154,6 +149,13 @@ const Home: React.FC<themeprops> = (props) => {
           activeTheme={state.activeTheme}
           themeNames={themeNames}
           themeselectRef={themeselectRef}
+        />
+      </section>
+      <section className={css.footer}>
+        <MoreContent
+          downloadAllThemes={downloadAllThemes}
+          isMoreOpen={true}
+          dispatch={dispatch}
         />
       </section>
     </section>
