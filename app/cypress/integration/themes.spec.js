@@ -332,7 +332,7 @@ describe('Menu dropdown', function () {
   });
 });
 
-describe('screenshot the app', function () {
+describe('Visual regression', function () {
   it('should snap', function () {
     // cy.viewport(1920, 1080);
     cy.visit('/themes');
@@ -384,7 +384,7 @@ describe('screenshot the app', function () {
   });
 });
 
-describe('keyboard navigation', function () {
+describe('Keyboard navigation', function () {
   beforeEach(function () {
     cy.server();
     cy.route(/api\/v1\/themes/).as('themes');
