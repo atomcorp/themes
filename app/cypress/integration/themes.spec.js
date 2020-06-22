@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 /// <reference types="cypress" />
 
 import '@testing-library/cypress/add-commands';
@@ -380,5 +381,49 @@ describe('screenshot the app', function () {
     cy.percyResponsiveSnapshot('mobile: toggle theme preview', 375, 667);
     cy.findByLabelText(/Dark/).click({force: true});
     cy.percyResponsiveSnapshot('mobile: toggle dark themes', 375, 667);
+  });
+});
+
+describe('keyboard navigation', function () {
+  beforeEach(function () {
+    cy.server();
+    cy.route(/api\/v1\/themes/).as('themes');
+    cy.visit('/themes');
+    cy.wait('@themes').then((xhr) => {
+      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+        'darkThemes'
+      );
+      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+        'lightThemes'
+      );
+    });
+    cy.findByText('Loading...').should('not.be.visible');
+  });
+  it('should select next/previous with keyboard [A] and [D]', function () {
+    cy.viewport(1024, 780);
+    cy.visit('/themes');
+    cy.findByText('Loading...').should('not.be.visible');
+    cy.get('@darkThemes').then((themes) => {
+      // assuming we start off dark
+      const currentTheme = themes[0];
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        currentTheme.name
+      );
+      // let's select next 3 times
+      cy.get('body').type('ddd');
+      // should be 3 further
+      cy.findByLabelText('Select theme').should('have.value', themes[3].name);
+      cy.get('body').type('aaaaa');
+      cy.findByLabelText('Select theme').should(
+        'have.value',
+        themes[themes.length - 2].name
+      );
+      cy.get('body').type('DDDDdDDDDDDdD');
+      cy.findByLabelText('Select theme').should('have.value', themes[11].name);
+      // type anything else, shouldn't change theme
+      cy.get('body').type("qwertyuiopsfghkjlzxcvbnm,./;'123456778890-=");
+      cy.findByLabelText('Select theme').should('have.value', themes[11].name);
+    });
   });
 });
