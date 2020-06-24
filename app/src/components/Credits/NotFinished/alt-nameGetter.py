@@ -1,5 +1,4 @@
 import json
-import re
 
 #Opens the original file
 names = open(r'app\src\components\Credits\README.md')
@@ -35,15 +34,20 @@ for i in range(len(namesList)):
 
 for i in range(creditsStart, creditsEnd):
     line = namesList[i]
+    lineWords = line.split()
 
-    for e in range(len(themes)):
-        whatToFind = "^" + themes[e] + "$"
-        themeName = re.search(whatToFind, line)
+    for a in range(len(lineWords)):
+        for e in range(len(themes)):
+            if (lineWords[a] == themes[e]):
+                note = line
 
-        namesAndCreators['Credits'].append({
-            "name": themes[e],
-            "note": line if themeName else 'Not Found'
-        })
+                themeObj = {
+                    "name": themes[e],
+                    "note": line
+                }
+                namesAndCreators['Credits'].append(themeObj)
+
+                print(themeObj)
 
 json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
 infoFile.write(json)
