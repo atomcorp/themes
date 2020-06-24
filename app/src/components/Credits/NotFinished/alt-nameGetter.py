@@ -2,23 +2,23 @@ import json
 import re
 
 #Opens the original file
-names = open(r'C:\Users\Andrey\source\repos\iTerm2-Color-Schemes\README.md')
+names = open(r'app\src\components\Credits\README.md')
 namesText = names.read()
 namesList = namesText.split('\n')
 
 #Opens the file and resets to a blank line
-infoFile = open(r'C:\Users\Andrey\source\repos\themes\app\src\components\Credits\namesAndThemes.json', 'wt')
+infoFile = open(r'app\src\components\Credits\namesAndThemes.json', 'wt')
 infoFile.write('')
 infoFile.close()
 #Reopens the file to write the output
-infoFile = open(r'C:\Users\Andrey\source\repos\themes\app\src\components\Credits\namesAndThemes.json', 'at')
+infoFile = open(r'app\src\components\Credits\namesAndThemes.json', 'at')
 
 #Declares variables and files for parsing
 creditsStart = 0
 creditsEnd = 0
 namesAndCreators = {}
 namesAndCreators['Credits'] = []
-_OGThemes = open(r'C:\Users\Andrey\source\repos\themes\server\themes.json')
+_OGThemes = open(r'server\themes.json')
 OGThemes = json.load(_OGThemes)
 themes = []
 
