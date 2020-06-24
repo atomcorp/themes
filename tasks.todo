@@ -16,7 +16,7 @@ Next:
   ✔ add percy css ignore to logo @done(20-06-19 19:21)
   ☐ instead of the lame dropdown, all the info should be below the fold of the app
     you scroll down and can see it all
-  ☐ make focus outline consistent colours
+  ✔ make focus outline consistent colours @done(20-06-24 09:47)
     title, info, terminal tabs
   
 After:

@@ -41,13 +41,19 @@
 }
 
 .tab input:focus + label span {
-  outline: 1px dotted;
+  box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
+  outline: 0;
 }
 
 .tab label {
   cursor: pointer;
-  padding: 10px;
+  padding: 3px;
   display: block;
+}
+
+.tab label span {
+  display: block;
+  padding: 7px;
 }
 
 .tab:hover {
