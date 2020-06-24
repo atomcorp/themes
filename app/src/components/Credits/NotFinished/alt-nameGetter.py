@@ -26,30 +26,24 @@ for i in range(len(OGThemes)):
     OGTheme = OGThemes[i]
     themes.append(OGTheme['name'])
 
-print(themes)
-
 for i in range(len(namesList)):
     if(namesList[i] == '## Credits'):
         creditsStart = i
 
     if(namesList[i] == 'If there are other color schemes you\'d like to see included, drop me a line!'):
         creditsEnd = i
-    
-print(str(creditsStart) + ' ' + str(creditsEnd))
 
 for i in range(creditsStart, creditsEnd):
     line = namesList[i]
-    print(line)
 
     for e in range(len(themes)):
         whatToFind = "^" + themes[e] + "$"
         themeName = re.search(whatToFind, line)
 
-        namesAndCreators.append({
+        namesAndCreators['Credits'].append({
             "name": themes[e],
             "note": line if themeName else 'Not Found'
         })
 
-print(namesAndCreators)
 json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
 infoFile.write(json)
