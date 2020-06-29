@@ -1,6 +1,6 @@
 import json
 
-#Opens the original file
+#Opens the credits markdown file
 names = open(r'app\src\components\Credits\Credits.md')
 namesText = names.read()
 namesList = namesText.split('\n')
@@ -18,17 +18,16 @@ themeNamesBuffer = open(r'server\themes.json')
 OGThemes = json.load(themeNamesBuffer)
 themes = list(map(lambda x : x['name'], OGThemes))
 
-def credit(variable):
-    print(variable)
-
+def credit(r):
     for i in range(len(namesList)):
         line = namesList[i]
         lineWords = line.split()
 
         for e in range(len(lineWords)):
+          if (r.split()[0] == lineWords[e])
             return {
-                "name": variable,
-                "note": line if variable.split()[0] == lineWords[e] else # fix what to put here
+                "name": r,
+                "note": line
             }
 
 namesAndCreators['Credits'] = list(map(credit, themes))
