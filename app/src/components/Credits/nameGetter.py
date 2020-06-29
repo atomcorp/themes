@@ -15,36 +15,25 @@ themes = json.load(themesBuffer)
 #Finds a match for every theme name in the credits file
 #'r' is the current theme name
 def credit(r):
-    returnObj = {}
+    line = ''
 
     for i in range(len(namesList)):
-        line = namesList[i]
-        lineWords = line.split()
+        _line = namesList[i]
+        lineWords = _line.split()
 
         for e in range(len(lineWords)):
             try:
                 if (r['name'].split()[0] == lineWords[e] and r['name'].split()[1] == lineWords[e + 1]):
-                    returnObj =  {
-                        'name': r['name'],
-                        'note': line,
-                        'dark': r['isDark']
-                    }
+                    line = _line
             except:
                 if (r['name'].split()[0] == lineWords[e]):
-                    returnObj =  {
-                        'name': r['name'],
-                        'note': line,
-                        'dark': r['isDark']
-                    }
+                    line = _line
 
-        if (returnObj == {}):
-            returnObj = {
-                'name': r['name'],
-                'note': 'Not Found',
-                'dark': r['isDark']
-            }
-
-    return returnObj
+    return {
+        'name': r['name'],
+        'note': 'Not Found' if line == '' else line,
+        'dark': r['isDark']
+    }
 
 namesAndCreators['credits'] = list(map(credit, themes))
 
