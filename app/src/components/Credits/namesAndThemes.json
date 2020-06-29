@@ -1,0 +1,653 @@
+{
+    "Credits": [
+        {
+            "name": "3024 Day",
+            "note": "The 3024 Day and 3024 Night themes were created by [0x3024](https://github.com/0x3024)"
+        },
+        {
+            "name": "3024 Night",
+            "note": "The 3024 Day and 3024 Night themes were created by [0x3024](https://github.com/0x3024)"
+        },
+        null,
+        {
+            "name": "Afterglow",
+            "note": "The Afterglow theme was created by [yabatadesign](https://github.com/YabataDesign/afterglow-itermcolors)"
+        },
+        null,
+        {
+            "name": "Andromeda",
+            "note": "The Andromeda theme was created by [memije](https://github.com/memije) based on [EliverLara](https://github.com/EliverLara/)'s [Andromeda](https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda) VS Code theme."
+        },
+        {
+            "name": "Argonaut",
+            "note": "The Argonaut theme was created by [effkay](https://github.com/effkay/iTerm-argonaut)"
+        },
+        null,
+        {
+            "name": "AtelierSulphurpool",
+            "note": "The AtelierSulphurpool theme was created by [atelierbram](http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool/)"
+        },
+        {
+            "name": "Atom",
+            "note": "The DuoTone Dark theme was created by [chibicode](http://chibicode.com) based on [simurai](https://github.com/simurai)'s [duotone-dark](https://github.com/simurai/duotone-dark-syntax) Atom theme."
+        },
+        {
+            "name": "AtomOneLight",
+            "note": "The AtomOneLight theme was created by [iamstarkov](https://github.com/iamstarkov)"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+            "name": "Belafonte Day",
+            "note": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+        },
+        {
+            "name": "Belafonte Night",
+            "note": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+        },
+        null,
+        null,
+        {
+            "name": "Blue Matrix",
+            "note": "The Forest Blue theme was found [here](https://github.com/olkinn/forest-blue-iTerm)"
+        },
+        null,
+        null,
+        null,
+        {
+            "name": "Borland",
+            "note": "The Borland theme was created by [delip](https://gist.github.com/delip/9e16c606d9331d69d681)"
+        },
+        {
+            "name": "Breeze",
+            "note": "The Breeze theme was based on [the Breeze color scheme](https://github.com/KDE/konsole/blob/master/data/color-schemes/Breeze.colorscheme) by [KDE](https://kde.org) and ported to iTerm by [nieltg](https://github.com/nieltg)"
+        },
+        {
+            "name": "Bright Lights",
+            "note": "The Thayer Bright theme was found [here](https://github.com/t3chnoboy/thayer-bright-iTerm)"
+        },
+        {
+            "name": "Broadcast",
+            "note": "The Broadcast theme was created by [vinkla](https://github.com/vinkla/broadcast-theme)"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "name": "C64",
+            "note": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+        },
+        {
+            "name": "Calamity",
+            "note": "The Calamity theme was created by [Pustur](https://github.com/Pustur)"
+        },
+        {
+            "name": "Chalk",
+            "note": "The Chalk theme was created by [achalv](https://github.com/achalv/chalk)"
+        },
+        null,
+        {
+            "name": "ChallengerDeep",
+            "note": "The ChallengerDeep theme was found [here](https://github.com/challenger-deep-theme/vim) and ported to iTerm by [eendroroy](https://github.com/eendroroy)"
+        },
+        {
+            "name": "Chester",
+            "note": "The Chester theme was created by [KH](https://github.com/spectralkh)"
+        },
+        null,
+        {
+            "name": "CLRS",
+            "note": "The CLRS theme was created by [jasonlong](https://github.com/jasonlong/iterm-clrs)"
+        },
+        {
+            "name": "Cobalt Neon",
+            "note": "The Cobalt Neon theme was created by [vazquez](https://github.com/vazquez/cobalt-neon-iterm)"
+        },
+        {
+            "name": "Cobalt2",
+            "note": "The Cobalt2 theme was created by [wesbos](https://github.com/wesbos/Cobalt2-iterm)"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+            "name": "Dark Pastel",
+            "note": "The themes Solarized Dark and Solarized Light come from the official [Solarized web site](http://ethanschoonover.com/solarized)"
+        },
+        null,
+        {
+            "name": "Darkside",
+            "note": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
+        },
+        null,
+        null,
+        null,
+        {
+            "name": "Django",
+            "note": "The Django theme was created by [Jannis Leidel](https://code.djangoproject.com/wiki/TextMate). The original colors schemes were created by [threespot.com](https://threespot.com) for the Django Software Foundation"
+        },
+        {
+            "name": "DjangoRebornAgain",
+            "note": "The DjangoRebornAgain theme was created by [christopherscott](https://github.com/christopherscott/django-reborn) based on the original Django themes by [Jannis Leidel](https://code.djangoproject.com/wiki/TextMate)"
+        },
+        null,
+        null,
+        {
+            "name": "DotGov",
+            "note": "The DotGov theme was inspired by the color palette used in the [U.S. Web Design Standards](https://standards.usa.gov/visual-style/)"
+        },
+        {
+            "name": "Dracula",
+            "note": "The Dracula theme was created by [zenorocha](https://github.com/zenorocha/dracula-theme)"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+            "name": "Elementary",
+            "note": "The Elementary OS theme was created by [elementary.io](https://elementary.io/) and added by [987poiuytrewq](https://github.com/987poiuytrewq)"
+        },
+        {
+            "name": "ENCOM",
+            "note": "The ENCOM theme was created by [Josh Braun](http://wideaperture.net)"
+        },
+        {
+            "name": "Espresso",
+            "note": "The Espresso Libre theme was created by [jurgemaister](https://github.com/jurgemaister/Espresso-Libre)"
+        },
+        {
+            "name": "Espresso Libre",
+            "note": "The Espresso Libre theme was created by [jurgemaister](https://github.com/jurgemaister/Espresso-Libre)"
+        },
+        {
+            "name": "Fahrenheit",
+            "note": "The Fahrenheit theme was created by [jonascarpay](https://github.com/jonascarpay) based on [fcpg](https://github.com/fcpg)'s [vim-fahrenheit](https://github.com/fcpg/vim-fahrenheit) Vim theme."
+        },
+        {
+            "name": "Fideloper",
+            "note": "The Fideloper theme was inspired by [Fideloper](http://fideloper.com/)"
+        },
+        {
+            "name": "FirefoxDev",
+            "note": "The FirefoxDev theme was created by [Or3stis](https://github.com/Or3stis)"
+        },
+        {
+            "name": "Firewatch",
+            "note": "The Firewatch theme was created by [Sebastian Szturo](https://github.com/SebastianSzturo) as an [atom syntax theme](https://atom.io/themes/firewatch-syntax) and ported to an iTerm scheme by [Ben Styles](https://github.com/leeds-ebooks). It was originally inspired by the [Firewatch game](http://www.firewatchgame.com/)."
+        },
+        null,
+        {
+            "name": "Flat",
+            "note": "The Flat theme was created by [ahmetsulek](https://github.com/ahmetsulek/flat-terminal)"
+        },
+        {
+            "name": "Flatland",
+            "note": "The Flatland theme was created by [realchaseadams](http://www.snip2code.com/Snippet/148193/Flatland-color-scheme-for-iTerm2)"
+        },
+        {
+            "name": "Floraverse",
+            "note": "The Floraverse theme was created by [papayakitty](http://floraverse.com/)"
+        },
+        null,
+        {
+            "name": "Framer",
+            "note": "The Framer theme was created by [markogresak](https://github.com/markogresak) based on [Framer Syntax Theme](https://www.producthunt.com/posts/framer-syntax-theme) provided by [Framer](https://framer.com)."
+        },
+        null,
+        null,
+        {
+            "name": "Galaxy",
+            "note": "The Galaxy theme was created by [jglovier](https://github.com/jglovier/galaxy-theme-iterm)"
+        },
+        {
+            "name": "Github",
+            "note": "The scheme Github was inspired by the color theme palette used at [Github](https://github.com/) for their UI and in some of their mascot images."
+        },
+        {
+            "name": "Glacier",
+            "note": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
+        },
+        null,
+        null,
+        {
+            "name": "Gruvbox Dark",
+            "note": "The Gruvbox Dark theme was created by [morhetz](https://github.com/morhetz) and added by [mcchrish](https://github.com/mcchrish)"
+        },
+        null,
+        {
+            "name": "Hardcore",
+            "note": "The Hardcore theme was created by [hardcore](https://github.com/hardcore/iTerm-colors)"
+        },
+        {
+            "name": "Harper",
+            "note": "The Harper theme was created by [idleberg](https://github.com/idleberg/Harper-iTerm2)"
+        },
+        null,
+        {
+            "name": "Hipster Green",
+            "note": "The Hipster Green and Jackie Brown themes were created by [Unkulunkulu](https://github.com/Unkulunkulu)"
+        },
+        {
+            "name": "Hivacruz",
+            "note": "The Hivacruz theme was created by [Yann Defretin](https://github.com/kinoute/hivacruz-itermcolors)"
+        },
+        null,
+        {
+            "name": "Hopscotch",
+            "note": "The Hopscotch theme was created by [Jan T. Sott](https://github.com/idleberg/Hopscotch)"
+        },
+        null,
+        {
+            "name": "Hurtado",
+            "note": "The theme Hurtado was found [here](https://github.com/juanghurtado/dotfiles)."
+        },
+        {
+            "name": "Hybrid",
+            "note": "The Hybrid theme was found [here](https://gist.github.com/luan/6362811)"
+        },
+        null,
+        null,
+        null,
+        {
+            "name": "idleToes",
+            "note": "The scheme idleToes was inspired by the [idleFingers](http://www.idlefingers.co.uk/) TextMate theme and suggested for inclusion by Seth Wilson."
+        },
+        {
+            "name": "IR_Black",
+            "note": "The IR_Black theme was found [here](https://gist.github.com/meqif/1238378)"
+        },
+        {
+            "name": "Jackie Brown",
+            "note": "The Hipster Green and Jackie Brown themes were created by [Unkulunkulu](https://github.com/Unkulunkulu)"
+        },
+        {
+            "name": "Japanesque",
+            "note": "The Japanesque theme was created by [aereal](https://github.com/aereal/dotfiles/blob/master/colors/Japanesque/Japanesque.itermcolors)"
+        },
+        {
+            "name": "Jellybeans",
+            "note": "The Jellybeans theme was created by [qtpi](https://github.com/qtpi/Jellybeans.itermcolors)"
+        },
+        {
+            "name": "JetBrains Darcula",
+            "note": "The JetBrains Darcula theme was created by [vitstr](https://github.com/vitstr)"
+        },
+        null,
+        {
+            "name": "Kolorit",
+            "note": "The Kolorit theme was created by [thomaspaulmann](https://github.com/thomaspaulmann)"
+        },
+        null,
+        {
+            "name": "Lab Fox",
+            "note": "The Lab Fox theme was created by [theatlasroom](https://github.com/theatlasroom) inspired by the [Gitlab design system](https://design.gitlab.com)"
+        },
+        null,
+        {
+            "name": "Later This Evening",
+            "note": "The Later This Evening theme was created by [vilhalmer](https://github.com/vilhalmer/System/tree/master/terminal-themes)"
+        },
+        null,
+        {
+            "name": "LiquidCarbon",
+            "note": "The LiquidCarbon themes were created by [markcho](https://github.com/markcho/iTerm2_LiquidCarbon)"
+        },
+        null,
+        null,
+        null,
+        {
+            "name": "Man Page",
+            "note": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+        },
+        {
+            "name": "Material",
+            "note": "The Material and MaterialDark themes were created by [stoeffel](https://github.com/stoeffel/material-iterm)"
+        },
+        {
+            "name": "MaterialDark",
+            "note": "The Material and MaterialDark themes were created by [stoeffel](https://github.com/stoeffel/material-iterm)"
+        },
+        null,
+        {
+            "name": "MaterialOcean",
+            "note": "The MaterialOcean theme was found [here](https://github.com/kaicataldo/material.vim/blob/master/terminal-colors/iterm2/material-ocean.itermcolors) and was ported by [fr3fou](https://github.com/fr3fou)"
+        },
+        {
+            "name": "Mathias",
+            "note": "The theme Mathias was created by [mathiasbynens](https://github.com/mathiasbynens/dotfiles)"
+        },
+        null,
+        null,
+        {
+            "name": "Mirage",
+            "note": "The Mirage theme was created by [Tristan Remy](https://github.com/tristanremy/mirage) and ported to iTerm2 by [Gomah](https://github.com/Gomah/mirage-iterm)."
+        },
+        {
+            "name": "Misterioso",
+            "note": "The Misterioso theme was created by [flooose](https://github.com/flooose/misterioso-iterm2)"
+        },
+        {
+            "name": "Molokai",
+            "note": "The theme Molokai was based on the [vim colorscheme](https://github.com/tomasr/molokai) of the same name."
+        },
+        null,
+        {
+            "name": "Monokai Cmder",
+            "note": "The theme Monokai Soda was found [here](https://github.com/deepsweet/Monokai-Soda-iTerm)."
+        },
+        {
+            "name": "Monokai Remastered",
+            "note": "The theme Monokai Soda was found [here](https://github.com/deepsweet/Monokai-Soda-iTerm)."
+        },
+        {
+            "name": "Monokai Soda",
+            "note": "The theme Monokai Soda was found [here](https://github.com/deepsweet/Monokai-Soda-iTerm)."
+        },
+        {
+            "name": "Monokai Vivid",
+            "note": "The theme Monokai Soda was found [here](https://github.com/deepsweet/Monokai-Soda-iTerm)."
+        },
+        null,
+        {
+            "name": "Neopolitan",
+            "note": "The theme Neopolitan was created by [daytonn](https://github.com/daytonn/iTerm2-Color-Schemes)"
+        },
+        {
+            "name": "Neutron",
+            "note": "The Neutron theme was created by [Ch4s3](https://github.com/Ch4s3/iTerm2-Neutron)"
+        },
+        {
+            "name": "Night Owlish Light",
+            "note": "The Tomorrow Night Burns theme were created by [ashwinv11](https://github.com/ashwinv11/)"
+        },
+        {
+            "name": "NightLion v1",
+            "note": "The NightLion themes were created by [Curvve Media](http://www.curvve.com/blog/category/themes/)"
+        },
+        {
+            "name": "NightLion v2",
+            "note": "The NightLion themes were created by [Curvve Media](http://www.curvve.com/blog/category/themes/)"
+        },
+        {
+            "name": "Nocturnal Winter",
+            "note": "The Nocturnal Winter theme was created by [Shriram Balaji](https://github.com/Shriram-Balaji)"
+        },
+        null,
+        null,
+        {
+            "name": "Obsidian",
+            "note": "The Obsidian theme was on my hard drive and I don't recall where it came from. If anyone knows, ping me and I'll link back to the author(s)."
+        },
+        null,
+        {
+            "name": "OceanicMaterial",
+            "note": "The OceanicMaterial theme was created by [rahulpatel](https://github.com/rahulpatel)"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "name": "Operator Mono Dark",
+            "note": "The Operator Mono Dark was ported from [vharadkou](https://github.com/vharadkou/OperatorMonoDarkTheme) by [dreamyguy](https://github.com/dreamyguy/iterm-theme-operator-mono-dark)"
+        },
+        {
+            "name": "Pandora",
+            "note": "The Pandora theme was created by [milosmatic](https://github.com/milosmatic/Pandora-iterm)"
+        },
+        {
+            "name": "Paraiso Dark",
+            "note": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
+        },
+        null,
+        {
+            "name": "PaulMillr",
+            "note": "The PaulMillr theme was created by [paulmillr](https://github.com/paulmillr/dotfiles/tree/master/terminal) and ported to iTerm by me"
+        },
+        null,
+        null,
+        {
+            "name": "Piatto Light",
+            "note": "The Piatto Light theme was created by [kovv](https://github.com/kovv)"
+        },
+        null,
+        null,
+        {
+            "name": "Pro",
+            "note": "The Pro Light theme was adapted from the Pro theme by [crowsonkb](https://github.com/crowsonkb) using her [iterm_schemer](https://github.com/crowsonkb/iterm_schemer) tool."
+        },
+        {
+            "name": "Pro Light",
+            "note": "The Pro Light theme was adapted from the Pro theme by [crowsonkb](https://github.com/crowsonkb) using her [iterm_schemer](https://github.com/crowsonkb/iterm_schemer) tool."
+        },
+        {
+            "name": "Purple Rain",
+            "note": "The Shades Of Purple theme was found [here](https://github.com/ahmadawais/shades-of-purple-iterm2) and ported by [fr3fou](https://github.com/fr3fou)"
+        },
+        null,
+        null,
+        {
+            "name": "Red Alert",
+            "note": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+        },
+        {
+            "name": "Red Planet",
+            "note": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+        },
+        {
+            "name": "Red Sands",
+            "note": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+        },
+        null,
+        {
+            "name": "Rippedcasts",
+            "note": "The Rippedcasts theme was created by [mdw123](https://github.com/mdw123/rippedcasts)"
+        },
+        null,
+        {
+            "name": "Rouge 2",
+            "note": "The Rouge 2 theme was created by [Josef Aidt](https://github.com/josefaidt/rouge-theme) and ported to iTerm2 by [Sam Rose](https://github.com/samrose3)."
+        },
+        null,
+        {
+            "name": "Ryuuko",
+            "note": "The Ryuuko theme was created by [dylanaraps](https://github.com/dylanaraps) and added by [iandrewt](https://github.com/iandrewt)"
+        },
+        {
+            "name": "Sakura",
+            "note": "The theme Sakura was created by [0xN0ri](https://github.com/0xN0ri) based on [zdj](https://github.com/zdj) iTerm 2 color scheme [Urple](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Urple.itermcolors)"
+        },
+        {
+            "name": "Scarlet Protocol",
+            "note": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
+        },
+        null,
+        null,
+        {
+            "name": "Seti",
+            "note": "The Seti theme was created by [jesseweed](https://github.com/jesseweed/seti-syntax/) and ported to iTerm2 by [philduffy](https://github.com/willmanduffy/seti-iterm) and slightly modified to make the ANSI blacks have a little more contrast"
+        },
+        null,
+        null,
+        {
+            "name": "Slate",
+            "note": "The Slate theme was created by [deneshshan](https://github.com/deneshshan)"
+        },
+        null,
+        {
+            "name": "Smyck",
+            "note": "The Smyck theme was found [here](https://github.com/hukl/Smyck-Color-Scheme)"
+        },
+        null,
+        null,
+        {
+            "name": "Solarized Darcula",
+            "note": "The scheme Solarized Darcula was inspired by the color theme created by [@rickhanlonii](https://github.com/rickhanlonii). There are two screenshots below; one with a background and one without. The background image is included in the backgrounds/ directory and the image must be manually set on the profile's Preferences->Window tab. It's hard to see from the screenshot, but it looks great!"
+        },
+        {
+            "name": "Solarized Dark - Patched",
+            "note": "The scheme Solarized Darcula was inspired by the color theme created by [@rickhanlonii](https://github.com/rickhanlonii). There are two screenshots below; one with a background and one without. The background image is included in the backgrounds/ directory and the image must be manually set on the profile's Preferences->Window tab. It's hard to see from the screenshot, but it looks great!"
+        },
+        {
+            "name": "Solarized Dark Higher Contrast",
+            "note": "The scheme Solarized Darcula was inspired by the color theme created by [@rickhanlonii](https://github.com/rickhanlonii). There are two screenshots below; one with a background and one without. The background image is included in the backgrounds/ directory and the image must be manually set on the profile's Preferences->Window tab. It's hard to see from the screenshot, but it looks great!"
+        },
+        {
+            "name": "Spacedust",
+            "note": "The Spacedust theme was created by [mhallendal](https://github.com/mhallendal/spacedust-theme) and ported to iTerm by [Couto](https://github.com/Couto)"
+        },
+        {
+            "name": "SpaceGray",
+            "note": "The SpaceGray theme was created by [ryentzer](https://github.com/ryentzer/SpaceGray-iTerm)"
+        },
+        {
+            "name": "SpaceGray Eighties",
+            "note": "The SpaceGray theme was created by [ryentzer](https://github.com/ryentzer/SpaceGray-iTerm)"
+        },
+        {
+            "name": "SpaceGray Eighties Dull",
+            "note": "The SpaceGray theme was created by [ryentzer](https://github.com/ryentzer/SpaceGray-iTerm)"
+        },
+        null,
+        {
+            "name": "Spring",
+            "note": "The Spring theme was found [here](https://github.com/t3chnoboy/spring-iTerm)"
+        },
+        null,
+        {
+            "name": "Subliminal",
+            "note": "The theme Subliminal was created by [gdsrosa](https://github.com/gdsrosa/subliminal-itermcolors)"
+        },
+        null,
+        {
+            "name": "Symfonic",
+            "note": "The scheme Symfonic was inspired by the color scheme used in the [documentation](http://symfony.com/doc/current/book/index.html) for the [Symfony](http://www.symfony.com) PHP Framework."
+        },
+        {
+            "name": "synthwave",
+            "note": "The synthwave theme was created by [brettstil](https://github.com/brettstil/)"
+        },
+        null,
+        {
+            "name": "Tango Adapted",
+            "note": "The Tango Adapted theme and its slightly less bright counterpart Tango Half Adapted were created by [crowsonkb](https://github.com/crowsonkb), based on iTerm2's Tango Light theme."
+        },
+        {
+            "name": "Tango Half Adapted",
+            "note": "The Tango Adapted theme and its slightly less bright counterpart Tango Half Adapted were created by [crowsonkb](https://github.com/crowsonkb), based on iTerm2's Tango Light theme."
+        },
+        {
+            "name": "Teerb",
+            "note": "The Teerb theme was created by [Teerb](https://gist.github.com/teerb/1360453)"
+        },
+        {
+            "name": "Terminal Basic",
+            "note": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+        },
+        {
+            "name": "Thayer Bright",
+            "note": "The Thayer Bright theme was found [here](https://github.com/t3chnoboy/thayer-bright-iTerm)"
+        },
+        {
+            "name": "The Hulk",
+            "note": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+        },
+        null,
+        null,
+        {
+            "name": "Tomorrow",
+            "note": "The Tomorrow themes were created by [chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)"
+        },
+        {
+            "name": "Tomorrow Night",
+            "note": "The Tomorrow themes were created by [chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)"
+        },
+        {
+            "name": "Tomorrow Night Blue",
+            "note": "The Tomorrow themes were created by [chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)"
+        },
+        {
+            "name": "Tomorrow Night Bright",
+            "note": "The Tomorrow themes were created by [chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)"
+        },
+        {
+            "name": "Tomorrow Night Burns",
+            "note": "The Tomorrow themes were created by [chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)"
+        },
+        {
+            "name": "Tomorrow Night Eighties",
+            "note": "The Tomorrow themes were created by [chriskempson](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)"
+        },
+        null,
+        null,
+        {
+            "name": "Twilight",
+            "note": "The Twilight theme was created by [stefri](https://gist.github.com/stefri/1183140)"
+        },
+        {
+            "name": "Ubuntu",
+            "note": "The Ubuntu theme was inspired by default Ubuntu's console colors. Created by [Maximus](http://superuser.com/questions/497240/ubuntu-purple-terminal-colors-in-conemu) and ported to iTerm2 by [stepin](https://github.com/stepin)."
+        },
+        null,
+        null,
+        {
+            "name": "Unikitty",
+            "note": "The Unikitty theme was created by [jakebathman](https://github.com/jakebathman)"
+        },
+        {
+            "name": "Urple",
+            "note": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+        },
+        null,
+        {
+            "name": "VibrantInk",
+            "note": "The VibrantInk theme was created by [asanghi](https://github.com/asanghi/vibrantinklion)"
+        },
+        {
+            "name": "Violet Dark",
+            "note": "The scheme Violet was created by [ashfinal](https://github.com/ashfinal/vim-colors-violet)."
+        },
+        {
+            "name": "Violet Light",
+            "note": "The scheme Violet was created by [ashfinal](https://github.com/ashfinal/vim-colors-violet)."
+        },
+        {
+            "name": "WarmNeon",
+            "note": "The WarmNeon theme was ported from [PyCharm](http://www.jetbrains.com/pycharm/) by [firewut](https://github.com/firewut)"
+        },
+        {
+            "name": "Wez",
+            "note": "The Wez theme was created by [wez](https://gist.github.com/wez/850268/)"
+        },
+        {
+            "name": "Whimsy",
+            "note": "The Whimsy theme was created by [Rod](https://github.com/rod)"
+        },
+        {
+            "name": "WildCherry",
+            "note": "The WildCherry theme was created by [mashaal](https://github.com/mashaal/wild-cherry)"
+        },
+        {
+            "name": "Wombat",
+            "note": "The Wombat theme was created by [djoyner](https://github.com/djoyner/iTerm2-wombat)"
+        },
+        {
+            "name": "Wryan",
+            "note": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
+        },
+        {
+            "name": "Zenburn",
+            "note": "The scheme Zenburn was inspired by the [Zenburn](http://sunaku.github.io/zenburn-terminal-color-scheme.html) version created by Suraj N. Kurapati."
+        }
+    ]
+}

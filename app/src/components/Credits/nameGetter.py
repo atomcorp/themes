@@ -17,45 +17,21 @@ namesAndCreators = {}
 themeNamesBuffer = open(r'server\themes.json')
 OGThemes = json.load(themeNamesBuffer)
 themes = list(map(lambda x : x['name'], OGThemes))
-print(themes)
 
 def credit(variable):
+    print(variable)
+
     for i in range(len(namesList)):
         line = namesList[i]
         lineWords = line.split()
-        print(lineWords)
 
         for e in range(len(lineWords)):
-            if (lineWords[e] == variable):
-                return {
-                    "name": variable,
-                    "note": line
-                }
-
-            '''
             return {
                 "name": variable,
-                "note": line if lineWords[e] == variable else 'Not Found'
+                "note": line if variable.split()[0] == lineWords[e] else # fix what to put here
             }
-            '''
 
 namesAndCreators['Credits'] = list(map(credit, themes))
-
-'''
-for i in range(len(namesList)):
-    line = namesList[i]
-    lineWords = line.split()
-
-    for a in range(len(lineWords)):
-        for e in range(len(themes)):
-            if (lineWords[a] == themes[e]):
-
-                themeObj = {
-                    "name": themes[e],
-                    "note": line
-                }
-                namesAndCreators['Credits'].append(themeObj)
-'''
 
 json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
 infoFile.write(json)
