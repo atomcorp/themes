@@ -39,15 +39,13 @@ for i in range(creditsStart, creditsEnd):
     for a in range(len(lineWords)):
         for e in range(len(themes)):
             if (lineWords[a] == themes[e]):
-                note = line
+                print(str(lineWords) + ': ' + themes[e])
 
                 themeObj = {
                     "name": themes[e],
                     "note": line
                 }
                 namesAndCreators['Credits'].append(themeObj)
-
-                print(themeObj)
 
 json = json.dumps(namesAndCreators, indent = 4, sort_keys = True)
 infoFile.write(json)
