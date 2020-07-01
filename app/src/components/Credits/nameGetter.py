@@ -16,22 +16,30 @@ themes = json.load(themesBuffer)
 #'r' is the current theme name
 def credit(r):
     line = ''
+    note = ''
 
     for i in range(len(namesList)):
-        _line = namesList[i]
-        lineWords = _line.split()
+        line = namesList[i]
+        lineWords = line.split()
+        nameWords = r['name'].split()
+        foundName = False
 
         for e in range(len(lineWords)):
-            try:
-                if (r['name'].split()[0] == lineWords[e] and r['name'].split()[1] == lineWords[e + 1]):
-                    line = _line
-            except:
-                if (r['name'].split()[0] == lineWords[e]):
-                    line = _line
-
+            for o in range(len(nameWords)):
+                if (len(nameWords) > 1):
+                    if (foundName == True):
+                        if (o == len(nameWords) - 1 and lineWords[e] == nameWords[o]):
+                            note = line
+                    else:
+                        if (o == 0 and lineWords[e] == nameWords[o]):
+                            foundName = True
+                else:
+                    if(lineWords[e] == nameWords[o]):
+                        note = line
+                        
     return {
         'name': r['name'],
-        'note': 'Not Found' if line == '' else line,
+        'note': 'Not Found' if note == '' else note,
         'dark': r['isDark']
     }
 
