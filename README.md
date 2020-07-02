@@ -29,6 +29,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - The DraculaPlus, Material Darker and OneStar theme was created by [jos3s](https://github.com/jos3s)
 - Monokai Cmder by [vdurante](https://github.com/vdurante/windows-terminal-monokai-cmder)
 - Rosé Pine by [mvllow](https://github.com/mvllow)
+- Tokyo Night by [enkia](https://github.com/enkia)
 
 ## Running
 
