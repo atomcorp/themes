@@ -26,3 +26,4 @@ private.json
 .env
 .env.private
 server/log.txt
+private.todo
