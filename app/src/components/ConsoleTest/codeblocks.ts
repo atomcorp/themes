@@ -1,5 +1,10 @@
 import {textKeyType} from 'types';
 
+//Finish this:
+import * as data from '..\\Credits\\namesAndThemes.json';
+var word;
+var creditNote;
+
 export type codeblocksType = {
   name: string;
   markup: string;
@@ -89,6 +94,12 @@ Watch Usage: Press w to show more.
     `,
     defaultColour: 'foreground',
   },
+  {
+    id: 'credits',
+    name: 'Credits',
+    markup: `<brightBlack:brightYellow>  Here are the notes on the theme:  </brightBlack:brightYellow> ${creditNote}`,
+    defaultColour: 'foreground',
+  }
 ];
 
 export default codeblocks;

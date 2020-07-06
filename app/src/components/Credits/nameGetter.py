@@ -7,7 +7,7 @@ namesList = names.read().split('\n')
 #Opens the output file for writing
 infoFile = open(r'app\src\components\Credits\namesAndThemes.json', 'wt')
 
-#Declares variables and files for parsing
+#Declares main variables
 namesAndCreators = {}
 themesBuffer = open(r'server\themes.json')
 themes = json.load(themesBuffer)
