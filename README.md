@@ -30,6 +30,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - Monokai Cmder by [vdurante](https://github.com/vdurante/windows-terminal-monokai-cmder)
 - Rosé Pine by [mvllow](https://github.com/mvllow)
 - Tokyo Night by [enkia](https://github.com/enkia)
+- Moonlight II by [atomiks](https://github.com/atomiks)
 
 ## Running
 
