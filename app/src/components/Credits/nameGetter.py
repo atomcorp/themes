@@ -1,4 +1,5 @@
 import json
+import re
 
 #Opens the credits markdown file
 names = open(r'app\src\components\Credits\Credits.md')
@@ -15,31 +16,18 @@ themes = json.load(themesBuffer)
 #Finds a match for every theme name in the credits file
 #'r' is the current theme name
 def credit(r):
-    line = ''
-    note = ''
-
     for i in range(len(namesList)):
         line = namesList[i]
-        lineWords = line.split()
-        nameWords = r['name'].split()
-        foundName = False
+        match = re.search(r['name'], line)
 
-        for e in range(len(lineWords)):
-            for o in range(len(nameWords)):
-                if (len(nameWords) > 1):
-                    if (foundName == True):
-                        if (o == len(nameWords) - 1 and lineWords[e] == nameWords[o]):
-                            note = line
-                    else:
-                        if (o == 0 and lineWords[e] == nameWords[o]):
-                            foundName = True
-                else:
-                    if(lineWords[e] == nameWords[o]):
-                        note = line
+        if (match is None):
+            continue
+        else:
+            break
                         
     return {
         'name': r['name'],
-        'note': 'Not Found' if note == '' else note,
+        'note': 'Not Found' if match is None else line,
         'dark': r['isDark']
     }
 
