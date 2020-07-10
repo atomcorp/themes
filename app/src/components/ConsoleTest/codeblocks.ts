@@ -1,10 +1,5 @@
 import {textKeyType} from 'types';
 
-//Finish this:
-import * as data from '..\\Credits\\namesAndThemes.json';
-var word;
-var creditNote;
-
 export type codeblocksType = {
   name: string;
   markup: string;
