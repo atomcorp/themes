@@ -58,3 +58,12 @@
   background-image: var(--btn__bg-img--hover);
   background-position: -0.5em;
 }
+
+.key {
+  font-family: 'Cascadia Code', 'Fira Mono', 'IBM Plex Mono', 'Menlo', Consolas,
+    monospace, monospace;
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  padding: 2px 6px;
+}

@@ -161,7 +161,6 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByLabelText(/Dark/).should('be.visible');
       cy.findByLabelText(/Terminal/).should('be.visible');
       cy.findByLabelText(/Colours/).should('be.visible');
-      cy.findByText(/Info/).should('be.visible');
       cy.findByTestId('copyButton').should('be.visible');
       cy.findByTestId('shareButton').should('be.visible');
     };
@@ -310,28 +309,6 @@ describe('Preview views', function () {
   });
 });
 
-describe('Menu dropdown', function () {
-  it('should open and close', function () {
-    cy.viewport(1366, 768);
-    cy.visit('/themes');
-    cy.findByTestId('morecontent').should('not.be.visible');
-    cy.findByText(/Info/).click();
-    cy.findByTestId('morecontent').should('be.visible');
-    cy.findByText(/Info/).click();
-    cy.findByTestId('morecontent').should('not.be.visible');
-    cy.findByText(/Info/).click();
-    cy.findByTestId('morecontent').should('be.visible');
-    cy.findByTestId('overlay').click();
-    cy.findByTestId('morecontent').should('not.be.visible');
-    cy.viewport(414, 736);
-    cy.findByTestId('morecontent').should('not.be.visible');
-    cy.findByText(/Info/).click();
-    cy.findByTestId('morecontent').should('be.visible');
-    cy.findByText(/Info/).click();
-    cy.findByTestId('morecontent').should('not.be.visible');
-  });
-});
-
 describe('Visual regression', function () {
   it('should snap', function () {
     // cy.viewport(1920, 1080);
@@ -349,10 +326,6 @@ describe('Visual regression', function () {
     cy.percyResponsiveSnapshot('toggle theme preview', 1920, 1080);
     cy.findByLabelText(/Dark/).click({force: true});
     cy.percyResponsiveSnapshot('toggle dark themes', 1920, 1080);
-    cy.findByText(/Info/).click();
-    cy.percyResponsiveSnapshot('open info menu', 1920, 1080);
-    cy.findByText(/Info/).click();
-    cy.percyResponsiveSnapshot('close info menu', 1920, 1080);
     // cy.viewport(1280, 720);
     cy.percyResponsiveSnapshot('smaller', 1280, 720);
     // media query change
@@ -365,10 +338,6 @@ describe('Visual regression', function () {
     cy.percyResponsiveSnapshot('ipad - terminal view', 1920, 1080);
     // cy.viewport(375, 812);
     cy.percyResponsiveSnapshot('phone', 375, 667);
-    cy.findByText(/Info/).click();
-    cy.percyResponsiveSnapshot('mobile: open info', 375, 667);
-    cy.findByText(/Info/).click();
-    cy.percyResponsiveSnapshot('mobile: close info', 375, 667);
     cy.findByLabelText('Select theme').select('Monokai Cmder');
     cy.percyResponsiveSnapshot('mobile: select Monokai Cmder', 375, 667);
     cy.findByText(/Next/).click();

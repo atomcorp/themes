@@ -36,20 +36,18 @@ const MoreContent = (props: MoreContentProps): JSX.Element => (
     </MoreSection>
     <MoreSection heading="Help">
       <p>
-        <ol>
-          <li>open Windows Terminal settings</li>
-          <li>add your chosen theme(s) to schemes</li>
-          <li>
-            in profiles, find the shell you&apos;re using (eg cmd, powershell,
-            ubuntu) and replace colorScheme with the name of the theme
-          </li>
-        </ol>
+        For how to use the themes see the{' '}
+        <a href="https://github.com/atomcorp/themes#how-to-use-the-themes">
+          help section of this repo
+        </a>
+        .
       </p>
       <p>
-        See also{' '}
+        See also the{' '}
         <a href="https://github.com/microsoft/terminal/blob/master/doc/user-docs/UsingJsonSettings.md">
           Windows Terminal settings official docs
         </a>
+        .
       </p>
     </MoreSection>
     <MoreSection heading="Credit">
@@ -65,36 +63,47 @@ const MoreContent = (props: MoreContentProps): JSX.Element => (
         <a href="https://github.com/atomcorp/themes#credits">
           credits on GitHub
         </a>
+        .
       </p>
     </MoreSection>
     <MoreSection heading="Contribute">
       <p>
-        Add a new theme to this site. Either (and preferably) through{' '}
-        <a href="https://github.com/mbadolato/iTerm2-Color-Schemes#contribute">
-          contribute to iTerm2 Color Schemes
-        </a>
-        , or through a pull request to this site&apos;s repo{' '}
-        <a href="https://github.com/atomcorp/themes#contribute-a-theme">
-          contribute to Windows Terminal Themes
-        </a>
+        New themes are very welcome! To add a new theme to this site either:{' '}
+        <ul>
+          <li>
+            add it through{' '}
+            <a href="https://github.com/mbadolato/iTerm2-Color-Schemes#contribute">
+              iTerm2 Color Schemes
+            </a>{' '}
+            (preferable, it will automatically be used here)
+          </li>
+          <li>
+            or through a pull request to this site&apos;s repo{' '}
+            <a href="https://github.com/atomcorp/themes#contribute-a-theme">
+              Windows Terminal Themes
+            </a>
+          </li>
+        </ul>
       </p>
     </MoreSection>
     <MoreSection heading="GitHub">
       <p>
         Star, Fork or file an issue at the{' '}
         <a href="https://github.com/atomcorp/themes">Windows Terminal Themes</a>{' '}
-        repository on GitHub
+        repository on GitHub.
       </p>
     </MoreSection>
     <MoreSection heading="Tips">
       <p>
-        You can use keyboard shorcuts, A for previous theme, D for next theme.
+        You can use keyboard shorcuts, <span className={css.key}>A</span> for
+        previous theme, <span className={css.key}>D</span> for next theme.
       </p>
       <p>
         The site should be fully accessible too,{' '}
         <a href="https://github.com/atomcorp/themes/issues">
           please open an issue if you notice a problem
         </a>
+        .
       </p>
     </MoreSection>
   </section>
