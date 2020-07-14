@@ -1,11 +1,11 @@
 .container {
-  padding: 60px 0;
+  padding: 60px 40px;
   color: var(--btn__colour);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 450px));
   grid-template-rows: min-content;
-  gap: 20px;
+  gap: 40px;
   background: var(--toolbar__background);
   justify-content: center;
   align-content: center;
@@ -21,7 +21,7 @@
 }
 
 .section {
-  padding: 20px 20px 40px;
+  padding: 0 0 60px;
   border-radius: 0.25em;
 }
 
