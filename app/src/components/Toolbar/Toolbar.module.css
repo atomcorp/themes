@@ -15,6 +15,12 @@
   text-decoration: none;
   margin: 0 10px 8px 0;
 }
+
+.title:focus {
+  box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
+  outline: 0;
+}
+
 @media (min-width: 600px) {
   .title {
     font-size: 2.5rem;

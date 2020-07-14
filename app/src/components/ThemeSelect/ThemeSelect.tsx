@@ -1,8 +1,9 @@
 /**
  * I made the direction buttons here <div> not <buttons>
- * as they just duplicate the functionality of the <select>
- * It seems better to remove the extra focusable elements,
- * so people needing a11y jump straight to the <select>
+ * so they don't get focused, but it's annoying on phones when repeatably clicking
+ * the text gets selected
+ * so can use tabindex="-1"
+ *
  */
 import React from 'react';
 
@@ -21,7 +22,8 @@ type PropsType = {
 const ThemeSelect: React.FC<PropsType> = (props) => {
   return (
     <div className={css.container}>
-      <div
+      <button
+        tabIndex={-1}
         className={css.direction}
         onClick={() => {
           props.dispatch({type: 'PREV'});
@@ -35,7 +37,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
           size="18px"
         />
         Prev
-      </div>
+      </button>
       <label className={css.label} htmlFor="theme-select">
         <span className="visually-hidden ">Select theme</span>
         <select
@@ -62,7 +64,8 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
           ))}
         </select>
       </label>
-      <div
+      <button
+        tabIndex={-1}
         className={css.direction}
         onClick={() => {
           props.dispatch({type: 'NEXT'});
@@ -77,7 +80,7 @@ const ThemeSelect: React.FC<PropsType> = (props) => {
             '--btn__colour'
           )}
         />
-      </div>
+      </button>
     </div>
   );
 };

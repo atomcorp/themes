@@ -16,8 +16,9 @@ Next:
   ✔ add percy css ignore to logo @done(20-06-19 19:21)
   ☐ instead of the lame dropdown, all the info should be below the fold of the app
     you scroll down and can see it all
-  ☐ make focus outline consistent colours
+  ✔ make focus outline consistent colours @done(20-06-24 09:47)
     title, info, terminal tabs
+  ☐ test in CI with production build
   
 After:
   ☐ Choose font
@@ -47,7 +48,6 @@ Notes
   GitHub dark theme - https://chrome.google.com/webstore/detail/github-dark-theme/odkdlljoangmamjilkamahebpkgpeacp
   https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/dark-mode/
   https://medium.com/@eferhatg/create-react-app-continuous-integration-config-with-circleci-and-aws-2b0238cde169
-  tom@atomPC:~$ scp -i .ssh/LightsailDefaultKey-eu-west-2.pem /mnt/c/Users/atom/test.txt bitnami@18.132.20.40:/home/bitnami/stack/apps/test/
   
 Done:
   ✔ Add routes, or change URL for each theme for sharing @done(20-04-09 00:10)
