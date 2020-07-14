@@ -18,6 +18,7 @@ Next:
     you scroll down and can see it all
   ✔ make focus outline consistent colours @done(20-06-24 09:47)
     title, info, terminal tabs
+  ☐ test in CI with production build
   
 After:
   ☐ Choose font
