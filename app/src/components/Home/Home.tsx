@@ -1,9 +1,7 @@
 import React, {useEffect, useReducer, useRef, useMemo} from 'react';
-import {saveAs} from 'file-saver';
 
 import ThemePreview from 'components/ThemePreview/ThemePreview';
 import Toolbar from 'components/Toolbar/Toolbar';
-import MoreContent from 'components/More/MoreContent';
 
 import css from './Home.module.css';
 import {
@@ -94,25 +92,7 @@ const Home: React.FC<themeprops> = (props) => {
   }, []);
   const theme = state.themes.find((theme) => theme.name === state.activeTheme);
   const themeNames = state.filteredThemes.map((theme) => theme.name);
-  const downloadAllThemes = (): void => {
-    const themeBlob = new Blob(
-      [
-        JSON.stringify(
-          props.themes.map((theme) => {
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const {isDark, ...rest} = theme;
-            return rest;
-          }),
-          null,
-          2
-        ),
-      ],
-      {
-        type: 'application/json',
-      }
-    );
-    saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
-  };
+
   const stringyTheme = theme != null ? JSON.stringify(theme) : null;
   const colours = useMemo(() => {
     // idk, this seems dumb but Dan says it's fine
@@ -149,13 +129,6 @@ const Home: React.FC<themeprops> = (props) => {
           activeTheme={state.activeTheme}
           themeNames={themeNames}
           themeselectRef={themeselectRef}
-        />
-      </section>
-      <section className={css.footer}>
-        <MoreContent
-          downloadAllThemes={downloadAllThemes}
-          isMoreOpen={true}
-          dispatch={dispatch}
         />
       </section>
     </section>

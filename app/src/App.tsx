@@ -1,8 +1,10 @@
 import React, {useEffect, useState} from 'react';
+import {saveAs} from 'file-saver';
 
 import Home from 'components/Home/Home';
 import {themeType} from 'types';
 import Skeleton from 'components/Skeleton/Skeleton';
+import MoreContent from 'components/More/MoreContent';
 
 /**
  * in development https://github.com/atomcorp/terminal-api needs to be installed and running
@@ -30,10 +32,34 @@ const App: React.FC = () => {
     };
     getThemes();
   }, []);
+  const downloadAllThemes = (): void => {
+    const themeBlob = new Blob(
+      [
+        JSON.stringify(
+          themes.map((theme) => {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const {isDark, ...rest} = theme;
+            return rest;
+          }),
+          null,
+          2
+        ),
+      ],
+      {
+        type: 'application/json',
+      }
+    );
+    saveAs(themeBlob, 'windows-terminal-themes.json', {autoBom: true});
+  };
   if (themes.length < 1) {
     return <Skeleton />;
   }
-  return <Home themes={themes} />;
+  return (
+    <>
+      <Home themes={themes} />
+      <MoreContent downloadAllThemes={downloadAllThemes} />
+    </>
+  );
 };
 
 export default App;
