@@ -78,7 +78,7 @@
 .toggles {
   display: flex;
   overflow: auto;
-  margin: 10px auto 0;
+  margin: 10px 0 0;
 }
 
 .select {
