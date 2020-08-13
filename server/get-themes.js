@@ -34,6 +34,15 @@ const assignColourType = (themes) => {
   });
 };
 
+const assignCredit = (themes) => {
+  return themes.map((theme) => {
+    return {
+      ...theme,
+      credit: //add credit code
+    };
+  });
+};
+
 const main = async (isDev) => {
   try {
     // get the custom file in the terminal repo
