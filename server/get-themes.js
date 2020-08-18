@@ -3,6 +3,8 @@
 const got = require('got');
 const fs = require('fs');
 const contrast = require('get-contrast');
+const credits = fs.readFile("app\\src\\components\\Credits\\namesAndThemes.json");
+const creditsJSON = credits.parse();
 
 // whatever this mess means
 if (process.env.CI !== true) {
@@ -36,9 +38,14 @@ const assignColourType = (themes) => {
 
 const assignCredit = (themes) => {
   return themes.map((theme) => {
+    for (var i = 0; i < creditsJSON.credits.length; i++){
+      if (creditsJSON.credits[i].name = theme.name){
+        var Credit = creditsJSON.credits[i].note;
+      }
+    }
     return {
       ...theme,
-      credit: //add credit code
+      credit: Credit
     };
   });
 };
