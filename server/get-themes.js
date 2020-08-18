@@ -27,24 +27,16 @@ const customSchemesUrl =
 // const devCustomSchemesUrl = 'http://localhost:3000/custom-colour-schemes.json';
 
 // add boolean whether the theme is a light or dark
-const assignColourType = (themes) => {
-  return themes.map((theme) => {
-    return {
-      ...theme,
-      isDark: contrast.ratio(theme.background, '#000') < 8,
-    };
-  });
-};
-
-const assignCredit = (themes) => {
+const assignExtras = (themes) => {
   return themes.map((theme) => {
     for (var i = 0; i < creditsJSON.credits.length; i++){
-      if (creditsJSON.credits[i].name = theme.name){
-        var Credit = creditsJSON.credits[i].note;
+      if (creditsJSON.credits[i].name == theme.name){
+        var Credit = creditsJSON.credits[i].note; 
       }
     }
     return {
       ...theme,
+      isDark: contrast.ratio(theme.background, '#000') < 8,
       credit: Credit
     };
   });
