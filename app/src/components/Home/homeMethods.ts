@@ -120,6 +120,7 @@ export const homeReducer = (
             );
             draftState.activeTheme = foundTheme.name;
             draftState.themeShade = foundTheme.isDark ? 'DARK' : 'LIGHT';
+            draftState.backgroundColour = foundTheme.background;
           }
         } else {
           // default to DARK, themeShade is already set
