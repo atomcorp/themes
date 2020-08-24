@@ -27,3 +27,5 @@ private.json
 .env.private
 server/log.txt
 private.todo
+cypress/videos
+cypress/screenshots
