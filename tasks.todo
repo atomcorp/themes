@@ -8,20 +8,20 @@ Next:
     ✔ test custom-colour-schemes.json @done(20-05-07 23:36)
   ☐ Add version log (1: initial, 2: API, 3: UI redesign)
   ☐ Add note in README for contributing codeblocks
-  ☐ Maybe host the entire thing on AWS, create monorepo
+  ✔ Maybe host the entire thing on AWS, create monorepo @done(20-09-02 12:51)
   ☐ add meta property to theme objects with credits, notes, isDark etc
   ☐ print out colours using canvas, will be easier to make responsive
   ☐ code refactor/tidy
   ☐ use service worker, to make a PWA
   ✔ add percy css ignore to logo @done(20-06-19 19:21)
-  ☐ instead of the lame dropdown, all the info should be below the fold of the app
-    you scroll down and can see it all
+  ✔ instead of the lame dropdown, all the info should be below the fold of the app you scroll down and can see it all @done(20-09-02 12:51)
   ✔ make focus outline consistent colours @done(20-06-24 09:47)
     title, info, terminal tabs
   ☐ test in CI with production build
   https://github.com/vercel/serve/issues/556
   ✔ add meta text info (https://moz.com/learn/seo/meta-description) @done(20-09-02 12:50)
   ☐ remove/flag duplicate theme names/types (default to iterm2 repo)
+  ☐ update "bold" text to default to primaryColor not brightWhite
   
 After:
   ☐ Choose font
