@@ -20,8 +20,8 @@ Next:
     title, info, terminal tabs
   ☐ test in CI with production build
   https://github.com/vercel/serve/issues/556
-  ☐ add meta text info (https://moz.com/learn/seo/meta-description)
-  ☐ remove/flag duplicate theme names/types
+  ✔ add meta text info (https://moz.com/learn/seo/meta-description) @done(20-09-02 12:50)
+  ☐ remove/flag duplicate theme names/types (default to iterm2 repo)
   
 After:
   ☐ Choose font
