@@ -5,64 +5,16 @@ import Toolbar from 'components/Toolbar/Toolbar';
 
 import css from './Home.module.css';
 import {
-  homeReducer,
-  initialState,
   screenSizeObserver,
   returnInitialTheme,
+  shortcuts,
+  sampleColours,
 } from './homeMethods';
-import {themeType, actionTypes} from 'types';
+import {homeReducer, initialState} from 'components/Home/homeState';
+import {themeType} from 'types';
 
 type themeprops = {
   themes: themeType[];
-};
-
-const stopSelectDetection = (
-  e: KeyboardEvent,
-  themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
-): void => {
-  if (
-    themeselectRef.current != null &&
-    document.activeElement === themeselectRef.current
-  ) {
-    // if the DOM element is being focused, hitting D will
-    // select the first <option> starting with D
-    e.preventDefault();
-    themeselectRef.current.blur();
-  }
-};
-
-const shortcuts = (
-  dispatch: React.Dispatch<actionTypes>,
-  themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
-) => (e: KeyboardEvent) => {
-  if (e.code === 'KeyA') {
-    stopSelectDetection(e, themeselectRef);
-    dispatch({
-      type: 'PREV',
-    });
-  }
-  if (e.code === 'KeyD') {
-    stopSelectDetection(e, themeselectRef);
-    dispatch({
-      type: 'NEXT',
-    });
-  }
-};
-
-const sampleColours = (theme: themeType | undefined): string[] => {
-  if (theme) {
-    return [
-      theme.red,
-      theme.green,
-      theme.yellow,
-      theme.blue,
-      theme.purple,
-      theme.cyan,
-    ]
-      .sort(() => Math.random() - 0.5)
-      .slice(3);
-  }
-  return [];
 };
 
 const Home: React.FC<themeprops> = (props) => {
@@ -114,7 +66,6 @@ const Home: React.FC<themeprops> = (props) => {
         themeNames={themeNames}
         themeselectRef={themeselectRef}
         colours={colours}
-        isMoreOpen={state.isMoreOpen}
         isSmallScreenSize={state.isSmallScreenSize}
       />
       <section className={css.content}>
@@ -123,7 +74,6 @@ const Home: React.FC<themeprops> = (props) => {
           themeShade={state.themeShade}
           previewType={state.previewType}
           theme={theme}
-          primaryColour={state.primaryColour}
           backgroundColour={state.backgroundColour}
           isSmallScreenSize={state.isSmallScreenSize}
           activeTheme={state.activeTheme}

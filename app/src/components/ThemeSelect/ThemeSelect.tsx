@@ -15,7 +15,6 @@ type PropsType = {
   themeNames: string[];
   activeTheme: string;
   dispatch: React.Dispatch<actionTypes>;
-  primaryColour?: string;
   themeselectRef: React.MutableRefObject<null | HTMLSelectElement>;
 };
 

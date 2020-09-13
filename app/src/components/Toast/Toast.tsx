@@ -5,7 +5,6 @@ type ToastType = {
   title: string;
   isActive: boolean;
   message: string;
-  color: string;
   background: string;
 };
 

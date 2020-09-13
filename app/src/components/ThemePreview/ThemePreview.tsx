@@ -16,7 +16,6 @@ import {actionTypes, themeShadeType} from 'types';
 
 type PropsType = {
   theme?: themeType;
-  primaryColour: string;
   backgroundColour: string;
   previewType: previewType;
   isSmallScreenSize: boolean;
@@ -71,12 +70,7 @@ const reducer = (state: reducerType, action: actionType): reducerType => {
 const ThemePreview: React.FC<PropsType> = (props) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   if (!props.theme) {
-    return (
-      <div
-        style={{background: props.backgroundColour, color: props.primaryColour}}
-        className={css.loading}
-      ></div>
-    );
+    return null;
   }
   const handleCopy = (): void => {
     if (!state.isActive && props.theme) {
@@ -140,7 +134,6 @@ const ThemePreview: React.FC<PropsType> = (props) => {
         handleShare={handleShare}
       />
       <Toast
-        color={props.primaryColour}
         background={props.backgroundColour}
         title={state.title}
         isActive={state.isActive}

@@ -18,7 +18,6 @@ type PropType = {
   activeTheme: string;
   themeselectRef: React.MutableRefObject<null | HTMLSelectElement>;
   colours: string[];
-  isMoreOpen: boolean;
   isSmallScreenSize: boolean;
 };
 
