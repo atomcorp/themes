@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:5000",
+  "projectId": "3ntj11",
+  "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
+  "chromeWebSecurity": false,
+  "retries": 2
+}

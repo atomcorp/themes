@@ -2,7 +2,6 @@
   "name": "@windowsterminalthemes/app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://atomcorp.github.io/themes/",
   "proxy": "http://localhost:3001",
   "dependencies": {
     "@types/jest": "^25.2.1",
@@ -22,11 +21,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:run": "react-scripts build && npx serve -s build",
     "test:run": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "test:watch": "react-scripts test --watchAll --env=jest-environment-jsdom-sixteen",
     "cy:open": "yarn run cypress open",
     "cy:run": " percy exec -- cypress run",
-    "cy:ci": " percy exec -- cypress run --record --key=${CYPRESS_RECORD_KEY}",
+    "cy:ci": " npx cypress run --config-file cypress-ci.json --record --key=${CYPRESS_RECORD_KEY}",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
