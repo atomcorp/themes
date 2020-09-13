@@ -8,6 +8,7 @@ Next:
     ✔ test custom-colour-schemes.json @done(20-05-07 23:36)
   ☐ Add version log (1: initial, 2: API, 3: UI redesign)
   ☐ Add note in README for contributing codeblocks
+  ✔ Add custom domain @done(20-09-13 17:31)
   ✔ Maybe host the entire thing on AWS, create monorepo @done(20-09-02 12:51)
   ☐ add meta property to theme objects with credits, notes, isDark etc
   ☐ print out colours using canvas, will be easier to make responsive
@@ -17,7 +18,7 @@ Next:
   ✔ instead of the lame dropdown, all the info should be below the fold of the app you scroll down and can see it all @done(20-09-02 12:51)
   ✔ make focus outline consistent colours @done(20-06-24 09:47)
     title, info, terminal tabs
-  ☐ test in CI with production build
+  ✔ test in CI with production build @done(20-09-13 17:31)
   https://github.com/vercel/serve/issues/556
   ✔ add meta text info (https://moz.com/learn/seo/meta-description) @done(20-09-02 12:50)
   ☐ remove/flag duplicate theme names/types (default to iterm2 repo)
