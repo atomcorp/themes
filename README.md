@@ -31,6 +31,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - Rosé Pine by [mvllow](https://github.com/mvllow)
 - Tokyo Night by [enkia](https://github.com/enkia)
 - Moonlight II by [atomiks](https://github.com/atomiks)
+- Monokai (filter Octagon) by [monokai](https://monokai.pro/)
 
 ## Running
 
