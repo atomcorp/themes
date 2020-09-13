@@ -4,7 +4,7 @@
 
 Preview and copy themes for the new [Windows Terminal](https://github.com/microsoft/terminal).
 
-Use the project at [windowsterminalthemes.dev](windowsterminalthemes.dev)
+Use the project at [windowsterminalthemes.dev](https://windowsterminalthemes.dev/)
 
 ## How to use the themes
 

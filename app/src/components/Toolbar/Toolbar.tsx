@@ -25,7 +25,7 @@ type PropType = {
 const Toolbar = (props: PropType): JSX.Element => {
   return (
     <section className={css.container}>
-      <a href="/themes" className={css.title}>
+      <a href="/" className={css.title}>
         <Logo size="48px" colours={props.colours} className={css.logo} />
         <h1>Windows Terminal Themes</h1>
       </a>
