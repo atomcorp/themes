@@ -18,7 +18,10 @@ export const parseSyntax = (
         );
       }
       const colours = matches[1].split(':');
-      const foreground = colours[0] as textKeyType;
+      // check bold in case Windows Terminal ever properly adds bold
+      // in the meantime, default to just foreground
+      const foreground =
+        colours[0] === 'bold' ? 'foreground' : (colours[0] as textKeyType);
       const background =
         colours.length > 0 ? (colours[1] as textKeyType) : null;
       if (

@@ -13,10 +13,10 @@ const codeblocks: codeblocksType[] = [
     name: 'CRA - compiled',
     markup: `<green>Compiled successfully!</green>
 
-You can now view <brightWhite>terminal</brightWhite> in the browser. 
+You can now view <bold>terminal</bold> in the browser. 
 
-  <brightWhite>Local:</brightWhite>           http://localhost:<brightWhite>3000</brightWhite>/themes
-  <brightWhite>On Your Network:</brightWhite> http://192.168.86.37:<brightWhite>3000</brightWhite>/themes 
+  <bold>Local:</bold>           http://localhost:<bold>3000</bold>/themes
+  <bold>On Your Network:</bold> http://192.168.86.37:<bold>3000</bold>/themes 
   
 Note that the development build is not
 optimized. 
@@ -63,10 +63,10 @@ To create a production build, use <cyan>yarn build</cyan>.`,
         
         at Object.toBe (<cyan>src/components/Home/Home.test.js</cyan>:220:61)
   
-<brightWhite>Test Suites:</brightWhite> <brightRed>1 failed</brightRed>, <brightGreen>1 passed</brightGreen>, 2 total
-<brightWhite>Tests:</brightWhite>       <brightRed>1 failed</brightRed>, <brightYellow>4 skipped</brightYellow>, <brightGreen>2 passed</brightGreen>, 7 total
-<brightWhite>Snapshots:</brightWhite>   0 total
-<brightWhite>Time:</brightWhite>        <brightYellow>22.5s</brightYellow>
+<bold>Test Suites:</bold> <brightRed>1 failed</brightRed>, <brightGreen>1 passed</brightGreen>, 2 total
+<bold>Tests:</bold>       <brightRed>1 failed</brightRed>, <brightYellow>4 skipped</brightYellow>, <brightGreen>2 passed</brightGreen>, 7 total
+<bold>Snapshots:</bold>   0 total
+<bold>Time:</bold>        <brightYellow>22.5s</brightYellow>
 Ran all test suites.
 
 Watch Usage: Press w to show more.
@@ -76,13 +76,13 @@ Watch Usage: Press w to show more.
   {
     id: 'jest/runnning',
     name: 'Jest - running',
-    markup: `<brightBlack:brightYellow>  RUNS  </brightBlack:brightYellow> src/components/Home/<brightWhite>Home.test.js</brightWhite>
-<brightBlack:brightYellow>  RUNS  </brightBlack:brightYellow> src/<brightWhite>App.test.tsx</brightWhite>
+    markup: `<brightBlack:brightYellow>  RUNS  </brightBlack:brightYellow> src/components/Home/<bold>Home.test.js</bold>
+<brightBlack:brightYellow>  RUNS  </brightBlack:brightYellow> src/<bold>App.test.tsx</bold>
     
-<brightWhite>Test Suites:</brightWhite> 0 of 2 total
-<brightWhite>Tests:</brightWhite>       0 total
-<brightWhite>Snapshots:</brightWhite>   0 total
-<brightWhite>Time:</brightWhite>        4s
+<bold>Test Suites:</bold> 0 of 2 total
+<bold>Tests:</bold>       0 total
+<bold>Snapshots:</bold>   0 total
+<bold>Time:</bold>        4s
 
 <background:green>         </background:green><background:foreground>                             </background:foreground>
 
