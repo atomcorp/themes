@@ -69,22 +69,22 @@ const MoreContent = (props: MoreContentProps): JSX.Element => (
     <MoreSection heading="Contribute">
       <p>
         New themes are very welcome! To add a new theme to this site either:{' '}
-        <ul>
-          <li>
-            add it through{' '}
-            <a href="https://github.com/mbadolato/iTerm2-Color-Schemes#contribute">
-              iTerm2 Color Schemes
-            </a>{' '}
-            (preferable, it will automatically be used here)
-          </li>
-          <li>
-            or through a pull request to this site&apos;s repo{' '}
-            <a href="https://github.com/atomcorp/themes#contribute-a-theme">
-              Windows Terminal Themes
-            </a>
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          add it through{' '}
+          <a href="https://github.com/mbadolato/iTerm2-Color-Schemes#contribute">
+            iTerm2 Color Schemes
+          </a>{' '}
+          (preferable, it will automatically be used here)
+        </li>
+        <li>
+          or through a pull request to this site&apos;s repo{' '}
+          <a href="https://github.com/atomcorp/themes#contribute-a-theme">
+            Windows Terminal Themes
+          </a>
+        </li>
+      </ul>
     </MoreSection>
     <MoreSection heading="GitHub">
       <p>

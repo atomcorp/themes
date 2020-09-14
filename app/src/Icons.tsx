@@ -60,7 +60,7 @@ export const Download = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="download"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -78,7 +78,7 @@ export const Light = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="light-themes"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -100,7 +100,7 @@ export const Dark = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="dark-themes"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -122,7 +122,7 @@ export const Colours = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="colours-preview"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -144,7 +144,7 @@ export const Console = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="codeblock-preview"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -166,7 +166,7 @@ export const Github = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 16 16"
-    aria-labelledby="title"
+    aria-labelledby="github-icon"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -187,7 +187,7 @@ export const Help = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby="help-icon"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -208,7 +208,7 @@ export const Arrow = (props: IconProps): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 24 24"
-    aria-labelledby="title"
+    aria-labelledby={props.direction === 'right' ? 'arrow-right' : 'arrow-left'}
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -216,7 +216,11 @@ export const Arrow = (props: IconProps): JSX.Element => (
       transform: props.direction === 'right' ? 'scaleX(-1)' : '',
     }}
   >
-    <title id="arrow">{'Show previous theme'}</title>
+    {props.direction === 'right' ? (
+      <title id="arrow-right">{'Show next theme'}</title>
+    ) : (
+      <title id="arrow-left">{'Show previous theme'}</title>
+    )}
     <path d="M0 0h24v24H0z" fill="none" />
     <path
       d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
@@ -244,7 +248,7 @@ export const Logo = (props: IconProps & LogoType): JSX.Element => (
     height={props.size || '24px'}
     width={props.size || '24px'}
     viewBox="0 0 512 512"
-    aria-labelledby="title"
+    aria-labelledby="logo"
     onClick={props.onClick}
     className={props.className}
     style={{
@@ -271,6 +275,7 @@ export const Logo = (props: IconProps & LogoType): JSX.Element => (
         )}
       </linearGradient>
     </defs>
+    <title id="logo">Logo for Windows Terminal Themes</title>
     <path
       fill="url(#logo-gradient)"
       d="M495.304 61.217H16.696C7.475 61.217 0 68.693 0 77.913v356.174c0 9.22 7.475 16.696 16.696 16.696h478.609c9.22 0 16.696-7.475 16.696-16.696V77.913c-.001-9.22-7.476-16.696-16.697-16.696zm-16.695 356.174H33.391V194.424h445.217v222.967zm0-256.358H33.391V94.609h445.217v66.424z"
@@ -278,26 +283,6 @@ export const Logo = (props: IconProps & LogoType): JSX.Element => (
     <path
       fill="url(#logo-gradient)"
       d="M443.568 103.247c-12.275 0-22.261 9.986-22.261 22.261 0 12.275 9.985 22.261 22.261 22.261 12.275 0 22.261-9.986 22.261-22.261 0-12.275-9.986-22.261-22.261-22.261zM382.926 103.247c-12.275 0-22.261 9.986-22.261 22.261 0 12.275 9.986 22.261 22.261 22.261s22.261-9.986 22.261-22.261c0-12.275-9.986-22.261-22.261-22.261zM322.285 103.247c-12.275 0-22.261 9.986-22.261 22.261 0 12.275 9.985 22.261 22.261 22.261 12.275 0 22.261-9.986 22.261-22.261 0-12.275-9.986-22.261-22.261-22.261zM235.45 293.193l-54.653-46.504c-7.022-5.976-17.559-5.128-23.535 1.896-5.976 7.022-5.127 17.559 1.896 23.535l39.709 33.789-39.709 33.789c-7.023 5.976-7.871 16.512-1.896 23.535 5.975 7.022 16.512 7.871 23.535 1.896l54.653-46.504c7.83-6.663 7.83-18.771 0-25.432zM342.022 335.716h-65.954c-9.22 0-16.696 7.475-16.696 16.696s7.475 16.696 16.696 16.696h65.954c9.22 0 16.696-7.475 16.696-16.696s-7.476-16.696-16.696-16.696z"
-    />
-  </svg>
-);
-
-export const Chevron = (props: IconProps): JSX.Element => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    height={props.size || '24px'}
-    width={props.size || '24px'}
-    viewBox="0 0 24 24"
-    onClick={props.onClick}
-    className={props.className}
-    style={{
-      outlineColor: props.colour,
-      transform: props.direction === 'up' ? 'scaleY(1)' : '',
-    }}
-  >
-    <path
-      d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
-      fill={props.colour}
     />
   </svg>
 );

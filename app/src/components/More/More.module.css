@@ -1,19 +1,25 @@
 .container {
-  padding: 60px 40px;
+  padding: 40px 20px;
   color: var(--btn__colour);
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 450px));
   grid-template-rows: min-content;
-  gap: 40px;
   background: var(--toolbar__background);
   justify-content: center;
   align-content: center;
   min-height: 100vh;
 }
 
+@media (min-width: 1024px) {
+  .container {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+}
+
 .hr {
-  color: var(--btn__colour);
+  border-color: var(--btn__bg-color);
 }
 
 .section p:last-child {
@@ -33,12 +39,13 @@
   color: var(--link-colour--visited);
 }
 
-.section p {
+.section p,
+.section li {
   line-height: 1.4;
 }
 
 .heading {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   font-size: 2.2rem;
 }
 
