@@ -95,7 +95,7 @@ const MoreContent = (props: MoreContentProps): JSX.Element => (
     </MoreSection>
     <MoreSection heading="Tips">
       <p>
-        You can use keyboard shorcuts, <span className={css.key}>A</span> for
+        You can use keyboard shortcuts, <span className={css.key}>A</span> for
         previous theme, <span className={css.key}>D</span> for next theme.
       </p>
       <p>

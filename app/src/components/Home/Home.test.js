@@ -2,7 +2,8 @@ import React from 'react';
 import {render, fireEvent, waitFor} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
-import {getRandomColour, returnInitialTheme} from './homeMethods';
+import {returnInitialTheme} from './homeMethods';
+import {getRandomColour} from './homeState';
 import Home from './Home';
 import customColourSchemes from '../../custom-colour-schemes.json';
 
