@@ -275,7 +275,7 @@ export const Logo = (props: IconProps & LogoType): JSX.Element => (
         )}
       </linearGradient>
     </defs>
-    <title id="logo">Logo for Windows Terminal Themes</title>
+    <title id="logo">Logo</title>
     <path
       fill="url(#logo-gradient)"
       d="M495.304 61.217H16.696C7.475 61.217 0 68.693 0 77.913v356.174c0 9.22 7.475 16.696 16.696 16.696h478.609c9.22 0 16.696-7.475 16.696-16.696V77.913c-.001-9.22-7.476-16.696-16.697-16.696zm-16.695 356.174H33.391V194.424h445.217v222.967zm0-256.358H33.391V94.609h445.217v66.424z"
