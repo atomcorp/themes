@@ -309,7 +309,8 @@ describe('Preview views', function () {
   });
 });
 
-describe('Visual regression', function () {
+/*
+  describe('Visual regression', function () {
   it('should snap', function () {
     // cy.viewport(1920, 1080);
     cy.visit('/themes');
@@ -352,6 +353,7 @@ describe('Visual regression', function () {
     cy.percyResponsiveSnapshot('mobile: toggle dark themes', 375, 667);
   });
 });
+*/
 
 describe('Keyboard navigation', function () {
   beforeEach(function () {
