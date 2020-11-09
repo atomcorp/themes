@@ -10,7 +10,7 @@ Use the project at [windowsterminalthemes.dev](https://windowsterminalthemes.dev
 
 This site let's you preview and then copy a theme you like (or download a json file with all of them).
 
-The [official docs for Windows Terminal](https://github.com/microsoft/terminal/blob/master/doc/user-docs/UsingJsonSettings.md) seem to very thoroughly explain how to change the settings, but essentially:
+The [official docs for Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/customize-settings/color-schemes) seem to very thoroughly explain how to change the settings, but essentially:
 
 - open Windows Terminal settings
 - add your chosen theme(s) to `schemes`
