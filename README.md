@@ -32,6 +32,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - Tokyo Night by [enkia](https://github.com/enkia)
 - Moonlight II by [atomiks](https://github.com/atomiks)
 - Monokai (filter Octagon) by [monokai](https://monokai.pro/)
+- Sonoran Gothic && Sonoran Sunrise by [d-mckee](https://github.com/d-mckee)
 
 ## Running
 
