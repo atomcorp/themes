@@ -254,5 +254,26 @@
     "brightPurple": "#7189D9",
     "brightCyan": "#E07941",
     "brightWhite": "#665E4B"
+  },
+  {    
+    "name": "Primer",
+    "black": "#000000",
+    "red": "#ea4a5a",
+    "green": "#34d058",
+    "yellow": "#ffdf5d",
+    "blue": "#2188ff",
+    "purple": "#8a63d2",
+    "cyan": "#15e2e2",
+    "white": "#ecf0f1",
+    "brightBlack": "#4f5861",
+    "brightRed": "#fdaeb7",
+    "brightGreen": "#bef5cb",
+    "brightYellow": "#fff5b1",
+    "brightBlue": "#c8e1ff",
+    "brightPurple": "#d1bcf9",
+    "brightCyan": "#a2ecec",
+    "brightWhite": "#ffffff",
+    "background": "#1a2b3c",
+    "foreground": "#ffffff"
   }
 ]
