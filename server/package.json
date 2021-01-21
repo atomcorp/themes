@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "dev": "node server isDev",
+    "dev": "nodemon server isDev",
     "get": "node get-themes.js"
   },
   "author": "",
