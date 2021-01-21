@@ -2,14 +2,14 @@
   {
     "name": "Horizon",
     "black": "#0a0a0d",
-    "red" : "#E95678",
+    "red": "#E95678",
     "green": "#29D398",
     "yellow": "#FAB795",
     "blue": "#26BBD9",
     "purple": "#EE64AC",
     "cyan": "#59E1E3",
-    "white":"#e5e5e5",
-    "brightBlack":"#848484",
+    "white": "#e5e5e5",
+    "brightBlack": "#848484",
     "brightRed": "#EC6A88",
     "brightGreen": "#3FDAA4",
     "brightYellow": "#FBC3A7",
@@ -18,7 +18,7 @@
     "brightCyan": "#6BE4E6",
     "brightWhite": "#e5e5e5",
     "background": "#1c1e26",
-    "foreground": "#bdc0c2",
+    "foreground": "#bdc0c2"
   },
   {
     "name": "OneDark",
@@ -276,7 +276,7 @@
     "brightCyan": "#E07941",
     "brightWhite": "#665E4B"
   },
-  {    
+  {
     "name": "Primer",
     "black": "#000000",
     "red": "#ea4a5a",
