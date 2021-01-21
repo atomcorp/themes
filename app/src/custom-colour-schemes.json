@@ -275,5 +275,28 @@
     "brightWhite": "#ffffff",
     "background": "#1a2b3c",
     "foreground": "#ffffff"
+  },
+  {
+    "name": "Juicy Colors",
+    "cursorColor": "#FFFFFF",
+    "selectionBackground": "#FFFFFF",
+    "background": "#292a24",
+    "foreground": "#CCCCCC",
+    "black": "#292a24",
+    "blue": "#209DE5",
+    "cyan": "#00D2FF",
+    "green": "#68D644",
+    "purple": "#AF80FF",
+    "red": "#FF6249",
+    "white": "#CCCCCC",
+    "yellow": "#FCC223",
+    "brightBlack": "#808080",
+    "brightBlue": "#209DE5",
+    "brightCyan": "#00D2FF",
+    "brightGreen": "#68D644",
+    "brightPurple": "#AF80FF",
+    "brightRed": "#FF6249",
+    "brightWhite": "#F2F2F2",
+    "brightYellow": "#FCC223"
   }
 ]
