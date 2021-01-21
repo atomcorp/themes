@@ -33,6 +33,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - Moonlight II by [atomiks](https://github.com/atomiks)
 - Monokai (filter Octagon) by [monokai](https://monokai.pro/)
 - Sonoran Gothic && Sonoran Sunrise by [d-mckee](https://github.com/d-mckee)
+- The Horizon theme was created by [wafelack](https://github.com/wafelack/)
 
 ## Running
 
