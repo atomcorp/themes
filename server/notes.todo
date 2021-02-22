@@ -12,3 +12,5 @@ change user $ su bitnami
 # auth user to use a folder $ sudo chown -R $(whoami) foldername
 auth user $ sudo chown -R $(whoami) 
 server status $ pm2 list
+ssh -i ~/.ssh/LightsailDefaultKey-eu-west-2.pem bitnami@18.132.20.40
+tom@atomPC:~$ scp -i ~/.ssh/LightsailDefaultKey-eu-west-2.pem -r /mnt/c/Users/atom/sites/terminal/server/get-themes.js bitnami@18.132.20.40:/home/bitnami/stack/apps/terminal-api

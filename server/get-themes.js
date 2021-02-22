@@ -6,7 +6,7 @@ const contrast = require('get-contrast');
 
 // whatever this mess means
 if (process.env.CI !== true) {
-  require('custom-env').env();
+  require('custom-env').env('private');
 }
 
 const btoa = (str) => Buffer.from(str, 'binary').toString('base64');
@@ -81,5 +81,7 @@ total themes: ${iTerm2SchemaJson.length + customSchemaJson.length}
     console.error(error);
   }
 };
+
+main();
 
 module.exports = main;
