@@ -11,10 +11,10 @@ describe('Windows Terminal Themes - big screen', function () {
     cy.route(/api\/v1\/themes/).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
-      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
         'darkThemes'
       );
-      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => !theme.meta.isDark)).as(
         'lightThemes'
       );
     });
@@ -47,8 +47,8 @@ describe('Windows Terminal Themes - big screen', function () {
   it('should show all dark themes and no light themes by default', function () {
     cy.get('@themes').then((xhr) => {
       const themes = xhr.response.body;
-      const lightThemes = themes.filter((theme) => !theme.isDark);
-      const darkThemes = themes.filter((theme) => theme.isDark);
+      const lightThemes = themes.filter((theme) => !theme.meta.isDark);
+      const darkThemes = themes.filter((theme) => theme.meta.isDark);
       cy.findAllByTestId('theme-option').should(
         'have.length',
         darkThemes.length
@@ -67,8 +67,8 @@ describe('Windows Terminal Themes - big screen', function () {
     cy.findByLabelText(/Light/).should('be.checked');
     cy.get('@themes').then((xhr) => {
       const themes = xhr.response.body;
-      const lightThemes = themes.filter((theme) => !theme.isDark);
-      const darkThemes = themes.filter((theme) => theme.isDark);
+      const lightThemes = themes.filter((theme) => !theme.meta.isDark);
+      const darkThemes = themes.filter((theme) => theme.meta.isDark);
       cy.findAllByTestId('theme-option').should(
         'have.length',
         lightThemes.length
@@ -179,10 +179,10 @@ describe('Themes - small screen', function () {
     cy.route(/api\/v1\/themes/).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
-      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
         'darkThemes'
       );
-      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => !theme.meta.isDark)).as(
         'lightThemes'
       );
     });
@@ -191,8 +191,8 @@ describe('Themes - small screen', function () {
   it('default to first dark theme', function () {
     cy.get('@themes').then((xhr) => {
       const themes = xhr.response.body;
-      const lightThemes = themes.filter((theme) => !theme.isDark);
-      const darkThemes = themes.filter((theme) => theme.isDark);
+      const lightThemes = themes.filter((theme) => !theme.meta.isDark);
+      const darkThemes = themes.filter((theme) => theme.meta.isDark);
       cy.findAllByTestId('theme-option').should(
         'have.length',
         darkThemes.length
@@ -270,10 +270,10 @@ describe('Preview views', function () {
     cy.route(/api\/v1\/themes/).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
-      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
         'darkThemes'
       );
-      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => !theme.meta.isDark)).as(
         'lightThemes'
       );
     });
@@ -361,10 +361,10 @@ describe('Keyboard navigation', function () {
     cy.route(/api\/v1\/themes/).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
-      cy.wrap(xhr.response.body.filter((theme) => theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
         'darkThemes'
       );
-      cy.wrap(xhr.response.body.filter((theme) => !theme.isDark)).as(
+      cy.wrap(xhr.response.body.filter((theme) => !theme.meta.isDark)).as(
         'lightThemes'
       );
     });
