@@ -4,7 +4,6 @@ const got = require('got');
 const fs = require('fs');
 const contrast = require('get-contrast');
 
-// whatever this mess means
 if (process.env.CI !== true) {
   require('custom-env').env('private');
 }
@@ -81,7 +80,5 @@ total themes: ${iTerm2SchemaJson.length + customSchemaJson.length}
     console.error(error);
   }
 };
-
-main();
 
 module.exports = main;
