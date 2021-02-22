@@ -19,7 +19,9 @@
     "brightWhite": "#f7f7f7",
     "background": "#f7f7f7",
     "foreground": "#4a4543",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "3024 Night",
@@ -41,7 +43,33 @@
     "brightWhite": "#f7f7f7",
     "background": "#090300",
     "foreground": "#a5a2a2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Adventure",
+    "black": "#040404",
+    "red": "#d84a33",
+    "green": "#5da602",
+    "yellow": "#eebb6e",
+    "blue": "#417ab3",
+    "purple": "#e5c499",
+    "cyan": "#bdcfe5",
+    "white": "#dbded8",
+    "brightBlack": "#685656",
+    "brightRed": "#d76b42",
+    "brightGreen": "#99b52c",
+    "brightYellow": "#ffb670",
+    "brightBlue": "#97d7ef",
+    "brightPurple": "#aa7900",
+    "brightCyan": "#bdcfe5",
+    "brightWhite": "#e4d5c7",
+    "background": "#040404",
+    "foreground": "#feffff",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "AdventureTime",
@@ -63,7 +91,9 @@
     "brightWhite": "#f6f5fb",
     "background": "#1f1d45",
     "foreground": "#f8dcc0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Afterglow",
@@ -85,7 +115,9 @@
     "brightWhite": "#f5f5f5",
     "background": "#212121",
     "foreground": "#d0d0d0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "AlienBlood",
@@ -107,7 +139,9 @@
     "brightWhite": "#73fa91",
     "background": "#0f1610",
     "foreground": "#637d75",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Andromeda",
@@ -129,7 +163,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#262a33",
     "foreground": "#e5e5e5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Argonaut",
@@ -151,7 +187,9 @@
     "brightWhite": "#ffffff",
     "background": "#0e1019",
     "foreground": "#fffaf4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Arthur",
@@ -173,7 +211,9 @@
     "brightWhite": "#ddccbb",
     "background": "#1c1c1c",
     "foreground": "#ddeedd",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "AtelierSulphurpool",
@@ -195,7 +235,9 @@
     "brightWhite": "#f5f7ff",
     "background": "#202746",
     "foreground": "#979db4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Atom",
@@ -217,7 +259,9 @@
     "brightWhite": "#e0e0e0",
     "background": "#161719",
     "foreground": "#c5c8c6",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "AtomOneLight",
@@ -239,7 +283,33 @@
     "brightWhite": "#ffffff",
     "background": "#f9f9f9",
     "foreground": "#2a2c33",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
+  },
+  {
+    "name": "Aurora",
+    "black": "#23262e",
+    "red": "#f0266f",
+    "green": "#8fd46d",
+    "yellow": "#ffe66d",
+    "blue": "#0321d7",
+    "purple": "#ee5d43",
+    "cyan": "#03d6b8",
+    "white": "#c74ded",
+    "brightBlack": "#292e38",
+    "brightRed": "#f92672",
+    "brightGreen": "#8fd46d",
+    "brightYellow": "#ffe66d",
+    "brightBlue": "#03d6b8",
+    "brightPurple": "#ee5d43",
+    "brightCyan": "#03d6b8",
+    "brightWhite": "#c74ded",
+    "background": "#23262e",
+    "foreground": "#ffca28",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "ayu",
@@ -261,7 +331,9 @@
     "brightWhite": "#ffffff",
     "background": "#0f1419",
     "foreground": "#e6e1cf",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "ayu_light",
@@ -283,7 +355,9 @@
     "brightWhite": "#ffffff",
     "background": "#fafafa",
     "foreground": "#5c6773",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Banana Blueberry",
@@ -305,7 +379,9 @@
     "brightWhite": "#ffffff",
     "background": "#191323",
     "foreground": "#cccccc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Batman",
@@ -327,7 +403,9 @@
     "brightWhite": "#dadbd6",
     "background": "#1b1d1e",
     "foreground": "#6f6f6f",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Belafonte Day",
@@ -349,7 +427,9 @@
     "brightWhite": "#d5ccba",
     "background": "#d5ccba",
     "foreground": "#45373c",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Belafonte Night",
@@ -371,7 +451,9 @@
     "brightWhite": "#d5ccba",
     "background": "#20111b",
     "foreground": "#968c83",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "BirdsOfParadise",
@@ -393,7 +475,9 @@
     "brightWhite": "#fff9d5",
     "background": "#2a1f1d",
     "foreground": "#e0dbb7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Blazer",
@@ -415,7 +499,9 @@
     "brightWhite": "#ffffff",
     "background": "#0d1926",
     "foreground": "#d9e6f2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Blue Matrix",
@@ -437,7 +523,9 @@
     "brightWhite": "#ffffff",
     "background": "#101116",
     "foreground": "#00a2ff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "BlueBerryPie",
@@ -459,7 +547,9 @@
     "brightWhite": "#0a6c7e",
     "background": "#1c0c28",
     "foreground": "#babab9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "BlulocoDark",
@@ -481,7 +571,9 @@
     "brightWhite": "#ffffff",
     "background": "#1e2127",
     "foreground": "#abb2bf",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "BlulocoLight",
@@ -503,7 +595,9 @@
     "brightWhite": "#1d1d22",
     "background": "#f7f7f7",
     "foreground": "#2a2c33",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Borland",
@@ -525,7 +619,9 @@
     "brightWhite": "#ffffff",
     "background": "#0000a4",
     "foreground": "#ffff4e",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Breeze",
@@ -547,7 +643,9 @@
     "brightWhite": "#fcfcfc",
     "background": "#31363b",
     "foreground": "#eff0f1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Bright Lights",
@@ -569,7 +667,9 @@
     "brightWhite": "#c2c8d7",
     "background": "#191919",
     "foreground": "#b3c9d7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Broadcast",
@@ -591,7 +691,9 @@
     "brightWhite": "#ffffff",
     "background": "#2b2b2b",
     "foreground": "#e6e1dc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Brogrammer",
@@ -613,7 +715,9 @@
     "brightWhite": "#ffffff",
     "background": "#131313",
     "foreground": "#d6dbe5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Builtin Dark",
@@ -635,7 +739,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#bbbbbb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Builtin Light",
@@ -657,7 +763,9 @@
     "brightWhite": "#ffffff",
     "background": "#ffffff",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Builtin Pastel Dark",
@@ -679,7 +787,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#bbbbbb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Builtin Solarized Dark",
@@ -701,7 +811,9 @@
     "brightWhite": "#fdf6e3",
     "background": "#002b36",
     "foreground": "#839496",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Builtin Solarized Light",
@@ -723,7 +835,9 @@
     "brightWhite": "#fdf6e3",
     "background": "#fdf6e3",
     "foreground": "#657b83",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Builtin Tango Dark",
@@ -745,7 +859,9 @@
     "brightWhite": "#eeeeec",
     "background": "#000000",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Builtin Tango Light",
@@ -767,7 +883,9 @@
     "brightWhite": "#eeeeec",
     "background": "#ffffff",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "C64",
@@ -789,7 +907,9 @@
     "brightWhite": "#f7f7f7",
     "background": "#40318d",
     "foreground": "#7869c4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Calamity",
@@ -811,7 +931,9 @@
     "brightWhite": "#ffffff",
     "background": "#2f2833",
     "foreground": "#d5ced9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Chalk",
@@ -833,7 +955,9 @@
     "brightWhite": "#d2d8d9",
     "background": "#2b2d2e",
     "foreground": "#d2d8d9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Chalkboard",
@@ -855,7 +979,9 @@
     "brightWhite": "#ffffff",
     "background": "#29262f",
     "foreground": "#d9e6f2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "ChallengerDeep",
@@ -877,7 +1003,9 @@
     "brightWhite": "#cbe3e7",
     "background": "#1e1c31",
     "foreground": "#cbe1e7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Chester",
@@ -899,7 +1027,9 @@
     "brightWhite": "#ffffff",
     "background": "#2c3643",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Ciapre",
@@ -921,7 +1051,9 @@
     "brightWhite": "#f4f4f4",
     "background": "#191c27",
     "foreground": "#aea47a",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "CLRS",
@@ -943,7 +1075,9 @@
     "brightWhite": "#eeeeec",
     "background": "#ffffff",
     "foreground": "#262626",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Cobalt Neon",
@@ -965,7 +1099,9 @@
     "brightWhite": "#8ff586",
     "background": "#142838",
     "foreground": "#8ff586",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Cobalt2",
@@ -987,7 +1123,9 @@
     "brightWhite": "#ffffff",
     "background": "#132738",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "coffee_theme",
@@ -1009,7 +1147,9 @@
     "brightWhite": "#ffffff",
     "background": "#f5deb3",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "CrayonPonyFish",
@@ -1031,7 +1171,9 @@
     "brightWhite": "#b0949d",
     "background": "#150707",
     "foreground": "#68525a",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Cyberdyne",
@@ -1053,7 +1195,9 @@
     "brightWhite": "#ffffff",
     "background": "#151144",
     "foreground": "#00ff92",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "cyberpunk",
@@ -1075,7 +1219,9 @@
     "brightWhite": "#ffffff",
     "background": "#332a57",
     "foreground": "#e5e5e5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Dark Pastel",
@@ -1097,7 +1243,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Dark+",
@@ -1119,7 +1267,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#0e0e0e",
     "foreground": "#cccccc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Darkside",
@@ -1141,7 +1291,9 @@
     "brightWhite": "#bababa",
     "background": "#222324",
     "foreground": "#bababa",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "deep",
@@ -1163,7 +1315,9 @@
     "brightWhite": "#ffffff",
     "background": "#090909",
     "foreground": "#cdcdcd",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Desert",
@@ -1185,7 +1339,9 @@
     "brightWhite": "#ffffff",
     "background": "#333333",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "DimmedMonokai",
@@ -1207,7 +1363,9 @@
     "brightWhite": "#fdffb9",
     "background": "#1f1f1f",
     "foreground": "#b9bcba",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Django",
@@ -1229,7 +1387,9 @@
     "brightWhite": "#ffffff",
     "background": "#0b2f20",
     "foreground": "#f8f8f8",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "DjangoRebornAgain",
@@ -1251,7 +1411,9 @@
     "brightWhite": "#ffffff",
     "background": "#051f14",
     "foreground": "#dadedc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "DjangoSmooth",
@@ -1273,7 +1435,33 @@
     "brightWhite": "#ffffff",
     "background": "#245032",
     "foreground": "#f8f8f8",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Doom Peacock",
+    "black": "#1c1f24",
+    "red": "#cb4b16",
+    "green": "#26a6a6",
+    "yellow": "#bcd42a",
+    "blue": "#2a6cc6",
+    "purple": "#a9a1e1",
+    "cyan": "#5699af",
+    "white": "#ede0ce",
+    "brightBlack": "#2b2a27",
+    "brightRed": "#ff5d38",
+    "brightGreen": "#98be65",
+    "brightYellow": "#e6f972",
+    "brightBlue": "#51afef",
+    "brightPurple": "#c678dd",
+    "brightCyan": "#46d9ff",
+    "brightWhite": "#dfdfdf",
+    "background": "#2b2a27",
+    "foreground": "#ede0ce",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "DoomOne",
@@ -1295,7 +1483,9 @@
     "brightWhite": "#bfbfbf",
     "background": "#282c34",
     "foreground": "#bbc2cf",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "DotGov",
@@ -1317,7 +1507,9 @@
     "brightWhite": "#ffffff",
     "background": "#262c35",
     "foreground": "#ebebeb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Dracula",
@@ -1339,7 +1531,33 @@
     "brightWhite": "#ffffff",
     "background": "#1e1f29",
     "foreground": "#f8f8f2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Dracula+",
+    "black": "#21222c",
+    "red": "#ff5555",
+    "green": "#50fa7b",
+    "yellow": "#ffcb6b",
+    "blue": "#82aaff",
+    "purple": "#c792ea",
+    "cyan": "#8be9fd",
+    "white": "#f8f8f2",
+    "brightBlack": "#545454",
+    "brightRed": "#ff6e6e",
+    "brightGreen": "#69ff94",
+    "brightYellow": "#ffcb6b",
+    "brightBlue": "#d6acff",
+    "brightPurple": "#ff92df",
+    "brightCyan": "#a4ffff",
+    "brightWhite": "#f8f8f2",
+    "background": "#212121",
+    "foreground": "#f8f8f2",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "DraculaPlus",
@@ -1361,7 +1579,9 @@
     "brightRed": "#FF6E6E",
     "brightWhite": "#F8F8F2",
     "brightYellow": "#ffcb6b",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Duotone Dark",
@@ -1383,7 +1603,9 @@
     "brightWhite": "#eae5ff",
     "background": "#1f1d27",
     "foreground": "#b7a1ff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Earthsong",
@@ -1405,7 +1627,9 @@
     "brightWhite": "#f6f7ec",
     "background": "#292520",
     "foreground": "#e5c7a9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Elemental",
@@ -1427,7 +1651,9 @@
     "brightWhite": "#fff1e9",
     "background": "#22211d",
     "foreground": "#807a74",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Elementary",
@@ -1449,7 +1675,9 @@
     "brightWhite": "#8c00ec",
     "background": "#181818",
     "foreground": "#efefef",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "ENCOM",
@@ -1471,7 +1699,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#00a595",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Espresso",
@@ -1493,7 +1723,9 @@
     "brightWhite": "#ffffff",
     "background": "#323232",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Espresso Libre",
@@ -1515,7 +1747,9 @@
     "brightWhite": "#eeeeec",
     "background": "#2a211c",
     "foreground": "#b8a898",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Fahrenheit",
@@ -1537,7 +1771,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#ffffce",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Fideloper",
@@ -1559,7 +1795,9 @@
     "brightWhite": "#fcf4df",
     "background": "#292f33",
     "foreground": "#dbdae0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "FirefoxDev",
@@ -1581,7 +1819,9 @@
     "brightWhite": "#e2e2e2",
     "background": "#0e1011",
     "foreground": "#7c8fa4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Firewatch",
@@ -1603,7 +1843,9 @@
     "brightWhite": "#e6e5ff",
     "background": "#1e2027",
     "foreground": "#9ba2b2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "FishTank",
@@ -1625,7 +1867,9 @@
     "brightWhite": "#f6ffec",
     "background": "#232537",
     "foreground": "#ecf0fe",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Flat",
@@ -1647,7 +1891,9 @@
     "brightWhite": "#e7eced",
     "background": "#002240",
     "foreground": "#2cc55d",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Flatland",
@@ -1669,7 +1915,9 @@
     "brightWhite": "#ffffff",
     "background": "#1d1f21",
     "foreground": "#b8dbef",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Floraverse",
@@ -1691,7 +1939,9 @@
     "brightWhite": "#fff5db",
     "background": "#0e0d15",
     "foreground": "#dbd1b9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "ForestBlue",
@@ -1713,7 +1963,9 @@
     "brightWhite": "#e2d8cd",
     "background": "#051519",
     "foreground": "#e2d8cd",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Framer",
@@ -1735,7 +1987,9 @@
     "brightWhite": "#ffffff",
     "background": "#111111",
     "foreground": "#777777",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "FrontEndDelight",
@@ -1757,7 +2011,9 @@
     "brightWhite": "#8c735b",
     "background": "#1b1c1d",
     "foreground": "#adadad",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "FunForrest",
@@ -1779,7 +2035,9 @@
     "brightWhite": "#ffeaa3",
     "background": "#251200",
     "foreground": "#dec165",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Galaxy",
@@ -1801,7 +2059,33 @@
     "brightWhite": "#ffffff",
     "background": "#1d2837",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Galizur",
+    "black": "#223344",
+    "red": "#aa1122",
+    "green": "#33aa11",
+    "yellow": "#ccaa22",
+    "blue": "#2255cc",
+    "purple": "#7755aa",
+    "cyan": "#22bbdd",
+    "white": "#8899aa",
+    "brightBlack": "#556677",
+    "brightRed": "#ff1133",
+    "brightGreen": "#33ff11",
+    "brightYellow": "#ffdd33",
+    "brightBlue": "#3377ff",
+    "brightPurple": "#aa77ff",
+    "brightCyan": "#33ddff",
+    "brightWhite": "#bbccdd",
+    "background": "#071317",
+    "foreground": "#ddeeff",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Github",
@@ -1823,7 +2107,9 @@
     "brightWhite": "#ffffff",
     "background": "#f4f4f4",
     "foreground": "#3e3e3e",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Glacier",
@@ -1845,7 +2131,9 @@
     "brightWhite": "#ffffff",
     "background": "#0c1115",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Grape",
@@ -1867,7 +2155,9 @@
     "brightWhite": "#a288f7",
     "background": "#171423",
     "foreground": "#9f9fa1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Grass",
@@ -1889,7 +2179,9 @@
     "brightWhite": "#ffffff",
     "background": "#13773d",
     "foreground": "#fff0a5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Gruvbox Dark",
@@ -1911,7 +2203,57 @@
     "brightWhite": "#e6d4a3",
     "background": "#1e1e1e",
     "foreground": "#e6d4a3",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Gruvbox Light",
+    "black": "#fbf1c7",
+    "red": "#9d0006",
+    "green": "#79740e",
+    "yellow": "#b57614",
+    "blue": "#076678",
+    "purple": "#8f3f71",
+    "cyan": "#427b58",
+    "white": "#3c3836",
+    "brightBlack": "#9d8374",
+    "brightRed": "#cc241d",
+    "brightGreen": "#98971a",
+    "brightYellow": "#d79921",
+    "brightBlue": "#458588",
+    "brightPurple": "#b16186",
+    "brightCyan": "#689d69",
+    "brightWhite": "#7c6f64",
+    "background": "#fbf1c7",
+    "foreground": "#282828",
+    "meta": {
+      "isDark": false
+    }
+  },
+  {
+    "name": "Guezwhoz",
+    "black": "#080808",
+    "red": "#ff5f5f",
+    "green": "#87d7af",
+    "yellow": "#d7d787",
+    "blue": "#5fafd7",
+    "purple": "#afafff",
+    "cyan": "#5fd7d7",
+    "white": "#dadada",
+    "brightBlack": "#8a8a8a",
+    "brightRed": "#d75f5f",
+    "brightGreen": "#afd7af",
+    "brightYellow": "#d7d7af",
+    "brightBlue": "#87afd7",
+    "brightPurple": "#afafd7",
+    "brightCyan": "#87d7d7",
+    "brightWhite": "#dadada",
+    "background": "#1c1c1c",
+    "foreground": "#d0d0d0",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hacktober",
@@ -1933,7 +2275,9 @@
     "brightWhite": "#ffffff",
     "background": "#141414",
     "foreground": "#c9c9c9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hardcore",
@@ -1955,7 +2299,9 @@
     "brightWhite": "#f8f8f2",
     "background": "#121212",
     "foreground": "#a0a0a0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Harper",
@@ -1977,7 +2323,9 @@
     "brightWhite": "#fefbea",
     "background": "#010101",
     "foreground": "#a8a49d",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Highway",
@@ -1999,7 +2347,9 @@
     "brightWhite": "#ffffff",
     "background": "#222225",
     "foreground": "#ededed",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hipster Green",
@@ -2021,7 +2371,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#100b05",
     "foreground": "#84c138",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hivacruz",
@@ -2043,7 +2395,9 @@
     "brightWhite": "#f5f7ff",
     "background": "#132638",
     "foreground": "#ede4e4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Homebrew",
@@ -2065,7 +2419,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#000000",
     "foreground": "#00ff00",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hopscotch",
@@ -2087,7 +2443,9 @@
     "brightWhite": "#ffffff",
     "background": "#322931",
     "foreground": "#b9b5b8",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hopscotch.256",
@@ -2109,7 +2467,33 @@
     "brightWhite": "#ffffff",
     "background": "#322931",
     "foreground": "#b9b5b8",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Horizon",
+    "black": "#0a0a0d",
+    "red": "#E95678",
+    "green": "#29D398",
+    "yellow": "#FAB795",
+    "blue": "#26BBD9",
+    "purple": "#EE64AC",
+    "cyan": "#59E1E3",
+    "white": "#e5e5e5",
+    "brightBlack": "#848484",
+    "brightRed": "#EC6A88",
+    "brightGreen": "#3FDAA4",
+    "brightYellow": "#FBC3A7",
+    "brightBlue": "#3FC4DE",
+    "brightPurple": "#F075B5",
+    "brightCyan": "#6BE4E6",
+    "brightWhite": "#e5e5e5",
+    "background": "#1c1e26",
+    "foreground": "#bdc0c2",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hurtado",
@@ -2131,7 +2515,9 @@
     "brightWhite": "#dbdbdb",
     "background": "#000000",
     "foreground": "#dbdbdb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Hybrid",
@@ -2153,7 +2539,9 @@
     "brightWhite": "#5a626a",
     "background": "#161719",
     "foreground": "#b7bcba",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "IC_Green_PPL",
@@ -2175,7 +2563,9 @@
     "brightWhite": "#e0f1dc",
     "background": "#2c2c2c",
     "foreground": "#e0f1dc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "IC_Orange_PPL",
@@ -2197,7 +2587,9 @@
     "brightWhite": "#fafaff",
     "background": "#262626",
     "foreground": "#ffcb83",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "idea",
@@ -2219,7 +2611,9 @@
     "brightWhite": "#181818",
     "background": "#202020",
     "foreground": "#adadad",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "idleToes",
@@ -2241,7 +2635,9 @@
     "brightWhite": "#ffffff",
     "background": "#323232",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "IR_Black",
@@ -2263,7 +2659,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#f1f1f1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Jackie Brown",
@@ -2285,7 +2683,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#2c1d16",
     "foreground": "#ffcc2f",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Japanesque",
@@ -2307,7 +2707,9 @@
     "brightWhite": "#b2b5ae",
     "background": "#1e1e1e",
     "foreground": "#f7f6ec",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Jellybeans",
@@ -2329,7 +2731,9 @@
     "brightWhite": "#ffffff",
     "background": "#121212",
     "foreground": "#dedede",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "JetBrains Darcula",
@@ -2351,7 +2755,59 @@
     "brightWhite": "#eeeeee",
     "background": "#202020",
     "foreground": "#adadad",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "jubi",
+    "black": "#3b3750",
+    "red": "#cf7b98",
+    "green": "#90a94b",
+    "yellow": "#6ebfc0",
+    "blue": "#576ea6",
+    "purple": "#bc4f68",
+    "cyan": "#75a7d2",
+    "white": "#c3d3de",
+    "brightBlack": "#a874ce",
+    "brightRed": "#de90ab",
+    "brightGreen": "#bcdd61",
+    "brightYellow": "#87e9ea",
+    "brightBlue": "#8c9fcd",
+    "brightPurple": "#e16c87",
+    "brightCyan": "#b7c9ef",
+    "brightWhite": "#d5e5f1",
+    "background": "#262b33",
+    "foreground": "#c3d3de",
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Juicy Colors",
+    "cursorColor": "#FFFFFF",
+    "selectionBackground": "#FFFFFF",
+    "background": "#292a24",
+    "foreground": "#CCCCCC",
+    "black": "#292a24",
+    "blue": "#209DE5",
+    "cyan": "#00D2FF",
+    "green": "#68D644",
+    "purple": "#AF80FF",
+    "red": "#FF6249",
+    "white": "#CCCCCC",
+    "yellow": "#FCC223",
+    "brightBlack": "#808080",
+    "brightBlue": "#209DE5",
+    "brightCyan": "#00D2FF",
+    "brightGreen": "#68D644",
+    "brightPurple": "#AF80FF",
+    "brightRed": "#FF6249",
+    "brightWhite": "#F2F2F2",
+    "brightYellow": "#FCC223",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Kibble",
@@ -2373,7 +2829,9 @@
     "brightWhite": "#ffffff",
     "background": "#0e100a",
     "foreground": "#f7f7f7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Kolorit",
@@ -2395,7 +2853,9 @@
     "brightWhite": "#ededed",
     "background": "#1d1a1e",
     "foreground": "#efecec",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Konsolas",
@@ -2417,7 +2877,9 @@
     "brightWhite": "#ffffff",
     "background": "#060606",
     "foreground": "#c8c1c1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Lab Fox",
@@ -2439,7 +2901,9 @@
     "brightWhite": "#ffffff",
     "background": "#2e2e2e",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Laser",
@@ -2461,7 +2925,9 @@
     "brightWhite": "#ffffff",
     "background": "#030d18",
     "foreground": "#f106e3",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Later This Evening",
@@ -2483,7 +2949,9 @@
     "brightWhite": "#c1c2c2",
     "background": "#222222",
     "foreground": "#959595",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Lavandula",
@@ -2505,7 +2973,9 @@
     "brightWhite": "#8c91fa",
     "background": "#050014",
     "foreground": "#736e7d",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "LiquidCarbon",
@@ -2527,7 +2997,9 @@
     "brightWhite": "#bccccc",
     "background": "#303030",
     "foreground": "#afc2c2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "LiquidCarbonTransparent",
@@ -2549,7 +3021,9 @@
     "brightWhite": "#bccccc",
     "background": "#000000",
     "foreground": "#afc2c2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "LiquidCarbonTransparentInverse",
@@ -2571,7 +3045,9 @@
     "brightWhite": "#000000",
     "background": "#000000",
     "foreground": "#afc2c2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "lovelace",
@@ -2593,7 +3069,9 @@
     "brightWhite": "#bebec1",
     "background": "#1d1f28",
     "foreground": "#fdfdfd",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Man Page",
@@ -2615,7 +3093,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#fef49c",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Material",
@@ -2637,7 +3117,9 @@
     "brightWhite": "#d9d9d9",
     "background": "#eaeaea",
     "foreground": "#232322",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "MaterialDark",
@@ -2659,7 +3141,9 @@
     "brightWhite": "#d9d9d9",
     "background": "#232322",
     "foreground": "#e5e5e5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "MaterialDarker",
@@ -2681,7 +3165,9 @@
     "brightWhite": "#ffffff",
     "background": "#212121",
     "foreground": "#eeffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "MaterialOcean",
@@ -2703,7 +3189,9 @@
     "brightWhite": "#ffffff",
     "background": "#0f111a",
     "foreground": "#8f93a2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Mathias",
@@ -2725,7 +3213,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#bbbbbb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Medallion",
@@ -2747,7 +3237,9 @@
     "brightWhite": "#fed698",
     "background": "#1d1908",
     "foreground": "#cac296",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "midnight-in-mojave",
@@ -2769,7 +3261,9 @@
     "brightWhite": "#ffffff",
     "background": "#1e1e1e",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Mirage",
@@ -2791,7 +3285,9 @@
     "brightWhite": "#ffffff",
     "background": "#1b2738",
     "foreground": "#a6b2c0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Misterioso",
@@ -2813,7 +3309,9 @@
     "brightWhite": "#ffffff",
     "background": "#2d3743",
     "foreground": "#e1e1e0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Molokai",
@@ -2835,7 +3333,9 @@
     "brightWhite": "#ffffff",
     "background": "#121212",
     "foreground": "#bbbbbb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "MonaLisa",
@@ -2857,7 +3357,9 @@
     "brightWhite": "#ffe598",
     "background": "#120b0d",
     "foreground": "#f7d66a",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Monokai Cmder",
@@ -2881,7 +3383,33 @@
     "brightPurple": "#a87db8",
     "brightCyan": "#58c2e5",
     "brightWhite": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Monokai Octagon",
+    "black": "#000000",
+    "red": "#d81e00",
+    "green": "#5ea702",
+    "yellow": "#cfae00",
+    "blue": "#427ab3",
+    "purple": "#89658e",
+    "cyan": "#00a7aa",
+    "white": "#dbded8",
+    "brightBlack": "#686a66",
+    "brightRed": "#f54235",
+    "brightGreen": "#99e343",
+    "brightYellow": "#fdeb61",
+    "brightBlue": "#84b0d8",
+    "brightPurple": "#bc94b7",
+    "brightCyan": "#37e6e8",
+    "brightWhite": "#f1f1f0",
+    "background": "#282a3a",
+    "foreground": "#eaf2f1",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Monokai Remastered",
@@ -2903,7 +3431,9 @@
     "brightWhite": "#f6f6ef",
     "background": "#0c0c0c",
     "foreground": "#d9d9d9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Monokai Soda",
@@ -2925,7 +3455,9 @@
     "brightWhite": "#f6f6ef",
     "background": "#1a1a1a",
     "foreground": "#c4c5b5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Monokai Vivid",
@@ -2947,7 +3479,33 @@
     "brightWhite": "#ffffff",
     "background": "#121212",
     "foreground": "#f9f9f9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Moonlight II",
+    "black": "#191a2a",
+    "red": "#ff757f",
+    "green": "#c3e88d",
+    "yellow": "#ffc777",
+    "blue": "#82aaff",
+    "purple": "#c099ff",
+    "cyan": "#86e1fc",
+    "white": "#c8d3f5",
+    "brightBlack": "#828bb8",
+    "brightRed": "#ff757f",
+    "brightGreen": "#c3e88d",
+    "brightYellow": "#ffc777",
+    "brightBlue": "#82aaff",
+    "brightPurple": "#c099ff",
+    "brightCyan": "#86e1fc",
+    "brightWhite": "#c8d3f5",
+    "background": "#222436",
+    "foreground": "#c8d3f5",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "N0tch2k",
@@ -2969,7 +3527,9 @@
     "brightWhite": "#d8c8bb",
     "background": "#222222",
     "foreground": "#a0a0a0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Neopolitan",
@@ -2991,7 +3551,9 @@
     "brightWhite": "#f8f8f8",
     "background": "#271f19",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Neutron",
@@ -3013,7 +3575,9 @@
     "brightWhite": "#ebedf2",
     "background": "#1c1e22",
     "foreground": "#e6e8ef",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Night Owlish Light",
@@ -3035,7 +3599,9 @@
     "brightWhite": "#989fb1",
     "background": "#ffffff",
     "foreground": "#403f53",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "NightLion v1",
@@ -3057,7 +3623,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#bbbbbb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "NightLion v2",
@@ -3079,7 +3647,9 @@
     "brightWhite": "#ffffff",
     "background": "#171717",
     "foreground": "#bbbbbb",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Nocturnal Winter",
@@ -3101,29 +3671,33 @@
     "brightWhite": "#ffffff",
     "background": "#0d0d17",
     "foreground": "#e6e5e5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "nord",
+    "black": "#3b4252",
+    "red": "#bf616a",
+    "green": "#a3be8c",
+    "yellow": "#ebcb8b",
+    "blue": "#81a1c1",
+    "purple": "#b48ead",
+    "cyan": "#88c0d0",
+    "white": "#e5e9f0",
+    "brightBlack": "#4c566a",
+    "brightRed": "#bf616a",
+    "brightGreen": "#a3be8c",
+    "brightYellow": "#ebcb8b",
+    "brightBlue": "#81a1c1",
+    "brightPurple": "#b48ead",
+    "brightCyan": "#8fbcbb",
+    "brightWhite": "#eceff4",
     "background": "#2e3440",
     "foreground": "#d8dee9",
-    "black": "#3b4252",
-    "blue": "#81a1c1",
-    "brightBlack": "#4c566a",
-    "brightBlue": "#81a1c1",
-    "brightCyan": "#8fbcbb",
-    "brightGreen": "#a3be8c",
-    "brightPurple": "#b48ead",
-    "brightRed": "#bf616a",
-    "brightWhite": "#eceff4",
-    "brightYellow": "#ebcb8b",
-    "cyan": "#88c0d0",
-    "green": "#a3be8c",
-    "purple": "#b48ead",
-    "red": "#bf616a",
-    "white": "#e5e9f0",
-    "yellow": "#ebcb8b",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Novel",
@@ -3145,7 +3719,9 @@
     "brightWhite": "#ffffff",
     "background": "#dfdbc3",
     "foreground": "#3b2322",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Obsidian",
@@ -3167,7 +3743,9 @@
     "brightWhite": "#ffffff",
     "background": "#283033",
     "foreground": "#cdcdcd",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Ocean",
@@ -3189,7 +3767,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#224fbc",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "OceanicMaterial",
@@ -3211,7 +3791,9 @@
     "brightWhite": "#ffffff",
     "background": "#1c262b",
     "foreground": "#c2c8d7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Ollie",
@@ -3233,7 +3815,9 @@
     "brightWhite": "#5b6ea7",
     "background": "#222125",
     "foreground": "#8a8dae",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "OneDark",
@@ -3255,7 +3839,9 @@
     "brightWhite": "#ffffff",
     "background": "#1e2127",
     "foreground": "#abb2bf",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "OneHalfDark",
@@ -3277,7 +3863,9 @@
     "brightWhite": "#dcdfe4",
     "background": "#282c34",
     "foreground": "#dcdfe4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "OneHalfLight",
@@ -3299,7 +3887,9 @@
     "brightWhite": "#ffffff",
     "background": "#fafafa",
     "foreground": "#383a42",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "OneStar",
@@ -3321,7 +3911,9 @@
     "brightWhite": "#fafafa",
     "background": "#0e0e0e",
     "foreground": "#e4e4e4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Operator Mono Dark",
@@ -3343,7 +3935,57 @@
     "brightWhite": "#fdfdf6",
     "background": "#191919",
     "foreground": "#c3cac2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Overnight Slumber",
+    "black": "#0a1222",
+    "red": "#ffa7c4",
+    "green": "#85cc95",
+    "yellow": "#ffcb8b",
+    "blue": "#8dabe1",
+    "purple": "#c792eb",
+    "cyan": "#78ccf0",
+    "white": "#ffffff",
+    "brightBlack": "#575656",
+    "brightRed": "#ffa7c4",
+    "brightGreen": "#85cc95",
+    "brightYellow": "#ffcb8b",
+    "brightBlue": "#8dabe1",
+    "brightPurple": "#c792eb",
+    "brightCyan": "#ffa7c4",
+    "brightWhite": "#ffffff",
+    "background": "#0e1729",
+    "foreground": "#ced2d6",
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "PaleNightHC",
+    "black": "#000000",
+    "red": "#f07178",
+    "green": "#c3e88d",
+    "yellow": "#ffcb6b",
+    "blue": "#82aaff",
+    "purple": "#c792ea",
+    "cyan": "#89ddff",
+    "white": "#ffffff",
+    "brightBlack": "#666666",
+    "brightRed": "#f6a9ae",
+    "brightGreen": "#dbf1ba",
+    "brightYellow": "#ffdfa6",
+    "brightBlue": "#b4ccff",
+    "brightPurple": "#ddbdf2",
+    "brightCyan": "#b8eaff",
+    "brightWhite": "#999999",
+    "background": "#3e4251",
+    "foreground": "#cccccc",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Pandora",
@@ -3365,7 +4007,9 @@
     "brightWhite": "#ffffff",
     "background": "#141e43",
     "foreground": "#e1e1e1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Paraiso Dark",
@@ -3387,7 +4031,9 @@
     "brightWhite": "#e7e9db",
     "background": "#2f1e2e",
     "foreground": "#a39e9b",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Parasio Dark",
@@ -3409,7 +4055,9 @@
     "brightWhite": "#e7e9db",
     "background": "#2f1e2e",
     "foreground": "#a39e9b",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "PaulMillr",
@@ -3431,7 +4079,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#f2f2f2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "PencilDark",
@@ -3453,7 +4103,9 @@
     "brightWhite": "#f1f1f1",
     "background": "#212121",
     "foreground": "#f1f1f1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "PencilLight",
@@ -3475,7 +4127,9 @@
     "brightWhite": "#f1f1f1",
     "background": "#f1f1f1",
     "foreground": "#424242",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Piatto Light",
@@ -3497,7 +4151,9 @@
     "brightWhite": "#f2f2f2",
     "background": "#ffffff",
     "foreground": "#414141",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Pnevma",
@@ -3519,7 +4175,33 @@
     "brightWhite": "#efefef",
     "background": "#1c1c1c",
     "foreground": "#d0d0d0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Popping and Locking",
+    "black": "#1d2021",
+    "red": "#cc241d",
+    "green": "#98971a",
+    "yellow": "#d79921",
+    "blue": "#458588",
+    "purple": "#b16286",
+    "cyan": "#689d6a",
+    "white": "#a89984",
+    "brightBlack": "#928374",
+    "brightRed": "#f42c3e",
+    "brightGreen": "#b8bb26",
+    "brightYellow": "#fabd2f",
+    "brightBlue": "#99c6ca",
+    "brightPurple": "#d3869b",
+    "brightCyan": "#7ec16e",
+    "brightWhite": "#ebdbb2",
+    "background": "#181921",
+    "foreground": "#ebdbb2",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "primary",
@@ -3541,7 +4223,33 @@
     "brightWhite": "#ffffff",
     "background": "#ffffff",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
+  },
+  {
+    "name": "Primer",
+    "black": "#000000",
+    "red": "#ea4a5a",
+    "green": "#34d058",
+    "yellow": "#ffdf5d",
+    "blue": "#2188ff",
+    "purple": "#8a63d2",
+    "cyan": "#15e2e2",
+    "white": "#ecf0f1",
+    "brightBlack": "#4f5861",
+    "brightRed": "#fdaeb7",
+    "brightGreen": "#bef5cb",
+    "brightYellow": "#fff5b1",
+    "brightBlue": "#c8e1ff",
+    "brightPurple": "#d1bcf9",
+    "brightCyan": "#a2ecec",
+    "brightWhite": "#ffffff",
+    "background": "#1a2b3c",
+    "foreground": "#ffffff",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Pro",
@@ -3563,7 +4271,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#000000",
     "foreground": "#f2f2f2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Pro Light",
@@ -3585,7 +4295,9 @@
     "brightWhite": "#f2f2f2",
     "background": "#ffffff",
     "foreground": "#191919",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Purple Rain",
@@ -3607,7 +4319,9 @@
     "brightWhite": "#ffffff",
     "background": "#21084a",
     "foreground": "#fffbf6",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "purplepeter",
@@ -3629,7 +4343,33 @@
     "brightWhite": "#b9aed3",
     "background": "#2a1a4a",
     "foreground": "#ece7fa",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Rapture",
+    "black": "#000000",
+    "red": "#fc644d",
+    "green": "#7afde1",
+    "yellow": "#fff09b",
+    "blue": "#6c9bf5",
+    "purple": "#ff4fa1",
+    "cyan": "#64e0ff",
+    "white": "#c0c9e5",
+    "brightBlack": "#304b66",
+    "brightRed": "#fc644d",
+    "brightGreen": "#7afde1",
+    "brightYellow": "#fff09b",
+    "brightBlue": "#6c9bf5",
+    "brightPurple": "#ff4fa1",
+    "brightCyan": "#64e0ff",
+    "brightWhite": "#ffffff",
+    "background": "#111e2a",
+    "foreground": "#c0c9e5",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "rebecca",
@@ -3651,7 +4391,9 @@
     "brightWhite": "#f4f2f9",
     "background": "#292a44",
     "foreground": "#e8e6ed",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Red Alert",
@@ -3673,7 +4415,9 @@
     "brightWhite": "#ffffff",
     "background": "#762423",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Red Planet",
@@ -3695,7 +4439,9 @@
     "brightWhite": "#d6bfb8",
     "background": "#222222",
     "foreground": "#c2b790",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Red Sands",
@@ -3717,7 +4463,9 @@
     "brightWhite": "#ffffff",
     "background": "#7a251e",
     "foreground": "#d7c9a7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Relaxed",
@@ -3739,7 +4487,9 @@
     "brightWhite": "#f7f7f7",
     "background": "#353a44",
     "foreground": "#d9d9d9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Rippedcasts",
@@ -3761,7 +4511,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#2b2b2b",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Rose Pine",
@@ -3783,7 +4535,9 @@
     "brightWhite": "#e0def4",
     "background": "#191724",
     "foreground": "#e0def4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Rouge 2",
@@ -3805,7 +4559,9 @@
     "brightWhite": "#e8e8ea",
     "background": "#17182b",
     "foreground": "#a2a3aa",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Royal",
@@ -3827,7 +4583,9 @@
     "brightWhite": "#9e8cbd",
     "background": "#100815",
     "foreground": "#514968",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Ryuuko",
@@ -3849,7 +4607,9 @@
     "brightWhite": "#ececec",
     "background": "#2c3941",
     "foreground": "#ececec",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Sakura",
@@ -3871,7 +4631,9 @@
     "brightWhite": "#cbb6ff",
     "background": "#18131e",
     "foreground": "#dd7bdc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Scarlet Protocol",
@@ -3893,7 +4655,9 @@
     "brightWhite": "#ffffff",
     "background": "#1c153d",
     "foreground": "#e41951",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Seafoam Pastel",
@@ -3915,7 +4679,9 @@
     "brightWhite": "#e0e0e0",
     "background": "#243435",
     "foreground": "#d4e7d4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "SeaShells",
@@ -3937,7 +4703,9 @@
     "brightWhite": "#fee4ce",
     "background": "#09141b",
     "foreground": "#deb88d",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Seti",
@@ -3959,7 +4727,9 @@
     "brightWhite": "#ffffff",
     "background": "#111213",
     "foreground": "#cacecd",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "shades-of-purple",
@@ -3981,7 +4751,9 @@
     "brightWhite": "#ffffff",
     "background": "#1e1d40",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Shaman",
@@ -4003,7 +4775,9 @@
     "brightWhite": "#58fbd6",
     "background": "#001015",
     "foreground": "#405555",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Slate",
@@ -4025,7 +4799,9 @@
     "brightWhite": "#e0e0e0",
     "background": "#222222",
     "foreground": "#35b1d2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "SleepyHollow",
@@ -4047,7 +4823,9 @@
     "brightWhite": "#d2c7a9",
     "background": "#121214",
     "foreground": "#af9a91",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Smyck",
@@ -4069,7 +4847,9 @@
     "brightWhite": "#f7f7f7",
     "background": "#1b1b1b",
     "foreground": "#f7f7f7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Snazzy",
@@ -4091,7 +4871,9 @@
     "brightWhite": "#ededec",
     "background": "#1e1f29",
     "foreground": "#ebece6",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "SoftServer",
@@ -4113,7 +4895,9 @@
     "brightWhite": "#d2e0de",
     "background": "#242626",
     "foreground": "#99a3a2",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Solarized Darcula",
@@ -4135,7 +4919,9 @@
     "brightWhite": "#d2d8d9",
     "background": "#3d3f41",
     "foreground": "#d2d8d9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Solarized Dark - Patched",
@@ -4157,7 +4943,9 @@
     "brightWhite": "#fcf4dc",
     "background": "#001e27",
     "foreground": "#708284",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Solarized Dark Higher Contrast",
@@ -4179,7 +4967,59 @@
     "brightWhite": "#fcf4dc",
     "background": "#001e27",
     "foreground": "#9cc2c3",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Sonoran Gothic",
+    "foreground": "#EAF4DE",
+    "background": "#241F17",
+    "cursorColor": "#EAF4DE",
+    "black": "#867F6E",
+    "red": "#EB6f6f",
+    "green": "#669C50",
+    "yellow": "#F2D696",
+    "blue": "#227B4d",
+    "purple": "#A5ABDA",
+    "cyan": "#E18F62",
+    "white": "#EAF4DE",
+    "brightBlack": "#867F6E",
+    "brightRed": "#EB6f6f",
+    "brightGreen": "#669C50",
+    "brightYellow": "#F2D696",
+    "brightBlue": "#227B4D",
+    "brightPurple": "#A5ABDA",
+    "brightCyan": "#E18F62",
+    "brightWhite": "#EAF4DE",
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Sonoran Sunrise",
+    "foreground": "#61543E",
+    "background": "#F9FAE3",
+    "cursorColor": "#61543E",
+    "black": "#F9FAE3",
+    "red": "#EB6f6f",
+    "green": "#669C50",
+    "yellow": "#F2C55C",
+    "blue": "#227B4D",
+    "purple": "#7189D9",
+    "cyan": "#E07941",
+    "white": "#665E4B",
+    "brightBlack": "#F9FAE3",
+    "brightRed": "#EB6f6f",
+    "brightGreen": "#669C50",
+    "brightYellow": "#F2C55C",
+    "brightBlue": "#227B4D",
+    "brightPurple": "#7189D9",
+    "brightCyan": "#E07941",
+    "brightWhite": "#665E4B",
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Spacedust",
@@ -4201,7 +5041,9 @@
     "brightWhite": "#fefff1",
     "background": "#0a1e24",
     "foreground": "#ecf0c1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "SpaceGray",
@@ -4223,7 +5065,9 @@
     "brightWhite": "#ffffff",
     "background": "#20242d",
     "foreground": "#b3b8c3",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "SpaceGray Eighties",
@@ -4245,7 +5089,9 @@
     "brightWhite": "#ffffff",
     "background": "#222222",
     "foreground": "#bdbaae",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "SpaceGray Eighties Dull",
@@ -4267,7 +5113,9 @@
     "brightWhite": "#ffffff",
     "background": "#222222",
     "foreground": "#c9c6bc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Spiderman",
@@ -4289,7 +5137,9 @@
     "brightWhite": "#fffff9",
     "background": "#1b1d1e",
     "foreground": "#e3e3e3",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Spring",
@@ -4311,7 +5161,9 @@
     "brightWhite": "#ffffff",
     "background": "#ffffff",
     "foreground": "#4d4d4c",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Square",
@@ -4333,7 +5185,9 @@
     "brightWhite": "#e2e2e2",
     "background": "#1a1a1a",
     "foreground": "#acacab",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Subliminal",
@@ -4355,7 +5209,9 @@
     "brightWhite": "#d4d4d4",
     "background": "#282c35",
     "foreground": "#d4d4d4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Sundried",
@@ -4377,7 +5233,9 @@
     "brightWhite": "#ffffff",
     "background": "#1a1818",
     "foreground": "#c9c9c9",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Symfonic",
@@ -4399,7 +5257,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "synthwave",
@@ -4421,7 +5281,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#dad9c7",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "synthwave-everything",
@@ -4443,7 +5305,9 @@
     "brightWhite": "#fefefe",
     "background": "#2a2139",
     "foreground": "#f0eff1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Tango Adapted",
@@ -4465,7 +5329,9 @@
     "brightWhite": "#f6f6f4",
     "background": "#ffffff",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Tango Half Adapted",
@@ -4487,7 +5353,9 @@
     "brightWhite": "#f4f4f2",
     "background": "#ffffff",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Teerb",
@@ -4509,7 +5377,9 @@
     "brightWhite": "#efefef",
     "background": "#262626",
     "foreground": "#d0d0d0",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Terminal Basic",
@@ -4531,7 +5401,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#ffffff",
     "foreground": "#000000",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Thayer Bright",
@@ -4553,7 +5425,9 @@
     "brightWhite": "#f8f8f2",
     "background": "#1b1d1e",
     "foreground": "#f8f8f8",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "The Hulk",
@@ -4575,7 +5449,129 @@
     "brightWhite": "#e5e6e1",
     "background": "#1b1d1e",
     "foreground": "#b5b5b5",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Tinacious Design (Dark)",
+    "black": "#1d1d26",
+    "red": "#ff3399",
+    "green": "#00d364",
+    "yellow": "#ffcc66",
+    "blue": "#00cbff",
+    "purple": "#cc66ff",
+    "cyan": "#00ceca",
+    "white": "#cbcbf0",
+    "brightBlack": "#636667",
+    "brightRed": "#ff2f92",
+    "brightGreen": "#00d364",
+    "brightYellow": "#ffd479",
+    "brightBlue": "#00cbff",
+    "brightPurple": "#d783ff",
+    "brightCyan": "#00d5d4",
+    "brightWhite": "#d5d6f3",
+    "background": "#1d1d26",
+    "foreground": "#cbcbf0",
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "Tinacious Design (Light)",
+    "black": "#1d1d26",
+    "red": "#ff3399",
+    "green": "#00d364",
+    "yellow": "#ffcc66",
+    "blue": "#00cbff",
+    "purple": "#cc66ff",
+    "cyan": "#00ceca",
+    "white": "#cbcbf0",
+    "brightBlack": "#636667",
+    "brightRed": "#ff2f92",
+    "brightGreen": "#00d364",
+    "brightYellow": "#ffd479",
+    "brightBlue": "#00cbff",
+    "brightPurple": "#d783ff",
+    "brightCyan": "#00d5d4",
+    "brightWhite": "#d5d6f3",
+    "background": "#f8f8ff",
+    "foreground": "#1d1d26",
+    "meta": {
+      "isDark": false
+    }
+  },
+  {
+    "name": "TokyoNight",
+    "black": "#363b54",
+    "red": "#f7768e",
+    "green": "#41a6b5",
+    "yellow": "#e0af68",
+    "blue": "#7aa2f7",
+    "purple": "#bb9af7",
+    "cyan": "#7dcfff",
+    "white": "#787c99",
+    "brightBlack": "#363b54",
+    "brightRed": "#f7768e",
+    "brightGreen": "#41a6b5",
+    "brightYellow": "#e0af68",
+    "brightBlue": "#7aa2f7",
+    "brightPurple": "#bb9af7",
+    "brightCyan": "#7dcfff",
+    "brightWhite": "#acb0d0",
+    "background": "#16161e",
+    "foreground": "#787c99",
+    "meta": {
+      "isDark": true
+    }
+  },
+  {
+    "name": "TokyoNightLight",
+    "black": "#0f0f14",
+    "red": "#8c4351",
+    "green": "#33635c",
+    "yellow": "#8f5e15",
+    "blue": "#34548a",
+    "purple": "#5a4a78",
+    "cyan": "#0f4b6e",
+    "white": "#828594",
+    "brightBlack": "#0f0f14",
+    "brightRed": "#8c4351",
+    "brightGreen": "#33635c",
+    "brightYellow": "#8f5e15",
+    "brightBlue": "#34548a",
+    "brightPurple": "#5a4a78",
+    "brightCyan": "#0f4b6e",
+    "brightWhite": "#828594",
+    "background": "#cbccd1",
+    "foreground": "#4c505e",
+    "meta": {
+      "isDark": false
+    }
+  },
+  {
+    "name": "TokyoNightStorm",
+    "black": "#3b4261",
+    "red": "#f7768e",
+    "green": "#73daca",
+    "yellow": "#e0af68",
+    "blue": "#7aa2f7",
+    "purple": "#bb9af7",
+    "cyan": "#7dcfff",
+    "white": "#7982a9",
+    "brightBlack": "#3b4261",
+    "brightRed": "#f7768e",
+    "brightGreen": "#73daca",
+    "brightYellow": "#e0af68",
+    "brightBlue": "#7aa2f7",
+    "brightPurple": "#bb9af7",
+    "brightCyan": "#7dcfff",
+    "brightWhite": "#a9b1d6",
+    "background": "#1f2335",
+    "foreground": "#7982a9",
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Tomorrow",
@@ -4597,7 +5593,9 @@
     "brightWhite": "#ffffff",
     "background": "#ffffff",
     "foreground": "#4d4d4c",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Tomorrow Night",
@@ -4619,7 +5617,9 @@
     "brightWhite": "#ffffff",
     "background": "#1d1f21",
     "foreground": "#c5c8c6",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Tomorrow Night Blue",
@@ -4641,7 +5641,9 @@
     "brightWhite": "#ffffff",
     "background": "#002451",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Tomorrow Night Bright",
@@ -4663,7 +5665,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#eaeaea",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Tomorrow Night Burns",
@@ -4685,7 +5689,9 @@
     "brightWhite": "#f5f5f5",
     "background": "#151515",
     "foreground": "#a1b0b8",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Tomorrow Night Eighties",
@@ -4707,7 +5713,9 @@
     "brightWhite": "#ffffff",
     "background": "#2d2d2d",
     "foreground": "#cccccc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "ToyChest",
@@ -4729,7 +5737,9 @@
     "brightWhite": "#d5d5d5",
     "background": "#24364b",
     "foreground": "#31d07b",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Treehouse",
@@ -4751,7 +5761,9 @@
     "brightWhite": "#ffc800",
     "background": "#191919",
     "foreground": "#786b53",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Twilight",
@@ -4773,7 +5785,9 @@
     "brightWhite": "#ffffd4",
     "background": "#141414",
     "foreground": "#ffffd4",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Ubuntu",
@@ -4795,7 +5809,9 @@
     "brightWhite": "#eeeeec",
     "background": "#300a24",
     "foreground": "#eeeeec",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "UltraViolent",
@@ -4817,7 +5833,9 @@
     "brightWhite": "#f9f9f5",
     "background": "#242728",
     "foreground": "#c1c1c1",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "UnderTheSea",
@@ -4839,7 +5857,9 @@
     "brightWhite": "#58fbd6",
     "background": "#011116",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Unikitty",
@@ -4861,7 +5881,9 @@
     "brightWhite": "#fff3fe",
     "background": "#ff8cd9",
     "foreground": "#0b0b0b",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "Urple",
@@ -4883,7 +5905,9 @@
     "brightWhite": "#bfa3ff",
     "background": "#1b1b23",
     "foreground": "#877a9b",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Vaughn",
@@ -4905,7 +5929,9 @@
     "brightWhite": "#ffffff",
     "background": "#25234f",
     "foreground": "#dcdccc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "VibrantInk",
@@ -4927,7 +5953,9 @@
     "brightWhite": "#e5e5e5",
     "background": "#000000",
     "foreground": "#ffffff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Violet Dark",
@@ -4949,7 +5977,9 @@
     "brightWhite": "#c9c6bd",
     "background": "#1c1d1f",
     "foreground": "#708284",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Violet Light",
@@ -4971,7 +6001,9 @@
     "brightWhite": "#c9c6bd",
     "background": "#fcf4dc",
     "foreground": "#536870",
-    "isDark": false
+    "meta": {
+      "isDark": false
+    }
   },
   {
     "name": "WarmNeon",
@@ -4993,7 +6025,9 @@
     "brightWhite": "#d8c8bb",
     "background": "#404040",
     "foreground": "#afdab6",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Wez",
@@ -5015,7 +6049,9 @@
     "brightWhite": "#ffffff",
     "background": "#000000",
     "foreground": "#b3b3b3",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Whimsy",
@@ -5037,7 +6073,9 @@
     "brightWhite": "#ffffff",
     "background": "#29283b",
     "foreground": "#b3b0d6",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "WildCherry",
@@ -5059,7 +6097,9 @@
     "brightWhite": "#e4838d",
     "background": "#1f1726",
     "foreground": "#dafaff",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Wombat",
@@ -5081,7 +6121,9 @@
     "brightWhite": "#ffffff",
     "background": "#171717",
     "foreground": "#dedacf",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Wryan",
@@ -5103,7 +6145,9 @@
     "brightWhite": "#c0c0c0",
     "background": "#101010",
     "foreground": "#999993",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   },
   {
     "name": "Zenburn",
@@ -5125,6 +6169,8 @@
     "brightWhite": "#ffffff",
     "background": "#3f3f3f",
     "foreground": "#dcdccc",
-    "isDark": true
+    "meta": {
+      "isDark": true
+    }
   }
 ]
