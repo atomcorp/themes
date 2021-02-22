@@ -10,7 +10,7 @@ Next:
   ☐ Add note in README for contributing codeblocks
   ✔ Add custom domain @done(20-09-13 17:31)
   ✔ Maybe host the entire thing on AWS, create monorepo @done(20-09-02 12:51)
-  ☐ add meta property to theme objects with credits, notes, isDark etc
+  ✔ add meta property to theme objects with credits, notes, isDark etc @done(21-02-22 23:53)
   ☐ print out colours using canvas, will be easier to make responsive
   ✔ code refactor/tidy @done(20-09-13 19:43)
   ✘ use service worker, to make a PWA @cancelled(20-09-13 17:36)
