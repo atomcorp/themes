@@ -77,16 +77,16 @@ export const homeReducer = (
           );
           if (foundTheme != null) {
             draftState.filteredThemes = action.themes.filter(
-              (theme: themeType) => theme.isDark === foundTheme.isDark
+              (theme: themeType) => theme.meta.isDark === foundTheme.meta.isDark
             );
             draftState.activeTheme = foundTheme.name;
-            draftState.themeShade = foundTheme.isDark ? 'DARK' : 'LIGHT';
+            draftState.themeShade = foundTheme.meta.isDark ? 'DARK' : 'LIGHT';
             draftState.backgroundColour = foundTheme.background;
           }
         } else {
           // default to DARK, themeShade is already set
           draftState.filteredThemes = action.themes.filter(
-            (theme: themeType) => theme.isDark
+            (theme: themeType) => theme.meta.isDark
           );
           draftState.activeTheme = draftState.filteredThemes[0].name;
         }
@@ -142,12 +142,12 @@ export const homeReducer = (
         draftState.themeShade = action.payload;
         if (draftState.themeShade === THEME_COLOUR.DARK) {
           draftState.filteredThemes = state.themes.filter(
-            (theme) => theme.isDark
+            (theme) => theme.meta.isDark
           );
         }
         if (draftState.themeShade === THEME_COLOUR.LIGHT) {
           draftState.filteredThemes = state.themes.filter(
-            (theme) => !theme.isDark
+            (theme) => !theme.meta.isDark
           );
         }
         setcolours(draftState.themeShade);

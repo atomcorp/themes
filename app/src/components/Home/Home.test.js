@@ -29,7 +29,9 @@ const schemes = [
     brightWhite: '#eae5ff',
     background: '#1f1d27',
     foreground: '#b7a1ff',
-    isDark: true,
+    meta: {
+      isDark: true,
+    },
   },
   {
     name: '3024 Day',
@@ -73,7 +75,9 @@ const schemes = [
     brightWhite: '#ffffff',
     background: '#1d2837',
     foreground: '#ffffff',
-    isDark: true,
+    meta: {
+      isDark: true,
+    },
   },
   {
     name: 'Ubuntu',
@@ -95,7 +99,9 @@ const schemes = [
     brightWhite: '#eeeeec',
     background: '#300a24',
     foreground: '#eeeeec',
-    isDark: true,
+    meta: {
+      isDark: true,
+    },
   },
   {
     name: 'Man Page',

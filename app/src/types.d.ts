@@ -48,7 +48,9 @@ export type validKeysType = Array<
   | 'selectionBackground'
 >;
 
-export type themeType = validThemeType & {isDark: boolean};
+type metaType = {isDark: boolean};
+
+export type themeType = validThemeType & metaType;
 
 export type backgroundKeyType =
   | 'black'

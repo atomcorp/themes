@@ -23,7 +23,9 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
   return (
     <section className={css.container} data-testid="consoletest">
       <div
-        className={`${css.terminal}  ${!props.theme.isDark ? css.light : ''}`}
+        className={`${css.terminal}  ${
+          !props.theme.meta.isDark ? css.light : ''
+        }`}
       >
         <div className={css.titlebar}>
           <div className={css.tabs}>

@@ -29,7 +29,9 @@ const assignColourType = (themes) => {
   return themes.map((theme) => {
     return {
       ...theme,
-      isDark: contrast.ratio(theme.background, '#000') < 8,
+      meta: {
+        isDark: contrast.ratio(theme.background, '#000') < 8,
+      },
     };
   });
 };

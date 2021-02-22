@@ -38,7 +38,7 @@ const App: React.FC = () => {
         JSON.stringify(
           themes.map((theme) => {
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            const {isDark, ...rest} = theme;
+            const {meta, ...rest} = theme;
             return rest;
           }),
           null,
