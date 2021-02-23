@@ -1646,14 +1646,12 @@
     "brightYellow": "#ffcb6b",
     "meta": {
       "isDark": true,
-      "credits": {
-        "name": [
-          "jos3s"
-        ],
-        "link": [
-          "https://github.com/jos3s"
-        ]
-      }
+      "credits": [
+        {
+          "name": "jos3s",
+          "link": "https://github.com/jos3s"
+        }
+      ]
     }
   },
   {
@@ -3532,14 +3530,12 @@
     "brightWhite": "#ffffff",
     "meta": {
       "isDark": true,
-      "credits": {
-        "name": [
-          "vdurante"
-        ],
-        "link": [
-          "https://github.com/vdurante/windows-terminal-monokai-cmder"
-        ]
-      }
+      "credits": [
+        {
+          "name": "vdurante",
+          "link": "https://github.com/vdurante/windows-terminal-monokai-cmder"
+        }
+      ]
     }
   },
   {
@@ -3664,14 +3660,12 @@
     "foreground": "#c8d3f5",
     "meta": {
       "isDark": true,
-      "credits": {
-        "name": [
-          "atomiks"
-        ],
-        "link": [
-          "https://github.com/atomiks"
-        ]
-      }
+      "credits": [
+        {
+          "name": "atomiks",
+          "link": "https://github.com/atomiks"
+        }
+      ]
     }
   },
   {
@@ -4021,14 +4015,12 @@
     "foreground": "#abb2bf",
     "meta": {
       "isDark": true,
-      "credits": {
-        "name": [
-          "azrikahar"
-        ],
-        "link": [
-          "https://github.com/azrikahar"
-        ]
-      }
+      "credits": [
+        {
+          "name": "azrikahar",
+          "link": "https://github.com/azrikahar"
+        }
+      ]
     }
   },
   {
@@ -4103,14 +4095,12 @@
     "foreground": "#e4e4e4",
     "meta": {
       "isDark": true,
-      "credits": {
-        "name": [
-          "jos3s"
-        ],
-        "link": [
-          "https://github.com/jos3s"
-        ]
-      }
+      "credits": [
+        {
+          "name": "jos3s",
+          "link": "https://github.com/jos3s"
+        }
+      ]
     }
   },
   {
@@ -5236,14 +5226,12 @@
     "brightWhite": "#EAF4DE",
     "meta": {
       "isDark": true,
-      "credits": {
-        "name": [
-          "d-mckee"
-        ],
-        "link": [
-          "https://github.com/d-mckee"
-        ]
-      }
+      "credits": [
+        {
+          "name": "d-mckee",
+          "link": "https://github.com/d-mckee"
+        }
+      ]
     }
   },
   {
@@ -5269,14 +5257,12 @@
     "brightWhite": "#665E4B",
     "meta": {
       "isDark": false,
-      "credits": {
-        "name": [
-          "d-mckee"
-        ],
-        "link": [
-          "https://github.com/d-mckee"
-        ]
-      }
+      "credits": [
+        {
+          "name": "d-mckee",
+          "link": "https://github.com/d-mckee"
+        }
+      ]
     }
   },
   {

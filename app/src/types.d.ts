@@ -47,8 +47,11 @@ export type validKeysType = Array<
   | 'cursorColor'
   | 'selectionBackground'
 >;
-
-type metaType = {isDark: boolean};
+type creditType = {
+  name: 'string';
+  link: 'string';
+};
+type metaType = {isDark: boolean; credits: null | creditType[]};
 
 export type themeType = validThemeType & metaType;
 

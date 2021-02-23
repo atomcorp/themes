@@ -1,58 +1,74 @@
 [
   {
     "themeNames": ["OneDark"],
-    "source": {
-      "name": ["azrikahar"],
-      "link": ["https://github.com/azrikahar"]
-    }
+    "sources": [
+      {
+        "name": "azrikahar",
+        "link": "https://github.com/azrikahar"
+      }
+    ]
   },
   {
     "themeNames": ["DraculaPlus", "Material Darker", "OneStar"],
-    "source": {
-      "name": ["jos3s"],
-      "link": ["https://github.com/jos3s"]
-    }
+    "sources": [
+      {
+        "name": "jos3s",
+        "link": "https://github.com/jos3s"
+      }
+    ]
   },
   {
     "themeNames": ["Monokai Cmder"],
-    "source": {
-      "name": ["vdurante"],
-      "link": ["https://github.com/vdurante/windows-terminal-monokai-cmder"]
-    }
+    "sources": [
+      {
+        "name": "vdurante",
+        "link": "https://github.com/vdurante/windows-terminal-monokai-cmder"
+      }
+    ]
   },
   {
     "themeNames": ["Rosé Pine"],
-    "source": {
-      "name": ["mvllow"],
-      "link": ["https://github.com/mvllow"]
-    }
+    "sources": [
+      {
+        "name": "mvllow",
+        "link": "https://github.com/mvllow"
+      }
+    ]
   },
   {
     "themeNames": ["Tokyo Night"],
-    "source": {
-      "name": ["enkia"],
-      "link": ["https://github.com/enkia"]
-    }
+    "sources": [
+      {
+        "name": "enkia",
+        "link": "https://github.com/enkia"
+      }
+    ]
   },
   {
     "themeNames": ["Moonlight II"],
-    "source": {
-      "name": ["atomiks"],
-      "link": ["https://github.com/atomiks"]
-    }
+    "sources": [
+      {
+        "name": "atomiks",
+        "link": "https://github.com/atomiks"
+      }
+    ]
   },
   {
     "themeNames": ["Sonoran Gothic", "Sonoran Sunrise"],
-    "source": {
-      "name": ["d-mckee"],
-      "link": ["https://github.com/d-mckee"]
-    }
+    "sources": [
+      {
+        "name": "d-mckee",
+        "link": "https://github.com/d-mckee"
+      }
+    ]
   },
   {
     "themeNames": ["Sonoran Gothic", "Sonoran Sunrise"],
-    "source": {
-      "name": ["wafelack"],
-      "link": ["https://github.com/wafelack"]
-    }
+    "sources": [
+      {
+        "name": "wafelack",
+        "link": "https://github.com/wafelack"
+      }
+    ]
   }
 ]

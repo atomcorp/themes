@@ -35,3 +35,14 @@
     font-size: 32px;
   }
 }
+
+.credits {
+  font-size: 0.8em;
+  color: var(--toolbar__color);
+  text-align: right;
+  padding: 1px 3px 2px;
+}
+
+.credits a {
+  color: var(--link-colour--visited);
+}

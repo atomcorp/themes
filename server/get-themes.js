@@ -34,7 +34,7 @@ const addThemeMeta = (themes, credits) => {
       ...theme,
       meta: {
         isDark: contrast.ratio(theme.background, '#000') < 8,
-        credits: themeCredit !== undefined ? themeCredit.source : null,
+        credits: themeCredit !== undefined ? themeCredit.sources : null,
       },
     };
   });

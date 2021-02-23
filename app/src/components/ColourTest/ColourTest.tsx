@@ -10,22 +10,34 @@ type PropsType = {
 
 const ColourTest: React.FC<PropsType> = (props) => {
   return (
-    <section className={css.matrix} data-testid="colourtest">
-      {textKeys.map((textKey, i) =>
-        backgroundKeys.map((backgroundKey, y) => (
-          <div
-            key={i + ' ' + y}
-            className={css.cell}
-            style={{
-              background: props.theme ? props.theme[backgroundKey] : '',
-              color: props.theme ? props.theme[textKey] : '',
-            }}
-          >
-            gYw
-          </div>
-        ))
+    <>
+      <section className={css.matrix} data-testid="colourtest">
+        {textKeys.map((textKey, i) =>
+          backgroundKeys.map((backgroundKey, y) => (
+            <div
+              key={i + ' ' + y}
+              className={css.cell}
+              style={{
+                background: props.theme ? props.theme[backgroundKey] : '',
+                color: props.theme ? props.theme[textKey] : '',
+              }}
+            >
+              gYw
+            </div>
+          ))
+        )}
+      </section>
+      {Array.isArray(props.theme.meta.credits) && (
+        <div className={css.credits}>
+          {props.theme.name} credit{' '}
+          {props.theme.meta.credits.map((credit, i) => (
+            <a key={i} href={credit.link}>
+              {credit.name}
+            </a>
+          ))}
+        </div>
       )}
-    </section>
+    </>
   );
 };
 

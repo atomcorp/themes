@@ -18,6 +18,7 @@ type cssvarType = {
   '--link-colour': string;
   '--link-colour--visited': string;
   '--overlay-background': string;
+  '--console-tab-background': string;
 };
 
 const cssvarDark: cssvarType = {
@@ -36,6 +37,7 @@ const cssvarDark: cssvarType = {
   '--link-colour': '#5bb3f4',
   '--link-colour--visited': '#a292ef',
   '--overlay-background': 'rgba(7, 7, 7, 0.54)',
+  '--console-tab-background': '#333',
 };
 
 const cssvarLight: cssvarType = {
@@ -54,6 +56,7 @@ const cssvarLight: cssvarType = {
   '--link-colour': '#224fd4',
   '--link-colour--visited': '#9e04bf',
   '--overlay-background': 'rgba(230, 230, 230, 0.48)',
+  '--console-tab-background': '#ccc',
 };
 
 const setcolours = (type: shadeType): void => {

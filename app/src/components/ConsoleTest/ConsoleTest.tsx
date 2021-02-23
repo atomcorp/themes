@@ -63,6 +63,16 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
         >
           {parseSyntax(props.theme, activeCodeblock.markup)}
         </code>
+        {Array.isArray(props.theme.meta.credits) && (
+          <div className={css.footer}>
+            {props.theme.name} credit{' '}
+            {props.theme.meta.credits.map((credit, i) => (
+              <a key={i} href={credit.link}>
+                {credit.name}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

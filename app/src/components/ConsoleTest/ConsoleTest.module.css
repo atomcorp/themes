@@ -80,3 +80,14 @@
   min-height: 40vh;
   max-height: 50vh;
 }
+
+.footer {
+  font-size: 0.8em;
+  color: var(--toolbar__color);
+  text-align: right;
+  padding: 1px 3px;
+}
+
+.footer a {
+  color: var(--link-colour--visited);
+}
