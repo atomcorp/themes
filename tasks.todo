@@ -22,6 +22,7 @@ Next:
   https://github.com/vercel/serve/issues/556
   ✔ add meta text info (https://moz.com/learn/seo/meta-description) @done(20-09-02 12:50)
   ☐ remove/flag duplicate theme names/types (default to iterm2 repo)
+  ☐ add check for duplicate credits sources/themes
   ✔ update "bold" text to default to primaryColor not brightWhite @done(20-09-13 17:55)
   ☐ gzip themes.json
   ☐ add some kind of 304 Not Modified thing

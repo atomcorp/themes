@@ -6,6 +6,7 @@ import {returnInitialTheme} from './homeMethods';
 import {getRandomColour} from './homeState';
 import Home from './Home';
 import customColourSchemes from '../../custom-colour-schemes.json';
+import credits from '../../credits.json';
 
 // theres 3 darks themes and 2 light themes
 const schemes = [
@@ -268,6 +269,34 @@ it('should ensure custom-colour-schemes.json has correct keys', () => {
       if (key !== 'cursorColor' && key !== 'selectionBackground') {
         expect(customColourScheme).toHaveProperty(key);
       }
+    });
+  });
+});
+
+it('credits should have valid structure', () => {
+  /*
+   * const validSchema = {
+   *   themeNames: [''],
+   *   sources: [
+   *     {
+   *       name: '',
+   *       link: '',
+   *     },
+   *   ],
+   * };
+   */
+  credits.map((credit) => {
+    expect(credit).toHaveProperty('themeNames');
+    expect(credit).toHaveProperty('sources');
+    expect(Array.isArray(credit.themeNames)).toBe(true);
+    credit.themeNames.forEach((themename) => {
+      expect(typeof themename === 'string').toBe(true);
+    });
+    credit.sources.forEach((source) => {
+      expect(source).toHaveProperty('name');
+      expect(source).toHaveProperty('link');
+      expect(typeof source.name === 'string').toBe(true);
+      expect(typeof source.link === 'string').toBe(true);
     });
   });
 });
