@@ -21,15 +21,20 @@ const baseUrl =
 // this will always get the freshest committed custom schemes
 const customSchemesUrl =
   'https://api.github.com/repos/atomcorp/themes/contents/app/src/custom-colour-schemes.json';
-// const devCustomSchemesUrl = 'http://localhost:3000/custom-colour-schemes.json';
+const creditsUrl =
+  'https://api.github.com/repos/atomcorp/themes/contents/app/src/credits.json';
 
 // add boolean whether the theme is a light or dark
-const assignColourType = (themes) => {
+const addThemeMeta = (themes, credits) => {
   return themes.map((theme) => {
+    const themeCredit = credits.find((credit) =>
+      credit.themeNames.includes(theme.name)
+    );
     return {
       ...theme,
       meta: {
         isDark: contrast.ratio(theme.background, '#000') < 8,
+        credits: themeCredit !== undefined ? themeCredit.source : null,
       },
     };
   });
@@ -39,11 +44,15 @@ const main = async (isDev) => {
   try {
     // get the custom file in the terminal repo
     let customSchemaJson;
+    let credits;
     if (isDev) {
       customSchemaJson = require('../app/src/custom-colour-schemes.json');
+      credits = require('../app/src/credits.json');
     } else {
       const customSchemaRes = await got({...options, url: customSchemesUrl});
       customSchemaJson = JSON.parse(customSchemaRes.body);
+      const creditsUrlRes = await got({...options, url: creditsUrl});
+      credits = JSON.parse(creditsUrlRes.body);
     }
     // get the list of scheme names in the iterm2 repo directory
     const dirResponse = await got(baseUrl, options);
@@ -57,10 +66,10 @@ const main = async (isDev) => {
       JSON.parse(fileResponse.body)
     );
     // merge with any themes that have been added in this project
-    const combinedSchemaJson = assignColourType([
-      ...iTerm2SchemaJson,
-      ...customSchemaJson,
-    ]).sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1));
+    const combinedSchemaJson = addThemeMeta(
+      [...iTerm2SchemaJson, ...customSchemaJson],
+      credits
+    ).sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1));
     // write the new file
     fs.writeFileSync(
       './themes.json',

@@ -20,7 +20,8 @@
     "background": "#f7f7f7",
     "foreground": "#4a4543",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -44,7 +45,8 @@
     "background": "#090300",
     "foreground": "#a5a2a2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -68,7 +70,8 @@
     "background": "#040404",
     "foreground": "#feffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -92,7 +95,8 @@
     "background": "#1f1d45",
     "foreground": "#f8dcc0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -116,7 +120,8 @@
     "background": "#212121",
     "foreground": "#d0d0d0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -140,7 +145,8 @@
     "background": "#0f1610",
     "foreground": "#637d75",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -164,7 +170,8 @@
     "background": "#262a33",
     "foreground": "#e5e5e5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -188,7 +195,8 @@
     "background": "#0e1019",
     "foreground": "#fffaf4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -212,7 +220,8 @@
     "background": "#1c1c1c",
     "foreground": "#ddeedd",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -236,7 +245,8 @@
     "background": "#202746",
     "foreground": "#979db4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -260,7 +270,8 @@
     "background": "#161719",
     "foreground": "#c5c8c6",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -284,7 +295,8 @@
     "background": "#f9f9f9",
     "foreground": "#2a2c33",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -308,7 +320,8 @@
     "background": "#23262e",
     "foreground": "#ffca28",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -332,7 +345,8 @@
     "background": "#0f1419",
     "foreground": "#e6e1cf",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -356,7 +370,8 @@
     "background": "#fafafa",
     "foreground": "#5c6773",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -380,7 +395,8 @@
     "background": "#191323",
     "foreground": "#cccccc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -404,7 +420,8 @@
     "background": "#1b1d1e",
     "foreground": "#6f6f6f",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -428,7 +445,8 @@
     "background": "#d5ccba",
     "foreground": "#45373c",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -452,7 +470,8 @@
     "background": "#20111b",
     "foreground": "#968c83",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -476,7 +495,8 @@
     "background": "#2a1f1d",
     "foreground": "#e0dbb7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -500,7 +520,8 @@
     "background": "#0d1926",
     "foreground": "#d9e6f2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -524,7 +545,8 @@
     "background": "#101116",
     "foreground": "#00a2ff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -548,7 +570,8 @@
     "background": "#1c0c28",
     "foreground": "#babab9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -572,7 +595,8 @@
     "background": "#1e2127",
     "foreground": "#abb2bf",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -596,7 +620,8 @@
     "background": "#f7f7f7",
     "foreground": "#2a2c33",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -620,7 +645,8 @@
     "background": "#0000a4",
     "foreground": "#ffff4e",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -644,7 +670,8 @@
     "background": "#31363b",
     "foreground": "#eff0f1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -668,7 +695,8 @@
     "background": "#191919",
     "foreground": "#b3c9d7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -692,7 +720,8 @@
     "background": "#2b2b2b",
     "foreground": "#e6e1dc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -716,7 +745,8 @@
     "background": "#131313",
     "foreground": "#d6dbe5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -740,7 +770,8 @@
     "background": "#000000",
     "foreground": "#bbbbbb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -764,7 +795,8 @@
     "background": "#ffffff",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -788,7 +820,8 @@
     "background": "#000000",
     "foreground": "#bbbbbb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -812,7 +845,8 @@
     "background": "#002b36",
     "foreground": "#839496",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -836,7 +870,8 @@
     "background": "#fdf6e3",
     "foreground": "#657b83",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -860,7 +895,8 @@
     "background": "#000000",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -884,7 +920,8 @@
     "background": "#ffffff",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -908,7 +945,8 @@
     "background": "#40318d",
     "foreground": "#7869c4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -932,7 +970,8 @@
     "background": "#2f2833",
     "foreground": "#d5ced9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -956,7 +995,8 @@
     "background": "#2b2d2e",
     "foreground": "#d2d8d9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -980,7 +1020,8 @@
     "background": "#29262f",
     "foreground": "#d9e6f2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1004,7 +1045,8 @@
     "background": "#1e1c31",
     "foreground": "#cbe1e7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1028,7 +1070,8 @@
     "background": "#2c3643",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1052,7 +1095,8 @@
     "background": "#191c27",
     "foreground": "#aea47a",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1076,7 +1120,8 @@
     "background": "#ffffff",
     "foreground": "#262626",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -1100,7 +1145,8 @@
     "background": "#142838",
     "foreground": "#8ff586",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1124,7 +1170,8 @@
     "background": "#132738",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1148,7 +1195,8 @@
     "background": "#f5deb3",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -1172,7 +1220,8 @@
     "background": "#150707",
     "foreground": "#68525a",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1196,7 +1245,8 @@
     "background": "#151144",
     "foreground": "#00ff92",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1220,7 +1270,8 @@
     "background": "#332a57",
     "foreground": "#e5e5e5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1244,7 +1295,8 @@
     "background": "#000000",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1268,7 +1320,8 @@
     "background": "#0e0e0e",
     "foreground": "#cccccc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1292,7 +1345,8 @@
     "background": "#222324",
     "foreground": "#bababa",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1316,7 +1370,8 @@
     "background": "#090909",
     "foreground": "#cdcdcd",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1340,7 +1395,8 @@
     "background": "#333333",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1364,7 +1420,8 @@
     "background": "#1f1f1f",
     "foreground": "#b9bcba",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1388,7 +1445,8 @@
     "background": "#0b2f20",
     "foreground": "#f8f8f8",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1412,7 +1470,8 @@
     "background": "#051f14",
     "foreground": "#dadedc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1436,7 +1495,8 @@
     "background": "#245032",
     "foreground": "#f8f8f8",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1460,7 +1520,8 @@
     "background": "#2b2a27",
     "foreground": "#ede0ce",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1484,7 +1545,8 @@
     "background": "#282c34",
     "foreground": "#bbc2cf",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1508,7 +1570,8 @@
     "background": "#262c35",
     "foreground": "#ebebeb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1532,7 +1595,8 @@
     "background": "#1e1f29",
     "foreground": "#f8f8f2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1556,7 +1620,8 @@
     "background": "#212121",
     "foreground": "#f8f8f2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1580,7 +1645,15 @@
     "brightWhite": "#F8F8F2",
     "brightYellow": "#ffcb6b",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": {
+        "name": [
+          "jos3s"
+        ],
+        "link": [
+          "https://github.com/jos3s"
+        ]
+      }
     }
   },
   {
@@ -1604,7 +1677,8 @@
     "background": "#1f1d27",
     "foreground": "#b7a1ff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1628,7 +1702,8 @@
     "background": "#292520",
     "foreground": "#e5c7a9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1652,7 +1727,8 @@
     "background": "#22211d",
     "foreground": "#807a74",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1676,7 +1752,8 @@
     "background": "#181818",
     "foreground": "#efefef",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1700,7 +1777,8 @@
     "background": "#000000",
     "foreground": "#00a595",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1724,7 +1802,8 @@
     "background": "#323232",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1748,7 +1827,8 @@
     "background": "#2a211c",
     "foreground": "#b8a898",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1772,7 +1852,8 @@
     "background": "#000000",
     "foreground": "#ffffce",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1796,7 +1877,8 @@
     "background": "#292f33",
     "foreground": "#dbdae0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1820,7 +1902,8 @@
     "background": "#0e1011",
     "foreground": "#7c8fa4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1844,7 +1927,8 @@
     "background": "#1e2027",
     "foreground": "#9ba2b2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1868,7 +1952,8 @@
     "background": "#232537",
     "foreground": "#ecf0fe",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1892,7 +1977,8 @@
     "background": "#002240",
     "foreground": "#2cc55d",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1916,7 +2002,8 @@
     "background": "#1d1f21",
     "foreground": "#b8dbef",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1940,7 +2027,8 @@
     "background": "#0e0d15",
     "foreground": "#dbd1b9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1964,7 +2052,8 @@
     "background": "#051519",
     "foreground": "#e2d8cd",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -1988,7 +2077,8 @@
     "background": "#111111",
     "foreground": "#777777",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2012,7 +2102,8 @@
     "background": "#1b1c1d",
     "foreground": "#adadad",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2036,7 +2127,8 @@
     "background": "#251200",
     "foreground": "#dec165",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2060,7 +2152,8 @@
     "background": "#1d2837",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2084,7 +2177,8 @@
     "background": "#071317",
     "foreground": "#ddeeff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2108,7 +2202,8 @@
     "background": "#f4f4f4",
     "foreground": "#3e3e3e",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -2132,7 +2227,8 @@
     "background": "#0c1115",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2156,7 +2252,8 @@
     "background": "#171423",
     "foreground": "#9f9fa1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2180,7 +2277,8 @@
     "background": "#13773d",
     "foreground": "#fff0a5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2204,7 +2302,8 @@
     "background": "#1e1e1e",
     "foreground": "#e6d4a3",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2228,7 +2327,8 @@
     "background": "#fbf1c7",
     "foreground": "#282828",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -2252,7 +2352,8 @@
     "background": "#1c1c1c",
     "foreground": "#d0d0d0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2276,7 +2377,8 @@
     "background": "#141414",
     "foreground": "#c9c9c9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2300,7 +2402,8 @@
     "background": "#121212",
     "foreground": "#a0a0a0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2324,7 +2427,8 @@
     "background": "#010101",
     "foreground": "#a8a49d",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2348,7 +2452,8 @@
     "background": "#222225",
     "foreground": "#ededed",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2372,7 +2477,8 @@
     "background": "#100b05",
     "foreground": "#84c138",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2396,7 +2502,8 @@
     "background": "#132638",
     "foreground": "#ede4e4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2420,7 +2527,8 @@
     "background": "#000000",
     "foreground": "#00ff00",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2444,7 +2552,8 @@
     "background": "#322931",
     "foreground": "#b9b5b8",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2468,7 +2577,8 @@
     "background": "#322931",
     "foreground": "#b9b5b8",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2492,7 +2602,8 @@
     "background": "#1c1e26",
     "foreground": "#bdc0c2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2516,7 +2627,8 @@
     "background": "#000000",
     "foreground": "#dbdbdb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2540,7 +2652,8 @@
     "background": "#161719",
     "foreground": "#b7bcba",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2564,7 +2677,8 @@
     "background": "#2c2c2c",
     "foreground": "#e0f1dc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2588,7 +2702,8 @@
     "background": "#262626",
     "foreground": "#ffcb83",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2612,7 +2727,8 @@
     "background": "#202020",
     "foreground": "#adadad",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2636,7 +2752,8 @@
     "background": "#323232",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2660,7 +2777,8 @@
     "background": "#000000",
     "foreground": "#f1f1f1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2684,7 +2802,8 @@
     "background": "#2c1d16",
     "foreground": "#ffcc2f",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2708,7 +2827,8 @@
     "background": "#1e1e1e",
     "foreground": "#f7f6ec",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2732,7 +2852,8 @@
     "background": "#121212",
     "foreground": "#dedede",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2756,7 +2877,8 @@
     "background": "#202020",
     "foreground": "#adadad",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2780,7 +2902,8 @@
     "background": "#262b33",
     "foreground": "#c3d3de",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2806,7 +2929,8 @@
     "brightWhite": "#F2F2F2",
     "brightYellow": "#FCC223",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2830,7 +2954,8 @@
     "background": "#0e100a",
     "foreground": "#f7f7f7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2854,7 +2979,8 @@
     "background": "#1d1a1e",
     "foreground": "#efecec",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2878,7 +3004,8 @@
     "background": "#060606",
     "foreground": "#c8c1c1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2902,7 +3029,8 @@
     "background": "#2e2e2e",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2926,7 +3054,8 @@
     "background": "#030d18",
     "foreground": "#f106e3",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2950,7 +3079,8 @@
     "background": "#222222",
     "foreground": "#959595",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2974,7 +3104,8 @@
     "background": "#050014",
     "foreground": "#736e7d",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -2998,7 +3129,8 @@
     "background": "#303030",
     "foreground": "#afc2c2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3022,7 +3154,8 @@
     "background": "#000000",
     "foreground": "#afc2c2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3046,7 +3179,8 @@
     "background": "#000000",
     "foreground": "#afc2c2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3070,7 +3204,8 @@
     "background": "#1d1f28",
     "foreground": "#fdfdfd",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3094,7 +3229,8 @@
     "background": "#fef49c",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -3118,7 +3254,8 @@
     "background": "#eaeaea",
     "foreground": "#232322",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -3142,7 +3279,8 @@
     "background": "#232322",
     "foreground": "#e5e5e5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3166,7 +3304,8 @@
     "background": "#212121",
     "foreground": "#eeffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3190,7 +3329,8 @@
     "background": "#0f111a",
     "foreground": "#8f93a2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3214,7 +3354,8 @@
     "background": "#000000",
     "foreground": "#bbbbbb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3238,7 +3379,8 @@
     "background": "#1d1908",
     "foreground": "#cac296",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3262,7 +3404,8 @@
     "background": "#1e1e1e",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3286,7 +3429,8 @@
     "background": "#1b2738",
     "foreground": "#a6b2c0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3310,7 +3454,8 @@
     "background": "#2d3743",
     "foreground": "#e1e1e0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3334,7 +3479,8 @@
     "background": "#121212",
     "foreground": "#bbbbbb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3358,7 +3504,8 @@
     "background": "#120b0d",
     "foreground": "#f7d66a",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3384,7 +3531,15 @@
     "brightCyan": "#58c2e5",
     "brightWhite": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": {
+        "name": [
+          "vdurante"
+        ],
+        "link": [
+          "https://github.com/vdurante/windows-terminal-monokai-cmder"
+        ]
+      }
     }
   },
   {
@@ -3408,7 +3563,8 @@
     "background": "#282a3a",
     "foreground": "#eaf2f1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3432,7 +3588,8 @@
     "background": "#0c0c0c",
     "foreground": "#d9d9d9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3456,7 +3613,8 @@
     "background": "#1a1a1a",
     "foreground": "#c4c5b5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3480,7 +3638,8 @@
     "background": "#121212",
     "foreground": "#f9f9f9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3504,7 +3663,15 @@
     "background": "#222436",
     "foreground": "#c8d3f5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": {
+        "name": [
+          "atomiks"
+        ],
+        "link": [
+          "https://github.com/atomiks"
+        ]
+      }
     }
   },
   {
@@ -3528,7 +3695,8 @@
     "background": "#222222",
     "foreground": "#a0a0a0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3552,7 +3720,8 @@
     "background": "#271f19",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3576,7 +3745,8 @@
     "background": "#1c1e22",
     "foreground": "#e6e8ef",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3600,7 +3770,8 @@
     "background": "#ffffff",
     "foreground": "#403f53",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -3624,7 +3795,8 @@
     "background": "#000000",
     "foreground": "#bbbbbb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3648,7 +3820,8 @@
     "background": "#171717",
     "foreground": "#bbbbbb",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3672,7 +3845,8 @@
     "background": "#0d0d17",
     "foreground": "#e6e5e5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3696,7 +3870,8 @@
     "background": "#2e3440",
     "foreground": "#d8dee9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3720,7 +3895,8 @@
     "background": "#dfdbc3",
     "foreground": "#3b2322",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -3744,7 +3920,8 @@
     "background": "#283033",
     "foreground": "#cdcdcd",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3768,7 +3945,8 @@
     "background": "#224fbc",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3792,7 +3970,8 @@
     "background": "#1c262b",
     "foreground": "#c2c8d7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3816,7 +3995,8 @@
     "background": "#222125",
     "foreground": "#8a8dae",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3840,7 +4020,15 @@
     "background": "#1e2127",
     "foreground": "#abb2bf",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": {
+        "name": [
+          "azrikahar"
+        ],
+        "link": [
+          "https://github.com/azrikahar"
+        ]
+      }
     }
   },
   {
@@ -3864,7 +4052,8 @@
     "background": "#282c34",
     "foreground": "#dcdfe4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3888,7 +4077,8 @@
     "background": "#fafafa",
     "foreground": "#383a42",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -3912,7 +4102,15 @@
     "background": "#0e0e0e",
     "foreground": "#e4e4e4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": {
+        "name": [
+          "jos3s"
+        ],
+        "link": [
+          "https://github.com/jos3s"
+        ]
+      }
     }
   },
   {
@@ -3936,7 +4134,8 @@
     "background": "#191919",
     "foreground": "#c3cac2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3960,7 +4159,8 @@
     "background": "#0e1729",
     "foreground": "#ced2d6",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -3984,7 +4184,8 @@
     "background": "#3e4251",
     "foreground": "#cccccc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4008,7 +4209,8 @@
     "background": "#141e43",
     "foreground": "#e1e1e1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4032,7 +4234,8 @@
     "background": "#2f1e2e",
     "foreground": "#a39e9b",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4056,7 +4259,8 @@
     "background": "#2f1e2e",
     "foreground": "#a39e9b",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4080,7 +4284,8 @@
     "background": "#000000",
     "foreground": "#f2f2f2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4104,7 +4309,8 @@
     "background": "#212121",
     "foreground": "#f1f1f1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4128,7 +4334,8 @@
     "background": "#f1f1f1",
     "foreground": "#424242",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -4152,7 +4359,8 @@
     "background": "#ffffff",
     "foreground": "#414141",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -4176,7 +4384,8 @@
     "background": "#1c1c1c",
     "foreground": "#d0d0d0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4200,7 +4409,8 @@
     "background": "#181921",
     "foreground": "#ebdbb2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4224,7 +4434,8 @@
     "background": "#ffffff",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -4248,7 +4459,8 @@
     "background": "#1a2b3c",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4272,7 +4484,8 @@
     "background": "#000000",
     "foreground": "#f2f2f2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4296,7 +4509,8 @@
     "background": "#ffffff",
     "foreground": "#191919",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -4320,7 +4534,8 @@
     "background": "#21084a",
     "foreground": "#fffbf6",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4344,7 +4559,8 @@
     "background": "#2a1a4a",
     "foreground": "#ece7fa",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4368,7 +4584,8 @@
     "background": "#111e2a",
     "foreground": "#c0c9e5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4392,7 +4609,8 @@
     "background": "#292a44",
     "foreground": "#e8e6ed",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4416,7 +4634,8 @@
     "background": "#762423",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4440,7 +4659,8 @@
     "background": "#222222",
     "foreground": "#c2b790",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4464,7 +4684,8 @@
     "background": "#7a251e",
     "foreground": "#d7c9a7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4488,7 +4709,8 @@
     "background": "#353a44",
     "foreground": "#d9d9d9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4512,7 +4734,8 @@
     "background": "#2b2b2b",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4536,7 +4759,8 @@
     "background": "#191724",
     "foreground": "#e0def4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4560,7 +4784,8 @@
     "background": "#17182b",
     "foreground": "#a2a3aa",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4584,7 +4809,8 @@
     "background": "#100815",
     "foreground": "#514968",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4608,7 +4834,8 @@
     "background": "#2c3941",
     "foreground": "#ececec",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4632,7 +4859,8 @@
     "background": "#18131e",
     "foreground": "#dd7bdc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4656,7 +4884,8 @@
     "background": "#1c153d",
     "foreground": "#e41951",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4680,7 +4909,8 @@
     "background": "#243435",
     "foreground": "#d4e7d4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4704,7 +4934,8 @@
     "background": "#09141b",
     "foreground": "#deb88d",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4728,7 +4959,8 @@
     "background": "#111213",
     "foreground": "#cacecd",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4752,7 +4984,8 @@
     "background": "#1e1d40",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4776,7 +5009,8 @@
     "background": "#001015",
     "foreground": "#405555",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4800,7 +5034,8 @@
     "background": "#222222",
     "foreground": "#35b1d2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4824,7 +5059,8 @@
     "background": "#121214",
     "foreground": "#af9a91",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4848,7 +5084,8 @@
     "background": "#1b1b1b",
     "foreground": "#f7f7f7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4872,7 +5109,8 @@
     "background": "#1e1f29",
     "foreground": "#ebece6",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4896,7 +5134,8 @@
     "background": "#242626",
     "foreground": "#99a3a2",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4920,7 +5159,8 @@
     "background": "#3d3f41",
     "foreground": "#d2d8d9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4944,7 +5184,8 @@
     "background": "#001e27",
     "foreground": "#708284",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4968,7 +5209,8 @@
     "background": "#001e27",
     "foreground": "#9cc2c3",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -4993,7 +5235,15 @@
     "brightCyan": "#E18F62",
     "brightWhite": "#EAF4DE",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": {
+        "name": [
+          "d-mckee"
+        ],
+        "link": [
+          "https://github.com/d-mckee"
+        ]
+      }
     }
   },
   {
@@ -5018,7 +5268,15 @@
     "brightCyan": "#E07941",
     "brightWhite": "#665E4B",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": {
+        "name": [
+          "d-mckee"
+        ],
+        "link": [
+          "https://github.com/d-mckee"
+        ]
+      }
     }
   },
   {
@@ -5042,7 +5300,8 @@
     "background": "#0a1e24",
     "foreground": "#ecf0c1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5066,7 +5325,8 @@
     "background": "#20242d",
     "foreground": "#b3b8c3",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5090,7 +5350,8 @@
     "background": "#222222",
     "foreground": "#bdbaae",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5114,7 +5375,8 @@
     "background": "#222222",
     "foreground": "#c9c6bc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5138,7 +5400,8 @@
     "background": "#1b1d1e",
     "foreground": "#e3e3e3",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5162,7 +5425,8 @@
     "background": "#ffffff",
     "foreground": "#4d4d4c",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5186,7 +5450,8 @@
     "background": "#1a1a1a",
     "foreground": "#acacab",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5210,7 +5475,8 @@
     "background": "#282c35",
     "foreground": "#d4d4d4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5234,7 +5500,8 @@
     "background": "#1a1818",
     "foreground": "#c9c9c9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5258,7 +5525,8 @@
     "background": "#000000",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5282,7 +5550,8 @@
     "background": "#000000",
     "foreground": "#dad9c7",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5306,7 +5575,8 @@
     "background": "#2a2139",
     "foreground": "#f0eff1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5330,7 +5600,8 @@
     "background": "#ffffff",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5354,7 +5625,8 @@
     "background": "#ffffff",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5378,7 +5650,8 @@
     "background": "#262626",
     "foreground": "#d0d0d0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5402,7 +5675,8 @@
     "background": "#ffffff",
     "foreground": "#000000",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5426,7 +5700,8 @@
     "background": "#1b1d1e",
     "foreground": "#f8f8f8",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5450,7 +5725,8 @@
     "background": "#1b1d1e",
     "foreground": "#b5b5b5",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5474,7 +5750,8 @@
     "background": "#1d1d26",
     "foreground": "#cbcbf0",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5498,7 +5775,8 @@
     "background": "#f8f8ff",
     "foreground": "#1d1d26",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5522,7 +5800,8 @@
     "background": "#16161e",
     "foreground": "#787c99",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5546,7 +5825,8 @@
     "background": "#cbccd1",
     "foreground": "#4c505e",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5570,7 +5850,8 @@
     "background": "#1f2335",
     "foreground": "#7982a9",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5594,7 +5875,8 @@
     "background": "#ffffff",
     "foreground": "#4d4d4c",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5618,7 +5900,8 @@
     "background": "#1d1f21",
     "foreground": "#c5c8c6",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5642,7 +5925,8 @@
     "background": "#002451",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5666,7 +5950,8 @@
     "background": "#000000",
     "foreground": "#eaeaea",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5690,7 +5975,8 @@
     "background": "#151515",
     "foreground": "#a1b0b8",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5714,7 +6000,8 @@
     "background": "#2d2d2d",
     "foreground": "#cccccc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5738,7 +6025,8 @@
     "background": "#24364b",
     "foreground": "#31d07b",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5762,7 +6050,8 @@
     "background": "#191919",
     "foreground": "#786b53",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5786,7 +6075,8 @@
     "background": "#141414",
     "foreground": "#ffffd4",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5810,7 +6100,8 @@
     "background": "#300a24",
     "foreground": "#eeeeec",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5834,7 +6125,8 @@
     "background": "#242728",
     "foreground": "#c1c1c1",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5858,7 +6150,8 @@
     "background": "#011116",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5882,7 +6175,8 @@
     "background": "#ff8cd9",
     "foreground": "#0b0b0b",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -5906,7 +6200,8 @@
     "background": "#1b1b23",
     "foreground": "#877a9b",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5930,7 +6225,8 @@
     "background": "#25234f",
     "foreground": "#dcdccc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5954,7 +6250,8 @@
     "background": "#000000",
     "foreground": "#ffffff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -5978,7 +6275,8 @@
     "background": "#1c1d1f",
     "foreground": "#708284",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -6002,7 +6300,8 @@
     "background": "#fcf4dc",
     "foreground": "#536870",
     "meta": {
-      "isDark": false
+      "isDark": false,
+      "credits": null
     }
   },
   {
@@ -6026,7 +6325,8 @@
     "background": "#404040",
     "foreground": "#afdab6",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -6050,7 +6350,8 @@
     "background": "#000000",
     "foreground": "#b3b3b3",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -6074,7 +6375,8 @@
     "background": "#29283b",
     "foreground": "#b3b0d6",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -6098,7 +6400,8 @@
     "background": "#1f1726",
     "foreground": "#dafaff",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -6122,7 +6425,8 @@
     "background": "#171717",
     "foreground": "#dedacf",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -6146,7 +6450,8 @@
     "background": "#101010",
     "foreground": "#999993",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   },
   {
@@ -6170,7 +6475,8 @@
     "background": "#3f3f3f",
     "foreground": "#dcdccc",
     "meta": {
-      "isDark": true
+      "isDark": true,
+      "credits": null
     }
   }
 ]
