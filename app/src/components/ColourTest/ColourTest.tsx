@@ -28,7 +28,7 @@ const ColourTest: React.FC<PropsType> = (props) => {
         )}
       </section>
       {Array.isArray(props.theme.meta.credits) && (
-        <div className={css.credits}>
+        <div className={css.credits} data-testid="credit">
           {props.theme.name} credit{' '}
           {props.theme.meta.credits.map((credit, i) => (
             <a key={i} href={credit.link}>

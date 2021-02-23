@@ -64,7 +64,7 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
           {parseSyntax(props.theme, activeCodeblock.markup)}
         </code>
         {Array.isArray(props.theme.meta.credits) && (
-          <div className={css.footer}>
+          <div className={css.footer} data-testid="credit">
             {props.theme.name} credit{' '}
             {props.theme.meta.credits.map((credit, i) => (
               <a key={i} href={credit.link}>

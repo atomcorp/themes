@@ -397,4 +397,41 @@ describe('Keyboard navigation', function () {
       cy.findByLabelText('Select theme').should('have.value', themes[11].name);
     });
   });
+  it('should show credits, if any', function () {
+    cy.viewport(1024, 780);
+    cy.visit('/themes');
+    cy.findByText('Loading...').should('not.be.visible');
+    cy.get('@darkThemes').then((themes) => {
+      // assuming we start off dark
+      const themesWithCredits = themes.filter(
+        (theme) => theme.meta.credits !== null
+      );
+      const themesWithoutCredits = themes.filter(
+        (theme) => theme.meta.credits === null
+      );
+      if (themesWithoutCredits.length > 0) {
+        const themeWithoutCredit = themesWithoutCredits[0];
+        cy.visit(`/themes?theme=${themeWithoutCredit.name}`);
+        cy.findByLabelText('Select theme').should(
+          'have.value',
+          themeWithoutCredit.name
+        );
+        cy.findByTestId('credit').should('not.be.visible');
+      }
+      if (themesWithCredits.length > 0) {
+        const themeWithCredit = themesWithCredits[0];
+        cy.visit(`/themes?theme=${themeWithCredit.name}`);
+        cy.findByLabelText('Select theme').should(
+          'have.value',
+          themeWithCredit.name
+        );
+        cy.findByTestId('credit').should(
+          'have.text',
+          `${themeWithCredit.name} credit ${themeWithCredit.meta.credits.map(
+            (credit) => credit.name
+          )}`
+        );
+      }
+    });
+  });
 });
