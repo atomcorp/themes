@@ -31,6 +31,8 @@
   background-image: var(--btn__bg-img);
   color: var(--btn__colour);
   height: 100%;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
 }
 
 select:focus {
