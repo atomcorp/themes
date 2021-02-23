@@ -3,6 +3,13 @@
   align-content: center;
   align-items: center;
   justify-content: center;
+  margin: 20px auto 0;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: initial;
+  }
 }
 
 .label {
@@ -13,7 +20,7 @@
 }
 
 .select {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: var(--font-stack);
   max-width: 100%;
   width: 100%;
@@ -23,12 +30,9 @@
   border-right: 0;
   background-image: var(--btn__bg-img);
   color: var(--btn__colour);
+  height: 100%;
 }
-@media (min-width: 1024px) {
-  .select {
-    padding: 2px 10px;
-  }
-}
+
 select:focus {
   box-shadow: 0 0 0 0.2em rgba(79, 140, 201, 0.5);
 }
@@ -51,6 +55,10 @@ select:focus {
   color: var(--btn__colour);
   padding: 6px 10px;
   cursor: pointer;
+  height: 100%;
+  /* stop ipad zooming in when pressing button repeatedly */
+  touch-action: manipulation;
+  font-size: 2rem;
 }
 .direction:first-child {
   border-radius: 0.25em 0 0 0.25em;
@@ -65,9 +73,4 @@ select:focus {
 .direction:hover {
   background-image: var(--btn__bg-img--hover);
   background-position: -0.5em;
-}
-@media (min-width: 1024px) {
-  .direction {
-    padding: 3px 10px;
-  }
 }

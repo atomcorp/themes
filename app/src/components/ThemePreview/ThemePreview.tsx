@@ -8,9 +8,9 @@ import {themeType, previewType} from 'types';
 import css from './ThemePreview.module.css';
 import {parseValidKeys} from './consoleMethods';
 import Toast from 'components/Toast/Toast';
-import ThemePreviewButtons from './ThemePreviewButtons';
 import Toggles from 'components/Toggle/Toggles';
 import ThemeSelect from 'components/ThemeSelect/ThemeSelect';
+import {Share, Copy} from 'Icons';
 
 import {actionTypes, themeShadeType} from 'types';
 
@@ -118,21 +118,35 @@ const ThemePreview: React.FC<PropsType> = (props) => {
       ) : (
         <ConsoleTest theme={props.theme} />
       )}
-      {props.isSmallScreenSize && (
-        <div className={css.select}>
-          <ThemeSelect
-            themeNames={props.themeNames}
-            dispatch={props.dispatch}
-            activeTheme={props.activeTheme}
-            themeselectRef={props.themeselectRef}
-          />
-        </div>
-      )}
-      <ThemePreviewButtons
-        themename={props.theme.name}
-        handleCopy={handleCopy}
-        handleShare={handleShare}
+      <ThemeSelect
+        themeNames={props.themeNames}
+        dispatch={props.dispatch}
+        activeTheme={props.activeTheme}
+        themeselectRef={props.themeselectRef}
       />
+      <div className={css.buttons}>
+        <button
+          data-testid="copyButton"
+          className={`${css.button} ${css.primary}`}
+          onClick={handleCopy}
+        >
+          <Copy className={css.icon} colour="#ededed" />
+          Get theme
+        </button>
+        <button
+          data-testid="shareButton"
+          className={css.button}
+          onClick={handleShare}
+        >
+          <Share
+            className={css.icon}
+            colour={getComputedStyle(document.documentElement).getPropertyValue(
+              '--btn__colour'
+            )}
+          />
+          Share theme
+        </button>
+      </div>
       <Toast
         background={props.backgroundColour}
         title={state.title}
