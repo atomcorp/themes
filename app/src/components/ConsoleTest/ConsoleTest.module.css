@@ -78,4 +78,5 @@
   overflow: auto;
   padding: 10px 10px 40px;
   min-height: 40vh;
+  max-height: 50vh;
 }
