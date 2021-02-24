@@ -54,7 +54,9 @@ const schemes = [
     brightWhite: '#f7f7f7',
     background: '#f7f7f7',
     foreground: '#4a4543',
-    isDark: false,
+    meta: {
+      isDark: false,
+    },
   },
   {
     name: 'Galaxy',
@@ -124,7 +126,9 @@ const schemes = [
     brightWhite: '#e5e5e5',
     background: '#fef49c',
     foreground: '#000000',
-    isDark: false,
+    meta: {
+      isDark: false,
+    },
   },
 ];
 
