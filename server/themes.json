@@ -2601,7 +2601,12 @@
     "foreground": "#bdc0c2",
     "meta": {
       "isDark": true,
-      "credits": null
+      "credits": [
+        {
+          "name": "wafelack",
+          "link": "https://github.com/wafelack"
+        }
+      ]
     }
   },
   {
