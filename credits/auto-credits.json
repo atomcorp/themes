@@ -1,18 +1,7 @@
 [
   {
     "themeNames": [
-      "3024 Day"
-    ],
-    "sources": [
-      {
-        "name": "0x3024",
-        "link": "https://github.com/0x3024"
-      }
-    ],
-    "notes": "The 3024 Day and 3024 Night themes were created by [0x3024](https://github.com/0x3024)"
-  },
-  {
-    "themeNames": [
+      "3024 Day",
       "3024 Night"
     ],
     "sources": [
@@ -37,7 +26,34 @@
   },
   {
     "themeNames": [
-      "AdventureTime"
+      "AdventureTime",
+      "AlienBlood",
+      "BirdsOfParadise",
+      "Ciapre",
+      "CrayonPonyFish",
+      "DimmedMonokai",
+      "Earthsong",
+      "Elemental",
+      "FishTank",
+      "FrontEndDelight",
+      "FunForrest",
+      "Grape",
+      "Highway",
+      "IC_Green_PPL",
+      "IC_Orange_PPL",
+      "Lavandula",
+      "Medallion",
+      "MonaLisa",
+      "Ollie",
+      "Royal",
+      "SeaShells",
+      "Shaman",
+      "SleepyHollow",
+      "SoftServer",
+      "Sundried",
+      "ToyChest",
+      "Treehouse",
+      "Urple"
     ],
     "sources": [
       {
@@ -58,18 +74,6 @@
       }
     ],
     "notes": "The Afterglow theme was created by [yabatadesign](https://github.com/YabataDesign/afterglow-itermcolors)"
-  },
-  {
-    "themeNames": [
-      "AlienBlood"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
   },
   {
     "themeNames": [
@@ -105,7 +109,11 @@
   },
   {
     "themeNames": [
-      "Arthur"
+      "Arthur",
+      "N0tch2k",
+      "Pnevma",
+      "Square",
+      "Wryan"
     ],
     "sources": [
       {
@@ -129,7 +137,10 @@
   },
   {
     "themeNames": [
-      "Atom"
+      "Atom",
+      "Brogrammer",
+      "Darkside",
+      "Glacier"
     ],
     "sources": [
       {
@@ -177,7 +188,9 @@
   },
   {
     "themeNames": [
-      "Batman"
+      "Batman",
+      "Spiderman",
+      "The Hulk"
     ],
     "sources": [
       {
@@ -189,7 +202,10 @@
   },
   {
     "themeNames": [
-      "Belafonte Day"
+      "Belafonte Day",
+      "Belafonte Night",
+      "C64",
+      "Paraiso Dark"
     ],
     "sources": [
       {
@@ -201,31 +217,10 @@
   },
   {
     "themeNames": [
-      "Belafonte Night"
-    ],
-    "sources": [
-      {
-        "name": "idleberg",
-        "link": "https://github.com/idleberg"
-      }
-    ],
-    "notes": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
-  },
-  {
-    "themeNames": [
-      "BirdsOfParadise"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "Blue Matrix"
+      "Blue Matrix",
+      "Cyberdyne",
+      "Laser",
+      "Scarlet Protocol"
     ],
     "sources": [
       {
@@ -293,31 +288,8 @@
   },
   {
     "themeNames": [
-      "Brogrammer"
-    ],
-    "sources": [
-      {
-        "name": "bahlo",
-        "link": "https://github.com/bahlo/iterm-colors"
-      }
-    ],
-    "notes": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
-  },
-  {
-    "themeNames": [
-      "C64"
-    ],
-    "sources": [
-      {
-        "name": "idleberg",
-        "link": "https://github.com/idleberg"
-      }
-    ],
-    "notes": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
-  },
-  {
-    "themeNames": [
-      "Calamity"
+      "Calamity",
+      "Rapture"
     ],
     "sources": [
       {
@@ -369,18 +341,6 @@
   },
   {
     "themeNames": [
-      "Ciapre"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "CLRS"
     ],
     "sources": [
@@ -417,30 +377,6 @@
   },
   {
     "themeNames": [
-      "CrayonPonyFish"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "Cyberdyne"
-    ],
-    "sources": [
-      {
-        "name": "ReagentX",
-        "link": "https://github.com/ReagentX"
-      }
-    ],
-    "notes": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
-  },
-  {
-    "themeNames": [
       "cyberpunk"
     ],
     "sources": [
@@ -465,39 +401,15 @@
   },
   {
     "themeNames": [
-      "Darkside"
-    ],
-    "sources": [
-      {
-        "name": "bahlo",
-        "link": "https://github.com/bahlo/iterm-colors"
-      }
-    ],
-    "notes": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
-  },
-  {
-    "themeNames": [
       "deep"
     ],
     "sources": [
       {
-        "name": "here",
-        "link": "https://github.com/deepsweet/Monokai-Soda-iTerm"
+        "name": "ADoyle",
+        "link": "https://github.com/adoyle-h"
       }
     ],
-    "notes": "The theme Monokai Soda was found [here](https://github.com/deepsweet/Monokai-Soda-iTerm)."
-  },
-  {
-    "themeNames": [
-      "DimmedMonokai"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+    "notes": "The Deep theme was created by [ADoyle](https://github.com/adoyle-h)"
   },
   {
     "themeNames": [
@@ -573,18 +485,7 @@
   },
   {
     "themeNames": [
-      "Dracula"
-    ],
-    "sources": [
-      {
-        "name": "zenorocha",
-        "link": "https://github.com/zenorocha/dracula-theme"
-      }
-    ],
-    "notes": "The Dracula theme was created by [zenorocha](https://github.com/zenorocha/dracula-theme)"
-  },
-  {
-    "themeNames": [
+      "Dracula",
       "Dracula+"
     ],
     "sources": [
@@ -626,30 +527,6 @@
       }
     ],
     "notes": "The DuoTone Dark theme was created by [chibicode](http://chibicode.com) based on [simurai](https://github.com/simurai)'s [duotone-dark](https://github.com/simurai/duotone-dark-syntax) Atom theme."
-  },
-  {
-    "themeNames": [
-      "Earthsong"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "Elemental"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
   },
   {
     "themeNames": [
@@ -761,18 +638,6 @@
   },
   {
     "themeNames": [
-      "FishTank"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Flat"
     ],
     "sources": [
@@ -829,30 +694,6 @@
   },
   {
     "themeNames": [
-      "FrontEndDelight"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "FunForrest"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Galaxy"
     ],
     "sources": [
@@ -865,51 +706,15 @@
   },
   {
     "themeNames": [
-      "Galizur"
-    ],
-    "sources": [
-      {
-        "name": "Raziel Anarki",
-        "link": "https://github.com/razielanarki"
-      }
-    ],
-    "notes": "The \"Galizur\" theme was crafted by [Raziel Anarki](https://github.com/razielanarki)"
-  },
-  {
-    "themeNames": [
       "Github"
     ],
     "sources": [
       {
-        "name": "ashfinal",
-        "link": "https://github.com/ashfinal/vim-colors-violet"
+        "name": "Github",
+        "link": "https://github.com/"
       }
     ],
-    "notes": "The scheme Violet was created by [ashfinal](https://github.com/ashfinal/vim-colors-violet)."
-  },
-  {
-    "themeNames": [
-      "Glacier"
-    ],
-    "sources": [
-      {
-        "name": "bahlo",
-        "link": "https://github.com/bahlo/iterm-colors"
-      }
-    ],
-    "notes": "The Atom, Brogrammer, Glacier and Darkside themes were created by [bahlo](https://github.com/bahlo/iterm-colors)"
-  },
-  {
-    "themeNames": [
-      "Grape"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
+    "notes": "The scheme Github was inspired by the color theme palette used at [Github](https://github.com/) for their UI and in some of their mascot images."
   },
   {
     "themeNames": [
@@ -981,19 +786,8 @@
   },
   {
     "themeNames": [
-      "Highway"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "Hipster Green"
+      "Hipster Green",
+      "Jackie Brown"
     ],
     "sources": [
       {
@@ -1053,42 +847,6 @@
   },
   {
     "themeNames": [
-      "IC_Green_PPL"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "IC_Orange_PPL"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "idea"
-    ],
-    "sources": [
-      {
-        "name": "Josh Braun",
-        "link": "http://wideaperture.net"
-      }
-    ],
-    "notes": "The ENCOM theme was created by [Josh Braun](http://wideaperture.net)"
-  },
-  {
-    "themeNames": [
       "idleToes"
     ],
     "sources": [
@@ -1110,18 +868,6 @@
       }
     ],
     "notes": "The IR_Black theme was found [here](https://gist.github.com/meqif/1238378)"
-  },
-  {
-    "themeNames": [
-      "Jackie Brown"
-    ],
-    "sources": [
-      {
-        "name": "Unkulunkulu",
-        "link": "https://github.com/Unkulunkulu"
-      }
-    ],
-    "notes": "The Hipster Green and Jackie Brown themes were created by [Unkulunkulu](https://github.com/Unkulunkulu)"
   },
   {
     "themeNames": [
@@ -1201,18 +947,6 @@
   },
   {
     "themeNames": [
-      "Laser"
-    ],
-    "sources": [
-      {
-        "name": "ReagentX",
-        "link": "https://github.com/ReagentX"
-      }
-    ],
-    "notes": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
-  },
-  {
-    "themeNames": [
       "Later This Evening"
     ],
     "sources": [
@@ -1222,18 +956,6 @@
       }
     ],
     "notes": "The Later This Evening theme was created by [vilhalmer](https://github.com/vilhalmer/System/tree/master/terminal-themes)"
-  },
-  {
-    "themeNames": [
-      "Lavandula"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
   },
   {
     "themeNames": [
@@ -1265,18 +987,7 @@
   },
   {
     "themeNames": [
-      "Material"
-    ],
-    "sources": [
-      {
-        "name": "stoeffel",
-        "link": "https://github.com/stoeffel/material-iterm"
-      }
-    ],
-    "notes": "The Material and MaterialDark themes were created by [stoeffel](https://github.com/stoeffel/material-iterm)"
-  },
-  {
-    "themeNames": [
+      "Material",
       "MaterialDark"
     ],
     "sources": [
@@ -1314,18 +1025,6 @@
       }
     ],
     "notes": "The theme Mathias was created by [mathiasbynens](https://github.com/mathiasbynens/dotfiles)"
-  },
-  {
-    "themeNames": [
-      "Medallion"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
   },
   {
     "themeNames": [
@@ -1369,18 +1068,6 @@
   },
   {
     "themeNames": [
-      "MonaLisa"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Monokai Soda"
     ],
     "sources": [
@@ -1402,18 +1089,6 @@
       }
     ],
     "notes": "The theme Monokai Vivid was created by [vitalymak](https://github.com/vitalymak/iTerm2-Color-Schemes)."
-  },
-  {
-    "themeNames": [
-      "N0tch2k"
-    ],
-    "sources": [
-      {
-        "name": "baskerville",
-        "link": "https://github.com/baskerville/iTerm-2-Color-Themes"
-      }
-    ],
-    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
   },
   {
     "themeNames": [
@@ -1485,18 +1160,6 @@
   },
   {
     "themeNames": [
-      "Ollie"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Operator Mono Dark"
     ],
     "sources": [
@@ -1541,18 +1204,6 @@
   },
   {
     "themeNames": [
-      "Paraiso Dark"
-    ],
-    "sources": [
-      {
-        "name": "idleberg",
-        "link": "https://github.com/idleberg"
-      }
-    ],
-    "notes": "The Belafonte Day, Belafonte Night, Paraiso Dark, and C64 themes were created by [idleberg](https://github.com/idleberg)"
-  },
-  {
-    "themeNames": [
       "PaulMillr"
     ],
     "sources": [
@@ -1577,18 +1228,6 @@
   },
   {
     "themeNames": [
-      "Pnevma"
-    ],
-    "sources": [
-      {
-        "name": "baskerville",
-        "link": "https://github.com/baskerville/iTerm-2-Color-Themes"
-      }
-    ],
-    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
-  },
-  {
-    "themeNames": [
       "primary"
     ],
     "sources": [
@@ -1605,7 +1244,9 @@
   },
   {
     "themeNames": [
-      "Pro Light"
+      "Pro Light",
+      "Tango Adapted",
+      "Tango Half Adapted"
     ],
     "sources": [
       {
@@ -1630,18 +1271,6 @@
       }
     ],
     "notes": "The Purple Rain theme was created by [msorre2](https://github.com/msorre2)"
-  },
-  {
-    "themeNames": [
-      "Rapture"
-    ],
-    "sources": [
-      {
-        "name": "Pustur",
-        "link": "https://github.com/Pustur"
-      }
-    ],
-    "notes": "The Calamity and Rapture themes were created by [Pustur](https://github.com/Pustur)"
   },
   {
     "themeNames": [
@@ -1709,18 +1338,6 @@
   },
   {
     "themeNames": [
-      "Royal"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Ryuuko"
     ],
     "sources": [
@@ -1757,30 +1374,6 @@
   },
   {
     "themeNames": [
-      "Scarlet Protocol"
-    ],
-    "sources": [
-      {
-        "name": "ReagentX",
-        "link": "https://github.com/ReagentX"
-      }
-    ],
-    "notes": "The Blueberry Banana, Blue Matrix, Cyberdyne, Laser, and Scarlet Protocol themes were created by [ReagentX](https://github.com/ReagentX)"
-  },
-  {
-    "themeNames": [
-      "SeaShells"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Seti"
     ],
     "sources": [
@@ -1797,34 +1390,6 @@
   },
   {
     "themeNames": [
-      "shades-of-purple"
-    ],
-    "sources": [
-      {
-        "name": "here",
-        "link": "https://github.com/ahmadawais/shades-of-purple-iterm2"
-      },
-      {
-        "name": "fr3fou",
-        "link": "https://github.com/fr3fou"
-      }
-    ],
-    "notes": "The Shades Of Purple theme was found [here](https://github.com/ahmadawais/shades-of-purple-iterm2) and ported by [fr3fou](https://github.com/fr3fou)"
-  },
-  {
-    "themeNames": [
-      "Shaman"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Slate"
     ],
     "sources": [
@@ -1837,18 +1402,6 @@
   },
   {
     "themeNames": [
-      "SleepyHollow"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
       "Smyck"
     ],
     "sources": [
@@ -1858,18 +1411,6 @@
       }
     ],
     "notes": "The Smyck theme was found [here](https://github.com/hukl/Smyck-Color-Scheme)"
-  },
-  {
-    "themeNames": [
-      "SoftServer"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
   },
   {
     "themeNames": [
@@ -1913,18 +1454,7 @@
   },
   {
     "themeNames": [
-      "SpaceGray Eighties"
-    ],
-    "sources": [
-      {
-        "name": "mhkeller",
-        "link": "https://github.com/mhkeller/spacegray-eighties-iterm"
-      }
-    ],
-    "notes": "The SpaceGray Eighties and SpaceGray Eighties Dull themes were created by [mhkeller](https://github.com/mhkeller/spacegray-eighties-iterm)"
-  },
-  {
-    "themeNames": [
+      "SpaceGray Eighties",
       "SpaceGray Eighties Dull"
     ],
     "sources": [
@@ -1934,18 +1464,6 @@
       }
     ],
     "notes": "The SpaceGray Eighties and SpaceGray Eighties Dull themes were created by [mhkeller](https://github.com/mhkeller/spacegray-eighties-iterm)"
-  },
-  {
-    "themeNames": [
-      "Spiderman"
-    ],
-    "sources": [
-      {
-        "name": "pyrophos",
-        "link": "https://github.com/pyrophos"
-      }
-    ],
-    "notes": "The Batman, Spiderman, and The Hulk themes were created by [pyrophos](https://github.com/pyrophos)"
   },
   {
     "themeNames": [
@@ -1961,18 +1479,6 @@
   },
   {
     "themeNames": [
-      "Square"
-    ],
-    "sources": [
-      {
-        "name": "baskerville",
-        "link": "https://github.com/baskerville/iTerm-2-Color-Themes"
-      }
-    ],
-    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
-  },
-  {
-    "themeNames": [
       "Subliminal"
     ],
     "sources": [
@@ -1982,18 +1488,6 @@
       }
     ],
     "notes": "The theme Subliminal was created by [gdsrosa](https://github.com/gdsrosa/subliminal-itermcolors)"
-  },
-  {
-    "themeNames": [
-      "Sundried"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
   },
   {
     "themeNames": [
@@ -2025,30 +1519,6 @@
   },
   {
     "themeNames": [
-      "Tango Adapted"
-    ],
-    "sources": [
-      {
-        "name": "crowsonkb",
-        "link": "https://github.com/crowsonkb"
-      }
-    ],
-    "notes": "The Tango Adapted theme and its slightly less bright counterpart Tango Half Adapted were created by [crowsonkb](https://github.com/crowsonkb), based on iTerm2's Tango Light theme."
-  },
-  {
-    "themeNames": [
-      "Tango Half Adapted"
-    ],
-    "sources": [
-      {
-        "name": "crowsonkb",
-        "link": "https://github.com/crowsonkb"
-      }
-    ],
-    "notes": "The Tango Adapted theme and its slightly less bright counterpart Tango Half Adapted were created by [crowsonkb](https://github.com/crowsonkb), based on iTerm2's Tango Light theme."
-  },
-  {
-    "themeNames": [
       "Teerb"
     ],
     "sources": [
@@ -2073,18 +1543,6 @@
   },
   {
     "themeNames": [
-      "The Hulk"
-    ],
-    "sources": [
-      {
-        "name": "pyrophos",
-        "link": "https://github.com/pyrophos"
-      }
-    ],
-    "notes": "The Batman, Spiderman, and The Hulk themes were created by [pyrophos](https://github.com/pyrophos)"
-  },
-  {
-    "themeNames": [
       "Tomorrow"
     ],
     "sources": [
@@ -2097,18 +1555,7 @@
   },
   {
     "themeNames": [
-      "Tomorrow Night"
-    ],
-    "sources": [
-      {
-        "name": "ashwinv11",
-        "link": "https://github.com/ashwinv11/"
-      }
-    ],
-    "notes": "The Tomorrow Night Burns theme were created by [ashwinv11](https://github.com/ashwinv11/)"
-  },
-  {
-    "themeNames": [
+      "Tomorrow Night",
       "Tomorrow Night Burns"
     ],
     "sources": [
@@ -2118,30 +1565,6 @@
       }
     ],
     "notes": "The Tomorrow Night Burns theme were created by [ashwinv11](https://github.com/ashwinv11/)"
-  },
-  {
-    "themeNames": [
-      "ToyChest"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
-  },
-  {
-    "themeNames": [
-      "Treehouse"
-    ],
-    "sources": [
-      {
-        "name": "zdj",
-        "link": "https://github.com/zdj/themes/tree/master/iterm2"
-      }
-    ],
-    "notes": "The themes AdventureTime, AlienBlood, BirdsOfParadise, Ciapre, CrayonPonyFish, DimmedMonokai, Earthsong, Elemental, FishTank, FrontEndDelight, FunForrest, Grape, Highway, IC_Green_PPL, IC_Orange_PPL, Lavandula, Medallion, MonaLisa, Ollie, Royal, SeaShells, Shaman, SleepyHollow, SoftServer, Sundried, ToyChest, Treehouse, and Urple were created by [zdj](https://github.com/zdj/themes/tree/master/iterm2)"
   },
   {
     "themeNames": [
@@ -2182,22 +1605,6 @@
       }
     ],
     "notes": "The Unikitty theme was created by [jakebathman](https://github.com/jakebathman)"
-  },
-  {
-    "themeNames": [
-      "Urple"
-    ],
-    "sources": [
-      {
-        "name": "here",
-        "link": "https://github.com/ahmadawais/shades-of-purple-iterm2"
-      },
-      {
-        "name": "fr3fou",
-        "link": "https://github.com/fr3fou"
-      }
-    ],
-    "notes": "The Shades Of Purple theme was found [here](https://github.com/ahmadawais/shades-of-purple-iterm2) and ported by [fr3fou](https://github.com/fr3fou)"
   },
   {
     "themeNames": [
@@ -2274,18 +1681,6 @@
       }
     ],
     "notes": "The Wombat theme was created by [djoyner](https://github.com/djoyner/iTerm2-wombat)"
-  },
-  {
-    "themeNames": [
-      "Wryan"
-    ],
-    "sources": [
-      {
-        "name": "baskerville",
-        "link": "https://github.com/baskerville/iTerm-2-Color-Themes"
-      }
-    ],
-    "notes": "The Arthur, N0tch2k, Pnevma, Square, and Wryan themes were created by [baskerville](https://github.com/baskerville/iTerm-2-Color-Themes)"
   },
   {
     "themeNames": [

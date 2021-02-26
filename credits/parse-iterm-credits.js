@@ -9,7 +9,7 @@ const markdownCredits = buffer.toString();
 const notFound = [];
 
 const credits = themenames.reduce((acc, themename) => {
-  const note = markdownCredits.match(new RegExp(`(.+)${themename}(.+)`, 'i'));
+  const note = markdownCredits.match(new RegExp(`(.+) ${themename}(.+)`, 'i'));
   let matches = [];
   if (note != null) {
     matches = [...note[0].matchAll(/\[(.+?)\]\((.+?)\)/g)];
@@ -17,6 +17,17 @@ const credits = themenames.reduce((acc, themename) => {
   if (matches.length === 0) {
     notFound.push(themename);
     return acc;
+  }
+  if (matches.length === 1) {
+    const existingSourceIndex = acc.findIndex(
+      (credit) =>
+        credit.sources[0].name === matches[0][1] &&
+        credit.sources[0].link === matches[0][2]
+    );
+    if (existingSourceIndex !== -1) {
+      acc[existingSourceIndex].themeNames.push(themename);
+      return acc;
+    }
   }
   return [
     ...acc,
@@ -31,5 +42,5 @@ const credits = themenames.reduce((acc, themename) => {
   ];
 }, []);
 
-fs.writeFileSync('credits/credits.json', JSON.stringify(credits, null, 2));
+fs.writeFileSync('credits/auto-credits.json', JSON.stringify(credits, null, 2));
 fs.writeFileSync('credits/notFound.json', JSON.stringify(notFound, null, 2));
