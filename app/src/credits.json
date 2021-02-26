@@ -70,5 +70,14 @@
         "link": "https://github.com/wafelack"
       }
     ]
+  },
+  {
+    "themeNames": ["Glorious"],
+    "sources": [
+      {
+        "name": "alex",
+        "link": "https://github.com/AlexMailo"
+      }
+    ]
   }
 ]
