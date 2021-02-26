@@ -70,5 +70,14 @@
         "link": "https://github.com/wafelack"
       }
     ]
+  },
+  {
+    "themeNames": ["Sublette"],
+    "sources": [
+      {
+        "name": "sublee",
+        "link": "https://github.com/sublee"
+      }
+    ]
   }
 ]
