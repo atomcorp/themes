@@ -79,5 +79,14 @@
         "link": "https://github.com/sublee"
       }
     ]
+  },
+  {
+    "themeNames": ["Glorious"],
+    "sources": [
+      {
+        "name": "alex",
+        "link": "https://github.com/AlexMailo"
+      }
+    ]
   }
 ]
