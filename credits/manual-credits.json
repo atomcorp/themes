@@ -143,7 +143,7 @@
     "notes": "The Aurora theme was created by [fcsmJS](https://github.com/fcsmJS/iTerm2-Color-Schemes)"
   },
   {
-    "themeNames": ["ayu"],
+    "themeNames": ["ayu", "ayu_light"],
     "sources": [
       {
         "name": "alebcay",
