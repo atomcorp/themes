@@ -340,5 +340,26 @@
     "brightWhite": "#ffe",
     "background": "#ccced0",
     "foreground": "#202535"
+  },
+  {
+    "name": "Glorious",
+    "black": "#1e1e1e",
+    "red": "#be0f17",
+    "green": "#868715",
+    "yellow": "#cc881a",
+    "blue": "#16777a",
+    "purple": "#a04b73",
+    "cyan": "#578e57",
+    "white": "#978771",
+    "brightBlack": "#7f7061",
+    "brightRed": "#f73028",
+    "brightGreen": "#d5d5d7",
+    "brightYellow": "#f7b125",
+    "brightBlue": "#4e917c",
+    "brightPurple": "#c77089",
+    "brightCyan": "#7db669",
+    "brightWhite": "#e6d4a3",
+    "background": "#201d27",
+    "foreground": "#c8c8c9"
   }
 ]
