@@ -67,9 +67,12 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
           <div className={css.footer} data-testid="credit">
             {props.theme.name} credit{' '}
             {props.theme.meta.credits.map((credit, i) => (
-              <a key={i} href={credit.link}>
-                {credit.name}
-              </a>
+              <React.Fragment key={i}>
+                {i > 0 && <span>/</span>}
+                <a key={i} href={credit.link}>
+                  {credit.name}
+                </a>
+              </React.Fragment>
             ))}
           </div>
         )}
