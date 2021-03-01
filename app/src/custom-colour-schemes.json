@@ -319,5 +319,26 @@
     "brightRed": "#FF6249",
     "brightWhite": "#F2F2F2",
     "brightYellow": "#FCC223"
+  },
+  {
+    "name": "Sublette",
+    "black": "#253045",
+    "red": "#e57",
+    "green": "#5e7",
+    "yellow": "#fd8",
+    "blue": "#58f",
+    "purple": "#f7c",
+    "cyan": "#4ee",
+    "white": "#f5f5da",
+    "brightBlack": "#405570",
+    "brightRed": "#e65",
+    "brightGreen": "#9e7",
+    "brightYellow": "#ff7",
+    "brightBlue": "#7bf",
+    "brightPurple": "#a8f",
+    "brightCyan": "#5fb",
+    "brightWhite": "#ffe",
+    "background": "#ccced0",
+    "foreground": "#202535"
   }
 ]
