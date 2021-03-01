@@ -29,11 +29,14 @@ const ColourTest: React.FC<PropsType> = (props) => {
       </section>
       {Array.isArray(props.theme.meta.credits) && (
         <div className={css.credits} data-testid="credit">
-          {props.theme.name} credit{' '}
+          credit: {props.theme.name} {'-'}
           {props.theme.meta.credits.map((credit, i) => (
-            <a key={i} href={credit.link}>
-              {credit.name}
-            </a>
+            <React.Fragment key={i}>
+              {i > 0 && <span>/</span>}
+              <a key={i} href={credit.link}>
+                {credit.name}
+              </a>
+            </React.Fragment>
           ))}
         </div>
       )}

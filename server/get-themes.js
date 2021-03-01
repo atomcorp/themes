@@ -23,6 +23,8 @@ const customSchemesUrl =
   'https://api.github.com/repos/atomcorp/themes/contents/app/src/custom-colour-schemes.json';
 const creditsUrl =
   'https://api.github.com/repos/atomcorp/themes/contents/app/src/credits.json';
+const manualCreditsUrl =
+  'https://api.github.com/repos/atomcorp/themes/contents/credits/manual-credits.json';
 
 // add boolean whether the theme is a light or dark
 const addThemeMeta = (themes, credits) => {
@@ -45,14 +47,18 @@ const main = async (isDev) => {
     // get the custom file in the terminal repo
     let customSchemaJson;
     let credits;
+    let manualCredits;
     if (isDev) {
       customSchemaJson = require('../app/src/custom-colour-schemes.json');
       credits = require('../app/src/credits.json');
+      manualCredits = require('../credits/manual-credits.json');
     } else {
       const customSchemaRes = await got({...options, url: customSchemesUrl});
       customSchemaJson = JSON.parse(customSchemaRes.body);
       const creditsUrlRes = await got({...options, url: creditsUrl});
       credits = JSON.parse(creditsUrlRes.body);
+      const manualCreditsRes = await got({...options, url: manualCreditsUrl});
+      manualCredits = JSON.parse(manualCreditsRes.body);
     }
     // get the list of scheme names in the iterm2 repo directory
     const dirResponse = await got(baseUrl, options);
@@ -68,7 +74,7 @@ const main = async (isDev) => {
     // merge with any themes that have been added in this project
     const combinedSchemaJson = addThemeMeta(
       [...iTerm2SchemaJson, ...customSchemaJson],
-      credits
+      [...credits, ...manualCredits]
     ).sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1));
     // write the new file
     fs.writeFileSync(
