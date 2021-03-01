@@ -72,6 +72,15 @@
     ]
   },
   {
+    "themeNames": ["Sublette"],
+    "sources": [
+      {
+        "name": "sublee",
+        "link": "https://github.com/sublee"
+      }
+    ]
+  },
+  {
     "themeNames": ["Glorious"],
     "sources": [
       {

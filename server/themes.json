@@ -5446,6 +5446,36 @@
     }
   },
   {
+    "name": "Sublette",
+    "black": "#253045",
+    "red": "#e57",
+    "green": "#5e7",
+    "yellow": "#fd8",
+    "blue": "#58f",
+    "purple": "#f7c",
+    "cyan": "#4ee",
+    "white": "#f5f5da",
+    "brightBlack": "#405570",
+    "brightRed": "#e65",
+    "brightGreen": "#9e7",
+    "brightYellow": "#ff7",
+    "brightBlue": "#7bf",
+    "brightPurple": "#a8f",
+    "brightCyan": "#5fb",
+    "brightWhite": "#ffe",
+    "background": "#ccced0",
+    "foreground": "#202535",
+    "meta": {
+      "isDark": true,
+      "credits": [
+        {
+          "name": "sublee",
+          "link": "https://github.com/vdurante/windows-terminal-monokai-cmder"
+        }
+      ]
+    }
+  },
+  {
     "name": "Subliminal",
     "black": "#7f7f7f",
     "red": "#e15a60",
