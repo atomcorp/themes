@@ -1387,5 +1387,251 @@
       }
     ],
     "notes": "The scheme Zenburn was inspired by the [Zenburn](http://sunaku.github.io/zenburn-terminal-color-scheme.html) version created by Suraj N. Kurapati."
+  },
+  {
+    "themeNames": ["BlueBerryPie"],
+    "sources": [
+      {
+        "name": "murmurlilia",
+        "link": "https://www.instagram.com/the.julias"
+      },
+      {
+        "name": "fitz123",
+        "link": "https://github.com/fitz123"
+      }
+    ],
+    "notes": "The BlueBerry Pie theme was created together by [murmurlilia](https://www.instagram.com/the.julias/) and [fitz123](https://github.com/fitz123)"
+  },
+  {
+    "themeNames": ["coffee_theme"],
+    "sources": [
+      {
+        "name": "cbitterfield",
+        "link": "https://github.com/cbitterfield"
+      }
+    ],
+    "notes": "The coffee theme was created by [cbitterfield](https://github.com/cbitterfield)"
+  },
+  {
+    "themeNames": ["DoomOne"],
+    "sources": [
+      {
+        "name": "Emacs Doom default theme",
+        "link": "https://github.com/hlissner/emacs-doom-themes"
+      }
+    ],
+    "notes": "The Doom One theme was based on [Emacs Doom default theme](https://github.com/hlissner/emacs-doom-themes)"
+  },
+  {
+    "themeNames": [
+      "Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, Terminal Basic"
+    ],
+    "sources": [
+      {
+        "name": "Terminal (macOS)",
+        "link": "https://en.wikipedia.org/wiki/Terminal_(macOS)"
+      }
+    ],
+    "notes": "The schemes Novel, Espresso, Grass, Homebrew, Ocean, Pro, Man Page, Red Sands, and Terminal Basic are ports of the schemes of the same name included with the Mac Terminal application. All of Terminal's schemes have now been ported, with the exception of \"Solid Colors\" (random backgrounds, which iTerm doesn't support) and \"Aerogel\" (which is hideous)."
+  },
+  {
+    "themeNames": ["ForestBlue"],
+    "sources": [
+      {
+        "name": "olkinn",
+        "link": "https://github.com/olkinn/forest-blue-iTerm"
+      }
+    ],
+    "notes": "The Forest Blue theme was found [here](https://github.com/olkinn/forest-blue-iTerm)"
+  },
+  {
+    "themeNames": ["Galizur"],
+    "sources": [
+      {
+        "name": "Raziel Anarki",
+        "link": "https://github.com/razielanarki"
+      }
+    ],
+    "notes": "The Galizur theme was crafted by [Raziel Anarki](https://github.com/razielanarki)"
+  },
+  {
+    "themeNames": ["Hopscotch.256"],
+    "sources": [
+      {
+        "name": "Jan T. Sott",
+        "link": "https://github.com/idleberg/Hopscotch"
+      }
+    ],
+    "notes": "The Hopscotch theme was created by [Jan T. Sott](https://github.com/idleberg/Hopscotch)"
+  },
+  {
+    "themeNames": ["LiquidCarbonTransparent", "LiquidCarbonTransparentInverse"],
+    "sources": [
+      {
+        "name": "markcho",
+        "link": "https://github.com/markcho/iTerm2_LiquidCarbon"
+      }
+    ],
+    "notes": "The LiquidCarbon themes were created by [markcho](https://github.com/markcho/iTerm2_LiquidCarbon)"
+  },
+  {
+    "themeNames": ["midnight-in-mojave"],
+    "sources": [
+      {
+        "name": "OberstKrueger",
+        "link": "https://github.com/oberstkrueger"
+      },
+      {
+        "name": "Human Interface Guidelines",
+        "link": "https://developer.apple.com/design/human-interface-guidelines/macos/overview/themes/"
+      }
+    ],
+    "notes": "The Midnight In Mojave theme was created by [OberstKrueger](https://github.com/oberstkrueger) based on the colors outlined in the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/overview/themes/)"
+  },
+  {
+    "themeNames": ["NightLion v1", "NightLion v2"],
+    "sources": [
+      {
+        "name": "Curvve Media",
+        "link": "http://www.curvve.com/blog/category/themes/"
+      }
+    ],
+    "notes": "The NightLion themes were created by [Curvve Media](http://www.curvve.com/blog/category/themes/)"
+  },
+  {
+    "themeNames": ["nord"],
+    "sources": [
+      {
+        "name": "Teraskull",
+        "link": "https://github.com/Teraskull"
+      }
+    ],
+    "notes": "Nord theme were added by [Teraskull](https://github.com/Teraskull)"
+  },
+  {
+    "themeNames": ["OneHalfDark", "OneHalfLight"],
+    "sources": [
+      {
+        "name": "sonph",
+        "link": "https://github.com/sonph"
+      }
+    ],
+    "notes": "The One Half themes were created by [sonph](https://github.com/sonph), based on Atom's One with some tweakings."
+  },
+  {
+    "themeNames": ["PaleNightHC"],
+    "sources": [
+      {
+        "name": "Mattia Astorino",
+        "link": "https://github.com/equinusocio"
+      },
+      {
+        "name": "Kasper",
+        "link": "https://github.com/Kasper-Liu"
+      }
+    ],
+    "notes": "The PaleNight theme was created by [Mattia Astorino](https://github.com/equinusocio) and ported to iTerm2 by [Kasper](https://github.com/Kasper-Liu)"
+  },
+  {
+    "themeNames": ["PencilDark", "PencilLight"],
+    "sources": [
+      {
+        "name": "mattly",
+        "link": "https://github.com/mattly/iterm-colors-pencil"
+      }
+    ],
+    "notes": "The Pencil Dark and Pencil Light themes were created by [mattly](https://github.com/mattly/iterm-colors-pencil)"
+  },
+  {
+    "themeNames": ["Popping and Locking"],
+    "sources": [
+      {
+        "name": "Hedinn Eiriksson",
+        "link": "https://github.com/hedinne"
+      },
+      {
+        "name": "didierbroska",
+        "link": "https://github.com/didierbroska"
+      }
+    ],
+    "notes": "Popping and Locking theme was created by [Hedinn Eiriksson](https://github.com/hedinne) and added by [didierbroska](https://github.com/didierbroska)"
+  },
+  {
+    "themeNames": ["purplepeter"],
+    "sources": [
+      {
+        "name": "DeChamp",
+        "link": "https://github.com/dechamp"
+      }
+    ],
+    "notes": "The Purple Peter theme was created by [DeChamp](https://github.com/dechamp)"
+  },
+  {
+    "themeNames": ["shades-of-purple"],
+    "sources": [
+      {
+        "name": "ahmadawais",
+        "link": "https://github.com/ahmadawais/shades-of-purple-iterm2"
+      },
+      {
+        "name": "fr3fou",
+        "link": "https://github.com/fr3fou"
+      }
+    ],
+    "notes": "The Shades Of Purple theme was found [here](https://github.com/ahmadawais/shades-of-purple-iterm2) and ported by [fr3fou](https://github.com/fr3fou)"
+  },
+  {
+    "themeNames": ["Solarized Dark Higher Contrast"],
+    "sources": [
+      {
+        "name": "heisters",
+        "link": "https://gist.github.com/heisters/1015503"
+      }
+    ],
+    "notes": "The Solorized Dark Higher Contrast theme was created by [heisters](https://gist.github.com/heisters/1015503)"
+  },
+  {
+    "themeNames": ["synthwave-everything"],
+    "sources": [
+      {
+        "name": "smithbm2316",
+        "link": "https://github.com/smithbm2316"
+      },
+      {
+        "name": "robb0wen",
+        "link": "https://github.com/robb0wen"
+      }
+    ],
+    "notes": "The Synthwave Everything theme was created by [smithbm2316](https://github.com/smithbm2316) based on [robb0wen's](https://github.com/robb0wen/) VS Code theme [Synthwave '84](https://github.com/robb0wen/synthwave-vscode)"
+  },
+  {
+    "themeNames": ["Tinacious Design (Dark)", "Tinacious Design (Light)"],
+    "sources": [
+      {
+        "name": "Tina Holly",
+        "link": "https://tinaciousdesign.com"
+      }
+    ],
+    "notes": "The theme Tinacious Design was created by [Tina Holly](https://tinaciousdesign.com)"
+  },
+  {
+    "themeNames": ["UnderTheSea"],
+    "sources": [
+      {
+        "name": "peterpme",
+        "link": "https://github.com/peterpme"
+      }
+    ],
+    "notes": "The Under The Sea theme was created by [peterpme](https://github.com/peterpme)"
+  },
+  {
+    "themeNames": ["Violet Dark", "Violet Light"],
+    "sources": [
+      {
+        "name": "ashfinal",
+        "link": "https://github.com/ashfinal/vim-colors-violet"
+      }
+    ],
+    "notes": "The scheme Violet was created by [ashfinal](https://github.com/ashfinal/vim-colors-violet)."
   }
 ]
