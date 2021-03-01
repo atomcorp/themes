@@ -427,7 +427,7 @@ describe('Keyboard navigation', function () {
         );
         cy.findByTestId('credit').should(
           'have.text',
-          `${themeWithCredit.name} credit ${themeWithCredit.meta.credits.map(
+          `credit: ${themeWithCredit.name} - ${themeWithCredit.meta.credits.map(
             (credit) => credit.name
           )}`
         );
