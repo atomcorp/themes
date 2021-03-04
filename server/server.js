@@ -3,8 +3,10 @@ const express = require('express');
 const cron = require('node-cron');
 const fs = require('fs');
 const getThemes = require('./get-themes');
+const compression = require('compression');
 
 const app = express();
+app.use(compression());
 const port = 3001;
 const isDev = getThemes(process.argv.includes('isDev'));
 

@@ -77,10 +77,7 @@ const main = async (isDev) => {
       [...credits, ...manualCredits]
     ).sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1));
     // write the new file
-    fs.writeFileSync(
-      './themes.json',
-      JSON.stringify(combinedSchemaJson, null, 2)
-    );
+    fs.writeFileSync('./themes.json', JSON.stringify(combinedSchemaJson));
     // write log
     const now = new Date();
     fs.appendFileSync(
