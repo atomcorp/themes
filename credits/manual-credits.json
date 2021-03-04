@@ -1633,5 +1633,33 @@
       }
     ],
     "notes": "The scheme Violet was created by [ashfinal](https://github.com/ashfinal/vim-colors-violet)."
+  },
+  {
+    "themeNames": ["Raycast_Dark", "Raycast_Light"],
+    "sources": [
+      {
+        "name": "thomaspaulmann",
+        "link": "https://github.com/thomaspaulmann"
+      },
+      {
+        "name": "itsnwa",
+        "link": "https://github.com/itsnwa"
+      }
+    ],
+    "notes": "The Raycast Dark/Light themes were created by thomaspaulmann and itsnwa."
+  },
+  {
+    "themeNames": ["iceberg-light", "iceberg-dark"],
+    "sources": [
+      {
+        "name": "cocopon",
+        "link": "https://github.com/cocopon/iceberg.vim"
+      },
+      {
+        "name": "pbnj",
+        "link": "https://github.com/pbnj"
+      }
+    ],
+    "notes": "The iceberg theme was created by cocopon and ported to iTerm2 by pbnj"
   }
 ]
