@@ -2,7 +2,38 @@ import React from 'react';
 
 import {themeType} from 'types';
 import css from './ColourTest.module.css';
-import {backgroundKeys, textKeys} from 'components/ThemePreview/consoleMethods';
+
+export const backgroundKeys: backgroundKeyType[] = [
+  'background',
+  'black',
+  'red',
+  'green',
+  'yellow',
+  'blue',
+  'purple',
+  'cyan',
+  'white',
+  'background',
+];
+
+export const textKeys: textKeyType[] = [
+  'black',
+  'brightBlack',
+  'red',
+  'brightRed',
+  'green',
+  'brightGreen',
+  'yellow',
+  'brightYellow',
+  'blue',
+  'brightBlue',
+  'purple',
+  'brightPurple',
+  'cyan',
+  'brightCyan',
+  'white',
+  'brightWhite',
+];
 
 type PropsType = {
   theme: themeType;

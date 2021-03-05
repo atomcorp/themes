@@ -19,6 +19,11 @@ export type stateType = {
   themeShade: shadeType;
   backgroundColour: string;
   previewType: previewType;
+  message: {
+    title: string;
+    isActive: boolean;
+    message: string;
+  };
 };
 
 const titleColours: titleColoursType[] = [
@@ -61,6 +66,11 @@ export const initialState: stateType = {
   themeShade: THEME_COLOUR.DARK,
   backgroundColour: '#090300',
   previewType: 'console',
+  message: {
+    isActive: false,
+    title: 'Title',
+    message: 'A message to be written here for me',
+  },
 };
 
 export const homeReducer = (
@@ -165,6 +175,14 @@ export const homeReducer = (
         break;
       case 'MORE':
         draftState.isMoreOpen = !state.isMoreOpen;
+        break;
+      case 'show':
+        draftState.message.title = action.title;
+        draftState.message.message = action.message;
+        draftState.message.isActive = true;
+        break;
+      case 'hide':
+        draftState.message.isActive = false;
         break;
       default:
         break;

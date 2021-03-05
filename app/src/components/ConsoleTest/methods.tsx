@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {validKeys} from 'components/ThemePreview/consoleMethods';
+import {validKeys} from 'components/Home/consoleMethods';
 import {themeType, textKeyType} from 'types';
 
 export const parseSyntax = (

@@ -32,24 +32,9 @@
   margin: 0 10px 0 0;
 }
 
-.select {
-  margin: 0 10px 10px 0;
-}
-
 .toggles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 10px 0 0;
-}
-
-.more {
-  margin: 0 0 10px 0;
-}
-
-/* https://docs.percy.io/docs/percy-specific-css */
-@media only percy {
-  .logo path {
-    fill: var(--toolbar__color);
-  }
 }

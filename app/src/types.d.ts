@@ -126,6 +126,16 @@ type setMoreToggleType = {
   type: 'MORE';
 };
 
+type messageType =
+  | {
+      type: 'show';
+      title: string;
+      message: string;
+    }
+  | {
+      type: 'hide';
+    };
+
 export type actionTypes =
   | loadActionType
   | setTheme
@@ -134,6 +144,7 @@ export type actionTypes =
   | setPreviewType
   | setNextType
   | setPrevType
-  | setMoreToggleType;
+  | setMoreToggleType
+  | messageType;
 
 export type previewType = 'console' | 'colour';
