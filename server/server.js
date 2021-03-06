@@ -8,12 +8,11 @@ const compression = require('compression');
 const app = express();
 app.use(compression());
 const port = 3001;
-const isDev = getThemes(process.argv.includes('isDev'));
 
 cron.schedule(
   '0 0 * * *',
   () => {
-    getThemes(isDev);
+    getThemes(process.argv.includes('isDev'));
   },
   {
     timezone: 'Europe/London',
