@@ -259,6 +259,7 @@
     "foreground": "#61543E",
     "background": "#F9FAE3",
     "cursorColor": "#61543E",
+    "selectionBackground": "#a4f017",
     "black": "#F9FAE3",
     "red": "#EB6f6f",
     "green": "#669C50",
