@@ -338,8 +338,8 @@
     "brightPurple": "#a8f",
     "brightCyan": "#5fb",
     "brightWhite": "#ffe",
-    "background": "#ccced0",
-    "foreground": "#202535"
+    "background": "#202535",
+    "foreground": "#ccced0"
   },
   {
     "name": "Glorious",
