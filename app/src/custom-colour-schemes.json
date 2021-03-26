@@ -361,5 +361,28 @@
     "brightWhite": "#e6d4a3",
     "background": "#201d27",
     "foreground": "#c8c8c9"
+  },
+  {
+    "name": "Bubbles",
+    "background": "#161D38",
+    "black": "#000000",
+    "blue": "#589DF6",
+    "brightBlack": "#555555",
+    "brightBlue": "#589DF6",
+    "brightCyan": "#3979BC",
+    "brightGreen": "#35BB9A",
+    "brightPurple": "#E75699",
+    "brightRed": "#FA8C8F",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#FFFF55",
+    "cursorColor": "#BBBBBB",
+    "cyan": "#1F9EE7",
+    "foreground": "#FFFFFF",
+    "green": "#21B089",
+    "purple": "#944D95",
+    "red": "#F9555F",
+    "selectionBackground": "#B5D5FF",
+    "white": "#BBBBBB",
+    "yellow": "#FEF02A"
   }
 ]
