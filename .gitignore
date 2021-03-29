@@ -26,6 +26,7 @@ private.json
 .env
 .env.private
 server/log.txt
+server/themes.json
 private.todo
 app/cypress/videos
 app/cypress/screenshots

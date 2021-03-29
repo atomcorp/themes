@@ -71,9 +71,15 @@ const main = async (isDev) => {
     const iTerm2SchemaJson = fileResponses.map((fileResponse) =>
       JSON.parse(fileResponse.body)
     );
+    const iTerm2ThemeNames = iTerm2SchemaJson.map((theme) => theme.name);
     // merge with any themes that have been added in this project
     const combinedSchemaJson = addThemeMeta(
-      [...iTerm2SchemaJson, ...customSchemaJson],
+      [
+        ...iTerm2SchemaJson,
+        ...customSchemaJson.filter(
+          (theme) => !iTerm2ThemeNames.includes(theme.name)
+        ),
+      ],
       [...credits, ...manualCredits]
     ).sort((a, b) => (a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1));
     // write the new file
