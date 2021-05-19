@@ -385,5 +385,28 @@
     "selectionBackground": "#B5D5FF",
     "white": "#BBBBBB",
     "yellow": "#FEF02A"
-  }
+  },
+  {
+    "background": "#202020",
+    "black": "#808080",
+    "blue": "#65AEF7",
+    "brightBlack": "#808080",
+    "brightBlue": "#569CD6",
+    "brightCyan": "#9CDCFE",
+    "brightGreen": "#B5CEA8",
+    "brightPurple": "#AE81FF",
+    "brightRed": "#D16969",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#DCDCAA",
+    "cursorColor": "#F8F8F0",
+    "cyan": "#9CDCFE",
+    "foreground": "#F8F8F2",
+    "green": "#608B4E",
+    "name": "Unholy",
+    "purple": "#AE81FF",
+    "red": "#D16969",
+    "selectionBackground": "#616161",
+    "white": "#FFFFFF",
+    "yellow": "#FDD877"
+}
 ]
