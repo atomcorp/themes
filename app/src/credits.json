@@ -9,7 +9,7 @@
     ]
   },
   {
-    "themeNames": ["DraculaPlus", "Material Darker", "OneStar","Bubbles"],
+    "themeNames": ["DraculaPlus", "Material Darker", "OneStar", "Bubbles"],
     "sources": [
       {
         "name": "jos3s",
@@ -86,6 +86,15 @@
       {
         "name": "alex",
         "link": "https://github.com/AlexMailo"
+      }
+    ]
+  },
+  {
+    "themeNames": ["Cyberpunk2077"],
+    "sources": [
+      {
+        "name": "killshot13 (Michael R.)",
+        "link": "https://github.com/killshot13"
       }
     ]
   }
