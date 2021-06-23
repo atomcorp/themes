@@ -408,5 +408,28 @@
     "selectionBackground": "#616161",
     "white": "#FFFFFF",
     "yellow": "#FDD877"
-}
+  },
+  {
+    "name": "CyberPunk2077",
+    "background": "#272932",
+    "black": "#272932",
+    "blue": "#9381FF",
+    "brightBlack": "#7b8097",
+    "brightBlue": "#37EBF3",
+    "brightCyan": "#37EBF3",
+    "brightGreen": "#40FFE9",
+    "brightPurple": "#CB1DCD",
+    "brightRed": "#C71515",
+    "brightWhite": "#C1DEFF",
+    "brightYellow": "#fff955",
+    "cursorColor": "#FDF500",
+    "cyan": "#00D0DB",
+    "foreground": "#E455AE",
+    "green": "#1AC5B0",
+    "purple": "#742D8B",
+    "red": "#710000",
+    "selectionBackground": "#742D8B",
+    "white": "#D1C5C0",
+    "yellow": "#FDF500"
+  }
 ]
