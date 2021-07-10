@@ -30,7 +30,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - Glorious by [alex](https://github.com/AlexMailo)
 - Horizon by [wafelack](https://github.com/wafelack)
 - Monokai Cmder by [vdurante](https://github.com/vdurante/windows-terminal-monokai-cmder)
-- Monokai Pro (Filter Octagon) by [monokai](https://monokai.pro)
+- Monokai Pro by [monokai](https://monokai.pro)
 - Moonlight II by [atomiks](https://github.com/atomiks)
 - OneDark by [azrikahar](https://github.com/azrikahar)
 - Rosé Pine by [mvllow](https://github.com/mvllow)
