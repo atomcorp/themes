@@ -45,6 +45,15 @@
     ]
   },
   {
+    "themeNames": ["Monokai Pro (Filter Octagon)"],
+    "sources": [
+      {
+        "name": "monokai",
+        "link": "https://monokai.pro"
+      }
+    ]
+  },
+  {
     "themeNames": ["Moonlight II"],
     "sources": [
       {
