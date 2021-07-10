@@ -1,15 +1,6 @@
 [
   {
-    "themeNames": ["OneDark"],
-    "sources": [
-      {
-        "name": "azrikahar",
-        "link": "https://github.com/azrikahar"
-      }
-    ]
-  },
-  {
-    "themeNames": ["DraculaPlus", "Material Darker", "OneStar", "Bubbles"],
+    "themeNames": ["Bubbles", "DraculaPlus", "Material Darker", "OneStar"],
     "sources": [
       {
         "name": "jos3s",
@@ -18,65 +9,11 @@
     ]
   },
   {
-    "themeNames": ["Monokai Cmder"],
+    "themeNames": ["Cyberpunk2077"],
     "sources": [
       {
-        "name": "vdurante",
-        "link": "https://github.com/vdurante/windows-terminal-monokai-cmder"
-      }
-    ]
-  },
-  {
-    "themeNames": ["Rosé Pine"],
-    "sources": [
-      {
-        "name": "mvllow",
-        "link": "https://github.com/mvllow"
-      }
-    ]
-  },
-  {
-    "themeNames": ["Tokyo Night"],
-    "sources": [
-      {
-        "name": "enkia",
-        "link": "https://github.com/enkia"
-      }
-    ]
-  },
-  {
-    "themeNames": ["Moonlight II"],
-    "sources": [
-      {
-        "name": "atomiks",
-        "link": "https://github.com/atomiks"
-      }
-    ]
-  },
-  {
-    "themeNames": ["Sonoran Gothic", "Sonoran Sunrise"],
-    "sources": [
-      {
-        "name": "d-mckee",
-        "link": "https://github.com/d-mckee"
-      }
-    ]
-  },
-  {
-    "themeNames": ["Horizon"],
-    "sources": [
-      {
-        "name": "wafelack",
-        "link": "https://github.com/wafelack"
-      }
-    ]
-  },
-  {
-    "themeNames": ["Sublette"],
-    "sources": [
-      {
-        "name": "sublee",
-        "link": "https://github.com/sublee"
+        "name": "killshot13 (Michael R.)",
+        "link": "https://github.com/killshot13"
       }
     ]
   },
@@ -90,11 +27,74 @@
     ]
   },
   {
-    "themeNames": ["Cyberpunk2077"],
+    "themeNames": ["Horizon"],
     "sources": [
       {
-        "name": "killshot13 (Michael R.)",
-        "link": "https://github.com/killshot13"
+        "name": "wafelack",
+        "link": "https://github.com/wafelack"
+      }
+    ]
+  },
+  {
+    "themeNames": ["Monokai Cmder"],
+    "sources": [
+      {
+        "name": "vdurante",
+        "link": "https://github.com/vdurante/windows-terminal-monokai-cmder"
+      }
+    ]
+  },
+  {
+    "themeNames": ["Moonlight II"],
+    "sources": [
+      {
+        "name": "atomiks",
+        "link": "https://github.com/atomiks"
+      }
+    ]
+  },
+  {
+    "themeNames": ["OneDark"],
+    "sources": [
+      {
+        "name": "azrikahar",
+        "link": "https://github.com/azrikahar"
+      }
+    ]
+  },
+  {
+    "themeNames": ["Rosé Pine"],
+    "sources": [
+      {
+        "name": "mvllow",
+        "link": "https://github.com/mvllow"
+      }
+    ]
+  },
+  {
+    "themeNames": ["Sonoran Gothic", "Sonoran Sunrise"],
+    "sources": [
+      {
+        "name": "d-mckee",
+        "link": "https://github.com/d-mckee"
+      }
+    ]
+  },
+  {
+    "themeNames": ["Sublette"],
+    "sources": [
+      {
+        "name": "sublee",
+        "link": "https://github.com/sublee"
+      }
+    ]
+  },
+  {
+    "themeNames": ["Tokyo Night"],
+    "sources": [
+      {
+        "name": "enkia",
+        "link": "https://github.com/enkia"
       }
     ]
   }
