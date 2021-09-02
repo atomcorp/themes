@@ -11,7 +11,7 @@
     "clipboard-polyfill": "^2.8.6",
     "file-saver": "^2.0.2",
     "get-contrast": "^2.0.0",
-    "immer": "^8.0.1",
+    "immer": "^9.0.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
