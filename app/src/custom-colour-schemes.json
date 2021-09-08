@@ -454,5 +454,28 @@
     "selectionBackground": "#616161",
     "white": "#FFFFFF",
     "yellow": "#FDD877"
+  },
+  {
+    "background": "#000000",
+    "black": "#000000",
+    "blue": "#0066FF",
+    "brightBlack": "#808080",
+    "brightBlue": "#0066FF",
+    "brightCyan": "#00FFFF",
+    "brightGreen": "#33FF00",
+    "brightPurple": "#CC00FF",
+    "brightRed": "#FE0100",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#FEFF00",
+    "cursorColor": "#FFFFFF",
+    "cyan": "#00FFFF",
+    "foreground": "#FFFFFF",
+    "green": "#33FF00",
+    "name": "Hyper",
+    "purple": "#CC00FF",
+    "red": "#FE0100",
+    "selectionBackground": "#F81CE5",
+    "white": "#D0D0D0",
+    "yellow": "#FEFF00"
   }
 ]
