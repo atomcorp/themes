@@ -477,5 +477,28 @@
     "selectionBackground": "#F81CE5",
     "white": "#D0D0D0",
     "yellow": "#FEFF00"
+  },
+  {
+    "background": "#FFFFFF",
+    "black": "#2E1742",
+    "blue": "#0D6BAD",
+    "brightBlack": "#462366",
+    "brightBlue": "#008CCC",
+    "brightCyan": "#46D1E0",
+    "brightGreen": "#99C252",
+    "brightPurple": "#AF87FF",
+    "brightRed": "#FF0000",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#A39B46",
+    "cursorColor": "#000000",
+    "cyan": "#41C2D0",
+    "foreground": "#051840",
+    "green": "#77B01B",
+    "name": "Contrast Light",
+    "purple": "#8700FF",
+    "red": "#BF0000",
+    "selectionBackground": "#B5D5FF",
+    "white": "#E6E6E6",
+    "yellow": "#857E39"
   }
 ]
