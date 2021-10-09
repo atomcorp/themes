@@ -27,6 +27,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 
 - Bubbles, DraculaPlus, Material Darker, and OneStar by [jos3s](https://github.com/jos3s)
 - Cyberpunk2077 by [killshot13 (Michael R.)](https://github.com/killshot13)
+- Ganyu by [resyfer](https://github.com/resyfer)
 - Glorious by [alex](https://github.com/AlexMailo)
 - Horizon by [wafelack](https://github.com/wafelack)
 - Monokai Cmder by [vdurante](https://github.com/vdurante/windows-terminal-monokai-cmder)
