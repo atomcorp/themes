@@ -18,6 +18,15 @@
     ]
   },
   {
+    "themeNames": ["Ganyu"],
+    "sources": [
+      {
+        "name": "resyfer",
+        "link": "https://github.com/resyfer"
+      }
+    ]
+  },
+  {
     "themeNames": ["Glorious"],
     "sources": [
       {
