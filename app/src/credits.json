@@ -133,5 +133,14 @@
         "link": "https://github.com/ShivangMathur1"
       }
     ]
+  },
+  {
+    "themeNames": ["QB64 Super Dark Blue"],
+    "sources": [
+      {
+        "name": "jmmv",
+        "link": "https://github.com/jmmv"
+      }
+    ]
   }
 ]
