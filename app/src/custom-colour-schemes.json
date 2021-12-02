@@ -523,5 +523,28 @@
     "selectionBackground": "#B5D5FF",
     "white": "#E6E6E6",
     "yellow": "#857E39"
+  },
+  {
+    "background": "#000027",
+    "black": "#000000",
+    "blue": "#054663",
+    "brightBlack": "#626262",
+    "brightBlue": "#457693",
+    "brightCyan": "#00586C",
+    "brightGreen": "#55CE55",
+    "brightPurple": "#934593",
+    "brightRed": "#D8624E",
+    "brightWhite": "#D8D8D8",
+    "brightYellow": "#FFA700",
+    "cursorColor": "#D8D8D8",
+    "cyan": "#00485C",
+    "foreground": "#D8D8D8",
+    "green": "#157E15",
+    "name": "QB64 Super Dark Blue",
+    "purple": "#631563",
+    "red": "#98220E",
+    "selectionBackground": "#00586C",
+    "white": "#989898",
+    "yellow": "#808000"
   }
 ]
