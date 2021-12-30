@@ -3,8 +3,9 @@
 const got = require('got');
 const fs = require('fs');
 const contrast = require('get-contrast');
-console.log('process.env.CI', process.env.CI);
+console.log('process.env.CI', process.env.CI !== true);
 if (process.env.CI !== true || process.env.CI !== 'true') {
+  console.log('do not be here');
   require('custom-env').env('private');
 }
 
