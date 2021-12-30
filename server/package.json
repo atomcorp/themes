@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "dev": "nodemon server isDev",
-    "get": "node get-themes.js"
+    "dev": "yarn get && nodemon server isDev",
+    "get": "node run-themes.js"
   },
   "author": "",
   "license": "ISC",
