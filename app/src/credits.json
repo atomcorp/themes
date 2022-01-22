@@ -142,5 +142,18 @@
         "link": "https://github.com/jmmv"
       }
     ]
+  },
+  {
+    "themeNames": ["Serendipity Sunset", "Serendipity Midnight", "Serendipity Morning"],
+    "sources": [
+      {
+        "name": "Michael Andreuzza",
+        "link": "https://github.com/michael-andreuzza"
+      },
+      {
+        "name": "Chaphasilor",
+        "link": "https://github.com/Chaphasilor"
+      }
+    ]
   }
 ]
