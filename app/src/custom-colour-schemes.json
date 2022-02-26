@@ -638,5 +638,28 @@
     "selectionBackground": "#FFFFFF",
     "white": "#FFFFFF",
     "yellow": "#B58900"
-  }
+  },
+  {
+    "background": "#1E1E1E",
+    "black": "#010100",
+    "blue": "#3464A5",
+    "brightBlack": "#545752",
+    "brightBlue": "#729ECE",
+    "brightCyan": "#35E2E3",
+    "brightGreen": "#8BE235",
+    "brightPurple": "#AC7EA8",
+    "brightRed": "#EE282B",
+    "brightWhite": "#D3D7CF",
+    "brightYellow": "#FDE94E",
+    "cursorColor": "#FFFFFF",
+    "cyan": "#06989A",
+    "foreground": "#FFFEFF",
+    "green": "#4E9B07",
+    "name": "h4rithd.com",
+    "purple": "#75517A",
+    "red": "#CC0000",
+    "selectionBackground": "#FFFFFF",
+    "white": "#D3D7CF",
+    "yellow": "#C4A000"
+  }  
 ]
