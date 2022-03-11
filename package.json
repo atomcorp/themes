@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "test": "yarn workspace @windowsterminalthemes/app test:run && yarn workspace @windowsterminalthemes/app cy:ci",
-    "ci": "start-server-and-test start:server http-get://localhost:3001 build:app http-get://localhost:5000 test",
+    "ci": "start-server-and-test start:server http-get://localhost:3001 build:app http-get://localhost:3000 test",
     "build:app": "yarn workspace @windowsterminalthemes/app build:run",
     "start:app": "yarn workspace @windowsterminalthemes/app start",
     "start:server": "yarn workspace @windowsterminalthemes/server dev",

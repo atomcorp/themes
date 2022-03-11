@@ -8,7 +8,9 @@ import codeblocks from '../../src/components/ConsoleTest/codeblocks';
 describe('Windows Terminal Themes - big screen', function () {
   beforeEach(function () {
     cy.server();
-    cy.route(/api\/v1\/themes/).as('themes');
+    cy.intercept(/api\/v1\/themes/, (req) => {
+      delete req.headers['if-none-match']; // stop 304 caching
+    }).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
       cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
@@ -18,7 +20,8 @@ describe('Windows Terminal Themes - big screen', function () {
         'lightThemes'
       );
     });
-    cy.findByText('Loading...').should('not.be.visible');
+    cy.findByText('Loading...').should('not.exist');
+    cy.scrollTo('top');
   });
   xit('should download all themes using download button', function () {
     /**
@@ -157,10 +160,10 @@ describe('Windows Terminal Themes - big screen', function () {
       cy.findByLabelText('Select theme').should('be.visible');
       cy.findByText(/Prev/).should('be.visible');
       cy.findByText(/Next/).should('be.visible');
-      cy.findByLabelText(/Light/).should('be.visible');
-      cy.findByLabelText(/Dark/).should('be.visible');
-      cy.findByLabelText(/Terminal/).should('be.visible');
-      cy.findByLabelText(/Colours/).should('be.visible');
+      cy.findByTestId('toggle-label-LIGHT').should('be.visible');
+      cy.findByTestId('toggle-label-DARK').should('be.visible');
+      cy.findByTestId('toggle-label-console').should('be.visible');
+      cy.findByTestId('toggle-label-colour').should('be.visible');
       cy.findByTestId('copyButton').should('be.visible');
       cy.findByTestId('shareButton').should('be.visible');
     };
@@ -176,7 +179,9 @@ describe('Themes - small screen', function () {
   beforeEach(function () {
     cy.server();
     cy.viewport(414, 736);
-    cy.route(/api\/v1\/themes/).as('themes');
+    cy.intercept(/api\/v1\/themes/, (req) => {
+      delete req.headers['if-none-match'];
+    }).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
       cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
@@ -186,7 +191,7 @@ describe('Themes - small screen', function () {
         'lightThemes'
       );
     });
-    cy.findByText('Loading...').should('not.be.visible');
+    cy.findByText('Loading...').should('not.exist');
   });
   it('default to first dark theme', function () {
     cy.get('@themes').then((xhr) => {
@@ -267,7 +272,9 @@ describe('Themes - small screen', function () {
 describe('Preview views', function () {
   beforeEach(function () {
     cy.server();
-    cy.route(/api\/v1\/themes/).as('themes');
+    cy.intercept(/api\/v1\/themes/, (req) => {
+      delete req.headers['if-none-match'];
+    }).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
       cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
@@ -277,29 +284,29 @@ describe('Preview views', function () {
         'lightThemes'
       );
     });
-    cy.findByText('Loading...').should('not.be.visible');
+    cy.findByText('Loading...').should('not.exist');
     cy.wrap(codeblocks).as('codeblocks');
-    cy.findByText('Loading...').should('not.be.visible');
+    cy.findByText('Loading...').should('not.exist');
   });
   it('should render the console view first', function () {
     cy.findByTestId('consoletest').should('be.visible');
-    cy.findByTestId('colourtest').should('not.be.visible');
+    cy.findByTestId('colourtest').should('not.exist');
   });
   it('should switch the preview view', function () {
     cy.findByLabelText(/Colours/).click({force: true});
     cy.findByTestId('colourtest').should('be.visible');
-    cy.findByTestId('consoletest').should('not.be.visible');
+    cy.findByTestId('consoletest').should('not.exist');
     cy.findByLabelText(/Terminal/).click({force: true});
     cy.findByTestId('consoletest').should('be.visible');
-    cy.findByTestId('colourtest').should('not.be.visible');
+    cy.findByTestId('colourtest').should('not.exist');
   });
   it('show the markup for the right tab', function () {
     cy.get('@codeblocks').then(function (codeblocks) {
       codeblocks.forEach((codeblock) => {
-        cy.findByLabelText(codeblock.name).should('be.visible');
+        cy.findByText(codeblock.name).should('be.visible');
       });
       codeblocks.forEach((codeblock) => {
-        cy.findByLabelText(codeblock.name).click();
+        cy.findByText(codeblock.name).click();
         cy.findByTestId('markup').should(
           'have.text',
           codeblock.markup.replace(/<[^/>]+?>([^<]+)<[^>]+?>/g, '$1')
@@ -358,7 +365,9 @@ describe('Preview views', function () {
 describe('Keyboard navigation', function () {
   beforeEach(function () {
     cy.server();
-    cy.route(/api\/v1\/themes/).as('themes');
+    cy.intercept(/api\/v1\/themes/, (req) => {
+      delete req.headers['if-none-match'];
+    }).as('themes');
     cy.visit('/themes');
     cy.wait('@themes').then((xhr) => {
       cy.wrap(xhr.response.body.filter((theme) => theme.meta.isDark)).as(
@@ -368,12 +377,12 @@ describe('Keyboard navigation', function () {
         'lightThemes'
       );
     });
-    cy.findByText('Loading...').should('not.be.visible');
+    cy.findByText('Loading...').should('not.exist');
   });
   it('should select next/previous with keyboard [A] and [D]', function () {
     cy.viewport(1024, 780);
     cy.visit('/themes');
-    cy.findByText('Loading...').should('not.be.visible');
+    cy.findByText('Loading...').should('not.exist');
     cy.get('@darkThemes').then((themes) => {
       // assuming we start off dark
       const currentTheme = themes[0];
@@ -400,7 +409,7 @@ describe('Keyboard navigation', function () {
   it('should show credits, if any', function () {
     cy.viewport(1024, 780);
     cy.visit('/themes');
-    cy.findByText('Loading...').should('not.be.visible');
+    cy.findByText('Loading...').should('not.exist');
     cy.get('@darkThemes').then((themes) => {
       // assuming we start off dark
       const themesWithCredits = themes.filter(
@@ -416,7 +425,7 @@ describe('Keyboard navigation', function () {
           'have.value',
           themeWithoutCredit.name
         );
-        cy.findByTestId('credit').should('not.be.visible');
+        cy.findByTestId('credit').should('not.exist');
       }
       if (themesWithCredits.length > 0) {
         const themeWithCredit = themesWithCredits[0];

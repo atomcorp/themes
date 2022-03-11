@@ -23,6 +23,7 @@ const Toggle: React.FC<PropsState> = (props) => (
           key={option.value}
           className={`${css.label} ${isSelected ? css.active : ''}`}
           htmlFor={option.value}
+          data-testid={`toggle-label-${option.value}`}
         >
           <input
             name={props.type}

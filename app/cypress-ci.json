@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:5000",
+  "baseUrl": "http://localhost:3000",
   "projectId": "234vt5",
   "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
   "chromeWebSecurity": false,
