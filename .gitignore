@@ -30,3 +30,11 @@ server/themes.json
 private.todo
 app/cypress/videos
 app/cypress/screenshots
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
