@@ -661,5 +661,28 @@
     "selectionBackground": "#FFFFFF",
     "white": "#D3D7CF",
     "yellow": "#C4A000"
-  }  
+  },
+  {
+    "background": "#1E1423",
+    "black": "#0A0A14",
+    "blue": "#5050E6",
+    "brightBlack": "#363B54",
+    "brightBlue": "#7AA2F7",
+    "brightCyan": "#7DCFFF",
+    "brightGreen": "#41A6B5",
+    "brightPurple": "#BB9AF7",
+    "brightRed": "#F7768E",
+    "brightWhite": "#ACB0D0",
+    "brightYellow": "#E0AF68",
+    "cursorColor": "#2DB9E6",
+    "cyan": "#2DB9E6",
+    "foreground": "#737DA0",
+    "green": "#32CD87",
+    "name": "Crystal Violet",
+    "purple": "#6E14EB",
+    "red": "#E63232",
+    "selectionBackground": "#5050E6",
+    "white": "#D2D2D2",
+    "yellow": "#EBA041"
+  }
 ]
