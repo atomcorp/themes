@@ -3,10 +3,9 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended",
     "plugin:cypress/recommended",
-    "plugin:chai-friendly/recommended"
+    "plugin:chai-friendly/recommended",
+    "prettier"
   ],
   "env": {
     "browser": true,
@@ -21,7 +20,6 @@
   },
   "plugins": ["@typescript-eslint/eslint-plugin"],
   "rules": {
-    "prettier/prettier": 1,
     "quotes": [1, "single", {"avoidEscape": true}],
     "arrow-parens": 1,
     "new-cap": 0,

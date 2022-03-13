@@ -1,15 +1,5 @@
 import ResizeObserver from 'resize-observer-polyfill';
-import {actionTypes} from 'types';
-
-type titleColoursType =
-  | 'black'
-  | 'red'
-  | 'green'
-  | 'yellow'
-  | 'blue'
-  | 'purple'
-  | 'cyan'
-  | 'white';
+import {actionTypes, themeType} from 'types';
 
 export const returnInitialTheme = (search: string): string | null => {
   if (search.length > 0) {
@@ -50,23 +40,25 @@ const stopSelectDetection = (
   }
 };
 
-export const shortcuts = (
-  dispatch: React.Dispatch<actionTypes>,
-  themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
-) => (e: KeyboardEvent) => {
-  if (e.code === 'KeyA') {
-    stopSelectDetection(e, themeselectRef);
-    dispatch({
-      type: 'PREV',
-    });
-  }
-  if (e.code === 'KeyD') {
-    stopSelectDetection(e, themeselectRef);
-    dispatch({
-      type: 'NEXT',
-    });
-  }
-};
+export const shortcuts =
+  (
+    dispatch: React.Dispatch<actionTypes>,
+    themeselectRef: React.MutableRefObject<null | HTMLSelectElement>
+  ) =>
+  (e: KeyboardEvent) => {
+    if (e.code === 'KeyA') {
+      stopSelectDetection(e, themeselectRef);
+      dispatch({
+        type: 'PREV',
+      });
+    }
+    if (e.code === 'KeyD') {
+      stopSelectDetection(e, themeselectRef);
+      dispatch({
+        type: 'NEXT',
+      });
+    }
+  };
 
 export const sampleColours = (theme: themeType | undefined): string[] => {
   if (theme) {

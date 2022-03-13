@@ -51,9 +51,9 @@ type creditType = {
   name: 'string';
   link: 'string';
 };
-type metaType = {isDark: boolean; credits: null | creditType[]};
+type metaType = {isDark: boolean; credits?: creditType[]};
 
-export type themeType = validThemeType & metaType;
+export type themeType = validThemeType & {meta: metaType};
 
 export type backgroundKeyType =
   | 'black'
@@ -122,10 +122,6 @@ type setPrevType = {
   type: 'PREV';
 };
 
-type setMoreToggleType = {
-  type: 'MORE';
-};
-
 type messageType =
   | {
       type: 'show';
@@ -144,7 +140,6 @@ export type actionTypes =
   | setPreviewType
   | setNextType
   | setPrevType
-  | setMoreToggleType
   | messageType;
 
 export type previewType = 'console' | 'colour';

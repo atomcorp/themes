@@ -11,6 +11,16 @@ import {
   previewType,
 } from 'types';
 
+type titleColoursType =
+  | 'black'
+  | 'red'
+  | 'green'
+  | 'yellow'
+  | 'blue'
+  | 'purple'
+  | 'cyan'
+  | 'white';
+
 export type stateType = {
   themes: themeType[];
   filteredThemes: themeType[];
@@ -172,9 +182,6 @@ export const homeReducer = (
         break;
       case 'PREVIEW':
         draftState.previewType = action.payload;
-        break;
-      case 'MORE':
-        draftState.isMoreOpen = !state.isMoreOpen;
         break;
       case 'show':
         draftState.message.title = action.title;

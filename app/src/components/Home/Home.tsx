@@ -21,7 +21,7 @@ import css from './Home.module.css';
 import toolbar from './toolbar.module.css';
 import content from './content.module.css';
 
-type themeprops = {
+type HomeProps = {
   themes: themeType[];
 };
 
@@ -30,7 +30,7 @@ const toastmessages = {
   copy: (themename: string) => `${themename} theme added to your clipboard`,
 };
 
-const Home: React.FC<themeprops> = (props) => {
+const Home: React.FC<HomeProps> = (props) => {
   const themeselectRef = useRef(null);
   const [state, dispatch] = useReducer(homeReducer, {
     ...initialState,
@@ -164,7 +164,7 @@ const Home: React.FC<themeprops> = (props) => {
             </button>
           </div>
           <Toast
-            background={props.backgroundColour}
+            background={state.backgroundColour}
             title={state.message.title}
             isActive={state.message.isActive}
             message={state.message.message}

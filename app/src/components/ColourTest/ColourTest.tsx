@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {themeType} from 'types';
+import {backgroundKeyType, themeType, textKeyType} from 'types';
 import css from './ColourTest.module.css';
 
 export const backgroundKeys: backgroundKeyType[] = [
@@ -64,9 +64,7 @@ const ColourTest: React.FC<PropsType> = (props) => {
           {props.theme.meta.credits.map((credit, i) => (
             <React.Fragment key={i}>
               {i > 0 && <span>/</span>}
-              <a key={i} href={credit.link}>
-                {credit.name}
-              </a>
+              <a href={credit.link}>{credit.name}</a>
             </React.Fragment>
           ))}
         </div>
