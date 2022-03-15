@@ -63,7 +63,7 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
         >
           {parseSyntax(props.theme, activeCodeblock.markup)}
         </code>
-        {Array.isArray(props.theme.meta.credits) && (
+        {Array.isArray(props.theme.meta.credits) ? (
           <div className={css.footer} data-testid="credit">
             credit: {props.theme.name} {'- '}
             {props.theme.meta.credits.map((credit, i) => (
@@ -75,6 +75,8 @@ const ConsoleTest: React.FC<PropsType> = (props) => {
               </React.Fragment>
             ))}
           </div>
+        ) : (
+          <div className={css.footer}>&nbsp;</div>
         )}
       </div>
     </section>
