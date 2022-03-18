@@ -9,18 +9,18 @@ jobs:
     steps:
       - checkout
       - restore_cache:
+          name: Restore Yarn Package Cache
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-      - run: yarn plugin import interactive-tools
-      - run: yarn install
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --immutable
       - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
-            - node_modules
-            - ~/.npm
-            - ~/.cache
-          key: v1-dependencies-{{ checksum "package.json" }}
+            - .yarn/cache
+            - .yarn/unplugged
       # https://github.com/facebook/create-react-app/issues/8688#issuecomment-620607944
       - run: sed -i '/process.env.CI/,+7 d' node_modules/react-scripts/scripts/start.js
       - run: yarn lint
