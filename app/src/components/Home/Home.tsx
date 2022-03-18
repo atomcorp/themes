@@ -1,5 +1,4 @@
 import React, {useEffect, useReducer, useRef, useMemo} from 'react';
-import * as clipboard from 'clipboard-polyfill';
 
 import {
   screenSizeObserver,
@@ -66,27 +65,29 @@ const Home: React.FC<HomeProps> = (props) => {
       stringyTheme != null ? JSON.parse(stringyTheme) : null
     );
   }, [stringyTheme]);
-  const handleCopy = (): void => {
+  const handleCopy = async (): Promise<void> => {
     if (!state.message.isActive && theme) {
       dispatch({
         type: 'show',
         title: 'Copied!',
         message: toastmessages.copy(theme.name),
       });
-      clipboard.writeText(JSON.stringify(parseValidKeys(theme), null, 2));
+      await navigator.clipboard.writeText(
+        JSON.stringify(parseValidKeys(theme), null, 2)
+      );
       setTimeout(() => {
         dispatch({type: 'hide'});
       }, 1000);
     }
   };
-  const handleShare = (): void => {
+  const handleShare = async (): Promise<void> => {
     if (!state.message.isActive && theme) {
       dispatch({
         type: 'show',
         title: 'Shared!',
         message: toastmessages.share(theme.name),
       });
-      clipboard.writeText(
+      await navigator.clipboard.writeText(
         `${window.location.origin}${
           window.location.pathname
         }?theme=${encodeURIComponent(theme.name)}`

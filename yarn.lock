@@ -3573,7 +3573,6 @@ __metadata:
     "@types/react-dom": 17.0.13
     "@typescript-eslint/eslint-plugin": ^5.14.0
     "@typescript-eslint/parser": ^5.14.0
-    clipboard-polyfill: ^4.0.0-rc1
     cypress: 9.5.1
     file-saver: ^2.0.5
     get-contrast: ^3.0.0
@@ -5042,13 +5041,6 @@ __metadata:
     slice-ansi: ^3.0.0
     string-width: ^4.2.0
   checksum: bf1e4e6195392dc718bf9cd71f317b6300dc4a9191d052f31046b8773230ece4fa09458813bf0e3455a5e68c0690d2ea2c197d14a8b85a7b5e01c97f4b5feb5d
-  languageName: node
-  linkType: hard
-
-"clipboard-polyfill@npm:^4.0.0-rc1":
-  version: 4.0.0-rc1
-  resolution: "clipboard-polyfill@npm:4.0.0-rc1"
-  checksum: 301c97f0b95d5078f0bdeae46ca963fba225c5036df447c5f40286455d761a2f2973a8605c9980d22750b0ad18cf8a9400b3f30503a7b80768f7c8666924a3c3
   languageName: node
   linkType: hard
 

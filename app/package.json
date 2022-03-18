@@ -8,7 +8,6 @@
     "@types/node": "17.0.21",
     "@types/react": "17.0.40",
     "@types/react-dom": "17.0.13",
-    "clipboard-polyfill": "^4.0.0-rc1",
     "file-saver": "^2.0.5",
     "get-contrast": "^3.0.0",
     "immer": "^9.0.12",
