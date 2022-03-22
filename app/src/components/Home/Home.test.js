@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, fireEvent, waitFor} from '@testing-library/react';
+import {render, fireEvent} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 
 import {returnInitialTheme} from './homeMethods';
@@ -131,38 +131,6 @@ const schemes = [
     },
   },
 ];
-
-const mockClipboard = jest.fn((theme) => theme);
-jest.mock('clipboard-polyfill', () => {
-  return {writeText: (theme) => mockClipboard(theme)};
-});
-
-beforeEach(() => {
-  mockClipboard.mockClear();
-});
-
-xit('Renders the desktop App', async () => {
-  const {getByText, getByTestId, getByLabelText} = render(<Home />);
-  // await waitForElementToBeRemoved(() => getByText(/loading/i), 1000);
-  expect(getByTestId('theme-list').childNodes.length).toBe(3);
-  expect(getByTestId('selected-title').textContent).toBe('Duotone Dark');
-  fireEvent.click(getByLabelText('Ubuntu'), {
-    target: {value: 'Ubuntu'},
-  });
-  expect(getByLabelText('Ubuntu').checked).toBe(true);
-  // // wait for the child component to be rerendered, i think?
-  expect(getByTestId('selected-title').textContent).toBe('Ubuntu');
-  fireEvent.click(getByText(/copy theme/i));
-  waitFor(() => expect(mockClipboard).toBeCalled());
-  expect(JSON.parse(mockClipboard.mock.calls[0][0]).name).toBe('Ubuntu');
-  expect(JSON.parse(mockClipboard.mock.calls[0][0])).toMatchObject(
-    schemes.find((scheme) => scheme.name === 'Ubuntu')
-  );
-  expect(getByText(/copied/i)).toBeTruthy;
-  setTimeout(() => {
-    expect(getByText(/copy theme/i)).toBeTruthy;
-  }, 500);
-});
 
 xit('Renders the mobile App', async () => {
   window.resizeTo(375, 667);
