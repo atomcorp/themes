@@ -35,6 +35,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - Moonlight II by [atomiks](https://github.com/atomiks)
 - OneDark by [azrikahar](https://github.com/azrikahar)
 - QB64 Super Dark Blue [jmmv](https://github.com/jmmv)
+- Retrowave by [potatoqualitee](https://github.com/potatoqualitee)
 - Rosé Pine by [mvllow](https://github.com/mvllow)
 - Sonoran Gothic and Sonoran Sunrise by [d-mckee](https://github.com/d-mckee)
 - Sublette by [sublee](https://github.com/sublee)
