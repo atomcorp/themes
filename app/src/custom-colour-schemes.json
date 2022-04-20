@@ -684,5 +684,28 @@
     "selectionBackground": "#5050E6",
     "white": "#D2D2D2",
     "yellow": "#EBA041"
+  },
+  {
+    "background": "#161C2B",
+    "black": "#141D2B",
+    "blue": "#2E6CFF",
+    "brightBlack": "#767676",
+    "brightBlue": "#5CB2FF",
+    "brightCyan": "#5CECC6",
+    "brightGreen": "#C5F467",
+    "brightPurple": "#CF8DFB",
+    "brightRed": "#FF8484",
+    "brightWhite": "#D5DAFF",
+    "brightYellow": "#FFCC5C",
+    "cursorColor": "#C5D1EB",
+    "cyan": "#2DE2B2",
+    "foreground": "#A4B1CD",
+    "green": "#9FEF00",
+    "name": "Cyber Cube",
+    "purple": "#9F00FF",
+    "red": "#FF3E3E",
+    "selectionBackground": "#C5D1EB",
+    "white": "#D5E0FF",
+    "yellow": "#FFAF00"
   }
 ]
