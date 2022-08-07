@@ -751,5 +751,28 @@
     "selectionBackground": "#C5D1EB",
     "white": "#D5E0FF",
     "yellow": "#FFAF00"
+  },
+  {
+    "background": "#1E2132",
+    "black": "#1E2132",
+    "blue": "#5DB4EE",
+    "brightBlack": "#EDEDED",
+    "brightBlue": "#5DB4EE",
+    "brightCyan": "#57E9EB",
+    "brightGreen": "#47D7A1",
+    "brightPurple": "#DA6CDA",
+    "brightRed": "#FF5B82",
+    "brightWhite": "#EDEDED",
+    "brightYellow": "#E8E562",
+    "cursorColor": "#FFFFFF",
+    "cyan": "#57E9EB",
+    "foreground": "#EFECEC",
+    "green": "#47D7A1",
+    "name": "MoonDark Theme",
+    "purple": "#DA6CDA",
+    "red": "#FF5B82",
+    "selectionBackground": "#FFFFFF",
+    "white": "#EDEDED",
+    "yellow": "#E8E562"
   }
 ]
