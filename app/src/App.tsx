@@ -15,7 +15,7 @@ import MoreContent from 'components/More/MoreContent';
 const apiBase =
   process.env.NODE_ENV === 'development'
     ? ''
-    : 'https://2zrysvpla9.execute-api.eu-west-2.amazonaws.com/prod';
+    : 'https://bps5t5jacl.execute-api.eu-west-2.amazonaws.com/themes';
 
 const App: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
