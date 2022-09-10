@@ -12,17 +12,17 @@ import MoreContent from 'components/More/MoreContent';
  * package.json has a proxy which redirects stuff it can't find to http://localhost:3001
  * then, apiBase can either be '' or http://localhost:3000 (ie the react apps domain)
  */
-const apiBase =
+const api =
   process.env.NODE_ENV === 'development'
-    ? ''
-    : 'https://bps5t5jacl.execute-api.eu-west-2.amazonaws.com/themes';
+    ? '/api/v1/themes'
+    : 'https://2zrysvpla9.execute-api.eu-west-2.amazonaws.com/prod/themes';
 
 const App: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
   useEffect(() => {
     const getThemes = async (): Promise<void> => {
       try {
-        const res = await fetch(`${apiBase}/api/v1/themes`);
+        const res = await fetch(api);
         const themes = await res.json();
         setThemes(themes);
       } catch (error) {
