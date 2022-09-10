@@ -13,7 +13,9 @@ import MoreContent from 'components/More/MoreContent';
  * then, apiBase can either be '' or http://localhost:3000 (ie the react apps domain)
  */
 const apiBase =
-  process.env.NODE_ENV === 'development' ? '' : 'https://www.atomcorp.dev';
+  process.env.NODE_ENV === 'development'
+    ? ''
+    : 'https://2zrysvpla9.execute-api.eu-west-2.amazonaws.com/prod';
 
 const App: React.FC = () => {
   const [themes, setThemes] = useState<themeType[]>([]);
