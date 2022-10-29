@@ -23,7 +23,7 @@
     "yellow": "#FEF02A"
   },
   {
-    "name": "CatppuccinLatte",
+    "name": "Catppuccin Latte",
     "black": "#5c5f77",
     "red": "#d20f39",
     "green": "#40a02b",
@@ -46,7 +46,7 @@
     "cursorColor": "#dc8a78"
   },
   {
-    "name": "CatppuccinFrappe",
+    "name": "Catppuccin Frappe",
     "black": "#51576d",
     "red": "#e78284",
     "green": "#a6d189",
@@ -69,7 +69,7 @@
     "cursorColor": "#f2d5cf"
   },
   {
-    "name": "CatppuccinMacchiato",
+    "name": "Catppuccin Macchiato",
     "black": "#494d64",
     "red": "#ed8796",
     "green": "#a6da95",
@@ -92,7 +92,7 @@
     "cursorColor": "#f4dbd6"
   },
   {
-    "name": "CatppuccinMocha",
+    "name": "Catppuccin Mocha",
     "black": "#45475a",
     "red": "#f38ba8",
     "green": "#a6e3a1",
