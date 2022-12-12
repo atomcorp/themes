@@ -843,5 +843,28 @@
     "selectionBackground": "#C5D1EB",
     "white": "#D5E0FF",
     "yellow": "#FFAF00"
+  },
+  {
+    "background": "#010C18",
+    "black": "#0B3B61",
+    "blue": "#1376F9",
+    "brightBlack": "#63686D",
+    "brightBlue": "#388EFF",
+    "brightCyan": "#FF6AD7",
+    "brightGreen": "#74FFD8",
+    "brightPurple": "#AE81FF",
+    "brightRed": "#FF54B0",
+    "brightWhite": "#60FBBF",
+    "brightYellow": "#FCF5AE",
+    "cursorColor": "#38FF9D",
+    "cyan": "#FF5ED4",
+    "foreground": "#ECDEF4",
+    "green": "#52FFD0",
+    "name": "coolnight",
+    "purple": "#C792EA",
+    "red": "#FF3A3A",
+    "selectionBackground": "#38FF9C",
+    "white": "#16FDA2",
+    "yellow": "#FFF383"
   }
 ]

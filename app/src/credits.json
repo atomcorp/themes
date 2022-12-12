@@ -164,5 +164,14 @@
         "link": "https://github.com/potatoqualitee"
       }
     ]
+  },
+  {
+    "themeNames": ["Coolnight"],
+    "sources": [
+      {
+        "name": "Pierre Piquette",
+        "link": "https://github.com/pedro2d10"
+      }
+    ]
   }
 ]
