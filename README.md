@@ -40,6 +40,7 @@ If not, new themes can be add added with a pull request. Just add them to the li
 - Sonoran Gothic and Sonoran Sunrise by [d-mckee](https://github.com/d-mckee)
 - Sublette by [sublee](https://github.com/sublee)
 - Tokyo Night by [enkia](https://github.com/enkia)
+- Zeonica by [ggondim](https://github.com/ggondim) Copyright © Andrew Vallette
 
 ## Running
 
