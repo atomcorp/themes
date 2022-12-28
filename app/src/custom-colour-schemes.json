@@ -866,5 +866,28 @@
     "selectionBackground": "#38FF9C",
     "white": "#16FDA2",
     "yellow": "#FFF383"
+  },
+  {
+      "background": "#01001D",
+      "black": "#0C0C0C",
+      "blue": "#3E31F5",
+      "brightBlack": "#686868",
+      "brightBlue": "#737CFF",
+      "brightCyan": "#7FFFFF",
+      "brightGreen": "#6BFF6B",
+      "brightPurple": "#FF70FF",
+      "brightRed": "#FF6E6E",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFFF6B",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#13D4D4",
+      "foreground": "#FFFFFF",
+      "green": "#21C221",
+      "name": "Zeonica",
+      "purple": "#D918B9",
+      "red": "#CC2929",
+      "selectionBackground": "#242272",
+      "white": "#B2B2B2",
+      "yellow": "#D6C315"
   }
 ]
