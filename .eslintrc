@@ -1,9 +1,9 @@
 {
   "extends": [
     "eslint:recommended",
+    "next/core-web-vitals",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:cypress/recommended",
     "plugin:chai-friendly/recommended",
     "prettier"
   ],
@@ -18,12 +18,19 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint/eslint-plugin"],
+  "plugins": [
+    "@typescript-eslint/eslint-plugin"
+  ],
   "rules": {
-    "quotes": [1, "single", {"avoidEscape": true}],
+    "quotes": [
+      1,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
     "arrow-parens": 1,
     "new-cap": 0,
-    // "indent": ["error", 2],
     "react/prop-types": 0,
     "no-console": 1,
     "@typescript-eslint/explicit-function-return-type": [
