@@ -21,7 +21,10 @@
     "test:dev": "yarn workspace @windowsterminalthemes/app test:run && yarn workspace @windowsterminalthemes/app cy:run",
     "unit:watch": "yarn workspace @windowsterminalthemes/app test:watch",
     "deploy": "yarn workspace @windowsterminalthemes/app deploy",
-    "lint": "eslint app/src/**/*.js --max-warnings 5"
+    "lint": "eslint app/src/**/*.js --max-warnings 5",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -39,16 +42,16 @@
   },
   "homepage": "https://github.com/atomcorp/terminal#readme",
   "devDependencies": {
-    "concurrently": "^7.0.0",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-chai-friendly": "^0.7.2",
-    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1"
   },
   "dependencies": {
-    "start-server-and-test": "^1.14.0"
+    "lit": "^2.7.0"
   }
 }

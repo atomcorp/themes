@@ -1,0 +1,22 @@
+V3:
+  Targets:
+    ☐ Use Playwright
+    ☐ Use lit
+    ☐ Use vite
+    ☐ Use modern CSS (ems, margin-inline, margin-block, padding-inline, padding-block)
+    ☐ Be completely SSG
+    ☐ Nicer design (use Figma?)
+    ☐ Gihub CI testing
+    ☐ Add themes (learn.microsoft.com/en-us/windows/terminal/customize-settings/themes) and rename color-schemes
+    ☐ Copy multiple themes in one go
+    ☐ Allow bold, underline 
+  Stretch:
+    ☐ Align colours by hue (as alternative to alphabetical)
+    ☐ Nicer styling (shadows, animations)
+    ☐ Serve this on AWS or GitHub?
+    ☐ PWA
+    ☐ Could add a view with all the themes in cards, and you can just scroll down
+  Components:
+    ☐ Logo
+    ☐ Light/Dark scheme
+    ☐ Themes / Schemes

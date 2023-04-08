@@ -134,7 +134,7 @@ type messageType =
 
 export type actionTypes =
   | loadActionType
-  | setTheme
+  | setThemeType
   | setScreenSizeType
   | setScreenSizeType
   | setPreviewType
