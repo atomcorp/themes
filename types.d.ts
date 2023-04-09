@@ -28,5 +28,4 @@ type creditType = {
 };
 type metaType = {isDark: boolean; credits?: creditType[]};
 
-
 export type colourShemeAndMeta = colorScheme & metaType;
