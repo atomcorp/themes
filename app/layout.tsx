@@ -1,6 +1,7 @@
 import {ColorSchemesProvider} from '@/components/ColorSchemeContext/ColorSchemeContext';
 import getColorSchemes from '@/requests/getColorSchemes';
 
+/* c8 ignore next */
 export const metadata = {
   title: 'Windows Terminal Colors',
   description: 'Browse and copy color schemes and themes for Windows Terminal',

@@ -2,7 +2,8 @@ import {colorSchemeAndMeta} from '@/types';
 import {
   getNextPrevColorScheme,
   colorSchemesFilteredByCurrentLightness,
-} from './colourSchemeUtilities';
+  colorSchemeReducerInitialiser,
+} from './colorSchemeContextReducer';
 
 const lightColorSchemes = [
   {
@@ -48,7 +49,7 @@ test('get next color scheme', () => {
       lightColorSchemes as colorSchemeAndMeta[],
       'Light A',
       'next'
-    )
+    ).name
   ).toBe('Light B');
 });
 
@@ -58,7 +59,7 @@ test('get previous color scheme', () => {
       lightColorSchemes as colorSchemeAndMeta[],
       'Light B',
       'prev'
-    )
+    ).name
   ).toBe('Light A');
 });
 
@@ -68,7 +69,7 @@ test('get next color scheme when at end of list', () => {
       lightColorSchemes as colorSchemeAndMeta[],
       'Light C',
       'next'
-    )
+    ).name
   ).toBe('Light A');
 });
 
@@ -78,7 +79,7 @@ test('get previous color scheme when at start of list', () => {
       lightColorSchemes as colorSchemeAndMeta[],
       'Light A',
       'prev'
-    )
+    ).name
   ).toBe('Light C');
 });
 
@@ -122,4 +123,16 @@ test('filter color schemes by lightness', () => {
       isDark
     )
   ).not.toEqual(darkColorSchemes);
+});
+
+test('initialise color scheme reducer', () => {
+  expect(
+    colorSchemeReducerInitialiser(colorSchemes as colorSchemeAndMeta[])
+  ).toEqual({
+    currentColorScheme: darkColorSchemes[0],
+    currentLightness: 'dark',
+    darkColorSchemes,
+    lightColorSchemes,
+    colorSchemes,
+  });
 });

@@ -13,6 +13,16 @@ const config = {
 
   testEnvironment: 'jest-environment-jsdom',
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/legacy/'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '**/*.{ts,tsx}',
+    '!**/node_modules/**',
+    '!**/legacy/**',
+    '!**/.next/**',
+    '!**/playwright/**',
+    '!**/playwright-ct.config.ts',
+  ],
+  coverageDirectory: '<rootDir>/coverage',
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async

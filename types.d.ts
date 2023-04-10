@@ -46,8 +46,8 @@ export type colorsOnly = {
 };
 
 type creditType = {
-  name: 'string';
-  link: 'string';
+  name: string;
+  link: string;
 };
 type metaType = {
   meta: {isDark: boolean; credits?: creditType[]};
