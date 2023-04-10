@@ -1,7 +1,5 @@
 'use client';
 
-import {useContext} from 'react';
-
 import {
   CurrentColorSchemeContext,
   CurrentLightnessContext,
@@ -9,14 +7,14 @@ import {
   LightColorSchemesContext,
   SetCurrentColorSchemeContext,
 } from '@/components/ColorSchemeContext/ColorSchemeContext';
-import {colorSchemeAndMeta} from '@/types';
+import useDefinedContext from '@/utilities/useDefinedContext';
 
 const ColorSchemeSelector = () => {
-  const currentColorScheme = useContext(CurrentColorSchemeContext);
-  const setCurrentColorScheme = useContext(SetCurrentColorSchemeContext);
-  const currentLightness = useContext(CurrentLightnessContext);
-  const darkColorSchemes = useContext(DarkColorSchemesContext);
-  const lightColorSchemes = useContext(LightColorSchemesContext);
+  const currentColorScheme = useDefinedContext(CurrentColorSchemeContext);
+  const setCurrentColorScheme = useDefinedContext(SetCurrentColorSchemeContext);
+  const currentLightness = useDefinedContext(CurrentLightnessContext);
+  const darkColorSchemes = useDefinedContext(DarkColorSchemesContext);
+  const lightColorSchemes = useDefinedContext(LightColorSchemesContext);
 
   const colorSchemes =
     currentLightness === 'dark' ? darkColorSchemes : lightColorSchemes;

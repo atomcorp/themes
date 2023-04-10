@@ -1,8 +1,12 @@
 import {colorSchemeAndMeta} from '@/types';
+import {renderHook} from '@testing-library/react';
 import {
   getNextPrevColorScheme,
   colorSchemesFilteredByCurrentLightness,
   colorSchemeReducerInitialiser,
+  useDispatchActions,
+  ColorSchemeState,
+  colorSchemeReducer,
 } from './colorSchemeContextReducer';
 
 const lightColorSchemes = [
@@ -135,4 +139,186 @@ test('initialise color scheme reducer', () => {
     lightColorSchemes,
     colorSchemes,
   });
+});
+
+test('test dispatch actions', () => {
+  const dispatch = jest.fn();
+  const {result} = renderHook(() => useDispatchActions(dispatch));
+  const {setCurrentColorScheme} = result.current;
+  setCurrentColorScheme('Light A');
+  expect(dispatch).toHaveBeenCalledWith({
+    type: 'setColorScheme',
+    payload: {
+      colorSchemeName: 'Light A',
+    },
+  });
+  const {setCurrentLightness} = result.current;
+  setCurrentLightness('light');
+  expect(dispatch).toHaveBeenCalledWith({
+    type: 'setLightness',
+    payload: {
+      lightness: 'light',
+    },
+  });
+  const {setNextPrevColorScheme} = result.current;
+  setNextPrevColorScheme('next');
+  expect(dispatch).toHaveBeenCalledWith({
+    type: 'setNextPrevColorScheme',
+    payload: {
+      direction: 'next',
+    },
+  });
+});
+
+test('colorSchemeReducer should set new color scheme', () => {
+  const state: ColorSchemeState = {
+    currentColorScheme: darkColorSchemes[0] as colorSchemeAndMeta,
+    currentLightness: 'dark',
+    darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
+    lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
+    colorSchemes: colorSchemes as colorSchemeAndMeta[],
+  };
+
+  const reducer = colorSchemeReducer(state, {
+    type: 'setColorScheme',
+    payload: {
+      colorSchemeName: darkColorSchemes[1].name,
+    },
+  });
+
+  const nextState = {...state};
+  nextState.currentColorScheme = darkColorSchemes[1] as colorSchemeAndMeta;
+
+  expect(reducer).toEqual(nextState);
+});
+
+test('colorSchemeReducer should throw if given an invalid color scheme', () => {
+  const state: ColorSchemeState = {
+    currentColorScheme: darkColorSchemes[0] as colorSchemeAndMeta,
+    currentLightness: 'dark',
+    darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
+    lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
+    colorSchemes: colorSchemes as colorSchemeAndMeta[],
+  };
+
+  expect(() =>
+    colorSchemeReducer(state, {
+      type: 'setColorScheme',
+      payload: {
+        colorSchemeName: 'Invalid Color Scheme',
+      },
+    })
+  ).toThrow();
+});
+
+test('colorSchemeReducer should set new lightness (to light)', () => {
+  const state: ColorSchemeState = {
+    currentColorScheme: darkColorSchemes[0] as colorSchemeAndMeta,
+    currentLightness: 'dark',
+    darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
+    lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
+    colorSchemes: colorSchemes as colorSchemeAndMeta[],
+  };
+
+  const reducer = colorSchemeReducer(state, {
+    type: 'setLightness',
+    payload: {
+      lightness: 'light',
+    },
+  });
+
+  const nextState = {...state};
+  nextState.currentLightness = 'light';
+  nextState.currentColorScheme = lightColorSchemes[0] as colorSchemeAndMeta;
+
+  expect(reducer).toEqual(nextState);
+});
+
+test('colorSchemeReducer should set new lightness (to dark)', () => {
+  const state: ColorSchemeState = {
+    currentColorScheme: lightColorSchemes[0] as colorSchemeAndMeta,
+    currentLightness: 'light',
+    darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
+    lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
+    colorSchemes: colorSchemes as colorSchemeAndMeta[],
+  };
+
+  const reducer = colorSchemeReducer(state, {
+    type: 'setLightness',
+    payload: {
+      lightness: 'dark',
+    },
+  });
+
+  const nextState = {...state};
+  nextState.currentLightness = 'dark';
+  nextState.currentColorScheme = darkColorSchemes[0] as colorSchemeAndMeta;
+
+  expect(reducer).toEqual(nextState);
+});
+
+test('colorSchemeReducer should set setNextPrevColorScheme', () => {
+  const state: ColorSchemeState = {
+    currentColorScheme: darkColorSchemes[0] as colorSchemeAndMeta,
+    currentLightness: 'dark',
+    darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
+    lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
+    colorSchemes: colorSchemes as colorSchemeAndMeta[],
+  };
+
+  const reducer = colorSchemeReducer(state, {
+    type: 'setNextPrevColorScheme',
+    payload: {
+      direction: 'next',
+    },
+  });
+
+  const nextState = {...state};
+  nextState.currentColorScheme = darkColorSchemes[1] as colorSchemeAndMeta;
+
+  expect(reducer).toEqual(nextState);
+});
+
+test('colorSchemeReducer should set setNextPrevColorScheme', () => {
+  const state: ColorSchemeState = {
+    currentColorScheme: darkColorSchemes[0] as colorSchemeAndMeta,
+    currentLightness: 'dark',
+    darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
+    lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
+    colorSchemes: colorSchemes as colorSchemeAndMeta[],
+  };
+
+  const reducer = colorSchemeReducer(state, {
+    type: 'setNextPrevColorScheme',
+    payload: {
+      direction: 'next',
+    },
+  });
+
+  const nextState = {...state};
+  nextState.currentColorScheme = darkColorSchemes[1] as colorSchemeAndMeta;
+
+  expect(reducer).toEqual(nextState);
+});
+
+test('colorSchemeReducer should set setNextPrevColorScheme when light', () => {
+  const state: ColorSchemeState = {
+    currentColorScheme: lightColorSchemes[0] as colorSchemeAndMeta,
+    currentLightness: 'light',
+    darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
+    lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
+    colorSchemes: colorSchemes as colorSchemeAndMeta[],
+  };
+
+  const reducer = colorSchemeReducer(state, {
+    type: 'setNextPrevColorScheme',
+    payload: {
+      direction: 'next',
+    },
+  });
+
+  const nextState = {...state};
+  nextState.currentColorScheme = lightColorSchemes[1] as colorSchemeAndMeta;
+
+  expect(reducer).toEqual(nextState);
 });

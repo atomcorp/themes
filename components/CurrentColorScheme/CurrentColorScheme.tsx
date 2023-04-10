@@ -3,10 +3,9 @@
 // // react component, displays all the color schemes
 'use client';
 
-import {useContext} from 'react';
-
 import {CurrentColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
-import {colorSchemeAndMeta, colorsOnly} from '@/types';
+import {colorSchemeAndMeta} from '@/types';
+import useDefinedContext from '@/utilities/useDefinedContext';
 
 const getColorsOnlyFromSchemeAndMeta = (colorScheme: colorSchemeAndMeta) => {
   const {name, meta, ...colorSchemeColors} = colorScheme;
@@ -14,7 +13,7 @@ const getColorsOnlyFromSchemeAndMeta = (colorScheme: colorSchemeAndMeta) => {
 };
 
 const CurrentColorScheme = () => {
-  const currentColorScheme = useContext(CurrentColorSchemeContext);
+  const currentColorScheme = useDefinedContext(CurrentColorSchemeContext);
   const currentColors = getColorsOnlyFromSchemeAndMeta(currentColorScheme);
 
   return (

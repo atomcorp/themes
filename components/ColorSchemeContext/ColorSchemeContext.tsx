@@ -10,21 +10,25 @@ import {
   useDispatchActions,
 } from '@/components/ColorSchemeContext/colorSchemeContextReducer';
 
-export const CurrentColorSchemeContext = createContext<colorSchemeAndMeta>(
-  {} as colorSchemeAndMeta
-);
+export const CurrentColorSchemeContext = createContext<
+  colorSchemeAndMeta | undefined
+>(undefined);
 export const SetCurrentColorSchemeContext = createContext<
-  (colorSchemeName: colorSchemeAndMeta['name']) => void
->(() => {});
+  ((colorSchemeName: colorSchemeAndMeta['name']) => void) | undefined
+>(undefined);
 export const CurrentLightnessContext = createContext<Lightness>('light');
 export const SetCurrentLightnessContext = createContext<
-  (lightness: Lightness) => void
->(() => {});
+  ((lightness: Lightness) => void) | undefined
+>(undefined);
 export const SetNextPrevColorSchemeContext = createContext<
-  (direction: 'next' | 'prev') => void
->(() => {});
-export const LightColorSchemesContext = createContext<colorSchemeAndMeta[]>([]);
-export const DarkColorSchemesContext = createContext<colorSchemeAndMeta[]>([]);
+  ((direction: 'next' | 'prev') => void) | undefined
+>(undefined);
+export const LightColorSchemesContext = createContext<
+  colorSchemeAndMeta[] | undefined
+>(undefined);
+export const DarkColorSchemesContext = createContext<
+  colorSchemeAndMeta[] | undefined
+>(undefined);
 
 type ColorSchemesProviderProps = {
   children: ReactNode;
@@ -43,9 +47,9 @@ export const ColorSchemesProvider = (props: ColorSchemesProviderProps) => {
   const [state, dispatch] = useReducer(colorSchemeReducer, initState, () =>
     colorSchemeReducerInitialiser(props.colorSchemes)
   );
-
   const {setCurrentColorScheme, setCurrentLightness, setNextPrevColorScheme} =
     useDispatchActions(dispatch);
+
   return (
     <CurrentColorSchemeContext.Provider value={state.currentColorScheme}>
       <SetCurrentColorSchemeContext.Provider value={setCurrentColorScheme}>

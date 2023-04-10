@@ -1,10 +1,9 @@
 // react component, next or prev color scheme button
 'use client';
 
-import {useContext} from 'react';
-
 import {SetNextPrevColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
 import {colorSchemeAndMeta} from '@/types';
+import useDefinedContext from '@/utilities/useDefinedContext';
 
 type NextPrevButtonProps = {
   direction: 'next' | 'prev';
@@ -12,7 +11,9 @@ type NextPrevButtonProps = {
 };
 
 const NextPrevButton = (props: NextPrevButtonProps) => {
-  const setNextPrevColorScheme = useContext(SetNextPrevColorSchemeContext);
+  const setNextPrevColorScheme = useDefinedContext(
+    SetNextPrevColorSchemeContext
+  );
 
   return (
     <button onClick={() => setNextPrevColorScheme(props.direction)}>

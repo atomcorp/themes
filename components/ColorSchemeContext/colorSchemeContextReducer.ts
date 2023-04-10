@@ -18,7 +18,7 @@ export type ColorSchemeAction =
       };
     }
   | {
-      type: 'setPrevNextColorScheme';
+      type: 'setNextPrevColorScheme';
       payload: {
         direction: 'next' | 'prev';
       };
@@ -60,7 +60,7 @@ export const colorSchemeReducer = (
           draft.currentColorScheme = currentColorSchemesByLightness[0];
         }
         break;
-      case 'setPrevNextColorScheme':
+      case 'setNextPrevColorScheme':
         {
           const currentColorSchemesByLightness =
             draft.currentLightness === 'light'
@@ -121,7 +121,7 @@ export const useDispatchActions = (dispatch: Dispatch<ColorSchemeAction>) => {
 
   const setNextPrevColorScheme = useCallback((direction: 'next' | 'prev') => {
     dispatch({
-      type: 'setPrevNextColorScheme',
+      type: 'setNextPrevColorScheme',
       payload: {
         direction,
       },
