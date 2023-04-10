@@ -3,7 +3,7 @@
 // playwright/index.tsx
 import {ColorSchemesProvider} from '../components/ColorSchemeContext/ColorSchemeContext';
 import {colourShemeAndMeta} from '@/types';
-import {beforeMount, afterMount} from '@playwright/experimental-ct-react/hooks';
+import {beforeMount} from '@playwright/experimental-ct-react/hooks';
 
 type TestTheme = {
   name: string;

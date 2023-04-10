@@ -26,6 +26,10 @@ type creditType = {
   name: 'string';
   link: 'string';
 };
-type metaType = {isDark: boolean; credits?: creditType[]};
+type metaType = {
+  meta: {isDark: boolean; credits?: creditType[]};
+};
 
 export type colourShemeAndMeta = colorScheme & metaType;
+
+export type Lightness = 'light' | 'dark';

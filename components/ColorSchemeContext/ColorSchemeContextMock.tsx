@@ -9,7 +9,11 @@ import {
   SetCurrentColorSchemeContext,
 } from './ColorSchemeContext';
 
-const ConsumerTestComponent = () => {
+type Props = {
+  nextColorScheme: string;
+};
+
+const ColorSchemeContextMock = (props: Props) => {
   const colorSchemeName = useContext(CurrentColorSchemeContext);
   const setCurrentColorSchemeName = useContext(SetCurrentColorSchemeContext);
   return (
@@ -17,7 +21,7 @@ const ConsumerTestComponent = () => {
       <h1>{colorSchemeName}</h1>
       <button
         onClick={() => {
-          setCurrentColorSchemeName('Solarized Dark');
+          setCurrentColorSchemeName(props.nextColorScheme);
         }}
       >
         Change name
@@ -26,4 +30,4 @@ const ConsumerTestComponent = () => {
   );
 };
 
-export default ConsumerTestComponent;
+export default ColorSchemeContextMock;
