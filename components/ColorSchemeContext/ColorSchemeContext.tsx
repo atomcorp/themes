@@ -1,29 +1,20 @@
 'use client';
 
-import {
-  createContext,
-  useState,
-  ReactNode,
-  Dispatch,
-  SetStateAction,
-  useReducer,
-  Reducer,
-  useCallback,
-} from 'react';
+import {createContext, ReactNode, useReducer} from 'react';
 
-import {colourShemeAndMeta, Lightness} from '@/types';
+import {colorSchemeAndMeta, Lightness} from '@/types';
 import {
-  ColorSchemeAction,
   colorSchemeReducer,
   colorSchemeReducerInitialiser,
   ColorSchemeState,
   useDispatchActions,
 } from '@/components/ColorSchemeContext/colorSchemeContextReducer';
 
-export const CurrentColorSchemeContext =
-  createContext<colourShemeAndMeta['name']>('');
+export const CurrentColorSchemeContext = createContext<colorSchemeAndMeta>(
+  {} as colorSchemeAndMeta
+);
 export const SetCurrentColorSchemeContext = createContext<
-  (colorSchemeName: colourShemeAndMeta['name']) => void
+  (colorSchemeName: colorSchemeAndMeta['name']) => void
 >(() => {});
 export const CurrentLightnessContext = createContext<Lightness>('light');
 export const SetCurrentLightnessContext = createContext<
@@ -32,17 +23,20 @@ export const SetCurrentLightnessContext = createContext<
 export const SetNextPrevColorSchemeContext = createContext<
   (direction: 'next' | 'prev') => void
 >(() => {});
+export const LightColorSchemesContext = createContext<colorSchemeAndMeta[]>([]);
+export const DarkColorSchemesContext = createContext<colorSchemeAndMeta[]>([]);
 
 type ColorSchemesProviderProps = {
   children: ReactNode;
-  colorSchemes: colourShemeAndMeta[];
+  colorSchemes: colorSchemeAndMeta[];
 };
 
 const initState: ColorSchemeState = {
-  currentColorScheme: '',
+  currentColorScheme: {} as colorSchemeAndMeta,
   currentLightness: 'dark',
   lightColorSchemes: [],
   darkColorSchemes: [],
+  colorSchemes: [],
 };
 
 export const ColorSchemesProvider = (props: ColorSchemesProviderProps) => {
@@ -52,7 +46,6 @@ export const ColorSchemesProvider = (props: ColorSchemesProviderProps) => {
 
   const {setCurrentColorScheme, setCurrentLightness, setNextPrevColorScheme} =
     useDispatchActions(dispatch);
-
   return (
     <CurrentColorSchemeContext.Provider value={state.currentColorScheme}>
       <SetCurrentColorSchemeContext.Provider value={setCurrentColorScheme}>
@@ -61,7 +54,15 @@ export const ColorSchemesProvider = (props: ColorSchemesProviderProps) => {
             <SetNextPrevColorSchemeContext.Provider
               value={setNextPrevColorScheme}
             >
-              {props.children}
+              <LightColorSchemesContext.Provider
+                value={state.lightColorSchemes}
+              >
+                <DarkColorSchemesContext.Provider
+                  value={state.darkColorSchemes}
+                >
+                  {props.children}
+                </DarkColorSchemesContext.Provider>
+              </LightColorSchemesContext.Provider>
             </SetNextPrevColorSchemeContext.Provider>
           </SetCurrentLightnessContext.Provider>
         </CurrentLightnessContext.Provider>

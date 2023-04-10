@@ -1,4 +1,4 @@
-import {colourShemeAndMeta, Lightness} from '@/types';
+import {colorSchemeAndMeta, Lightness} from '@/types';
 import {
   getNextPrevColorScheme,
   colorSchemesFilteredByCurrentLightness,
@@ -7,10 +7,11 @@ import immer from 'immer';
 import {Dispatch, Reducer, useCallback} from 'react';
 
 export type ColorSchemeState = {
-  currentColorScheme: string;
+  currentColorScheme: colorSchemeAndMeta;
   currentLightness: Lightness;
-  lightColorSchemes: colourShemeAndMeta[];
-  darkColorSchemes: colourShemeAndMeta[];
+  lightColorSchemes: colorSchemeAndMeta[];
+  darkColorSchemes: colorSchemeAndMeta[];
+  colorSchemes: colorSchemeAndMeta[];
 };
 
 export type ColorSchemeAction =
@@ -33,13 +34,6 @@ export type ColorSchemeAction =
       };
     };
 
-const initState: ColorSchemeState = {
-  currentColorScheme: '',
-  currentLightness: 'dark',
-  lightColorSchemes: [],
-  darkColorSchemes: [],
-};
-
 export const colorSchemeReducer = (
   state: ColorSchemeState,
   action: ColorSchemeAction
@@ -48,17 +42,26 @@ export const colorSchemeReducer = (
     switch (action.type) {
       case 'setColorScheme':
         {
-          draft.currentColorScheme = action.payload.colorSchemeName;
+          const currentColorScheme = state.colorSchemes.find(
+            (colorScheme) => colorScheme.name === action.payload.colorSchemeName
+          );
+          if (!currentColorScheme) {
+            throw new Error(
+              `Color scheme ${action.payload.colorSchemeName} not found`
+            );
+          }
+          draft.currentColorScheme = currentColorScheme;
         }
         break;
       case 'setLightness':
         {
           draft.currentLightness = action.payload.lightness;
+          // reset current color scheme to first in lightness
           const currentColorSchemesByLightness =
             draft.currentLightness === 'light'
               ? draft.lightColorSchemes
               : draft.darkColorSchemes;
-          draft.currentColorScheme = currentColorSchemesByLightness[0].name;
+          draft.currentColorScheme = currentColorSchemesByLightness[0];
         }
         break;
       case 'setPrevNextColorScheme':
@@ -69,7 +72,7 @@ export const colorSchemeReducer = (
               : draft.darkColorSchemes;
           draft.currentColorScheme = getNextPrevColorScheme(
             currentColorSchemesByLightness,
-            draft.currentColorScheme,
+            draft.currentColorScheme.name,
             action.payload.direction
           );
         }
@@ -78,7 +81,7 @@ export const colorSchemeReducer = (
   });
 
 export const colorSchemeReducerInitialiser = (
-  colorSchemes: colourShemeAndMeta[]
+  colorSchemes: colorSchemeAndMeta[]
 ): ColorSchemeState => {
   const lightColorSchemes = colorSchemesFilteredByCurrentLightness(
     colorSchemes,
@@ -90,16 +93,17 @@ export const colorSchemeReducerInitialiser = (
   );
 
   return {
-    currentColorScheme: darkColorSchemes[0].name,
+    currentColorScheme: darkColorSchemes[0],
     currentLightness: 'dark',
     lightColorSchemes,
     darkColorSchemes,
+    colorSchemes,
   };
 };
 
 export const useDispatchActions = (dispatch: Dispatch<ColorSchemeAction>) => {
   const setCurrentColorScheme = useCallback(
-    (colorSchemeName: colourShemeAndMeta['name']) => {
+    (colorSchemeName: colorSchemeAndMeta['name']) => {
       dispatch({
         type: 'setColorScheme',
         payload: {

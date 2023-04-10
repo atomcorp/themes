@@ -4,11 +4,11 @@
 import {useContext} from 'react';
 
 import {SetNextPrevColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
-import {colourShemeAndMeta} from '@/types';
+import {colorSchemeAndMeta} from '@/types';
 
 type NextPrevButtonProps = {
   direction: 'next' | 'prev';
-  colorSchemes: colourShemeAndMeta[];
+  colorSchemes: colorSchemeAndMeta[];
 };
 
 const NextPrevButton = (props: NextPrevButtonProps) => {

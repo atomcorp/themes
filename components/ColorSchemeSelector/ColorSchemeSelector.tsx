@@ -5,29 +5,25 @@ import {useContext} from 'react';
 import {
   CurrentColorSchemeContext,
   CurrentLightnessContext,
+  DarkColorSchemesContext,
+  LightColorSchemesContext,
   SetCurrentColorSchemeContext,
-  SetCurrentLightnessContext,
 } from '@/components/ColorSchemeContext/ColorSchemeContext';
-import {colourShemeAndMeta, Lightness} from '@/types';
-import {colorSchemesFilteredByCurrentLightness} from '@/utilities/colourSchemeUtilities';
+import {colorSchemeAndMeta} from '@/types';
 
-type ColorSchemeSelectorProps = {
-  colorSchemes: colourShemeAndMeta[];
-};
-
-const ColorSchemeSelector = (props: ColorSchemeSelectorProps) => {
+const ColorSchemeSelector = () => {
   const currentColorScheme = useContext(CurrentColorSchemeContext);
   const setCurrentColorScheme = useContext(SetCurrentColorSchemeContext);
   const currentLightness = useContext(CurrentLightnessContext);
+  const darkColorSchemes = useContext(DarkColorSchemesContext);
+  const lightColorSchemes = useContext(LightColorSchemesContext);
 
-  const colorSchemes = colorSchemesFilteredByCurrentLightness(
-    props.colorSchemes,
-    currentLightness === 'dark'
-  );
+  const colorSchemes =
+    currentLightness === 'dark' ? darkColorSchemes : lightColorSchemes;
 
   return (
     <select
-      value={currentColorScheme}
+      value={currentColorScheme.name}
       onChange={(e) => {
         setCurrentColorScheme(e.target.value);
       }}

@@ -8,6 +8,7 @@ V3:
     ☐ Nicer design (use Figma?)
     ☐ Gihub CI testing
     ☐ Add themes (learn.microsoft.com/en-us/windows/terminal/customize-settings/themes) and rename color-schemes
+      ☐ Add example themes (https://learn.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/theme-gallery)
     ☐ Copy multiple themes in one go
     ☐ Allow bold, underline 
   Stretch:
@@ -16,6 +17,7 @@ V3:
     ☐ Serve this on AWS or GitHub?
     ☐ PWA
     ☐ Could add a view with all the themes in cards, and you can just scroll down
+    ☐ Nike inspired drag draw https://www.framer.com/motion/use-drag-controls/
   Components:
     ☐ Logo
     ☐ Light/Dark scheme

@@ -14,11 +14,11 @@ type Props = {
 };
 
 const ColorSchemeContextMock = (props: Props) => {
-  const colorSchemeName = useContext(CurrentColorSchemeContext);
+  const colorScheme = useContext(CurrentColorSchemeContext);
   const setCurrentColorSchemeName = useContext(SetCurrentColorSchemeContext);
   return (
     <>
-      <h1>{colorSchemeName}</h1>
+      <h1>{colorScheme.name}</h1>
       <button
         onClick={() => {
           setCurrentColorSchemeName(props.nextColorScheme);

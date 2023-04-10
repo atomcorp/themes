@@ -1,7 +1,7 @@
-import {colourShemeAndMeta} from '@/types';
+import {colorSchemeAndMeta} from '@/types';
 
 export const getNextPrevColorScheme = (
-  colorSchemes: colourShemeAndMeta[],
+  colorSchemes: colorSchemeAndMeta[],
   currentColorScheme: string,
   direction: 'next' | 'prev'
 ) => {
@@ -15,11 +15,11 @@ export const getNextPrevColorScheme = (
     direction === 'next'
       ? (currentIndex + 1) % colorSchemes.length
       : (currentIndex - 1 + colorSchemes.length) % colorSchemes.length;
-  return colorSchemes[nextIndex].name;
+  return colorSchemes[nextIndex];
 };
 
 export const colorSchemesFilteredByCurrentLightness = (
-  colorSchemes: colourShemeAndMeta[],
+  colorSchemes: colorSchemeAndMeta[],
   lightnessIsDark: boolean
 ) => {
   return colorSchemes.filter(

@@ -1,4 +1,4 @@
-import {colourShemeAndMeta} from '@/types';
+import {colorSchemeAndMeta} from '@/types';
 import {
   getNextPrevColorScheme,
   colorSchemesFilteredByCurrentLightness,
@@ -45,7 +45,7 @@ const colorSchemes = [...lightColorSchemes, ...darkColorSchemes];
 test('get next color scheme', () => {
   expect(
     getNextPrevColorScheme(
-      lightColorSchemes as colourShemeAndMeta[],
+      lightColorSchemes as colorSchemeAndMeta[],
       'Light A',
       'next'
     )
@@ -55,7 +55,7 @@ test('get next color scheme', () => {
 test('get previous color scheme', () => {
   expect(
     getNextPrevColorScheme(
-      lightColorSchemes as colourShemeAndMeta[],
+      lightColorSchemes as colorSchemeAndMeta[],
       'Light B',
       'prev'
     )
@@ -65,7 +65,7 @@ test('get previous color scheme', () => {
 test('get next color scheme when at end of list', () => {
   expect(
     getNextPrevColorScheme(
-      lightColorSchemes as colourShemeAndMeta[],
+      lightColorSchemes as colorSchemeAndMeta[],
       'Light C',
       'next'
     )
@@ -75,7 +75,7 @@ test('get next color scheme when at end of list', () => {
 test('get previous color scheme when at start of list', () => {
   expect(
     getNextPrevColorScheme(
-      lightColorSchemes as colourShemeAndMeta[],
+      lightColorSchemes as colorSchemeAndMeta[],
       'Light A',
       'prev'
     )
@@ -85,7 +85,7 @@ test('get previous color scheme when at start of list', () => {
 test('throw error is color scheme not found', () => {
   expect(() =>
     getNextPrevColorScheme(
-      lightColorSchemes as colourShemeAndMeta[],
+      lightColorSchemes as colorSchemeAndMeta[],
       'Light D',
       'next'
     )
@@ -96,13 +96,13 @@ test('filter color schemes by darkness', () => {
   const isDark = true;
   expect(
     colorSchemesFilteredByCurrentLightness(
-      colorSchemes as colourShemeAndMeta[],
+      colorSchemes as colorSchemeAndMeta[],
       isDark
     )
   ).toEqual(darkColorSchemes);
   expect(
     colorSchemesFilteredByCurrentLightness(
-      colorSchemes as colourShemeAndMeta[],
+      colorSchemes as colorSchemeAndMeta[],
       isDark
     )
   ).not.toEqual(lightColorSchemes);
@@ -112,13 +112,13 @@ test('filter color schemes by lightness', () => {
   const isDark = false;
   expect(
     colorSchemesFilteredByCurrentLightness(
-      colorSchemes as colourShemeAndMeta[],
+      colorSchemes as colorSchemeAndMeta[],
       isDark
     )
   ).toEqual(lightColorSchemes);
   expect(
     colorSchemesFilteredByCurrentLightness(
-      colorSchemes as colourShemeAndMeta[],
+      colorSchemes as colorSchemeAndMeta[],
       isDark
     )
   ).not.toEqual(darkColorSchemes);
