@@ -21,6 +21,7 @@ const config = {
     '!**/.next/**',
     '!**/playwright/**',
     '!**/playwright-ct.config.ts',
+    '!**/app/**',
   ],
   coverageDirectory: '<rootDir>/coverage',
 };

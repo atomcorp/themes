@@ -5,7 +5,9 @@ import {useContext} from 'react';
 const useDefinedContext = <T,>(context: React.Context<T>) => {
   const value = useContext(context);
   if (value === undefined) {
-    throw new Error(`${context.displayName} is undefined`);
+    throw new Error(
+      `${context.displayName} (context) is undefined. You probably forgot a provider.`
+    );
   }
   return value;
 };

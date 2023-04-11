@@ -16,7 +16,11 @@ const NextPrevButton = (props: NextPrevButtonProps) => {
   );
 
   return (
-    <button onClick={() => setNextPrevColorScheme(props.direction)}>
+    <button
+      onClick={() => {
+        setNextPrevColorScheme(props.direction);
+      }}
+    >
       {props.direction === 'next' ? 'Next' : 'Prev'}
     </button>
   );

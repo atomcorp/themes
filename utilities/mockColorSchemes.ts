@@ -1,6 +1,6 @@
 import {colorSchemeAndMeta} from '@/types';
 
-const lightThemeA: colorSchemeAndMeta = {
+export const lightThemeA: colorSchemeAndMeta = {
   name: '3024 Day',
   black: '#090300',
   red: '#db2d20',
@@ -33,7 +33,7 @@ const lightThemeA: colorSchemeAndMeta = {
   },
 };
 
-const darkThemeA: colorSchemeAndMeta = {
+export const darkThemeA: colorSchemeAndMeta = {
   name: '3024 Night',
   black: '#090300',
   red: '#db2d20',
@@ -66,7 +66,7 @@ const darkThemeA: colorSchemeAndMeta = {
   },
 };
 
-const darkThemeB = {
+export const darkThemeB = {
   name: 'Abernathy',
   black: '#000000',
   red: '#cd0000',
@@ -120,4 +120,4 @@ const lightThemeB = {
   },
 };
 
-export const themes = [lightThemeA, darkThemeA, darkThemeB, lightThemeB];
+export const schemes = [lightThemeA, darkThemeA, darkThemeB, lightThemeB];
