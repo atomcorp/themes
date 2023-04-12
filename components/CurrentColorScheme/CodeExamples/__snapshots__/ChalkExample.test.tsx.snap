@@ -1,0 +1,1111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test screenshot of ChalkExample component 1`] = `
+<figure>
+  <figcaption>
+    Chalk example
+  </figcaption>
+  <div
+    class="container"
+  >
+    <span>
+      none
+    </span>
+    <span>
+      bold
+    </span>
+    <span>
+      dim
+    </span>
+    <span>
+      underline
+    </span>
+    <span>
+      inverse
+    </span>
+    <span>
+      strikethrough
+    </span>
+  </div>
+  <div
+    class="container"
+  >
+    <span
+      class="black none"
+    >
+      black
+    </span>
+    <span
+      class="black bold"
+    >
+      black
+    </span>
+    <span
+      class="black dim"
+    >
+      black
+    </span>
+    <span
+      class="black underline"
+    >
+      black
+    </span>
+    <span
+      class="black inverse"
+      style="--color: var(--black);"
+    >
+      black
+    </span>
+    <span
+      class="black strikethrough"
+    >
+      black
+    </span>
+    <span
+      class="brightBlack none"
+    >
+      brightBlack
+    </span>
+    <span
+      class="brightBlack bold"
+    >
+      brightBlack
+    </span>
+    <span
+      class="brightBlack dim"
+    >
+      brightBlack
+    </span>
+    <span
+      class="brightBlack underline"
+    >
+      brightBlack
+    </span>
+    <span
+      class="brightBlack inverse"
+      style="--color: var(--brightBlack);"
+    >
+      brightBlack
+    </span>
+    <span
+      class="brightBlack strikethrough"
+    >
+      brightBlack
+    </span>
+    <span
+      class="red none"
+    >
+      red
+    </span>
+    <span
+      class="red bold"
+    >
+      red
+    </span>
+    <span
+      class="red dim"
+    >
+      red
+    </span>
+    <span
+      class="red underline"
+    >
+      red
+    </span>
+    <span
+      class="red inverse"
+      style="--color: var(--red);"
+    >
+      red
+    </span>
+    <span
+      class="red strikethrough"
+    >
+      red
+    </span>
+    <span
+      class="brightRed none"
+    >
+      brightRed
+    </span>
+    <span
+      class="brightRed bold"
+    >
+      brightRed
+    </span>
+    <span
+      class="brightRed dim"
+    >
+      brightRed
+    </span>
+    <span
+      class="brightRed underline"
+    >
+      brightRed
+    </span>
+    <span
+      class="brightRed inverse"
+      style="--color: var(--brightRed);"
+    >
+      brightRed
+    </span>
+    <span
+      class="brightRed strikethrough"
+    >
+      brightRed
+    </span>
+    <span
+      class="green none"
+    >
+      green
+    </span>
+    <span
+      class="green bold"
+    >
+      green
+    </span>
+    <span
+      class="green dim"
+    >
+      green
+    </span>
+    <span
+      class="green underline"
+    >
+      green
+    </span>
+    <span
+      class="green inverse"
+      style="--color: var(--green);"
+    >
+      green
+    </span>
+    <span
+      class="green strikethrough"
+    >
+      green
+    </span>
+    <span
+      class="brightGreen none"
+    >
+      brightGreen
+    </span>
+    <span
+      class="brightGreen bold"
+    >
+      brightGreen
+    </span>
+    <span
+      class="brightGreen dim"
+    >
+      brightGreen
+    </span>
+    <span
+      class="brightGreen underline"
+    >
+      brightGreen
+    </span>
+    <span
+      class="brightGreen inverse"
+      style="--color: var(--brightGreen);"
+    >
+      brightGreen
+    </span>
+    <span
+      class="brightGreen strikethrough"
+    >
+      brightGreen
+    </span>
+    <span
+      class="yellow none"
+    >
+      yellow
+    </span>
+    <span
+      class="yellow bold"
+    >
+      yellow
+    </span>
+    <span
+      class="yellow dim"
+    >
+      yellow
+    </span>
+    <span
+      class="yellow underline"
+    >
+      yellow
+    </span>
+    <span
+      class="yellow inverse"
+      style="--color: var(--yellow);"
+    >
+      yellow
+    </span>
+    <span
+      class="yellow strikethrough"
+    >
+      yellow
+    </span>
+    <span
+      class="brightYellow none"
+    >
+      brightYellow
+    </span>
+    <span
+      class="brightYellow bold"
+    >
+      brightYellow
+    </span>
+    <span
+      class="brightYellow dim"
+    >
+      brightYellow
+    </span>
+    <span
+      class="brightYellow underline"
+    >
+      brightYellow
+    </span>
+    <span
+      class="brightYellow inverse"
+      style="--color: var(--brightYellow);"
+    >
+      brightYellow
+    </span>
+    <span
+      class="brightYellow strikethrough"
+    >
+      brightYellow
+    </span>
+    <span
+      class="blue none"
+    >
+      blue
+    </span>
+    <span
+      class="blue bold"
+    >
+      blue
+    </span>
+    <span
+      class="blue dim"
+    >
+      blue
+    </span>
+    <span
+      class="blue underline"
+    >
+      blue
+    </span>
+    <span
+      class="blue inverse"
+      style="--color: var(--blue);"
+    >
+      blue
+    </span>
+    <span
+      class="blue strikethrough"
+    >
+      blue
+    </span>
+    <span
+      class="brightBlue none"
+    >
+      brightBlue
+    </span>
+    <span
+      class="brightBlue bold"
+    >
+      brightBlue
+    </span>
+    <span
+      class="brightBlue dim"
+    >
+      brightBlue
+    </span>
+    <span
+      class="brightBlue underline"
+    >
+      brightBlue
+    </span>
+    <span
+      class="brightBlue inverse"
+      style="--color: var(--brightBlue);"
+    >
+      brightBlue
+    </span>
+    <span
+      class="brightBlue strikethrough"
+    >
+      brightBlue
+    </span>
+    <span
+      class="purple none"
+    >
+      purple
+    </span>
+    <span
+      class="purple bold"
+    >
+      purple
+    </span>
+    <span
+      class="purple dim"
+    >
+      purple
+    </span>
+    <span
+      class="purple underline"
+    >
+      purple
+    </span>
+    <span
+      class="purple inverse"
+      style="--color: var(--purple);"
+    >
+      purple
+    </span>
+    <span
+      class="purple strikethrough"
+    >
+      purple
+    </span>
+    <span
+      class="brightPurple none"
+    >
+      brightPurple
+    </span>
+    <span
+      class="brightPurple bold"
+    >
+      brightPurple
+    </span>
+    <span
+      class="brightPurple dim"
+    >
+      brightPurple
+    </span>
+    <span
+      class="brightPurple underline"
+    >
+      brightPurple
+    </span>
+    <span
+      class="brightPurple inverse"
+      style="--color: var(--brightPurple);"
+    >
+      brightPurple
+    </span>
+    <span
+      class="brightPurple strikethrough"
+    >
+      brightPurple
+    </span>
+    <span
+      class="cyan none"
+    >
+      cyan
+    </span>
+    <span
+      class="cyan bold"
+    >
+      cyan
+    </span>
+    <span
+      class="cyan dim"
+    >
+      cyan
+    </span>
+    <span
+      class="cyan underline"
+    >
+      cyan
+    </span>
+    <span
+      class="cyan inverse"
+      style="--color: var(--cyan);"
+    >
+      cyan
+    </span>
+    <span
+      class="cyan strikethrough"
+    >
+      cyan
+    </span>
+    <span
+      class="brightCyan none"
+    >
+      brightCyan
+    </span>
+    <span
+      class="brightCyan bold"
+    >
+      brightCyan
+    </span>
+    <span
+      class="brightCyan dim"
+    >
+      brightCyan
+    </span>
+    <span
+      class="brightCyan underline"
+    >
+      brightCyan
+    </span>
+    <span
+      class="brightCyan inverse"
+      style="--color: var(--brightCyan);"
+    >
+      brightCyan
+    </span>
+    <span
+      class="brightCyan strikethrough"
+    >
+      brightCyan
+    </span>
+    <span
+      class="white none"
+    >
+      white
+    </span>
+    <span
+      class="white bold"
+    >
+      white
+    </span>
+    <span
+      class="white dim"
+    >
+      white
+    </span>
+    <span
+      class="white underline"
+    >
+      white
+    </span>
+    <span
+      class="white inverse"
+      style="--color: var(--white);"
+    >
+      white
+    </span>
+    <span
+      class="white strikethrough"
+    >
+      white
+    </span>
+    <span
+      class="brightWhite none"
+    >
+      brightWhite
+    </span>
+    <span
+      class="brightWhite bold"
+    >
+      brightWhite
+    </span>
+    <span
+      class="brightWhite dim"
+    >
+      brightWhite
+    </span>
+    <span
+      class="brightWhite underline"
+    >
+      brightWhite
+    </span>
+    <span
+      class="brightWhite inverse"
+      style="--color: var(--brightWhite);"
+    >
+      brightWhite
+    </span>
+    <span
+      class="brightWhite strikethrough"
+    >
+      brightWhite
+    </span>
+  </div>
+  <div
+    class="container"
+  >
+    <span
+      class="foreground none background-color"
+      style="--color: var(--black);"
+    >
+      black
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--black);"
+    >
+      black
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--black);"
+    >
+      black
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--black);"
+    >
+      black
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--black);"
+    >
+      black
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--black);"
+    >
+      black
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightBlack);"
+    >
+      brightBlack
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightBlack);"
+    >
+      brightBlack
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightBlack);"
+    >
+      brightBlack
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightBlack);"
+    >
+      brightBlack
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightBlack);"
+    >
+      brightBlack
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightBlack);"
+    >
+      brightBlack
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--red);"
+    >
+      red
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--red);"
+    >
+      red
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--red);"
+    >
+      red
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--red);"
+    >
+      red
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--red);"
+    >
+      red
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--red);"
+    >
+      red
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightRed);"
+    >
+      brightRed
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightRed);"
+    >
+      brightRed
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightRed);"
+    >
+      brightRed
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightRed);"
+    >
+      brightRed
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightRed);"
+    >
+      brightRed
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightRed);"
+    >
+      brightRed
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--green);"
+    >
+      green
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--green);"
+    >
+      green
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--green);"
+    >
+      green
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--green);"
+    >
+      green
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--green);"
+    >
+      green
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--green);"
+    >
+      green
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightGreen);"
+    >
+      brightGreen
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightGreen);"
+    >
+      brightGreen
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightGreen);"
+    >
+      brightGreen
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightGreen);"
+    >
+      brightGreen
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightGreen);"
+    >
+      brightGreen
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightGreen);"
+    >
+      brightGreen
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--yellow);"
+    >
+      yellow
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--yellow);"
+    >
+      yellow
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--yellow);"
+    >
+      yellow
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--yellow);"
+    >
+      yellow
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--yellow);"
+    >
+      yellow
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--yellow);"
+    >
+      yellow
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightYellow);"
+    >
+      brightYellow
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightYellow);"
+    >
+      brightYellow
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightYellow);"
+    >
+      brightYellow
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightYellow);"
+    >
+      brightYellow
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightYellow);"
+    >
+      brightYellow
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightYellow);"
+    >
+      brightYellow
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--blue);"
+    >
+      blue
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--blue);"
+    >
+      blue
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--blue);"
+    >
+      blue
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--blue);"
+    >
+      blue
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--blue);"
+    >
+      blue
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--blue);"
+    >
+      blue
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightBlue);"
+    >
+      brightBlue
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightBlue);"
+    >
+      brightBlue
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightBlue);"
+    >
+      brightBlue
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightBlue);"
+    >
+      brightBlue
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightBlue);"
+    >
+      brightBlue
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightBlue);"
+    >
+      brightBlue
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--purple);"
+    >
+      purple
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--purple);"
+    >
+      purple
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--purple);"
+    >
+      purple
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--purple);"
+    >
+      purple
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--purple);"
+    >
+      purple
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--purple);"
+    >
+      purple
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightPurple);"
+    >
+      brightPurple
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightPurple);"
+    >
+      brightPurple
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightPurple);"
+    >
+      brightPurple
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightPurple);"
+    >
+      brightPurple
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightPurple);"
+    >
+      brightPurple
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightPurple);"
+    >
+      brightPurple
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--cyan);"
+    >
+      cyan
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--cyan);"
+    >
+      cyan
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--cyan);"
+    >
+      cyan
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--cyan);"
+    >
+      cyan
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--cyan);"
+    >
+      cyan
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--cyan);"
+    >
+      cyan
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightCyan);"
+    >
+      brightCyan
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightCyan);"
+    >
+      brightCyan
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightCyan);"
+    >
+      brightCyan
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightCyan);"
+    >
+      brightCyan
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightCyan);"
+    >
+      brightCyan
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightCyan);"
+    >
+      brightCyan
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--white);"
+    >
+      white
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--white);"
+    >
+      white
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--white);"
+    >
+      white
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--white);"
+    >
+      white
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--white);"
+    >
+      white
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--white);"
+    >
+      white
+    </span>
+    <span
+      class="foreground none background-color"
+      style="--color: var(--brightWhite);"
+    >
+      brightWhite
+    </span>
+    <span
+      class="foreground bold background-color"
+      style="--color: var(--brightWhite);"
+    >
+      brightWhite
+    </span>
+    <span
+      class="foreground dim background-color"
+      style="--color: var(--brightWhite);"
+    >
+      brightWhite
+    </span>
+    <span
+      class="foreground underline background-color"
+      style="--color: var(--brightWhite);"
+    >
+      brightWhite
+    </span>
+    <span
+      class="foreground inverse background-color"
+      style="--color: var(--brightWhite);"
+    >
+      brightWhite
+    </span>
+    <span
+      class="foreground strikethrough background-color"
+      style="--color: var(--brightWhite);"
+    >
+      brightWhite
+    </span>
+  </div>
+</figure>
+`;
