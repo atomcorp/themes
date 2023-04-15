@@ -9,7 +9,9 @@ import CurrentColorScheme from './CurrentColorScheme';
 it('should render the current color scheme', () => {
   render(
     <CurrentColorSchemeContext.Provider value={lightThemeA}>
-      <CurrentColorScheme />
+      <CurrentColorScheme>
+        <div />
+      </CurrentColorScheme>
     </CurrentColorSchemeContext.Provider>
   );
 

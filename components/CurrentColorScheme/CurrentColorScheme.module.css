@@ -19,6 +19,7 @@
   --foreground: white;
   --cursorColor: white;
   --selectionBackground: red;
+  --codeFonts: 'IBM Plex Mono', monospace;
 }
 
 .black {
@@ -87,10 +88,13 @@
 
 .background {
   background-color: var(--background);
+  color: var(--brightWhite);
+  font-family: var(--codeFonts, monospace);
+  white-space: pre;
 }
 
 .foreground {
-  background-color: var(--foreground);
+  color: var(--white);
 }
 
 .cursorColor {

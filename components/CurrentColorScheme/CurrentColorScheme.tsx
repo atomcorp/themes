@@ -2,13 +2,12 @@
 // Compare this snippet from components/ColorSchemeSelector/ColorSchemeSelector.tsx:
 // // react component, displays all the color schemes
 'use client';
-import {CSSProperties} from 'react';
+import {CSSProperties, ReactNode, useState} from 'react';
 
 import {CurrentColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
 import {colorSchemeAndMeta} from '@/types';
 import useDefinedContext from '@/utilities/useDefinedContext';
 import css from './CurrentColorScheme.module.css';
-import ChalkExample from '@/components/CurrentColorScheme/CodeExamples/ChalkExample';
 
 const getColorsOnlyFromSchemeAndMeta = (colorScheme: colorSchemeAndMeta) => {
   const {name, meta, ...colorSchemeColors} = colorScheme;
@@ -63,7 +62,11 @@ const getColorsForCssVars = (colorScheme: colorSchemeAndMeta): StyleProps => {
   };
 };
 
-const CurrentColorScheme = () => {
+type Props = {
+  children: ReactNode;
+};
+
+const CurrentColorScheme = (props: Props) => {
   const currentColorScheme = useDefinedContext(CurrentColorSchemeContext);
   const currentColors = getColorsOnlyFromSchemeAndMeta(currentColorScheme);
   const colorsForCssVars = getColorsForCssVars(currentColorScheme);
@@ -71,7 +74,7 @@ const CurrentColorScheme = () => {
   return (
     <div className={css.container} style={colorsForCssVars}>
       <h2>{currentColorScheme.name}</h2>
-      <ChalkExample />
+      {props.children}
       <ul>
         {Object.entries(currentColors).map(([key, value]) => (
           <li key={key}>

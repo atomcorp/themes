@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render all the components 1`] = `
+<figure>
+  <figcaption>
+    Jest summary example
+  </figcaption>
+  <div>
+    limit50x----------------------------------------- Test Suites: 1 failed, 9 passed, 10 total Tests: 1 failed, 36 passed, 37 total Snapshots: 1 passed, 1 total Time: 2.897 s Ran all test suites.
+  </div>
+  <div
+    class="background"
+  >
+    <div>
+      <span
+        class="inverse bold"
+        style="--color: var(--green);"
+      >
+         
+        PASS
+         
+      </span>
+       
+      <span
+        class="foreground dim"
+      >
+        components/ToggleCurrentLightness/
+      </span>
+      <span
+        class="foreground bold"
+      >
+        ToggleCurrentLightness.test.tsx
+      </span>
+    </div>
+    <div>
+      <span
+        class="inverse bold"
+        style="--color: var(--red);"
+      >
+         
+        FAIL
+         
+      </span>
+       
+      <span
+        class="foreground dim"
+      >
+        components/NextPrevButton/
+      </span>
+      <span
+        class="foreground bold"
+      >
+        NextPrevButton.test.tsx
+      </span>
+    </div>
+    <div>
+      <span
+        class="foreground bold"
+      >
+        Test Suites: 
+      </span>
+      <span
+        class="red bold"
+      >
+        1 failed
+      </span>
+      , 
+      <span
+        class="green bold"
+      >
+        9 passed
+      </span>
+      , 10 total
+    </div>
+    <div>
+      <span
+        class="foreground bold"
+      >
+        Time: 
+         
+         
+         
+         
+         
+         
+      </span>
+       
+      <span
+        class="yellow bold"
+      >
+        2.897
+      </span>
+    </div>
+    <div>
+      <span
+        class="foreground dim"
+      >
+        Ran all test suites.
+      </span>
+    </div>
+  </div>
+</figure>
+`;

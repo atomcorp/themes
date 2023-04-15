@@ -4,6 +4,7 @@ import ColorSchemeSelector from '@/components/ColorSchemeSelector/ColorSchemeSel
 import ToggleCurrentLightness from '@/components/ToggleCurrentLightness/ToggleCurrentLightness';
 import NextPrevButton from '@/components/NextPrevButton/NextPrevButton';
 import CurrentColorScheme from '@/components/CurrentColorScheme/CurrentColorScheme';
+import CodeExampleSelect from '@/components/CurrentColorScheme/CodeExampleSelect';
 
 export default async function Home() {
   const colorSchemes = await getColorSchemes();
@@ -14,7 +15,9 @@ export default async function Home() {
       <ColorSchemeSelector />
       <NextPrevButton colorSchemes={colorSchemes} direction="prev" />
       <NextPrevButton colorSchemes={colorSchemes} direction="next" />
-      <CurrentColorScheme />
+      <CurrentColorScheme>
+        <CodeExampleSelect />
+      </CurrentColorScheme>
     </main>
   );
 }

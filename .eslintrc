@@ -1,10 +1,12 @@
 {
+  "root": true,
   "extends": [
     "eslint:recommended",
     "next/core-web-vitals",
     "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:@typescript-eslint/recommended",
-    "plugin:chai-friendly/recommended",
+    // "plugin:chai-friendly/recommended",
     "prettier"
   ],
   "env": {
@@ -13,10 +15,12 @@
     "node": true,
     "es6": true
   },
+  "ignorePatterns": ["legacy/**"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2020,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "@typescript-eslint/eslint-plugin"
@@ -33,13 +37,8 @@
     "new-cap": 0,
     "react/prop-types": 0,
     "no-console": 1,
-    "@typescript-eslint/explicit-function-return-type": [
-      "error",
-      {
-        "allowExpressions": true,
-        "allowTypedFunctionExpressions": true
-      }
-    ]
+    "require-await": "error",
+    "@typescript-eslint/no-floating-promises": ["error"]
   },
   "settings": {
     "react": {

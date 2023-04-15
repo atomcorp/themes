@@ -33,7 +33,7 @@ const colors = [
 ];
 
 interface StyleProps extends CSSProperties {
-  '--background'?: string;
+  '--color'?: string;
 }
 
 const ChalkExample = () => {
