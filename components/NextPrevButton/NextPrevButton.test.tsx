@@ -5,7 +5,7 @@ import NextPrevButton from './NextPrevButton';
 import {SetNextPrevColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
 import userEvent from '@testing-library/user-event';
 
-test('should render next button', async () => {
+test('should render next button', () => {
   const setNextPrevColorScheme = jest.fn();
   render(
     <SetNextPrevColorSchemeContext.Provider value={setNextPrevColorScheme}>
@@ -16,7 +16,7 @@ test('should render next button', async () => {
   expect(screen.getByRole('button', {name: 'Next'})).toBeInTheDocument();
 });
 
-test('should render prev button', async () => {
+test('should render prev button', () => {
   const setNextPrevColorScheme = jest.fn();
   render(
     <SetNextPrevColorSchemeContext.Provider value={setNextPrevColorScheme}>
@@ -36,7 +36,7 @@ test('should call setNextPrevColorScheme with next', async () => {
     </SetNextPrevColorSchemeContext.Provider>
   );
 
-  user.click(screen.getByRole('button', {name: 'Next'}));
+  await user.click(screen.getByRole('button', {name: 'Next'}));
 
   await waitFor(() => {
     expect(setNextPrevColorScheme).toHaveBeenCalledWith('next');
@@ -52,7 +52,7 @@ test('should call setNextPrevColorScheme with prev', async () => {
     </SetNextPrevColorSchemeContext.Provider>
   );
 
-  user.click(screen.getByRole('button', {name: 'Prev'}));
+  await user.click(screen.getByRole('button', {name: 'Prev'}));
 
   await waitFor(() => {
     expect(setNextPrevColorScheme).toHaveBeenCalledWith('prev');

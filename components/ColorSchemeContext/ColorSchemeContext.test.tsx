@@ -87,7 +87,7 @@ it('should set the set current color scheme context', async () => {
   );
 });
 
-it('should show the LightColorSchemesContext ', async () => {
+it('should show the LightColorSchemesContext ', () => {
   const firstLightTheme = schemes.find((theme) => !theme.meta.isDark);
   const firstLightThemeName = firstLightTheme?.name || '';
   render(
@@ -104,7 +104,7 @@ it('should show the LightColorSchemesContext ', async () => {
   );
 });
 
-it('should show the DarkColorSchemesContext ', async () => {
+it('should show the DarkColorSchemesContext ', () => {
   const firstDarkTheme = schemes.find((theme) => theme.meta.isDark);
   const firstDarkThemeName = firstDarkTheme?.name || '';
   render(

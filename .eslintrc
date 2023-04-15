@@ -37,7 +37,7 @@
     "new-cap": 0,
     "react/prop-types": 0,
     "no-console": 1,
-    "require-await": "error",
+    "require-await": "warn",
     "@typescript-eslint/no-floating-promises": ["error"]
   },
   "settings": {

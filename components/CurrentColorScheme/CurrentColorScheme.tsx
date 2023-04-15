@@ -2,17 +2,12 @@
 // Compare this snippet from components/ColorSchemeSelector/ColorSchemeSelector.tsx:
 // // react component, displays all the color schemes
 'use client';
-import {CSSProperties, ReactNode, useState} from 'react';
+import {CSSProperties, ReactNode} from 'react';
 
 import {CurrentColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
 import {colorSchemeAndMeta} from '@/types';
 import useDefinedContext from '@/utilities/useDefinedContext';
 import css from './CurrentColorScheme.module.css';
-
-const getColorsOnlyFromSchemeAndMeta = (colorScheme: colorSchemeAndMeta) => {
-  const {name, meta, ...colorSchemeColors} = colorScheme;
-  return colorSchemeColors;
-};
 
 interface StyleProps extends CSSProperties {
   '--black': string;
@@ -68,28 +63,12 @@ type Props = {
 
 const CurrentColorScheme = (props: Props) => {
   const currentColorScheme = useDefinedContext(CurrentColorSchemeContext);
-  const currentColors = getColorsOnlyFromSchemeAndMeta(currentColorScheme);
   const colorsForCssVars = getColorsForCssVars(currentColorScheme);
 
   return (
     <div className={css.container} style={colorsForCssVars}>
       <h2>{currentColorScheme.name}</h2>
       {props.children}
-      <ul>
-        {Object.entries(currentColors).map(([key, value]) => (
-          <li key={key}>
-            {key}: {value}
-            <div
-              className={css[key]}
-              style={{
-                width: '100px',
-                height: '1rem',
-                display: 'inline-block',
-              }}
-            ></div>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

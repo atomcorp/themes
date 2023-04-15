@@ -107,26 +107,32 @@ export const useDispatchActions = (dispatch: Dispatch<ColorSchemeAction>) => {
         },
       });
     },
-    []
+    [dispatch]
   );
 
-  const setCurrentLightness = useCallback((lightness: Lightness) => {
-    dispatch({
-      type: 'setLightness',
-      payload: {
-        lightness,
-      },
-    });
-  }, []);
+  const setCurrentLightness = useCallback(
+    (lightness: Lightness) => {
+      dispatch({
+        type: 'setLightness',
+        payload: {
+          lightness,
+        },
+      });
+    },
+    [dispatch]
+  );
 
-  const setNextPrevColorScheme = useCallback((direction: 'next' | 'prev') => {
-    dispatch({
-      type: 'setNextPrevColorScheme',
-      payload: {
-        direction,
-      },
-    });
-  }, []);
+  const setNextPrevColorScheme = useCallback(
+    (direction: 'next' | 'prev') => {
+      dispatch({
+        type: 'setNextPrevColorScheme',
+        payload: {
+          direction,
+        },
+      });
+    },
+    [dispatch]
+  );
 
   return {
     setCurrentColorScheme,
