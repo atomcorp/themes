@@ -20,6 +20,7 @@ const NextPrevButton = (props: NextPrevButtonProps) => {
       onClick={() => {
         setNextPrevColorScheme(props.direction);
       }}
+      tabIndex={-1}
     >
       {props.direction === 'next' ? 'Next' : 'Prev'}
     </button>
