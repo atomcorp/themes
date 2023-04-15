@@ -11,6 +11,7 @@ V3:
       ☐ Add example themes (https://learn.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/theme-gallery)
     ☐ Copy multiple themes in one go
     ☐ Allow bold, underline 
+    ☐ Add Radix Radio Groups for Light / Dark
   Stretch:
     ☐ Align colours by hue (as alternative to alphabetical)
     ☐ Nicer styling (shadows, animations)
