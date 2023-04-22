@@ -23,12 +23,6 @@ export const SetCurrentLightnessContext = createContext<
 export const SetNextPrevColorSchemeContext = createContext<
   ((direction: 'next' | 'prev') => void) | undefined
 >(undefined);
-export const LightColorSchemesContext = createContext<
-  colorSchemeAndMeta[] | undefined
->(undefined);
-export const DarkColorSchemesContext = createContext<
-  colorSchemeAndMeta[] | undefined
->(undefined);
 
 type ColorSchemesProviderProps = {
   children: ReactNode;
@@ -58,15 +52,7 @@ export const ColorSchemesProvider = (props: ColorSchemesProviderProps) => {
             <SetNextPrevColorSchemeContext.Provider
               value={setNextPrevColorScheme}
             >
-              <LightColorSchemesContext.Provider
-                value={state.lightColorSchemes}
-              >
-                <DarkColorSchemesContext.Provider
-                  value={state.darkColorSchemes}
-                >
-                  {props.children}
-                </DarkColorSchemesContext.Provider>
-              </LightColorSchemesContext.Provider>
+              {props.children}
             </SetNextPrevColorSchemeContext.Provider>
           </SetCurrentLightnessContext.Provider>
         </CurrentLightnessContext.Provider>

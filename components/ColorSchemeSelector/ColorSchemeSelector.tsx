@@ -3,21 +3,25 @@
 import {
   CurrentColorSchemeContext,
   CurrentLightnessContext,
-  DarkColorSchemesContext,
-  LightColorSchemesContext,
   SetCurrentColorSchemeContext,
 } from '@/components/ColorSchemeContext/ColorSchemeContext';
+import {colorSchemeAndMeta} from '@/types';
 import useDefinedContext from '@/utilities/useDefinedContext';
 
-const ColorSchemeSelector = () => {
+type Props = {
+  darkColorSchemes: colorSchemeAndMeta[];
+  lightColorSchemes: colorSchemeAndMeta[];
+};
+
+const ColorSchemeSelector = (props: Props) => {
   const currentColorScheme = useDefinedContext(CurrentColorSchemeContext);
   const setCurrentColorScheme = useDefinedContext(SetCurrentColorSchemeContext);
   const currentLightness = useDefinedContext(CurrentLightnessContext);
-  const darkColorSchemes = useDefinedContext(DarkColorSchemesContext);
-  const lightColorSchemes = useDefinedContext(LightColorSchemesContext);
 
   const colorSchemes =
-    currentLightness === 'dark' ? darkColorSchemes : lightColorSchemes;
+    currentLightness === 'dark'
+      ? props.darkColorSchemes
+      : props.lightColorSchemes;
 
   return (
     <select

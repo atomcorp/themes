@@ -1,4 +1,5 @@
 import {ColorSchemesProvider} from '@/components/ColorSchemeContext/ColorSchemeContext';
+import CopyColorSchemeContext from '@/components/CopyColorSchemeContext/CopyColorSchemeContext';
 import getColorSchemes from '@/requests/getColorSchemes';
 
 /* c8 ignore next */
@@ -16,9 +17,11 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ColorSchemesProvider colorSchemes={colorSchemes}>
-          {children}
-        </ColorSchemesProvider>
+        <CopyColorSchemeContext>
+          <ColorSchemesProvider colorSchemes={colorSchemes}>
+            {children}
+          </ColorSchemesProvider>
+        </CopyColorSchemeContext>
       </body>
     </html>
   );

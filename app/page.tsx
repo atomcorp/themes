@@ -5,19 +5,31 @@ import ToggleCurrentLightness from '@/components/ToggleCurrentLightness/ToggleCu
 import NextPrevButton from '@/components/NextPrevButton/NextPrevButton';
 import CurrentColorScheme from '@/components/CurrentColorScheme/CurrentColorScheme';
 import CodeExampleSelect from '@/components/CurrentColorScheme/CodeExampleSelect';
+import AddColorSchemeButton from '@/components/CopyColorSchemes/AddColorSchemeButton';
+import filterColorSchemes from '@/utilities/filterColorSchemes';
+import RemoveColorSchemeButton from '@/components/CopyColorSchemes/RemoveColorSchemeButton';
+import ListCopiedColorSchemes from '@/components/CopyColorSchemes/ListCopiedColorSchemes';
 
 export default async function Home() {
   const colorSchemes = await getColorSchemes();
+  const {lightColorSchemes, darkColorSchemes} =
+    filterColorSchemes(colorSchemes);
   return (
     <main>
       <Title />
       <ToggleCurrentLightness />
-      <ColorSchemeSelector />
+      <ColorSchemeSelector
+        lightColorSchemes={lightColorSchemes}
+        darkColorSchemes={darkColorSchemes}
+      />
       <NextPrevButton colorSchemes={colorSchemes} direction="prev" />
       <NextPrevButton colorSchemes={colorSchemes} direction="next" />
       <CurrentColorScheme>
         <CodeExampleSelect />
       </CurrentColorScheme>
+      <AddColorSchemeButton />
+      <RemoveColorSchemeButton />
+      <ListCopiedColorSchemes />
     </main>
   );
 }

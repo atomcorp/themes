@@ -1,6 +1,6 @@
 import {CSSProperties, ReactNode} from 'react';
 
-import colorScheme from '@/components/CurrentColorScheme/CurrentColorScheme.module.css';
+import colorSchemeCSS from '@/components/CurrentColorScheme/CurrentColorScheme.module.css';
 
 type options = {
   bold?: boolean;
@@ -11,15 +11,15 @@ type options = {
 const getClasses = (color: string, options: options) => {
   const classes = [];
   if (options.inverse) {
-    classes.push(colorScheme.inverse);
+    classes.push(colorSchemeCSS.inverse);
   } else {
-    classes.push(colorScheme[color]);
+    classes.push(colorSchemeCSS[color]);
   }
   if (options.bold) {
-    classes.push(colorScheme.bold);
+    classes.push(colorSchemeCSS.bold);
   }
   if (options.dim) {
-    classes.push(colorScheme.dim);
+    classes.push(colorSchemeCSS.dim);
   }
   return classes.join(' ');
 };

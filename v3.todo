@@ -1,8 +1,8 @@
 V3:
   Targets:
     ☐ Use Playwright
-    ☐ Use lit
-    ☐ Use vite
+    ✘ Use lit @cancelled(23-04-16 17:05)
+    ✘ Use vite @cancelled(23-04-16 17:05)
     ☐ Use modern CSS (ems, margin-inline, margin-block, padding-inline, padding-block)
     ☐ Be completely SSG
     ☐ Nicer design (use Figma?)
@@ -10,7 +10,7 @@ V3:
     ☐ Add themes (learn.microsoft.com/en-us/windows/terminal/customize-settings/themes) and rename color-schemes
       ☐ Add example themes (https://learn.microsoft.com/en-us/windows/terminal/custom-terminal-gallery/theme-gallery)
     ☐ Copy multiple themes in one go
-    ☐ Allow bold, underline 
+    ✔ Allow bold, underline @done(23-04-16 17:06)
     ☐ Add Radix Radio Groups for Light / Dark
   Stretch:
     ☐ Align colours by hue (as alternative to alphabetical)

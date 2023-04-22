@@ -8,8 +8,6 @@ import {
   CurrentColorSchemeContext,
   SetCurrentColorSchemeContext,
   CurrentLightnessContext,
-  LightColorSchemesContext,
-  DarkColorSchemesContext,
   ColorSchemesProvider,
 } from './ColorSchemeContext';
 
@@ -84,39 +82,5 @@ it('should set the set current color scheme context', async () => {
 
   expect(screen.getByRole('heading', {level: 1})).toHaveTextContent(
     secondDarkThemeName
-  );
-});
-
-it('should show the LightColorSchemesContext ', () => {
-  const firstLightTheme = schemes.find((theme) => !theme.meta.isDark);
-  const firstLightThemeName = firstLightTheme?.name || '';
-  render(
-    <ColorSchemesProvider colorSchemes={schemes}>
-      <LightColorSchemesContext.Consumer>
-        {(lightColorSchemes) => (
-          <h1>{lightColorSchemes && lightColorSchemes[0].name}</h1>
-        )}
-      </LightColorSchemesContext.Consumer>
-    </ColorSchemesProvider>
-  );
-  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent(
-    firstLightThemeName
-  );
-});
-
-it('should show the DarkColorSchemesContext ', () => {
-  const firstDarkTheme = schemes.find((theme) => theme.meta.isDark);
-  const firstDarkThemeName = firstDarkTheme?.name || '';
-  render(
-    <ColorSchemesProvider colorSchemes={schemes}>
-      <DarkColorSchemesContext.Consumer>
-        {(darkColorSchemes) => (
-          <h1>{darkColorSchemes && darkColorSchemes[0].name}</h1>
-        )}
-      </DarkColorSchemesContext.Consumer>
-    </ColorSchemesProvider>
-  );
-  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent(
-    firstDarkThemeName
   );
 });
