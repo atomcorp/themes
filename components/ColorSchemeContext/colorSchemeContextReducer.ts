@@ -1,5 +1,5 @@
 import {colorSchemeAndMeta, Lightness} from '@/types';
-import immer from 'immer';
+import {produce} from 'immer';
 import {Dispatch, useCallback} from 'react';
 
 export type ColorSchemeState = {
@@ -34,7 +34,7 @@ export const colorSchemeReducer = (
   state: ColorSchemeState,
   action: ColorSchemeAction
 ): ColorSchemeState =>
-  immer(state, (draft: ColorSchemeState) => {
+  produce(state, (draft: ColorSchemeState) => {
     switch (action.type) {
       case 'setColorScheme':
         {
