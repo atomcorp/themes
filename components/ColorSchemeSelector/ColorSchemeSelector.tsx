@@ -1,20 +1,14 @@
 'use client';
 
 import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
-import {colorSchemeAndMeta} from '@/types';
 
-type Props = {
-  darkColorSchemes: colorSchemeAndMeta[];
-  lightColorSchemes: colorSchemeAndMeta[];
-};
-
-const ColorSchemeSelector = (props: Props) => {
+const ColorSchemeSelector = () => {
   const {colorSchemeState, setCurrentColorScheme} = useColorSchemes();
 
   const colorSchemes =
     colorSchemeState.currentLightness === 'dark'
-      ? props.darkColorSchemes
-      : props.lightColorSchemes;
+      ? colorSchemeState.darkColorSchemes
+      : colorSchemeState.lightColorSchemes;
 
   return (
     <select
