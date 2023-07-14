@@ -1,0 +1,44 @@
+/* CSS from https://web.dev/speedy-css-tip-animated-gradient-text */
+
+.container {
+  --bg-size: 400%;
+  --color-one: white;
+  --color-two: white;
+  --color-three: white;
+  --color-four: white;
+  --color-five: white;
+  background: linear-gradient(
+      130deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-four),
+      var(--color-five),
+      var(--color-four),
+      var(--color-three),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .container {
+    animation: animate 16s ease-in-out infinite reverse;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 10% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 10% 0%;
+    }
+  }
+}
