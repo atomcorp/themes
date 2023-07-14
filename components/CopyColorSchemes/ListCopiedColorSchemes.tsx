@@ -1,14 +1,13 @@
 'use client';
 
-import useDefinedContext from '@/utilities/useDefinedContext';
-import {CopiedThemeNamesContext} from '@/components/CopyColorSchemeContext/CopyColorSchemeContext';
+import useCopiedColorSchemes from '@/components/CopyColorSchemeContext/useCopiedColorSchemes';
 
 const ListCopiedColorSchemes = () => {
-  const copiedColorSchemes = useDefinedContext(CopiedThemeNamesContext);
+  const {copiedThemeNames} = useCopiedColorSchemes();
   return (
     <ul>
-      {copiedColorSchemes.sort().map((copiedColorScheme) => (
-        <li key={copiedColorScheme}>{copiedColorScheme}</li>
+      {copiedThemeNames.sort().map((copiedThemeName) => (
+        <li key={copiedThemeName}>{copiedThemeName}</li>
       ))}
     </ul>
   );

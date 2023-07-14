@@ -10,7 +10,7 @@ import {
 } from '@/utilities/mockColorSchemes';
 import {
   ColorSchemesProvider,
-  SetCurrentLightnessContext,
+  SetColorSchemeStateContext,
 } from '@/components/ColorSchemeContext/ColorSchemeContext';
 import userEvent from '@testing-library/user-event';
 import filterColorSchemes from '@/utilities/filterColorSchemes';
@@ -38,17 +38,23 @@ it('should render the combo box when lightness is light', async () => {
         lightColorSchemes={lightColorSchemes}
         darkColorSchemes={darkColorSchemes}
       />
-      <SetCurrentLightnessContext.Consumer>
-        {(currentLightness) => (
+      <SetColorSchemeStateContext.Consumer>
+        {(dispatch) => (
           <button
             onClick={() => {
-              currentLightness && currentLightness('light');
+              dispatch &&
+                dispatch({
+                  type: 'setLightness',
+                  payload: {
+                    lightness: 'light',
+                  },
+                });
             }}
           >
             Light theme
           </button>
         )}
-      </SetCurrentLightnessContext.Consumer>
+      </SetColorSchemeStateContext.Consumer>
     </ColorSchemesProvider>
   );
 

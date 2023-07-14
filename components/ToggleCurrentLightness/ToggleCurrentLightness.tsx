@@ -1,20 +1,15 @@
 // two buttons that toggle the current lightness
 'use client';
 
-import {
-  CurrentLightnessContext,
-  SetCurrentLightnessContext,
-} from '@/components/ColorSchemeContext/ColorSchemeContext';
-import useDefinedContext from '@/utilities/useDefinedContext';
+import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
 
 const ToggleCurrentLightness = () => {
-  const currentLightness = useDefinedContext(CurrentLightnessContext);
-  const setCurrentLightness = useDefinedContext(SetCurrentLightnessContext);
+  const {colorSchemeState, setCurrentLightness} = useColorSchemes();
 
   return (
     <>
       <button
-        disabled={currentLightness === 'dark'}
+        disabled={colorSchemeState.currentLightness === 'dark'}
         onClick={() => {
           setCurrentLightness('dark');
         }}
@@ -22,7 +17,7 @@ const ToggleCurrentLightness = () => {
         Dark
       </button>
       <button
-        disabled={currentLightness === 'light'}
+        disabled={colorSchemeState.currentLightness === 'light'}
         onClick={() => {
           setCurrentLightness('light');
         }}

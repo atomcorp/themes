@@ -22,8 +22,8 @@ export default async function Home() {
         lightColorSchemes={lightColorSchemes}
         darkColorSchemes={darkColorSchemes}
       />
-      <NextPrevButton colorSchemes={colorSchemes} direction="prev" />
-      <NextPrevButton colorSchemes={colorSchemes} direction="next" />
+      <NextPrevButton direction="prev" />
+      <NextPrevButton direction="next" />
       <CurrentColorScheme>
         <CodeExampleSelect />
       </CurrentColorScheme>

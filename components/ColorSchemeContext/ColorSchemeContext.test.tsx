@@ -4,30 +4,55 @@ import {schemes} from '@/utilities/mockColorSchemes';
 import {render, screen} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import {
-  CurrentColorSchemeContext,
-  SetCurrentColorSchemeContext,
-  CurrentLightnessContext,
-  ColorSchemesProvider,
-} from './ColorSchemeContext';
+import {ColorSchemesProvider} from './ColorSchemeContext';
+import useColorSchemes from './useColorSchemes';
+
+const ColorSchemesDisplayMock = () => {
+  const {colorSchemeState, setCurrentLightness, setNextPrevColorScheme} =
+    useColorSchemes();
+  return (
+    <main>
+      <h1>{colorSchemeState.currentColorScheme.name}</h1>
+      <h2>{colorSchemeState.currentLightness}</h2>
+      <div role="alert">Hello World</div>
+      <button
+        onClick={() => {
+          setCurrentLightness('light');
+        }}
+      >
+        Set light lightness
+      </button>
+      <button
+        onClick={() => {
+          setCurrentLightness('dark');
+        }}
+      >
+        Set dark lightness
+      </button>
+      <button
+        onClick={() => {
+          setNextPrevColorScheme('next');
+        }}
+      >
+        Next theme
+      </button>
+    </main>
+  );
+};
 
 it('should render', () => {
   render(
     <ColorSchemesProvider colorSchemes={schemes}>
-      <h1>Hello World</h1>
+      <ColorSchemesDisplayMock />
     </ColorSchemesProvider>
   );
-  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent(
-    'Hello World'
-  );
+  expect(screen.getByRole('alert')).toHaveTextContent('Hello World');
 });
 
 it('should set the current color scheme context', () => {
   render(
     <ColorSchemesProvider colorSchemes={schemes}>
-      <CurrentColorSchemeContext.Consumer>
-        {(currentColorScheme) => <h1>{currentColorScheme?.name}</h1>}
-      </CurrentColorSchemeContext.Consumer>
+      <ColorSchemesDisplayMock />
     </ColorSchemesProvider>
   );
   const firstDarkTheme = schemes.find((theme) => theme.meta.isDark);
@@ -39,12 +64,13 @@ it('should set the current color scheme context', () => {
 it('should set the current lightness context', () => {
   render(
     <ColorSchemesProvider colorSchemes={schemes}>
-      <CurrentLightnessContext.Consumer>
-        {(currentLightness) => <h1>{currentLightness}</h1>}
-      </CurrentLightnessContext.Consumer>
+      <ColorSchemesDisplayMock />
     </ColorSchemesProvider>
   );
-  expect(screen.getByRole('heading', {level: 1})).toHaveTextContent('dark');
+  expect(screen.getByRole('heading', {level: 2})).toHaveTextContent('dark');
+  expect(screen.getByRole('heading', {level: 2})).not.toHaveTextContent(
+    'light'
+  );
 });
 
 it('should set the set current color scheme context', async () => {
@@ -58,27 +84,13 @@ it('should set the set current color scheme context', async () => {
 
   render(
     <ColorSchemesProvider colorSchemes={schemes}>
-      <CurrentColorSchemeContext.Consumer>
-        {(currentColorScheme) => <h1>{currentColorScheme?.name}</h1>}
-      </CurrentColorSchemeContext.Consumer>
-      <SetCurrentColorSchemeContext.Consumer>
-        {(setCurrentColorScheme) => (
-          <button
-            onClick={() =>
-              setCurrentColorScheme &&
-              setCurrentColorScheme(secondDarkThemeName)
-            }
-          >
-            Click Me
-          </button>
-        )}
-      </SetCurrentColorSchemeContext.Consumer>
+      <ColorSchemesDisplayMock />
     </ColorSchemesProvider>
   );
   expect(screen.getByRole('heading', {level: 1})).toHaveTextContent(
     firstDarkTheme?.name || ''
   );
-  await user.click(screen.getByRole('button', {name: 'Click Me'}));
+  await user.click(screen.getByRole('button', {name: 'Next theme'}));
 
   expect(screen.getByRole('heading', {level: 1})).toHaveTextContent(
     secondDarkThemeName

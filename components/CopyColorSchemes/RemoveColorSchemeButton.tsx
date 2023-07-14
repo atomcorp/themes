@@ -1,28 +1,25 @@
 'use client';
 
-import {CurrentColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
-import useDefinedContext from '@/utilities/useDefinedContext';
-import {
-  CopiedThemeNamesContext,
-  RemoveCopiedThemeNamesContext,
-} from '@/components/CopyColorSchemeContext/CopyColorSchemeContext';
+import useCopiedColorSchemes from '@/components/CopyColorSchemeContext/useCopiedColorSchemes';
+import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
 
 const RemoveColorSchemeButton = () => {
-  const currentColorScheme = useDefinedContext(CurrentColorSchemeContext);
-  const handleRemoveColorScheme = useDefinedContext(
-    RemoveCopiedThemeNamesContext
-  );
-  const copiedColorSchemes = useDefinedContext(CopiedThemeNamesContext);
+  const {colorSchemeState} = useColorSchemes();
+  const {copiedThemeNames, removeFromCopiedThemeNames} =
+    useCopiedColorSchemes();
+
   return (
     <button
-      disabled={!copiedColorSchemes.includes(currentColorScheme.name)}
+      disabled={
+        !copiedThemeNames.includes(colorSchemeState.currentColorScheme.name)
+      }
       type="button"
       className="btn btn-sm btn-outline-secondary"
       onClick={() => {
-        handleRemoveColorScheme(currentColorScheme.name);
+        removeFromCopiedThemeNames(colorSchemeState.currentColorScheme.name);
       }}
     >
-      Remove {currentColorScheme.name} from list
+      Remove {colorSchemeState.currentColorScheme.name} from list
     </button>
   );
 };

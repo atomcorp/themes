@@ -4,10 +4,9 @@
 'use client';
 import {CSSProperties, ReactNode} from 'react';
 
-import {CurrentColorSchemeContext} from '@/components/ColorSchemeContext/ColorSchemeContext';
 import {colorSchemeAndMeta} from '@/types';
-import useDefinedContext from '@/utilities/useDefinedContext';
 import css from './CurrentColorScheme.module.css';
+import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
 
 interface StyleProps extends CSSProperties {
   '--black': string;
@@ -62,12 +61,14 @@ type Props = {
 };
 
 const CurrentColorScheme = (props: Props) => {
-  const currentColorScheme = useDefinedContext(CurrentColorSchemeContext);
-  const colorsForCssVars = getColorsForCssVars(currentColorScheme);
+  const {colorSchemeState} = useColorSchemes();
+  const colorsForCssVars = getColorsForCssVars(
+    colorSchemeState.currentColorScheme
+  );
 
   return (
     <div className={css.container} style={colorsForCssVars}>
-      <h2>{currentColorScheme.name}</h2>
+      <h2>{colorSchemeState.currentColorScheme.name}</h2>
       {props.children}
     </div>
   );

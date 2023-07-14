@@ -12,13 +12,22 @@ V3:
     ☐ Copy multiple themes in one go
     ✔ Allow bold, underline @done(23-04-16 17:06)
     ☐ Add Radix Radio Groups for Light / Dark
+    ☐ Add native share button
   Stretch:
     ☐ Align colours by hue (as alternative to alphabetical)
     ☐ Nicer styling (shadows, animations)
     ☐ Serve this on AWS or GitHub?
     ☐ PWA
     ☐ Could add a view with all the themes in cards, and you can just scroll down
+      ☐ On mobile you scroll down the list and the currently selected theme is the one on screen when you you press the add button, it is added to the list
     ☐ Nike inspired drag draw https://www.framer.com/motion/use-drag-controls/
+      ☐ Perfect (not maintained): https://react-spring.bottom-sheet.dev/
+      ☐ https://github.com/radix-ui/design-system/blob/master/components/Sheet.tsx
+    ☐ Custom Colors Schemes get own .yaml file (https://github.com/Gogh-Co/Gogh/tree/master/themes)
+    ☐ Add from Terminal - run a command and preview and install direct from terminal
+    ☐ https://gogh-co.github.io/Gogh/wcag/ A11y report
+    ☐ Maybe logo can be `$ |` or `$ _` with a blinking cursor#
+      ☐ https://web.dev/speedy-css-tip-animated-gradient-text/
   Components:
     ☐ Logo
     ☐ Light/Dark scheme

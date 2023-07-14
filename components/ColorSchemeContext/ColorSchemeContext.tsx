@@ -1,27 +1,20 @@
 'use client';
 
-import {createContext, ReactNode, useReducer} from 'react';
+import {createContext, Dispatch, ReactNode, useReducer} from 'react';
 
-import {colorSchemeAndMeta, Lightness} from '@/types';
+import {colorSchemeAndMeta} from '@/types';
 import {
+  ColorSchemeAction,
   colorSchemeReducer,
   colorSchemeReducerInitialiser,
   ColorSchemeState,
-  useDispatchActions,
 } from '@/components/ColorSchemeContext/colorSchemeContextReducer';
 
-export const CurrentColorSchemeContext = createContext<
-  colorSchemeAndMeta | undefined
+export const ColorSchemeStateContext = createContext<
+  ColorSchemeState | undefined
 >(undefined);
-export const SetCurrentColorSchemeContext = createContext<
-  ((colorSchemeName: colorSchemeAndMeta['name']) => void) | undefined
->(undefined);
-export const CurrentLightnessContext = createContext<Lightness>('light');
-export const SetCurrentLightnessContext = createContext<
-  ((lightness: Lightness) => void) | undefined
->(undefined);
-export const SetNextPrevColorSchemeContext = createContext<
-  ((direction: 'next' | 'prev') => void) | undefined
+export const SetColorSchemeStateContext = createContext<
+  Dispatch<ColorSchemeAction> | undefined
 >(undefined);
 
 type ColorSchemesProviderProps = {
@@ -41,22 +34,12 @@ export const ColorSchemesProvider = (props: ColorSchemesProviderProps) => {
   const [state, dispatch] = useReducer(colorSchemeReducer, initState, () =>
     colorSchemeReducerInitialiser(props.colorSchemes)
   );
-  const {setCurrentColorScheme, setCurrentLightness, setNextPrevColorScheme} =
-    useDispatchActions(dispatch);
 
   return (
-    <CurrentColorSchemeContext.Provider value={state.currentColorScheme}>
-      <SetCurrentColorSchemeContext.Provider value={setCurrentColorScheme}>
-        <CurrentLightnessContext.Provider value={state.currentLightness}>
-          <SetCurrentLightnessContext.Provider value={setCurrentLightness}>
-            <SetNextPrevColorSchemeContext.Provider
-              value={setNextPrevColorScheme}
-            >
-              {props.children}
-            </SetNextPrevColorSchemeContext.Provider>
-          </SetCurrentLightnessContext.Provider>
-        </CurrentLightnessContext.Provider>
-      </SetCurrentColorSchemeContext.Provider>
-    </CurrentColorSchemeContext.Provider>
+    <ColorSchemeStateContext.Provider value={state}>
+      <SetColorSchemeStateContext.Provider value={dispatch}>
+        {props.children}
+      </SetColorSchemeStateContext.Provider>
+    </ColorSchemeStateContext.Provider>
   );
 };
