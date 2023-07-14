@@ -1,4 +1,5 @@
 import '@testing-library/jest-dom';
+import '@/utilities/mock-resizeobserver';
 import {render, screen, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
@@ -15,18 +16,18 @@ const ProviderWrapper = () => (
 test('should default to dark', () => {
   render(<ProviderWrapper />);
 
-  expect(screen.getByRole('button', {name: 'Light'})).not.toBeDisabled();
-  expect(screen.getByRole('button', {name: 'Dark'})).toBeDisabled();
+  expect(screen.getByRole('radio', {name: 'Light'})).not.toBeChecked();
+  expect(screen.getByRole('radio', {name: 'Dark'})).toBeChecked();
 });
 
 test('should toggle to light', async () => {
   const user = userEvent.setup();
   render(<ProviderWrapper />);
 
-  await user.click(screen.getByRole('button', {name: 'Light'}));
+  await user.click(screen.getByRole('radio', {name: 'Light'}));
   await waitFor(() => {
-    expect(screen.getByRole('button', {name: 'Light'})).toBeDisabled();
-    expect(screen.getByRole('button', {name: 'Dark'})).not.toBeDisabled();
+    expect(screen.getByRole('radio', {name: 'Light'})).toBeChecked();
+    expect(screen.getByRole('radio', {name: 'Dark'})).not.toBeChecked();
   });
 });
 
@@ -34,9 +35,9 @@ test('should toggle to dark', async () => {
   const user = userEvent.setup();
   render(<ProviderWrapper />);
 
-  await user.click(screen.getByRole('button', {name: 'Light'}));
-  await user.click(screen.getByRole('button', {name: 'Dark'}));
+  await user.click(screen.getByRole('radio', {name: 'Light'}));
+  await user.click(screen.getByRole('radio', {name: 'Dark'}));
 
-  expect(screen.getByRole('button', {name: 'Dark'})).toBeDisabled();
-  expect(screen.getByRole('button', {name: 'Light'})).not.toBeDisabled();
+  expect(screen.getByRole('radio', {name: 'Dark'})).toBeChecked();
+  expect(screen.getByRole('radio', {name: 'Light'})).not.toBeChecked();
 });

@@ -12,11 +12,6 @@ const JestSummary = () => {
   return (
     <figure>
       <figcaption>Jest summary example</figcaption>
-      <div>
-        limit50x----------------------------------------- Test Suites: 1 failed,
-        9 passed, 10 total Tests: 1 failed, 36 passed, 37 total Snapshots: 1
-        passed, 1 total Time: 2.897 s Ran all test suites.
-      </div>
       <Background>
         <div>
           <Green bold inverse>
