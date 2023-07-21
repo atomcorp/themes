@@ -13,6 +13,7 @@ V3:
     ✔ Allow bold, underline @done(23-04-16 17:06)
     ✔ Add Radix Radio Groups for Light / Dark @done(23-07-14 14:02)
     ☐ Add native share button
+    ☐ Need virtualization for a long list of themes
   Stretch:
     ☐ Align colours by hue (as alternative to alphabetical)
     ☐ Nicer styling (shadows, animations)

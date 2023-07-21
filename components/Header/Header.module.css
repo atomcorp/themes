@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  display: inline-block;
+  margin: 0;
+}

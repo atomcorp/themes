@@ -14,7 +14,6 @@ const RemoveColorSchemeButton = () => {
         !copiedThemeNames.includes(colorSchemeState.currentColorScheme.name)
       }
       type="button"
-      className="btn btn-sm btn-outline-secondary"
       onClick={() => {
         removeFromCopiedThemeNames(colorSchemeState.currentColorScheme.name);
       }}

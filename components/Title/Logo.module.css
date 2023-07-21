@@ -1,13 +1,14 @@
-/* CSS from https://web.dev/speedy-css-tip-animated-gradient-text */
+/* Text CSS from https://web.dev/speedy-css-tip-animated-gradient-text */
+/* Border CSS from by https://codepen.io/mike-schultz/pen/NgQvGO */
 
-.container {
+.border {
   --bg-size: 400%;
   --color-one: white;
   --color-two: white;
   --color-three: white;
   --color-four: white;
   --color-five: white;
-  background: linear-gradient(
+  --gradient-animation: linear-gradient(
       130deg,
       var(--color-one),
       var(--color-two),
@@ -20,14 +21,30 @@
       var(--color-one)
     )
     0 0 / var(--bg-size) 100%;
+
+  display: inline-block;
+  border-radius: 4px;
+  background: var(--gradient-animation);
+  padding: 4px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.text {
+  background: var(--gradient-animation);
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;
-  font-family: sans-serif;
+  font-family: monospace, monospace;
+  padding: 4px;
+}
+
+.background {
+  background-color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .container {
+  .text,
+  .border {
     animation: animate 16s ease-in-out infinite reverse;
   }
   @keyframes animate {

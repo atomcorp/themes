@@ -4,35 +4,37 @@ import {CSSProperties} from 'react';
 
 import styles from './Logo.module.css';
 import useColorSchemes from '@/components/ColorSchemeContext/useColorSchemes';
-import getRandomColors from '@/utilities/getRandomColors';
+import useRandomColors from '@/utilities/useRandomServerColors';
 
 interface StyleProps extends CSSProperties {
-  '--color-one'?: string;
-  '--color-two'?: string;
-  '--color-three'?: string;
-  '--color-four'?: string;
-  '--color-five'?: string;
+  '--color-one': string;
+  '--color-two': string;
+  '--color-three': string;
+  '--color-four': string;
+  '--color-five': string;
 }
 
 const Logo = () => {
   const {colorSchemeState} = useColorSchemes();
-  const randomColors = getRandomColors(colorSchemeState.currentColorScheme);
+  const colors = useRandomColors(colorSchemeState.currentColorScheme);
 
   return (
-    <span
+    <div
       style={
         {
-          '--color-one': randomColors[0],
-          '--color-two': randomColors[1],
-          '--color-three': randomColors[2],
-          '--color-four': randomColors[3],
-          '--color-five': randomColors[4],
+          '--color-one': colors[0],
+          '--color-two': colors[1],
+          '--color-three': colors[2],
+          '--color-four': colors[3],
+          '--color-five': colors[4],
         } as StyleProps
       }
-      className={styles.container}
+      className={styles.border}
     >
-      {'>_'}
-    </span>
+      <div className={styles.background}>
+        <div className={styles.text}>{'>_'}</div>
+      </div>{' '}
+    </div>
   );
 };
 

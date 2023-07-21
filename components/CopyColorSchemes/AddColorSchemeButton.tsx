@@ -13,7 +13,6 @@ const AddColorSchemeButton = () => {
     <button
       disabled={copiedThemeNames.includes(currentColorSchemeName)}
       type="button"
-      className="btn btn-sm btn-outline-secondary"
       onClick={() => {
         addToCopiedThemeNames(currentColorSchemeName);
       }}
