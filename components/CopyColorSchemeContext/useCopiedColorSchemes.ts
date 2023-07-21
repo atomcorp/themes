@@ -2,7 +2,7 @@ import {colorSchemeAndMeta} from '@/types';
 import {
   CopiedThemeNamesContext,
   SetCopiedThemeNamesContext,
-} from './CopyColorSchemeContext';
+} from '@/components/CopyColorSchemeContext/CopyColorSchemeProvider';
 import useDefinedContext from '@/utilities/useDefinedContext';
 
 const useCopiedColorSchemes = () => {

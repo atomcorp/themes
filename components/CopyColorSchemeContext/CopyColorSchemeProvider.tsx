@@ -21,7 +21,7 @@ type Props = {
   children: ReactNode;
 };
 
-const CopyColorSchemeContext = (props: Props) => {
+const CopyColorSchemeProvider = (props: Props) => {
   const [copiedThemeNames, setCopiedThemeNames] = useState<
     colorSchemeAndMeta['name'][]
   >([]);
@@ -34,4 +34,4 @@ const CopyColorSchemeContext = (props: Props) => {
   );
 };
 
-export default CopyColorSchemeContext;
+export default CopyColorSchemeProvider;

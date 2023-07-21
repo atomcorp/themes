@@ -1,7 +1,7 @@
 import {Inter} from 'next/font/google';
 
 import {ColorSchemesProvider} from '@/components/ColorSchemeContext/ColorSchemeContext';
-import CopyColorSchemeContext from '@/components/CopyColorSchemeContext/CopyColorSchemeContext';
+import CopyColorSchemeProvider from '@/components/CopyColorSchemeContext/CopyColorSchemeProvider';
 import getColorSchemes from '@/requests/getColorSchemes';
 
 import ColorSchemeSelector from '@/components/ColorSchemeSelector/ColorSchemeSelector';
@@ -31,7 +31,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.variable}>
-        <CopyColorSchemeContext>
+        <CopyColorSchemeProvider>
           <ColorSchemesProvider colorSchemes={colorSchemes}>
             <ActiveColorSchemeWrapper>
               <Header />
@@ -43,7 +43,7 @@ export default async function RootLayout({
               <ListCopiedColorSchemes />
             </ActiveColorSchemeWrapper>
           </ColorSchemesProvider>
-        </CopyColorSchemeContext>
+        </CopyColorSchemeProvider>
       </body>
     </html>
   );
