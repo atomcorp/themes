@@ -3,7 +3,6 @@ import {render, screen} from '@testing-library/react';
 
 import {
   Foreground,
-  Background,
   Red,
   BrightRed,
   Green,
@@ -11,12 +10,13 @@ import {
   Yellow,
   BrightYellow,
 } from '../ColorComponents';
+import css from '../ColorComponents.module.css';
 
 const Mock = () => {
   return (
     <>
       <Foreground>Foreground</Foreground>
-      <Background>Background</Background>
+      <div className={css.background}>Background</div>
       <Red>Red</Red>
       <BrightRed>BrightRed</BrightRed>
       <Green>Green</Green>

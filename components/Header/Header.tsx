@@ -1,4 +1,4 @@
-import Logo from '@/components/Title/Logo';
+import Logo from '@/components/Logo/Logo';
 
 import css from './Header.module.css';
 

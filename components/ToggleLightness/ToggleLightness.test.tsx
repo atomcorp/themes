@@ -3,13 +3,13 @@ import '@/utilities/mock-resizeobserver';
 import {render, screen, waitFor} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import ToggleCurrentLightness from './ToggleCurrentLightness';
+import ToggleLightness from './ToggleLightness';
 import {ColorSchemesProvider} from '@/components/ColorSchemeContext/ColorSchemeContext';
 import {darkThemeA, lightThemeA} from '@/utilities/mockColorSchemes';
 
 const ProviderWrapper = () => (
   <ColorSchemesProvider colorSchemes={[darkThemeA, lightThemeA]}>
-    <ToggleCurrentLightness />
+    <ToggleLightness />
   </ColorSchemesProvider>
 );
 

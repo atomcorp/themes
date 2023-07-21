@@ -8,23 +8,26 @@ import {ColorSchemesProvider} from './ColorSchemeContext';
 import useColorSchemes from './useColorSchemes';
 
 const ColorSchemesDisplayMock = () => {
-  const {colorSchemeState, setCurrentLightness, setNextPrevColorScheme} =
-    useColorSchemes();
+  const {
+    colorSchemeState: {activeColorScheme, lightness},
+    setLightness,
+    setNextPrevColorScheme,
+  } = useColorSchemes();
   return (
     <main>
-      <h1>{colorSchemeState.currentColorScheme.name}</h1>
-      <h2>{colorSchemeState.currentLightness}</h2>
+      <h1>{activeColorScheme.name}</h1>
+      <h2>{lightness}</h2>
       <div role="alert">Hello World</div>
       <button
         onClick={() => {
-          setCurrentLightness('light');
+          setLightness('light');
         }}
       >
         Set light lightness
       </button>
       <button
         onClick={() => {
-          setCurrentLightness('dark');
+          setLightness('dark');
         }}
       >
         Set dark lightness

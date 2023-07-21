@@ -7,14 +7,14 @@ import {
   Content as TabContent,
 } from '@radix-ui/react-tabs';
 
-import ChalkExample from '@/components/CurrentColorScheme/CodeExamples/ChalkExample';
-import JestSummary from '@/components/CurrentColorScheme/CodeExamples/JestSummary';
+import ChalkExample from '@/components/ColorSchemePreviews/ChalkExample';
+import JestPreview from '@/components/ColorSchemePreviews/JestPreview';
 
 const examplesEnum = [
   {
     id: 'jest',
     label: 'Jest',
-    component: JestSummary,
+    component: JestPreview,
   },
   {
     id: 'chalk',
@@ -23,7 +23,7 @@ const examplesEnum = [
   },
 ] as const;
 
-const CodeExampleSelect = () => {
+const PreviewTab = () => {
   return (
     <TabRoot defaultValue={examplesEnum[0].id}>
       <TabList aria-label="Code example tabs">
@@ -42,4 +42,4 @@ const CodeExampleSelect = () => {
   );
 };
 
-export default CodeExampleSelect;
+export default PreviewTab;

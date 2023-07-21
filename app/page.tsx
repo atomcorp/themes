@@ -1,4 +1,4 @@
-import CodeExampleSelect from '@/components/CurrentColorScheme/CodeExampleSelect';
+import PreviewTab from '@/components/PreviewTab/PreviewTab';
 import NextPrevButton from '@/components/NextPrevButton/NextPrevButton';
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
     <main>
       <NextPrevButton direction="prev" />
       <NextPrevButton direction="next" />
-      <CodeExampleSelect />
+      <PreviewTab />
     </main>
   );
 }

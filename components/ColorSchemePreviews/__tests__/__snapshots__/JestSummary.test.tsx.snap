@@ -10,8 +10,7 @@ exports[`should render all the components 1`] = `
   >
     <div>
       <span
-        class="inverse bold"
-        style="--color: var(--green);"
+        style="font-weight: 700;"
       >
          
         PASS
@@ -19,20 +18,19 @@ exports[`should render all the components 1`] = `
       </span>
        
       <span
-        class="foreground dim"
+        style="opacity: 0.5;"
       >
-        components/ToggleCurrentLightness/
+        components/ToggleLightness/
       </span>
       <span
-        class="foreground bold"
+        style="font-weight: 700;"
       >
-        ToggleCurrentLightness.test.tsx
+        ToggleLightness.test.tsx
       </span>
     </div>
     <div>
       <span
-        class="inverse bold"
-        style="--color: var(--red);"
+        style="font-weight: 700;"
       >
          
         FAIL
@@ -40,30 +38,30 @@ exports[`should render all the components 1`] = `
       </span>
        
       <span
-        class="foreground dim"
+        style="opacity: 0.5;"
       >
         components/NextPrevButton/
       </span>
       <span
-        class="foreground bold"
+        style="font-weight: 700;"
       >
         NextPrevButton.test.tsx
       </span>
     </div>
     <div>
       <span
-        class="foreground bold"
+        style="font-weight: 700;"
       >
         Test Suites: 
       </span>
       <span
-        class="red bold"
+        style="font-weight: 700;"
       >
         1 failed
       </span>
       , 
       <span
-        class="green bold"
+        style="font-weight: 700;"
       >
         9 passed
       </span>
@@ -71,7 +69,7 @@ exports[`should render all the components 1`] = `
     </div>
     <div>
       <span
-        class="foreground bold"
+        style="font-weight: 700;"
       >
         Time: 
          
@@ -83,14 +81,14 @@ exports[`should render all the components 1`] = `
       </span>
        
       <span
-        class="yellow bold"
+        style="font-weight: 700;"
       >
         2.897
       </span>
     </div>
     <div>
       <span
-        class="foreground dim"
+        style="opacity: 0.5;"
       >
         Ran all test suites.
       </span>

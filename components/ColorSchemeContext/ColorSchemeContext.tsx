@@ -23,8 +23,8 @@ type ColorSchemesProviderProps = {
 };
 
 const initState: ColorSchemeState = {
-  currentColorScheme: {} as colorSchemeAndMeta,
-  currentLightness: 'dark',
+  activeColorScheme: {} as colorSchemeAndMeta,
+  lightness: 'dark',
   lightColorSchemes: [],
   darkColorSchemes: [],
   colorSchemes: [],

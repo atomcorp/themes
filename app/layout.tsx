@@ -5,12 +5,11 @@ import CopyColorSchemeContext from '@/components/CopyColorSchemeContext/CopyColo
 import getColorSchemes from '@/requests/getColorSchemes';
 
 import ColorSchemeSelector from '@/components/ColorSchemeSelector/ColorSchemeSelector';
-import ToggleCurrentLightness from '@/components/ToggleCurrentLightness/ToggleCurrentLightness';
+import ToggleLightness from '@/components/ToggleLightness/ToggleLightness';
 import AddColorSchemeButton from '@/components/CopyColorSchemes/AddColorSchemeButton';
 import RemoveColorSchemeButton from '@/components/CopyColorSchemes/RemoveColorSchemeButton';
 import ListCopiedColorSchemes from '@/components/CopyColorSchemes/ListCopiedColorSchemes';
-import CurrentColorScheme from '@/components/CurrentColorScheme/CurrentColorScheme';
-import Link from 'next/link';
+import ActiveColorSchemeWrapper from '@/components/ActiveColorSchemeWrapper/ActiveColorSchemeWrapper';
 import Header from '@/components/Header';
 
 import './globals.css';
@@ -34,16 +33,15 @@ export default async function RootLayout({
       <body className={inter.variable}>
         <CopyColorSchemeContext>
           <ColorSchemesProvider colorSchemes={colorSchemes}>
-            <CurrentColorScheme>
+            <ActiveColorSchemeWrapper>
               <Header />
-              <Link href="/">Home</Link> | <Link href="/list">List</Link>
-              <ToggleCurrentLightness />
+              <ToggleLightness />
               <ColorSchemeSelector />
               {children}
               <AddColorSchemeButton />
               <RemoveColorSchemeButton />
               <ListCopiedColorSchemes />
-            </CurrentColorScheme>
+            </ActiveColorSchemeWrapper>
           </ColorSchemesProvider>
         </CopyColorSchemeContext>
       </body>

@@ -15,8 +15,10 @@ interface StyleProps extends CSSProperties {
 }
 
 const Logo = () => {
-  const {colorSchemeState} = useColorSchemes();
-  const colors = useRandomColors(colorSchemeState.currentColorScheme);
+  const {
+    colorSchemeState: {activeColorScheme},
+  } = useColorSchemes();
+  const colors = useRandomColors(activeColorScheme);
 
   return (
     <div

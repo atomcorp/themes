@@ -2,17 +2,17 @@ import {render, screen, waitFor} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 
-import CodeExampleSelect from './CodeExampleSelect';
+import PreviewTab from './PreviewTab';
 
 test('should render tablist', () => {
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
   expect(
     screen.getByRole('tablist', {name: 'Code example tabs'})
   ).toBeInTheDocument();
 });
 
 it('should auto-select first tab', () => {
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
 
   expect(screen.getByRole('tab', {name: 'Jest'})).toHaveAttribute(
     'aria-selected',
@@ -21,7 +21,7 @@ it('should auto-select first tab', () => {
 });
 
 it('should not auto-select other tabs', () => {
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
   expect(screen.getByRole('tab', {name: 'Chalk'})).toHaveAttribute(
     'aria-selected',
     'false'
@@ -29,12 +29,12 @@ it('should not auto-select other tabs', () => {
 });
 
 it('should show auto-selected tab panel', () => {
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
   expect(screen.getByRole('tabpanel', {name: 'Jest'})).toBeInTheDocument();
 });
 
 it('should not show other tab panels', () => {
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
   expect(
     screen.queryByRole('tabpanel', {name: 'Chalk'})
   ).not.toBeInTheDocument();
@@ -42,7 +42,7 @@ it('should not show other tab panels', () => {
 
 it('should select tab on click', async () => {
   const user = userEvent.setup();
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
 
   const chalkTab = screen.getByRole('tab', {name: 'Chalk'});
   await user.click(chalkTab);
@@ -57,7 +57,7 @@ it('should select tab on click', async () => {
 });
 
 it('should show selected tab panel by default', () => {
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
 
   expect(screen.getByRole('tabpanel', {name: 'Jest'})).toBeInTheDocument();
   expect(
@@ -67,7 +67,7 @@ it('should show selected tab panel by default', () => {
 
 it('should show selected tab panel when changed', async () => {
   const user = userEvent.setup();
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
 
   const chalkTab = screen.getByRole('tab', {name: 'Chalk'});
   await user.click(chalkTab);
@@ -82,7 +82,7 @@ it('should show selected tab panel when changed', async () => {
 
 it('should respond to keyboard navigation', async () => {
   const user = userEvent.setup();
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
 
   screen.getByRole('tablist', {name: 'Code example tabs'}).focus();
   await user.keyboard('{arrowright}');
@@ -101,7 +101,7 @@ it('should respond to keyboard navigation', async () => {
 
 it('should loop back when keyboard navigation at end', async () => {
   const user = userEvent.setup();
-  render(<CodeExampleSelect />);
+  render(<PreviewTab />);
 
   screen.getByRole('tablist', {name: 'Code example tabs'}).focus();
   await user.keyboard('{arrowright}');

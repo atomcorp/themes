@@ -3,8 +3,8 @@ import {produce} from 'immer';
 import {Dispatch, useCallback} from 'react';
 
 export type ColorSchemeState = {
-  currentColorScheme: colorSchemeAndMeta;
-  currentLightness: Lightness;
+  activeColorScheme: colorSchemeAndMeta;
+  lightness: Lightness;
   lightColorSchemes: colorSchemeAndMeta[];
   darkColorSchemes: colorSchemeAndMeta[];
   colorSchemes: colorSchemeAndMeta[];
@@ -38,37 +38,37 @@ export const colorSchemeReducer = (
     switch (action.type) {
       case 'setColorScheme':
         {
-          const currentColorScheme = state.colorSchemes.find(
+          const activeColorScheme = state.colorSchemes.find(
             (colorScheme) => colorScheme.name === action.payload.colorSchemeName
           );
-          if (!currentColorScheme) {
+          if (!activeColorScheme) {
             throw new Error(
               `Color scheme ${action.payload.colorSchemeName} not found`
             );
           }
-          draft.currentColorScheme = currentColorScheme;
+          draft.activeColorScheme = activeColorScheme;
         }
         break;
       case 'setLightness':
         {
-          draft.currentLightness = action.payload.lightness;
+          draft.lightness = action.payload.lightness;
           // reset current color scheme to first in lightness
-          const currentColorSchemesByLightness =
-            draft.currentLightness === 'light'
+          const activeColorSchemesByLightness =
+            draft.lightness === 'light'
               ? draft.lightColorSchemes
               : draft.darkColorSchemes;
-          draft.currentColorScheme = currentColorSchemesByLightness[0];
+          draft.activeColorScheme = activeColorSchemesByLightness[0];
         }
         break;
       case 'setNextPrevColorScheme':
         {
-          const currentColorSchemesByLightness =
-            draft.currentLightness === 'light'
+          const activeColorSchemesByLightness =
+            draft.lightness === 'light'
               ? draft.lightColorSchemes
               : draft.darkColorSchemes;
-          draft.currentColorScheme = getNextPrevColorScheme(
-            currentColorSchemesByLightness,
-            draft.currentColorScheme.name,
+          draft.activeColorScheme = getNextPrevColorScheme(
+            activeColorSchemesByLightness,
+            draft.activeColorScheme.name,
             action.payload.direction
           );
         }
@@ -79,18 +79,15 @@ export const colorSchemeReducer = (
 export const colorSchemeReducerInitialiser = (
   colorSchemes: colorSchemeAndMeta[]
 ): ColorSchemeState => {
-  const lightColorSchemes = colorSchemesFilteredByCurrentLightness(
+  const lightColorSchemes = colorSchemesFilteredByLlightness(
     colorSchemes,
     false
   );
-  const darkColorSchemes = colorSchemesFilteredByCurrentLightness(
-    colorSchemes,
-    true
-  );
+  const darkColorSchemes = colorSchemesFilteredByLlightness(colorSchemes, true);
 
   return {
-    currentColorScheme: darkColorSchemes[0],
-    currentLightness: 'dark',
+    activeColorScheme: darkColorSchemes[0],
+    lightness: 'dark',
     lightColorSchemes,
     darkColorSchemes,
     colorSchemes,
@@ -98,7 +95,7 @@ export const colorSchemeReducerInitialiser = (
 };
 
 export const useDispatchActions = (dispatch: Dispatch<ColorSchemeAction>) => {
-  const setCurrentColorScheme = useCallback(
+  const setActiveColorScheme = useCallback(
     (colorSchemeName: colorSchemeAndMeta['name']) => {
       dispatch({
         type: 'setColorScheme',
@@ -110,7 +107,7 @@ export const useDispatchActions = (dispatch: Dispatch<ColorSchemeAction>) => {
     [dispatch]
   );
 
-  const setCurrentLightness = useCallback(
+  const setLightness = useCallback(
     (lightness: Lightness) => {
       dispatch({
         type: 'setLightness',
@@ -135,22 +132,22 @@ export const useDispatchActions = (dispatch: Dispatch<ColorSchemeAction>) => {
   );
 
   return {
-    setCurrentColorScheme,
-    setCurrentLightness,
+    setActiveColorScheme,
+    setLightness,
     setNextPrevColorScheme,
   };
 };
 
 export const getNextPrevColorScheme = (
   colorSchemes: colorSchemeAndMeta[],
-  currentColorScheme: string,
+  activeColorScheme: string,
   direction: 'next' | 'prev'
 ) => {
   const currentIndex = colorSchemes.findIndex(
-    (colorScheme) => colorScheme.name === currentColorScheme
+    (colorScheme) => colorScheme.name === activeColorScheme
   );
   if (currentIndex === -1) {
-    throw new Error('currentColorScheme not found in colorSchemes');
+    throw new Error('activeColorScheme not found in colorSchemes');
   }
   const nextIndex =
     direction === 'next'
@@ -159,7 +156,7 @@ export const getNextPrevColorScheme = (
   return colorSchemes[nextIndex];
 };
 
-export const colorSchemesFilteredByCurrentLightness = (
+export const colorSchemesFilteredByLlightness = (
   colorSchemes: colorSchemeAndMeta[],
   lightnessIsDark: boolean
 ) => {

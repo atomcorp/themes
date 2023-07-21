@@ -14,8 +14,8 @@ import {colorSchemeAndMeta} from '@/types';
 const mockTheme = {} as colorSchemeAndMeta;
 
 const colorSchemeState: ColorSchemeState = {
-  currentColorScheme: mockTheme,
-  currentLightness: 'dark',
+  activeColorScheme: mockTheme,
+  lightness: 'dark',
   lightColorSchemes: [mockTheme],
   darkColorSchemes: [],
   colorSchemes: [mockTheme],

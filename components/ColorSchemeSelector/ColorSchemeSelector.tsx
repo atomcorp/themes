@@ -3,18 +3,24 @@
 import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
 
 const ColorSchemeSelector = () => {
-  const {colorSchemeState, setCurrentColorScheme} = useColorSchemes();
+  const {
+    colorSchemeState: {
+      lightness,
+      darkColorSchemes,
+      lightColorSchemes,
+      activeColorScheme,
+    },
+    setActiveColorScheme,
+  } = useColorSchemes();
 
   const colorSchemes =
-    colorSchemeState.currentLightness === 'dark'
-      ? colorSchemeState.darkColorSchemes
-      : colorSchemeState.lightColorSchemes;
+    lightness === 'dark' ? darkColorSchemes : lightColorSchemes;
 
   return (
     <select
-      value={colorSchemeState.currentColorScheme.name}
+      value={activeColorScheme.name}
       onChange={(e) => {
-        setCurrentColorScheme(e.target.value);
+        setActiveColorScheme(e.target.value);
       }}
     >
       {colorSchemes.map((colorScheme) => (

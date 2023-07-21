@@ -1,0 +1,7 @@
+.background {
+  --codeFont: 'IBM Plex Mono', monospace;
+  background-color: var(--background);
+  color: var(--brightWhite);
+  font-family: var(--codeFont, monospace);
+  white-space: pre;
+}

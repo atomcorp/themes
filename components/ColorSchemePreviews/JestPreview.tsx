@@ -1,25 +1,26 @@
 import {
   Foreground,
-  Background,
   Red,
   Green,
   Yellow,
-} from '@/components/CurrentColorScheme/CodeExamples/ColorComponents';
+} from '@/components/ColorSchemePreviews/ColorComponents';
+
+import css from '@/components/ColorSchemePreviews/ColorComponents.module.css';
 
 const Gaps = ({count}: {count: number}) => <>{Array(count).fill(' ')}</>;
 
-const JestSummary = () => {
+const JestPreview = () => {
   return (
     <figure>
       <figcaption>Jest summary example</figcaption>
-      <Background>
+      <div className={css.background}>
         <div>
           <Green bold inverse>
             {' '}
             PASS{' '}
           </Green>{' '}
-          <Foreground dim>components/ToggleCurrentLightness/</Foreground>
-          <Foreground bold>ToggleCurrentLightness.test.tsx</Foreground>
+          <Foreground dim>components/ToggleLightness/</Foreground>
+          <Foreground bold>ToggleLightness.test.tsx</Foreground>
         </div>
         <div>
           <Red bold inverse>
@@ -42,9 +43,9 @@ const JestSummary = () => {
         <div>
           <Foreground dim>Ran all test suites.</Foreground>
         </div>
-      </Background>
+      </div>
     </figure>
   );
 };
 
-export default JestSummary;
+export default JestPreview;

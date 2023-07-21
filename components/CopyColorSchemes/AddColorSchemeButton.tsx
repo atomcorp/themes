@@ -7,17 +7,17 @@ const AddColorSchemeButton = () => {
   const {colorSchemeState} = useColorSchemes();
   const {copiedThemeNames, addToCopiedThemeNames} = useCopiedColorSchemes();
 
-  const currentColorSchemeName = colorSchemeState.currentColorScheme.name;
+  const activeColorSchemeName = colorSchemeState.activeColorScheme.name;
 
   return (
     <button
-      disabled={copiedThemeNames.includes(currentColorSchemeName)}
+      disabled={copiedThemeNames.includes(activeColorSchemeName)}
       type="button"
       onClick={() => {
-        addToCopiedThemeNames(currentColorSchemeName);
+        addToCopiedThemeNames(activeColorSchemeName);
       }}
     >
-      Add {currentColorSchemeName} to list
+      Add {activeColorSchemeName} to list
     </button>
   );
 };

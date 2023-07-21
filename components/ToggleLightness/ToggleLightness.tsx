@@ -1,31 +1,22 @@
-// two buttons that toggle the current lightness
 'use client';
 
 import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
 import RadioButtons from '@/components/RadioButtons/RadioButtons';
 import RadioButton from '@/components/RadioButtons/RadioButton';
 
-const lightnessItems = [
-  {
-    name: 'Dark',
-    value: 'dark',
-  },
-  {
-    name: 'Light',
-    value: 'light',
-  },
-];
-
-const ToggleCurrentLightness = () => {
-  const {colorSchemeState, setCurrentLightness} = useColorSchemes();
+const ToggleLightness = () => {
+  const {
+    colorSchemeState: {lightness},
+    setLightness,
+  } = useColorSchemes();
 
   return (
     <RadioButtons
       label="Toggle light or dark color schemes"
-      value={colorSchemeState.currentLightness}
+      value={lightness}
       handleChange={(value: string) => {
         if (value === 'dark' || value === 'light') {
-          setCurrentLightness(value);
+          setLightness(value);
         }
       }}
     >
@@ -35,4 +26,4 @@ const ToggleCurrentLightness = () => {
   );
 };
 
-export default ToggleCurrentLightness;
+export default ToggleLightness;

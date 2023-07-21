@@ -4,21 +4,21 @@ import useCopiedColorSchemes from '@/components/CopyColorSchemeContext/useCopied
 import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
 
 const RemoveColorSchemeButton = () => {
-  const {colorSchemeState} = useColorSchemes();
+  const {
+    colorSchemeState: {activeColorScheme},
+  } = useColorSchemes();
   const {copiedThemeNames, removeFromCopiedThemeNames} =
     useCopiedColorSchemes();
 
   return (
     <button
-      disabled={
-        !copiedThemeNames.includes(colorSchemeState.currentColorScheme.name)
-      }
+      disabled={!copiedThemeNames.includes(activeColorScheme.name)}
       type="button"
       onClick={() => {
-        removeFromCopiedThemeNames(colorSchemeState.currentColorScheme.name);
+        removeFromCopiedThemeNames(activeColorScheme.name);
       }}
     >
-      Remove {colorSchemeState.currentColorScheme.name} from list
+      Remove {activeColorScheme.name} from list
     </button>
   );
 };

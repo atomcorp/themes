@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test screenshot of ChalkExample component 1`] = `
+<figure>
+  <figcaption>
+    Chalk example
+  </figcaption>
+  <div
+    class="container"
+  >
+    <span>
+      none
+    </span>
+    <span>
+      bold
+    </span>
+    <span>
+      dim
+    </span>
+    <span>
+      underline
+    </span>
+    <span>
+      inverse
+    </span>
+    <span>
+      strikethrough
+    </span>
+  </div>
+  <div
+    class="container"
+  >
+    <span>
+      black
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      black
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      black
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      black
+    </span>
+    <span>
+      black
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      black
+    </span>
+    <span>
+      brightBlack
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightBlack
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightBlack
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightBlack
+    </span>
+    <span>
+      brightBlack
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightBlack
+    </span>
+    <span>
+      red
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      red
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      red
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      red
+    </span>
+    <span>
+      red
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      red
+    </span>
+    <span>
+      brightRed
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightRed
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightRed
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightRed
+    </span>
+    <span>
+      brightRed
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightRed
+    </span>
+    <span>
+      green
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      green
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      green
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      green
+    </span>
+    <span>
+      green
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      green
+    </span>
+    <span>
+      brightGreen
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightGreen
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightGreen
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightGreen
+    </span>
+    <span>
+      brightGreen
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightGreen
+    </span>
+    <span>
+      yellow
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      yellow
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      yellow
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      yellow
+    </span>
+    <span>
+      yellow
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      yellow
+    </span>
+    <span>
+      brightYellow
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightYellow
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightYellow
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightYellow
+    </span>
+    <span>
+      brightYellow
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightYellow
+    </span>
+    <span>
+      blue
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      blue
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      blue
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      blue
+    </span>
+    <span>
+      blue
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      blue
+    </span>
+    <span>
+      brightBlue
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightBlue
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightBlue
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightBlue
+    </span>
+    <span>
+      brightBlue
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightBlue
+    </span>
+    <span>
+      purple
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      purple
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      purple
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      purple
+    </span>
+    <span>
+      purple
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      purple
+    </span>
+    <span>
+      brightPurple
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightPurple
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightPurple
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightPurple
+    </span>
+    <span>
+      brightPurple
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightPurple
+    </span>
+    <span>
+      cyan
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      cyan
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      cyan
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      cyan
+    </span>
+    <span>
+      cyan
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      cyan
+    </span>
+    <span>
+      brightCyan
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightCyan
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightCyan
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightCyan
+    </span>
+    <span>
+      brightCyan
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightCyan
+    </span>
+    <span>
+      white
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      white
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      white
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      white
+    </span>
+    <span>
+      white
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      white
+    </span>
+    <span>
+      brightWhite
+    </span>
+    <span
+      style="font-weight: 700;"
+    >
+      brightWhite
+    </span>
+    <span
+      style="opacity: 0.5;"
+    >
+      brightWhite
+    </span>
+    <span
+      style="text-decoration: underline;"
+    >
+      brightWhite
+    </span>
+    <span>
+      brightWhite
+    </span>
+    <span
+      style="text-decoration: line-through;"
+    >
+      brightWhite
+    </span>
+  </div>
+</figure>
+`;
