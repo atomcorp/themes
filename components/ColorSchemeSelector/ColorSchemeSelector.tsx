@@ -2,6 +2,8 @@
 
 import useColorSchemes from '@/components//ColorSchemeContext/useColorSchemes';
 
+import css from './ColorSchemeSelector.module.css';
+
 const ColorSchemeSelector = () => {
   const {
     colorSchemeState: {
@@ -18,13 +20,18 @@ const ColorSchemeSelector = () => {
 
   return (
     <select
+      className={css.select}
       value={activeColorScheme.name}
       onChange={(e) => {
         setActiveColorScheme(e.target.value);
       }}
     >
       {colorSchemes.map((colorScheme) => (
-        <option value={colorScheme.name} key={colorScheme.name}>
+        <option
+          className={css.option}
+          value={colorScheme.name}
+          key={colorScheme.name}
+        >
           {colorScheme.name}
         </option>
       ))}

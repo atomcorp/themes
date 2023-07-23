@@ -3,6 +3,8 @@
 
 import useColorSchemes from '@/components/ColorSchemeContext/useColorSchemes';
 
+import css from './NextPrevButton.module.css';
+
 type NextPrevButtonProps = {
   direction: 'next' | 'prev';
 };
@@ -12,6 +14,7 @@ const NextPrevButton = (props: NextPrevButtonProps) => {
 
   return (
     <button
+      className={`${css.button} ${css[props.direction]}`}
       onClick={() => {
         setNextPrevColorScheme(props.direction);
       }}

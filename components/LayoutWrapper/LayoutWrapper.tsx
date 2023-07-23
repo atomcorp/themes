@@ -10,7 +10,7 @@ type Props = {
   children: ReactNode;
 };
 
-const CssVarProvider = (props: Props) => {
+const LayoutWrapper = (props: Props) => {
   const {
     colorSchemeState: {activeColorScheme, lightness},
   } = useColorSchemes();
@@ -26,4 +26,4 @@ const CssVarProvider = (props: Props) => {
   );
 };
 
-export default CssVarProvider;
+export default LayoutWrapper;

@@ -1,0 +1,18 @@
+.select {
+  -webkit-appearance: none;
+  background-image: var(--btn__background);
+  border: var(--btn__background-border);
+  border-left: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border-right: 0;
+  color: var(--btn__colour);
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  height: 100%;
+  padding: 6px 10px;
+}
+
+.option {
+  background-color: var(--btn__background--active);
+}

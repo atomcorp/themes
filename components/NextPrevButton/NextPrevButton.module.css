@@ -1,0 +1,19 @@
+.button {
+  background-image: var(--btn__background);
+  border: var(--btn__background-border);
+  border-radius: 0.25em;
+  color: var(--btn__colour);
+  cursor: pointer;
+  padding: var(--btn__padding);
+  font-size: var(--font-size);
+}
+
+.next {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.prev {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}

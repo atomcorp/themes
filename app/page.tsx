@@ -18,7 +18,7 @@ export default function Home() {
         <TogglePreviewType />
       </div>
       <PreviewContainer />
-      <div>
+      <div className={css.select}>
         <NextPrevButton direction="prev" />
         <ColorSchemeSelector />
         <NextPrevButton direction="next" />
