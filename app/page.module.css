@@ -10,9 +10,19 @@
 
 .options {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, auto));
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
-  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, auto));
+    grid-template-rows: revert;
+    justify-content: center;
+    text-align: revert;
+  }
 }
 
 .select {
@@ -23,7 +33,16 @@
 
 .copy {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, auto));
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .copy {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, auto));
+    gap: 10px;
+    justify-content: center;
+  }
 }
