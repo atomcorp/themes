@@ -1,0 +1,21 @@
+.button {
+  background-image: var(--btn-success__background);
+  border: var(--btn__background-border);
+  border-radius: 0.25em;
+  color: var(--btn-success__colour);
+  cursor: pointer;
+  padding: var(--btn__padding);
+  font-size: var(--font-size);
+}
+
+.button:hover {
+  background-image: var(--btn-success__background---hover);
+}
+
+.button[data-state='added'] {
+  background-image: var(--btn-danger__background);
+}
+
+.button[data-state='added']:hover {
+  background-image: var(--btn-danger__background---hover);
+}

@@ -17,6 +17,10 @@
   font-size: var(--font-size);
 }
 
+.button:hover {
+  background-image: var(--btn__background--hover);
+}
+
 .button[data-state='checked'] {
   background-color: var(--btn__background--active);
   background-image: none;

@@ -4,9 +4,8 @@ import PreviewContainer from '@/components/PreviewContainer/PreviewContainer';
 import TogglePreviewType from '@/components/TogglePreviewType/TogglePreviewType';
 import ToggleLightness from '@/components/ToggleLightness/ToggleLightness';
 import ColorSchemeSelector from '@/components/ColorSchemeSelector/ColorSchemeSelector';
-import AddColorSchemeButton from '@/components/CopyColorSchemes/AddColorSchemeButton';
-import RemoveColorSchemeButton from '@/components/CopyColorSchemes/RemoveColorSchemeButton';
-import ListCopiedColorSchemes from '@/components/CopyColorSchemes/ListCopiedColorSchemes';
+import AddRemoveColorSchemeButton from '@/components/AddRemoveColorSchemeButton/AddRemoveColorSchemeButton';
+import AddToClipboardButton from '@/components/AddToClipboardButton/AddToClipboardButton';
 
 import css from './page.module.css';
 
@@ -23,10 +22,9 @@ export default function Home() {
         <ColorSchemeSelector />
         <NextPrevButton direction="next" />
       </div>
-      <div>
-        <AddColorSchemeButton />
-        <RemoveColorSchemeButton />
-        <ListCopiedColorSchemes />
+      <div className={css.copy}>
+        <AddRemoveColorSchemeButton />
+        <AddToClipboardButton />
       </div>
     </main>
   );

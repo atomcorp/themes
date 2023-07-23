@@ -8,16 +8,16 @@
   font-size: var(--font-size);
 }
 
-.button:hover {
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
   background-image: var(--btn__background--hover);
 }
 
-.next {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.prev {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+.title {
+  font-weight: 700;
+  margin: 0;
 }
