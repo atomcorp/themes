@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test screenshot of ChalkExample component 1`] = `
+exports[`test screenshot of ChalkPreview component 1`] = `
 <figure>
   <figcaption>
     Chalk example
@@ -26,10 +26,6 @@ exports[`test screenshot of ChalkExample component 1`] = `
     <span>
       strikethrough
     </span>
-  </div>
-  <div
-    class="container"
-  >
     <span>
       black
     </span>

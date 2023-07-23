@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   --primary-font: var(--font-inter), -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',

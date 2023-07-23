@@ -7,7 +7,7 @@ import {
   Content as TabContent,
 } from '@radix-ui/react-tabs';
 
-import ChalkExample from '@/components/ColorSchemePreviews/ChalkExample';
+import ChalkPreview from '@/components/ColorSchemePreviews/ChalkPreview';
 import JestPreview from '@/components/ColorSchemePreviews/JestPreview';
 
 const examplesEnum = [
@@ -19,7 +19,7 @@ const examplesEnum = [
   {
     id: 'chalk',
     label: 'Chalk',
-    component: ChalkExample,
+    component: ChalkPreview,
   },
 ] as const;
 

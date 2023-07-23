@@ -1,6 +1,9 @@
 .container {
   --header__color: #ededed;
   --header__background: #202020;
+  height: 100%; /* need this so for the page height to cascade down */
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 .container[data-lightness='light'] {

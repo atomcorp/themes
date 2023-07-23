@@ -2,12 +2,15 @@ import {colorSchemeAndMeta, Lightness} from '@/types';
 import {produce} from 'immer';
 import {Dispatch, useCallback} from 'react';
 
+export type PreviewType = 'terminal' | 'chalk';
+
 export type ColorSchemeState = {
   activeColorScheme: colorSchemeAndMeta;
   lightness: Lightness;
   lightColorSchemes: colorSchemeAndMeta[];
   darkColorSchemes: colorSchemeAndMeta[];
   colorSchemes: colorSchemeAndMeta[];
+  previewType: PreviewType;
 };
 
 export type ColorSchemeAction =
@@ -27,6 +30,12 @@ export type ColorSchemeAction =
       type: 'setLightness';
       payload: {
         lightness: Lightness;
+      };
+    }
+  | {
+      type: 'setPreviewType';
+      payload: {
+        previewType: PreviewType;
       };
     };
 
@@ -73,6 +82,11 @@ export const colorSchemeReducer = (
           );
         }
         break;
+      case 'setPreviewType':
+        {
+          draft.previewType = action.payload.previewType;
+        }
+        break;
     }
   });
 
@@ -88,6 +102,7 @@ export const colorSchemeReducerInitialiser = (
   return {
     activeColorScheme: darkColorSchemes[0],
     lightness: 'dark',
+    previewType: 'terminal',
     lightColorSchemes,
     darkColorSchemes,
     colorSchemes,
@@ -131,10 +146,23 @@ export const useDispatchActions = (dispatch: Dispatch<ColorSchemeAction>) => {
     [dispatch]
   );
 
+  const setPreviewType = useCallback(
+    (previewType: PreviewType) => {
+      dispatch({
+        type: 'setPreviewType',
+        payload: {
+          previewType,
+        },
+      });
+    },
+    [dispatch]
+  );
+
   return {
     setActiveColorScheme,
     setLightness,
     setNextPrevColorScheme,
+    setPreviewType,
   };
 };
 

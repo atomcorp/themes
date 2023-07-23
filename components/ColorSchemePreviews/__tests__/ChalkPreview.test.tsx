@@ -1,9 +1,9 @@
 import '@testing-library/jest-dom';
 import {render, screen} from '@testing-library/react';
 
-import ChalkExample from '../ChalkExample';
+import ChalkPreview from '../ChalkPreview';
 
-test('test screenshot of ChalkExample component', () => {
-  render(<ChalkExample />);
+test('test screenshot of ChalkPreview component', () => {
+  render(<ChalkPreview />);
   expect(screen.getByRole('figure')).toMatchSnapshot();
 });

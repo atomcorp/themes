@@ -4,4 +4,5 @@
   color: var(--brightWhite);
   font-family: var(--codeFont, monospace);
   white-space: pre;
+  overflow: auto;
 }

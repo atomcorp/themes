@@ -10,14 +10,19 @@ const useColorSchemes = () => {
   const colorSchemeState = useDefinedContext(ColorSchemeStateContext);
   const setColorSchemeDispatch = useDefinedContext(SetColorSchemeStateContext);
 
-  const {setActiveColorScheme, setLightness, setNextPrevColorScheme} =
-    useDispatchActions(setColorSchemeDispatch);
+  const {
+    setActiveColorScheme,
+    setLightness,
+    setNextPrevColorScheme,
+    setPreviewType,
+  } = useDispatchActions(setColorSchemeDispatch);
 
   return {
     colorSchemeState,
     setActiveColorScheme,
     setLightness,
     setNextPrevColorScheme,
+    setPreviewType,
   };
 };
 

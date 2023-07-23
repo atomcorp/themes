@@ -28,6 +28,7 @@ const initState: ColorSchemeState = {
   lightColorSchemes: [],
   darkColorSchemes: [],
   colorSchemes: [],
+  previewType: 'terminal',
 };
 
 export const ColorSchemesProvider = (props: ColorSchemesProviderProps) => {

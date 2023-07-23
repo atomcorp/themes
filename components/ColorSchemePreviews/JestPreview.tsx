@@ -1,3 +1,5 @@
+import {VisuallyHidden} from '@radix-ui/react-visually-hidden';
+
 import {
   Foreground,
   Red,
@@ -12,7 +14,11 @@ const Gaps = ({count}: {count: number}) => <>{Array(count).fill(' ')}</>;
 const JestPreview = () => {
   return (
     <figure>
-      <figcaption>Jest summary example</figcaption>
+      <figcaption>
+        <VisuallyHidden>
+          Terminal code styled in the active color themes
+        </VisuallyHidden>
+      </figcaption>
       <div className={css.background}>
         <div>
           <Green bold inverse>

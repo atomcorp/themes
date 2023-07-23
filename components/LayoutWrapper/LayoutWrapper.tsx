@@ -4,7 +4,7 @@ import {ReactNode} from 'react';
 import useColorSchemes from '@/components/ColorSchemeContext/useColorSchemes';
 import getColorsForCssVars from '@/utilities/getColorsForCssVars';
 
-import css from './CssVarProvider.module.css';
+import css from './LayoutWrapper.module.css';
 
 type Props = {
   children: ReactNode;

@@ -1,4 +1,6 @@
-import css from './ChalkExample.module.css';
+import {VisuallyHidden} from '@radix-ui/react-visually-hidden';
+
+import css from './ChalkPreview.module.css';
 import getStyle from '@/components/ColorSchemePreviews/getStyle';
 
 const modifiers = [
@@ -29,16 +31,19 @@ const colors = [
   'brightWhite',
 ];
 
-const ChalkExample = () => {
+const ChalkPreview = () => {
   return (
     <figure>
-      <figcaption>Chalk example</figcaption>
+      <figcaption>
+        <VisuallyHidden>
+          Various combinations of the the active color schemes colors and
+          modifiers
+        </VisuallyHidden>
+      </figcaption>
       <div className={css.container}>
         {modifiers.map((modifier) => (
           <span key={modifier}>{modifier}</span>
         ))}
-      </div>
-      <div className={css.container}>
         {colors.map((color) =>
           modifiers.map((modifier) => (
             <span key={modifier} style={getStyle(color, {[modifier]: true})}>
@@ -51,4 +56,4 @@ const ChalkExample = () => {
   );
 };
 
-export default ChalkExample;
+export default ChalkPreview;

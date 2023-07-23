@@ -1,7 +1,7 @@
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import CssVarProvider from '../CssVarProvider';
+import LayoutWrapper from '../LayoutWrapper';
 
 import {
   ColorSchemeStateContext,
@@ -18,6 +18,7 @@ const colorSchemeState: ColorSchemeState = {
   lightColorSchemes: [lightThemeA],
   darkColorSchemes: [],
   colorSchemes: [lightThemeA],
+  previewType: 'terminal',
 };
 
 const dispatch = jest.fn();
@@ -46,9 +47,9 @@ it('should render the current color scheme', () => {
   render(
     <ColorSchemeStateContext.Provider value={colorSchemeState}>
       <SetColorSchemeStateContext.Provider value={dispatch}>
-        <CssVarProvider>
+        <LayoutWrapper>
           <MockActiveColorSchemeName />
-        </CssVarProvider>
+        </LayoutWrapper>
       </SetColorSchemeStateContext.Provider>
     </ColorSchemeStateContext.Provider>
   );

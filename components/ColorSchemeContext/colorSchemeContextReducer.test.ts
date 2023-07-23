@@ -138,6 +138,7 @@ test('initialise color scheme reducer', () => {
     darkColorSchemes,
     lightColorSchemes,
     colorSchemes,
+    previewType: 'terminal',
   });
 });
 
@@ -177,6 +178,7 @@ test('colorSchemeReducer should set new color scheme', () => {
     darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
     lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
     colorSchemes: colorSchemes as colorSchemeAndMeta[],
+    previewType: 'terminal',
   };
 
   const reducer = colorSchemeReducer(state, {
@@ -199,6 +201,7 @@ test('colorSchemeReducer should throw if given an invalid color scheme', () => {
     darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
     lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
     colorSchemes: colorSchemes as colorSchemeAndMeta[],
+    previewType: 'terminal',
   };
 
   expect(() =>
@@ -218,6 +221,7 @@ test('colorSchemeReducer should set new lightness (to light)', () => {
     darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
     lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
     colorSchemes: colorSchemes as colorSchemeAndMeta[],
+    previewType: 'terminal',
   };
 
   const reducer = colorSchemeReducer(state, {
@@ -241,6 +245,7 @@ test('colorSchemeReducer should set new lightness (to dark)', () => {
     darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
     lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
     colorSchemes: colorSchemes as colorSchemeAndMeta[],
+    previewType: 'terminal',
   };
 
   const reducer = colorSchemeReducer(state, {
@@ -264,6 +269,7 @@ test('colorSchemeReducer should set setNextPrevColorScheme', () => {
     darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
     lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
     colorSchemes: colorSchemes as colorSchemeAndMeta[],
+    previewType: 'terminal',
   };
 
   const reducer = colorSchemeReducer(state, {
@@ -286,6 +292,7 @@ test('colorSchemeReducer should set setNextPrevColorScheme', () => {
     darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
     lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
     colorSchemes: colorSchemes as colorSchemeAndMeta[],
+    previewType: 'terminal',
   };
 
   const reducer = colorSchemeReducer(state, {
@@ -308,6 +315,7 @@ test('colorSchemeReducer should set setNextPrevColorScheme when light', () => {
     darkColorSchemes: darkColorSchemes as colorSchemeAndMeta[],
     lightColorSchemes: lightColorSchemes as colorSchemeAndMeta[],
     colorSchemes: colorSchemes as colorSchemeAndMeta[],
+    previewType: 'terminal',
   };
 
   const reducer = colorSchemeReducer(state, {

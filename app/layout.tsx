@@ -4,12 +4,7 @@ import {ColorSchemesProvider} from '@/components/ColorSchemeContext/ColorSchemeC
 import CopyColorSchemeProvider from '@/components/CopyColorSchemeContext/CopyColorSchemeProvider';
 import getColorSchemes from '@/requests/getColorSchemes';
 
-import ColorSchemeSelector from '@/components/ColorSchemeSelector/ColorSchemeSelector';
-import ToggleLightness from '@/components/ToggleLightness/ToggleLightness';
-import AddColorSchemeButton from '@/components/CopyColorSchemes/AddColorSchemeButton';
-import RemoveColorSchemeButton from '@/components/CopyColorSchemes/RemoveColorSchemeButton';
-import ListCopiedColorSchemes from '@/components/CopyColorSchemes/ListCopiedColorSchemes';
-import CssVarProvider from '@/components/CssVarProvider/CssVarProvider';
+import LayoutWrapper from '@/components/LayoutWrapper/LayoutWrapper';
 import Header from '@/components/Header';
 
 import './globals.css';
@@ -33,15 +28,10 @@ export default async function RootLayout({
       <body className={inter.variable}>
         <CopyColorSchemeProvider>
           <ColorSchemesProvider colorSchemes={colorSchemes}>
-            <CssVarProvider>
+            <LayoutWrapper>
               <Header />
-              <ToggleLightness />
-              <ColorSchemeSelector />
               {children}
-              <AddColorSchemeButton />
-              <RemoveColorSchemeButton />
-              <ListCopiedColorSchemes />
-            </CssVarProvider>
+            </LayoutWrapper>
           </ColorSchemesProvider>
         </CopyColorSchemeProvider>
       </body>

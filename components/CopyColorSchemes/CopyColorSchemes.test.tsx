@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import {render, screen} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import CopyColorSchemeContext from '@/components/CopyColorSchemeContext/CopyColorSchemeContext';
+import CopyColorSchemeProvider from '@/components/CopyColorSchemeContext/CopyColorSchemeProvider';
 import AddColorSchemeButton from './AddColorSchemeButton';
 import ListCopiedColorSchemes from './ListCopiedColorSchemes';
 import RemoveColorSchemeButton from './RemoveColorSchemeButton';
@@ -16,12 +16,12 @@ const firstDarkTheme = schemes.find((theme) => theme.meta.isDark);
 const ProviderWrapper = () => {
   return (
     <ColorSchemesProvider colorSchemes={schemes}>
-      <CopyColorSchemeContext>
+      <CopyColorSchemeProvider>
         <AddColorSchemeButton />
         <ListCopiedColorSchemes />
         <RemoveColorSchemeButton />
         <MockDuplicateAddButton />
-      </CopyColorSchemeContext>
+      </CopyColorSchemeProvider>
     </ColorSchemesProvider>
   );
 };
