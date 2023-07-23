@@ -13,7 +13,7 @@ const Gaps = ({count}: {count: number}) => <>{Array(count).fill(' ')}</>;
 
 const JestPreview = () => {
   return (
-    <figure>
+    <figure className={css.container}>
       <figcaption>
         <VisuallyHidden>
           Terminal code styled in the active color themes

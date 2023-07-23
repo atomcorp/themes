@@ -6,6 +6,7 @@ import getColorSchemes from '@/requests/getColorSchemes';
 
 import LayoutWrapper from '@/components/LayoutWrapper/LayoutWrapper';
 import Header from '@/components/Header';
+import BackgroundColor from '@/components/BackgroundColor/BackgroundColor';
 
 import './globals.css';
 
@@ -30,7 +31,7 @@ export default async function RootLayout({
           <ColorSchemesProvider colorSchemes={colorSchemes}>
             <LayoutWrapper>
               <Header />
-              {children}
+              <BackgroundColor>{children}</BackgroundColor>
             </LayoutWrapper>
           </ColorSchemesProvider>
         </CopyColorSchemeProvider>

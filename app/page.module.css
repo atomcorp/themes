@@ -9,7 +9,7 @@
 
 .options {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
+  grid-template-columns: repeat(2, minmax(0, auto));
   gap: 10px;
+  justify-content: center;
 }

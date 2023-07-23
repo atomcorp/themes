@@ -1,2 +1,5 @@
 .container {
+  border: 3px solid #333;
+  box-shadow: 1px 2px 10px var(--btn__border-colour--active);
+  padding: 10px;
 }

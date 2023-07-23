@@ -1,0 +1,31 @@
+.container:first-child .button {
+  border-radius: 0.25em 0 0 0.25em;
+  border-right: 0;
+}
+
+.container:last-child .button {
+  border-radius: 0 0.25em 0.25em 0;
+}
+
+.button {
+  background-image: var(--btn__background);
+  border: var(--btn__background-border);
+  border-radius: 0.25em;
+  color: var(--btn__colour);
+  cursor: pointer;
+  padding: var(--btn__padding);
+  font-size: var(--font-size);
+}
+
+.button[data-state='checked'] {
+  background-color: var(--btn__background--active);
+  background-image: none;
+  border-color: var(--btn__border-colour--active);
+  box-shadow: var(--btn__insert);
+}
+
+.button:focus,
+.button:focus-visible {
+  box-shadow: var(--focus-ring);
+  outline: 0;
+}

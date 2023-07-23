@@ -1,3 +1,7 @@
+.container {
+  margin: 0;
+}
+
 .background {
   --codeFont: 'IBM Plex Mono', monospace;
   background-color: var(--background);

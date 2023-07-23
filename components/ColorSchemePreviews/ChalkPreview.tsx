@@ -33,14 +33,14 @@ const colors = [
 
 const ChalkPreview = () => {
   return (
-    <figure>
+    <figure className={css.container}>
       <figcaption>
         <VisuallyHidden>
           Various combinations of the the active color schemes colors and
           modifiers
         </VisuallyHidden>
       </figcaption>
-      <div className={css.container}>
+      <div className={css.chalk}>
         {modifiers.map((modifier) => (
           <span key={modifier}>{modifier}</span>
         ))}
