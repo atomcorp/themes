@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render all the components 1`] = `
-<figure>
+<figure
+  class="container"
+>
   <figcaption>
-    Jest summary example
+    <span
+      style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+    >
+      Terminal code styled in the active color themes
+    </span>
   </figcaption>
   <div
     class="background"

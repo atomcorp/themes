@@ -1,12 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`test screenshot of ChalkPreview component 1`] = `
-<figure>
+<figure
+  class="container"
+>
   <figcaption>
-    Chalk example
+    <span
+      style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+    >
+      Various combinations of the the active color schemes colors and modifiers
+    </span>
   </figcaption>
   <div
-    class="container"
+    class="chalk"
   >
     <span>
       none
