@@ -9,7 +9,7 @@ import ToggleLightness from '@/components/ToggleLightness/ToggleLightness';
 import AddColorSchemeButton from '@/components/CopyColorSchemes/AddColorSchemeButton';
 import RemoveColorSchemeButton from '@/components/CopyColorSchemes/RemoveColorSchemeButton';
 import ListCopiedColorSchemes from '@/components/CopyColorSchemes/ListCopiedColorSchemes';
-import ActiveColorSchemeWrapper from '@/components/ActiveColorSchemeWrapper/ActiveColorSchemeWrapper';
+import CssVarProvider from '@/components/CssVarProvider/CssVarProvider';
 import Header from '@/components/Header';
 
 import './globals.css';
@@ -33,7 +33,7 @@ export default async function RootLayout({
       <body className={inter.variable}>
         <CopyColorSchemeProvider>
           <ColorSchemesProvider colorSchemes={colorSchemes}>
-            <ActiveColorSchemeWrapper>
+            <CssVarProvider>
               <Header />
               <ToggleLightness />
               <ColorSchemeSelector />
@@ -41,7 +41,7 @@ export default async function RootLayout({
               <AddColorSchemeButton />
               <RemoveColorSchemeButton />
               <ListCopiedColorSchemes />
-            </ActiveColorSchemeWrapper>
+            </CssVarProvider>
           </ColorSchemesProvider>
         </CopyColorSchemeProvider>
       </body>

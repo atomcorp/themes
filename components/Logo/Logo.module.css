@@ -39,7 +39,7 @@
 }
 
 .background {
-  background-color: white;
+  background-color: var(--header__background);
 }
 
 @media (prefers-reduced-motion: no-preference) {

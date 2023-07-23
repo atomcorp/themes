@@ -1,0 +1,9 @@
+.container {
+  --header__color: #ededed;
+  --header__background: #202020;
+}
+
+.container[data-lightness='light'] {
+  --header__color: #282c34;
+  --header__background: #e1e4e8;
+}

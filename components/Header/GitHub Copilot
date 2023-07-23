@@ -1,0 +1,39 @@
+Synthesizing 8/10 solutions (Duplicates hidden)
+
+=======
+Suggestion 1
+
+  font-size: 1.9rem;
+  font-weight: 700;
+
+=======
+Suggestion 2
+
+  font-size: 1.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--header__color);
+
+=======
+Suggestion 3
+
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+
+=======
+Suggestion 4
+
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+
+=======
+Suggestion 5
+
+  font-size: 1.9rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  color: var(--header__color);

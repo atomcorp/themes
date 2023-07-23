@@ -7,7 +7,9 @@
 }
 
 body {
-  --primary-font: var(--font-inter);
+  --primary-font: var(--font-inter), -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   font-family: var(--primary-font);
 }
 

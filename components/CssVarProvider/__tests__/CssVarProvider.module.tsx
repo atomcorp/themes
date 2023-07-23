@@ -1,7 +1,7 @@
 import {render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import CurrentColorScheme from '../ActiveColorSchemeWrapper';
+import CssVarProvider from '../CssVarProvider';
 
 import {
   ColorSchemeStateContext,
@@ -24,12 +24,13 @@ const dispatch = jest.fn();
 
 const MockActiveColorSchemeName = () => {
   const {
-    colorSchemeState: {activeColorScheme},
+    colorSchemeState: {activeColorScheme, lightness},
   } = useColorSchemes();
   const cssVarColors = getColorsForCssVars(activeColorScheme);
   const colors = Object.entries(cssVarColors);
   return (
-    <ul style={cssVarColors}>
+    <ul id="root" style={cssVarColors}>
+      <li>Lightness: {lightness}</li>
       {colors.map(([key, value], i) => {
         return (
           <li key={i}>
@@ -45,9 +46,9 @@ it('should render the current color scheme', () => {
   render(
     <ColorSchemeStateContext.Provider value={colorSchemeState}>
       <SetColorSchemeStateContext.Provider value={dispatch}>
-        <CurrentColorScheme>
+        <CssVarProvider>
           <MockActiveColorSchemeName />
-        </CurrentColorScheme>
+        </CssVarProvider>
       </SetColorSchemeStateContext.Provider>
     </ColorSchemeStateContext.Provider>
   );
