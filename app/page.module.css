@@ -18,7 +18,7 @@
 @media (min-width: 500px) {
   .options {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, auto));
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: revert;
     justify-content: center;
     text-align: revert;
@@ -41,8 +41,6 @@
 @media (min-width: 500px) {
   .copy {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, auto));
-    gap: 10px;
-    justify-content: center;
+    grid-template-columns: repeat(2, auto);
   }
 }

@@ -13,17 +13,11 @@ import {
   SetColorSchemeStateContext,
 } from '@/components/ColorSchemeContext/ColorSchemeContext';
 import userEvent from '@testing-library/user-event';
-import filterColorSchemes from '@/utilities/filterColorSchemes';
-
-const {lightColorSchemes, darkColorSchemes} = filterColorSchemes(schemes);
 
 it('should render the current color scheme', () => {
   render(
     <ColorSchemesProvider colorSchemes={schemes}>
-      <ColorSchemeSelector
-        lightColorSchemes={lightColorSchemes}
-        darkColorSchemes={darkColorSchemes}
-      />
+      <ColorSchemeSelector />
     </ColorSchemesProvider>
   );
 
@@ -34,10 +28,7 @@ it('should render the combo box when lightness is light', async () => {
   const user = userEvent.setup();
   render(
     <ColorSchemesProvider colorSchemes={schemes}>
-      <ColorSchemeSelector
-        lightColorSchemes={lightColorSchemes}
-        darkColorSchemes={darkColorSchemes}
-      />
+      <ColorSchemeSelector />
       <SetColorSchemeStateContext.Consumer>
         {(dispatch) => (
           <button
@@ -66,10 +57,7 @@ it('should change the color scheme when the combo box is changed', async () => {
   const user = userEvent.setup();
   render(
     <ColorSchemesProvider colorSchemes={schemes}>
-      <ColorSchemeSelector
-        lightColorSchemes={lightColorSchemes}
-        darkColorSchemes={darkColorSchemes}
-      />
+      <ColorSchemeSelector />
     </ColorSchemesProvider>
   );
 

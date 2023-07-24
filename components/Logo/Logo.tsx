@@ -22,6 +22,7 @@ const Logo = () => {
 
   return (
     <div
+      aria-hidden="true"
       style={
         {
           '--color-one': colors[0],

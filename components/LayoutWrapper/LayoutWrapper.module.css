@@ -12,7 +12,7 @@
     #8f5252 5%,
     #743c3c 90%
   );
-  height: 100%; /* need this so for the page height to cascade down */
+  height: 100%;
   display: grid;
   grid-template-rows: auto 1fr;
 }
@@ -26,7 +26,6 @@
   --btn__colour: #d6d8da;
   --btn__background--hover: linear-gradient(-180deg, #535659, #535659 90%);
   --btn__border-colour--active: rgba(200, 200, 200, 0.3);
-  /* --btn__insert: inset 0 0.15em 0.3em rgba(20, 22, 23, 0.15); */
   --btn__insert: inset 0 0.15em 0.3em rgba(20, 22, 23, 0.15);
 }
 

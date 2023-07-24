@@ -19,6 +19,7 @@ const colorSchemeState: ColorSchemeState = {
   lightColorSchemes: [mockTheme],
   darkColorSchemes: [],
   colorSchemes: [mockTheme],
+  previewType: 'terminal',
 };
 
 test('should render next button', () => {
