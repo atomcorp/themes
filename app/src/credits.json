@@ -173,5 +173,14 @@
         "link": "https://github.com/pedro2d10"
       }
     ]
+  },
+  {
+    "themeNames": ["Night City"],
+    "sources": [
+      {
+        "name": "Thomas Lane",
+        "link": "https://github.com/tel0065"
+      }
+    ]
   }
 ]
