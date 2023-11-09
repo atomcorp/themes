@@ -912,5 +912,28 @@
       "selectionBackground": "#242272",
       "white": "#B2B2B2",
       "yellow": "#D6C315"
+  },
+  {
+      "background": "#090819",
+      "black": "#283034",
+      "blue": "#E388FF",
+      "brightBlack": "#FF1998",
+      "brightBlue": "#42C6FF",
+      "brightCyan": "#3DD8FF",
+      "brightGreen": "#83FF52",
+      "brightPurple": "#FF2AFC",
+      "brightRed": "#FF006E",
+      "brightWhite": "#F4F6F9",
+      "brightYellow": "#E5FF00",
+      "cursorColor": "#00FFFF",
+      "cyan": "#00E5FF",
+      "foreground": "#6600FF",
+      "green": "#00FF80",
+      "name": "Night City",
+      "purple": "#9900FF",
+      "red": "#FF0000",
+      "selectionBackground": "#4A7AFF",
+      "white": "#6600FF",
+      "yellow": "#FFD400"
   }
 ]
