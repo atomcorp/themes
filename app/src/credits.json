@@ -182,5 +182,14 @@
         "link": "https://github.com/tel0065"
       }
     ]
+  },
+  {
+    "themeNames": ["Monospace Light", "Monospace Dark"],
+    "sources": [
+      {
+        "name": "Keksi",
+        "link": "https://github.com/keksiqc"
+      }
+    ]
   }
 ]
