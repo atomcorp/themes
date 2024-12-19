@@ -180,7 +180,14 @@
       {
         "name": "Thomas Lane",
         "link": "https://github.com/tel0065"
-      }
+      },
+  {
+    "themeNames": ["DarkBerry"],
+    "sources": [
+      {
+        "name": "SmileyPanix",
+        "link": "https://github.com/SmileyPanix"
+      },
     ]
   }
 ]

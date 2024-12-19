@@ -982,4 +982,27 @@
     "white": "#000000",
     "yellow": "#F0AA0B"
 },
+{
+    "background": "#201E24",
+    "black": "#0B0B0D",
+    "blue": "#194DDA",
+    "brightBlack": "#2D2B33",
+    "brightBlue": "#4F83FF",
+    "brightCyan": "#74FBFF",
+    "brightGreen": "#D756FF",
+    "brightPurple": "#46FF8A",
+    "brightRed": "#FF2F50",
+    "brightWhite": "#E8DEFA",
+    "brightYellow": "#D2FF34",
+    "cursorColor": "#ACA2C2",
+    "cyan": "#18C2C7",
+    "foreground": "#ACA2C2",
+    "green": "#8B23BA",
+    "name": "DarkBerry",
+    "purple": "#19A155",
+    "red": "#B51036",
+    "selectionBackground": "#494452",
+    "white": "#ACA2C2",
+    "yellow": "#B7C10D"
+},
 ]
