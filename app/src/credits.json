@@ -182,5 +182,14 @@
         "link": "https://github.com/tel0065"
       }
     ]
+  },
+  {
+    "themeNames": ["Nautilus"],
+    "sources": [
+      {
+        "name": "spideyclick",
+        "link": "https://github.com/spideyclick"
+      }
+    ]
   }
 ]
