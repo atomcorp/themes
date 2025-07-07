@@ -1693,5 +1693,17 @@
       }
     ],
     "notes": "The scheme Zenburn was inspired by the [Zenburn](http://sunaku.github.io/zenburn-terminal-color-scheme.html) version created by Suraj N. Kurapati."
+  },
+  {
+    "themeNames": [
+      "Poimandres"
+    ],
+    "sources": [
+      {
+        "name": "adryanrr",
+        "link": "https://github.com/Adryanrr/wt-themes"
+      }
+    ],
+    "notes": "The scheme was inspired by the classic Poimandres version, customized by Adryan Ryan."
   }
 ]

@@ -1661,5 +1661,15 @@
       }
     ],
     "notes": "The iceberg theme was created by cocopon and ported to iTerm2 by pbnj"
-  }
+  },
+  {
+  "themeNames": ["Poimandres"],
+  "sources": [
+    {
+      "name": "adryanrr",
+      "link": "https://github.com/adryanrr"
+    }
+  ],
+  "notes": "The Poimandres theme was adapted for Windows Terminal by [adryanrr](https://github.com/adryanrr)."
+}
 ]

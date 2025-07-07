@@ -291,3 +291,5 @@ The iceberg theme was created by [cocopon](https://github.com/cocopon/iceberg.vi
 The "Galizur" theme was crafted by [Raziel Anarki](https://github.com/razielanarki)
 
 The [Raycast](https://raycast.com) Dark/Light themes were created by [thomaspaulmann](https://github.com/thomaspaulmann) and [itsnwa](https://github.com/itsnwa).
+
+The **Poimandres** theme was adapted for Windows Terminal by [adryanrr](https://github.com/adryanrr).
