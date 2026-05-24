@@ -45,6 +45,15 @@
     ]
   },
   {
+    "themeNames": ["JetCalm Light"],
+    "sources": [
+      {
+        "name": "mtueih",
+        "link": "https://github.com/mtueih"
+      }
+    ]
+  },
+  {
     "themeNames": ["Monokai Cmder"],
     "sources": [
       {
