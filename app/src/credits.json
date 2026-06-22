@@ -1,5 +1,14 @@
 [
   {
+    "themeNames": ["Squintless (Gruvbox Light)"],
+    "sources": [
+      {
+        "name": "Sameer Zahir",
+        "link": "https://github.com/sameerzahir97-cloud"
+      }
+    ]
+  },
+  {
     "themeNames": ["Bubbles", "DraculaPlus", "Material Darker", "OneStar"],
     "sources": [
       {
