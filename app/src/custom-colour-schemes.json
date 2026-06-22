@@ -982,4 +982,27 @@
     "white": "#000000",
     "yellow": "#F0AA0B"
 },
+  {
+    "name": "Squintless (Gruvbox Light)",
+    "background": "#F2E5BC",
+    "black": "#F2E5BC",
+    "blue": "#076678",
+    "brightBlack": "#928374",
+    "brightBlue": "#076678",
+    "brightCyan": "#427B58",
+    "brightGreen": "#79740E",
+    "brightPurple": "#8F3F71",
+    "brightRed": "#9D0006",
+    "brightWhite": "#3C3836",
+    "brightYellow": "#B57614",
+    "cursorColor": "#282828",
+    "cyan": "#427B58",
+    "foreground": "#3C3836",
+    "green": "#79740E",
+    "purple": "#8F3F71",
+    "red": "#9D0006",
+    "selectionBackground": "#D5C4A1",
+    "white": "#7C6F64",
+    "yellow": "#B57614"
+  }
 ]
