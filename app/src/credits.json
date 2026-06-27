@@ -182,5 +182,60 @@
         "link": "https://github.com/tel0065"
       }
     ]
+  },
+  {
+    "themeNames": [
+      "Opaline"
+    ],
+    "sources": [
+      {
+        "name": "PoshPalette",
+        "link": "https://livlign.github.io/posh-palette/themes.html#theme-opaline"
+      }
+    ]
+  },
+  {
+    "themeNames": [
+      "Patina"
+    ],
+    "sources": [
+      {
+        "name": "PoshPalette",
+        "link": "https://livlign.github.io/posh-palette/themes.html#theme-patina"
+      }
+    ]
+  },
+  {
+    "themeNames": [
+      "Citrus Ink"
+    ],
+    "sources": [
+      {
+        "name": "PoshPalette",
+        "link": "https://livlign.github.io/posh-palette/themes.html#theme-citrus-ink"
+      }
+    ]
+  },
+  {
+    "themeNames": [
+      "Letterpress"
+    ],
+    "sources": [
+      {
+        "name": "PoshPalette",
+        "link": "https://livlign.github.io/posh-palette/themes.html#theme-letterpress"
+      }
+    ]
+  },
+  {
+    "themeNames": [
+      "Aubade"
+    ],
+    "sources": [
+      {
+        "name": "PoshPalette",
+        "link": "https://livlign.github.io/posh-palette/themes.html#theme-aubade"
+      }
+    ]
   }
 ]
