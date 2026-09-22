@@ -18,6 +18,23 @@
     ]
   },
   {
+    "themeNames": ["DeepSeaFoam"],
+    "sources": [
+      {
+        "name": "Zanark (DeepSeaFoam)",
+        "link": "https://github.com/Zanark/DeepSeaFoam"
+      },
+      {
+        "name": "heisters (Solarized Dark Higher Contrast)",
+        "link": "https://gist.github.com/heisters/1015503"
+      },
+      {
+        "name": "Ethan Schoonover (Solarized)",
+        "link": "https://ethanschoonover.com/solarized/"
+      }
+    ]
+  },
+  {
     "themeNames": ["Ganyu"],
     "sources": [
       {
