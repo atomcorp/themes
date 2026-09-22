@@ -982,4 +982,27 @@
     "white": "#000000",
     "yellow": "#F0AA0B"
 },
+  {
+    "name": "DeepSeaFoam",
+    "background": "#000F13",
+    "foreground": "#9CC2C3",
+    "cursorColor": "#F34B00",
+    "selectionBackground": "#003748",
+    "black": "#002831",
+    "red": "#F54F65",
+    "green": "#6CBE6C",
+    "yellow": "#EDAE29",
+    "blue": "#2176C7",
+    "purple": "#C61C6F",
+    "cyan": "#259286",
+    "white": "#EAE3CB",
+    "brightBlack": "#006488",
+    "brightRed": "#F5858C",
+    "brightGreen": "#51EF84",
+    "brightYellow": "#FFF96E",
+    "brightBlue": "#178EC8",
+    "brightPurple": "#E24D8E",
+    "brightCyan": "#00B39E",
+    "brightWhite": "#FCF4DC"
+  }
 ]
